@@ -1,6 +1,6 @@
 {
   "id": "net.filllip-namron",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
@@ -4294,7 +4294,8 @@
           "NAMRON As",
           "Namron AS",
           "Namron As",
-          "namron as"
+          "namron as",
+          "Shyugj"
         ],
         "productId": [
           "Dimmer-Switch-ZB3.0"
@@ -4355,11 +4356,12 @@
       },
       "zwave": {
         "manufacturerId": [
-          816,
+          1073,
           1080
         ],
         "productTypeId": [
-          2
+          2,
+          514
         ],
         "productId": [
           2
