@@ -1,0 +1,82 @@
+{
+  "id": "3802962",
+  "name": {
+    "en": "3802962"
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff",
+    "dim",
+    "light_hue",
+    "light_saturation",
+    "light_temperature"
+  ],
+  "capabilitiesOptions": {
+    "dim": {
+      "opts": {
+        "duration": true
+      }
+    },
+    "light_hue": {
+      "opts": {
+        "duration": true
+      }
+    },
+    "light_saturation": {
+      "opts": {
+        "duration": true
+      }
+    },
+    "light_temperature": {
+      "opts": {
+        "duration": true
+      }
+    },
+    "onoff": {
+      "setOnDim": false
+    }
+  },
+  "zigbee": {
+    "manufacturerName": [
+      "NAMRON AS",
+      "NAMRON  AS",
+      "NAMRON As",
+      "Namron AS",
+      "Namron As",
+      "namron as"
+    ],
+    "productId": [
+      "3802962"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          3,
+          4,
+          5,
+          6,
+          8,
+          768,
+          2821,
+          4096
+        ],
+        "bindings": [
+          25
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "/drivers/3802962/assets/learnmode.svg",
+      "instruction": {
+        "en": "Please put your Zigbee device in 'pair mode'.\n\nRefer to your device's manual on how to enable 'pair mode'."
+      }
+    }
+  },
+  "images": {
+    "large": "/drivers/3802962/assets/images/large.png",
+    "small": "/drivers/3802962/assets/images/small.png"
+  },
+  "settings": [
+  ]
+}
