@@ -1,6 +1,6 @@
 {
   "id": "net.filllip-namron",
-  "version": "2.0.8",
+  "version": "2.0.9",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
@@ -6203,7 +6203,8 @@
           "Shyugj"
         ],
         "productId": [
-          "Dimmer-Switch-ZB3.0"
+          "Dimmer-Switch-ZB3.0",
+          "1402755"
         ],
         "endpoints": {
           "1": {
