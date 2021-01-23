@@ -31,5 +31,11 @@
   },
   "2.0.9": {
     "en": "1) Support Homey V5.0.0. 2) Support all namron devices. 3) Optimized the support for Flow, especially Remote. 4) If the previous devices are not working properly, please add them again."
+  },
+  "2.0.10": {
+    "en": "1) Support Homey V5.0.0. 2) Support all namron devices. 3) Optimized the support for Flow, especially Remote. 4) If the previous devices are not working properly, please add them again."
+  },
+  "2.0.11": {
+    "en": "1) Support Homey V5.0.0. 2) Support all namron devices. 3) Optimized the support for Flow, especially Remote. 4) If the previous devices are not working properly, please add them again."
   }
 }
