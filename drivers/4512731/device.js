@@ -6,8 +6,8 @@ class MyRemote extends ZwaveDevice {
 
   async onNodeInit ({ node }) {
 
-    this.enableDebug()
-    this.printNode()
+    // this.enableDebug()
+    // this.printNode()
 
     this.registerCapability('measure_battery', 'BATTERY')
 

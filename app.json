@@ -6859,10 +6859,11 @@
         "productId": [
           2
         ],
+        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/1402756/assets/learnmode.svg",
           "instruction": {
-            "en": "Inclusion \nTriple press the reset button on the dimmer, it will set the dimmer into inclusion mode. The purple indicator light will stay solid on for 10 seconds to indicate successful inclusion. \n\nExclusion \nTriple press the reset button, the dimmer will be set to exclusion mode, and waiting to be excluded, then the dimmer will be excluded from the network. \n\nFactory reset \nPress and hold down the reset button for over 5 seconds, the dimmer will be reset to factory defaults."
+            "en": "Inclusion, Exclusion \nTriple press the reset button on the dimmer. \n\n!!! NOTE \nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail. \n\nFactory reset \nPress and hold down the reset button for over 5 seconds."
           }
         },
         "associationGroups": [
@@ -7627,6 +7628,8 @@
               4096
             ],
             "bindings": [
+              6,
+              8,
               25
             ]
           }
@@ -8446,10 +8449,11 @@
         "productId": [
           53253
         ],
+        "includeSecure": true,
         "learnmode": {
           "image": "/drivers/4512710/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nTriple press the reset button, the device will be set to pair mode.\n\n# Factory Reset\nPress and hold the reset button for over 10 seconds, the device will be reset to factory defaults."
+            "en": "# Pair\nTriple press the reset button.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold the reset button for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -8488,10 +8492,11 @@
         "productId": [
           45826
         ],
+        "includeSecure": true,
         "learnmode": {
           "image": "/drivers/4512711/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nPress and hold down both buttons I and O for over 3 seconds, LED indicator turns on, the remote control will be set to pair mode, after 7s LED indicator blinks 4 times quickly to indicate successful pairing.\n\n# Factory Reset\nPress and hold down both buttons I and O for over 10 seconds, LED indicator turns on and then blinks 4 times quickly to indicate successful factory reset."
+            "en": "# Pair\nPress and hold down both buttons I and O for over 3 seconds.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down both buttons I and O for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -8560,10 +8565,11 @@
         "productId": [
           41743
         ],
+        "includeSecure": true,
         "learnmode": {
           "image": "/drivers/4512712/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nPress and hold down both buttons over 3 seconds, LED indicator turns on, the remote control will be set to pair mode, after 7s LED indicator blinks 4 times quickly to indicate successful pairing.\n\n# Factory Reset\nPress and hold down both buttons together for over 10 seconds, LED indicator turns on and then blinks 4 times quickly to indicate successful factory reset."
+            "en": "# Pair\nPress and hold down both buttons over 3 seconds.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down both buttons together for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -8614,10 +8620,11 @@
         "productId": [
           41744
         ],
+        "includeSecure": true,
         "learnmode": {
           "image": "/drivers/4512713/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nPress and hold down both buttons I and O over 3 seconds, LED indicator turns on, the remote control will be set to pair mode, after 7s LED indicator blinks 4 times quickly to indicate successful pairing.\n\n# Factory Reset\nPress and hold down both buttons I and O for over 10 seconds, LED indicator turns on and then blinks 4 times quickly to indicate successful factory reset."
+            "en": "# Pair\nPress and hold down both buttons I and O over 3 seconds.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down both buttons I and O for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -8668,10 +8675,11 @@
         "productId": [
           41733
         ],
+        "includeSecure": true,
         "learnmode": {
           "image": "/drivers/4512714/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nPress and hold down both buttons I and O over 3 seconds, LED indicator turns on, the remote control will be set to pair mode, after 7s LED indicator blinks 4 times quickly to indicate successful pairing.\n\n# Factory Reset\nPress and hold down both buttons I and O for over 10 seconds, LED indicator turns on and then blinks 4 times quickly to indicate successful factory reset."
+            "en": "# Pair\nPress and hold down both buttons I and O over 3 seconds.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down both buttons I and O for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -8735,10 +8743,11 @@
         "productId": [
           53254
         ],
+        "includeSecure": true,
         "learnmode": {
           "image": "/drivers/4512715/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nTriple press the reset button, the device will be set to pair mode.\n\n# Factory Reset\nPress and hold the reset button for over 10 seconds, the device will be reset to factory defaults."
+            "en": "# Pair\nTriple press the reset button.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold the reset button for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -8753,6 +8762,7 @@
       },
       "class": "sensor",
       "capabilities": [
+        "alarm_contact",
         "measure_battery"
       ],
       "energy": {
@@ -8777,10 +8787,11 @@
         "productId": [
           53251
         ],
+        "includeSecure": true,
         "learnmode": {
           "image": "/drivers/4512716/assets/learnmode.svg",
           "instruction": {
-            "en": " # Pair\nTriple press the action button, the sensor will be set to pair mode, the LED indicator will flash fast and then stay solid on for 3 seconds to indicate successful pairing. If pairing fails, the LED indicator will flash fast for 6 seconds and the sensor will quit pair mode automatically.\n\n# Factory Reset\nPress and hold down action button for over 10 seconds, during this process, LED indicator will accelerate flashing, then LED indicator will stay solid on for 3s to indicate successful factory reset, release action button, the sensor will restart automatically."
+            "en": " # Pair\nTriple press the action button.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down action button for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -8828,10 +8839,11 @@
         "productId": [
           53252
         ],
+        "includeSecure": true,
         "learnmode": {
           "image": "/drivers/4512717/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nPower on the smart plug, make sure it does not belong to any Z-Wave network. Press and hold down action button for over 10 seconds, if the LED indicator flashes yellow slowly, it means it does not belong to any network, if the smart plug has already been included into a network, it will be removed from the network and reset to factory defaults. There are two methods to set the smart plug into pair mode:\n1) Repower on the smart plug, it will be set into pair mode automatically.\n2) Triple press the action button on the smart plug, it will set the plug into pair mode.\nThe LED indicator will flash a white LED fast then stay solid white for 3 seconds to indicate successful pairing. If there is no Z-Wave network available, the LED indicator will flash white fast for 6 seconds and the plug will quit pair mode automatically.\n\n# Factory Reset\nPress and hold down action button for over 10 seconds, LED indicator stays solid white for 3s to indicate successful factory reset, release action button, the smart plug will restart automatically."
+            "en": "# Pair\n1) Repower on the smart plug, it will be set into pair mode automatically.\n2) Triple press the action button on the smart plug, it will set the plug into pair mode. \n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down action button for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -8948,10 +8960,11 @@
         "productId": [
           41734
         ],
+        "includeSecure": true,
         "learnmode": {
           "image": "/drivers/4512720/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nPress and hold down both buttons I and O over 3 seconds, LED indicator turns on, the remote control will be set to pair mode, after 7s LED indicator blinks 4 times quickly to indicate successful pairing.\n\n# Factory Reset\nPress and hold down both buttons I and O for over 10 seconds, LED indicator turns on and then blinks 4 times quickly to indicate successful factory reset."
+            "en": "# Pair\nPress and hold down both buttons I and O over 3 seconds.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down both buttons I and O for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -8986,7 +8999,9 @@
       "class": "light",
       "capabilities": [
         "onoff",
-        "dim"
+        "dim",
+        "measure_power",
+        "meter_power"
       ],
       "capabilitiesOptions": {
         "onoff": {
@@ -8996,6 +9011,9 @@
           "opts": {
             "duration": true
           }
+        },
+        "measure_power": {
+          "approximated": true
         }
       },
       "icon": "/drivers/4512724/assets/icon.svg",
@@ -9014,10 +9032,11 @@
         "productId": [
           53260
         ],
+        "includeSecure": true,
         "learnmode": {
           "image": "/drivers/4512724/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nTriple press the reset button, the device will be set to pair mode.\n\n# Factory Reset\nPress and hold the reset button for over 10 seconds, the device will be reset to factory defaults."
+            "en": "# Pair\nTriple press the reset button.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold the reset button for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -9228,10 +9247,11 @@
         "productId": [
           41743
         ],
+        "includeSecure": true,
         "learnmode": {
           "image": "/drivers/4512730/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nPress and hold down both buttons over 3 seconds, LED indicator turns on, the remote control will be set to pair mode, after 7s LED indicator blinks 4 times quickly to indicate successful pairing.\n\n# Factory Reset\nPress and hold down both buttons together for over 10 seconds, LED indicator turns on and then blinks 4 times quickly to indicate successful factory reset."
+            "en": "# Pair\nPress and hold down both buttons over 3 seconds.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down both buttons together for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -9279,10 +9299,11 @@
         "productId": [
           41734
         ],
+        "includeSecure": true,
         "learnmode": {
           "image": "/drivers/4512731/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nPress and hold down both buttons I and O over 3 seconds, LED indicator turns on, the remote control will be set to pair mode, after 7s LED indicator blinks 4 times quickly to indicate successful pairing.\n\n# Factory Reset\nPress and hold down both buttons I and O for over 10 seconds, LED indicator turns on and then blinks 4 times quickly to indicate successful factory reset."
+            "en": "# Pair\nPress and hold down both buttons I and O over 3 seconds.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down both buttons I and O for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -9345,10 +9366,11 @@
         "productId": [
           53250
         ],
+        "includeSecure": true,
         "learnmode": {
           "image": "/drivers/4512743/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nTriple press the reset button, the device will be set to pair mode.\n\n# Factory Reset\nPress and hold the reset button for over 10 seconds, the device will be reset to factory defaults."
+            "en": "# Pair\nTriple press the reset button.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold the reset button for over 10 seconds."
           }
         },
         "associationGroups": [

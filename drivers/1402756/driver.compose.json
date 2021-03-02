@@ -34,10 +34,11 @@
     "productId": [
       2
     ],
+    "includeSecure": false,
     "learnmode": {
       "image": "/drivers/1402756/assets/learnmode.svg",
       "instruction": {
-        "en": "Inclusion \nTriple press the reset button on the dimmer, it will set the dimmer into inclusion mode. The purple indicator light will stay solid on for 10 seconds to indicate successful inclusion. \n\nExclusion \nTriple press the reset button, the dimmer will be set to exclusion mode, and waiting to be excluded, then the dimmer will be excluded from the network. \n\nFactory reset \nPress and hold down the reset button for over 5 seconds, the dimmer will be reset to factory defaults."
+        "en": "Inclusion, Exclusion \nTriple press the reset button on the dimmer. \n\n!!! NOTE \nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail. \n\nFactory reset \nPress and hold down the reset button for over 5 seconds."
       }
     },
     "associationGroups": [

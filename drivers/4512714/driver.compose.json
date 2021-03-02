@@ -28,10 +28,11 @@
     "productId": [
       41733
     ],
+    "includeSecure": true,
     "learnmode": {
       "image": "/drivers/4512714/assets/learnmode.svg",
       "instruction": {
-        "en": "# Pair\nPress and hold down both buttons I and O over 3 seconds, LED indicator turns on, the remote control will be set to pair mode, after 7s LED indicator blinks 4 times quickly to indicate successful pairing.\n\n# Factory Reset\nPress and hold down both buttons I and O for over 10 seconds, LED indicator turns on and then blinks 4 times quickly to indicate successful factory reset."
+        "en": "# Pair\nPress and hold down both buttons I and O over 3 seconds.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down both buttons I and O for over 10 seconds."
       }
     },
     "associationGroups": [

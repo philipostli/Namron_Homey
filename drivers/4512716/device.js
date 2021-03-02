@@ -6,9 +6,7 @@ class MyRemote extends ZwaveDevice {
 
   async onNodeInit ({ node }) {
 
-    this.enableDebug()
-    this.printNode()
-
+    this.registerCapability("alarm_contact", "NOTIFICATION")
     this.registerCapability('measure_battery', 'BATTERY')
 
     this.registerReportListener('NOTIFICATION',

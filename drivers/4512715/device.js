@@ -7,8 +7,8 @@ class SwitchLight extends ZwaveDevice {
   async onNodeInit ({ node }) {
     super.onNodeInit({ node })
 
-    this.enableDebug()
-    this.printNode()
+    // this.enableDebug()
+    // this.printNode()
 
     this.registerCapability('onoff', 'BASIC')
 
