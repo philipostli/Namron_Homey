@@ -37,5 +37,8 @@
   },
   "2.0.11": {
     "en": "1) Support Homey V5.0.0. 2) Support all namron devices. 3) Optimized the support for Flow, especially Remote. 4) If the previous devices are not working properly, please add them again."
+  },
+  "2.1.0": {
+    "en": "Added state report for ZigBee Light, added alarm_contact for Door Sensor, added meter_power and measure_power for 4512724, made some performance improvements."
   }
 }
