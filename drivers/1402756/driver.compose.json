@@ -18,6 +18,12 @@
       }
     }
   },
+  "energy": {
+    "approximation": {
+      "usageOn": 200,
+      "usageOff": 0
+    }
+  },
   "icon": "/drivers/1402756/assets/icon.svg",
   "images": {
     "large": "/drivers/1402756/assets/images/large.png",
@@ -29,7 +35,8 @@
       1080
     ],
     "productTypeId": [
-      2, 514
+      2,
+      514
     ],
     "productId": [
       2

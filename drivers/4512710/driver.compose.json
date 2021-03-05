@@ -18,6 +18,12 @@
       }
     }
   },
+  "energy": {
+    "approximation": {
+      "usageOn": 400,
+      "usageOff": 0
+    }
+  },
   "icon": "/drivers/4512710/assets/icon.svg",
   "images": {
     "large": "/drivers/4512710/assets/images/large.png",

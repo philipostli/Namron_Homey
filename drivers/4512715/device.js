@@ -10,7 +10,7 @@ class SwitchLight extends ZwaveDevice {
     // this.enableDebug()
     // this.printNode()
 
-    this.registerCapability('onoff', 'BASIC')
+    this.registerCapability('onoff', 'SWITCH_BINARY')
 
     this.registerReportListener('BASIC', 'BASIC_REPORT', report => {
       if (report && report.hasOwnProperty('Current Value')) {

@@ -40,5 +40,8 @@
   },
   "2.1.0": {
     "en": "Added state report for ZigBee Light, added alarm_contact for Door Sensor, added meter_power and measure_power for 4512724, made some performance improvements."
+  },
+  "2.1.1": {
+    "en": "Fixed the problem of 4512715 not working."
   }
 }

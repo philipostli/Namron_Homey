@@ -1,11 +1,12 @@
 {
-  "id": "4512720",
+  "id": "4512720/31",
   "name": {
     "en": "4512720"
   },
   "class": "remote",
   "capabilities": [
-    "measure_battery"
+    "measure_battery",
+    "alarm_battery"
   ],
   "energy": {
     "batteries": [

@@ -9,6 +9,7 @@ class MyRemote extends ZwaveDevice {
     // this.enableDebug()
     // this.printNode()
 
+    this.registerCapability('alarm_battery', 'BATTERY')
     this.registerCapability('measure_battery', 'BATTERY')
 
     this.registerReportListener('CENTRAL_SCENE',

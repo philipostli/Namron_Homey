@@ -7,6 +7,12 @@
   "capabilities": [
     "onoff"
   ],
+  "energy": {
+    "approximation": {
+      "usageOn": 400,
+      "usageOff": 0
+    }
+  },
   "icon": "/drivers/4512715/assets/icon.svg",
   "images": {
     "large": "/drivers/4512715/assets/images/large.png",

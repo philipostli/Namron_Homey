@@ -1,6 +1,6 @@
 {
   "id": "net.filllip-namron",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
@@ -6491,270 +6491,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "4512730_on_off",
-        "title": {
-          "en": "On/Off"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512730"
-          }
-        ]
-      },
-      {
-        "id": "4512730_on_off_key_held_down",
-        "title": {
-          "en": "On/Off (Key held down)"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512730"
-          }
-        ]
-      },
-      {
-        "id": "4512730_on_off_key_released",
-        "title": {
-          "en": "On/Off (Key released)"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512730"
-          }
-        ]
-      },
-      {
-        "id": "4512730_level",
-        "title": {
-          "en": "Level (Key pressed 1 time)"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512730"
-          }
-        ]
-      },
-      {
-        "id": "4512730_level_key_held_down",
-        "title": {
-          "en": "Level (Key held down)"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512730"
-          }
-        ]
-      },
-      {
-        "id": "4512730_level_key_released",
-        "title": {
-          "en": "Level (Key released)"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512730"
-          }
-        ]
-      },
-      {
-        "id": "4512731_on",
-        "title": {
-          "en": "On"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512731"
-          },
-          {
-            "name": "group",
-            "type": "dropdown",
-            "values": [
-              {
-                "id": "1",
-                "label": {
-                  "en": "Group 1"
-                }
-              },
-              {
-                "id": "2",
-                "label": {
-                  "en": "Group 2"
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "4512731_off",
-        "title": {
-          "en": "Off"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512731"
-          },
-          {
-            "name": "group",
-            "type": "dropdown",
-            "values": [
-              {
-                "id": "1",
-                "label": {
-                  "en": "Group 1"
-                }
-              },
-              {
-                "id": "2",
-                "label": {
-                  "en": "Group 2"
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "4512731_on_key_held_down",
-        "title": {
-          "en": "On (Key held down)"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512731"
-          },
-          {
-            "name": "group",
-            "type": "dropdown",
-            "values": [
-              {
-                "id": "1",
-                "label": {
-                  "en": "Group 1"
-                }
-              },
-              {
-                "id": "2",
-                "label": {
-                  "en": "Group 2"
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "4512731_on_key_released",
-        "title": {
-          "en": "On (Key released)"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512731"
-          },
-          {
-            "name": "group",
-            "type": "dropdown",
-            "values": [
-              {
-                "id": "1",
-                "label": {
-                  "en": "Group 1"
-                }
-              },
-              {
-                "id": "2",
-                "label": {
-                  "en": "Group 2"
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "4512731_off_key_held_down",
-        "title": {
-          "en": "Off (Key held down)"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512731"
-          },
-          {
-            "name": "group",
-            "type": "dropdown",
-            "values": [
-              {
-                "id": "1",
-                "label": {
-                  "en": "Group 1"
-                }
-              },
-              {
-                "id": "2",
-                "label": {
-                  "en": "Group 2"
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "4512731_off_key_released",
-        "title": {
-          "en": "Off (Key released)"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512731"
-          },
-          {
-            "name": "group",
-            "type": "dropdown",
-            "values": [
-              {
-                "id": "1",
-                "label": {
-                  "en": "Group 1"
-                }
-              },
-              {
-                "id": "2",
-                "label": {
-                  "en": "Group 2"
-                }
-              }
-            ]
-          }
-        ]
       }
     ]
   },
@@ -6842,6 +6578,12 @@
           "opts": {
             "duration": true
           }
+        }
+      },
+      "energy": {
+        "approximation": {
+          "usageOn": 200,
+          "usageOff": 0
         }
       },
       "icon": "/drivers/1402756/assets/icon.svg",
@@ -8464,6 +8206,12 @@
           }
         }
       },
+      "energy": {
+        "approximation": {
+          "usageOn": 400,
+          "usageOff": 0
+        }
+      },
       "icon": "/drivers/4512710/assets/icon.svg",
       "images": {
         "large": "/drivers/4512710/assets/images/large.png",
@@ -8499,7 +8247,8 @@
       },
       "class": "remote",
       "capabilities": [
-        "measure_battery"
+        "measure_battery",
+        "alarm_battery"
       ],
       "energy": {
         "batteries": [
@@ -8569,11 +8318,12 @@
     {
       "id": "4512712",
       "name": {
-        "en": "4512712"
+        "en": "4512712/30"
       },
       "class": "remote",
       "capabilities": [
-        "measure_battery"
+        "measure_battery",
+        "alarm_battery"
       ],
       "energy": {
         "batteries": [
@@ -8628,7 +8378,8 @@
       },
       "class": "remote",
       "capabilities": [
-        "measure_battery"
+        "measure_battery",
+        "alarm_battery"
       ],
       "energy": {
         "batteries": [
@@ -8683,7 +8434,8 @@
       },
       "class": "remote",
       "capabilities": [
-        "measure_battery"
+        "measure_battery",
+        "alarm_battery"
       ],
       "energy": {
         "batteries": [
@@ -8758,6 +8510,12 @@
       "capabilities": [
         "onoff"
       ],
+      "energy": {
+        "approximation": {
+          "usageOn": 400,
+          "usageOff": 0
+        }
+      },
       "icon": "/drivers/4512715/assets/icon.svg",
       "images": {
         "large": "/drivers/4512715/assets/images/large.png",
@@ -8794,7 +8552,8 @@
       "class": "sensor",
       "capabilities": [
         "alarm_contact",
-        "measure_battery"
+        "measure_battery",
+        "alarm_battery"
       ],
       "energy": {
         "batteries": [
@@ -8968,7 +8727,8 @@
       },
       "class": "remote",
       "capabilities": [
-        "measure_battery"
+        "measure_battery",
+        "alarm_battery"
       ],
       "energy": {
         "batteries": [
@@ -9250,116 +9010,6 @@
         "small": "/drivers/4512729/assets/images/small.png"
       },
       "settings": []
-    },
-    {
-      "id": "4512730",
-      "name": {
-        "en": "4512730"
-      },
-      "class": "remote",
-      "capabilities": [
-        "measure_battery"
-      ],
-      "energy": {
-        "batteries": [
-          "CR2450"
-        ]
-      },
-      "icon": "/drivers/4512730/assets/icon.svg",
-      "images": {
-        "large": "/drivers/4512730/assets/images/large.png",
-        "small": "/drivers/4512730/assets/images/small.png"
-      },
-      "zwave": {
-        "manufacturerId": 816,
-        "productTypeId": [
-          768
-        ],
-        "productId": [
-          41743
-        ],
-        "includeSecure": true,
-        "learnmode": {
-          "image": "/drivers/4512730/assets/learnmode.svg",
-          "instruction": {
-            "en": "# Pair\nPress and hold down both buttons over 3 seconds.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down both buttons together for over 10 seconds."
-          }
-        },
-        "associationGroups": [
-          1,
-          2
-        ],
-        "associationGroupsOptions": {
-          "1": {
-            "hint": {
-              "en": "1. Send Command Class Device Reset Locally Notification V1 to associated devices of this group to report factory reset information when factory reset the remote control.\n2. When remote control battery power value changes, send Command Class Battery Report V1 to associated devices of this group to report power value information.\n3. Short press or press and hold down any button to send scene activation command to the associated devices of this group using Command Class Central Scene Notification V3"
-            }
-          },
-          "2": {
-            "hint": {
-              "en": "Short press on/off button to send ON/OFF command to associated devices of this group using Command Class Basic Set V2.\n\nPress and hold down brightness button to send light intensity increase/decrease command to associated devices of this group using Command Class Multilevel V4."
-            }
-          }
-        }
-      }
-    },
-    {
-      "id": "4512731",
-      "name": {
-        "en": "4512731"
-      },
-      "class": "remote",
-      "capabilities": [
-        "measure_battery"
-      ],
-      "energy": {
-        "batteries": [
-          "CR2450"
-        ]
-      },
-      "icon": "/drivers/4512731/assets/icon.svg",
-      "images": {
-        "large": "/drivers/4512731/assets/images/large.png",
-        "small": "/drivers/4512731/assets/images/small.png"
-      },
-      "zwave": {
-        "manufacturerId": 816,
-        "productTypeId": [
-          768
-        ],
-        "productId": [
-          41734
-        ],
-        "includeSecure": true,
-        "learnmode": {
-          "image": "/drivers/4512731/assets/learnmode.svg",
-          "instruction": {
-            "en": "# Pair\nPress and hold down both buttons I and O over 3 seconds.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down both buttons I and O for over 10 seconds."
-          }
-        },
-        "associationGroups": [
-          1,
-          2,
-          3
-        ],
-        "associationGroupsOptions": {
-          "1": {
-            "hint": {
-              "en": "1. Send Command Class Device Reset Locally Notification V1 to associated devices of this group to report factory reset information when factory reset the remote control.\n2. When remote control battery power value changes, send Command Class Battery Report V1 to associated devices of this group to report power value information.\n3. Short press or press and hold down any button to send scene activation command to the associated devices of this group using Command Class Central Scene Notification V3"
-            }
-          },
-          "2": {
-            "hint": {
-              "en": "Short press I/O button of Group 2 to send ON/OFF command to associated devices of this group using Command Class Basic Set V2.\nPress and hold down I/O button of Group 2 to send light intensity increase/decrease command to associated devices of this group using Command Class Multilevel V4."
-            }
-          },
-          "3": {
-            "hint": {
-              "en": "Short press I/O button of Group 3 to send ON/OFF command to associated devices of this group using Command Class Basic Set V2.\nPress and hold down I/O button of Group 3 to send light intensity increase/decrease command to associated devices of this group using Command Class Multilevel V4."
-            }
-          }
-        }
-      }
     },
     {
       "id": "4512743",
