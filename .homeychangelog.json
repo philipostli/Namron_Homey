@@ -43,5 +43,8 @@
   },
   "2.1.1": {
     "en": "Fixed the problem of 4512715 not working."
+  },
+  "2.1.3": {
+    "en": "Fix ZW_Dimmer_Rotary"
   }
 }
