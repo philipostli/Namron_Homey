@@ -1,0 +1,304 @@
+{
+  "triggers": [
+    {
+      "id": "ZW_Remote_4_all_on",
+      "title": {
+        "en": "All on"
+      }
+    },
+    {
+      "id": "ZW_Remote_4_all_off",
+      "title": {
+        "en": "All off"
+      }
+    },
+    {
+      "id": "ZW_Remote_4_all_on_key_held_down",
+      "title": {
+        "en": "All on (Key held down)"
+      }
+    },
+    {
+      "id": "ZW_Remote_4_all_on_key_released",
+      "title": {
+        "en": "All on (Key released)"
+      }
+    },
+    {
+      "id": "ZW_Remote_4_all_off_key_held_down",
+      "title": {
+        "en": "All off (Key held down)"
+      }
+    },
+    {
+      "id": "ZW_Remote_4_all_off_key_released",
+      "title": {
+        "en": "All off (Key released)"
+      }
+    },
+    {
+      "id": "ZW_Remote_4_on",
+      "title": {
+        "en": "On"
+      },
+      "args": [
+        {
+          "name": "group",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "Group 1"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Group 2"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "Group 3"
+              }
+            },
+            {
+              "id": "4",
+              "label": {
+                "en": "Group 4"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ZW_Remote_4_off",
+      "title": {
+        "en": "Off"
+      },
+      "args": [
+        {
+          "name": "group",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "Group 1"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Group 2"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "Group 3"
+              }
+            },
+            {
+              "id": "4",
+              "label": {
+                "en": "Group 4"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ZW_Remote_4_on_key_held_down",
+      "title": {
+        "en": "On (Key held down)"
+      },
+      "args": [
+        {
+          "name": "group",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "Group 1"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Group 2"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "Group 3"
+              }
+            },
+            {
+              "id": "4",
+              "label": {
+                "en": "Group 4"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ZW_Remote_4_on_key_released",
+      "title": {
+        "en": "On (Key released)"
+      },
+      "args": [
+        {
+          "name": "group",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "Group 1"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Group 2"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "Group 3"
+              }
+            },
+            {
+              "id": "4",
+              "label": {
+                "en": "Group 4"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ZW_Remote_4_off_key_held_down",
+      "title": {
+        "en": "Off (Key held down)"
+      },
+      "args": [
+        {
+          "name": "group",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "Group 1"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Group 2"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "Group 3"
+              }
+            },
+            {
+              "id": "4",
+              "label": {
+                "en": "Group 4"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ZW_Remote_4_off_key_released",
+      "title": {
+        "en": "Off (Key released)"
+      },
+      "args": [
+        {
+          "name": "group",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "Group 1"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Group 2"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "Group 3"
+              }
+            },
+            {
+              "id": "4",
+              "label": {
+                "en": "Group 4"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ZW_Remote_4_scene_1",
+      "title": {
+        "en": "S1"
+      }
+    },
+    {
+      "id": "ZW_Remote_4_scene_2",
+      "title": {
+        "en": "S2"
+      }
+    },
+    {
+      "id": "ZW_Remote_4_scene_1_key_held_down",
+      "title": {
+        "en": "S1 (Key held down)"
+      }
+    },
+    {
+      "id": "ZW_Remote_4_scene_1_key_released",
+      "title": {
+        "en": "S1 (Key released)"
+      }
+    },
+    {
+      "id": "ZW_Remote_4_scene_2_key_held_down",
+      "title": {
+        "en": "S2 (Key held down)"
+      }
+    },
+    {
+      "id": "ZW_Remote_4_scene_2_key_released",
+      "title": {
+        "en": "S2 (Key released)"
+      }
+    }
+  ]
+}

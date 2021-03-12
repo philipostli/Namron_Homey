@@ -1,0 +1,43 @@
+{
+  "id": "ZW_InWallSwitch",
+  "name": {
+    "en": "Switch (Z-wave)"
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff"
+  ],
+  "energy": {
+    "approximation": {
+      "usageOn": 400,
+      "usageOff": 0
+    }
+  },
+  "icon": "/drivers/ZW_InWallSwitch/assets/icon.svg",
+  "images": {
+    "large": "/drivers/ZW_InWallSwitch/assets/images/large.png",
+    "small": "/drivers/ZW_InWallSwitch/assets/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": [
+      816,
+      1080
+    ],
+    "productTypeId": [
+      512
+    ],
+    "productId": [
+      53254
+    ],
+    "includeSecure": true,
+    "learnmode": {
+      "image": "/drivers/ZW_InWallSwitch/assets/learnmode.svg",
+      "instruction": {
+        "en": "# Pair\nTriple press the reset button.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold the reset button for over 10 seconds."
+      }
+    },
+    "associationGroups": [
+      1
+    ]
+  }
+}

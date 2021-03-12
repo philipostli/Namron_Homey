@@ -1,7 +1,7 @@
 {
-  "id": "4512720",
+  "id": "ZW_WallController_4",
   "name": {
-    "en": "4512720/31"
+    "en": "Wall controller - 4 button (1 and 2 channel) (Z-wave)"
   },
   "class": "remote",
   "capabilities": [
@@ -13,10 +13,10 @@
       "CR2450"
     ]
   },
-  "icon": "/drivers/4512720/assets/icon.svg",
+  "icon": "/drivers/ZW_WallController_4/assets/icon.svg",
   "images": {
-    "large": "/drivers/4512720/assets/images/large.png",
-    "small": "/drivers/4512720/assets/images/small.png"
+    "large": "/drivers/ZW_WallController_4/assets/images/large.png",
+    "small": "/drivers/ZW_WallController_4/assets/images/small.png"
   },
   "zwave": {
     "manufacturerId": [
@@ -27,11 +27,11 @@
       768
     ],
     "productId": [
-      41734
+      41734, 41744
     ],
     "includeSecure": true,
     "learnmode": {
-      "image": "/drivers/4512720/assets/learnmode.svg",
+      "image": "/drivers/ZW_WallController_4/assets/learnmode.svg",
       "instruction": {
         "en": "# Pair\nPress and hold down both buttons I and O over 3 seconds.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down both buttons I and O for over 10 seconds."
       }

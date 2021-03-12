@@ -1,0 +1,40 @@
+{
+  "triggers": [
+    {
+      "id": "ZW_WallController_2_on_off",
+      "title": {
+        "en": "On/Off"
+      }
+    },
+    {
+      "id": "ZW_WallController_2_on_off_key_held_down",
+      "title": {
+        "en": "On/Off (Key held down)"
+      }
+    },
+    {
+      "id": "ZW_WallController_2_on_off_key_released",
+      "title": {
+        "en": "On/Off (Key released)"
+      }
+    },
+    {
+      "id": "ZW_WallController_2_level",
+      "title": {
+        "en": "Level (Key pressed 1 time)"
+      }
+    },
+    {
+      "id": "ZW_WallController_2_level_key_held_down",
+      "title": {
+        "en": "Level (Key held down)"
+      }
+    },
+    {
+      "id": "ZW_WallController_2_level_key_released",
+      "title": {
+        "en": "Level (Key released)"
+      }
+    }
+  ]
+}
