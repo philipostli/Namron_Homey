@@ -13,7 +13,14 @@
     ]
   },
   "zigbee": {
-    "manufacturerName": "Sunricher",
+    "manufacturerName": [
+      "NAMRON AS",
+      "NAMRON  AS",
+      "NAMRON As",
+      "Namron AS",
+      "Namron As",
+      "namron as"
+    ],
     "productId": [
       "4512729"
     ],
