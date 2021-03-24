@@ -1,6 +1,6 @@
 {
   "id": "net.filllip-namron",
-  "version": "2.1.6",
+  "version": "2.1.9",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
@@ -6137,6 +6137,7 @@
         "title": {
           "en": "Window/Door is open"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -6150,6 +6151,7 @@
         "title": {
           "en": "Window/Door is closed"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -9481,7 +9483,7 @@
         "productId": [
           53253
         ],
-        "includeSecure": true,
+        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/4512710/assets/learnmode.svg",
           "instruction": {
@@ -9785,7 +9787,7 @@
         "productId": [
           53254
         ],
-        "includeSecure": true,
+        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/4512715/assets/learnmode.svg",
           "instruction": {
@@ -10076,7 +10078,7 @@
         "productId": [
           53260
         ],
-        "includeSecure": true,
+        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/4512724/assets/learnmode.svg",
           "instruction": {

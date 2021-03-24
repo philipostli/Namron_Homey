@@ -55,5 +55,14 @@
   },
   "2.1.6": {
     "en": "Fix that 4512729 does not work."
+  },
+  "2.1.7": {
+    "en": "Test 4512715"
+  },
+  "2.1.8": {
+    "en": "Updated drivers of 4512710, 4512715, 4512724"
+  },
+  "2.1.9": {
+    "en": "Update the flow of 4512716."
   }
 }

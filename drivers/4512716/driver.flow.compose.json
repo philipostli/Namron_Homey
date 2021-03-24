@@ -4,13 +4,15 @@
       "id": "4512716_open",
       "title": {
         "en": "Window/Door is open"
-      }
+      },
+      "deprecated": true
     },
     {
       "id": "4512716_closed",
       "title": {
         "en": "Window/Door is closed"
-      }
+      },
+      "deprecated": true
     }
   ]
 }
