@@ -49,7 +49,9 @@
       "RGB-CCT",
       "RGBW Lighting",
       "RGBW-CCT",
-      "4512707"
+      "4512707",
+      "HK-ZD-RGB-A",
+      "HK-ZD-RGBCCT-A"
     ],
     "endpoints": {
       "1": {

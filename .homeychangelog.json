@@ -64,5 +64,8 @@
   },
   "2.1.9": {
     "en": "Update the flow of 4512716."
+  },
+  "2.1.10": {
+    "en": "Fixes an issue that some devices do not recognize."
   }
 }
