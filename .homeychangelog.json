@@ -67,5 +67,11 @@
   },
   "2.1.10": {
     "en": "Fixes an issue that some devices do not recognize."
+  },
+  "2.1.11": {
+    "en": "Fixed 3802967 issue"
+  },
+  "2.1.12": {
+    "en": "Make ZigBee device pairing faster."
   }
 }
