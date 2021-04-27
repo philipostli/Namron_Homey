@@ -1,0 +1,45 @@
+{
+  "id": "4512725",
+  "name": {
+    "en": "4512725"
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff",
+    "measure_power",
+    "meter_power"
+  ],
+  "icon": "/drivers/4512725/assets/icon.svg",
+  "images": {
+    "large": "/drivers/4512725/assets/images/large.png",
+    "small": "/drivers/4512725/assets/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": [
+      1080
+    ],
+    "productTypeId": [
+      512
+    ],
+    "productId": [
+      53252
+    ],
+    "includeSecure": true,
+    "learnmode": {
+      "image": "/drivers/4512725/assets/learnmode.svg",
+      "instruction": {
+        "en": "# Pair\n1) Repower on the smart plug, it will be set into pair mode automatically.\n2) Triple press the action button on the smart plug, it will set the plug into pair mode. \n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down action button for over 10 seconds."
+      }
+    },
+    "associationGroups": [
+      1
+    ],
+    "associationGroupsOptions": {
+      "1": {
+        "hint": {
+          "en": "1. Smart plug Factory Reset, send Command Class Device Reset Locally Notification CC to associated devices of this group to report factory reset information when factory reset the smart plug.\n\n2. Smart plug overloads, send Command Class NOTIFICATION_REPORT CC to associated devices of this group to report overload information.\n\n3. When smart plug state changes, send Command Class SWITCH_BINARY_REPORT CC to associated devices of this group to report state information.\n\n4. METER_ REPORT"
+        }
+      }
+    }
+  }
+}

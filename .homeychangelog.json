@@ -76,5 +76,8 @@
   },
   "2.1.13": {
     "en": "Add support for the latest remote firmware."
+  },
+  "2.1.14": {
+    "en": "Added support for 4512725."
   }
 }
