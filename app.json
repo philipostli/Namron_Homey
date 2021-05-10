@@ -9980,7 +9980,10 @@
       "capabilities": [
         "onoff",
         "measure_power",
-        "meter_power"
+        "meter_power",
+        "measure_temperature",
+        "target_temperature",
+        "my_device_operating_mode"
       ],
       "icon": "/drivers/4512725/assets/icon.svg",
       "images": {
@@ -10010,11 +10013,12 @@
         "associationGroupsOptions": {
           "1": {
             "hint": {
-              "en": "1. Smart plug Factory Reset, send Command Class Device Reset Locally Notification CC to associated devices of this group to report factory reset information when factory reset the smart plug.\n\n2. Smart plug overloads, send Command Class NOTIFICATION_REPORT CC to associated devices of this group to report overload information.\n\n3. When smart plug state changes, send Command Class SWITCH_BINARY_REPORT CC to associated devices of this group to report state information.\n\n4. METER_ REPORT"
+              "en": "1. Smart plug Factory Reset, send Command Class \"Device Reset Locally Notification CC\" to associated devices of this group to report factory reset information when factory reset the smart plug.\n2. Smart plug over current, over temperature, send Command Class \"NOTIFICATION_REPORT CC\" to associated devices of this group to report overload information.\n3. When smart plug state changes, send Command Class \"SWITCH_BINARY_REPORT CC\" to associated devices of this group to report state information.\n4. METER_REPORT\n5. Send SENSOR_MULTILEVEL_REPORT to report temperature\n6. Report when thermostat setpoint or mode changes"
             }
           }
         }
-      }
+      },
+      "settings": []
     },
     {
       "id": "4512726",
@@ -10797,5 +10801,31 @@
         }
       }
     }
-  ]
+  ],
+  "capabilities": {
+    "my_device_operating_mode": {
+      "id": "my_device_operating_mode",
+      "title": {
+        "en": "Device operating mode"
+      },
+      "type": "enum",
+      "setable": true,
+      "getable": true,
+      "uiComponent": "picker",
+      "values": [
+        {
+          "id": "switch_mode",
+          "title": {
+            "en": "Switch mode"
+          }
+        },
+        {
+          "id": "thermostat_mode",
+          "title": {
+            "en": "Thermostat mode"
+          }
+        }
+      ]
+    }
+  }
 }
