@@ -79,5 +79,11 @@
   },
   "2.1.14": {
     "en": "Added support for 4512725."
+  },
+  "2.1.15": {
+    "en": "Add the support for the thermostat mode to 4512725."
+  },
+  "2.1.16": {
+    "en": "Add the support for the thermostat mode to 4512725."
   }
 }

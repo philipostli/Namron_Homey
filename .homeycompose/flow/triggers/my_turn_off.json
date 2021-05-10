@@ -1,0 +1,12 @@
+{
+  "title": {
+    "en": "Turn off"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=4512743"
+    }
+  ]
+}
