@@ -4,43 +4,50 @@
       "id": "4512711_all_on",
       "title": {
         "en": "All on"
-      }
+      },
+      "deprecated": true
     },
     {
       "id": "4512711_all_off",
       "title": {
         "en": "All off"
-      }
+      },
+      "deprecated": true
     },
     {
       "id": "4512711_all_on_key_held_down",
       "title": {
         "en": "All on (Key held down)"
-      }
+      },
+      "deprecated": true
     },
     {
       "id": "4512711_all_on_key_released",
       "title": {
         "en": "All on (Key released)"
-      }
+      },
+      "deprecated": true
     },
     {
       "id": "4512711_all_off_key_held_down",
       "title": {
         "en": "All off (Key held down)"
-      }
+      },
+      "deprecated": true
     },
     {
       "id": "4512711_all_off_key_released",
       "title": {
         "en": "All off (Key released)"
-      }
+      },
+      "deprecated": true
     },
     {
       "id": "4512711_on",
       "title": {
         "en": "On"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -79,6 +86,7 @@
       "title": {
         "en": "Off"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -117,6 +125,7 @@
       "title": {
         "en": "On (Key held down)"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -155,6 +164,7 @@
       "title": {
         "en": "On (Key released)"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -193,6 +203,7 @@
       "title": {
         "en": "Off (Key held down)"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -231,6 +242,7 @@
       "title": {
         "en": "Off (Key released)"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -268,37 +280,43 @@
       "id": "4512711_scene_1",
       "title": {
         "en": "S1"
-      }
+      },
+      "deprecated": true
     },
     {
       "id": "4512711_scene_2",
       "title": {
         "en": "S2"
-      }
+      },
+      "deprecated": true
     },
     {
       "id": "4512711_scene_1_key_held_down",
       "title": {
         "en": "S1 (Key held down)"
-      }
+      },
+      "deprecated": true
     },
     {
       "id": "4512711_scene_1_key_released",
       "title": {
         "en": "S1 (Key released)"
-      }
+      },
+      "deprecated": true
     },
     {
       "id": "4512711_scene_2_key_held_down",
       "title": {
         "en": "S2 (Key held down)"
-      }
+      },
+      "deprecated": true
     },
     {
       "id": "4512711_scene_2_key_released",
       "title": {
         "en": "S2 (Key released)"
-      }
+      },
+      "deprecated": true
     }
   ]
 }

@@ -1,0 +1,113 @@
+{
+  "title": {
+    "en": "Scene button is..."
+  },
+  "titleFormatted": {
+    "en": "[[group]] scene button [[scene]] is [[mode]]"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=4512706"
+    },
+    {
+      "name": "group",
+      "type": "dropdown",
+      "values": [
+        {
+          "id": "1",
+          "label": {
+            "en": "Group 1"
+          }
+        },
+        {
+          "id": "2",
+          "label": {
+            "en": "Group 2"
+          }
+        },
+        {
+          "id": "3",
+          "label": {
+            "en": "Group 3"
+          }
+        },
+        {
+          "id": "4",
+          "label": {
+            "en": "Group 4"
+          }
+        }
+      ]
+    },
+    {
+      "name": "scene",
+      "type": "dropdown",
+      "title": "Scene button",
+      "values": [
+        {
+          "id": "1",
+          "label": {
+            "en": "S1"
+          }
+        },
+        {
+          "id": "2",
+          "label": {
+            "en": "S2"
+          }
+        },
+        {
+          "id": "3",
+          "label": {
+            "en": "S3"
+          }
+        },
+        {
+          "id": "4",
+          "label": {
+            "en": "S4"
+          }
+        },
+        {
+          "id": "5",
+          "label": {
+            "en": "S5"
+          }
+        },
+        {
+          "id": "6",
+          "label": {
+            "en": "S6"
+          }
+        },
+        {
+          "id": "7",
+          "label": {
+            "en": "S7"
+          }
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "name": "mode",
+      "title": "Mode",
+      "values": [
+        {
+          "id": "pressed",
+          "label": {
+            "en": "pressed"
+          }
+        },
+        {
+          "id": "held_down",
+          "label": {
+            "en": "held down"
+          }
+        }
+      ]
+    }
+  ]
+}

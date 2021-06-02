@@ -3,6 +3,7 @@
   "name": {
     "en": "Dimmer - Rotary (Z-wave)"
   },
+  "deprecated": true,
   "class": "light",
   "capabilities": [
     "onoff",

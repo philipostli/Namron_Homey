@@ -54,6 +54,17 @@ class RemoteControl extends ZigBeeRemoteControl {
     const tokens = {}
     const state = { 'group': endpoint }
     this.driver.getDeviceTriggerCard(type).trigger(this, tokens, state)
+
+    if (type === '4512726_off') {
+
+      this.homey.app.switchButtonOnOffTriggerCard.trigger(this, tokens,
+        { 'mode': 'off' })
+
+    } else if (type === '4512726_on') {
+
+      this.homey.app.switchButtonOnOffTriggerCard.trigger(this, tokens,
+        { 'mode': 'on' })
+    }
   }
 
   _onMoveToHue ({ hue }, endpoint) {
@@ -63,7 +74,10 @@ class RemoteControl extends ZigBeeRemoteControl {
 
     const tokens = { 'hue': homeyHue }
     const state = { 'group': endpoint }
-    this.driver.getDeviceTriggerCard('4512726_move_to_hue').trigger(this, tokens, state)
+    this.driver.getDeviceTriggerCard('4512726_move_to_hue').
+      trigger(this, tokens, state)
+
+    this.homey.app.hueMovedTriggerCard.trigger(this, tokens, state)
   }
 
   _onMoveToColorTemperature ({ colorTemperature, transitionTime }, endpoint) {
@@ -71,26 +85,34 @@ class RemoteControl extends ZigBeeRemoteControl {
     this.log(
       `_onMoveToColorTemperature ${colorTemperature} ${transitionTime}, ${endpoint}`)
 
+    const whiteValue = SrUtils.getColorTemperatureToken(colorTemperature)
     const tokens = {
-      'color_temperature': SrUtils.getColorTemperatureToken(colorTemperature),
+      'color_temperature': whiteValue,
       'transition_time': Math.floor(transitionTime / 10),
     }
     const state = { 'group': endpoint }
     this.driver.getDeviceTriggerCard('4512726_move_to_color_temperature').
       trigger(this, tokens, state)
+
+    this.homey.app.whiteMovedTriggerCard.trigger(this, { 'white': whiteValue },
+      state)
   }
 
   _onMoveToLevelWithOnOff ({ level, transitionTime }, endpoint) {
 
     this.log(`_onMoveToLevel ${level} ${transitionTime}, ${endpoint}`)
 
+    const brightness = SrUtils.getMoveToLevelToken(level)
     const tokens = {
-      'level': SrUtils.getMoveToLevelToken(level),
+      'level': brightness,
       'transition_time': Math.floor(transitionTime / 10),
     }
     const state = { 'group': endpoint }
     this.driver.getDeviceTriggerCard('4512726_move_to_level_with_onoff').
       trigger(this, tokens, state)
+
+    this.homey.app.brightnessMovedTriggerCard.trigger(this,
+      { 'brightness': brightness }, state)
   }
 
 }

@@ -5,7 +5,7 @@
   "sdk": 3,
   "brandColor": "#C0C81D",
   "name": {
-    "en": "namron"
+    "en": "Namron AS"
   },
   "description": {
     "en": "The smarter choice."
@@ -17,7 +17,8 @@
     "en": [
       "namron",
       "namron as",
-      "namronas"
+      "namronas",
+      "Namron AS"
     ]
   },
   "permissions": [
@@ -57,12 +58,6 @@
     "triggers": [
       {
         "title": {
-          "en": "Dim"
-        },
-        "id": "my_dim"
-      },
-      {
-        "title": {
           "en": "Turn off"
         },
         "args": [
@@ -88,10 +83,1430 @@
         "id": "my_turn_on"
       },
       {
+        "title": {
+          "en": "All off button is..."
+        },
+        "titleFormatted": {
+          "en": "All off button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512711"
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              },
+              {
+                "id": "released",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_all_off_button_mode"
+      },
+      {
+        "title": {
+          "en": "All on button is..."
+        },
+        "titleFormatted": {
+          "en": "All on button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512711"
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              },
+              {
+                "id": "released",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_all_on_button_mode"
+      },
+      {
+        "title": {
+          "en": "Brightness button is..."
+        },
+        "titleFormatted": {
+          "en": "Brightness button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512712"
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              },
+              {
+                "id": "released",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_brightness_button_mode"
+      },
+      {
+        "title": {
+          "en": "Brightness button is..."
+        },
+        "titleFormatted": {
+          "en": "Brightness button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512701|4512728"
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "up",
+                "label": {
+                  "en": "held down (increasing)"
+                }
+              },
+              {
+                "id": "down",
+                "label": {
+                  "en": "held down (decreasing)"
+                }
+              },
+              {
+                "id": "stop",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_brightness_button_mode_zg"
+      },
+      {
+        "title": {
+          "en": "Brightness button is..."
+        },
+        "titleFormatted": {
+          "en": "[[group]] brightness [[type]] button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512706"
+          },
+          {
+            "name": "group",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Group 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Group 2"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "Group 3"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "Group 4"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "type",
+            "title": "Button type",
+            "values": [
+              {
+                "id": "up",
+                "label": {
+                  "en": "up"
+                }
+              },
+              {
+                "id": "down",
+                "label": {
+                  "en": "down"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              },
+              {
+                "id": "released",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_brightness_button_type_mode_g4"
+      },
+      {
+        "title": {
+          "en": "Brightness is moved"
+        },
+        "titleFormatted": {
+          "en": "Brightness is moved"
+        },
+        "hint": "The brightness range from 0.00 to 1.00",
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512726"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "brightness",
+            "type": "number",
+            "title": {
+              "en": "Brightness"
+            },
+            "example": 0
+          }
+        ],
+        "id": "sr_brightness_moved"
+      },
+      {
+        "title": {
+          "en": "Brightness button is..."
+        },
+        "titleFormatted": {
+          "en": "Brightness [[type]] button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512702|4512713"
+          },
+          {
+            "type": "dropdown",
+            "name": "type",
+            "title": "Button type",
+            "values": [
+              {
+                "id": "up",
+                "label": {
+                  "en": "up"
+                }
+              },
+              {
+                "id": "down",
+                "label": {
+                  "en": "down"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              },
+              {
+                "id": "released",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_brightness_type_button_mode"
+      },
+      {
+        "title": {
+          "en": "Hue is moved"
+        },
+        "titleFormatted": {
+          "en": "Hue is moved"
+        },
+        "hint": "The hue range from 0.00 to 1.00",
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512726"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "hue",
+            "type": "number",
+            "title": {
+              "en": "Hue"
+            },
+            "example": 0
+          }
+        ],
+        "id": "sr_hue_moved"
+      },
+      {
+        "title": {
+          "en": "Hue is moved"
+        },
+        "titleFormatted": {
+          "en": "[[group]] hue is moved"
+        },
+        "hint": "The hue range from 0.00 to 1.00",
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512706"
+          },
+          {
+            "name": "group",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Group 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Group 2"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "Group 3"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "Group 4"
+                }
+              }
+            ]
+          }
+        ],
+        "tokens": [
+          {
+            "name": "hue",
+            "type": "number",
+            "title": {
+              "en": "Hue"
+            },
+            "example": 0
+          }
+        ],
+        "id": "sr_hue_moved_g4"
+      },
+      {
+        "title": {
+          "en": "Off button is..."
+        },
+        "titleFormatted": {
+          "en": "Off button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512713"
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              },
+              {
+                "id": "released",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_off_button_mode"
+      },
+      {
+        "title": {
+          "en": "Off button is..."
+        },
+        "titleFormatted": {
+          "en": "[[group]] off button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512719|4512720|4512729"
+          },
+          {
+            "name": "group",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Group 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Group 2"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              },
+              {
+                "id": "released",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_off_button_mode_g2"
+      },
+      {
+        "title": {
+          "en": "Off button is..."
+        },
+        "titleFormatted": {
+          "en": "[[group]] off button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512703|4512705|4512711|4512714"
+          },
+          {
+            "name": "group",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Group 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Group 2"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "Group 3"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "Group 4"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              },
+              {
+                "id": "released",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_off_button_mode_g4"
+      },
+      {
+        "title": {
+          "en": "Off button is pressed"
+        },
+        "titleFormatted": {
+          "en": "Off button is pressed"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512702"
+          }
+        ],
+        "id": "sr_off_button_pressed"
+      },
+      {
+        "title": {
+          "en": "On button is..."
+        },
+        "titleFormatted": {
+          "en": "On button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512713"
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              },
+              {
+                "id": "released",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_on_button_mode"
+      },
+      {
+        "title": {
+          "en": "On button is..."
+        },
+        "titleFormatted": {
+          "en": "[[group]] on button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512719|4512720|4512729"
+          },
+          {
+            "name": "group",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Group 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Group 2"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              },
+              {
+                "id": "released",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_on_button_mode_g2"
+      },
+      {
+        "title": {
+          "en": "On button is..."
+        },
+        "titleFormatted": {
+          "en": "[[group]] on button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512703|4512705|4512711|4512714"
+          },
+          {
+            "name": "group",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Group 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Group 2"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "Group 3"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "Group 4"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              },
+              {
+                "id": "released",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_on_button_mode_g4"
+      },
+      {
+        "title": {
+          "en": "On button is pressed"
+        },
+        "titleFormatted": {
+          "en": "On button is pressed"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512702"
+          }
+        ],
+        "id": "sr_on_button_pressed"
+      },
+      {
+        "title": {
+          "en": "Saturation button is..."
+        },
+        "titleFormatted": {
+          "en": "[[group]] saturation button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512706"
+          },
+          {
+            "name": "group",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Group 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Group 2"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "Group 3"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "Group 4"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "up",
+                "label": {
+                  "en": "held down (increasing)"
+                }
+              },
+              {
+                "id": "down",
+                "label": {
+                  "en": "held down (decreasing)"
+                }
+              },
+              {
+                "id": "stop",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_saturation_button_mode_g4"
+      },
+      {
+        "title": {
+          "en": "Scene button is..."
+        },
+        "titleFormatted": {
+          "en": "[[group]] scene button [[scene]] is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512706"
+          },
+          {
+            "name": "group",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Group 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Group 2"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "Group 3"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "Group 4"
+                }
+              }
+            ]
+          },
+          {
+            "name": "scene",
+            "type": "dropdown",
+            "title": "Scene button",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "S1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "S2"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "S3"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "S4"
+                }
+              },
+              {
+                "id": "5",
+                "label": {
+                  "en": "S5"
+                }
+              },
+              {
+                "id": "6",
+                "label": {
+                  "en": "S6"
+                }
+              },
+              {
+                "id": "7",
+                "label": {
+                  "en": "S7"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_scene_button_mode_g4_s7"
+      },
+      {
+        "title": {
+          "en": "Scene button is..."
+        },
+        "titleFormatted": {
+          "en": "Scene button [[scene]] is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512711"
+          },
+          {
+            "type": "dropdown",
+            "name": "scene",
+            "title": "Scene button type",
+            "values": [
+              {
+                "id": "s1",
+                "label": {
+                  "en": "S1"
+                }
+              },
+              {
+                "id": "s2",
+                "label": {
+                  "en": "S2"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              },
+              {
+                "id": "released",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_scene_button_mode_s2"
+      },
+      {
+        "title": {
+          "en": "Scene button is..."
+        },
+        "titleFormatted": {
+          "en": "Scene button [[scene]] is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512705"
+          },
+          {
+            "type": "dropdown",
+            "name": "scene",
+            "title": "Scene button type",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "S1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "S2"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_scene_button_mode_s2_zg"
+      },
+      {
+        "title": {
+          "en": "Switch button is..."
+        },
+        "titleFormatted": {
+          "en": "Switch button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512712"
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              },
+              {
+                "id": "released",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_switch_button_mode"
+      },
+      {
+        "title": {
+          "en": "Switch button is..."
+        },
+        "titleFormatted": {
+          "en": "Switch button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512701|4512726|4512728"
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "on",
+                "label": {
+                  "en": "turned on"
+                }
+              },
+              {
+                "id": "off",
+                "label": {
+                  "en": "turned off"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_switch_button_on_off"
+      },
+      {
+        "title": {
+          "en": "Switch button is..."
+        },
+        "titleFormatted": {
+          "en": "[[group]] switch button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512706"
+          },
+          {
+            "name": "group",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Group 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Group 2"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "Group 3"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "Group 4"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "on",
+                "label": {
+                  "en": "turned on"
+                }
+              },
+              {
+                "id": "off",
+                "label": {
+                  "en": "turned off"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_switch_button_on_off_g4"
+      },
+      {
+        "title": {
+          "en": "White button is..."
+        },
+        "titleFormatted": {
+          "en": "[[group]] [[type]] button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512706"
+          },
+          {
+            "name": "group",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Group 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Group 2"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "Group 3"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "Group 4"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "type",
+            "title": "Button type",
+            "values": [
+              {
+                "id": "warmer",
+                "label": {
+                  "en": "warmer"
+                }
+              },
+              {
+                "id": "cooler",
+                "label": {
+                  "en": "cooler"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              },
+              {
+                "id": "released",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_white_button_type_mode_g4"
+      },
+      {
+        "title": {
+          "en": "White is moved"
+        },
+        "titleFormatted": {
+          "en": "White is moved"
+        },
+        "hint": "The white range from 0.00 to 1.00, 0.00 for coolest white, 1.00 for warmest white.",
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512726"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "white",
+            "type": "number",
+            "title": {
+              "en": "White"
+            },
+            "example": 0
+          }
+        ],
+        "id": "sr_white_moved"
+      },
+      {
+        "title": {
+          "en": "White is moved"
+        },
+        "titleFormatted": {
+          "en": "[[group]] white is moved"
+        },
+        "hint": "The white range from 0.00 to 1.00, 0.00 for coolest white, 1.00 for warmest white.",
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512706"
+          },
+          {
+            "name": "group",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Group 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Group 2"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "Group 3"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "Group 4"
+                }
+              }
+            ]
+          }
+        ],
+        "tokens": [
+          {
+            "name": "white",
+            "type": "number",
+            "title": {
+              "en": "White"
+            },
+            "example": 0
+          }
+        ],
+        "id": "sr_white_moved_g4"
+      },
+      {
         "id": "4512701_on",
         "title": {
           "en": "On"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -105,6 +1520,7 @@
         "title": {
           "en": "Off"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -118,6 +1534,7 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -149,6 +1566,7 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -162,6 +1580,7 @@
         "title": {
           "en": "On"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -175,6 +1594,7 @@
         "title": {
           "en": "Off"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -188,6 +1608,7 @@
         "title": {
           "en": "Step level (with On/Off)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -227,6 +1648,7 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -258,6 +1680,7 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -271,6 +1694,7 @@
         "title": {
           "en": "On"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -314,6 +1738,7 @@
         "title": {
           "en": "Off"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -357,6 +1782,7 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -418,6 +1844,7 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -461,6 +1888,7 @@
         "title": {
           "en": "On"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -504,6 +1932,7 @@
         "title": {
           "en": "Off"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -547,6 +1976,7 @@
         "title": {
           "en": "Recall scene"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -608,6 +2038,7 @@
         "title": {
           "en": "Store scene"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -669,6 +2100,7 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -730,6 +2162,7 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -773,6 +2206,7 @@
         "title": {
           "en": "On"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -816,6 +2250,7 @@
         "title": {
           "en": "Off"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -859,6 +2294,7 @@
         "title": {
           "en": "Move to hue"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -912,6 +2348,7 @@
         "title": {
           "en": "Move to saturation"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -965,6 +2402,7 @@
         "title": {
           "en": "Move saturation"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1026,6 +2464,7 @@
         "title": {
           "en": "Recall scene"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1087,6 +2526,7 @@
         "title": {
           "en": "Store scene"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1148,6 +2588,7 @@
         "title": {
           "en": "Step level (with On/Off)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1217,6 +2658,7 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1278,6 +2720,7 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1321,6 +2764,7 @@
         "title": {
           "en": "Step color temperature"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1390,6 +2834,7 @@
         "title": {
           "en": "Move to color temperature"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1451,6 +2896,7 @@
         "title": {
           "en": "Move color temperature"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1512,6 +2958,7 @@
         "title": {
           "en": "Stop move step"
         },
+        "deprecated": true,
         "hint": {
           "en": "The stop move step command is provided to allow Move and Step commands to be stopped."
         },
@@ -1558,6 +3005,7 @@
         "title": {
           "en": "All on"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1571,6 +3019,7 @@
         "title": {
           "en": "All off"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1584,6 +3033,7 @@
         "title": {
           "en": "All on (Key held down)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1597,6 +3047,7 @@
         "title": {
           "en": "All on (Key released)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1610,6 +3061,7 @@
         "title": {
           "en": "All off (Key held down)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1623,6 +3075,7 @@
         "title": {
           "en": "All off (Key released)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1636,6 +3089,7 @@
         "title": {
           "en": "On"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1679,6 +3133,7 @@
         "title": {
           "en": "Off"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1722,6 +3177,7 @@
         "title": {
           "en": "On (Key held down)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1765,6 +3221,7 @@
         "title": {
           "en": "On (Key released)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1808,6 +3265,7 @@
         "title": {
           "en": "Off (Key held down)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1851,6 +3309,7 @@
         "title": {
           "en": "Off (Key released)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1894,6 +3353,7 @@
         "title": {
           "en": "S1"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1907,6 +3367,7 @@
         "title": {
           "en": "S2"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1920,6 +3381,7 @@
         "title": {
           "en": "S1 (Key held down)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1933,6 +3395,7 @@
         "title": {
           "en": "S1 (Key released)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1946,6 +3409,7 @@
         "title": {
           "en": "S2 (Key held down)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1959,6 +3423,7 @@
         "title": {
           "en": "S2 (Key released)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1972,6 +3437,7 @@
         "title": {
           "en": "On/Off"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1985,6 +3451,7 @@
         "title": {
           "en": "On/Off (Key held down)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -1998,6 +3465,7 @@
         "title": {
           "en": "On/Off (Key released)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2011,6 +3479,7 @@
         "title": {
           "en": "Level (Key pressed 1 time)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2024,6 +3493,7 @@
         "title": {
           "en": "Level (Key held down)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2037,6 +3507,7 @@
         "title": {
           "en": "Level (Key released)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2050,6 +3521,7 @@
         "title": {
           "en": "On"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2063,6 +3535,7 @@
         "title": {
           "en": "Off"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2076,6 +3549,7 @@
         "title": {
           "en": "On (Key held down)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2089,6 +3563,7 @@
         "title": {
           "en": "On (Key released)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2102,6 +3577,7 @@
         "title": {
           "en": "Off (Key held down)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2115,6 +3591,7 @@
         "title": {
           "en": "Off (Key released)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2128,6 +3605,7 @@
         "title": {
           "en": "Level up (Key pressed 1 time)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2141,6 +3619,7 @@
         "title": {
           "en": "Level down (Key pressed 1 time)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2154,6 +3633,7 @@
         "title": {
           "en": "Level up (Key held down)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2167,6 +3647,7 @@
         "title": {
           "en": "Level up (Key released)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2180,6 +3661,7 @@
         "title": {
           "en": "Level down (Key held down)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2193,6 +3675,7 @@
         "title": {
           "en": "Level down (Key released)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2206,6 +3689,7 @@
         "title": {
           "en": "On"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2249,6 +3733,7 @@
         "title": {
           "en": "Off"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2292,6 +3777,7 @@
         "title": {
           "en": "On (Key held down)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2335,6 +3821,7 @@
         "title": {
           "en": "On (Key released)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2378,6 +3865,7 @@
         "title": {
           "en": "Off (Key held down)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2421,6 +3909,7 @@
         "title": {
           "en": "Off (Key released)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2460,38 +3949,11 @@
         ]
       },
       {
-        "id": "4512716_open",
-        "title": {
-          "en": "Window/Door is open"
-        },
-        "deprecated": true,
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512716"
-          }
-        ]
-      },
-      {
-        "id": "4512716_closed",
-        "title": {
-          "en": "Window/Door is closed"
-        },
-        "deprecated": true,
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512716"
-          }
-        ]
-      },
-      {
         "id": "4512719_on",
         "title": {
           "en": "On"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2523,6 +3985,7 @@
         "title": {
           "en": "Off"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2554,6 +4017,7 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2603,6 +4067,7 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2634,6 +4099,7 @@
         "title": {
           "en": "On"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2665,6 +4131,7 @@
         "title": {
           "en": "Off"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2696,6 +4163,7 @@
         "title": {
           "en": "On (Key held down)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2727,6 +4195,7 @@
         "title": {
           "en": "On (Key released)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2758,6 +4227,7 @@
         "title": {
           "en": "Off (Key held down)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2789,6 +4259,7 @@
         "title": {
           "en": "Off (Key released)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2820,6 +4291,7 @@
         "title": {
           "en": "On"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2833,6 +4305,7 @@
         "title": {
           "en": "Off"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2846,6 +4319,7 @@
         "title": {
           "en": "Move to level (with On/Off)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2877,6 +4351,7 @@
         "title": {
           "en": "Move to color temperature"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2908,6 +4383,7 @@
         "title": {
           "en": "Move to hue"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2931,6 +4407,7 @@
         "title": {
           "en": "On"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2944,6 +4421,7 @@
         "title": {
           "en": "Off"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2957,6 +4435,7 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -2988,6 +4467,7 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -3001,6 +4481,7 @@
         "title": {
           "en": "On"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -3032,6 +4513,7 @@
         "title": {
           "en": "Off"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -3063,6 +4545,7 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -3112,6 +4595,7 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "deprecated": true,
         "args": [
           {
             "type": "device",
@@ -4077,9 +5561,80 @@
     ],
     "actions": [
       {
+        "title": {
+          "en": "Start dim change"
+        },
+        "titleFormatted": {
+          "en": "[[mode]] dim in [[duration]]"
+        },
+        "duration": false,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512724"
+          },
+          {
+            "name": "mode",
+            "type": "dropdown",
+            "title": {
+              "en": "Mode"
+            },
+            "values": [
+              {
+                "id": "up",
+                "label": {
+                  "en": "Increase"
+                }
+              },
+              {
+                "id": "down",
+                "label": {
+                  "en": "Decrease"
+                }
+              }
+            ]
+          },
+          {
+            "name": "duration",
+            "type": "range",
+            "title": {
+              "en": "Change duration"
+            },
+            "min": 1,
+            "max": 127,
+            "step": 1,
+            "label": " seconds",
+            "labelMultiplier": 1,
+            "labelDecimals": 0
+          }
+        ],
+        "id": "sr_zw_start_dim_change_v4"
+      },
+      {
+        "title": {
+          "en": "Stop dim change"
+        },
+        "titleFormatted": {
+          "en": "Stop dim change"
+        },
+        "duration": false,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512724"
+          }
+        ],
+        "id": "sr_zw_stop_dim_change"
+      },
+      {
         "id": "1402755_level_step_with_onoff",
         "title": {
           "en": "Step level (with On/Off)"
+        },
+        "hint": {
+          "en": "Change the brightness step by step."
         },
         "duration": false,
         "args": [
@@ -4128,6 +5683,9 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "hint": {
+          "en": "Change the brightness continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -4163,6 +5721,9 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "hint": {
+          "en": "Stop changing the brightness."
+        },
         "duration": false,
         "args": [
           {
@@ -4176,6 +5737,9 @@
         "id": "1402755_recall_scene",
         "title": {
           "en": "Recall scene"
+        },
+        "hint": {
+          "en": "Recall the saved scene."
         },
         "args": [
           {
@@ -4204,6 +5768,9 @@
         "title": {
           "en": "Store scene"
         },
+        "hint": {
+          "en": "Save the current state to the scene."
+        },
         "args": [
           {
             "type": "device",
@@ -4230,6 +5797,9 @@
         "id": "3308431_level_step_with_onoff",
         "title": {
           "en": "Step level (with On/Off)"
+        },
+        "hint": {
+          "en": "Change the brightness step by step."
         },
         "duration": false,
         "args": [
@@ -4278,6 +5848,9 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "hint": {
+          "en": "Change the brightness continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -4313,6 +5886,9 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "hint": {
+          "en": "Stop changing the brightness."
+        },
         "duration": false,
         "args": [
           {
@@ -4326,6 +5902,9 @@
         "id": "3308431_recall_scene",
         "title": {
           "en": "Recall scene"
+        },
+        "hint": {
+          "en": "Recall the saved scene."
         },
         "args": [
           {
@@ -4354,6 +5933,9 @@
         "title": {
           "en": "Store scene"
         },
+        "hint": {
+          "en": "Save the current state to the scene."
+        },
         "args": [
           {
             "type": "device",
@@ -4380,6 +5962,9 @@
         "id": "3802960_level_step_with_onoff",
         "title": {
           "en": "Step level (with On/Off)"
+        },
+        "hint": {
+          "en": "Change the brightness step by step."
         },
         "duration": false,
         "args": [
@@ -4428,6 +6013,9 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "hint": {
+          "en": "Change the brightness continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -4463,6 +6051,9 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "hint": {
+          "en": "Stop changing the brightness."
+        },
         "duration": false,
         "args": [
           {
@@ -4476,6 +6067,9 @@
         "id": "3802960_recall_scene",
         "title": {
           "en": "Recall scene"
+        },
+        "hint": {
+          "en": "Recall the saved scene."
         },
         "args": [
           {
@@ -4504,6 +6098,9 @@
         "title": {
           "en": "Store scene"
         },
+        "hint": {
+          "en": "Save the current state to the scene."
+        },
         "args": [
           {
             "type": "device",
@@ -4530,6 +6127,9 @@
         "id": "3802961_level_step_with_onoff",
         "title": {
           "en": "Step level (with On/Off)"
+        },
+        "hint": {
+          "en": "Change the brightness step by step."
         },
         "duration": false,
         "args": [
@@ -4578,6 +6178,9 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "hint": {
+          "en": "Change the brightness continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -4613,6 +6216,9 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "hint": {
+          "en": "Stop changing the brightness."
+        },
         "duration": false,
         "args": [
           {
@@ -4626,6 +6232,9 @@
         "id": "3802961_step_color_temperature",
         "title": {
           "en": "Step color temperature"
+        },
+        "hint": {
+          "en": "Change the color temperature step by step."
         },
         "duration": false,
         "args": [
@@ -4672,6 +6281,9 @@
         "title": {
           "en": "Move color temperature"
         },
+        "hint": {
+          "en": "Change the color temperature continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -4708,7 +6320,7 @@
           "en": "Stop move step"
         },
         "hint": {
-          "en": "The stop move step command is provided to allow Move and Step commands to be stopped."
+          "en": "Stop changing the color."
         },
         "duration": false,
         "args": [
@@ -4723,6 +6335,9 @@
         "id": "3802961_recall_scene",
         "title": {
           "en": "Recall scene"
+        },
+        "hint": {
+          "en": "Recall the saved scene."
         },
         "args": [
           {
@@ -4751,6 +6366,9 @@
         "title": {
           "en": "Store scene"
         },
+        "hint": {
+          "en": "Save the current state to the scene."
+        },
         "args": [
           {
             "type": "device",
@@ -4777,6 +6395,9 @@
         "id": "3802962_level_step_with_onoff",
         "title": {
           "en": "Step level (with On/Off)"
+        },
+        "hint": {
+          "en": "Change the brightness step by step."
         },
         "duration": false,
         "args": [
@@ -4825,6 +6446,9 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "hint": {
+          "en": "Change the brightness continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -4860,6 +6484,9 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "hint": {
+          "en": "Stop changing the brightness."
+        },
         "duration": false,
         "args": [
           {
@@ -4873,6 +6500,9 @@
         "id": "3802962_move_hue",
         "title": {
           "en": "Move hue"
+        },
+        "hint": {
+          "en": "Change the hue continuously."
         },
         "duration": false,
         "args": [
@@ -4909,6 +6539,9 @@
         "title": {
           "en": "Move saturation"
         },
+        "hint": {
+          "en": "Change the saturation continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -4943,6 +6576,9 @@
         "id": "3802962_step_color_temperature",
         "title": {
           "en": "Step color temperature"
+        },
+        "hint": {
+          "en": "Change the color temperature step by step."
         },
         "duration": false,
         "args": [
@@ -4989,6 +6625,9 @@
         "title": {
           "en": "Move color temperature"
         },
+        "hint": {
+          "en": "Change the color temperature continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -5025,7 +6664,7 @@
           "en": "Stop move step"
         },
         "hint": {
-          "en": "The stop move step command is provided to allow Move and Step commands to be stopped."
+          "en": "Stop changing the color."
         },
         "duration": false,
         "args": [
@@ -5040,6 +6679,9 @@
         "id": "3802962_recall_scene",
         "title": {
           "en": "Recall scene"
+        },
+        "hint": {
+          "en": "Recall the saved scene."
         },
         "args": [
           {
@@ -5068,6 +6710,9 @@
         "title": {
           "en": "Store scene"
         },
+        "hint": {
+          "en": "Save the current state to the scene."
+        },
         "args": [
           {
             "type": "device",
@@ -5094,6 +6739,9 @@
         "id": "3802963_level_step_with_onoff",
         "title": {
           "en": "Step level (with On/Off)"
+        },
+        "hint": {
+          "en": "Change the brightness step by step."
         },
         "duration": false,
         "args": [
@@ -5142,6 +6790,9 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "hint": {
+          "en": "Change the brightness continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -5177,6 +6828,9 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "hint": {
+          "en": "Stop changing the brightness."
+        },
         "duration": false,
         "args": [
           {
@@ -5190,6 +6844,9 @@
         "id": "3802963_recall_scene",
         "title": {
           "en": "Recall scene"
+        },
+        "hint": {
+          "en": "Recall the saved scene."
         },
         "args": [
           {
@@ -5218,6 +6875,9 @@
         "title": {
           "en": "Store scene"
         },
+        "hint": {
+          "en": "Save the current state to the scene."
+        },
         "args": [
           {
             "type": "device",
@@ -5244,6 +6904,9 @@
         "id": "3802964_level_step_with_onoff",
         "title": {
           "en": "Step level (with On/Off)"
+        },
+        "hint": {
+          "en": "Change the brightness step by step."
         },
         "duration": false,
         "args": [
@@ -5292,6 +6955,9 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "hint": {
+          "en": "Change the brightness continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -5327,6 +6993,9 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "hint": {
+          "en": "Stop changing the brightness."
+        },
         "duration": false,
         "args": [
           {
@@ -5340,6 +7009,9 @@
         "id": "3802964_step_color_temperature",
         "title": {
           "en": "Step color temperature"
+        },
+        "hint": {
+          "en": "Change the color temperature step by step."
         },
         "duration": false,
         "args": [
@@ -5386,6 +7058,9 @@
         "title": {
           "en": "Move color temperature"
         },
+        "hint": {
+          "en": "Change the color temperature continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -5422,7 +7097,7 @@
           "en": "Stop move step"
         },
         "hint": {
-          "en": "The stop move step command is provided to allow Move and Step commands to be stopped."
+          "en": "Stop changing the color."
         },
         "duration": false,
         "args": [
@@ -5437,6 +7112,9 @@
         "id": "3802964_recall_scene",
         "title": {
           "en": "Recall scene"
+        },
+        "hint": {
+          "en": "Recall the saved scene."
         },
         "args": [
           {
@@ -5465,6 +7143,9 @@
         "title": {
           "en": "Store scene"
         },
+        "hint": {
+          "en": "Save the current state to the scene."
+        },
         "args": [
           {
             "type": "device",
@@ -5491,6 +7172,9 @@
         "id": "3802965_level_step_with_onoff",
         "title": {
           "en": "Step level (with On/Off)"
+        },
+        "hint": {
+          "en": "Change the brightness step by step."
         },
         "duration": false,
         "args": [
@@ -5539,6 +7223,9 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "hint": {
+          "en": "Change the brightness continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -5574,6 +7261,9 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "hint": {
+          "en": "Stop changing the brightness."
+        },
         "duration": false,
         "args": [
           {
@@ -5587,6 +7277,9 @@
         "id": "3802965_recall_scene",
         "title": {
           "en": "Recall scene"
+        },
+        "hint": {
+          "en": "Recall the saved scene."
         },
         "args": [
           {
@@ -5615,6 +7308,9 @@
         "title": {
           "en": "Store scene"
         },
+        "hint": {
+          "en": "Save the current state to the scene."
+        },
         "args": [
           {
             "type": "device",
@@ -5641,6 +7337,9 @@
         "id": "3802966_level_step_with_onoff",
         "title": {
           "en": "Step level (with On/Off)"
+        },
+        "hint": {
+          "en": "Change the brightness step by step."
         },
         "duration": false,
         "args": [
@@ -5689,6 +7388,9 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "hint": {
+          "en": "Change the brightness continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -5724,6 +7426,9 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "hint": {
+          "en": "Stop changing the brightness."
+        },
         "duration": false,
         "args": [
           {
@@ -5737,6 +7442,9 @@
         "id": "3802966_step_color_temperature",
         "title": {
           "en": "Step color temperature"
+        },
+        "hint": {
+          "en": "Change the color temperature step by step."
         },
         "duration": false,
         "args": [
@@ -5783,6 +7491,9 @@
         "title": {
           "en": "Move color temperature"
         },
+        "hint": {
+          "en": "Change the color temperature continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -5819,7 +7530,7 @@
           "en": "Stop move step"
         },
         "hint": {
-          "en": "The stop move step command is provided to allow Move and Step commands to be stopped."
+          "en": "Stop changing the color."
         },
         "duration": false,
         "args": [
@@ -5834,6 +7545,9 @@
         "id": "3802966_recall_scene",
         "title": {
           "en": "Recall scene"
+        },
+        "hint": {
+          "en": "Recall the saved scene."
         },
         "args": [
           {
@@ -5862,6 +7576,9 @@
         "title": {
           "en": "Store scene"
         },
+        "hint": {
+          "en": "Save the current state to the scene."
+        },
         "args": [
           {
             "type": "device",
@@ -5888,6 +7605,9 @@
         "id": "3802967_level_step_with_onoff",
         "title": {
           "en": "Step level (with On/Off)"
+        },
+        "hint": {
+          "en": "Change the brightness step by step."
         },
         "duration": false,
         "args": [
@@ -5936,6 +7656,9 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "hint": {
+          "en": "Change the brightness continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -5971,6 +7694,9 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "hint": {
+          "en": "Stop changing the brightness."
+        },
         "duration": false,
         "args": [
           {
@@ -5984,6 +7710,9 @@
         "id": "3802967_move_hue",
         "title": {
           "en": "Move hue"
+        },
+        "hint": {
+          "en": "Change the hue continuously."
         },
         "duration": false,
         "args": [
@@ -6020,6 +7749,9 @@
         "title": {
           "en": "Move saturation"
         },
+        "hint": {
+          "en": "Change the saturation continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -6054,6 +7786,9 @@
         "id": "3802967_step_color_temperature",
         "title": {
           "en": "Step color temperature"
+        },
+        "hint": {
+          "en": "Change the color temperature step by step."
         },
         "duration": false,
         "args": [
@@ -6100,6 +7835,9 @@
         "title": {
           "en": "Move color temperature"
         },
+        "hint": {
+          "en": "Change the color temperature continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -6136,7 +7874,7 @@
           "en": "Stop move step"
         },
         "hint": {
-          "en": "The stop move step command is provided to allow Move and Step commands to be stopped."
+          "en": "Stop changing the color."
         },
         "duration": false,
         "args": [
@@ -6151,6 +7889,9 @@
         "id": "3802967_recall_scene",
         "title": {
           "en": "Recall scene"
+        },
+        "hint": {
+          "en": "Recall the saved scene."
         },
         "args": [
           {
@@ -6179,6 +7920,9 @@
         "title": {
           "en": "Store scene"
         },
+        "hint": {
+          "en": "Save the current state to the scene."
+        },
         "args": [
           {
             "type": "device",
@@ -6205,6 +7949,9 @@
         "id": "3802968_level_step_with_onoff",
         "title": {
           "en": "Step level (with On/Off)"
+        },
+        "hint": {
+          "en": "Change the brightness step by step."
         },
         "duration": false,
         "args": [
@@ -6253,6 +8000,9 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "hint": {
+          "en": "Change the brightness continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -6288,6 +8038,9 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "hint": {
+          "en": "Stop changing the brightness."
+        },
         "duration": false,
         "args": [
           {
@@ -6301,6 +8054,9 @@
         "id": "3802968_step_color_temperature",
         "title": {
           "en": "Step color temperature"
+        },
+        "hint": {
+          "en": "Change the color temperature step by step."
         },
         "duration": false,
         "args": [
@@ -6347,6 +8103,9 @@
         "title": {
           "en": "Move color temperature"
         },
+        "hint": {
+          "en": "Change the color temperature continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -6383,7 +8142,7 @@
           "en": "Stop move step"
         },
         "hint": {
-          "en": "The stop move step command is provided to allow Move and Step commands to be stopped."
+          "en": "Stop changing the color."
         },
         "duration": false,
         "args": [
@@ -6398,6 +8157,9 @@
         "id": "3802968_recall_scene",
         "title": {
           "en": "Recall scene"
+        },
+        "hint": {
+          "en": "Recall the saved scene."
         },
         "args": [
           {
@@ -6426,6 +8188,9 @@
         "title": {
           "en": "Store scene"
         },
+        "hint": {
+          "en": "Save the current state to the scene."
+        },
         "args": [
           {
             "type": "device",
@@ -6452,6 +8217,9 @@
         "id": "4512700_level_step_with_onoff",
         "title": {
           "en": "Step level (with On/Off)"
+        },
+        "hint": {
+          "en": "Change the brightness step by step."
         },
         "duration": false,
         "args": [
@@ -6500,6 +8268,9 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "hint": {
+          "en": "Change the brightness continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -6535,6 +8306,9 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "hint": {
+          "en": "Stop changing the brightness."
+        },
         "duration": false,
         "args": [
           {
@@ -6548,6 +8322,9 @@
         "id": "4512700_recall_scene",
         "title": {
           "en": "Recall scene"
+        },
+        "hint": {
+          "en": "Recall the saved scene."
         },
         "args": [
           {
@@ -6576,6 +8353,9 @@
         "title": {
           "en": "Store scene"
         },
+        "hint": {
+          "en": "Save the current state to the scene."
+        },
         "args": [
           {
             "type": "device",
@@ -6602,6 +8382,9 @@
         "id": "4512707_CCT_level_step_with_onoff",
         "title": {
           "en": "Step level (with On/Off)"
+        },
+        "hint": {
+          "en": "Change the brightness step by step."
         },
         "duration": false,
         "args": [
@@ -6650,6 +8433,9 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "hint": {
+          "en": "Change the brightness continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -6685,6 +8471,9 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "hint": {
+          "en": "Stop changing the brightness."
+        },
         "duration": false,
         "args": [
           {
@@ -6698,6 +8487,9 @@
         "id": "4512707_CCT_step_color_temperature",
         "title": {
           "en": "Step color temperature"
+        },
+        "hint": {
+          "en": "Change the color temperature step by step."
         },
         "duration": false,
         "args": [
@@ -6744,6 +8536,9 @@
         "title": {
           "en": "Move color temperature"
         },
+        "hint": {
+          "en": "Change the color temperature continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -6780,7 +8575,7 @@
           "en": "Stop move step"
         },
         "hint": {
-          "en": "The stop move step command is provided to allow Move and Step commands to be stopped."
+          "en": "Stop changing the color."
         },
         "duration": false,
         "args": [
@@ -6795,6 +8590,9 @@
         "id": "4512707_CCT_recall_scene",
         "title": {
           "en": "Recall scene"
+        },
+        "hint": {
+          "en": "Recall the saved scene."
         },
         "args": [
           {
@@ -6823,6 +8621,9 @@
         "title": {
           "en": "Store scene"
         },
+        "hint": {
+          "en": "Save the current state to the scene."
+        },
         "args": [
           {
             "type": "device",
@@ -6849,6 +8650,9 @@
         "id": "4512707_COLOR_level_step_with_onoff",
         "title": {
           "en": "Step level (with On/Off)"
+        },
+        "hint": {
+          "en": "Change the brightness step by step."
         },
         "duration": false,
         "args": [
@@ -6897,6 +8701,9 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "hint": {
+          "en": "Change the brightness continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -6932,6 +8739,9 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "hint": {
+          "en": "Stop changing the brightness."
+        },
         "duration": false,
         "args": [
           {
@@ -6945,6 +8755,9 @@
         "id": "4512707_COLOR_move_hue",
         "title": {
           "en": "Move hue"
+        },
+        "hint": {
+          "en": "Change the hue continuously."
         },
         "duration": false,
         "args": [
@@ -6981,6 +8794,9 @@
         "title": {
           "en": "Move saturation"
         },
+        "hint": {
+          "en": "Change the saturation continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -7015,6 +8831,9 @@
         "id": "4512707_COLOR_step_color_temperature",
         "title": {
           "en": "Step color temperature"
+        },
+        "hint": {
+          "en": "Change the color temperature step by step."
         },
         "duration": false,
         "args": [
@@ -7061,6 +8880,9 @@
         "title": {
           "en": "Move color temperature"
         },
+        "hint": {
+          "en": "Change the color temperature continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -7097,7 +8919,7 @@
           "en": "Stop move step"
         },
         "hint": {
-          "en": "The stop move step command is provided to allow Move and Step commands to be stopped."
+          "en": "Stop changing the color."
         },
         "duration": false,
         "args": [
@@ -7112,6 +8934,9 @@
         "id": "4512707_COLOR_recall_scene",
         "title": {
           "en": "Recall scene"
+        },
+        "hint": {
+          "en": "Recall the saved scene."
         },
         "args": [
           {
@@ -7140,6 +8965,9 @@
         "title": {
           "en": "Store scene"
         },
+        "hint": {
+          "en": "Save the current state to the scene."
+        },
         "args": [
           {
             "type": "device",
@@ -7166,6 +8994,9 @@
         "id": "4512707_DIM_level_step_with_onoff",
         "title": {
           "en": "Step level (with On/Off)"
+        },
+        "hint": {
+          "en": "Change the brightness step by step."
         },
         "duration": false,
         "args": [
@@ -7214,6 +9045,9 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "hint": {
+          "en": "Change the brightness continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -7249,6 +9083,9 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "hint": {
+          "en": "Stop changing the brightness."
+        },
         "duration": false,
         "args": [
           {
@@ -7262,6 +9099,9 @@
         "id": "4512707_DIM_recall_scene",
         "title": {
           "en": "Recall scene"
+        },
+        "hint": {
+          "en": "Recall the saved scene."
         },
         "args": [
           {
@@ -7290,6 +9130,9 @@
         "title": {
           "en": "Store scene"
         },
+        "hint": {
+          "en": "Save the current state to the scene."
+        },
         "args": [
           {
             "type": "device",
@@ -7316,6 +9159,9 @@
         "id": "4512708_level_step_with_onoff",
         "title": {
           "en": "Step level (with On/Off)"
+        },
+        "hint": {
+          "en": "Change the brightness step by step."
         },
         "duration": false,
         "args": [
@@ -7364,6 +9210,9 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "hint": {
+          "en": "Change the brightness continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -7399,6 +9248,9 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "hint": {
+          "en": "Stop changing the brightness."
+        },
         "duration": false,
         "args": [
           {
@@ -7412,6 +9264,9 @@
         "id": "4512708_recall_scene",
         "title": {
           "en": "Recall scene"
+        },
+        "hint": {
+          "en": "Recall the saved scene."
         },
         "args": [
           {
@@ -7440,6 +9295,9 @@
         "title": {
           "en": "Store scene"
         },
+        "hint": {
+          "en": "Save the current state to the scene."
+        },
         "args": [
           {
             "type": "device",
@@ -7466,6 +9324,9 @@
         "id": "89665_level_step_with_onoff",
         "title": {
           "en": "Step level (with On/Off)"
+        },
+        "hint": {
+          "en": "Change the brightness step by step."
         },
         "duration": false,
         "args": [
@@ -7514,6 +9375,9 @@
         "title": {
           "en": "Move level (with On/Off)"
         },
+        "hint": {
+          "en": "Change the brightness continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -7549,6 +9413,9 @@
         "title": {
           "en": "Stop level (with On/Off)"
         },
+        "hint": {
+          "en": "Stop changing the brightness."
+        },
         "duration": false,
         "args": [
           {
@@ -7562,6 +9429,9 @@
         "id": "89665_move_hue",
         "title": {
           "en": "Move hue"
+        },
+        "hint": {
+          "en": "Change the hue continuously."
         },
         "duration": false,
         "args": [
@@ -7598,6 +9468,9 @@
         "title": {
           "en": "Move saturation"
         },
+        "hint": {
+          "en": "Change the saturation continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -7632,6 +9505,9 @@
         "id": "89665_step_color_temperature",
         "title": {
           "en": "Step color temperature"
+        },
+        "hint": {
+          "en": "Change the color temperature step by step."
         },
         "duration": false,
         "args": [
@@ -7678,6 +9554,9 @@
         "title": {
           "en": "Move color temperature"
         },
+        "hint": {
+          "en": "Change the color temperature continuously."
+        },
         "duration": false,
         "args": [
           {
@@ -7714,7 +9593,7 @@
           "en": "Stop move step"
         },
         "hint": {
-          "en": "The stop move step command is provided to allow Move and Step commands to be stopped."
+          "en": "Stop changing the color."
         },
         "duration": false,
         "args": [
@@ -7729,6 +9608,9 @@
         "id": "89665_recall_scene",
         "title": {
           "en": "Recall scene"
+        },
+        "hint": {
+          "en": "Recall the saved scene."
         },
         "args": [
           {
@@ -7756,6 +9638,9 @@
         "id": "89665_store_scene",
         "title": {
           "en": "Store scene"
+        },
+        "hint": {
+          "en": "Save the current state to the scene."
         },
         "args": [
           {
@@ -7836,7 +9721,7 @@
         "learnmode": {
           "image": "/drivers/1402755/assets/learnmode.svg",
           "instruction": {
-            "en": "Press and hold reset button for over 5 seconds. The red indicator light will be on for 10s to show the device has been reset.\n\nDouble press the reset button to activate the network paring mode (The blue indicator light is flashing), network pairing mode will last for 15 minutes once timeout repeat this step. "
+            "en": "# Pairing\nDouble press the reset button to activate the network paring mode.\n\n# Reset\nPress and hold reset button for over 5 seconds."
           }
         }
       },
@@ -8172,7 +10057,7 @@
         "learnmode": {
           "image": "/drivers/3308431/assets/learnmode.svg",
           "instruction": {
-            "en": "Please put your Zigbee device in 'pair mode'.\n\nRefer to your device's manual on how to enable 'pair mode'."
+            "en": "# Pairing\nToggle power from OFF, then to ON.\n\n# Reset\nPhysically switch the device on and off six (6) times for intervals of 0.5~2 seconds."
           }
         }
       },
@@ -8235,7 +10120,7 @@
         "learnmode": {
           "image": "/drivers/3802960/assets/learnmode.svg",
           "instruction": {
-            "en": "Please put your Zigbee device in 'pair mode'.\n\nRefer to your device's manual on how to enable 'pair mode'."
+            "en": "# Pairing\nToggle power from OFF, then to ON.\n\n# Reset\nPhysically switch the device on and off six (6) times for intervals of 0.5~2 seconds."
           }
         }
       },
@@ -8305,7 +10190,7 @@
         "learnmode": {
           "image": "/drivers/3802961/assets/learnmode.svg",
           "instruction": {
-            "en": "Please put your Zigbee device in 'pair mode'.\n\nRefer to your device's manual on how to enable 'pair mode'."
+            "en": "# Pairing\nToggle power from OFF, then to ON.\n\n# Reset\nPhysically switch the device on and off six (6) times for intervals of 0.5~2 seconds."
           }
         }
       },
@@ -8387,7 +10272,7 @@
         "learnmode": {
           "image": "/drivers/3802962/assets/learnmode.svg",
           "instruction": {
-            "en": "Please put your Zigbee device in 'pair mode'.\n\nRefer to your device's manual on how to enable 'pair mode'."
+            "en": "# Pairing\nToggle power from OFF, then to ON.\n\n# Reset\nPhysically switch the device on and off six (6) times for intervals of 0.5~2 seconds."
           }
         }
       },
@@ -8450,7 +10335,7 @@
         "learnmode": {
           "image": "/drivers/3802963/assets/learnmode.svg",
           "instruction": {
-            "en": "Please put your Zigbee device in 'pair mode'.\n\nRefer to your device's manual on how to enable 'pair mode'."
+            "en": "# Pairing\nToggle power from OFF, then to ON.\n\n# Reset\nPhysically switch the device on and off six (6) times for intervals of 0.5~2 seconds."
           }
         }
       },
@@ -8520,7 +10405,7 @@
         "learnmode": {
           "image": "/drivers/3802964/assets/learnmode.svg",
           "instruction": {
-            "en": "Please put your Zigbee device in 'pair mode'.\n\nRefer to your device's manual on how to enable 'pair mode'."
+            "en": "# Pairing\nToggle power from OFF, then to ON.\n\n# Reset\nPhysically switch the device on and off six (6) times for intervals of 0.5~2 seconds."
           }
         }
       },
@@ -8583,7 +10468,7 @@
         "learnmode": {
           "image": "/drivers/3802965/assets/learnmode.svg",
           "instruction": {
-            "en": "Please put your Zigbee device in 'pair mode'.\n\nRefer to your device's manual on how to enable 'pair mode'."
+            "en": "# Pairing\nToggle power from OFF, then to ON.\n\n# Reset\nPhysically switch the device on and off six (6) times for intervals of 0.5~2 seconds."
           }
         }
       },
@@ -8653,7 +10538,7 @@
         "learnmode": {
           "image": "/drivers/3802966/assets/learnmode.svg",
           "instruction": {
-            "en": "Please put your Zigbee device in 'pair mode'.\n\nRefer to your device's manual on how to enable 'pair mode'."
+            "en": "# Pairing\nToggle power from OFF, then to ON.\n\n# Reset\nPhysically switch the device on and off six (6) times for intervals of 0.5~2 seconds."
           }
         }
       },
@@ -8735,7 +10620,7 @@
         "learnmode": {
           "image": "/drivers/3802967/assets/learnmode.svg",
           "instruction": {
-            "en": "Inclusion\nToggle power from OFF, then to ON. The LED bulb will flash once if it has been successfully \"included\" into your ZigBee network.\n\nNote\nIf the bulb will not join the network after repeated attempts, please use the Factory Reset procedures to clear the bulb's settings.\n\nFactory Reset\nPhysically switch the bulb on and off six (6) times for intervals of 0.5~2 seconds, the bulb will flash twice indicating that it's successfully reset."
+            "en": "# Pairing\nToggle power from OFF, then to ON.\n\n# Reset\nPhysically switch the device on and off six (6) times for intervals of 0.5~2 seconds."
           }
         }
       },
@@ -8805,7 +10690,7 @@
         "learnmode": {
           "image": "/drivers/3802968/assets/learnmode.svg",
           "instruction": {
-            "en": "Please put your Zigbee device in 'pair mode'.\n\nRefer to your device's manual on how to enable 'pair mode'."
+            "en": "# Pairing\nToggle power from OFF, then to ON.\n\n# Reset\nPhysically switch the device on and off six (6) times for intervals of 0.5~2 seconds."
           }
         }
       },
@@ -8869,7 +10754,7 @@
         "learnmode": {
           "image": "/drivers/4512700/assets/learnmode.svg",
           "instruction": {
-            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
+            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode."
           }
         }
       },
@@ -8921,7 +10806,7 @@
         "learnmode": {
           "image": "/drivers/4512701/assets/learnmode.svg",
           "instruction": {
-            "en": "Press and hold down both buttons until LED indicator turns on. \nImmediately short press pair button to search nearby network, indicator flashes every 1 second, 20 seconds timeout if there is no network. Indicator will then blink 5 times quickly for successful pairing. \n\nRemove the remote from previous zigbee network if it has already been added to it, otherwise pairing will fail. \nPress and hold down both buttons until LED indicator turns on. Immediately short press pair button 5 times continuously, indicator flashes 3 times quickly to indicate successful reset."
+            "en": "# Pairing\nPress and hold down both buttons until LED indicator turns on, immediately short press pair button.\n\n# Reset\nPress and hold down both buttons until LED indicator turns on, immediately short press pair button 5 times continuously."
           }
         }
       },
@@ -8973,7 +10858,7 @@
         "learnmode": {
           "image": "/drivers/4512702/assets/learnmode.svg",
           "instruction": {
-            "en": "Press and hold down the Reset button until the LED indicator turns on.\nRelease button and immediately press the Pair button and the remote will be set to pair mode.\nThe LED indicator blinking several times will indicate successful inclusion.\n\nReset...\nWhen you can't successfully add a device, reset the device first.\nPress and hold down the Reset button until the LED indicator turns on.\nRelease the button and immediately press the Reset button 5 times and the remote will be reset."
+            "en": "# Pairing\nPress and hold down the Reset button until the LED indicator turns on. Release button and immediately press the Pair button.\n\n# Reset\nPress and hold down the Reset button until the LED indicator turns on. Release the button and immediately press the Reset button 5 times."
           }
         }
       },
@@ -9052,7 +10937,7 @@
         "learnmode": {
           "image": "/drivers/4512703/assets/learnmode.svg",
           "instruction": {
-            "en": "Press and hold down both Reset and Pair buttons until the LED indicator turns on.\nRelease both button and immediately press the Pair button on the top right corner and the remote will be set to pair mode.\nThe LED indicator blinking several times will indicate successful inclusion.\n\nReset...\nWhen you can't successfully add a device, reset the device first.\nPress and hold down both Reset and Pair buttons until the LED indicator turns on.\nRelease both button and immediately press the Reset button 5 times and the remote will be reset."
+            "en": "# Pairing\nPress and hold down both Reset and Pair buttons until the LED indicator turns on. Release both button and immediately press the Pair button on the top right corner.\n\n# Reset\nPress and hold down both Reset and Pair buttons until the LED indicator turns on. Release both button and immediately press the Reset button 5 times."
           }
         }
       },
@@ -9105,7 +10990,7 @@
         "learnmode": {
           "image": "/drivers/4512704/assets/learnmode.svg",
           "instruction": {
-            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
+            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode."
           }
         }
       },
@@ -9184,7 +11069,7 @@
         "learnmode": {
           "image": "/drivers/4512705/assets/learnmode.svg",
           "instruction": {
-            "en": "Press and hold down reset button until LED indicator turns on. \nImmediately short press pair button to search nearby network, indicator flashes every 1 second, 20 seconds timeout if there is no network. Indicator will then blink 5 times quickly for successful pairing. \n\nRemove the remote from previous zigbee network if it has already been added to it, otherwise pairing will fail. \nPress and hold down reset button until LED indicator turns on. Immediately short press reset button 5 times continuously, indicator flashes 3 times quickly to indicate successful reset."
+            "en": "# Pairing\nPress and hold down reset button until LED indicator turns on.   Immediately short press pair button.\n\n# Reset\nPress and hold down reset button until LED indicator turns on. Immediately short press reset button 5 times continuously, indicator flashes 3 times quickly."
           }
         }
       },
@@ -9263,7 +11148,7 @@
         "learnmode": {
           "image": "/drivers/4512706/assets/learnmode.svg",
           "instruction": {
-            "en": "Press and hold down the Reset button until the LED indicator turns on.\nRelease the button and immediately press the Pair button and the remote will be set to pair mode.\n\nReset...\nWhen you can't successfully add a device, reset the device first.\nPress and hold down the Reset button until the LED indicator turns on.\nRelease the button and immediately press the Reset button 5 times and the remote will be reset."
+            "en": "# Pairing\nPress and hold down the Reset button until the LED indicator turns on. Release the button and immediately press the Pair button.\n\n# Reset\nPress and hold down the Reset button until the LED indicator turns on. Release the button and immediately press the Reset button 5 times."
           }
         }
       },
@@ -9335,7 +11220,7 @@
         "learnmode": {
           "image": "/drivers/4512707_CCT/assets/learnmode.svg",
           "instruction": {
-            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
+            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode."
           }
         }
       },
@@ -9422,7 +11307,7 @@
         "learnmode": {
           "image": "/drivers/4512707_COLOR/assets/learnmode.svg",
           "instruction": {
-            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
+            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode."
           }
         }
       },
@@ -9486,7 +11371,7 @@
         "learnmode": {
           "image": "/drivers/4512707_DIM/assets/learnmode.svg",
           "instruction": {
-            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
+            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode."
           }
         }
       },
@@ -9549,7 +11434,7 @@
         "learnmode": {
           "image": "/drivers/4512708/assets/learnmode.svg",
           "instruction": {
-            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
+            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode."
           }
         }
       },
@@ -10198,7 +12083,7 @@
         "learnmode": {
           "image": "/drivers/4512719/assets/learnmode.svg",
           "instruction": {
-            "en": "Press and hold down both Reset and Pair buttons until the LED indicator turns on.\nRelease both button and immediately press the Pair button on the top right corner and the remote will be set to pair mode.\nThe LED indicator blinking several times will indicate successful inclusion.\n\nReset...\nWhen you can't successfully add a device, reset the device first.\nPress and hold down both Reset and Pair buttons until the LED indicator turns on.\nRelease both button and immediately press the Reset button 5 times and the remote will be reset."
+            "en": "# Pairing\nPress and hold down both Reset and Pair buttons until the LED indicator turns on. Release both button and immediately press the Pair button on the top right corner.\n\n# Reset\nPress and hold down both Reset and Pair buttons until the LED indicator turns on. Release both button and immediately press the Reset button 5 times."
           }
         }
       },
@@ -10411,7 +12296,7 @@
         "learnmode": {
           "image": "/drivers/4512726/assets/learnmode.svg",
           "instruction": {
-            "en": "Short press the knob 5 times continuously.\nWithin 2 seconds press and hold the knob for over 3 seconds, indicator flashes every 1 second. Indicator will then blink 5 times quickly for successful pairing.\n\nRemove the switch from previous ZigBee network if it has already been added to it, otherwise pairing will fail.\nShort press the knob 5 times continuously and quickly.\nWithin 2 seconds press and hold the knob for over 3 seconds, indicator will flash 3 times for successful reset."
+            "en": "# Pairing\nhort press the knob 5 times continuously.Within 2 seconds press and hold the knob for over 3 seconds.\n\n# Reset\nShort press the knob 5 times continuously and quickly. Within 2 seconds press and hold the knob for over 3 seconds."
           }
         }
       },
@@ -10461,7 +12346,7 @@
         "learnmode": {
           "image": "/drivers/4512728/assets/learnmode.svg",
           "instruction": {
-            "en": "Press and hold down both buttons until LED indicator turns on. \nImmediately short press pair button to search nearby network, indicator flashes every 1 second, 20 seconds timeout if there is no network. Indicator will then blink 5 times quickly for successful pairing. \n\nRemove the remote from previous zigbee network if it has already been added to it, otherwise pairing will fail. \nPress and hold down both buttons until LED indicator turns on. Immediately short press pair button 5 times continuously, indicator flashes 3 times quickly to indicate successful reset."
+            "en": "# Pairing\nPress and hold down both buttons until LED indicator turns on.  Immediately short press pair button.\n\n# Reset\nPress and hold down both buttons until LED indicator turns on. Immediately short press pair button 5 times continuously."
           }
         }
       },
@@ -10520,7 +12405,7 @@
         "learnmode": {
           "image": "/drivers/4512729/assets/learnmode.svg",
           "instruction": {
-            "en": "Press and hold down both Reset and Pair buttons until the LED indicator turns on.\nRelease both button and immediately press the Pair button on the top right corner and the remote will be set to pair mode.\nThe LED indicator blinking several times will indicate successful inclusion.\n\nReset...\nWhen you can't successfully add a device, reset the device first.\nPress and hold down both Reset and Pair buttons until the LED indicator turns on.\nRelease both button and immediately press the Reset button 5 times and the remote will be reset."
+            "en": "# Pairing\nPress and hold down both Reset and Pair buttons until the LED indicator turns on. Release both button and immediately press the Pair button on the top right corner.\n\n# Reset\nPress and hold down both Reset and Pair buttons until the LED indicator turns on. Release both button and immediately press the Reset button 5 times."
           }
         }
       },
@@ -10649,7 +12534,7 @@
         "learnmode": {
           "image": "/drivers/89665/assets/learnmode.svg",
           "instruction": {
-            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
+            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode."
           }
         }
       },
@@ -10665,6 +12550,7 @@
         "en": "Dimmer - 3 wire (Z-wave)",
         "nl": "Inbouwdimmer 3-draads (Z-wave)"
       },
+      "deprecated": true,
       "class": "light",
       "capabilities": [
         "onoff",
@@ -10719,6 +12605,7 @@
       "name": {
         "en": "Dimmer - Rotary (Z-wave)"
       },
+      "deprecated": true,
       "class": "light",
       "capabilities": [
         "onoff",
@@ -10992,6 +12879,7 @@
       "name": {
         "en": "Switch (Z-wave)"
       },
+      "deprecated": true,
       "class": "light",
       "capabilities": [
         "onoff"
@@ -11163,6 +13051,7 @@
         "en": "Remote - 4 channel (Z-wave)",
         "nl": "Afstandsbediening - 4 kanaals (Z-wave)"
       },
+      "deprecated": true,
       "class": "remote",
       "capabilities": [
         "measure_battery",
@@ -11238,6 +13127,7 @@
       "name": {
         "en": "Wall controller - 2 button (Z-wave)"
       },
+      "deprecated": true,
       "class": "remote",
       "capabilities": [
         "measure_battery",
@@ -11294,6 +13184,7 @@
       "name": {
         "en": "Wall controller - 4 button (1 and 2 channel) (Z-wave)"
       },
+      "deprecated": true,
       "class": "remote",
       "capabilities": [
         "measure_battery",
@@ -11357,6 +13248,7 @@
       "name": {
         "en": "Wall controller - 8 button (white and black) (Z-wave)"
       },
+      "deprecated": true,
       "class": "remote",
       "capabilities": [
         "measure_battery",
@@ -11431,6 +13323,7 @@
       "name": {
         "en": "Wall plug - Actuator (Z-wave)"
       },
+      "deprecated": true,
       "class": "socket",
       "capabilities": [
         "onoff",

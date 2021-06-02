@@ -70,7 +70,7 @@
     "learnmode": {
       "image": "/drivers/3802967/assets/learnmode.svg",
       "instruction": {
-        "en": "Inclusion\nToggle power from OFF, then to ON. The LED bulb will flash once if it has been successfully \"included\" into your ZigBee network.\n\nNote\nIf the bulb will not join the network after repeated attempts, please use the Factory Reset procedures to clear the bulb's settings.\n\nFactory Reset\nPhysically switch the bulb on and off six (6) times for intervals of 0.5~2 seconds, the bulb will flash twice indicating that it's successfully reset."
+        "en": "# Pairing\nToggle power from OFF, then to ON.\n\n# Reset\nPhysically switch the device on and off six (6) times for intervals of 0.5~2 seconds."
       }
     }
   },

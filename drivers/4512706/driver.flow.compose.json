@@ -5,6 +5,7 @@
       "title": {
         "en": "On"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -43,6 +44,7 @@
       "title": {
         "en": "Off"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -81,6 +83,7 @@
       "title": {
         "en": "Move to hue"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -129,6 +132,7 @@
       "title": {
         "en": "Move to saturation"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -177,6 +181,7 @@
       "title": {
         "en": "Move saturation"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -233,6 +238,7 @@
       "title": {
         "en": "Recall scene"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -289,6 +295,7 @@
       "title": {
         "en": "Store scene"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -345,6 +352,7 @@
       "title": {
         "en": "Step level (with On/Off)"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -409,6 +417,7 @@
       "title": {
         "en": "Move level (with On/Off)"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -465,6 +474,7 @@
       "title": {
         "en": "Stop level (with On/Off)"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -503,6 +513,7 @@
       "title": {
         "en": "Step color temperature"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -567,6 +578,7 @@
       "title": {
         "en": "Move to color temperature"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -623,6 +635,7 @@
       "title": {
         "en": "Move color temperature"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -679,6 +692,7 @@
       "title": {
         "en": "Stop move step"
       },
+      "deprecated": true,
       "hint": {
         "en": "The stop move step command is provided to allow Move and Step commands to be stopped."
       },

@@ -5,6 +5,7 @@
       "title": {
         "en": "On"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -43,6 +44,7 @@
       "title": {
         "en": "Off"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -81,6 +83,7 @@
       "title": {
         "en": "Recall scene"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -137,6 +140,7 @@
       "title": {
         "en": "Store scene"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -193,6 +197,7 @@
       "title": {
         "en": "Move level (with On/Off)"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -249,6 +254,7 @@
       "title": {
         "en": "Stop level (with On/Off)"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",

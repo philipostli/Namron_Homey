@@ -51,7 +51,7 @@
     "learnmode": {
       "image": "/drivers/3802965/assets/learnmode.svg",
       "instruction": {
-        "en": "Please put your Zigbee device in 'pair mode'.\n\nRefer to your device's manual on how to enable 'pair mode'."
+        "en": "# Pairing\nToggle power from OFF, then to ON.\n\n# Reset\nPhysically switch the device on and off six (6) times for intervals of 0.5~2 seconds."
       }
     }
   },

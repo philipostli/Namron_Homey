@@ -5,6 +5,7 @@
       "title": {
         "en": "On"
       },
+      "deprecated": true,
       "args": []
     },
     {
@@ -12,6 +13,7 @@
       "title": {
         "en": "Off"
       },
+      "deprecated": true,
       "args": []
     },
     {
@@ -19,6 +21,7 @@
       "title": {
         "en": "Move to level (with On/Off)"
       },
+      "deprecated": true,
       "args": [],
       "tokens": [
         {
@@ -44,6 +47,7 @@
       "title": {
         "en": "Move to color temperature"
       },
+      "deprecated": true,
       "args": [],
       "tokens": [
         {
@@ -69,6 +73,7 @@
       "title": {
         "en": "Move to hue"
       },
+      "deprecated": true,
       "args": [],
       "tokens": [
         {

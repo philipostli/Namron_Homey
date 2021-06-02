@@ -3,6 +3,7 @@
   "name": {
     "en": "Wall plug - Actuator (Z-wave)"
   },
+  "deprecated": true,
   "class": "socket",
   "capabilities": [
     "onoff",

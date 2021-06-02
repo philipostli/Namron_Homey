@@ -52,7 +52,7 @@
     "learnmode": {
       "image": "/drivers/1402755/assets/learnmode.svg",
       "instruction": {
-        "en": "Press and hold reset button for over 5 seconds. The red indicator light will be on for 10s to show the device has been reset.\n\nDouble press the reset button to activate the network paring mode (The blue indicator light is flashing), network pairing mode will last for 15 minutes once timeout repeat this step. "
+        "en": "# Pairing\nDouble press the reset button to activate the network paring mode.\n\n# Reset\nPress and hold reset button for over 5 seconds."
       }
     }
   },

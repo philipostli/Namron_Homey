@@ -1,0 +1,56 @@
+{
+  "title": {
+    "en": "Hue is moved"
+  },
+  "titleFormatted": {
+    "en": "[[group]] hue is moved"
+  },
+  "hint": "The hue range from 0.00 to 1.00",
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=4512706"
+    },
+    {
+      "name": "group",
+      "type": "dropdown",
+      "values": [
+        {
+          "id": "1",
+          "label": {
+            "en": "Group 1"
+          }
+        },
+        {
+          "id": "2",
+          "label": {
+            "en": "Group 2"
+          }
+        },
+        {
+          "id": "3",
+          "label": {
+            "en": "Group 3"
+          }
+        },
+        {
+          "id": "4",
+          "label": {
+            "en": "Group 4"
+          }
+        }
+      ]
+    }
+  ],
+  "tokens": [
+    {
+      "name": "hue",
+      "type": "number",
+      "title": {
+        "en": "Hue"
+      },
+      "example": 0.00
+    }
+  ]
+}

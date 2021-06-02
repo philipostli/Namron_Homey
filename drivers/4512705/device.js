@@ -55,6 +55,17 @@ class RemoteControl extends ZigBeeRemoteControl {
     const tokens = {}
     const state = { 'group': endpoint }
     this.driver.getDeviceTriggerCard(type).trigger(this, tokens, state)
+
+    if (type === '4512705_off') {
+
+      this.homey.app.offButtonModeG4TriggerCard.
+        trigger(this, tokens, { 'group': endpoint, 'mode': 'pressed' })
+
+    } else if (type === '4512705_on') {
+
+      this.homey.app.onButtonModeG4TriggerCard.
+        trigger(this, tokens, { 'group': endpoint, 'mode': 'pressed' })
+    }
   }
 
   _onRecallScene ({ groupId, sceneId }, endpoint) {
@@ -68,6 +79,9 @@ class RemoteControl extends ZigBeeRemoteControl {
     const state = { 'group': endpoint }
     this.driver.getDeviceTriggerCard('4512705_recall_scene').
       trigger(this, tokens, state)
+
+    this.homey.app.sceneButtonModeS2ZgTriggerCard.
+      trigger(this, tokens, { 'mode': 'pressed', 'scene': sceneId.toString() })
   }
 
   _onStoreScene ({ groupId, sceneId }, endpoint) {
@@ -81,6 +95,10 @@ class RemoteControl extends ZigBeeRemoteControl {
     const state = { 'group': endpoint }
     this.driver.getDeviceTriggerCard('4512705_store_scene').
       trigger(this, tokens, state)
+
+    this.homey.app.sceneButtonModeS2ZgTriggerCard.
+      trigger(this, tokens,
+        { 'mode': 'held_down', 'scene': sceneId.toString() })
   }
 
   _onLevelMoveWithOnOff ({ moveMode, rate }, endpoint) {
@@ -95,6 +113,18 @@ class RemoteControl extends ZigBeeRemoteControl {
     const state = { 'group': endpoint }
     this.driver.getDeviceTriggerCard('4512705_level_move_with_onoff').
       trigger(this, tokens, state)
+
+    this.moveMode = moveMode
+    if (moveMode === 'up') {
+
+      this.homey.app.onButtonModeG4TriggerCard.
+        trigger(this, tokens, { 'group': endpoint, 'mode': 'held_down' })
+
+    } else if (moveMode === 'down') {
+
+      this.homey.app.offButtonModeG4TriggerCard.
+        trigger(this, tokens, { 'group': endpoint, 'mode': 'held_down' })
+    }
   }
 
   _onLevelStopWithOnOff (endpoint) {
@@ -106,6 +136,17 @@ class RemoteControl extends ZigBeeRemoteControl {
     const state = { 'group': endpoint }
     this.driver.getDeviceTriggerCard('4512705_level_stop_with_onoff').
       trigger(this, tokens, state)
+
+    if (this.moveMode === 'up') {
+
+      this.homey.app.onButtonModeG4TriggerCard.
+        trigger(this, tokens, { 'group': endpoint, 'mode': 'released' })
+
+    } else if (this.moveMode === 'down') {
+
+      this.homey.app.offButtonModeG4TriggerCard.
+        trigger(this, tokens, { 'group': endpoint, 'mode': 'released' })
+    }
   }
 
 }

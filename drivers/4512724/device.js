@@ -6,6 +6,9 @@ class DimLight extends ZwaveLightDevice {
 
   async onNodeInit ({ node }) {
 
+    this.enableDebug()
+    this.printNode()
+
     if (this.hasCapability('meter_power')) {
       this.registerCapability('meter_power', 'METER')
     }
@@ -25,6 +28,40 @@ class DimLight extends ZwaveLightDevice {
           report['Current Value'] / 99)
       }
     })
+  }
+
+  async startDimChange (args, state) {
+
+    this.log(`start dim change mode ${args.mode}`)
+
+    const mode = args.mode
+    let duration = args.duration
+    if (typeof mode !== 'string') {
+      return false
+    }
+    if (typeof duration !== 'number') {
+      duration = 10
+    }
+
+    const upDown = (mode === 'up') ? 'Up' : 'Down'
+    const payload = {
+      Properties1: {
+        'Ignore Start Level': true,
+        'Inc Dec': 'Increment',
+        'Up Down': upDown,
+      },
+      'Start Level': 0,
+      'Dimming Duration': duration,
+      'Step Size': 7,
+    }
+
+    this.node.CommandClass.COMMAND_CLASS_SWITCH_MULTILEVEL.SWITCH_MULTILEVEL_START_LEVEL_CHANGE(
+      payload)
+  }
+
+  async stopDimChange(args, state) {
+
+    return this.node.CommandClass.COMMAND_CLASS_SWITCH_MULTILEVEL.SWITCH_MULTILEVEL_STOP_LEVEL_CHANGE()
   }
 
 }

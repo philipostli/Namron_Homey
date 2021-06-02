@@ -3,6 +3,7 @@
   "name": {
     "en": "Switch (Z-wave)"
   },
+  "deprecated": true,
   "class": "light",
   "capabilities": [
     "onoff"

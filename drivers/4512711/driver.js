@@ -19,26 +19,31 @@ class MyDriver extends SrZwaveDriver {
 
     this.allOnKeyHeldDownFlowTrigger = this.getDeviceTriggerCard(
       '4512711_all_on_key_held_down')
-    this.allOnKeyHeldDownFlowTrigger.registerRunListener(async (args, state) => {
-      return true
-    })
+    this.allOnKeyHeldDownFlowTrigger.registerRunListener(
+      async (args, state) => {
+        return true
+      })
 
-    this.allOnKeyReleasedFlowTrigger = this.getDeviceTriggerCard('4512711_all_on_key_released')
-    this.allOnKeyReleasedFlowTrigger.registerRunListener(async (args, state) => {
-      return true
-    })
+    this.allOnKeyReleasedFlowTrigger = this.getDeviceTriggerCard(
+      '4512711_all_on_key_released')
+    this.allOnKeyReleasedFlowTrigger.registerRunListener(
+      async (args, state) => {
+        return true
+      })
 
     this.allOffKeyHeldDownFlowTrigger = this.getDeviceTriggerCard(
       '4512711_all_off_key_held_down')
-    this.allOffKeyHeldDownFlowTrigger.registerRunListener(async (args, state) => {
-      return true
-    })
+    this.allOffKeyHeldDownFlowTrigger.registerRunListener(
+      async (args, state) => {
+        return true
+      })
 
     this.allOffKeyReleasedFlowTrigger = this.getDeviceTriggerCard(
       '4512711_all_off_key_released')
-    this.allOffKeyReleasedFlowTrigger.registerRunListener(async (args, state) => {
-      return true
-    })
+    this.allOffKeyReleasedFlowTrigger.registerRunListener(
+      async (args, state) => {
+        return true
+      })
 
     this.onFlowTrigger = this.getDeviceTriggerCard('4512711_on')
     this.onFlowTrigger.registerRunListener(async (args, state) => {
@@ -56,7 +61,8 @@ class MyDriver extends SrZwaveDriver {
       return args.group === state.group
     })
 
-    this.onKeyReleasedFlowTrigger = this.getDeviceTriggerCard('4512711_on_key_released')
+    this.onKeyReleasedFlowTrigger = this.getDeviceTriggerCard(
+      '4512711_on_key_released')
     this.onKeyReleasedFlowTrigger.registerRunListener(async (args, state) => {
       return args.group === state.group
     })
@@ -89,7 +95,8 @@ class MyDriver extends SrZwaveDriver {
       return true
     })
 
-    this.s1KeyReleasedFlowTrigger = this.getDeviceTriggerCard('4512711_scene_1_key_released')
+    this.s1KeyReleasedFlowTrigger = this.getDeviceTriggerCard(
+      '4512711_scene_1_key_released')
     this.s1KeyReleasedFlowTrigger.registerRunListener(async (args, state) => {
       return true
     })
@@ -105,6 +112,7 @@ class MyDriver extends SrZwaveDriver {
     this.s2KeyReleasedFlowTrigger.registerRunListener(async (args, state) => {
       return true
     })
+
   }
 }
 

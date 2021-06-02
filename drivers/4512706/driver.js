@@ -76,6 +76,7 @@ class MyDriver extends SrZigBeeDriver {
       registerRunListener(async (args, state) => {
         return args.group === state.group
       })
+
   }
 
 }

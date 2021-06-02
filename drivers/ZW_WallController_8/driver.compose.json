@@ -3,6 +3,7 @@
   "name": {
     "en": "Wall controller - 8 button (white and black) (Z-wave)"
   },
+  "deprecated": true,
   "class": "remote",
   "capabilities": [
     "measure_battery",

@@ -4,6 +4,7 @@
     "en": "Dimmer - 3 wire (Z-wave)",
     "nl": "Inbouwdimmer 3-draads (Z-wave)"
   },
+  "deprecated": true,
   "class": "light",
   "capabilities": [
     "onoff",

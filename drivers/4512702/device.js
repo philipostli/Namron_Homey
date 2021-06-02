@@ -34,6 +34,8 @@ class RemoteControl extends ZigBeeRemoteControl {
         }))
 
     })
+
+    this.brightnessType = 'up'
   }
 
   _onOffCommandHandler (type, endpoint) {
@@ -44,6 +46,15 @@ class RemoteControl extends ZigBeeRemoteControl {
     const tokens = {}
     const state = { 'group': endpoint }
     this.driver.getDeviceTriggerCard(type).trigger(this, tokens, state)
+
+    if (type === '4512702_off') {
+
+      this.homey.app.offButtonPressedTriggerCard.trigger(this, null, null)
+
+    } else if (type === '4512702_on') {
+
+      this.homey.app.onButtonPressedTriggerCard.trigger(this, null, null)
+    }
   }
 
   _onLevelStepWithOnOff ({ mode, stepSize, transitionTime }, endpoint) {
@@ -58,6 +69,17 @@ class RemoteControl extends ZigBeeRemoteControl {
     const state = { 'group': endpoint }
     this.driver.getDeviceTriggerCard('4512702_level_step_with_onoff').
       trigger(this, tokens, state)
+
+    if (mode === 'up') {
+
+      this.homey.app.brightnessTypeButtonModeTriggerCard.
+        trigger(this, tokens, { 'type': 'up', 'mode': 'pressed' })
+
+    } else if (mode === 'down') {
+
+      this.homey.app.brightnessTypeButtonModeTriggerCard.
+        trigger(this, tokens, { 'type': 'down', 'mode': 'pressed' })
+    }
   }
 
   _onLevelMoveWithOnOff ({ moveMode, rate }, endpoint) {
@@ -72,17 +94,34 @@ class RemoteControl extends ZigBeeRemoteControl {
     const state = { 'group': endpoint }
     this.driver.getDeviceTriggerCard('4512702_level_move_with_onoff').
       trigger(this, tokens, state)
+
+    this.moveMode = moveMode
+
+    if (moveMode === 'up') {
+
+      this.homey.app.brightnessTypeButtonModeTriggerCard.
+        trigger(this, tokens, { 'type': 'up', 'mode': 'held_down' })
+
+    } else if (moveMode === 'down') {
+
+      this.homey.app.brightnessTypeButtonModeTriggerCard.
+        trigger(this, tokens, { 'type': 'down', 'mode': 'held_down' })
+    }
   }
 
   _onLevelStopWithOnOff (endpoint) {
 
     this.log(
-      `_onLevelStopWithOnOff, ${endpoint}`)
+      `_onLevelStopWithOnOff ${endpoint}`)
 
     const tokens = {}
     const state = { 'group': endpoint }
     this.driver.getDeviceTriggerCard('4512702_level_stop_with_onoff').
       trigger(this, tokens, state)
+
+    this.homey.app.brightnessTypeButtonModeTriggerCard.
+      trigger(this, null, { 'type': this.moveMode, 'mode': 'released' })
+
   }
 
 }

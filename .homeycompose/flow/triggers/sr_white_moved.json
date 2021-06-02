@@ -1,0 +1,26 @@
+{
+  "title": {
+    "en": "White is moved"
+  },
+  "titleFormatted": {
+    "en": "White is moved"
+  },
+  "hint": "The white range from 0.00 to 1.00, 0.00 for coolest white, 1.00 for warmest white.",
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=4512726"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "white",
+      "type": "number",
+      "title": {
+        "en": "White"
+      },
+      "example": 0.00
+    }
+  ]
+}

@@ -3,6 +3,7 @@
   "name": {
     "en": "Wall controller - 2 button (Z-wave)"
   },
+  "deprecated": true,
   "class": "remote",
   "capabilities": [
     "measure_battery",

@@ -31,6 +31,7 @@ class MyDriver extends SrZigBeeDriver {
       registerRunListener(async (args, state) => {
         return true
       })
+
   }
 
 }

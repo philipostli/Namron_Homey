@@ -29,10 +29,14 @@ class MyRemote extends ZwaveDevice {
             if (sceneNumber === 1) {
 
               this.driver.onOffFlowTrigger.trigger(this, null, null)
+              this.homey.app.switchButtonModeTriggerCard.
+                trigger(this, null, { 'mode': 'pressed' })
 
             } else if (sceneNumber === 2) {
 
               this.driver.levelFlowTrigger.trigger(this, null, null)
+              this.homey.app.brightnessButtonModeTriggerCard.
+                trigger(this, null, { 'mode': 'pressed' })
 
             }
 
@@ -41,10 +45,14 @@ class MyRemote extends ZwaveDevice {
             if (sceneNumber === 1) {
 
               this.driver.onOffKeyHeldDownFlowTrigger.trigger(this, null, null)
+              this.homey.app.switchButtonModeTriggerCard.
+                trigger(this, null, { 'mode': 'held_down' })
 
             } else if (sceneNumber === 2) {
 
               this.driver.levelKeyHeldDownFlowTrigger.trigger(this, null, null)
+              this.homey.app.brightnessButtonModeTriggerCard.
+                trigger(this, null, { 'mode': 'held_down' })
 
             }
 
@@ -53,10 +61,14 @@ class MyRemote extends ZwaveDevice {
             if (sceneNumber === 1) {
 
               this.driver.onOffKeyReleasedFlowTrigger.trigger(this, null, null)
+              this.homey.app.switchButtonModeTriggerCard.
+                trigger(this, null, { 'mode': 'released' })
 
             } else if (sceneNumber === 2) {
 
               this.driver.levelKeyReleasedFlowTrigger.trigger(this, null, null)
+              this.homey.app.brightnessButtonModeTriggerCard.
+                trigger(this, null, { 'mode': 'released' })
 
             }
           }

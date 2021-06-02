@@ -10,6 +10,7 @@ class MyRemote extends ZwaveDevice {
     this.registerCapability('measure_battery', 'BATTERY')
     this.registerCapability('alarm_battery', 'BATTERY')
 
+    /*
     this.registerReportListener('NOTIFICATION',
       'NOTIFICATION_REPORT', report => {
 
@@ -33,6 +34,7 @@ class MyRemote extends ZwaveDevice {
         }
       },
     )
+     */
   }
 
 }

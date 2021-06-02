@@ -5,6 +5,9 @@
       "title": {
         "en": "Step level (with On/Off)"
       },
+      "hint": {
+        "en": "Change the brightness step by step."
+      },
       "duration": false,
       "args": [
         {
@@ -47,6 +50,9 @@
       "title": {
         "en": "Move level (with On/Off)"
       },
+      "hint": {
+        "en": "Change the brightness continuously."
+      },
       "duration": false,
       "args": [
         {
@@ -77,6 +83,9 @@
       "title": {
         "en": "Stop level (with On/Off)"
       },
+      "hint": {
+        "en": "Stop changing the brightness."
+      },
       "duration": false,
       "args": []
     },
@@ -84,6 +93,9 @@
       "id": "3802967_move_hue",
       "title": {
         "en": "Move hue"
+      },
+      "hint": {
+        "en": "Change the hue continuously."
       },
       "duration": false,
       "args": [
@@ -115,6 +127,9 @@
       "title": {
         "en": "Move saturation"
       },
+      "hint": {
+        "en": "Change the saturation continuously."
+      },
       "duration": false,
       "args": [
         {
@@ -144,6 +159,9 @@
       "id": "3802967_step_color_temperature",
       "title": {
         "en": "Step color temperature"
+      },
+      "hint": {
+        "en": "Change the color temperature step by step."
       },
       "duration": false,
       "args": [
@@ -185,6 +203,9 @@
       "title": {
         "en": "Move color temperature"
       },
+      "hint": {
+        "en": "Change the color temperature continuously."
+      },
       "duration": false,
       "args": [
         {
@@ -216,7 +237,7 @@
         "en": "Stop move step"
       },
       "hint": {
-        "en": "The stop move step command is provided to allow Move and Step commands to be stopped."
+        "en": "Stop changing the color."
       },
       "duration": false,
       "args": []
@@ -225,6 +246,9 @@
       "id": "3802967_recall_scene",
       "title": {
         "en": "Recall scene"
+      },
+      "hint": {
+        "en": "Recall the saved scene."
       },
       "args": [
         {
@@ -247,6 +271,9 @@
       "id": "3802967_store_scene",
       "title": {
         "en": "Store scene"
+      },
+      "hint": {
+        "en": "Save the current state to the scene."
       },
       "args": [
         {

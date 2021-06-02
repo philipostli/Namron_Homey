@@ -5,6 +5,7 @@
       "title": {
         "en": "On"
       },
+      "deprecated": true,
       "args": []
     },
     {
@@ -12,6 +13,7 @@
       "title": {
         "en": "Off"
       },
+      "deprecated": true,
       "args": []
     },
     {
@@ -19,6 +21,7 @@
       "title": {
         "en": "Step level (with On/Off)"
       },
+      "deprecated": true,
       "args": [],
       "tokens": [
         {
@@ -52,6 +55,7 @@
       "title": {
         "en": "Move level (with On/Off)"
       },
+      "deprecated": true,
       "args": [],
       "tokens": [
         {
@@ -77,6 +81,7 @@
       "title": {
         "en": "Stop level (with On/Off)"
       },
+      "deprecated": true,
       "args": []
     }
   ]

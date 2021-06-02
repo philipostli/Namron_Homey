@@ -14,14 +14,17 @@ class MyDriver extends SrZwaveDriver {
 
     this.onOffKeyHeldDownFlowTrigger = this.getDeviceTriggerCard(
       '4512712_on_off_key_held_down')
-    this.onOffKeyHeldDownFlowTrigger.registerRunListener(async (args, state) => {
-      return true
-    })
+    this.onOffKeyHeldDownFlowTrigger.registerRunListener(
+      async (args, state) => {
+        return true
+      })
 
-    this.onOffKeyReleasedFlowTrigger = this.getDeviceTriggerCard('4512712_on_off_key_released')
-    this.onOffKeyReleasedFlowTrigger.registerRunListener(async (args, state) => {
-      return true
-    })
+    this.onOffKeyReleasedFlowTrigger = this.getDeviceTriggerCard(
+      '4512712_on_off_key_released')
+    this.onOffKeyReleasedFlowTrigger.registerRunListener(
+      async (args, state) => {
+        return true
+      })
 
     this.levelFlowTrigger = this.getDeviceTriggerCard('4512712_level')
     this.levelFlowTrigger.registerRunListener(async (args, state) => {
@@ -30,14 +33,17 @@ class MyDriver extends SrZwaveDriver {
 
     this.levelKeyHeldDownFlowTrigger = this.getDeviceTriggerCard(
       '4512712_level_key_held_down')
-    this.levelKeyHeldDownFlowTrigger.registerRunListener(async (args, state) => {
-      return true
-    })
+    this.levelKeyHeldDownFlowTrigger.registerRunListener(
+      async (args, state) => {
+        return true
+      })
 
-    this.levelKeyReleasedFlowTrigger = this.getDeviceTriggerCard('4512712_level_key_released')
-    this.levelKeyReleasedFlowTrigger.registerRunListener(async (args, state) => {
-      return true
-    })
+    this.levelKeyReleasedFlowTrigger = this.getDeviceTriggerCard(
+      '4512712_level_key_released')
+    this.levelKeyReleasedFlowTrigger.registerRunListener(
+      async (args, state) => {
+        return true
+      })
   }
 }
 

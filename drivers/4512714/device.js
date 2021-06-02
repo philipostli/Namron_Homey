@@ -35,10 +35,18 @@ class MyRemote extends ZwaveDevice {
             if (isOn) {
 
               this.driver.onFlowTrigger.trigger(this, null, state)
+              this.homey.app.onButtonModeG4TriggerCard.trigger(this, null, {
+                'group': group.toString(),
+                'mode': 'pressed',
+              })
 
             } else {
 
               this.driver.offFlowTrigger.trigger(this, null, state)
+              this.homey.app.offButtonModeG4TriggerCard.trigger(this, null, {
+                'group': group.toString(),
+                'mode': 'pressed',
+              })
             }
 
           } else if (keyAttributes === 'Key Held Down') {
@@ -46,10 +54,18 @@ class MyRemote extends ZwaveDevice {
             if (isOn) {
 
               this.driver.onKeyHeldDownFlowTrigger.trigger(this, null, state)
+              this.homey.app.onButtonModeG4TriggerCard.trigger(this, null, {
+                'group': group.toString(),
+                'mode': 'held_down',
+              })
 
             } else {
 
               this.driver.offKeyHeldDownFlowTrigger.trigger(this, null, state)
+              this.homey.app.offButtonModeG4TriggerCard.trigger(this, null, {
+                'group': group.toString(),
+                'mode': 'held_down',
+              })
             }
 
           } else if (keyAttributes === 'Key Released') {
@@ -57,10 +73,18 @@ class MyRemote extends ZwaveDevice {
             if (isOn) {
 
               this.driver.onKeyReleasedFlowTrigger.trigger(this, null, state)
+              this.homey.app.onButtonModeG4TriggerCard.trigger(this, null, {
+                'group': group.toString(),
+                'mode': 'released',
+              })
 
             } else {
 
               this.driver.offKeyReleasedFlowTrigger.trigger(this, null, state)
+              this.homey.app.offButtonModeG4TriggerCard.trigger(this, null, {
+                'group': group.toString(),
+                'mode': 'released',
+              })
             }
           }
         }

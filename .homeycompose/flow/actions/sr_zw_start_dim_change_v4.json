@@ -1,0 +1,50 @@
+{
+  "title": {
+    "en": "Start dim change"
+  },
+  "titleFormatted": {
+    "en": "[[mode]] dim in [[duration]]"
+  },
+  "duration": false,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=4512724"
+    },
+    {
+      "name": "mode",
+      "type": "dropdown",
+      "title": {
+        "en": "Mode"
+      },
+      "values": [
+        {
+          "id": "up",
+          "label": {
+            "en": "Increase"
+          }
+        },
+        {
+          "id": "down",
+          "label": {
+            "en": "Decrease"
+          }
+        }
+      ]
+    },
+    {
+      "name": "duration",
+      "type": "range",
+      "title": {
+        "en": "Change duration"
+      },
+      "min": 1,
+      "max": 127,
+      "step": 1,
+      "label": " seconds",
+      "labelMultiplier": 1,
+      "labelDecimals": 0
+    }
+  ]
+}

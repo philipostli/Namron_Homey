@@ -4,6 +4,7 @@
     "en": "Remote - 4 channel (Z-wave)",
     "nl": "Afstandsbediening - 4 kanaals (Z-wave)"
   },
+  "deprecated": true,
   "class": "remote",
   "capabilities": [
     "measure_battery",

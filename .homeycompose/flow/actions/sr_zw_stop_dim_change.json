@@ -1,0 +1,16 @@
+{
+  "title": {
+    "en": "Stop dim change"
+  },
+  "titleFormatted": {
+    "en": "Stop dim change"
+  },
+  "duration": false,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=4512724"
+    }
+  ]
+}

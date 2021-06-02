@@ -1,0 +1,40 @@
+{
+  "title": {
+    "en": "All on button is..."
+  },
+  "titleFormatted": {
+    "en": "All on button is [[mode]]"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=4512711"
+    },
+    {
+      "type": "dropdown",
+      "name": "mode",
+      "title": "Mode",
+      "values": [
+        {
+          "id": "pressed",
+          "label": {
+            "en": "pressed"
+          }
+        },
+        {
+          "id": "held_down",
+          "label": {
+            "en": "held down"
+          }
+        },
+        {
+          "id": "released",
+          "label": {
+            "en": "released"
+          }
+        }
+      ]
+    }
+  ]
+}

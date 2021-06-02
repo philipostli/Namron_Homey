@@ -29,18 +29,26 @@ class MyRemote extends ZwaveDevice {
             if (sceneNumber === 1) {
 
               this.driver.allOnFlowTrigger.trigger(this, null, null)
+              this.homey.app.allOnButtonModeTriggerCard.
+                trigger(this, null, { 'mode': 'pressed' })
 
             } else if (sceneNumber === 2) {
 
               this.driver.allOffFlowTrigger.trigger(this, null, null)
+              this.homey.app.allOffButtonModeTriggerCard.
+                trigger(this, null, { 'mode': 'pressed' })
 
             } else if (sceneNumber === 11) {
 
               this.driver.s1FlowTrigger.trigger(this, null, null)
+              this.homey.app.sceneButtonModeS2TriggerCard.
+                trigger(this, null, { 'scene': 's1', 'mode': 'pressed' })
 
             } else if (sceneNumber === 12) {
 
               this.driver.s2FlowTrigger.trigger(this, null, null)
+              this.homey.app.sceneButtonModeS2TriggerCard.
+                trigger(this, null, { 'scene': 's2', 'mode': 'pressed' })
 
             } else if (sceneNumber >= 3 && sceneNumber <= 10) {
 
@@ -48,15 +56,20 @@ class MyRemote extends ZwaveDevice {
               const isOn = (sceneNumber % 2) > 0
               const state = {
                 group: group.toString(),
+                mode: 'pressed',
               }
 
               if (isOn) {
 
                 this.driver.onFlowTrigger.trigger(this, null, state)
+                this.homey.app.onButtonModeG4TriggerCard.
+                  trigger(this, null, state)
 
               } else {
 
                 this.driver.offFlowTrigger.trigger(this, null, state)
+                this.homey.app.offButtonModeG4TriggerCard.
+                  trigger(this, null, state)
               }
 
             }
@@ -66,18 +79,26 @@ class MyRemote extends ZwaveDevice {
             if (sceneNumber === 1) {
 
               this.driver.allOnKeyHeldDownFlowTrigger.trigger(this, null, null)
+              this.homey.app.allOnButtonModeTriggerCard.
+                trigger(this, null, { 'mode': 'held_down' })
 
             } else if (sceneNumber === 2) {
 
               this.driver.allOffKeyHeldDownFlowTrigger.trigger(this, null, null)
+              this.homey.app.allOffButtonModeTriggerCard.
+                trigger(this, null, { 'mode': 'held_down' })
 
             } else if (sceneNumber === 11) {
 
               this.driver.s1KeyHeldDownFlowTrigger.trigger(this, null, null)
+              this.homey.app.sceneButtonModeS2TriggerCard.
+                trigger(this, null, { 'scene': 's1', 'mode': 'held_down' })
 
             } else if (sceneNumber === 12) {
 
               this.driver.s2KeyHeldDownFlowTrigger.trigger(this, null, null)
+              this.homey.app.sceneButtonModeS2TriggerCard.
+                trigger(this, null, { 'scene': 's2', 'mode': 'held_down' })
 
             } else if (sceneNumber >= 3 && sceneNumber <= 10) {
 
@@ -85,15 +106,20 @@ class MyRemote extends ZwaveDevice {
               const isOn = (sceneNumber % 2) > 0
               const state = {
                 group: group.toString(),
+                mode: 'held_down',
               }
 
               if (isOn) {
 
                 this.driver.onKeyHeldDownFlowTrigger.trigger(this, null, state)
+                this.homey.app.onButtonModeG4TriggerCard.
+                  trigger(this, null, state)
 
               } else {
 
                 this.driver.offKeyHeldDownFlowTrigger.trigger(this, null, state)
+                this.homey.app.offButtonModeG4TriggerCard.
+                  trigger(this, null, state)
               }
 
             }
@@ -103,18 +129,26 @@ class MyRemote extends ZwaveDevice {
             if (sceneNumber === 1) {
 
               this.driver.allOnKeyReleasedFlowTrigger.trigger(this, null, null)
+              this.homey.app.allOnButtonModeTriggerCard.
+                trigger(this, null, { 'mode': 'released' })
 
             } else if (sceneNumber === 2) {
 
               this.driver.allOffKeyReleasedFlowTrigger.trigger(this, null, null)
+              this.homey.app.allOffButtonModeTriggerCard.
+                trigger(this, null, { 'mode': 'released' })
 
             } else if (sceneNumber === 11) {
 
               this.driver.s1KeyReleasedFlowTrigger.trigger(this, null, null)
+              this.homey.app.sceneButtonModeS2TriggerCard.
+                trigger(this, null, { 'scene': 's1', 'mode': 'released' })
 
             } else if (sceneNumber === 12) {
 
               this.driver.s2KeyReleasedFlowTrigger.trigger(this, null, null)
+              this.homey.app.sceneButtonModeS2TriggerCard.
+                trigger(this, null, { 'scene': 's2', 'mode': 'released' })
 
             } else if (sceneNumber >= 3 && sceneNumber <= 10) {
 
@@ -122,15 +156,20 @@ class MyRemote extends ZwaveDevice {
               const isOn = (sceneNumber % 2) > 0
               const state = {
                 group: group.toString(),
+                mode: 'released',
               }
 
               if (isOn) {
 
                 this.driver.onKeyReleasedFlowTrigger.trigger(this, null, state)
+                this.homey.app.onButtonModeG4TriggerCard.
+                  trigger(this, null, state)
 
               } else {
 
                 this.driver.offKeyReleasedFlowTrigger.trigger(this, null, state)
+                this.homey.app.offButtonModeG4TriggerCard.
+                  trigger(this, null, state)
               }
 
             }

@@ -5,6 +5,7 @@
       "title": {
         "en": "On"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -31,6 +32,7 @@
       "title": {
         "en": "Off"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -57,6 +59,7 @@
       "title": {
         "en": "On (Key held down)"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -83,6 +86,7 @@
       "title": {
         "en": "On (Key released)"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -109,6 +113,7 @@
       "title": {
         "en": "Off (Key held down)"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
@@ -135,6 +140,7 @@
       "title": {
         "en": "Off (Key released)"
       },
+      "deprecated": true,
       "args": [
         {
           "name": "group",
