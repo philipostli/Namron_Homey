@@ -85,5 +85,8 @@
   },
   "2.1.16": {
     "en": "Add the support for the thermostat mode to 4512725."
+  },
+  "2.2.0": {
+    "en": "Make flow easier."
   }
 }
