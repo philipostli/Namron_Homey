@@ -31,7 +31,7 @@
     "productId": [
       53251
     ],
-    "includeSecure": true,
+    "includeSecure": false,
     "learnmode": {
       "image": "/drivers/4512716/assets/learnmode.svg",
       "instruction": {

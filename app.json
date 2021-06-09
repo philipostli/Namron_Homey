@@ -1,6 +1,6 @@
 {
   "id": "net.filllip-namron",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
@@ -11530,7 +11530,7 @@
         "productId": [
           45826
         ],
-        "includeSecure": true,
+        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/4512711/assets/learnmode.svg",
           "instruction": {
@@ -11604,7 +11604,7 @@
         "productId": [
           41743
         ],
-        "includeSecure": true,
+        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/4512712/assets/learnmode.svg",
           "instruction": {
@@ -11660,7 +11660,7 @@
         "productId": [
           41744
         ],
-        "includeSecure": true,
+        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/4512713/assets/learnmode.svg",
           "instruction": {
@@ -11716,7 +11716,7 @@
         "productId": [
           41733
         ],
-        "includeSecure": true,
+        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/4512714/assets/learnmode.svg",
           "instruction": {
@@ -11962,7 +11962,7 @@
         "productId": [
           53251
         ],
-        "includeSecure": true,
+        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/4512716/assets/learnmode.svg",
           "instruction": {
@@ -12014,7 +12014,7 @@
         "productId": [
           53252
         ],
-        "includeSecure": true,
+        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/4512717/assets/learnmode.svg",
           "instruction": {
@@ -12124,7 +12124,7 @@
         "productId": [
           41734
         ],
-        "includeSecure": true,
+        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/4512720/assets/learnmode.svg",
           "instruction": {
@@ -12237,7 +12237,7 @@
         "productId": [
           53252
         ],
-        "includeSecure": true,
+        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/4512725/assets/learnmode.svg",
           "instruction": {
@@ -12451,7 +12451,7 @@
         "productId": [
           53250
         ],
-        "includeSecure": true,
+        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/4512743/assets/learnmode.svg",
           "instruction": {

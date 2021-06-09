@@ -88,5 +88,8 @@
   },
   "2.2.0": {
     "en": "Make flow easier."
+  },
+  "2.2.1": {
+    "en": "Make the flow clear and concise, change the Zwave device to unsecure."
   }
 }

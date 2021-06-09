@@ -29,7 +29,7 @@
     "productId": [
       41734
     ],
-    "includeSecure": true,
+    "includeSecure": false,
     "learnmode": {
       "image": "/drivers/4512720/assets/learnmode.svg",
       "instruction": {
