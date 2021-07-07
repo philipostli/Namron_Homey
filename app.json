@@ -9826,8 +9826,8 @@
                 "nl": "External schakelaar gebruiken"
               },
               "hint": {
-                "en": "This parameter (5) determines the option to use an external switch to include or exclude the device from the network. Default: Disabled",
-                "nl": "Deze parameter (5) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
+                "en": "This parameter ({{zwaveParameterIndex}}) determines the option to use an external switch to include or exclude the device from the network. Default: Disabled",
+                "nl": "Deze parameter ({{zwaveParameterIndex}}) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
               },
               "zwave": {
                 "index": 5,
@@ -9851,7 +9851,7 @@
                 "nl": "Dim transitietijd"
               },
               "hint": {
-                "en": "This parameter (3) determines the default dim duration. Values: 0 - 100. 0: Instantly. 100: Slow. Default: 5"
+                "en": "This parameter ({{zwaveParameterIndex}}) determines the default dim duration. Values: 0 - 100. 0: Instantly. 100: Slow. Default: 5"
               },
               "zwave": {
                 "index": 3,
@@ -9892,7 +9892,7 @@
                 "en": "Dim method"
               },
               "hint": {
-                "en": "This parameter (6) determines if the dimmer uses linear or logarithmic dimming."
+                "en": "This parameter ({{zwaveParameterIndex}}) determines if the dimmer uses linear or logarithmic dimming."
               },
               "zwave": {
                 "index": 6,
@@ -9929,7 +9929,7 @@
                 "en": "Default brightness"
               },
               "hint": {
-                "en": "This parameter (7) determines the default brightness when turned on. 0: Dimmer will use state after power is restored (parameter 1). Values: 0 - 99. Default: 0"
+                "en": "This parameter ({{zwaveParameterIndex}}) determines the default brightness when turned on. 0: Dimmer will use state after power is restored (parameter 1). Values: 0 - 99. Default: 0"
               },
               "zwave": {
                 "index": 7,
@@ -9951,8 +9951,8 @@
                 "nl": "Herstel status na stroomonderbreking"
               },
               "hint": {
-                "en": "This parameter (1) determines whether after a power failure the device should be restored to the state it had before the power failure.",
-                "nl": "Deze parameter (1) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+                "en": "This parameter ({{zwaveParameterIndex}}) determines whether after a power failure the device should be restored to the state it had before the power failure.",
+                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
               },
               "zwave": {
                 "index": 1,
@@ -9991,8 +9991,8 @@
                 "nl": "Stuur `BASIC report`"
               },
               "hint": {
-                "en": "This parameter (2) determines whether the `BASIC report` is sent to the Lifeline when the load state changed. Default: activated",
-                "nl": "Deze parameter (2) bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
+                "en": "This parameter ({{zwaveParameterIndex}}) determines whether the `BASIC report` is sent to the Lifeline when the load state changed. Default: activated",
+                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
               },
               "zwave": {
                 "index": 2,
@@ -11817,8 +11817,8 @@
                 "nl": "External schakelaar gebruiken"
               },
               "hint": {
-                "en": "This parameter (7) determines the option to use an external switch to include or exclude the device from the network.",
-                "nl": "Deze parameter (7) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
+                "en": "This parameter ({{zwaveParameterIndex}}) determines the option to use an external switch to include or exclude the device from the network.",
+                "nl": "Deze parameter ({{zwaveParameterIndex}}) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
               },
               "zwave": {
                 "index": 7,
@@ -11844,8 +11844,8 @@
                 "nl": "Herstel status na stroomonderbreking"
               },
               "hint": {
-                "en": "This parameter (2) determines whether after a power failure the device should be restored to the state it had before the power failure.",
-                "nl": "Deze parameter (2) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+                "en": "This parameter ({{zwaveParameterIndex}}) determines whether after a power failure the device should be restored to the state it had before the power failure.",
+                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
               },
               "zwave": {
                 "index": 2,
@@ -11884,8 +11884,8 @@
                 "nl": "Stuur `BASIC report`"
               },
               "hint": {
-                "en": "This parameter (3) determines whether the `BASIC report` is send to the Lifeline when the load state changed. Default: activated",
-                "nl": "Deze parameter (3) bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
+                "en": "This parameter ({{zwaveParameterIndex}}) determines whether the `BASIC report` is send to the Lifeline when the load state changed. Default: activated",
+                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
               },
               "zwave": {
                 "index": 3,
@@ -11900,8 +11900,8 @@
                 "en": "MOSFET driving type"
               },
               "hint": {
-                "en": "This parameter (6) determines the used MOSFET driving type. Default: Leading edge",
-                "nl": "Deze parameter (6) bepaalt de gebruikte MOSFET driving type. Standaard: Fase aansnijding"
+                "en": "This parameter ({{zwaveParameterIndex}}) determines the used MOSFET driving type. Default: Leading edge",
+                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de gebruikte MOSFET driving type. Standaard: Fase aansnijding"
               },
               "zwave": {
                 "index": 6,
@@ -12464,6 +12464,59 @@
       }
     },
     {
+      "id": "4512744",
+      "name": {
+        "en": "4512744"
+      },
+      "class": "thermostat",
+      "capabilities": [
+        "measure_power",
+        "meter_power",
+        "measure_temperature",
+        "target_temperature",
+        "my_4512744_thermostat_mode"
+      ],
+      "icon": "/drivers/4512744/assets/icon.svg",
+      "images": {
+        "large": "/drivers/4512744/assets/images/large.png",
+        "small": "/drivers/4512744/assets/images/small.png"
+      },
+      "zwave": {
+        "manufacturerId": [
+          1080
+        ],
+        "productTypeId": [
+          512
+        ],
+        "productId": [
+          53267
+        ],
+        "includeSecure": false,
+        "learnmode": {
+          "image": "/drivers/4512744/assets/learnmode.svg",
+          "instruction": {
+            "en": "# Pair\n1) At OFF mode (Off icon), press and hold up and down buttons at the same time for over 5 seconds to enter Settings Menu.\n2) Short press move up and down button to select a settings item, then short press button F to enter selected item.\n3) Select \"Add\", then short press button F.\n\n# Factory Reset\nEnter settings item, select \"Reset\", then short press button F."
+          }
+        },
+        "associationGroups": [
+          1,
+          2
+        ],
+        "associationGroupsOptions": {
+          "1": {
+            "hint": {
+              "en": "1.Send Command Class DEVICE_RESET_LOCALLY_NOTIFICATION to associated devices of this group when factory reset the device.\n2.Send Command Class THERMOSTAT_SETPOINT_REPORT, THERMOSTAT_MODE_REPORT, THERMOSTAT_OPERATING_STATE_REPORT to associated devices of this group When operation mode and temperature change.\n3.Send Command Class NOTIFICATION_REPORT to associated devices of this group when over current, over heat detected\n4.Send Command Class METER_REPORT to associated devices of this group to report metering parameters."
+            }
+          },
+          "2": {
+            "hint": {
+              "en": "Transfer Command Class THERMOSTAT_SETPOINT_SET THERMOSTAT_MODE_SET\nto control other temperature control devices when operation changes"
+            }
+          }
+        }
+      }
+    },
+    {
       "id": "89665",
       "name": {
         "en": "89665"
@@ -12696,8 +12749,8 @@
                 "nl": "External schakelaar gebruiken"
               },
               "hint": {
-                "en": "This parameter (5) determines the option to use an external switch to include or exclude the device from the network. Default: Disabled",
-                "nl": "Deze parameter (5) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
+                "en": "This parameter ({{zwaveParameterIndex}}) determines the option to use an external switch to include or exclude the device from the network. Default: Disabled",
+                "nl": "Deze parameter ({{zwaveParameterIndex}}) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
               },
               "zwave": {
                 "index": 5,
@@ -12721,7 +12774,7 @@
                 "nl": "Dim transitietijd"
               },
               "hint": {
-                "en": "This parameter (3) determines the default dim duration. Values: 0 - 100. 0: Instantly. 100: Slow. Default: 5"
+                "en": "This parameter ({{zwaveParameterIndex}}) determines the default dim duration. Values: 0 - 100. 0: Instantly. 100: Slow. Default: 5"
               },
               "zwave": {
                 "index": 3,
@@ -12762,7 +12815,7 @@
                 "en": "Dim method"
               },
               "hint": {
-                "en": "This parameter (6) determines if the dimmer uses linear or logarithmic dimming."
+                "en": "This parameter ({{zwaveParameterIndex}}) determines if the dimmer uses linear or logarithmic dimming."
               },
               "zwave": {
                 "index": 6,
@@ -12799,7 +12852,7 @@
                 "en": "Default brightness"
               },
               "hint": {
-                "en": "This parameter (7) determines the default brightness when turned on. 0: Dimmer will use state after power is restored (parameter 1). Values: 0 - 99. Default: 0"
+                "en": "This parameter ({{zwaveParameterIndex}}) determines the default brightness when turned on. 0: Dimmer will use state after power is restored (parameter 1). Values: 0 - 99. Default: 0"
               },
               "zwave": {
                 "index": 7,
@@ -12821,8 +12874,8 @@
                 "nl": "Herstel status na stroomonderbreking"
               },
               "hint": {
-                "en": "This parameter (1) determines whether after a power failure the device should be restored to the state it had before the power failure.",
-                "nl": "Deze parameter (1) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+                "en": "This parameter ({{zwaveParameterIndex}}) determines whether after a power failure the device should be restored to the state it had before the power failure.",
+                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
               },
               "zwave": {
                 "index": 1,
@@ -12861,8 +12914,8 @@
                 "nl": "Stuur `BASIC report`"
               },
               "hint": {
-                "en": "This parameter (2) determines whether the `BASIC report` is sent to the Lifeline when the load state changed. Default: activated",
-                "nl": "Deze parameter (2) bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
+                "en": "This parameter ({{zwaveParameterIndex}}) determines whether the `BASIC report` is sent to the Lifeline when the load state changed. Default: activated",
+                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
               },
               "zwave": {
                 "index": 2,
@@ -12933,8 +12986,8 @@
                 "nl": "External schakelaar gebruiken"
               },
               "hint": {
-                "en": "This parameter (7) determines the option to use an external switch to include or exclude the device from the network.",
-                "nl": "Deze parameter (7) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
+                "en": "This parameter ({{zwaveParameterIndex}}) determines the option to use an external switch to include or exclude the device from the network.",
+                "nl": "Deze parameter ({{zwaveParameterIndex}}) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
               },
               "zwave": {
                 "index": 7,
@@ -12960,8 +13013,8 @@
                 "nl": "Herstel status na stroomonderbreking"
               },
               "hint": {
-                "en": "This parameter (2) determines whether after a power failure the device should be restored to the state it had before the power failure.",
-                "nl": "Deze parameter (2) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+                "en": "This parameter ({{zwaveParameterIndex}}) determines whether after a power failure the device should be restored to the state it had before the power failure.",
+                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
               },
               "zwave": {
                 "index": 2,
@@ -13000,8 +13053,8 @@
                 "nl": "Stuur `BASIC report`"
               },
               "hint": {
-                "en": "This parameter (3) determines whether the `BASIC report` is send to the Lifeline when the load state changed. Default: activated",
-                "nl": "Deze parameter (3) bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
+                "en": "This parameter ({{zwaveParameterIndex}}) determines whether the `BASIC report` is send to the Lifeline when the load state changed. Default: activated",
+                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
               },
               "zwave": {
                 "index": 3,
@@ -13016,8 +13069,8 @@
                 "en": "MOSFET driving type"
               },
               "hint": {
-                "en": "This parameter (6) determines the used MOSFET driving type. Default: Leading edge",
-                "nl": "Deze parameter (6) bepaalt de gebruikte MOSFET driving type. Standaard: Fase aansnijding"
+                "en": "This parameter ({{zwaveParameterIndex}}) determines the used MOSFET driving type. Default: Leading edge",
+                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de gebruikte MOSFET driving type. Standaard: Fase aansnijding"
               },
               "zwave": {
                 "index": 6,
@@ -13367,6 +13420,47 @@
     }
   ],
   "capabilities": {
+    "my_4512744_thermostat_mode": {
+      "title": {
+        "en": "Thermostat Mode"
+      },
+      "type": "enum",
+      "setable": true,
+      "getable": true,
+      "uiComponent": "picker",
+      "values": [
+        {
+          "id": "off_mode",
+          "title": {
+            "en": "Off"
+          }
+        },
+        {
+          "id": "auto_mode",
+          "title": {
+            "en": "Auto"
+          }
+        },
+        {
+          "id": "manual_mode",
+          "title": {
+            "en": "Manual"
+          }
+        },
+        {
+          "id": "dry_mode",
+          "title": {
+            "en": "Dry"
+          }
+        },
+        {
+          "id": "away_mode",
+          "title": {
+            "en": "Away"
+          }
+        }
+      ]
+    },
     "my_device_operating_mode": {
       "id": "my_device_operating_mode",
       "title": {
