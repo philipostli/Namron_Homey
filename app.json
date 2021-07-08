@@ -12466,7 +12466,7 @@
     {
       "id": "4512744",
       "name": {
-        "en": "4512744"
+        "en": "4512744/45"
       },
       "class": "thermostat",
       "capabilities": [
@@ -12489,7 +12489,8 @@
           512
         ],
         "productId": [
-          53267
+          53267,
+          53285
         ],
         "includeSecure": false,
         "learnmode": {
