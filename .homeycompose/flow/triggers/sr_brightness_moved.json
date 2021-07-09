@@ -1,9 +1,9 @@
 {
   "title": {
-    "en": "Brightness is moved"
+    "en": "Brightness changed"
   },
   "titleFormatted": {
-    "en": "Brightness is moved"
+    "en": "Brightness changed"
   },
   "hint": "The brightness range from 0.00 to 1.00",
   "args": [

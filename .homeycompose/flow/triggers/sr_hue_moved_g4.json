@@ -1,9 +1,9 @@
 {
   "title": {
-    "en": "Hue is moved"
+    "en": "Hue changed"
   },
   "titleFormatted": {
-    "en": "[[group]] hue is moved"
+    "en": "[[group]] hue changed"
   },
   "hint": "The hue range from 0.00 to 1.00",
   "args": [

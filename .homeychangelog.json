@@ -91,5 +91,8 @@
   },
   "2.2.1": {
     "en": "Make the flow clear and concise, change the Zwave device to unsecure."
+  },
+  "2.2.2": {
+    "en": "Add support for 4512744, 4512745, 4512746; Bug fixes and improvements."
   }
 }

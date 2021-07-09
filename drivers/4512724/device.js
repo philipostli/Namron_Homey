@@ -6,8 +6,8 @@ class DimLight extends ZwaveLightDevice {
 
   async onNodeInit ({ node }) {
 
-    this.enableDebug()
-    this.printNode()
+    // this.enableDebug()
+    // this.printNode()
 
     if (this.hasCapability('meter_power')) {
       this.registerCapability('meter_power', 'METER')

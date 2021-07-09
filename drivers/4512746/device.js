@@ -6,8 +6,8 @@ class SwitchLight extends ZwaveLightDevice {
 
   async onNodeInit ({ node }) {
 
-    this.enableDebug()
-    this.printNode()
+    // this.enableDebug()
+    // this.printNode()
 
     this.registerCapability('onoff', 'SWITCH_BINARY')
     this.registerCapability('measure_power', 'METER')

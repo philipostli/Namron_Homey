@@ -1,11 +1,11 @@
 {
   "id": "net.filllip-namron",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
   "name": {
-    "en": "Namron AS"
+    "en": "Namron"
   },
   "description": {
     "en": "The smarter choice."
@@ -338,10 +338,10 @@
       },
       {
         "title": {
-          "en": "Brightness is moved"
+          "en": "Brightness changed"
         },
         "titleFormatted": {
-          "en": "Brightness is moved"
+          "en": "Brightness changed"
         },
         "hint": "The brightness range from 0.00 to 1.00",
         "args": [
@@ -425,10 +425,10 @@
       },
       {
         "title": {
-          "en": "Hue is moved"
+          "en": "Hue changed"
         },
         "titleFormatted": {
-          "en": "Hue is moved"
+          "en": "Hue changed"
         },
         "hint": "The hue range from 0.00 to 1.00",
         "args": [
@@ -452,10 +452,10 @@
       },
       {
         "title": {
-          "en": "Hue is moved"
+          "en": "Hue changed"
         },
         "titleFormatted": {
-          "en": "[[group]] hue is moved"
+          "en": "[[group]] hue changed"
         },
         "hint": "The hue range from 0.00 to 1.00",
         "args": [
@@ -1419,10 +1419,10 @@
       },
       {
         "title": {
-          "en": "White is moved"
+          "en": "White changed"
         },
         "titleFormatted": {
-          "en": "White is moved"
+          "en": "White changed"
         },
         "hint": "The white range from 0.00 to 1.00, 0.00 for coolest white, 1.00 for warmest white.",
         "args": [
@@ -1446,10 +1446,10 @@
       },
       {
         "title": {
-          "en": "White is moved"
+          "en": "White changed"
         },
         "titleFormatted": {
-          "en": "[[group]] white is moved"
+          "en": "[[group]] white changed"
         },
         "hint": "The white range from 0.00 to 1.00, 0.00 for coolest white, 1.00 for warmest white.",
         "args": [
@@ -11505,8 +11505,7 @@
       },
       "class": "remote",
       "capabilities": [
-        "measure_battery",
-        "alarm_battery"
+        "measure_battery"
       ],
       "energy": {
         "batteries": [
@@ -11580,8 +11579,7 @@
       },
       "class": "remote",
       "capabilities": [
-        "measure_battery",
-        "alarm_battery"
+        "measure_battery"
       ],
       "energy": {
         "batteries": [
@@ -11636,8 +11634,7 @@
       },
       "class": "remote",
       "capabilities": [
-        "measure_battery",
-        "alarm_battery"
+        "measure_battery"
       ],
       "energy": {
         "batteries": [
@@ -11692,8 +11689,7 @@
       },
       "class": "remote",
       "capabilities": [
-        "measure_battery",
-        "alarm_battery"
+        "measure_battery"
       ],
       "energy": {
         "batteries": [
@@ -11937,8 +11933,7 @@
       "class": "sensor",
       "capabilities": [
         "alarm_contact",
-        "measure_battery",
-        "alarm_battery"
+        "measure_battery"
       ],
       "energy": {
         "batteries": [
@@ -12100,8 +12095,7 @@
       },
       "class": "remote",
       "capabilities": [
-        "measure_battery",
-        "alarm_battery"
+        "measure_battery"
       ],
       "energy": {
         "batteries": [
@@ -13160,8 +13154,7 @@
       "deprecated": true,
       "class": "remote",
       "capabilities": [
-        "measure_battery",
-        "alarm_battery"
+        "measure_battery"
       ],
       "energy": {
         "batteries": [
@@ -13236,8 +13229,7 @@
       "deprecated": true,
       "class": "remote",
       "capabilities": [
-        "measure_battery",
-        "alarm_battery"
+        "measure_battery"
       ],
       "energy": {
         "batteries": [
@@ -13293,8 +13285,7 @@
       "deprecated": true,
       "class": "remote",
       "capabilities": [
-        "measure_battery",
-        "alarm_battery"
+        "measure_battery"
       ],
       "energy": {
         "batteries": [
@@ -13357,8 +13348,7 @@
       "deprecated": true,
       "class": "remote",
       "capabilities": [
-        "measure_battery",
-        "alarm_battery"
+        "measure_battery"
       ],
       "energy": {
         "batteries": [
