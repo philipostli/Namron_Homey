@@ -94,5 +94,8 @@
   },
   "2.2.2": {
     "en": "Add support for 4512744, 4512745, 4512746; Bug fixes and improvements."
+  },
+  "2.2.3": {
+    "en": "Fixes an issue that some Z-Wave devices pairing failed."
   }
 }
