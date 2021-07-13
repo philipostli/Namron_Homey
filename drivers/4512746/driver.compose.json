@@ -19,7 +19,7 @@
       }
     },
     "measure_power": {
-      "approximated": true
+      "isApproximated": true
     }
   },
   "icon": "/drivers/4512746/assets/icon.svg",
