@@ -12468,7 +12468,10 @@
         "meter_power",
         "measure_temperature",
         "target_temperature",
-        "my_4512744_thermostat_mode"
+        "my_4512744_thermostat_mode",
+        "my_ZV9092A_temperature_control_reference",
+        "my_ZV9092A_home_sensor",
+        "my_ZV9092A_floor_sensor"
       ],
       "icon": "/drivers/4512744/assets/icon.svg",
       "images": {
@@ -13524,6 +13527,61 @@
           "id": "thermostat_mode",
           "title": {
             "en": "Thermostat mode"
+          }
+        }
+      ]
+    },
+    "my_ZV9092A_floor_sensor": {
+      "title": {
+        "en": "Floor Sensor"
+      },
+      "type": "number",
+      "setable": false,
+      "getable": true,
+      "uiComponent": "sensor",
+      "units": {
+        "en": "°C"
+      },
+      "icon": "/assets/temperature_icon.svg"
+    },
+    "my_ZV9092A_home_sensor": {
+      "title": {
+        "en": "Home Sensor"
+      },
+      "type": "number",
+      "setable": false,
+      "getable": true,
+      "uiComponent": "sensor",
+      "units": {
+        "en": "°C"
+      },
+      "icon": "/assets/temperature_icon.svg"
+    },
+    "my_ZV9092A_temperature_control_reference": {
+      "title": {
+        "en": "Temperature Control Reference"
+      },
+      "type": "enum",
+      "setable": true,
+      "getable": true,
+      "uiComponent": "picker",
+      "values": [
+        {
+          "id": "room_sensor",
+          "title": {
+            "en": "Room Sensor"
+          }
+        },
+        {
+          "id": "floor_sensor",
+          "title": {
+            "en": "Floor Sensor"
+          }
+        },
+        {
+          "id": "room_floor_sensor",
+          "title": {
+            "en": "Room + Floor Sensor"
           }
         }
       ]

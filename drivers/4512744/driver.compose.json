@@ -9,7 +9,10 @@
     "meter_power",
     "measure_temperature",
     "target_temperature",
-    "my_4512744_thermostat_mode"
+    "my_4512744_thermostat_mode",
+    "my_ZV9092A_temperature_control_reference",
+    "my_ZV9092A_home_sensor",
+    "my_ZV9092A_floor_sensor"
   ],
   "icon": "/drivers/4512744/assets/icon.svg",
   "images": {
