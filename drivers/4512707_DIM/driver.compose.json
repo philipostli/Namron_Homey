@@ -1,7 +1,7 @@
 {
   "id": "4512707_DIM",
   "name": {
-    "en": "4512707 (DIM)"
+    "en": "4512707 - Zigbee LED Controller Dim"
   },
   "class": "light",
   "capabilities": [

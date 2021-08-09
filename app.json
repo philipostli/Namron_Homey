@@ -1,6 +1,6 @@
 {
   "id": "net.filllip-namron",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
@@ -9670,7 +9670,7 @@
     {
       "id": "1402755",
       "name": {
-        "en": "1402755"
+        "en": "1402755 - Zigbee Rotery Dimmer"
       },
       "class": "light",
       "capabilities": [
@@ -9734,7 +9734,7 @@
     {
       "id": "1402756",
       "name": {
-        "en": "1402756"
+        "en": "1402756 - Z-Wave Rotery Dimmer"
       },
       "class": "light",
       "capabilities": [
@@ -10007,7 +10007,7 @@
     {
       "id": "3308431",
       "name": {
-        "en": "3308431"
+        "en": "3308431 - Luna Lamp"
       },
       "class": "light",
       "capabilities": [
@@ -10070,7 +10070,7 @@
     {
       "id": "3802960",
       "name": {
-        "en": "3802960"
+        "en": "3802960 - E27 White"
       },
       "class": "light",
       "capabilities": [
@@ -10133,7 +10133,7 @@
     {
       "id": "3802961",
       "name": {
-        "en": "3802961"
+        "en": "3802961- E27 CCT"
       },
       "class": "light",
       "capabilities": [
@@ -10203,7 +10203,7 @@
     {
       "id": "3802962",
       "name": {
-        "en": "3802962"
+        "en": "3802962- E27 Color"
       },
       "class": "light",
       "capabilities": [
@@ -10285,7 +10285,7 @@
     {
       "id": "3802963",
       "name": {
-        "en": "3802963"
+        "en": "3802963 - E14 White"
       },
       "class": "light",
       "capabilities": [
@@ -10348,7 +10348,7 @@
     {
       "id": "3802964",
       "name": {
-        "en": "3802964"
+        "en": "3802964 - E14 CCT"
       },
       "class": "light",
       "capabilities": [
@@ -10418,7 +10418,7 @@
     {
       "id": "3802965",
       "name": {
-        "en": "3802965"
+        "en": "3802965 - GU10 White"
       },
       "class": "light",
       "capabilities": [
@@ -10481,7 +10481,7 @@
     {
       "id": "3802966",
       "name": {
-        "en": "3802966"
+        "en": "3802966 - GU10 CCT"
       },
       "class": "light",
       "capabilities": [
@@ -10551,7 +10551,7 @@
     {
       "id": "3802967",
       "name": {
-        "en": "3802967"
+        "en": "3802967 - G10 Color"
       },
       "class": "light",
       "capabilities": [
@@ -10633,7 +10633,7 @@
     {
       "id": "3802968",
       "name": {
-        "en": "3802968"
+        "en": "3802968 - E27 Filament"
       },
       "class": "light",
       "capabilities": [
@@ -10703,7 +10703,7 @@
     {
       "id": "4512700",
       "name": {
-        "en": "4512700"
+        "en": "4512700 - Zigbee Dimmer"
       },
       "class": "light",
       "capabilities": [
@@ -10767,7 +10767,7 @@
     {
       "id": "4512701",
       "name": {
-        "en": "4512701"
+        "en": "4512701 - Zigbee 1 Channel"
       },
       "class": "remote",
       "capabilities": [
@@ -10819,7 +10819,7 @@
     {
       "id": "4512702",
       "name": {
-        "en": "4512702"
+        "en": "4512702 - Zigbee 2 Channel"
       },
       "class": "remote",
       "capabilities": [
@@ -10871,7 +10871,7 @@
     {
       "id": "4512703",
       "name": {
-        "en": "4512703/21"
+        "en": "4512703/21 - Zigbee 4 Channel"
       },
       "class": "remote",
       "capabilities": [
@@ -10950,7 +10950,7 @@
     {
       "id": "4512704",
       "name": {
-        "en": "4512704"
+        "en": "4512704 - Zigbee Switch"
       },
       "class": "light",
       "capabilities": [
@@ -11003,7 +11003,7 @@
     {
       "id": "4512705",
       "name": {
-        "en": "4512705"
+        "en": "4512705 - Zigbee 4 Channel Remorte"
       },
       "class": "remote",
       "capabilities": [
@@ -11082,7 +11082,7 @@
     {
       "id": "4512706",
       "name": {
-        "en": "4512706"
+        "en": "4512706 - Zigbee RGB Remote"
       },
       "class": "remote",
       "capabilities": [
@@ -11161,7 +11161,7 @@
     {
       "id": "4512707_CCT",
       "name": {
-        "en": "4512707 (CCT)"
+        "en": "4512707 - Zigbee LED CCT Controller"
       },
       "class": "light",
       "capabilities": [
@@ -11233,7 +11233,7 @@
     {
       "id": "4512707_COLOR",
       "name": {
-        "en": "4512707 (Color)"
+        "en": "4512707 - Zigbee LED Controller Color"
       },
       "class": "light",
       "capabilities": [
@@ -11320,7 +11320,7 @@
     {
       "id": "4512707_DIM",
       "name": {
-        "en": "4512707 (DIM)"
+        "en": "4512707 - Zigbee LED Controller Dim"
       },
       "class": "light",
       "capabilities": [
@@ -11384,7 +11384,7 @@
     {
       "id": "4512708",
       "name": {
-        "en": "4512708"
+        "en": "4512708 - Zigbee LED Controller"
       },
       "class": "light",
       "capabilities": [
@@ -11447,7 +11447,7 @@
     {
       "id": "4512710",
       "name": {
-        "en": "4512710"
+        "en": "4512710 - Z-Wave Dimmer"
       },
       "class": "light",
       "capabilities": [
@@ -11501,7 +11501,7 @@
     {
       "id": "4512711",
       "name": {
-        "en": "4512711"
+        "en": "4512711 - Z-Wave 4 Channel Remote"
       },
       "class": "remote",
       "capabilities": [
@@ -11575,7 +11575,7 @@
     {
       "id": "4512712",
       "name": {
-        "en": "4512712/30"
+        "en": "4512712/30 - Z-Wave 1 Channel"
       },
       "class": "remote",
       "capabilities": [
@@ -11630,7 +11630,7 @@
     {
       "id": "4512713",
       "name": {
-        "en": "4512713"
+        "en": "4512713 - Z-Wave 1 Channel"
       },
       "class": "remote",
       "capabilities": [
@@ -11685,7 +11685,7 @@
     {
       "id": "4512714",
       "name": {
-        "en": "4512714/22"
+        "en": "4512714/22 - Z-Wave 4 Channel"
       },
       "class": "remote",
       "capabilities": [
@@ -11758,7 +11758,7 @@
     {
       "id": "4512715",
       "name": {
-        "en": "4512715"
+        "en": "4512715 - Z-Wave Switch"
       },
       "class": "light",
       "capabilities": [
@@ -11928,7 +11928,7 @@
     {
       "id": "4512716",
       "name": {
-        "en": "4512716"
+        "en": "4512716 - Z-Wave Door/Window Sensor"
       },
       "class": "sensor",
       "capabilities": [
@@ -11985,7 +11985,7 @@
     {
       "id": "4512717",
       "name": {
-        "en": "4512717"
+        "en": "4512717 - Z-Wave Wall Plug"
       },
       "class": "socket",
       "capabilities": [
@@ -12031,7 +12031,7 @@
     {
       "id": "4512719",
       "name": {
-        "en": "4512719"
+        "en": "4512719 - Zigbee 2 Channel"
       },
       "class": "remote",
       "capabilities": [
@@ -12091,7 +12091,7 @@
     {
       "id": "4512720",
       "name": {
-        "en": "4512720/31"
+        "en": "4512720/31 - Z-Wave 2 Channel"
       },
       "class": "remote",
       "capabilities": [
@@ -12152,7 +12152,7 @@
     {
       "id": "4512724",
       "name": {
-        "en": "4512724"
+        "en": "4512724 - Z-Wave Dimmer 2"
       },
       "class": "light",
       "capabilities": [
@@ -12205,7 +12205,7 @@
     {
       "id": "4512725",
       "name": {
-        "en": "4512725"
+        "en": "4512725 - Z-Wave Plug Thermostat"
       },
       "class": "socket",
       "capabilities": [
@@ -12253,7 +12253,7 @@
     {
       "id": "4512726",
       "name": {
-        "en": "4512726"
+        "en": "4512726 - Zigbee 4-1 Rotery Dimmer"
       },
       "class": "remote",
       "capabilities": [
@@ -12303,7 +12303,7 @@
     {
       "id": "4512728",
       "name": {
-        "en": "4512728"
+        "en": "4512728 - Zigbee 1 Channel"
       },
       "class": "remote",
       "capabilities": [
@@ -12353,7 +12353,7 @@
     {
       "id": "4512729",
       "name": {
-        "en": "4512729"
+        "en": "4512729 - Zigbee 2 Channel"
       },
       "class": "remote",
       "capabilities": [
@@ -12412,7 +12412,7 @@
     {
       "id": "4512743",
       "name": {
-        "en": "4512743"
+        "en": "4512743 - Z-Wave LED Controller"
       },
       "class": "light",
       "capabilities": [
@@ -12460,7 +12460,7 @@
     {
       "id": "4512744",
       "name": {
-        "en": "4512744/45"
+        "en": "4512744/45 - Z-Wave Thermostat Touch"
       },
       "class": "thermostat",
       "capabilities": [
@@ -12517,7 +12517,7 @@
     {
       "id": "4512746",
       "name": {
-        "en": "4512746"
+        "en": "4512746 - Z-Wave Switch 16A"
       },
       "class": "light",
       "capabilities": [
@@ -12569,7 +12569,7 @@
     {
       "id": "89665",
       "name": {
-        "en": "89665"
+        "en": "89665 - Zigbee Led Strip"
       },
       "class": "light",
       "capabilities": [

@@ -1,7 +1,7 @@
 {
   "id": "4512707_CCT",
   "name": {
-    "en": "4512707 (CCT)"
+    "en": "4512707 - Zigbee LED CCT Controller"
   },
   "class": "light",
   "capabilities": [

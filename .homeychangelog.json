@@ -97,5 +97,8 @@
   },
   "2.2.3": {
     "en": "Fixes an issue that some Z-Wave devices pairing failed."
+  },
+  "2.2.4": {
+    "en": "Add support for thermsatat."
   }
 }
