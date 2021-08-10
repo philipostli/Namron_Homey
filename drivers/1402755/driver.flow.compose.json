@@ -5,6 +5,9 @@
       "title": {
         "en": "Step level (with On/Off)"
       },
+      "titleFormatted": {
+        "en": "Step level (with On/Off) [[mode]], step size [[step_size]], transition [[transition_time]]"
+      },
       "hint": {
         "en": "Change the brightness step by step."
       },
@@ -50,6 +53,9 @@
       "title": {
         "en": "Move level (with On/Off)"
       },
+      "titleFormatted": {
+        "en": "Move level (with On/Off) [[move_mode]], rate [[rate]]"
+      },
       "hint": {
         "en": "Change the brightness continuously."
       },
@@ -94,6 +100,9 @@
       "title": {
         "en": "Recall scene"
       },
+      "titleFormatted": {
+        "en": "[[group_id]] recall scene [[scene_id]]"
+      },
       "hint": {
         "en": "Recall the saved scene."
       },
@@ -118,6 +127,9 @@
       "id": "1402755_store_scene",
       "title": {
         "en": "Store scene"
+      },
+      "titleFormatted": {
+        "en": "[[group_id]] store scene [[scene_id]]"
       },
       "hint": {
         "en": "Save the current state to the scene."

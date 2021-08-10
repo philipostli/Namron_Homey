@@ -100,5 +100,14 @@
   },
   "2.2.4": {
     "en": "Add support for thermsatat."
+  },
+  "2.2.5": {
+    "en": "Update the device name."
+  },
+  "2.2.6": {
+    "en": "Update the device name."
+  },
+  "2.2.7": {
+    "en": "Update all device names"
   }
 }

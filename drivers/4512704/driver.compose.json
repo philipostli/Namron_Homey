@@ -9,6 +9,7 @@
   ],
   "capabilitiesOptions": {
   },
+  "connectivity": ["zigbee"],
   "zigbee": {
     "manufacturerName": [
       "NAMRON AS",

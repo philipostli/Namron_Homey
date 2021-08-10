@@ -18,6 +18,7 @@
     "large": "/drivers/ZW_WallController_2/assets/images/large.png",
     "small": "/drivers/ZW_WallController_2/assets/images/small.png"
   },
+  "connectivity": ["zwave"],
   "zwave": {
     "manufacturerId": [
       816,

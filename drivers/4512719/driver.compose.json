@@ -12,6 +12,7 @@
       "CR2450"
     ]
   },
+  "connectivity": ["zigbee"],
   "zigbee": {
     "manufacturerName": [
       "NAMRON AS",

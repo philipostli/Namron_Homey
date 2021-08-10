@@ -18,6 +18,7 @@
     "large": "/drivers/4512715/assets/images/large.png",
     "small": "/drivers/4512715/assets/images/small.png"
   },
+  "connectivity": ["zwave"],
   "zwave": {
     "manufacturerId": [
       816,

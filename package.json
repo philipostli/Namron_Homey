@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "app.js",
   "devDependencies": {
-    "homey": "^2.20.3"
+    "homey": "^2.20.6"
   },
   "dependencies": {
     "homey-log": "^2.0.1",

@@ -11,6 +11,9 @@ class MyApp extends Homey.App {
     this.setUpZwaveFlowTriggerCards()
 
     this.setUpZwaveFlowActionCards()
+
+    // const manifest = Homey.manifest
+    // this.log(manifest.flow.triggers[6])
   }
 
   setUpZigbeeFlowTriggerCards () {

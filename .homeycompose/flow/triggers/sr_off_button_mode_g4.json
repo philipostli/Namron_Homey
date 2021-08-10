@@ -13,6 +13,7 @@
     },
     {
       "name": "group",
+      "title": "Group",
       "type": "dropdown",
       "values": [
         {

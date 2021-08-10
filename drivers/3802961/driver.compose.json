@@ -24,6 +24,7 @@
       "setOnDim": false
     }
   },
+  "connectivity": ["zigbee"],
   "zigbee": {
     "manufacturerName": [
       "NAMRON AS",

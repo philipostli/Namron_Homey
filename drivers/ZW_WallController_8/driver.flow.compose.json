@@ -5,9 +5,13 @@
       "title": {
         "en": "On"
       },
+      "titleFormatted": {
+        "en": "[[group]] on"
+      },
       "args": [
         {
           "name": "group",
+          "title": "Group",
           "type": "dropdown",
           "values": [
             {
@@ -43,9 +47,13 @@
       "title": {
         "en": "Off"
       },
+      "titleFormatted": {
+        "en": "[[group]] off"
+      },
       "args": [
         {
           "name": "group",
+          "title": "Group",
           "type": "dropdown",
           "values": [
             {
@@ -81,9 +89,13 @@
       "title": {
         "en": "On (Key held down)"
       },
+      "titleFormatted": {
+        "en": "[[group]] on (Key held down)"
+      },
       "args": [
         {
           "name": "group",
+          "title": "Group",
           "type": "dropdown",
           "values": [
             {
@@ -119,9 +131,13 @@
       "title": {
         "en": "On (Key released)"
       },
+      "titleFormatted": {
+        "en": "[[group]] on (Key released)"
+      },
       "args": [
         {
           "name": "group",
+          "title": "Group",
           "type": "dropdown",
           "values": [
             {
@@ -157,9 +173,13 @@
       "title": {
         "en": "Off (Key held down)"
       },
+      "titleFormatted": {
+        "en": "[[group]] off (Key held down)"
+      },
       "args": [
         {
           "name": "group",
+          "title": "Group",
           "type": "dropdown",
           "values": [
             {
@@ -195,9 +215,13 @@
       "title": {
         "en": "Off (Key released)"
       },
+      "titleFormatted": {
+        "en": "[[group]] off (Key released)"
+      },
       "args": [
         {
           "name": "group",
+          "title": "Group",
           "type": "dropdown",
           "values": [
             {

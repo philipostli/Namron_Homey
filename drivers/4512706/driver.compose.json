@@ -13,6 +13,7 @@
       "CR2032"
     ]
   },
+  "connectivity": ["zigbee"],
   "zigbee": {
     "manufacturerName": [
       "NAMRON AS",
