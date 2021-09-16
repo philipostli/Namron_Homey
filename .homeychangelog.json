@@ -112,5 +112,8 @@
   },
   "2.2.8": {
     "en": "Bug fixes"
+  },
+  "2.2.9": {
+    "en": "Add support for the 4512733."
   }
 }

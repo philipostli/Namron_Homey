@@ -18,6 +18,7 @@
     "large": "/drivers/ZW_WallController_8/assets/images/large.png",
     "small": "/drivers/ZW_WallController_8/assets/images/small.png"
   },
+  "platforms": ["local"],
   "connectivity": ["zwave"],
   "zwave": {
     "manufacturerId": [

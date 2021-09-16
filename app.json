@@ -1,6 +1,6 @@
 {
   "id": "net.filllip-namron",
-  "version": "2.2.8",
+  "version": "2.2.9",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
@@ -10,6 +10,9 @@
   "description": {
     "en": "The smarter choice."
   },
+  "platforms": [
+    "local"
+  ],
   "category": [
     "lights"
   ],
@@ -10240,7 +10243,9 @@
       "class": "light",
       "capabilities": [
         "onoff",
-        "dim"
+        "dim",
+        "measure_power",
+        "meter_power"
       ],
       "capabilitiesOptions": {
         "dim": {
@@ -10250,8 +10255,16 @@
         },
         "onoff": {
           "setOnDim": false
+        },
+        "capabilitiesOptions": {
+          "measure_power": {
+            "isApproximated": true
+          }
         }
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -10307,7 +10320,9 @@
       "class": "light",
       "capabilities": [
         "onoff",
-        "dim"
+        "dim",
+        "measure_power",
+        "meter_power"
       ],
       "capabilitiesOptions": {
         "onoff": {
@@ -10317,6 +10332,9 @@
           "opts": {
             "duration": true
           }
+        },
+        "measure_power": {
+          "isApproximated": true
         }
       },
       "energy": {
@@ -10330,6 +10348,9 @@
         "large": "/drivers/1402756/assets/images/large.png",
         "small": "/drivers/1402756/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zwave"
       ],
@@ -10397,8 +10418,8 @@
                 "nl": "External schakelaar gebruiken"
               },
               "hint": {
-                "en": "This parameter ({{zwaveParameterIndex}}) determines the option to use an external switch to include or exclude the device from the network. Default: Disabled",
-                "nl": "Deze parameter ({{zwaveParameterIndex}}) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
+                "en": "This parameter (5) determines the option to use an external switch to include or exclude the device from the network. Default: Disabled",
+                "nl": "Deze parameter (5) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
               },
               "zwave": {
                 "index": 5,
@@ -10422,7 +10443,7 @@
                 "nl": "Dim transitietijd"
               },
               "hint": {
-                "en": "This parameter ({{zwaveParameterIndex}}) determines the default dim duration. Values: 0 - 100. 0: Instantly. 100: Slow. Default: 5"
+                "en": "This parameter (3) determines the default dim duration. Values: 0 - 100. 0: Instantly. 100: Slow. Default: 5"
               },
               "zwave": {
                 "index": 3,
@@ -10463,7 +10484,7 @@
                 "en": "Dim method"
               },
               "hint": {
-                "en": "This parameter ({{zwaveParameterIndex}}) determines if the dimmer uses linear or logarithmic dimming."
+                "en": "This parameter (6) determines if the dimmer uses linear or logarithmic dimming."
               },
               "zwave": {
                 "index": 6,
@@ -10500,7 +10521,7 @@
                 "en": "Default brightness"
               },
               "hint": {
-                "en": "This parameter ({{zwaveParameterIndex}}) determines the default brightness when turned on. 0: Dimmer will use state after power is restored (parameter 1). Values: 0 - 99. Default: 0"
+                "en": "This parameter (7) determines the default brightness when turned on. 0: Dimmer will use state after power is restored (parameter 1). Values: 0 - 99. Default: 0"
               },
               "zwave": {
                 "index": 7,
@@ -10522,8 +10543,8 @@
                 "nl": "Herstel status na stroomonderbreking"
               },
               "hint": {
-                "en": "This parameter ({{zwaveParameterIndex}}) determines whether after a power failure the device should be restored to the state it had before the power failure.",
-                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+                "en": "This parameter (1) determines whether after a power failure the device should be restored to the state it had before the power failure.",
+                "nl": "Deze parameter (1) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
               },
               "zwave": {
                 "index": 1,
@@ -10562,8 +10583,8 @@
                 "nl": "Stuur `BASIC report`"
               },
               "hint": {
-                "en": "This parameter ({{zwaveParameterIndex}}) determines whether the `BASIC report` is sent to the Lifeline when the load state changed. Default: activated",
-                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
+                "en": "This parameter (2) determines whether the `BASIC report` is sent to the Lifeline when the load state changed. Default: activated",
+                "nl": "Deze parameter (2) bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
               },
               "zwave": {
                 "index": 2,
@@ -10595,6 +10616,9 @@
           "setOnDim": false
         }
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -10661,6 +10685,9 @@
           "setOnDim": false
         }
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -10733,6 +10760,9 @@
           "setOnDim": false
         }
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -10818,6 +10848,9 @@
           "setOnDim": false
         }
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -10885,6 +10918,9 @@
           "setOnDim": false
         }
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -10957,6 +10993,9 @@
           "setOnDim": false
         }
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -11024,6 +11063,9 @@
           "setOnDim": false
         }
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -11096,6 +11138,9 @@
           "setOnDim": false
         }
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -11181,6 +11226,9 @@
           "setOnDim": false
         }
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -11254,6 +11302,9 @@
           "setOnDim": false
         }
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -11304,7 +11355,7 @@
     {
       "id": "4512700",
       "name": {
-        "en": "4512700 - Zigbee Dimmer"
+        "en": "4512700/33 - Zigbee Dimmer"
       },
       "class": "light",
       "capabilities": [
@@ -11321,6 +11372,9 @@
           "setOnDim": false
         }
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -11335,7 +11389,8 @@
         ],
         "productId": [
           "ZG9101SAC-HP",
-          "4512700"
+          "4512700",
+          "4512733"
         ],
         "endpoints": {
           "1": {
@@ -11382,6 +11437,9 @@
           "CR2450"
         ]
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -11437,6 +11495,9 @@
           "CR2450"
         ]
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -11492,6 +11553,9 @@
           "CR2450"
         ]
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -11570,6 +11634,9 @@
         "onoff"
       ],
       "capabilitiesOptions": {},
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -11630,6 +11697,9 @@
           "CR2032"
         ]
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -11713,6 +11783,9 @@
           "CR2032"
         ]
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -11806,6 +11879,9 @@
           "setOnDim": false
         }
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -11893,6 +11969,9 @@
           "setOnDim": false
         }
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -11965,6 +12044,9 @@
           "setOnDim": false
         }
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -12032,6 +12114,9 @@
           "setOnDim": false
         }
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -12109,6 +12194,9 @@
         "large": "/drivers/4512710/assets/images/large.png",
         "small": "/drivers/4512710/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zwave"
       ],
@@ -12155,6 +12243,9 @@
         "large": "/drivers/4512711/assets/images/large.png",
         "small": "/drivers/4512711/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zwave"
       ],
@@ -12231,6 +12322,9 @@
         "large": "/drivers/4512712/assets/images/large.png",
         "small": "/drivers/4512712/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zwave"
       ],
@@ -12289,6 +12383,9 @@
         "large": "/drivers/4512713/assets/images/large.png",
         "small": "/drivers/4512713/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zwave"
       ],
@@ -12347,6 +12444,9 @@
         "large": "/drivers/4512714/assets/images/large.png",
         "small": "/drivers/4512714/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zwave"
       ],
@@ -12424,6 +12524,9 @@
         "large": "/drivers/4512715/assets/images/large.png",
         "small": "/drivers/4512715/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zwave"
       ],
@@ -12465,8 +12568,8 @@
                 "nl": "External schakelaar gebruiken"
               },
               "hint": {
-                "en": "This parameter ({{zwaveParameterIndex}}) determines the option to use an external switch to include or exclude the device from the network.",
-                "nl": "Deze parameter ({{zwaveParameterIndex}}) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
+                "en": "This parameter (7) determines the option to use an external switch to include or exclude the device from the network.",
+                "nl": "Deze parameter (7) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
               },
               "zwave": {
                 "index": 7,
@@ -12492,8 +12595,8 @@
                 "nl": "Herstel status na stroomonderbreking"
               },
               "hint": {
-                "en": "This parameter ({{zwaveParameterIndex}}) determines whether after a power failure the device should be restored to the state it had before the power failure.",
-                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+                "en": "This parameter (2) determines whether after a power failure the device should be restored to the state it had before the power failure.",
+                "nl": "Deze parameter (2) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
               },
               "zwave": {
                 "index": 2,
@@ -12532,8 +12635,8 @@
                 "nl": "Stuur `BASIC report`"
               },
               "hint": {
-                "en": "This parameter ({{zwaveParameterIndex}}) determines whether the `BASIC report` is send to the Lifeline when the load state changed. Default: activated",
-                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
+                "en": "This parameter (3) determines whether the `BASIC report` is send to the Lifeline when the load state changed. Default: activated",
+                "nl": "Deze parameter (3) bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
               },
               "zwave": {
                 "index": 3,
@@ -12548,8 +12651,8 @@
                 "en": "MOSFET driving type"
               },
               "hint": {
-                "en": "This parameter ({{zwaveParameterIndex}}) determines the used MOSFET driving type. Default: Leading edge",
-                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de gebruikte MOSFET driving type. Standaard: Fase aansnijding"
+                "en": "This parameter (6) determines the used MOSFET driving type. Default: Leading edge",
+                "nl": "Deze parameter (6) bepaalt de gebruikte MOSFET driving type. Standaard: Fase aansnijding"
               },
               "zwave": {
                 "index": 6,
@@ -12598,6 +12701,9 @@
         "large": "/drivers/4512716/assets/images/large.png",
         "small": "/drivers/4512716/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zwave"
       ],
@@ -12653,6 +12759,9 @@
         "large": "/drivers/4512717/assets/images/large.png",
         "small": "/drivers/4512717/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zwave"
       ],
@@ -12700,6 +12809,9 @@
           "CR2450"
         ]
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -12768,6 +12880,9 @@
         "large": "/drivers/4512720/assets/images/large.png",
         "small": "/drivers/4512720/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zwave"
       ],
@@ -12843,6 +12958,9 @@
         "large": "/drivers/4512724/assets/images/large.png",
         "small": "/drivers/4512724/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zwave"
       ],
@@ -12888,6 +13006,9 @@
         "large": "/drivers/4512725/assets/images/large.png",
         "small": "/drivers/4512725/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zwave"
       ],
@@ -12934,6 +13055,9 @@
           "CR2450"
         ]
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -12987,6 +13111,9 @@
           "CR2450"
         ]
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -13040,6 +13167,9 @@
           "CR2450"
         ]
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -13113,6 +13243,9 @@
         "large": "/drivers/4512743/assets/images/large.png",
         "small": "/drivers/4512743/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zwave"
       ],
@@ -13160,6 +13293,9 @@
         "large": "/drivers/4512744/assets/images/large.png",
         "small": "/drivers/4512744/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zwave"
       ],
@@ -13228,6 +13364,9 @@
         "large": "/drivers/4512746/assets/images/large.png",
         "small": "/drivers/4512746/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zwave"
       ],
@@ -13292,6 +13431,9 @@
           "setOnDim": false
         }
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zigbee"
       ],
@@ -13371,6 +13513,9 @@
         "large": "/drivers/ZW_Dimmer_3wire/assets/images/large.png",
         "small": "/drivers/ZW_Dimmer_3wire/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zwave"
       ],
@@ -13429,6 +13574,9 @@
         "large": "/drivers/ZW_Dimmer_Rotary/assets/images/large.png",
         "small": "/drivers/ZW_Dimmer_Rotary/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zwave"
       ],
@@ -13496,8 +13644,8 @@
                 "nl": "External schakelaar gebruiken"
               },
               "hint": {
-                "en": "This parameter ({{zwaveParameterIndex}}) determines the option to use an external switch to include or exclude the device from the network. Default: Disabled",
-                "nl": "Deze parameter ({{zwaveParameterIndex}}) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
+                "en": "This parameter (5) determines the option to use an external switch to include or exclude the device from the network. Default: Disabled",
+                "nl": "Deze parameter (5) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
               },
               "zwave": {
                 "index": 5,
@@ -13521,7 +13669,7 @@
                 "nl": "Dim transitietijd"
               },
               "hint": {
-                "en": "This parameter ({{zwaveParameterIndex}}) determines the default dim duration. Values: 0 - 100. 0: Instantly. 100: Slow. Default: 5"
+                "en": "This parameter (3) determines the default dim duration. Values: 0 - 100. 0: Instantly. 100: Slow. Default: 5"
               },
               "zwave": {
                 "index": 3,
@@ -13562,7 +13710,7 @@
                 "en": "Dim method"
               },
               "hint": {
-                "en": "This parameter ({{zwaveParameterIndex}}) determines if the dimmer uses linear or logarithmic dimming."
+                "en": "This parameter (6) determines if the dimmer uses linear or logarithmic dimming."
               },
               "zwave": {
                 "index": 6,
@@ -13599,7 +13747,7 @@
                 "en": "Default brightness"
               },
               "hint": {
-                "en": "This parameter ({{zwaveParameterIndex}}) determines the default brightness when turned on. 0: Dimmer will use state after power is restored (parameter 1). Values: 0 - 99. Default: 0"
+                "en": "This parameter (7) determines the default brightness when turned on. 0: Dimmer will use state after power is restored (parameter 1). Values: 0 - 99. Default: 0"
               },
               "zwave": {
                 "index": 7,
@@ -13621,8 +13769,8 @@
                 "nl": "Herstel status na stroomonderbreking"
               },
               "hint": {
-                "en": "This parameter ({{zwaveParameterIndex}}) determines whether after a power failure the device should be restored to the state it had before the power failure.",
-                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+                "en": "This parameter (1) determines whether after a power failure the device should be restored to the state it had before the power failure.",
+                "nl": "Deze parameter (1) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
               },
               "zwave": {
                 "index": 1,
@@ -13661,8 +13809,8 @@
                 "nl": "Stuur `BASIC report`"
               },
               "hint": {
-                "en": "This parameter ({{zwaveParameterIndex}}) determines whether the `BASIC report` is sent to the Lifeline when the load state changed. Default: activated",
-                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
+                "en": "This parameter (2) determines whether the `BASIC report` is sent to the Lifeline when the load state changed. Default: activated",
+                "nl": "Deze parameter (2) bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
               },
               "zwave": {
                 "index": 2,
@@ -13695,6 +13843,9 @@
         "large": "/drivers/ZW_InWallSwitch/assets/images/large.png",
         "small": "/drivers/ZW_InWallSwitch/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zwave"
       ],
@@ -13736,8 +13887,8 @@
                 "nl": "External schakelaar gebruiken"
               },
               "hint": {
-                "en": "This parameter ({{zwaveParameterIndex}}) determines the option to use an external switch to include or exclude the device from the network.",
-                "nl": "Deze parameter ({{zwaveParameterIndex}}) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
+                "en": "This parameter (7) determines the option to use an external switch to include or exclude the device from the network.",
+                "nl": "Deze parameter (7) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
               },
               "zwave": {
                 "index": 7,
@@ -13763,8 +13914,8 @@
                 "nl": "Herstel status na stroomonderbreking"
               },
               "hint": {
-                "en": "This parameter ({{zwaveParameterIndex}}) determines whether after a power failure the device should be restored to the state it had before the power failure.",
-                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+                "en": "This parameter (2) determines whether after a power failure the device should be restored to the state it had before the power failure.",
+                "nl": "Deze parameter (2) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
               },
               "zwave": {
                 "index": 2,
@@ -13803,8 +13954,8 @@
                 "nl": "Stuur `BASIC report`"
               },
               "hint": {
-                "en": "This parameter ({{zwaveParameterIndex}}) determines whether the `BASIC report` is send to the Lifeline when the load state changed. Default: activated",
-                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
+                "en": "This parameter (3) determines whether the `BASIC report` is send to the Lifeline when the load state changed. Default: activated",
+                "nl": "Deze parameter (3) bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
               },
               "zwave": {
                 "index": 3,
@@ -13819,8 +13970,8 @@
                 "en": "MOSFET driving type"
               },
               "hint": {
-                "en": "This parameter ({{zwaveParameterIndex}}) determines the used MOSFET driving type. Default: Leading edge",
-                "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de gebruikte MOSFET driving type. Standaard: Fase aansnijding"
+                "en": "This parameter (6) determines the used MOSFET driving type. Default: Leading edge",
+                "nl": "Deze parameter (6) bepaalt de gebruikte MOSFET driving type. Standaard: Fase aansnijding"
               },
               "zwave": {
                 "index": 6,
@@ -13870,6 +14021,9 @@
         "large": "/drivers/ZW_Remote_4/assets/images/large.png",
         "small": "/drivers/ZW_Remote_4/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zwave"
       ],
@@ -13947,6 +14101,9 @@
         "large": "/drivers/ZW_WallController_2/assets/images/large.png",
         "small": "/drivers/ZW_WallController_2/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zwave"
       ],
@@ -14006,6 +14163,9 @@
         "large": "/drivers/ZW_WallController_4/assets/images/large.png",
         "small": "/drivers/ZW_WallController_4/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zwave"
       ],
@@ -14072,6 +14232,9 @@
         "large": "/drivers/ZW_WallController_8/assets/images/large.png",
         "small": "/drivers/ZW_WallController_8/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zwave"
       ],
@@ -14146,6 +14309,9 @@
         "large": "/drivers/ZW_WallPlug/assets/images/large.png",
         "small": "/drivers/ZW_WallPlug/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
       "connectivity": [
         "zwave"
       ],

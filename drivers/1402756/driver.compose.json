@@ -6,7 +6,9 @@
   "class": "light",
   "capabilities": [
     "onoff",
-    "dim"
+    "dim",
+    "measure_power",
+    "meter_power"
   ],
   "capabilitiesOptions": {
     "onoff": {
@@ -16,6 +18,9 @@
       "opts": {
         "duration": true
       }
+    },
+    "measure_power": {
+      "isApproximated": true
     }
   },
   "energy": {
@@ -29,6 +34,7 @@
     "large": "/drivers/1402756/assets/images/large.png",
     "small": "/drivers/1402756/assets/images/small.png"
   },
+  "platforms": ["local"],
   "connectivity": ["zwave"],
   "zwave": {
     "manufacturerId": [

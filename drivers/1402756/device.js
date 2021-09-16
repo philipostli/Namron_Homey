@@ -11,6 +11,8 @@ class DimLight extends ZwaveLightDevice {
 
     this.registerCapability('onoff', 'SWITCH_MULTILEVEL')
     this.registerCapability('dim', 'SWITCH_MULTILEVEL')
+    this.registerCapability('measure_power', 'METER')
+    this.registerCapability('meter_power', 'METER')
 
     this.registerReportListener('BASIC', 'BASIC_REPORT', report => {
       if (report && report.hasOwnProperty('Current Value')) {

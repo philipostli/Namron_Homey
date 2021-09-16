@@ -12,6 +12,7 @@
       "CR2450"
     ]
   },
+  "platforms": ["local"],
   "connectivity": ["zigbee"],
   "zigbee": {
     "manufacturerName": [

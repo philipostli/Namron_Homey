@@ -18,6 +18,7 @@
       "setOnDim": false
     }
   },
+  "platforms": ["local"],
   "connectivity": ["zigbee"],
   "zigbee": {
     "manufacturerName": [

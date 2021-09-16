@@ -15,6 +15,7 @@
     "large": "/drivers/ZW_WallPlug/assets/images/large.png",
     "small": "/drivers/ZW_WallPlug/assets/images/small.png"
   },
+  "platforms": ["local"],
   "connectivity": ["zwave"],
   "zwave": {
     "manufacturerId": [
