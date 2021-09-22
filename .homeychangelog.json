@@ -118,5 +118,8 @@
   },
   "2.2.10": {
     "en": "Add support for ZigBee Thermostat"
+  },
+  "2.2.11": {
+    "en": "Add support for the ZigBee thermostat, bug fixes."
   }
 }
