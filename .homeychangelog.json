@@ -115,5 +115,8 @@
   },
   "2.2.9": {
     "en": "Add support for the 4512733."
+  },
+  "2.2.10": {
+    "en": "Add support for ZigBee Thermostat"
   }
 }

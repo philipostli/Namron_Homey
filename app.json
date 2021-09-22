@@ -1,6 +1,6 @@
 {
   "id": "net.filllip-namron",
-  "version": "2.2.9",
+  "version": "2.2.10",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
@@ -14344,6 +14344,69 @@
           }
         }
       }
+    },
+    {
+      "name": {
+        "en": "ZG Thermostat"
+      },
+      "class": "thermostat",
+      "capabilities": [
+        "measure_power",
+        "meter_power",
+        "measure_temperature",
+        "target_temperature",
+        "onoff",
+        "my_thermostat_mode",
+        "my_thermostat_away_mode",
+        "my_thermostat_control_type",
+        "my_thermostat_room_sensor",
+        "my_thermostat_floor_sensor"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": [
+          "NAMRON AS",
+          "NAMRON  AS",
+          "NAMRON As",
+          "Namron AS",
+          "Namron As",
+          "namron as",
+          "Sunricher"
+        ],
+        "productId": [
+          "ZG9092"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              513,
+              1794,
+              2820
+            ],
+            "bindings": [
+              513,
+              1794,
+              2820
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/zg_thermostat/assets/learnmode.svg",
+          "instruction": {
+            "en": "# Pair\n1) At OFF mode (Off icon), press and hold up and down buttons at the same time for over 5 seconds to enter Settings Menu.\n2) Short press move up and down button to select a settings item, then short press button F to enter selected item.\n3) Select \"Add\", then short press button F.\n\n# Factory Reset\nEnter settings item, select \"Reset\", then short press button F."
+          }
+        }
+      },
+      "images": {
+        "small": "/drivers/zg_thermostat/assets/images/small.png",
+        "large": "/drivers/zg_thermostat/assets/images/large.png"
+      },
+      "id": "zg_thermostat"
     }
   ],
   "capabilities": {
@@ -14411,6 +14474,85 @@
           }
         }
       ]
+    },
+    "my_thermostat_away_mode": {
+      "title": {
+        "en": "Leave Home"
+      },
+      "type": "boolean",
+      "setable": false,
+      "getable": true,
+      "uiComponent": null
+    },
+    "my_thermostat_control_type": {
+      "title": {
+        "en": "Control Type"
+      },
+      "type": "string",
+      "setable": false,
+      "getable": true,
+      "uiComponent": null
+    },
+    "my_thermostat_floor_sensor": {
+      "title": {
+        "en": "Floor Sensor"
+      },
+      "type": "number",
+      "setable": false,
+      "getable": true,
+      "uiComponent": "sensor",
+      "units": {
+        "en": "°C"
+      },
+      "icon": "/assets/temperature_icon.svg"
+    },
+    "my_thermostat_mode": {
+      "title": {
+        "en": "Thermostat Mode"
+      },
+      "type": "enum",
+      "setable": true,
+      "getable": true,
+      "uiComponent": "picker",
+      "values": [
+        {
+          "id": "off",
+          "title": {
+            "en": "Off"
+          }
+        },
+        {
+          "id": "auto",
+          "title": {
+            "en": "Auto"
+          }
+        },
+        {
+          "id": "heat",
+          "title": {
+            "en": "Manual"
+          }
+        },
+        {
+          "id": "dry",
+          "title": {
+            "en": "Dry"
+          }
+        }
+      ]
+    },
+    "my_thermostat_room_sensor": {
+      "title": {
+        "en": "Room Sensor"
+      },
+      "type": "number",
+      "setable": false,
+      "getable": true,
+      "uiComponent": "sensor",
+      "units": {
+        "en": "°C"
+      },
+      "icon": "/assets/temperature_icon.svg"
     },
     "my_ZV9092A_floor_sensor": {
       "title": {
