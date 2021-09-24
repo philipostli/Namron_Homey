@@ -121,5 +121,8 @@
   },
   "2.2.11": {
     "en": "Add support for the ZigBee thermostat, bug fixes."
+  },
+  "2.2.12": {
+    "en": "Bug fixes."
   }
 }
