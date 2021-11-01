@@ -124,5 +124,8 @@
   },
   "2.2.12": {
     "en": "Bug fixes."
+  },
+  "2.2.13": {
+    "en": "Add support for the Homey Cloud."
   }
 }

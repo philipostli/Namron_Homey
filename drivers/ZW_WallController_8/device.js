@@ -33,33 +33,33 @@ class MyRemote extends ZwaveDevice {
 
             if (isOn) {
 
-              this.driver.onFlowTrigger.trigger(this, null, state)
+              this.driver.onFlowTrigger.trigger(this, null, state).catch(this.error)
 
             } else {
 
-              this.driver.offFlowTrigger.trigger(this, null, state)
+              this.driver.offFlowTrigger.trigger(this, null, state).catch(this.error)
             }
 
           } else if (keyAttributes === 'Key Held Down') {
 
             if (isOn) {
 
-              this.driver.onKeyHeldDownFlowTrigger.trigger(this, null, state)
+              this.driver.onKeyHeldDownFlowTrigger.trigger(this, null, state).catch(this.error)
 
             } else {
 
-              this.driver.offKeyHeldDownFlowTrigger.trigger(this, null, state)
+              this.driver.offKeyHeldDownFlowTrigger.trigger(this, null, state).catch(this.error)
             }
 
           } else if (keyAttributes === 'Key Released') {
 
             if (isOn) {
 
-              this.driver.onKeyReleasedFlowTrigger.trigger(this, null, state)
+              this.driver.onKeyReleasedFlowTrigger.trigger(this, null, state).catch(this.error)
 
             } else {
 
-              this.driver.offKeyReleasedFlowTrigger.trigger(this, null, state)
+              this.driver.offKeyReleasedFlowTrigger.trigger(this, null, state).catch(this.error)
             }
           }
         }

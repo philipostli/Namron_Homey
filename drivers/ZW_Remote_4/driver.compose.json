@@ -20,7 +20,7 @@
     "large": "/drivers/ZW_Remote_4/assets/images/large.png",
     "small": "/drivers/ZW_Remote_4/assets/images/small.png"
   },
-  "platforms": ["local"],
+  "platforms": ["local", "cloud"],
   "connectivity": ["zwave"],
   "zwave": {
     "manufacturerId": [

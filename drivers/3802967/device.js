@@ -21,7 +21,7 @@ class ColorLight extends SrZigbeeLight {
       // If stop, update attributes
       if (args.move_mode === 0) {
         console.log('update attributes ===> ')
-        this.onEndDeviceAnnounce()
+        this.onEndDeviceAnnounce().catch(this.error)
       }
     }).catch(this.error)
   }
@@ -36,7 +36,7 @@ class ColorLight extends SrZigbeeLight {
       // If stop, update attributes
       if (args.move_mode === 0) {
         console.log('update attributes ===> ')
-        this.onEndDeviceAnnounce()
+        this.onEndDeviceAnnounce().catch(this.error)
       }
     }).catch(this.error)
   }
@@ -50,8 +50,8 @@ class ColorLight extends SrZigbeeLight {
     }
     this.log(`levelStepRunListener => `, payload)
     return this.levelControlCluster.stepWithOnOff(payload).then(() => {
-      this.onLevelControlEnd()
-    })
+      this.onLevelControlEnd().catch(this.error)
+    }).catch(this.error)
   }
 
   async levelMoveRunListener (args, state) {
@@ -61,15 +61,15 @@ class ColorLight extends SrZigbeeLight {
       rate: Math.round(args.rate * 0xFE),
     }
     this.log(`levelMoveRunListener => `, payload)
-    return this.levelControlCluster.moveWithOnOff(payload)
+    return this.levelControlCluster.moveWithOnOff(payload).catch(this.error)
   }
 
   async levelStopRunListener (args, state) {
 
     this.log(`levelStopRunListener => `)
     return this.levelControlCluster.stopWithOnOff().then(() => {
-      this.onLevelControlEnd()
-    })
+      this.onLevelControlEnd().catch(this.error)
+    }).catch(this.error)
   }
 
   async onLevelControlEnd () {
@@ -85,18 +85,18 @@ class ColorLight extends SrZigbeeLight {
       currentLevel,
     } = await levelControlCluster.readAttributes(
       'currentLevel',
-    )
+    ).catch(this.error)
 
     this.log('onLevelControlEnd', {
       currentLevel,
     })
 
-    await this.setCapabilityValue('dim', currentLevel / 0xFE)
+    await this.setCapabilityValue('dim', currentLevel / 0xFE).catch(this.error)
 
     if (currentLevel === 0) {
-      await this.setCapabilityValue('onoff', false)
+      await this.setCapabilityValue('onoff', false).catch(this.error)
     } else if (this.getCapabilityValue('onoff') === false && currentLevel > 0) {
-      await this.setCapabilityValue('onoff', true)
+      await this.setCapabilityValue('onoff', true).catch(this.error)
     }
   }
 
@@ -110,8 +110,8 @@ class ColorLight extends SrZigbeeLight {
     }
     this.log('stepColorTemperatureRunListener => ', payload)
     return this.colorControlCluster.stepColorTemperature(payload).then(() => {
-      this.onEndDeviceAnnounce()
-    })
+      this.onEndDeviceAnnounce().catch(this.error)
+    }).catch(this.error)
   }
 
   async moveColorTemperatureRunListener (args, state) {
@@ -122,14 +122,14 @@ class ColorLight extends SrZigbeeLight {
       colorTemperatureMaximumMireds: 450,
     }
     this.log('moveColorTemperatureRunListener => ', payload)
-    return this.colorControlCluster.moveColorTemperature(payload)
+    return this.colorControlCluster.moveColorTemperature(payload).catch(this.error)
   }
 
   async stopMoveStepRunListener (args, state) {
     this.log('stopMoveStepRunListener => ')
     return this.colorControlCluster.stopMoveStep().then(() => {
-      this.onEndDeviceAnnounce()
-    })
+      this.onEndDeviceAnnounce().catch(this.error)
+    }).catch(this.error)
   }
 
   async storeSceneRunListener (args, state) {
@@ -138,7 +138,7 @@ class ColorLight extends SrZigbeeLight {
       sceneId: args.scene_id,
     }
     this.log('storeSceneRunListener => ', payload)
-    return this.scenesCluster.srStoreScene(payload)
+    return this.scenesCluster.srStoreScene(payload).catch(this.error)
   }
 
   async recallSceneRunListener (args, state) {
@@ -148,7 +148,7 @@ class ColorLight extends SrZigbeeLight {
     }
     this.log('recallSceneRunListener => ', payload)
     return this.scenesCluster.srRecallScene(payload).then(() => {
-      this.onEndDeviceAnnounce()
+      this.onEndDeviceAnnounce().catch(this.error)
     }).catch(this.error)
   }
 

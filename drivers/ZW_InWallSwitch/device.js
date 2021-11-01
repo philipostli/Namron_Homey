@@ -14,7 +14,7 @@ class SwitchLight extends ZwaveDevice {
 
     this.registerReportListener('BASIC', 'BASIC_REPORT', report => {
       if (report && report.hasOwnProperty('Current Value')) {
-        this.setCapabilityValue('onoff', report['Current Value'] > 0)
+        this.setCapabilityValue('onoff', report['Current Value'] > 0).catch(this.error)
       }
     })
   }

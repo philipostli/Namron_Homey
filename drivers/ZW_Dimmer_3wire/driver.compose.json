@@ -31,7 +31,7 @@
     "large": "/drivers/ZW_Dimmer_3wire/assets/images/large.png",
     "small": "/drivers/ZW_Dimmer_3wire/assets/images/small.png"
   },
-  "platforms": ["local"],
+  "platforms": ["local", "cloud"],
   "connectivity": ["zwave"],
   "zwave": {
     "manufacturerId": [

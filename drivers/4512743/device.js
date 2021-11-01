@@ -15,9 +15,9 @@ class DimLight extends ZwaveLightDevice {
     this.registerReportListener('BASIC', 'BASIC_REPORT', report => {
       if (report && report.hasOwnProperty('Current Value')) {
         if (this.hasCapability('onoff')) this.setCapabilityValue('onoff',
-          report['Current Value'] > 0)
+          report['Current Value'] > 0).catch(this.error)
         if (this.hasCapability('dim')) this.setCapabilityValue('dim',
-          report['Current Value'] / 99)
+          report['Current Value'] / 99).catch(this.error)
       }
     })
   }

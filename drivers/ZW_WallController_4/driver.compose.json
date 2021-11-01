@@ -18,7 +18,7 @@
     "large": "/drivers/ZW_WallController_4/assets/images/large.png",
     "small": "/drivers/ZW_WallController_4/assets/images/small.png"
   },
-  "platforms": ["local"],
+  "platforms": ["local", "cloud"],
   "connectivity": ["zwave"],
   "zwave": {
     "manufacturerId": [

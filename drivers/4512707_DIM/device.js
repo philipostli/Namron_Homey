@@ -18,8 +18,8 @@ class DimLight extends SrZigBeeLight {
     }
     this.log(`levelStepRunListener => `, payload)
     return this.levelControlCluster.stepWithOnOff(payload).then(() => {
-      this.onLevelControlEnd()
-    })
+      this.onLevelControlEnd().catch(this.error)
+    }).catch(this.error)
   }
 
   async levelMoveRunListener (args, state) {
@@ -29,15 +29,15 @@ class DimLight extends SrZigBeeLight {
       rate: Math.round(args.rate * 0xFE),
     }
     this.log(`levelMoveRunListener => `, payload)
-    return this.levelControlCluster.moveWithOnOff(payload)
+    return this.levelControlCluster.moveWithOnOff(payload).catch(this.error)
   }
 
   async levelStopRunListener (args, state) {
 
     this.log(`levelStopRunListener => `)
     return this.levelControlCluster.stopWithOnOff().then(() => {
-      this.onLevelControlEnd()
-    })
+      this.onLevelControlEnd().catch(this.error)
+    }).catch(this.error)
   }
 
   async onLevelControlEnd () {
@@ -53,18 +53,18 @@ class DimLight extends SrZigBeeLight {
       currentLevel,
     } = await levelControlCluster.readAttributes(
       'currentLevel',
-    )
+    ).catch(this.error)
 
     this.log('onLevelControlEnd', {
       currentLevel,
     })
 
-    await this.setCapabilityValue('dim', currentLevel / 0xFE)
+    await this.setCapabilityValue('dim', currentLevel / 0xFE).catch(this.error)
 
     if (currentLevel === 0) {
-      await this.setCapabilityValue('onoff', false)
+      await this.setCapabilityValue('onoff', false).catch(this.error)
     } else if (this.getCapabilityValue('onoff') === false && currentLevel > 0) {
-      await this.setCapabilityValue('onoff', true)
+      await this.setCapabilityValue('onoff', true).catch(this.error)
     }
   }
 
@@ -74,7 +74,7 @@ class DimLight extends SrZigBeeLight {
       sceneId: args.scene_id,
     }
     this.log('storeSceneRunListener => ', payload)
-    return this.scenesCluster.srStoreScene(payload)
+    return this.scenesCluster.srStoreScene(payload).catch(this.error)
   }
 
   async recallSceneRunListener (args, state) {
@@ -84,7 +84,7 @@ class DimLight extends SrZigBeeLight {
     }
     this.log('recallSceneRunListener => ', payload)
     return this.scenesCluster.srRecallScene(payload).then(() => {
-      this.onEndDeviceAnnounce()
+      this.onEndDeviceAnnounce().catch(this.error)
     }).catch(this.error)
   }
 

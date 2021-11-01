@@ -14,7 +14,7 @@
     "large": "/drivers/4512717/assets/images/large.png",
     "small": "/drivers/4512717/assets/images/small.png"
   },
-  "platforms": ["local"],
+  "platforms": ["local", "cloud"],
   "connectivity": ["zwave"],
   "zwave": {
     "manufacturerId": [
