@@ -1,5 +1,4 @@
 {
-  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "net.filllip-namron",
   "version": "2.2.14",
   "compatibility": ">=5.0.0",
@@ -14434,68 +14433,6 @@
     },
     {
       "name": {
-        "en": "ZG9093A"
-      },
-      "class": "thermostat",
-      "capabilities": [
-        "onoff",
-        "measure_power",
-        "meter_power",
-        "measure_temperature",
-        "target_temperature",
-        "zg9030a_modes"
-      ],
-      "platforms": [
-        "local",
-        "cloud"
-      ],
-      "connectivity": [
-        "zigbee"
-      ],
-      "images": {
-        "small": "/drivers/zg9093a/assets/images/small.png",
-        "large": "/drivers/zg9093a/assets/images/large.png"
-      },
-      "zigbee": {
-        "manufacturerName": [
-          "NAMRON AS",
-          "NAMRON  AS",
-          "NAMRON As",
-          "Namron AS",
-          "Namron As",
-          "namron as",
-          "Sunricher"
-        ],
-        "productId": [
-          "ZG9093A"
-        ],
-        "endpoints": {
-          "1": {
-            "clusters": [
-              513,
-              1794,
-              2820,
-              10
-            ],
-            "bindings": [
-              513,
-              1794,
-              2820,
-              10
-            ]
-          }
-        },
-        "learnmode": {
-          "image": "/drivers/zg9093a/assets/learnmode.svg",
-          "instruction": {
-            "en": "Press and hold down the OK button until the Wi-Fi indicator flashes slowly.\n\nIf pairing is not started, press and hold down the OK button again."
-          }
-        }
-      },
-      "id": "zg9093a"
-    },
-    {
-      "name": {
         "en": "ZG Thermostat"
       },
       "class": "thermostat",
@@ -14754,41 +14691,6 @@
           "id": "room_floor_sensor",
           "title": {
             "en": "Room + Floor Sensor"
-          }
-        }
-      ]
-    },
-    "zg9030a_modes": {
-      "title": {
-        "en": "Mode"
-      },
-      "type": "enum",
-      "setable": true,
-      "getable": true,
-      "uiComponent": "picker",
-      "values": [
-        {
-          "id": "off",
-          "title": {
-            "en": "Off"
-          }
-        },
-        {
-          "id": "heat",
-          "title": {
-            "en": "Manual"
-          }
-        },
-        {
-          "id": "auto",
-          "title": {
-            "en": "Auto"
-          }
-        },
-        {
-          "id": "dry",
-          "title": {
-            "en": "Dry"
           }
         }
       ]
