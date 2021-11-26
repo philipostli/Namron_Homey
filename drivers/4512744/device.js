@@ -350,7 +350,7 @@ class MyThermostat extends ZwaveDevice {
       }).then(() => {
         this.log('onoff set mode OK ', isOn, mode)
       }).catch(this.error)
-    }).catch(this.error)
+    })
   }
 
 }
