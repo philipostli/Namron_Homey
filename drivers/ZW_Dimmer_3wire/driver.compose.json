@@ -34,6 +34,7 @@
   "platforms": ["local", "cloud"],
   "connectivity": ["zwave"],
   "zwave": {
+    "security": ["none", "S0"],
     "manufacturerId": [
       816,
       1080
@@ -44,7 +45,6 @@
     "productId": [
       53253
     ],
-    "includeSecure": true,
     "learnmode": {
       "image": "/drivers/ZW_Dimmer_3wire/assets/learnmode.svg",
       "instruction": {

@@ -21,6 +21,7 @@
   "platforms": ["local", "cloud"],
   "connectivity": ["zwave"],
   "zwave": {
+    "security": ["none", "S0"],
     "manufacturerId": [
       816,
       1080
@@ -31,7 +32,6 @@
     "productId": [
       41743
     ],
-    "includeSecure": true,
     "learnmode": {
       "image": "/drivers/ZW_WallController_2/assets/learnmode.svg",
       "instruction": {

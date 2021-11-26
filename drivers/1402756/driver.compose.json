@@ -37,6 +37,7 @@
   "platforms": ["local", "cloud"],
   "connectivity": ["zwave"],
   "zwave": {
+    "security": ["none", "S0"],
     "manufacturerId": [
       1073,
       1080
@@ -48,7 +49,6 @@
     "productId": [
       2
     ],
-    "includeSecure": false,
     "learnmode": {
       "image": "/drivers/1402756/assets/learnmode.svg",
       "instruction": {

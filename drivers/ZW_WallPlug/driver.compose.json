@@ -18,6 +18,7 @@
   "platforms": ["local", "cloud"],
   "connectivity": ["zwave"],
   "zwave": {
+    "security": ["none", "S0"],
     "manufacturerId": [
       816,
       1080
@@ -28,7 +29,6 @@
     "productId": [
       53252
     ],
-    "includeSecure": true,
     "learnmode": {
       "image": "/drivers/ZW_WallPlug/assets/learnmode.svg",
       "instruction": {

@@ -10369,7 +10369,6 @@
         "productId": [
           2
         ],
-        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/1402756/assets/learnmode.svg",
           "instruction": {
@@ -12257,7 +12256,6 @@
         "productId": [
           53253
         ],
-        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/4512710/assets/learnmode.svg",
           "instruction": {
@@ -12307,7 +12305,6 @@
         "productId": [
           45826
         ],
-        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/4512711/assets/learnmode.svg",
           "instruction": {
@@ -12387,7 +12384,6 @@
         "productId": [
           41743
         ],
-        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/4512712/assets/learnmode.svg",
           "instruction": {
@@ -12449,7 +12445,6 @@
         "productId": [
           41744
         ],
-        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/4512713/assets/learnmode.svg",
           "instruction": {
@@ -12511,7 +12506,6 @@
         "productId": [
           41733
         ],
-        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/4512714/assets/learnmode.svg",
           "instruction": {
@@ -12773,7 +12767,6 @@
         "productId": [
           53251
         ],
-        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/4512716/assets/learnmode.svg",
           "instruction": {
@@ -12959,7 +12952,6 @@
         "productId": [
           41734
         ],
-        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/4512720/assets/learnmode.svg",
           "instruction": {
@@ -13089,7 +13081,6 @@
         "productId": [
           53252
         ],
-        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/4512725/assets/learnmode.svg",
           "instruction": {
@@ -13334,7 +13325,6 @@
         "productId": [
           53250
         ],
-        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/4512743/assets/learnmode.svg",
           "instruction": {
@@ -13385,7 +13375,6 @@
           53267,
           53285
         ],
-        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/4512744/assets/learnmode.svg",
           "instruction": {
@@ -13457,7 +13446,6 @@
         "productId": [
           53273
         ],
-        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/4512746/assets/learnmode.svg",
           "instruction": {
@@ -13609,7 +13597,6 @@
         "productId": [
           53253
         ],
-        "includeSecure": true,
         "learnmode": {
           "image": "/drivers/ZW_Dimmer_3wire/assets/learnmode.svg",
           "instruction": {
@@ -13672,7 +13659,6 @@
         "productId": [
           2
         ],
-        "includeSecure": false,
         "learnmode": {
           "image": "/drivers/ZW_Dimmer_Rotary/assets/learnmode.svg",
           "instruction": {
@@ -13941,7 +13927,6 @@
         "productId": [
           53254
         ],
-        "includeSecure": true,
         "learnmode": {
           "image": "/drivers/ZW_InWallSwitch/assets/learnmode.svg",
           "instruction": {
@@ -14120,7 +14105,6 @@
         "productId": [
           45826
         ],
-        "includeSecure": true,
         "learnmode": {
           "image": "/drivers/ZW_Remote_4/assets/learnmode.svg",
           "instruction": {
@@ -14201,7 +14185,6 @@
         "productId": [
           41743
         ],
-        "includeSecure": true,
         "learnmode": {
           "image": "/drivers/ZW_WallController_2/assets/learnmode.svg",
           "instruction": {
@@ -14265,7 +14248,6 @@
           41734,
           41744
         ],
-        "includeSecure": true,
         "learnmode": {
           "image": "/drivers/ZW_WallController_4/assets/learnmode.svg",
           "instruction": {
@@ -14334,7 +14316,6 @@
         "productId": [
           41733
         ],
-        "includeSecure": true,
         "learnmode": {
           "image": "/drivers/ZW_WallController_8/assets/learnmode.svg",
           "instruction": {
@@ -14412,7 +14393,6 @@
         "productId": [
           53252
         ],
-        "includeSecure": true,
         "learnmode": {
           "image": "/drivers/ZW_WallPlug/assets/learnmode.svg",
           "instruction": {
