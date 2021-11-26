@@ -42,7 +42,7 @@
     "learnmode": {
       "image": "/drivers/4512726/assets/learnmode.svg",
       "instruction": {
-        "en": "# Pairing\nhort press the knob 5 times continuously.Within 2 seconds press and hold the knob for over 3 seconds.\n\n# Reset\nShort press the knob 5 times continuously and quickly. Within 2 seconds press and hold the knob for over 3 seconds."
+        "en": "Press the knob 5 times quickly. Immediately after press and hold the knob for over 3 seconds."
       }
     }
   },

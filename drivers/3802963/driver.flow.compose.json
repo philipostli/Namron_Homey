@@ -3,13 +3,13 @@
     {
       "id": "3802963_level_step_with_onoff",
       "title": {
-        "en": "Step level (with On/Off)"
+        "en": "Step level"
       },
       "titleFormatted": {
-        "en": "Step level (with On/Off) [[mode]], step size [[step_size]], transition [[transition_time]]"
+        "en": "Step level [[mode]], step size [[step_size]], transition [[transition_time]]"
       },
       "hint": {
-        "en": "Change the brightness step by step."
+        "en": "Change the brightness step by step. Assign a step mode, 0 equals up, 1 equals down."
       },
       "duration": false,
       "args": [
@@ -20,7 +20,7 @@
           "max": 1,
           "step": 1,
           "title": {
-            "en": "Mode, { 0 } means up, { 1 } means down, other values are invalid."
+            "en": "Mode"
           }
         },
         {
@@ -40,10 +40,10 @@
           "name": "transition_time",
           "type": "number",
           "min": 0,
-          "max": 6553,
+          "max": 65535,
           "step": 1,
           "title": {
-            "en": "Transition time, range { 0 ~ 6553 } seconds."
+            "en": "Transition time, the ranging from 0 to 65535 seconds."
           }
         }
       ]
@@ -51,10 +51,10 @@
     {
       "id": "3802963_level_move_with_onoff",
       "title": {
-        "en": "Move level (with On/Off)"
+        "en": "Move level"
       },
       "titleFormatted": {
-        "en": "Move level (with On/Off) [[move_mode]], rate [[rate]]"
+        "en": "Move level [[move_mode]], rate [[rate]]"
       },
       "hint": {
         "en": "Change the brightness continuously."
@@ -68,7 +68,7 @@
           "max": 1,
           "step": 1,
           "title": {
-            "en": "Move mode, { 0 } means up, { 1 } means down, other values are invalid."
+            "en": "Move Mode"
           }
         },
         {
@@ -87,7 +87,7 @@
     {
       "id": "3802963_level_stop_with_onoff",
       "title": {
-        "en": "Stop level (with On/Off)"
+        "en": "Stop level"
       },
       "hint": {
         "en": "Stop changing the brightness."
@@ -111,7 +111,7 @@
           "name": "group_id",
           "type": "number",
           "title": {
-            "en": "Group ID, default { 0 }"
+            "en": "Group ID"
           }
         },
         {
@@ -132,14 +132,14 @@
         "en": "[[group_id]] store scene [[scene_id]]"
       },
       "hint": {
-        "en": "Save the current state to the scene."
+        "en": "Save the current state of your bulb as a scene, to recall later. To store your scene set a unique Group ID number, 0 is default and a unique Scene ID."
       },
       "args": [
         {
           "name": "group_id",
           "type": "number",
           "title": {
-            "en": "Group ID, default { 0 }"
+            "en": "Group ID"
           }
         },
         {

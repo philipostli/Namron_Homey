@@ -42,7 +42,7 @@
     "learnmode": {
       "image": "/drivers/4512728/assets/learnmode.svg",
       "instruction": {
-        "en": "# Pairing\nPress and hold down both buttons until LED indicator turns on.  Immediately short press pair button.\n\n# Reset\nPress and hold down both buttons until LED indicator turns on. Immediately short press pair button 5 times continuously."
+        "en": "Press and hold down both buttons until the LED indicator turns on. Immediately short press the Pair button.\n\nIf pairing is not started reset the device. Press and hold down both buttons until LED indicator turns on. Immediately press the Pair button 5 times quickly."
       }
     }
   },

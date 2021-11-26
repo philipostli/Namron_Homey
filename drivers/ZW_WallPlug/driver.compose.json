@@ -32,7 +32,7 @@
     "learnmode": {
       "image": "/drivers/ZW_WallPlug/assets/learnmode.svg",
       "instruction": {
-        "en": "# Pair\n1) Repower on the smart plug, it will be set into pair mode automatically.\n2) Triple press the action button on the smart plug, it will set the plug into pair mode. \n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down action button for over 10 seconds."
+        "en": "(Re)Power on the smart plug, it will be set into pair mode automatically. You can also press the action button on the smart plug 3 times.\n\nIf pairing fails reset the device by press and hold down action button for over 10 seconds."
       }
     },
     "associationGroups": [

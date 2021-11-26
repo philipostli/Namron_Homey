@@ -37,7 +37,7 @@
     "learnmode": {
       "image": "/drivers/ZW_Remote_4/assets/learnmode.svg",
       "instruction": {
-        "en": "# Pair\nPress and hold down both buttons I and O for over 3 seconds.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down both buttons I and O for over 10 seconds."
+        "en": "Press and hold down both I and O buttons over 3 seconds.\n\nIf pairing fails reset the device by press and hold down both buttons I and O for over 10 seconds."
       }
     },
     "associationGroups": [

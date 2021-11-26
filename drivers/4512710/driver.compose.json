@@ -46,7 +46,7 @@
     "learnmode": {
       "image": "/drivers/4512710/assets/learnmode.svg",
       "instruction": {
-        "en": "# Pair\nTriple press the reset button.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold the reset button for over 10 seconds."
+        "en": "Press the Reset button 3 times quickly.\n\nIf pairing fails reset the device by pressing the Reset button for over 10 seconds."
       }
     },
     "associationGroups": [

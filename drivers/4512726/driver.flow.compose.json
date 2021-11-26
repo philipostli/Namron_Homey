@@ -19,7 +19,7 @@
     {
       "id": "4512726_move_to_level_with_onoff",
       "title": {
-        "en": "Move to level (with On/Off)"
+        "en": "Move to level"
       },
       "deprecated": true,
       "args": [],

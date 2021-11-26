@@ -378,10 +378,10 @@
     {
       "id": "4512706_level_step_with_onoff",
       "title": {
-        "en": "Step level (with On/Off)"
+        "en": "Step level"
       },
       "titleFormatted": {
-        "en": "[[group]] step level (with On/Off)"
+        "en": "[[group]] step level"
       },
       "deprecated": true,
       "args": [
@@ -447,10 +447,10 @@
     {
       "id": "4512706_level_move_with_onoff",
       "title": {
-        "en": "Move level (with On/Off)"
+        "en": "Move level"
       },
       "titleFormatted": {
-        "en": "[[group]] move level (with On/Off)"
+        "en": "[[group]] move level"
       },
       "deprecated": true,
       "args": [
@@ -508,10 +508,10 @@
     {
       "id": "4512706_level_stop_with_onoff",
       "title": {
-        "en": "Stop level (with On/Off)"
+        "en": "Stop level"
       },
       "titleFormatted": {
-        "en": "[[group]] stop level (with On/Off)"
+        "en": "[[group]] stop level"
       },
       "deprecated": true,
       "args": [

@@ -19,7 +19,7 @@
     {
       "id": "4512702_level_step_with_onoff",
       "title": {
-        "en": "Step level (with On/Off)"
+        "en": "Step level"
       },
       "deprecated": true,
       "args": [],
@@ -53,7 +53,7 @@
     {
       "id": "4512702_level_move_with_onoff",
       "title": {
-        "en": "Move level (with On/Off)"
+        "en": "Move level"
       },
       "deprecated": true,
       "args": [],
@@ -79,7 +79,7 @@
     {
       "id": "4512702_level_stop_with_onoff",
       "title": {
-        "en": "Stop level (with On/Off)"
+        "en": "Stop level"
       },
       "deprecated": true,
       "args": []

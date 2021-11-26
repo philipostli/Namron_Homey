@@ -54,7 +54,7 @@
     "learnmode": {
       "image": "/drivers/3802960/assets/learnmode.svg",
       "instruction": {
-        "en": "# Pairing\nToggle power from OFF, then to ON.\n\n# Reset\nPhysically switch the device on and off six (6) times for intervals of 0.5~2 seconds."
+        "en": "Toggle the light from Off to On. \n\nIf pairing does not start after 20 seconds, reset the the device by turning it off and on 6 times with 0.5-2 second intervals. "
       }
     }
   },

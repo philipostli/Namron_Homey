@@ -1548,7 +1548,7 @@
       {
         "id": "4512701_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "deprecated": true,
         "args": [
@@ -1580,7 +1580,7 @@
       {
         "id": "4512701_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "deprecated": true,
         "args": [
@@ -1622,7 +1622,7 @@
       {
         "id": "4512702_level_step_with_onoff",
         "title": {
-          "en": "Step level (with On/Off)"
+          "en": "Step level"
         },
         "deprecated": true,
         "args": [
@@ -1662,7 +1662,7 @@
       {
         "id": "4512702_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "deprecated": true,
         "args": [
@@ -1694,7 +1694,7 @@
       {
         "id": "4512702_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "deprecated": true,
         "args": [
@@ -1804,10 +1804,10 @@
       {
         "id": "4512703_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "titleFormatted": {
-          "en": "[[group]] move level (with On/Off)"
+          "en": "[[group]] move level"
         },
         "deprecated": true,
         "args": [
@@ -1870,10 +1870,10 @@
       {
         "id": "4512703_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "titleFormatted": {
-          "en": "[[group]] stop level (with On/Off)"
+          "en": "[[group]] stop level"
         },
         "deprecated": true,
         "args": [
@@ -2146,10 +2146,10 @@
       {
         "id": "4512705_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "titleFormatted": {
-          "en": "[[group]] move level (with On/Off)"
+          "en": "[[group]] move level"
         },
         "deprecated": true,
         "args": [
@@ -2212,10 +2212,10 @@
       {
         "id": "4512705_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "titleFormatted": {
-          "en": "[[group]] stop level (with On/Off)"
+          "en": "[[group]] stop level"
         },
         "deprecated": true,
         "args": [
@@ -2670,10 +2670,10 @@
       {
         "id": "4512706_level_step_with_onoff",
         "title": {
-          "en": "Step level (with On/Off)"
+          "en": "Step level"
         },
         "titleFormatted": {
-          "en": "[[group]] step level (with On/Off)"
+          "en": "[[group]] step level"
         },
         "deprecated": true,
         "args": [
@@ -2744,10 +2744,10 @@
       {
         "id": "4512706_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "titleFormatted": {
-          "en": "[[group]] move level (with On/Off)"
+          "en": "[[group]] move level"
         },
         "deprecated": true,
         "args": [
@@ -2810,10 +2810,10 @@
       {
         "id": "4512706_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "titleFormatted": {
-          "en": "[[group]] stop level (with On/Off)"
+          "en": "[[group]] stop level"
         },
         "deprecated": true,
         "args": [
@@ -4183,10 +4183,10 @@
       {
         "id": "4512719_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "titleFormatted": {
-          "en": "[[group]] move level (with On/Off)"
+          "en": "[[group]] move level"
         },
         "deprecated": true,
         "args": [
@@ -4237,10 +4237,10 @@
       {
         "id": "4512719_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "titleFormatted": {
-          "en": "[[group]] stop level (with On/Off)"
+          "en": "[[group]] stop level"
         },
         "deprecated": true,
         "args": [
@@ -4517,7 +4517,7 @@
       {
         "id": "4512726_move_to_level_with_onoff",
         "title": {
-          "en": "Move to level (with On/Off)"
+          "en": "Move to level"
         },
         "deprecated": true,
         "args": [
@@ -4633,7 +4633,7 @@
       {
         "id": "4512728_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "deprecated": true,
         "args": [
@@ -4665,7 +4665,7 @@
       {
         "id": "4512728_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "deprecated": true,
         "args": [
@@ -4751,10 +4751,10 @@
       {
         "id": "4512729_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "titleFormatted": {
-          "en": "[[group]] move level (with On/Off)"
+          "en": "[[group]] move level"
         },
         "deprecated": true,
         "args": [
@@ -4805,10 +4805,10 @@
       {
         "id": "4512729_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "titleFormatted": {
-          "en": "[[group]] stop level (with On/Off)"
+          "en": "[[group]] stop level"
         },
         "deprecated": true,
         "args": [
@@ -5919,13 +5919,13 @@
       {
         "id": "1402755_level_step_with_onoff",
         "title": {
-          "en": "Step level (with On/Off)"
+          "en": "Step level"
         },
         "titleFormatted": {
-          "en": "Step level (with On/Off) [[mode]], step size [[step_size]], transition [[transition_time]]"
+          "en": "Step level [[mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the brightness step by step."
+          "en": "Change the brightness step by step. Assign a step mode, 0 equals up, 1 equals down."
         },
         "duration": false,
         "args": [
@@ -5941,7 +5941,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Mode"
             }
           },
           {
@@ -5961,10 +5961,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -5972,10 +5972,10 @@
       {
         "id": "1402755_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "titleFormatted": {
-          "en": "Move level (with On/Off) [[move_mode]], rate [[rate]]"
+          "en": "Move level [[move_mode]], rate [[rate]]"
         },
         "hint": {
           "en": "Change the brightness continuously."
@@ -5994,7 +5994,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Move Mode"
             }
           },
           {
@@ -6013,7 +6013,7 @@
       {
         "id": "1402755_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "hint": {
           "en": "Stop changing the brightness."
@@ -6048,7 +6048,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -6069,7 +6069,7 @@
           "en": "[[group_id]] store scene [[scene_id]]"
         },
         "hint": {
-          "en": "Save the current state to the scene."
+          "en": "Save the current state of your bulb as a scene, to recall later. To store your scene set a unique Group ID number, 0 is default and a unique Scene ID."
         },
         "args": [
           {
@@ -6081,7 +6081,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -6096,13 +6096,13 @@
       {
         "id": "3308431_level_step_with_onoff",
         "title": {
-          "en": "Step level (with On/Off)"
+          "en": "Step level"
         },
         "titleFormatted": {
-          "en": "Step level (with On/Off) [[mode]], step size [[step_size]], transition [[transition_time]]"
+          "en": "Step level [[mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the brightness step by step."
+          "en": "Change the brightness step by step. Assign a step mode, 0 equals up, 1 equals down."
         },
         "duration": false,
         "args": [
@@ -6118,7 +6118,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Mode"
             }
           },
           {
@@ -6138,10 +6138,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -6149,10 +6149,10 @@
       {
         "id": "3308431_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "titleFormatted": {
-          "en": "Move level (with On/Off) [[move_mode]], rate [[rate]]"
+          "en": "Move level [[move_mode]], rate [[rate]]"
         },
         "hint": {
           "en": "Change the brightness continuously."
@@ -6171,7 +6171,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Move Mode"
             }
           },
           {
@@ -6190,7 +6190,7 @@
       {
         "id": "3308431_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "hint": {
           "en": "Stop changing the brightness."
@@ -6225,7 +6225,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -6246,7 +6246,7 @@
           "en": "[[group_id]] store scene [[scene_id]]"
         },
         "hint": {
-          "en": "Save the current state to the scene."
+          "en": "Save the current state of your bulb as a scene, to recall later. To store your scene set a unique Group ID number, 0 is default and a unique Scene ID."
         },
         "args": [
           {
@@ -6258,7 +6258,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -6273,13 +6273,13 @@
       {
         "id": "3802960_level_step_with_onoff",
         "title": {
-          "en": "Step level (with On/Off)"
+          "en": "Step level"
         },
         "titleFormatted": {
-          "en": "Step level (with On/Off) [[mode]], step size [[step_size]], transition [[transition_time]]"
+          "en": "Step level [[mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the brightness step by step."
+          "en": "Change the brightness step by step. Assign a step mode, 0 equals up, 1 equals down."
         },
         "duration": false,
         "args": [
@@ -6295,7 +6295,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Mode"
             }
           },
           {
@@ -6315,10 +6315,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -6326,10 +6326,10 @@
       {
         "id": "3802960_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "titleFormatted": {
-          "en": "Move level (with On/Off) [[move_mode]], rate [[rate]]"
+          "en": "Move level [[move_mode]], rate [[rate]]"
         },
         "hint": {
           "en": "Change the brightness continuously."
@@ -6348,7 +6348,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Move Mode"
             }
           },
           {
@@ -6367,7 +6367,7 @@
       {
         "id": "3802960_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "hint": {
           "en": "Stop changing the brightness."
@@ -6402,7 +6402,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -6423,7 +6423,7 @@
           "en": "[[group_id]] store scene [[scene_id]]"
         },
         "hint": {
-          "en": "Save the current state to the scene."
+          "en": "Save the current state of your bulb as a scene, to recall later. To store your scene set a unique Group ID number, 0 is default and a unique Scene ID."
         },
         "args": [
           {
@@ -6435,7 +6435,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -6450,13 +6450,13 @@
       {
         "id": "3802961_level_step_with_onoff",
         "title": {
-          "en": "Step level (with On/Off)"
+          "en": "Step level"
         },
         "titleFormatted": {
-          "en": "Step level (with On/Off) [[mode]], step size [[step_size]], transition [[transition_time]]"
+          "en": "Step level [[mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the brightness step by step."
+          "en": "Change the brightness step by step. Assign a step mode, 0 equals up, 1 equals down."
         },
         "duration": false,
         "args": [
@@ -6472,7 +6472,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Mode"
             }
           },
           {
@@ -6492,10 +6492,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -6503,10 +6503,10 @@
       {
         "id": "3802961_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "titleFormatted": {
-          "en": "Move level (with On/Off) [[move_mode]], rate [[rate]]"
+          "en": "Move level [[move_mode]], rate [[rate]]"
         },
         "hint": {
           "en": "Change the brightness continuously."
@@ -6525,7 +6525,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Move Mode"
             }
           },
           {
@@ -6544,7 +6544,7 @@
       {
         "id": "3802961_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "hint": {
           "en": "Stop changing the brightness."
@@ -6567,7 +6567,7 @@
           "en": "Step color temperature [[step_mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the color temperature step by step."
+          "en": "Change the color temperature step by step. Assign a step mode, 1 equals up, 3 equals down."
         },
         "duration": false,
         "args": [
@@ -6583,7 +6583,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Step mode, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Step mode"
             }
           },
           {
@@ -6601,10 +6601,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -6618,7 +6618,7 @@
           "en": "Move color temperature [[move_mode]], rate [[rate]]"
         },
         "hint": {
-          "en": "Change the color temperature continuously."
+          "en": "Change the color temperature continuously. Assign a mode move, 0 equals stop, 1 equals up, 3 equals down."
         },
         "duration": false,
         "args": [
@@ -6634,7 +6634,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means stop, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Move mode"
             }
           },
           {
@@ -6688,7 +6688,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -6709,7 +6709,7 @@
           "en": "[[group_id]] store scene [[scene_id]]"
         },
         "hint": {
-          "en": "Save the current state to the scene."
+          "en": "Save the current state of your bulb as a scene, to recall later. To store your scene set a unique Group ID number, 0 is default and a unique Scene ID."
         },
         "args": [
           {
@@ -6721,7 +6721,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -6736,13 +6736,13 @@
       {
         "id": "3802962_level_step_with_onoff",
         "title": {
-          "en": "Step level (with On/Off)"
+          "en": "Step level"
         },
         "titleFormatted": {
-          "en": "Step level (with On/Off) [[mode]], step size [[step_size]], transition [[transition_time]]"
+          "en": "Step level [[mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the brightness step by step."
+          "en": "Change the brightness step by step. Assign a step mode, 0 equals up, 1 equals down."
         },
         "duration": false,
         "args": [
@@ -6758,7 +6758,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Mode"
             }
           },
           {
@@ -6778,10 +6778,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -6789,10 +6789,10 @@
       {
         "id": "3802962_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "titleFormatted": {
-          "en": "Move level (with On/Off) [[move_mode]], rate [[rate]]"
+          "en": "Move level [[move_mode]], rate [[rate]]"
         },
         "hint": {
           "en": "Change the brightness continuously."
@@ -6811,7 +6811,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Move Mode"
             }
           },
           {
@@ -6830,7 +6830,7 @@
       {
         "id": "3802962_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "hint": {
           "en": "Stop changing the brightness."
@@ -6869,7 +6869,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means stop, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Move mode"
             }
           },
           {
@@ -6910,7 +6910,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means stop, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Move mode"
             }
           },
           {
@@ -6935,7 +6935,7 @@
           "en": "Step color temperature [[step_mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the color temperature step by step."
+          "en": "Change the color temperature step by step. Assign a step mode, 1 equals up, 3 equals down."
         },
         "duration": false,
         "args": [
@@ -6951,7 +6951,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Step mode, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Step mode"
             }
           },
           {
@@ -6969,10 +6969,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -6986,7 +6986,7 @@
           "en": "Move color temperature [[move_mode]], rate [[rate]]"
         },
         "hint": {
-          "en": "Change the color temperature continuously."
+          "en": "Change the color temperature continuously. Assign a mode move, 0 equals stop, 1 equals up, 3 equals down."
         },
         "duration": false,
         "args": [
@@ -7002,7 +7002,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means stop, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Move mode"
             }
           },
           {
@@ -7056,7 +7056,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -7077,7 +7077,7 @@
           "en": "[[group_id]] store scene [[scene_id]]"
         },
         "hint": {
-          "en": "Save the current state to the scene."
+          "en": "Save the current state of your bulb as a scene, to recall later. To store your scene set a unique Group ID number, 0 is default and a unique Scene ID."
         },
         "args": [
           {
@@ -7089,7 +7089,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -7104,13 +7104,13 @@
       {
         "id": "3802963_level_step_with_onoff",
         "title": {
-          "en": "Step level (with On/Off)"
+          "en": "Step level"
         },
         "titleFormatted": {
-          "en": "Step level (with On/Off) [[mode]], step size [[step_size]], transition [[transition_time]]"
+          "en": "Step level [[mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the brightness step by step."
+          "en": "Change the brightness step by step. Assign a step mode, 0 equals up, 1 equals down."
         },
         "duration": false,
         "args": [
@@ -7126,7 +7126,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Mode"
             }
           },
           {
@@ -7146,10 +7146,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -7157,10 +7157,10 @@
       {
         "id": "3802963_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "titleFormatted": {
-          "en": "Move level (with On/Off) [[move_mode]], rate [[rate]]"
+          "en": "Move level [[move_mode]], rate [[rate]]"
         },
         "hint": {
           "en": "Change the brightness continuously."
@@ -7179,7 +7179,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Move Mode"
             }
           },
           {
@@ -7198,7 +7198,7 @@
       {
         "id": "3802963_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "hint": {
           "en": "Stop changing the brightness."
@@ -7233,7 +7233,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -7254,7 +7254,7 @@
           "en": "[[group_id]] store scene [[scene_id]]"
         },
         "hint": {
-          "en": "Save the current state to the scene."
+          "en": "Save the current state of your bulb as a scene, to recall later. To store your scene set a unique Group ID number, 0 is default and a unique Scene ID."
         },
         "args": [
           {
@@ -7266,7 +7266,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -7281,13 +7281,13 @@
       {
         "id": "3802964_level_step_with_onoff",
         "title": {
-          "en": "Step level (with On/Off)"
+          "en": "Step level"
         },
         "titleFormatted": {
-          "en": "Step level (with On/Off) [[mode]], step size [[step_size]], transition [[transition_time]]"
+          "en": "Step level [[mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the brightness step by step."
+          "en": "Change the brightness step by step. Assign a step mode, 0 equals up, 1 equals down."
         },
         "duration": false,
         "args": [
@@ -7303,7 +7303,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Mode"
             }
           },
           {
@@ -7323,10 +7323,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -7334,10 +7334,10 @@
       {
         "id": "3802964_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "titleFormatted": {
-          "en": "Move level (with On/Off) [[move_mode]], rate [[rate]]"
+          "en": "Move level [[move_mode]], rate [[rate]]"
         },
         "hint": {
           "en": "Change the brightness continuously."
@@ -7356,7 +7356,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Move Mode"
             }
           },
           {
@@ -7375,7 +7375,7 @@
       {
         "id": "3802964_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "hint": {
           "en": "Stop changing the brightness."
@@ -7398,7 +7398,7 @@
           "en": "Step color temperature [[step_mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the color temperature step by step."
+          "en": "Change the color temperature step by step. Assign a step mode, 1 equals up, 3 equals down."
         },
         "duration": false,
         "args": [
@@ -7414,7 +7414,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Step mode, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Step mode"
             }
           },
           {
@@ -7432,10 +7432,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -7449,7 +7449,7 @@
           "en": "Move color temperature [[move_mode]], rate [[rate]]"
         },
         "hint": {
-          "en": "Change the color temperature continuously."
+          "en": "Change the color temperature continuously. Assign a mode move, 0 equals stop, 1 equals up, 3 equals down."
         },
         "duration": false,
         "args": [
@@ -7465,7 +7465,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means stop, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Move mode"
             }
           },
           {
@@ -7519,7 +7519,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -7540,7 +7540,7 @@
           "en": "[[group_id]] store scene [[scene_id]]"
         },
         "hint": {
-          "en": "Save the current state to the scene."
+          "en": "Save the current state of your bulb as a scene, to recall later. To store your scene set a unique Group ID number, 0 is default and a unique Scene ID."
         },
         "args": [
           {
@@ -7552,7 +7552,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -7567,13 +7567,13 @@
       {
         "id": "3802965_level_step_with_onoff",
         "title": {
-          "en": "Step level (with On/Off)"
+          "en": "Step level"
         },
         "titleFormatted": {
-          "en": "Step level (with On/Off) [[mode]], step size [[step_size]], transition [[transition_time]]"
+          "en": "Step level [[mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the brightness step by step."
+          "en": "Change the brightness step by step. Assign a step mode, 0 equals up, 1 equals down."
         },
         "duration": false,
         "args": [
@@ -7589,7 +7589,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Mode"
             }
           },
           {
@@ -7609,10 +7609,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -7620,10 +7620,10 @@
       {
         "id": "3802965_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "titleFormatted": {
-          "en": "Move level (with On/Off) [[move_mode]], rate [[rate]]"
+          "en": "Move level [[move_mode]], rate [[rate]]"
         },
         "hint": {
           "en": "Change the brightness continuously."
@@ -7642,7 +7642,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Move Mode"
             }
           },
           {
@@ -7661,7 +7661,7 @@
       {
         "id": "3802965_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "hint": {
           "en": "Stop changing the brightness."
@@ -7696,7 +7696,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -7717,7 +7717,7 @@
           "en": "[[group_id]] store scene [[scene_id]]"
         },
         "hint": {
-          "en": "Save the current state to the scene."
+          "en": "Save the current state of your bulb as a scene, to recall later. To store your scene set a unique Group ID number, 0 is default and a unique Scene ID."
         },
         "args": [
           {
@@ -7729,7 +7729,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -7744,13 +7744,13 @@
       {
         "id": "3802966_level_step_with_onoff",
         "title": {
-          "en": "Step level (with On/Off)"
+          "en": "Step level"
         },
         "titleFormatted": {
-          "en": "Step level (with On/Off) [[mode]], step size [[step_size]], transition [[transition_time]]"
+          "en": "Step level [[mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the brightness step by step."
+          "en": "Change the brightness step by step. Assign a step mode, 0 equals up, 1 equals down."
         },
         "duration": false,
         "args": [
@@ -7766,7 +7766,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Mode"
             }
           },
           {
@@ -7786,10 +7786,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -7797,10 +7797,10 @@
       {
         "id": "3802966_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "titleFormatted": {
-          "en": "Move level (with On/Off) [[move_mode]], rate [[rate]]"
+          "en": "Move level [[move_mode]], rate [[rate]]"
         },
         "hint": {
           "en": "Change the brightness continuously."
@@ -7819,7 +7819,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Move Mode"
             }
           },
           {
@@ -7838,7 +7838,7 @@
       {
         "id": "3802966_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "hint": {
           "en": "Stop changing the brightness."
@@ -7861,7 +7861,7 @@
           "en": "Step color temperature [[step_mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the color temperature step by step."
+          "en": "Change the color temperature step by step. Assign a step mode, 1 equals up, 3 equals down."
         },
         "duration": false,
         "args": [
@@ -7877,7 +7877,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Step mode, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Step mode"
             }
           },
           {
@@ -7895,10 +7895,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -7912,7 +7912,7 @@
           "en": "Move color temperature [[move_mode]], rate [[rate]]"
         },
         "hint": {
-          "en": "Change the color temperature continuously."
+          "en": "Change the color temperature continuously. Assign a mode move, 0 equals stop, 1 equals up, 3 equals down."
         },
         "duration": false,
         "args": [
@@ -7928,7 +7928,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means stop, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Move mode"
             }
           },
           {
@@ -7982,7 +7982,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -8003,7 +8003,7 @@
           "en": "[[group_id]] store scene [[scene_id]]"
         },
         "hint": {
-          "en": "Save the current state to the scene."
+          "en": "Save the current state of your bulb as a scene, to recall later. To store your scene set a unique Group ID number, 0 is default and a unique Scene ID."
         },
         "args": [
           {
@@ -8015,7 +8015,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -8030,13 +8030,13 @@
       {
         "id": "3802967_level_step_with_onoff",
         "title": {
-          "en": "Step level (with On/Off)"
+          "en": "Step level"
         },
         "titleFormatted": {
-          "en": "Step level (with On/Off) [[mode]], step size [[step_size]], transition [[transition_time]]"
+          "en": "Step level [[mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the brightness step by step."
+          "en": "Change the brightness step by step. Assign a step mode, 0 equals up, 1 equals down."
         },
         "duration": false,
         "args": [
@@ -8052,7 +8052,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Mode"
             }
           },
           {
@@ -8072,10 +8072,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -8083,10 +8083,10 @@
       {
         "id": "3802967_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "titleFormatted": {
-          "en": "Move level (with On/Off) [[move_mode]], rate [[rate]]"
+          "en": "Move level [[move_mode]], rate [[rate]]"
         },
         "hint": {
           "en": "Change the brightness continuously."
@@ -8105,7 +8105,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Move Mode"
             }
           },
           {
@@ -8124,7 +8124,7 @@
       {
         "id": "3802967_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "hint": {
           "en": "Stop changing the brightness."
@@ -8163,7 +8163,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means stop, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Move mode"
             }
           },
           {
@@ -8204,7 +8204,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means stop, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Move mode"
             }
           },
           {
@@ -8229,7 +8229,7 @@
           "en": "Step color temperature [[step_mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the color temperature step by step."
+          "en": "Change the color temperature step by step. Assign a step mode, 1 equals up, 3 equals down."
         },
         "duration": false,
         "args": [
@@ -8245,7 +8245,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Step mode, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Step mode"
             }
           },
           {
@@ -8263,10 +8263,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -8280,7 +8280,7 @@
           "en": "Move color temperature [[move_mode]], rate [[rate]]"
         },
         "hint": {
-          "en": "Change the color temperature continuously."
+          "en": "Change the color temperature continuously. Assign a mode move, 0 equals stop, 1 equals up, 3 equals down."
         },
         "duration": false,
         "args": [
@@ -8296,7 +8296,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means stop, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Move mode"
             }
           },
           {
@@ -8350,7 +8350,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -8371,7 +8371,7 @@
           "en": "[[group_id]] store scene [[scene_id]]"
         },
         "hint": {
-          "en": "Save the current state to the scene."
+          "en": "Save the current state of your bulb as a scene, to recall later. To store your scene set a unique Group ID number, 0 is default and a unique Scene ID."
         },
         "args": [
           {
@@ -8383,7 +8383,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -8398,13 +8398,13 @@
       {
         "id": "3802968_level_step_with_onoff",
         "title": {
-          "en": "Step level (with On/Off)"
+          "en": "Step level"
         },
         "titleFormatted": {
-          "en": "Step level (with On/Off) [[mode]], step size [[step_size]], transition [[transition_time]]"
+          "en": "Step level [[mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the brightness step by step."
+          "en": "Change the brightness step by step. Assign a step mode, 0 equals up, 1 equals down."
         },
         "duration": false,
         "args": [
@@ -8420,7 +8420,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Mode"
             }
           },
           {
@@ -8440,10 +8440,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -8451,10 +8451,10 @@
       {
         "id": "3802968_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "titleFormatted": {
-          "en": "Move level (with On/Off) [[move_mode]], rate [[rate]]"
+          "en": "Move level [[move_mode]], rate [[rate]]"
         },
         "hint": {
           "en": "Change the brightness continuously."
@@ -8473,7 +8473,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Move Mode"
             }
           },
           {
@@ -8492,7 +8492,7 @@
       {
         "id": "3802968_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "hint": {
           "en": "Stop changing the brightness."
@@ -8515,7 +8515,7 @@
           "en": "Step color temperature [[step_mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the color temperature step by step."
+          "en": "Change the color temperature step by step. Assign a step mode, 1 equals up, 3 equals down."
         },
         "duration": false,
         "args": [
@@ -8531,7 +8531,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Step mode, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Step mode"
             }
           },
           {
@@ -8549,10 +8549,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -8566,7 +8566,7 @@
           "en": "Move color temperature [[move_mode]], rate [[rate]]"
         },
         "hint": {
-          "en": "Change the color temperature continuously."
+          "en": "Change the color temperature continuously. Assign a mode move, 0 equals stop, 1 equals up, 3 equals down."
         },
         "duration": false,
         "args": [
@@ -8582,7 +8582,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means stop, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Move mode"
             }
           },
           {
@@ -8636,7 +8636,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -8657,7 +8657,7 @@
           "en": "[[group_id]] store scene [[scene_id]]"
         },
         "hint": {
-          "en": "Save the current state to the scene."
+          "en": "Save the current state of your bulb as a scene, to recall later. To store your scene set a unique Group ID number, 0 is default and a unique Scene ID."
         },
         "args": [
           {
@@ -8669,7 +8669,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -8684,13 +8684,13 @@
       {
         "id": "4512700_level_step_with_onoff",
         "title": {
-          "en": "Step level (with On/Off)"
+          "en": "Step level"
         },
         "titleFormatted": {
-          "en": "Step level (with On/Off) [[mode]], step size [[step_size]], transition [[transition_time]]"
+          "en": "Step level [[mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the brightness step by step."
+          "en": "Change the brightness step by step. Assign a step mode, 0 equals up, 1 equals down."
         },
         "duration": false,
         "args": [
@@ -8706,7 +8706,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Mode"
             }
           },
           {
@@ -8726,10 +8726,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -8737,10 +8737,10 @@
       {
         "id": "4512700_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "titleFormatted": {
-          "en": "Move level (with On/Off) [[move_mode]], rate [[rate]]"
+          "en": "Move level [[move_mode]], rate [[rate]]"
         },
         "hint": {
           "en": "Change the brightness continuously."
@@ -8759,7 +8759,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Move Mode"
             }
           },
           {
@@ -8778,7 +8778,7 @@
       {
         "id": "4512700_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "hint": {
           "en": "Stop changing the brightness."
@@ -8813,7 +8813,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -8834,7 +8834,7 @@
           "en": "[[group_id]] store scene [[scene_id]]"
         },
         "hint": {
-          "en": "Save the current state to the scene."
+          "en": "Save the current state of your bulb as a scene, to recall later. To store your scene set a unique Group ID number, 0 is default and a unique Scene ID."
         },
         "args": [
           {
@@ -8846,7 +8846,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -8861,13 +8861,13 @@
       {
         "id": "4512707_CCT_level_step_with_onoff",
         "title": {
-          "en": "Step level (with On/Off)"
+          "en": "Step level"
         },
         "titleFormatted": {
-          "en": "Step level (with On/Off) [[mode]], step size [[step_size]], transition [[transition_time]]"
+          "en": "Step level [[mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the brightness step by step."
+          "en": "Change the brightness step by step. Assign a step mode, 0 equals up, 1 equals down."
         },
         "duration": false,
         "args": [
@@ -8883,7 +8883,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Mode"
             }
           },
           {
@@ -8903,10 +8903,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -8914,10 +8914,10 @@
       {
         "id": "4512707_CCT_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "titleFormatted": {
-          "en": "Move level (with On/Off) [[move_mode]], rate [[rate]]"
+          "en": "Move level [[move_mode]], rate [[rate]]"
         },
         "hint": {
           "en": "Change the brightness continuously."
@@ -8936,7 +8936,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Move Mode"
             }
           },
           {
@@ -8955,7 +8955,7 @@
       {
         "id": "4512707_CCT_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "hint": {
           "en": "Stop changing the brightness."
@@ -8978,7 +8978,7 @@
           "en": "Stpe color temperature [[step_mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the color temperature step by step."
+          "en": "Change the color temperature step by step. Assign a step mode, 1 equals up, 3 equals down."
         },
         "duration": false,
         "args": [
@@ -8994,7 +8994,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Step mode, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Step mode"
             }
           },
           {
@@ -9012,10 +9012,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -9029,7 +9029,7 @@
           "en": "Move color temperature [[move_mode]], rate [[rate]]"
         },
         "hint": {
-          "en": "Change the color temperature continuously."
+          "en": "Change the color temperature continuously. Assign a mode move, 0 equals stop, 1 equals up, 3 equals down."
         },
         "duration": false,
         "args": [
@@ -9045,7 +9045,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means stop, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Move mode"
             }
           },
           {
@@ -9099,7 +9099,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -9120,7 +9120,7 @@
           "en": "[[group_id]] store scene [[scene_id]]"
         },
         "hint": {
-          "en": "Save the current state to the scene."
+          "en": "Save the current state of your bulb as a scene, to recall later. To store your scene set a unique Group ID number, 0 is default and a unique Scene ID."
         },
         "args": [
           {
@@ -9132,7 +9132,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -9147,13 +9147,13 @@
       {
         "id": "4512707_COLOR_level_step_with_onoff",
         "title": {
-          "en": "Step level (with On/Off)"
+          "en": "Step level"
         },
         "titleFormatted": {
-          "en": "Step level (with On/Off) [[mode]], step size [[step_size]], transition [[transition_time]]"
+          "en": "Step level [[mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the brightness step by step."
+          "en": "Change the brightness step by step. Assign a step mode, 0 equals up, 1 equals down."
         },
         "duration": false,
         "args": [
@@ -9169,7 +9169,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Mode"
             }
           },
           {
@@ -9189,10 +9189,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -9200,10 +9200,10 @@
       {
         "id": "4512707_COLOR_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "titleFormatted": {
-          "en": "Move level (with On/Off) [[move_mode]], rate [[rate]]"
+          "en": "Move level [[move_mode]], rate [[rate]]"
         },
         "hint": {
           "en": "Change the brightness continuously."
@@ -9222,7 +9222,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Move Mode"
             }
           },
           {
@@ -9241,7 +9241,7 @@
       {
         "id": "4512707_COLOR_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "hint": {
           "en": "Stop changing the brightness."
@@ -9280,7 +9280,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means stop, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Move mode"
             }
           },
           {
@@ -9321,7 +9321,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means stop, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Move mode"
             }
           },
           {
@@ -9346,7 +9346,7 @@
           "en": "Step color temperature [[step_mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the color temperature step by step."
+          "en": "Change the color temperature step by step. Assign a step mode, 1 equals up, 3 equals down."
         },
         "duration": false,
         "args": [
@@ -9362,7 +9362,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Step mode, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Step mode"
             }
           },
           {
@@ -9380,10 +9380,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -9397,7 +9397,7 @@
           "en": "Move color temperature [[move_mode]], rate [[rate]]"
         },
         "hint": {
-          "en": "Change the color temperature continuously."
+          "en": "Change the color temperature continuously. Assign a mode move, 0 equals stop, 1 equals up, 3 equals down."
         },
         "duration": false,
         "args": [
@@ -9413,7 +9413,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means stop, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Move mode"
             }
           },
           {
@@ -9467,7 +9467,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -9488,7 +9488,7 @@
           "en": "[[group_id]] store scene [[scene_id]]"
         },
         "hint": {
-          "en": "Save the current state to the scene."
+          "en": "Save the current state of your bulb as a scene, to recall later. To store your scene set a unique Group ID number, 0 is default and a unique Scene ID."
         },
         "args": [
           {
@@ -9500,7 +9500,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -9515,13 +9515,13 @@
       {
         "id": "4512707_DIM_level_step_with_onoff",
         "title": {
-          "en": "Step level (with On/Off)"
+          "en": "Step level"
         },
         "titleFormatted": {
-          "en": "Step level (with On/Off) [[mode]], step size [[step_size]], transition [[transition_time]]"
+          "en": "Step level [[mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the brightness step by step."
+          "en": "Change the brightness step by step. Assign a step mode, 0 equals up, 1 equals down."
         },
         "duration": false,
         "args": [
@@ -9537,7 +9537,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Mode"
             }
           },
           {
@@ -9557,10 +9557,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -9568,10 +9568,10 @@
       {
         "id": "4512707_DIM_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "titleFormatted": {
-          "en": "Move level (with On/Off) [[move_mode]], rate [[rate]]"
+          "en": "Move level [[move_mode]], rate [[rate]]"
         },
         "hint": {
           "en": "Change the brightness continuously."
@@ -9590,7 +9590,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Move Mode"
             }
           },
           {
@@ -9609,7 +9609,7 @@
       {
         "id": "4512707_DIM_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "hint": {
           "en": "Stop changing the brightness."
@@ -9644,7 +9644,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -9665,7 +9665,7 @@
           "en": "[[group_id]] store scene [[scene_id]]"
         },
         "hint": {
-          "en": "Save the current state to the scene."
+          "en": "Save the current state of your bulb as a scene, to recall later. To store your scene set a unique Group ID number, 0 is default and a unique Scene ID."
         },
         "args": [
           {
@@ -9677,7 +9677,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -9692,13 +9692,13 @@
       {
         "id": "4512708_level_step_with_onoff",
         "title": {
-          "en": "Step level (with On/Off)"
+          "en": "Step level"
         },
         "titleFormatted": {
-          "en": "Step level (with On/Off) [[mode]], step size [[step_size]], transition [[transition_time]]"
+          "en": "Step level [[mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the brightness step by step."
+          "en": "Change the brightness step by step. Assign a step mode, 0 equals up, 1 equals down."
         },
         "duration": false,
         "args": [
@@ -9714,7 +9714,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Mode"
             }
           },
           {
@@ -9734,10 +9734,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -9745,10 +9745,10 @@
       {
         "id": "4512708_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "titleFormatted": {
-          "en": "Move level (with On/Off) [[move_mode]], rate [[rate]]"
+          "en": "Move level [[move_mode]], rate [[rate]]"
         },
         "hint": {
           "en": "Change the brightness continuously."
@@ -9767,7 +9767,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Move Mode"
             }
           },
           {
@@ -9786,7 +9786,7 @@
       {
         "id": "4512708_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "hint": {
           "en": "Stop changing the brightness."
@@ -9821,7 +9821,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -9842,7 +9842,7 @@
           "en": "[[group_id]] store scene [[scene_id]]"
         },
         "hint": {
-          "en": "Save the current state to the scene."
+          "en": "Save the current state of your bulb as a scene, to recall later. To store your scene set a unique Group ID number, 0 is default and a unique Scene ID."
         },
         "args": [
           {
@@ -9854,7 +9854,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -9869,13 +9869,13 @@
       {
         "id": "89665_level_step_with_onoff",
         "title": {
-          "en": "Step level (with On/Off)"
+          "en": "Step level"
         },
         "titleFormatted": {
-          "en": "Step level (with On/Off) [[mode]], step size [[step_size]], transition [[transition_time]]"
+          "en": "Step level [[mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the brightness step by step."
+          "en": "Change the brightness step by step. Assign a step mode, 0 equals up, 1 equals down."
         },
         "duration": false,
         "args": [
@@ -9891,7 +9891,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Mode"
             }
           },
           {
@@ -9911,10 +9911,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -9922,10 +9922,10 @@
       {
         "id": "89665_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Move level"
         },
         "titleFormatted": {
-          "en": "Move level (with On/Off) [[move_mode]], rate [[rate]]"
+          "en": "Move level [[move_mode]], rate [[rate]]"
         },
         "hint": {
           "en": "Change the brightness continuously."
@@ -9944,7 +9944,7 @@
             "max": 1,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means up, { 1 } means down, other values are invalid."
+              "en": "Move Mode"
             }
           },
           {
@@ -9963,7 +9963,7 @@
       {
         "id": "89665_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Stop level"
         },
         "hint": {
           "en": "Stop changing the brightness."
@@ -10002,7 +10002,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means stop, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Move mode"
             }
           },
           {
@@ -10043,7 +10043,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means stop, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Move mode"
             }
           },
           {
@@ -10068,7 +10068,7 @@
           "en": "Step color temperature [[step_mode]], step size [[step_size]], transition [[transition_time]]"
         },
         "hint": {
-          "en": "Change the color temperature step by step."
+          "en": "Change the color temperature step by step. Assign a step mode, 1 equals up, 3 equals down."
         },
         "duration": false,
         "args": [
@@ -10084,7 +10084,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Step mode, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Step mode"
             }
           },
           {
@@ -10102,10 +10102,10 @@
             "name": "transition_time",
             "type": "number",
             "min": 0,
-            "max": 6553,
+            "max": 65535,
             "step": 1,
             "title": {
-              "en": "Transition time, range { 0 ~ 6553 } seconds."
+              "en": "Transition time, the ranging from 0 to 65535 seconds."
             }
           }
         ]
@@ -10119,7 +10119,7 @@
           "en": "Move color temperature [[move_mode]], rate [[rate]]"
         },
         "hint": {
-          "en": "Change the color temperature continuously."
+          "en": "Change the color temperature continuously. Assign a mode move, 0 equals stop, 1 equals up, 3 equals down."
         },
         "duration": false,
         "args": [
@@ -10135,7 +10135,7 @@
             "max": 3,
             "step": 1,
             "title": {
-              "en": "Move mode, { 0 } means stop, { 1 } means up, { 3 } means down, other values are invalid."
+              "en": "Move mode"
             }
           },
           {
@@ -10189,7 +10189,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -10210,7 +10210,7 @@
           "en": "[[group_id]] store scene [[scene_id]]"
         },
         "hint": {
-          "en": "Save the current state to the scene."
+          "en": "Save the current state of your bulb as a scene, to recall later. To store your scene set a unique Group ID number, 0 is default and a unique Scene ID."
         },
         "args": [
           {
@@ -10222,7 +10222,7 @@
             "name": "group_id",
             "type": "number",
             "title": {
-              "en": "Group ID, default { 0 }"
+              "en": "Group ID"
             }
           },
           {
@@ -10305,7 +10305,7 @@
         "learnmode": {
           "image": "/drivers/1402755/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pairing\nDouble press the reset button to activate the network paring mode.\n\n# Reset\nPress and hold reset button for over 5 seconds."
+            "en": "Double press the reset button.\n\nIf pairing does not start after 20 seconds, reset the device by press and hold reset button for over 5 seconds."
           }
         }
       },
@@ -10661,7 +10661,7 @@
         "learnmode": {
           "image": "/drivers/3308431/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pairing\nToggle power from OFF, then to ON.\n\n# Reset\nPhysically switch the device on and off six (6) times for intervals of 0.5~2 seconds."
+            "en": "Toggle the light from Off to On. \n\nIf pairing does not start after 20 seconds, reset the the device by turning it off and on 6 times with 0.5-2 second intervals. "
           }
         }
       },
@@ -10732,7 +10732,7 @@
         "learnmode": {
           "image": "/drivers/3802960/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pairing\nToggle power from OFF, then to ON.\n\n# Reset\nPhysically switch the device on and off six (6) times for intervals of 0.5~2 seconds."
+            "en": "Toggle the light from Off to On. \n\nIf pairing does not start after 20 seconds, reset the the device by turning it off and on 6 times with 0.5-2 second intervals. "
           }
         }
       },
@@ -10810,7 +10810,7 @@
         "learnmode": {
           "image": "/drivers/3802961/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pairing\nToggle power from OFF, then to ON.\n\n# Reset\nPhysically switch the device on and off six (6) times for intervals of 0.5~2 seconds."
+            "en": "Toggle the light from Off to On. \n\nIf pairing does not start after 20 seconds, reset the the device by turning it off and on 6 times with 0.5-2 second intervals. "
           }
         }
       },
@@ -10900,7 +10900,7 @@
         "learnmode": {
           "image": "/drivers/3802962/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pairing\nToggle power from OFF, then to ON.\n\n# Reset\nPhysically switch the device on and off six (6) times for intervals of 0.5~2 seconds."
+            "en": "Toggle the light from Off to On. \n\nIf pairing does not start after 20 seconds, reset the the device by turning it off and on 6 times with 0.5-2 second intervals. "
           }
         }
       },
@@ -10971,7 +10971,7 @@
         "learnmode": {
           "image": "/drivers/3802963/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pairing\nToggle power from OFF, then to ON.\n\n# Reset\nPhysically switch the device on and off six (6) times for intervals of 0.5~2 seconds."
+            "en": "Toggle the light from Off to On. \n\nIf pairing does not start after 20 seconds, reset the the device by turning it off and on 6 times with 0.5-2 second intervals. "
           }
         }
       },
@@ -11049,7 +11049,7 @@
         "learnmode": {
           "image": "/drivers/3802964/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pairing\nToggle power from OFF, then to ON.\n\n# Reset\nPhysically switch the device on and off six (6) times for intervals of 0.5~2 seconds."
+            "en": "Toggle the light from Off to On. \n\nIf pairing does not start after 20 seconds, reset the the device by turning it off and on 6 times with 0.5-2 second intervals. "
           }
         }
       },
@@ -11120,7 +11120,7 @@
         "learnmode": {
           "image": "/drivers/3802965/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pairing\nToggle power from OFF, then to ON.\n\n# Reset\nPhysically switch the device on and off six (6) times for intervals of 0.5~2 seconds."
+            "en": "Toggle the light from Off to On. \n\nIf pairing does not start after 20 seconds, reset the the device by turning it off and on 6 times with 0.5-2 second intervals. "
           }
         }
       },
@@ -11198,7 +11198,7 @@
         "learnmode": {
           "image": "/drivers/3802966/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pairing\nToggle power from OFF, then to ON.\n\n# Reset\nPhysically switch the device on and off six (6) times for intervals of 0.5~2 seconds."
+            "en": "Toggle the light from Off to On. \n\nIf pairing does not start after 20 seconds, reset the the device by turning it off and on 6 times with 0.5-2 second intervals. "
           }
         }
       },
@@ -11288,7 +11288,7 @@
         "learnmode": {
           "image": "/drivers/3802967/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pairing\nToggle power from OFF, then to ON.\n\n# Reset\nPhysically switch the device on and off six (6) times for intervals of 0.5~2 seconds."
+            "en": "Toggle the light from Off to On. \n\nIf pairing does not start after 20 seconds, reset the the device by turning it off and on 6 times with 0.5-2 second intervals. "
           }
         }
       },
@@ -11366,7 +11366,7 @@
         "learnmode": {
           "image": "/drivers/3802968/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pairing\nToggle power from OFF, then to ON.\n\n# Reset\nPhysically switch the device on and off six (6) times for intervals of 0.5~2 seconds."
+            "en": "Toggle the light from Off to On. \n\nIf pairing does not start after 20 seconds, reset the the device by turning it off and on 6 times with 0.5-2 second intervals. "
           }
         }
       },
@@ -11499,7 +11499,7 @@
         "learnmode": {
           "image": "/drivers/4512701/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pairing\nPress and hold down both buttons until LED indicator turns on, immediately short press pair button.\n\n# Reset\nPress and hold down both buttons until LED indicator turns on, immediately short press pair button 5 times continuously."
+            "en": "Press and hold down both buttons until LED indicator turns on, immediately short press pair button.\n\nIf pairing fails reset the device. Press and hold down both buttons until LED indicator turns on, immediately short press pair button 5 times quickly."
           }
         }
       },
@@ -11559,7 +11559,7 @@
         "learnmode": {
           "image": "/drivers/4512702/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pairing\nPress and hold down the Reset button until the LED indicator turns on. Release button and immediately press the Pair button.\n\n# Reset\nPress and hold down the Reset button until the LED indicator turns on. Release the button and immediately press the Reset button 5 times."
+            "en": "Press and hold down the Reset button until the LED indicator turns on. Release button immediately and press the Pair button.\n\nIf pairing does not start after 20 seconds, reset the device. Press the Reset button until the LED Indicator turn on. Release the button and immediately press the Reset button 5 times."
           }
         }
       },
@@ -11646,7 +11646,7 @@
         "learnmode": {
           "image": "/drivers/4512703/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pairing\nPress and hold down both Reset and Pair buttons until the LED indicator turns on. Release both button and immediately press the Pair button on the top right corner.\n\n# Reset\nPress and hold down both Reset and Pair buttons until the LED indicator turns on. Release both button and immediately press the Reset button 5 times."
+            "en": "Press and hold down the Reset button until the LED indicator turns on. Release button immediately and press the Pair button on the top right corner.\n\nIf pairing fails reset the device. Press the Reset button until the LED Indicator turn on. Release the button and immediately press the Reset button 5 times."
           }
         }
       },
@@ -11794,7 +11794,7 @@
         "learnmode": {
           "image": "/drivers/4512705/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pairing\nPress and hold down reset button until LED indicator turns on.   Immediately short press pair button.\n\n# Reset\nPress and hold down reset button until LED indicator turns on. Immediately short press reset button 5 times continuously, indicator flashes 3 times quickly."
+            "en": "Press and hold down reset button until LED indicator turns on. Immediately short press pair button.\n\nIf pairing fails reset the device. Press and hold down reset button until LED indicator turns on. Immediately short press reset button 5 times quickly."
           }
         }
       },
@@ -11881,7 +11881,7 @@
         "learnmode": {
           "image": "/drivers/4512706/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pairing\nPress and hold down the Reset button until the LED indicator turns on. Release the button and immediately press the Pair button.\n\n# Reset\nPress and hold down the Reset button until the LED indicator turns on. Release the button and immediately press the Reset button 5 times."
+            "en": "Press and hold down the Reset button until the LED indicator turns on. Release button immediately and press the Pair button.\n\nIf pairing does not start after 20 seconds, reset the device. Press the Reset button until the LED Indicator turn on. Release the button and immediately press the Reset button 5 times."
           }
         }
       },
@@ -12262,7 +12262,7 @@
         "learnmode": {
           "image": "/drivers/4512710/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nTriple press the reset button.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold the reset button for over 10 seconds."
+            "en": "Press the Reset button 3 times quickly.\n\nIf pairing fails reset the device by pressing the Reset button for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -12312,7 +12312,7 @@
         "learnmode": {
           "image": "/drivers/4512711/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nPress and hold down both buttons I and O for over 3 seconds.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down both buttons I and O for over 10 seconds."
+            "en": "Press and hold down both I and O buttons over 3 seconds.\n\nIf pairing fails reset the device by press and hold down both buttons I and O for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -12392,7 +12392,7 @@
         "learnmode": {
           "image": "/drivers/4512712/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nPress and hold down both buttons over 3 seconds.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down both buttons together for over 10 seconds."
+            "en": "Press and hold down both buttons over 3 seconds.\n\nIf pairing fails reset the device by press and hold down both buttons for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -12454,7 +12454,7 @@
         "learnmode": {
           "image": "/drivers/4512713/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nPress and hold down both buttons I and O over 3 seconds.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down both buttons I and O for over 10 seconds."
+            "en": "Press and hold down both I and O buttons over 3 seconds.\n\nIf pairing is not started press and hold down both buttons I and O for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -12516,7 +12516,7 @@
         "learnmode": {
           "image": "/drivers/4512714/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nPress and hold down both buttons I and O over 3 seconds.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down both buttons I and O for over 10 seconds."
+            "en": "Press and hold down both I and O buttons over 3 seconds.\n\nIf pairing is not started press and hold down both buttons I and O for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -12600,7 +12600,7 @@
         "learnmode": {
           "image": "/drivers/4512715/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nTriple press the reset button.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold the reset button for over 10 seconds."
+            "en": "Press the Reset button 3 times quickly.\n\nIf pairing fails reset the device by pressing the Reset button for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -12778,7 +12778,7 @@
         "learnmode": {
           "image": "/drivers/4512716/assets/learnmode.svg",
           "instruction": {
-            "en": " # Pair\nTriple press the action button.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down action button for over 10 seconds."
+            "en": "Press the action button 3 times.\n\nIf pairing fails reset the device by press and hold down action button for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -12840,7 +12840,7 @@
         "learnmode": {
           "image": "/drivers/4512717/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\n1) Repower on the smart plug, it will be set into pair mode automatically.\n2) Triple press the action button on the smart plug, it will set the plug into pair mode. \n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down action button for over 10 seconds."
+            "en": "(Re)Power on the smart plug, it will be set into pair mode automatically. You can also press the action button on the smart plug 3 times.\n\nIf pairing fails reset the device by press and hold down action button for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -12913,7 +12913,7 @@
         "learnmode": {
           "image": "/drivers/4512719/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pairing\nPress and hold down both Reset and Pair buttons until the LED indicator turns on. Release both button and immediately press the Pair button on the top right corner.\n\n# Reset\nPress and hold down both Reset and Pair buttons until the LED indicator turns on. Release both button and immediately press the Reset button 5 times."
+            "en": "Press and hold down the Reset button until the LED indicator turns on. Release button immediately and press the Pair button on the top right corner.\n\nIf pairing fails reset the device. Press the Reset button until the LED Indicator turn on. Release the button and immediately press the Reset button 5 times."
           }
         }
       },
@@ -12964,7 +12964,7 @@
         "learnmode": {
           "image": "/drivers/4512720/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nPress and hold down both buttons I and O over 3 seconds.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down both buttons I and O for over 10 seconds."
+            "en": "Press and hold down both I and O buttons over 3 seconds.\n\nIf pairing is not started press and hold down both buttons I and O for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -13046,7 +13046,7 @@
         "learnmode": {
           "image": "/drivers/4512724/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nTriple press the reset button.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold the reset button for over 10 seconds."
+            "en": "Press the Reset button 3 times quickly.\n\nIf pairing fails reset the device by pressing the Reset button for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -13094,7 +13094,7 @@
         "learnmode": {
           "image": "/drivers/4512725/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\n1) Repower on the smart plug, it will be set into pair mode automatically.\n2) Triple press the action button on the smart plug, it will set the plug into pair mode. \n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down action button for over 10 seconds."
+            "en": "(Re)Power on the smart plug, it will be set into pair mode automatically. You can also press the action button on the smart plug 3 times.\n\nIf pairing fails reset the device by press and hold down action button for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -13157,7 +13157,7 @@
         "learnmode": {
           "image": "/drivers/4512726/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pairing\nhort press the knob 5 times continuously.Within 2 seconds press and hold the knob for over 3 seconds.\n\n# Reset\nShort press the knob 5 times continuously and quickly. Within 2 seconds press and hold the knob for over 3 seconds."
+            "en": "Press the knob 5 times quickly. Immediately after press and hold the knob for over 3 seconds."
           }
         }
       },
@@ -13215,7 +13215,7 @@
         "learnmode": {
           "image": "/drivers/4512728/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pairing\nPress and hold down both buttons until LED indicator turns on.  Immediately short press pair button.\n\n# Reset\nPress and hold down both buttons until LED indicator turns on. Immediately short press pair button 5 times continuously."
+            "en": "Press and hold down both buttons until the LED indicator turns on. Immediately short press the Pair button.\n\nIf pairing is not started reset the device. Press and hold down both buttons until LED indicator turns on. Immediately press the Pair button 5 times quickly."
           }
         }
       },
@@ -13282,7 +13282,7 @@
         "learnmode": {
           "image": "/drivers/4512729/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pairing\nPress and hold down both Reset and Pair buttons until the LED indicator turns on. Release both button and immediately press the Pair button on the top right corner.\n\n# Reset\nPress and hold down both Reset and Pair buttons until the LED indicator turns on. Release both button and immediately press the Reset button 5 times."
+            "en": "Press and hold down the Reset button until the LED indicator turns on. Release button immediately and press the Pair button on the top right corner.\n\nIf pairing fails reset the device. Press the Reset button until the LED Indicator turn on. Release the button and immediately press the Reset button 5 times."
           }
         }
       },
@@ -13339,7 +13339,7 @@
         "learnmode": {
           "image": "/drivers/4512743/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nTriple press the reset button.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold the reset button for over 10 seconds."
+            "en": "Press the Reset button 3 times quickly.\n\nIf pairing fails reset the device by pressing the Reset button for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -13390,7 +13390,7 @@
         "learnmode": {
           "image": "/drivers/4512744/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\n1) At OFF mode (Off icon), press and hold up and down buttons at the same time for over 5 seconds to enter Settings Menu.\n2) Short press move up and down button to select a settings item, then short press button F to enter selected item.\n3) Select \"Add\", then short press button F.\n\n# Factory Reset\nEnter settings item, select \"Reset\", then short press button F."
+            "en": "Turn the device to OFF mode first, then press and hold UP and DOWN buttons at the same time for over 5 seconds to enter Settings Menu. Short press UP and DOWN button to select ADD item, then short press button F.\n\nIf pairing fails reset the device by select Reset item, then short press button F."
           }
         },
         "associationGroups": [
@@ -13462,7 +13462,7 @@
         "learnmode": {
           "image": "/drivers/4512746/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nTriple press the reset button.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold the reset button for over 10 seconds."
+            "en": "Press the Reset button 3 times quickly.\n\nIf pairing fails reset the device by pressing the Reset button for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -13614,7 +13614,7 @@
         "learnmode": {
           "image": "/drivers/ZW_Dimmer_3wire/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nTriple press the reset button.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold the reset button for over 10 seconds."
+            "en": "Press the Reset button 3 times quickly.\n\nIf pairing fails reset the device by pressing the Reset button for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -13946,7 +13946,7 @@
         "learnmode": {
           "image": "/drivers/ZW_InWallSwitch/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nTriple press the reset button.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold the reset button for over 10 seconds."
+            "en": "Press the Reset button 3 times quickly.\n\nIf pairing fails reset the device by pressing the Reset button for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -14125,7 +14125,7 @@
         "learnmode": {
           "image": "/drivers/ZW_Remote_4/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nPress and hold down both buttons I and O for over 3 seconds.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down both buttons I and O for over 10 seconds."
+            "en": "Press and hold down both I and O buttons over 3 seconds.\n\nIf pairing fails reset the device by press and hold down both buttons I and O for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -14206,7 +14206,7 @@
         "learnmode": {
           "image": "/drivers/ZW_WallController_2/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nPress and hold down both buttons over 3 seconds.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down both buttons together for over 10 seconds."
+            "en": "Press and hold down both buttons over 3 seconds.\n\nIf pairing fails reset the device by press and hold down both buttons for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -14270,7 +14270,7 @@
         "learnmode": {
           "image": "/drivers/ZW_WallController_4/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nPress and hold down both buttons I and O over 3 seconds.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down both buttons I and O for over 10 seconds."
+            "en": "Press and hold down both I and O buttons over 3 seconds.\n\nIf pairing is not started press and hold down both buttons I and O for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -14339,7 +14339,7 @@
         "learnmode": {
           "image": "/drivers/ZW_WallController_8/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\nPress and hold down both buttons I and O over 3 seconds.\n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down both buttons I and O for over 10 seconds."
+            "en": "Press and hold down both I and O buttons over 3 seconds.\n\nIf pairing is not started press and hold down both buttons I and O for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -14417,7 +14417,7 @@
         "learnmode": {
           "image": "/drivers/ZW_WallPlug/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\n1) Repower on the smart plug, it will be set into pair mode automatically.\n2) Triple press the action button on the smart plug, it will set the plug into pair mode. \n\n!!! NOTE\nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail.\n\n# Factory Reset\nPress and hold down action button for over 10 seconds."
+            "en": "(Re)Power on the smart plug, it will be set into pair mode automatically. You can also press the action button on the smart plug 3 times.\n\nIf pairing fails reset the device by press and hold down action button for over 10 seconds."
           }
         },
         "associationGroups": [
@@ -14547,7 +14547,7 @@
         "learnmode": {
           "image": "/drivers/zg_thermostat/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\n1) At OFF mode (Off icon), press and hold up and down buttons at the same time for over 5 seconds to enter Settings Menu.\n2) Short press move up and down button to select a settings item, then short press button F to enter selected item.\n3) Select \"Add\", then short press button F.\n\n# Factory Reset\nEnter settings item, select \"Reset\", then short press button F."
+            "en": "Turn the device to OFF mode first, then press and hold UP and DOWN buttons at the same time for over 5 seconds to enter Settings Menu. Short press UP and DOWN button to select ADD item, then short press button F.\n\nIf pairing fails reset the device by select Reset item, then short press button F."
           }
         }
       },
