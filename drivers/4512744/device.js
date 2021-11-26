@@ -33,6 +33,10 @@ class MyThermostat extends ZwaveDevice {
     // this.enableDebug()
     // this.printNode()
 
+    if (this.hasCapability('onoff') === false) {
+      await this.addCapability('onoff')
+    }
+
     this._setUpOnOffCapability()
     this.registerCapability('measure_power', 'METER')
     this.registerCapability('meter_power', 'METER')
