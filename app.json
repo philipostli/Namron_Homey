@@ -13384,6 +13384,7 @@
       },
       "class": "thermostat",
       "capabilities": [
+        "onoff",
         "measure_power",
         "meter_power",
         "measure_temperature",
@@ -13423,7 +13424,7 @@
         "learnmode": {
           "image": "/drivers/4512744/assets/learnmode.svg",
           "instruction": {
-            "en": "Turn the device to OFF mode first, then press and hold UP and DOWN buttons at the same time for over 5 seconds to enter Settings Menu. Short press UP and DOWN button to select ADD item, then short press button F.\n\nIf pairing fails reset the device by select Reset item, then short press button F."
+            "en": "Turn the device to OFF mode first, then press and hold UP and DOWN buttons at the same time for over 5 seconds to enter Settings Menu.\n\nShort press UP and DOWN button to select ZWAVE SET item, then short press F button. First select Remove item until it is OK, then select Add item.\n\nIf pairing fails reset the device by select Reset item."
           }
         },
         "associationGroups": [
