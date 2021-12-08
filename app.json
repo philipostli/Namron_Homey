@@ -89,7 +89,7 @@
       },
       {
         "title": {
-          "en": "All off button is..."
+          "en": "All off button is pressed"
         },
         "titleFormatted": {
           "en": "All off button is [[mode]]"
@@ -130,7 +130,7 @@
       },
       {
         "title": {
-          "en": "All on button is..."
+          "en": "All on button is pressed"
         },
         "titleFormatted": {
           "en": "All on button is [[mode]]"
@@ -171,7 +171,7 @@
       },
       {
         "title": {
-          "en": "Brightness button is..."
+          "en": "Brightness button is pressed"
         },
         "titleFormatted": {
           "en": "Brightness button is [[mode]]"
@@ -212,7 +212,7 @@
       },
       {
         "title": {
-          "en": "Brightness button is..."
+          "en": "Brightness button is pressed"
         },
         "titleFormatted": {
           "en": "Brightness button is [[mode]]"
@@ -253,7 +253,7 @@
       },
       {
         "title": {
-          "en": "Brightness button is..."
+          "en": "Brightness button is pressed"
         },
         "titleFormatted": {
           "en": "[[group]] brightness [[type]] button is [[mode]]"
@@ -371,7 +371,7 @@
       },
       {
         "title": {
-          "en": "Brightness button is..."
+          "en": "Brightness button is pressed"
         },
         "titleFormatted": {
           "en": "Brightness [[type]] button is [[mode]]"
@@ -516,7 +516,7 @@
       },
       {
         "title": {
-          "en": "Off button is..."
+          "en": "Off button is pressed"
         },
         "titleFormatted": {
           "en": "Off button is [[mode]]"
@@ -557,7 +557,7 @@
       },
       {
         "title": {
-          "en": "Off button is..."
+          "en": "Off button is pressed"
         },
         "titleFormatted": {
           "en": "[[group]] off button is [[mode]]"
@@ -617,7 +617,7 @@
       },
       {
         "title": {
-          "en": "Off button is..."
+          "en": "Off button is pressed"
         },
         "titleFormatted": {
           "en": "[[group]] off button is [[mode]]"
@@ -705,7 +705,7 @@
       },
       {
         "title": {
-          "en": "On button is..."
+          "en": "On button is pressed"
         },
         "titleFormatted": {
           "en": "On button is [[mode]]"
@@ -746,7 +746,7 @@
       },
       {
         "title": {
-          "en": "On button is..."
+          "en": "On button is pressed"
         },
         "titleFormatted": {
           "en": "[[group]] on button is [[mode]]"
@@ -806,7 +806,7 @@
       },
       {
         "title": {
-          "en": "On button is..."
+          "en": "On button is pressed"
         },
         "titleFormatted": {
           "en": "[[group]] on button is [[mode]]"
@@ -894,7 +894,7 @@
       },
       {
         "title": {
-          "en": "Saturation button is..."
+          "en": "Saturation button is pressed"
         },
         "titleFormatted": {
           "en": "[[group]] saturation button is [[mode]]"
@@ -972,7 +972,7 @@
       },
       {
         "title": {
-          "en": "Scene button is..."
+          "en": "Scene button is pressed"
         },
         "titleFormatted": {
           "en": "[[group]] scene button [[scene]] is [[mode]]"
@@ -1087,7 +1087,7 @@
       },
       {
         "title": {
-          "en": "Scene button is..."
+          "en": "Scene button is pressed"
         },
         "titleFormatted": {
           "en": "Scene button [[scene]] is [[mode]]"
@@ -1147,7 +1147,7 @@
       },
       {
         "title": {
-          "en": "Scene button is..."
+          "en": "Scene button is pressed"
         },
         "titleFormatted": {
           "en": "Scene button [[scene]] is [[mode]]"
@@ -1201,7 +1201,7 @@
       },
       {
         "title": {
-          "en": "Switch button is..."
+          "en": "Switch button is pressed"
         },
         "titleFormatted": {
           "en": "Switch button is [[mode]]"
@@ -1242,7 +1242,7 @@
       },
       {
         "title": {
-          "en": "Switch button is..."
+          "en": "Switch button is pressed"
         },
         "titleFormatted": {
           "en": "Switch button is [[mode]]"
@@ -1277,7 +1277,7 @@
       },
       {
         "title": {
-          "en": "Switch button is..."
+          "en": "Switch button is pressed"
         },
         "titleFormatted": {
           "en": "[[group]] switch button is [[mode]]"
@@ -1343,7 +1343,7 @@
       },
       {
         "title": {
-          "en": "White button is..."
+          "en": "White button is pressed"
         },
         "titleFormatted": {
           "en": "[[group]] [[type]] button is [[mode]]"
@@ -1434,10 +1434,10 @@
       },
       {
         "title": {
-          "en": "White changed"
+          "en": "White balance changed"
         },
         "titleFormatted": {
-          "en": "White changed"
+          "en": "White balance changed"
         },
         "hint": "The white range from 0.00 to 1.00, 0.00 for coolest white, 1.00 for warmest white.",
         "args": [
@@ -1461,10 +1461,10 @@
       },
       {
         "title": {
-          "en": "White changed"
+          "en": "White balance changed"
         },
         "titleFormatted": {
-          "en": "[[group]] white changed"
+          "en": "[[group]] white balance changed"
         },
         "hint": "The white range from 0.00 to 1.00, 0.00 for coolest white, 1.00 for warmest white.",
         "args": [

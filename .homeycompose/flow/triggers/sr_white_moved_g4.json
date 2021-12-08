@@ -1,9 +1,9 @@
 {
   "title": {
-    "en": "White changed"
+    "en": "White balance changed"
   },
   "titleFormatted": {
-    "en": "[[group]] white changed"
+    "en": "[[group]] white balance changed"
   },
   "hint": "The white range from 0.00 to 1.00, 0.00 for coolest white, 1.00 for warmest white.",
   "args": [
