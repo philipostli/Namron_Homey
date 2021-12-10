@@ -1,13 +1,17 @@
 'use strict'
 
+const moment = require('moment-timezone')
 const { ZigBeeDevice } = require('homey-zigbeedriver')
 const { CLUSTER, Cluster } = require('zigbee-clusters')
 const { getInt16 } = require('../../lib/SrUtils')
 const SrTimeCluster = require('../../lib/SrTimeCluster')
 const SrThermostatCluster = require('../../lib/SrThermostatCluster')
+const SrThermostatBoundCluster = require('../../lib/SrThermostatBoundCluster')
 
 Cluster.addCluster(SrTimeCluster)
 Cluster.addCluster(SrThermostatCluster)
+
+const timeDiffSeconds = 946684800
 
 class ZG9093ADevice extends ZigBeeDevice {
 
@@ -22,10 +26,21 @@ class ZG9093ADevice extends ZigBeeDevice {
     this._setUpTargetTemperatureCapability()
     this._setUpModesCapability()
 
-    this._readLocalTime()
+    this._setTime()
+    this._getTime()
+  }
+
+  async onSettings ({ oldSettings, newSettings, changedKeys }) {
+
+    this.log(`onSettings newSettings & changedKeys`, newSettings, changedKeys)
+
+    this._setTime()
+    this._setWeeklySchedule(newSettings)
   }
 
   _thermostatCluster () { return this.zclNode.endpoints[1].clusters.thermostat }
+
+  _timeCluster () { return this.zclNode.endpoints[1].clusters.time }
 
   async _setUpSystemCapabilities () {
 
@@ -61,9 +76,9 @@ class ZG9093ADevice extends ZigBeeDevice {
         },
         reportOpts: {
           configureAttributeReporting: {
-            minInterval: 300, // Minimally once every 5 minutes, second
+            minInterval: 10, // Minimally once every 5 minutes, second
             maxInterval: 60000, // Maximally once every ~16 hours
-            minChange: 1,
+            minChange: 10,
           },
         },
       })
@@ -81,18 +96,29 @@ class ZG9093ADevice extends ZigBeeDevice {
         },
         getOpts: {
           getOnStart: true,
-          pollInterval: 60000,
+          pollInterval: 60000 * 5, // unit ms, 5 minutes
         },
         reportOpts: {
           configureAttributeReporting: {
-            minInterval: 300, // Minimally once every 5 seconds
+            minInterval: 10, // Minimally once every 5 seconds
             maxInterval: 60000, // Maximally once every ~16 hours
-            minChange: 1,
+            minChange: 10,
           },
         },
       })
     }
 
+  }
+
+  _setUpThermostatBoundCluster () {
+
+    this.zclNode.endpoints[1].bind(CLUSTER.THERMOSTAT.NAME,
+      new SrThermostatBoundCluster({
+        onGetWeeklyScheduleResponse: payload => {
+          this.log(`_onGetWeeklyScheduleResponse payload `, payload)
+        },
+        endpoint: 1,
+      }))
   }
 
   _setUpMeasureTemperatureCapability () {
@@ -108,7 +134,7 @@ class ZG9093ADevice extends ZigBeeDevice {
       },
       getOpts: {
         getOnStart: true,
-        pollInterval: 60000,
+        pollInterval: 60000 * 5, // unit ms, 5 minutes
       },
       reportOpts: {
         configureAttributeReporting: {
@@ -133,7 +159,7 @@ class ZG9093ADevice extends ZigBeeDevice {
       },
       getOpts: {
         getOnStart: true,
-        pollInterval: 60000,
+        pollInterval: 60000 * 5, // unit ms, 5 minutes
       },
       reportOpts: {
         configureAttributeReporting: {
@@ -161,7 +187,7 @@ class ZG9093ADevice extends ZigBeeDevice {
       get: 'systemMode',
       getOpts: {
         getOnStart: true,
-        pollInterval: 60000,
+        pollInterval: 60000 * 5, // unit ms, 5 minutes
       },
       set: 'systemMode',
       setParser: value => {
@@ -205,42 +231,122 @@ class ZG9093ADevice extends ZigBeeDevice {
     })
   }
 
-  _readLocalTime () {
+  _setTime () {
 
-    this._getWeeklySchedule()
-    this._setWeeklySchedule()
+    const timezone = this.homey.clock.getTimezone()
+    const date1970Milliseconds = Date.now() + moment.tz(timezone).utcOffset() *
+      60 * 1000
+    const date2000Seconds = Math.floor(
+      date1970Milliseconds / 1000 - timeDiffSeconds)
+    this.log(`will set time `,
+      new Date((date2000Seconds + timeDiffSeconds) * 1000))
+    this._timeCluster().writeAttributes({
+      time: date2000Seconds,
+    }).then(() => {
+      this.log(`set time success`)
+    }).catch(err => {
+      this.log(`set time error `, err)
+    })
+
+  }
+
+  _getTime () {
+
+    this._timeCluster().readAttributes('time').then(value => {
+      this.log(`get time `, value,
+        new Date((value.time + timeDiffSeconds) * 1000))
+    }).catch(err => {
+      this.log(`get time error`)
+    })
   }
 
   _getWeeklySchedule () {
 
     let payload = {
-      daysToReturn: 0x7F,
-      modeToReturn: 1,
+      daysToReturn: ['fri'],
+      modeToReturn: ['heat'],
     }
 
     this._thermostatCluster().getWeeklySchedule(payload).then(value => {
-      this.log(`getWeeklySchedule `, value)
+      this.log(`getWeeklySchedule success, `, value)
     }).catch(this.error)
   }
 
-  _setWeeklySchedule () {
+  _setWeeklySchedule (settings) {
 
-    let payload = {
-      numberOfTransition: 4,
-      dayOfWeek: 0x7F,
-      mode: 1,
-      transitionTime1: 360,
-      heatSet1: 1100,
-      transitionTime2: 720,
-      heatSet2: 1200,
-      transitionTime3: 1080,
-      heatSet3: 1300,
-      transitionTime4: 1440,
-      heatSet4: 1400,
+    let dayOfWeek = this._getDayOfWeekWithSettings(settings)
+
+    const payload = {
+      numberOfTransition: 'four',
+      dayOfWeek: dayOfWeek,
+      mode: ['heat'],
+      transitionTime1: this._getTransitionTimeWithSettings(settings, 'first'),
+      heatSet1: this._getHeatSetWithSettings(settings, 'first'),
+      transitionTime2: this._getTransitionTimeWithSettings(settings, 'second'),
+      heatSet2: this._getHeatSetWithSettings(settings, 'second'),
+      transitionTime3: this._getTransitionTimeWithSettings(settings, 'third'),
+      heatSet3: this._getHeatSetWithSettings(settings, 'third'),
+      transitionTime4: this._getTransitionTimeWithSettings(settings, 'fourth'),
+      heatSet4: this._getHeatSetWithSettings(settings, 'fourth'),
     }
     this._thermostatCluster().setWeeklySchedule(payload).then(value => {
       this.log(`setWeeklySchedule `, value)
     }).catch(this.error)
+  }
+
+  _getDayOfWeekWithSettings (settings) {
+
+    console.assert(settings.hasOwnProperty('repeat'), `no repeat`)
+
+    let repeat = settings['repeat']
+
+    switch (repeat) {
+      case 'everyday':
+        return ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
+      case 'weekday':
+        return ['mon', 'tue', 'wed', 'thu', 'fri']
+      case 'weekend':
+        return ['sun', 'sat']
+      case 'sunday':
+        return ['sun']
+      case 'monday':
+        return ['mon']
+      case 'tuesday':
+        return ['tue']
+      case 'wednesday':
+        return ['wed']
+      case 'thursday':
+        return ['thu']
+      case 'friday':
+        return ['fri']
+      case 'saturday':
+        return ['sat']
+      default:
+        break
+    }
+
+    return ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
+  }
+
+  _getTransitionTimeWithSettings (settings, leading) {
+
+    let hourKey = `${leading}_hour`
+    let minuteKey = `${leading}_minute`
+
+    console.assert(settings.hasOwnProperty(hourKey), `no ${hourKey}`)
+    console.assert(settings.hasOwnProperty(minuteKey), `no ${minuteKey}`)
+
+    let hour = settings[hourKey]
+    let minute = settings[minuteKey]
+    return hour * 60 + minute
+  }
+
+  _getHeatSetWithSettings (settings, leading) {
+
+    let targetKey = `${leading}_target`
+    console.assert(settings.hasOwnProperty(targetKey), `no ${targetKey}`)
+
+    return settings[targetKey] * 100.0
   }
 
 }
