@@ -130,5 +130,8 @@
   },
   "2.2.14": {
     "en": "Bug fixes."
+  },
+  "2.2.18": {
+    "en": "Add support for thermostat."
   }
 }

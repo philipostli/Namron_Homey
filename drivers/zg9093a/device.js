@@ -138,9 +138,9 @@ class ZG9093ADevice extends ZigBeeDevice {
       },
       reportOpts: {
         configureAttributeReporting: {
-          minInterval: 300, // Minimally once every 5 seconds
+          minInterval: 10, // Minimally once every 5 seconds
           maxInterval: 60000, // Maximally once every ~16 hours
-          minChange: 1,
+          minChange: 50,
         },
       },
     })
@@ -163,9 +163,9 @@ class ZG9093ADevice extends ZigBeeDevice {
       },
       reportOpts: {
         configureAttributeReporting: {
-          minInterval: 300, // Minimally once every 5 seconds
+          minInterval: 10, // Minimally once every 5 seconds
           maxInterval: 60000, // Maximally once every ~16 hours
-          minChange: 1,
+          minChange: 100,
         },
       },
       set: 'occupiedHeatingSetpoint',
