@@ -133,5 +133,8 @@
   },
   "2.2.18": {
     "en": "Add support for thermostat."
+  },
+  "2.2.19": {
+    "en": "Add support for new product 53277."
   }
 }
