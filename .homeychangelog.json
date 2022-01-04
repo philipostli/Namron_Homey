@@ -136,5 +136,8 @@
   },
   "2.2.19": {
     "en": "Add support for new product 53277."
+  },
+  "2.2.20": {
+    "en": "Bug fixes."
   }
 }
