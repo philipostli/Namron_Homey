@@ -79,7 +79,7 @@ class ZigBeeThermostat extends ZigBeeDevice {
       get: 'systemMode',
       getOpts: {
         getOnStart: true,
-        pollInterval: 60000,
+        pollInterval: 60 * 60 * 1000,
       },
       set: 'systemMode',
       setParser (value) {
@@ -122,7 +122,7 @@ class ZigBeeThermostat extends ZigBeeDevice {
       get: 'occupancy',
       getOpts: {
         getOnStart: true,
-        pollInterval: 60000,
+        pollInterval: 60 * 60 * 1000,
       },
       report: 'occupancy',
       reportParser (value) {
@@ -146,7 +146,7 @@ class ZigBeeThermostat extends ZigBeeDevice {
       get: 'controlType',
       getOpts: {
         getOnStart: true,
-        pollInterval: 60000,
+        pollInterval: 60 * 60 * 1000,
       },
       report: 'controlType',
       reportParser (value) {
@@ -178,7 +178,7 @@ class ZigBeeThermostat extends ZigBeeDevice {
       get: 'localTemperature',
       getOpts: {
         getOnStart: true,
-        pollInterval: 60000,
+        pollInterval: 60 * 60 * 1000,
       },
       report: 'localTemperature',
       reportParser (value) {
@@ -199,7 +199,7 @@ class ZigBeeThermostat extends ZigBeeDevice {
       get: 'outdoorTemperature',
       getOpts: {
         getOnStart: true,
-        pollInterval: 60000,
+        pollInterval: 60 * 60 * 1000,
       },
       report: 'outdoorTemperature',
       reportParser (value) {
@@ -358,7 +358,7 @@ class ZigBeeThermostat extends ZigBeeDevice {
         getParser: value => value * meterFactory,
         getOpts: {
           getOnStart: true,
-          pollInterval: 300000,
+          pollInterval: 60 * 60 * 1000,
         },
         reportOpts: {
           configureAttributeReporting: {
@@ -395,7 +395,7 @@ class ZigBeeThermostat extends ZigBeeDevice {
         },
         getOpts: {
           getOnStart: true,
-          pollInterval: 60000,
+          pollInterval: 60 * 60 * 1000,
         },
         reportOpts: {
           configureAttributeReporting: {

@@ -139,5 +139,11 @@
   },
   "2.2.20": {
     "en": "Bug fixes."
+  },
+  "2.2.21": {
+    "en": "Upgrade the Z-Wave secure communication."
+  },
+  "2.2.22": {
+    "en": "Upgrade the Z-Wave secure communication."
   }
 }

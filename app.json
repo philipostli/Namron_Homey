@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "net.filllip-namron",
-  "version": "2.2.20",
+  "version": "2.2.22",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
@@ -10333,10 +10333,7 @@
         "zwave"
       ],
       "zwave": {
-        "security": [
-          "none",
-          "S0"
-        ],
+        "requireSecure": true,
         "manufacturerId": [
           1073,
           1080
@@ -12225,10 +12222,7 @@
         "zwave"
       ],
       "zwave": {
-        "security": [
-          "none",
-          "S0"
-        ],
+        "requireSecure": true,
         "manufacturerId": [
           816,
           1080
@@ -12278,10 +12272,7 @@
         "zwave"
       ],
       "zwave": {
-        "security": [
-          "none",
-          "S0"
-        ],
+        "requireSecure": true,
         "manufacturerId": [
           816,
           1080
@@ -12361,10 +12352,7 @@
         "zwave"
       ],
       "zwave": {
-        "security": [
-          "none",
-          "S0"
-        ],
+        "requireSecure": true,
         "manufacturerId": [
           816,
           1080
@@ -12426,10 +12414,7 @@
         "zwave"
       ],
       "zwave": {
-        "security": [
-          "none",
-          "S0"
-        ],
+        "requireSecure": true,
         "manufacturerId": [
           816,
           1080
@@ -12491,10 +12476,7 @@
         "zwave"
       ],
       "zwave": {
-        "security": [
-          "none",
-          "S0"
-        ],
+        "requireSecure": true,
         "manufacturerId": [
           816,
           1080
@@ -12575,10 +12557,7 @@
         "zwave"
       ],
       "zwave": {
-        "security": [
-          "none",
-          "S0"
-        ],
+        "requireSecure": true,
         "manufacturerId": [
           816,
           1080
@@ -12756,10 +12735,7 @@
         "zwave"
       ],
       "zwave": {
-        "security": [
-          "none",
-          "S0"
-        ],
+        "requireSecure": true,
         "manufacturerId": [
           816,
           1080
@@ -12945,10 +12921,7 @@
         "zwave"
       ],
       "zwave": {
-        "security": [
-          "none",
-          "S0"
-        ],
+        "requireSecure": true,
         "manufacturerId": [
           816,
           1080
@@ -13027,10 +13000,7 @@
         "zwave"
       ],
       "zwave": {
-        "security": [
-          "none",
-          "S0"
-        ],
+        "requireSecure": true,
         "manufacturerId": [
           816,
           1080
@@ -13079,10 +13049,7 @@
         "zwave"
       ],
       "zwave": {
-        "security": [
-          "none",
-          "S0"
-        ],
+        "requireSecure": true,
         "manufacturerId": [
           1080
         ],
@@ -13327,10 +13294,7 @@
         "zwave"
       ],
       "zwave": {
-        "security": [
-          "none",
-          "S0"
-        ],
+        "requireSecure": true,
         "manufacturerId": [
           816,
           1080
@@ -13382,10 +13346,7 @@
         "zwave"
       ],
       "zwave": {
-        "security": [
-          "none",
-          "S0"
-        ],
+        "requireSecure": true,
         "manufacturerId": [
           1080
         ],
@@ -13457,10 +13418,7 @@
         "zwave"
       ],
       "zwave": {
-        "security": [
-          "none",
-          "S0"
-        ],
+        "requireSecure": true,
         "manufacturerId": [
           816,
           1080
@@ -13612,10 +13570,7 @@
         "zwave"
       ],
       "zwave": {
-        "security": [
-          "none",
-          "S0"
-        ],
+        "requireSecure": true,
         "manufacturerId": [
           816,
           1080
@@ -13677,10 +13632,7 @@
         "zwave"
       ],
       "zwave": {
-        "security": [
-          "none",
-          "S0"
-        ],
+        "requireSecure": true,
         "manufacturerId": [
           1073,
           1080
@@ -13950,10 +13902,7 @@
         "zwave"
       ],
       "zwave": {
-        "security": [
-          "none",
-          "S0"
-        ],
+        "requireSecure": true,
         "manufacturerId": [
           816,
           1080
@@ -14132,10 +14081,7 @@
         "zwave"
       ],
       "zwave": {
-        "security": [
-          "none",
-          "S0"
-        ],
+        "requireSecure": true,
         "manufacturerId": [
           816,
           1080
@@ -14216,10 +14162,7 @@
         "zwave"
       ],
       "zwave": {
-        "security": [
-          "none",
-          "S0"
-        ],
+        "requireSecure": true,
         "manufacturerId": [
           816,
           1080
@@ -14282,10 +14225,7 @@
         "zwave"
       ],
       "zwave": {
-        "security": [
-          "none",
-          "S0"
-        ],
+        "requireSecure": true,
         "manufacturerId": [
           816,
           1080
@@ -14355,10 +14295,7 @@
         "zwave"
       ],
       "zwave": {
-        "security": [
-          "none",
-          "S0"
-        ],
+        "requireSecure": true,
         "manufacturerId": [
           816,
           1080
@@ -14436,10 +14373,7 @@
         "zwave"
       ],
       "zwave": {
-        "security": [
-          "none",
-          "S0"
-        ],
+        "requireSecure": true,
         "manufacturerId": [
           816,
           1080

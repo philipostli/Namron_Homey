@@ -72,7 +72,7 @@ class ZG9093ADevice extends ZigBeeDevice {
         },
         getOpts: {
           getOnStart: true,
-          pollInterval: 300000, // ms
+          pollInterval: 60 * 60 * 1000, // ms
         },
         reportOpts: {
           configureAttributeReporting: {
@@ -96,7 +96,7 @@ class ZG9093ADevice extends ZigBeeDevice {
         },
         getOpts: {
           getOnStart: true,
-          pollInterval: 60000 * 5, // unit ms, 5 minutes
+          pollInterval: 60 * 60 * 1000, // unit ms, 5 minutes
         },
         reportOpts: {
           configureAttributeReporting: {
@@ -134,7 +134,7 @@ class ZG9093ADevice extends ZigBeeDevice {
       },
       getOpts: {
         getOnStart: true,
-        pollInterval: 60000 * 5, // unit ms, 5 minutes
+        pollInterval: 60 * 60 * 1000, // unit ms, 5 minutes
       },
       reportOpts: {
         configureAttributeReporting: {
@@ -159,7 +159,7 @@ class ZG9093ADevice extends ZigBeeDevice {
       },
       getOpts: {
         getOnStart: true,
-        pollInterval: 60000 * 5, // unit ms, 5 minutes
+        pollInterval: 60 * 60 * 1000, // unit ms, 5 minutes
       },
       reportOpts: {
         configureAttributeReporting: {
@@ -187,7 +187,7 @@ class ZG9093ADevice extends ZigBeeDevice {
       get: 'systemMode',
       getOpts: {
         getOnStart: true,
-        pollInterval: 60000 * 5, // unit ms, 5 minutes
+        pollInterval: 60 * 60 * 1000, // unit ms, 5 minutes
       },
       set: 'systemMode',
       setParser: value => {
