@@ -14,6 +14,18 @@ class SwitchLight extends ZwaveLightDevice {
     this.registerCapability('meter_power', 'METER')
   }
 
+  async onSettings({ oldSettings, newSettings, changedKeys }) {
+
+    if (newSettings.hasOwnProperty('class')) {
+      let newClass = newSettings['class']
+      if (this.getClass() !== newClass) {
+        this.setClass(newClass).then(() => {
+          this.log(`set new class success, `, newClass)
+        }).catch(this.error)
+      }
+    }
+  }
+
 }
 
 module.exports = SwitchLight
