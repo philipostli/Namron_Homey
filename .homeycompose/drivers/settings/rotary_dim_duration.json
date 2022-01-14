@@ -4,7 +4,7 @@
     "nl": "Dim transitietijd"
   },
   "hint": {
-    "en": "This parameter ({{zwaveParameterIndex}}) determines the default dim duration. Values: 0 - 100. 0: Instantly. 100: Slow. Default: 5"
+    "en": "This parameter determines the default dim duration. Values: 0 - 100. 0: Instantly. 100: Slow. Default: 5"
   },
   "zwave": {
     "index": 3,

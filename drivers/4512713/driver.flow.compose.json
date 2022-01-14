@@ -17,70 +17,70 @@
     {
       "id": "4512713_on_key_held_down",
       "title": {
-        "en": "On (Key held down)"
+        "en": "On button held down"
       },
       "deprecated": true
     },
     {
       "id": "4512713_on_key_released",
       "title": {
-        "en": "On (Key released)"
+        "en": "On button released"
       },
       "deprecated": true
     },
     {
       "id": "4512713_off_key_held_down",
       "title": {
-        "en": "Off (Key held down)"
+        "en": "Off button held down"
       },
       "deprecated": true
     },
     {
       "id": "4512713_off_key_released",
       "title": {
-        "en": "Off (Key released)"
+        "en": "Off button released"
       },
       "deprecated": true
     },
     {
       "id": "4512713_level_up",
       "title": {
-        "en": "Level up (Key pressed 1 time)"
+        "en": "Level up button pressed 1 time"
       },
       "deprecated": true
     },
     {
       "id": "4512713_level_down",
       "title": {
-        "en": "Level down (Key pressed 1 time)"
+        "en": "Level down button pressed 1 time"
       },
       "deprecated": true
     },
     {
       "id": "4512713_level_up_key_held_down",
       "title": {
-        "en": "Level up (Key held down)"
+        "en": "Level up button held down"
       },
       "deprecated": true
     },
     {
       "id": "4512713_level_up_key_released",
       "title": {
-        "en": "Level up (Key released)"
+        "en": "Level up button released"
       },
       "deprecated": true
     },
     {
       "id": "4512713_level_down_key_held_down",
       "title": {
-        "en": "Level down (Key held down)"
+        "en": "Level down button held down"
       },
       "deprecated": true
     },
     {
       "id": "4512713_level_down_key_released",
       "title": {
-        "en": "Level down (Key released)"
+        "en": "Level down button released"
       },
       "deprecated": true
     }

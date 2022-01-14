@@ -56,13 +56,13 @@
         {
           "id": "up",
           "label": {
-            "en": "held down (increasing)"
+            "en": "held down and decreasing"
           }
         },
         {
           "id": "down",
           "label": {
-            "en": "held down (decreasing)"
+            "en": "held down and decreasing"
           }
         },
         {

@@ -15,25 +15,25 @@
     {
       "id": "ZW_Remote_4_all_on_key_held_down",
       "title": {
-        "en": "All on (Key held down)"
+        "en": "All on button held down"
       }
     },
     {
       "id": "ZW_Remote_4_all_on_key_released",
       "title": {
-        "en": "All on (Key released)"
+        "en": "All on button released"
       }
     },
     {
       "id": "ZW_Remote_4_all_off_key_held_down",
       "title": {
-        "en": "All off (Key held down)"
+        "en": "All off button held down"
       }
     },
     {
       "id": "ZW_Remote_4_all_off_key_released",
       "title": {
-        "en": "All off (Key released)"
+        "en": "All off button released"
       }
     },
     {
@@ -123,10 +123,10 @@
     {
       "id": "ZW_Remote_4_on_key_held_down",
       "title": {
-        "en": "On (Key held down)"
+        "en": "On button held down"
       },
       "titleFormatted": {
-        "en": "[[group]] on (Key held down)"
+        "en": "[[group]] on button held down"
       },
       "args": [
         {
@@ -165,10 +165,10 @@
     {
       "id": "ZW_Remote_4_on_key_released",
       "title": {
-        "en": "On (Key released)"
+        "en": "On button released"
       },
       "titleFormatted": {
-        "en": "[[group]] on (Key released)"
+        "en": "[[group]] on button released"
       },
       "args": [
         {
@@ -207,10 +207,10 @@
     {
       "id": "ZW_Remote_4_off_key_held_down",
       "title": {
-        "en": "Off (Key held down)"
+        "en": "Off button held down"
       },
       "titleFormatted": {
-        "en": "[[group]] off (Key held down)"
+        "en": "[[group]] off button held down"
       },
       "args": [
         {
@@ -249,10 +249,10 @@
     {
       "id": "ZW_Remote_4_off_key_released",
       "title": {
-        "en": "Off (Key released)"
+        "en": "Off button released"
       },
       "titleFormatted": {
-        "en": "[[group]] off (Key released)"
+        "en": "[[group]] off button released"
       },
       "args": [
         {
@@ -303,25 +303,25 @@
     {
       "id": "ZW_Remote_4_scene_1_key_held_down",
       "title": {
-        "en": "S1 (Key held down)"
+        "en": "S1 button held down"
       }
     },
     {
       "id": "ZW_Remote_4_scene_1_key_released",
       "title": {
-        "en": "S1 (Key released)"
+        "en": "S1 button released"
       }
     },
     {
       "id": "ZW_Remote_4_scene_2_key_held_down",
       "title": {
-        "en": "S2 (Key held down)"
+        "en": "S2 button held down"
       }
     },
     {
       "id": "ZW_Remote_4_scene_2_key_released",
       "title": {
-        "en": "S2 (Key released)"
+        "en": "S2 button released"
       }
     }
   ]

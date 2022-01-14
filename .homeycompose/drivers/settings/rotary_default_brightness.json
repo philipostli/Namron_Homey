@@ -3,7 +3,7 @@
     "en": "Default brightness"
   },
   "hint": {
-    "en": "This parameter ({{zwaveParameterIndex}}) determines the default brightness when turned on. 0: Dimmer will use state after power is restored (parameter 1). Values: 0 - 99. Default: 0"
+    "en": "This parameter determines the default brightness when turned on. 0: Dimmer will use state after power is restored. Values: 0 - 99. Default: 0"
   },
   "zwave": {
     "index": 7,

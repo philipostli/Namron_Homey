@@ -9,31 +9,31 @@
     {
       "id": "ZW_WallController_2_on_off_key_held_down",
       "title": {
-        "en": "On/Off (Key held down)"
+        "en": "On/Off button held down"
       }
     },
     {
       "id": "ZW_WallController_2_on_off_key_released",
       "title": {
-        "en": "On/Off (Key released)"
+        "en": "On/Off button released"
       }
     },
     {
       "id": "ZW_WallController_2_level",
       "title": {
-        "en": "Level (Key pressed 1 time)"
+        "en": "Level button pressed 1 time"
       }
     },
     {
       "id": "ZW_WallController_2_level_key_held_down",
       "title": {
-        "en": "Level (Key held down)"
+        "en": "Level button held down"
       }
     },
     {
       "id": "ZW_WallController_2_level_key_released",
       "title": {
-        "en": "Level (Key released)"
+        "en": "Level button released"
       }
     }
   ]

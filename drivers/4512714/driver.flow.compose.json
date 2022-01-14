@@ -89,10 +89,10 @@
     {
       "id": "4512714_on_key_held_down",
       "title": {
-        "en": "On (Key held down)"
+        "en": "On button held down"
       },
       "titleFormatted": {
-        "en": "[[group]] on (Key held down)"
+        "en": "[[group]] on button held down"
       },
       "deprecated": true,
       "args": [
@@ -132,10 +132,10 @@
     {
       "id": "4512714_on_key_released",
       "title": {
-        "en": "On (Key released)"
+        "en": "On button released"
       },
       "titleFormatted": {
-        "en": "[[group]] on (Key released)"
+        "en": "[[group]] on button released"
       },
       "deprecated": true,
       "args": [
@@ -175,10 +175,10 @@
     {
       "id": "4512714_off_key_held_down",
       "title": {
-        "en": "Off (Key held down)"
+        "en": "Off button held down"
       },
       "titleFormatted": {
-        "en": "[[group]] off (Key held down)"
+        "en": "[[group]] off button held down"
       },
       "deprecated": true,
       "args": [
@@ -218,10 +218,10 @@
     {
       "id": "4512714_off_key_released",
       "title": {
-        "en": "Off (Key released)"
+        "en": "Off button released"
       },
       "titleFormatted": {
-        "en": "[[group]] off (Key released)"
+        "en": "[[group]] off button released"
       },
       "deprecated": true,
       "args": [

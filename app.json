@@ -205,13 +205,13 @@
               {
                 "id": "up",
                 "label": {
-                  "en": "held down (increasing)"
+                  "en": "held down and decreasing"
                 }
               },
               {
                 "id": "down",
                 "label": {
-                  "en": "held down (decreasing)"
+                  "en": "held down and decreasing"
                 }
               },
               {
@@ -924,13 +924,13 @@
               {
                 "id": "up",
                 "label": {
-                  "en": "held down (increasing)"
+                  "en": "held down and decreasing"
                 }
               },
               {
                 "id": "down",
                 "label": {
-                  "en": "held down (decreasing)"
+                  "en": "held down and decreasing"
                 }
               },
               {
@@ -3117,7 +3117,7 @@
       {
         "id": "4512711_all_on_key_held_down",
         "title": {
-          "en": "All on (Key held down)"
+          "en": "All on button held down"
         },
         "deprecated": true,
         "args": [
@@ -3131,7 +3131,7 @@
       {
         "id": "4512711_all_on_key_released",
         "title": {
-          "en": "All on (Key released)"
+          "en": "All on button released"
         },
         "deprecated": true,
         "args": [
@@ -3145,7 +3145,7 @@
       {
         "id": "4512711_all_off_key_held_down",
         "title": {
-          "en": "All off (Key held down)"
+          "en": "All off button held down"
         },
         "deprecated": true,
         "args": [
@@ -3159,7 +3159,7 @@
       {
         "id": "4512711_all_off_key_released",
         "title": {
-          "en": "All off (Key released)"
+          "en": "All off button released"
         },
         "deprecated": true,
         "args": [
@@ -3269,10 +3269,10 @@
       {
         "id": "4512711_on_key_held_down",
         "title": {
-          "en": "On (Key held down)"
+          "en": "On button held down"
         },
         "titleFormatted": {
-          "en": "[[group]] on (Key held down)"
+          "en": "[[group]] on button held down"
         },
         "deprecated": true,
         "args": [
@@ -3317,10 +3317,10 @@
       {
         "id": "4512711_on_key_released",
         "title": {
-          "en": "On (Key released)"
+          "en": "On button released"
         },
         "titleFormatted": {
-          "en": "[[group]] on (Key released)"
+          "en": "[[group]] on button released"
         },
         "deprecated": true,
         "args": [
@@ -3365,10 +3365,10 @@
       {
         "id": "4512711_off_key_held_down",
         "title": {
-          "en": "Off (Key held down)"
+          "en": "Off button held down"
         },
         "titleFormatted": {
-          "en": "[[group]] off (Key held down)"
+          "en": "[[group]] off button held down"
         },
         "deprecated": true,
         "args": [
@@ -3413,10 +3413,10 @@
       {
         "id": "4512711_off_key_released",
         "title": {
-          "en": "Off (Key released)"
+          "en": "Off button released"
         },
         "titleFormatted": {
-          "en": "[[group]] off (Key released)"
+          "en": "[[group]] off button released"
         },
         "deprecated": true,
         "args": [
@@ -3489,7 +3489,7 @@
       {
         "id": "4512711_scene_1_key_held_down",
         "title": {
-          "en": "S1 (Key held down)"
+          "en": "S1 button held down"
         },
         "deprecated": true,
         "args": [
@@ -3503,7 +3503,7 @@
       {
         "id": "4512711_scene_1_key_released",
         "title": {
-          "en": "S1 (Key released)"
+          "en": "S1 button released"
         },
         "deprecated": true,
         "args": [
@@ -3517,7 +3517,7 @@
       {
         "id": "4512711_scene_2_key_held_down",
         "title": {
-          "en": "S2 (Key held down)"
+          "en": "S2 button held down"
         },
         "deprecated": true,
         "args": [
@@ -3531,7 +3531,7 @@
       {
         "id": "4512711_scene_2_key_released",
         "title": {
-          "en": "S2 (Key released)"
+          "en": "S2 button released"
         },
         "deprecated": true,
         "args": [
@@ -3559,7 +3559,7 @@
       {
         "id": "4512712_on_off_key_held_down",
         "title": {
-          "en": "On/Off (Key held down)"
+          "en": "On/Off button held down"
         },
         "deprecated": true,
         "args": [
@@ -3573,7 +3573,7 @@
       {
         "id": "4512712_on_off_key_released",
         "title": {
-          "en": "On/Off (Key released)"
+          "en": "On/Off button released"
         },
         "deprecated": true,
         "args": [
@@ -3587,7 +3587,7 @@
       {
         "id": "4512712_level",
         "title": {
-          "en": "Level (Key pressed 1 time)"
+          "en": "Level button pressed 1 time"
         },
         "deprecated": true,
         "args": [
@@ -3601,7 +3601,7 @@
       {
         "id": "4512712_level_key_held_down",
         "title": {
-          "en": "Level (Key held down)"
+          "en": "Level button held down"
         },
         "deprecated": true,
         "args": [
@@ -3615,7 +3615,7 @@
       {
         "id": "4512712_level_key_released",
         "title": {
-          "en": "Level (Key released)"
+          "en": "Level button released"
         },
         "deprecated": true,
         "args": [
@@ -3657,7 +3657,7 @@
       {
         "id": "4512713_on_key_held_down",
         "title": {
-          "en": "On (Key held down)"
+          "en": "On button held down"
         },
         "deprecated": true,
         "args": [
@@ -3671,7 +3671,7 @@
       {
         "id": "4512713_on_key_released",
         "title": {
-          "en": "On (Key released)"
+          "en": "On button released"
         },
         "deprecated": true,
         "args": [
@@ -3685,7 +3685,7 @@
       {
         "id": "4512713_off_key_held_down",
         "title": {
-          "en": "Off (Key held down)"
+          "en": "Off button held down"
         },
         "deprecated": true,
         "args": [
@@ -3699,7 +3699,7 @@
       {
         "id": "4512713_off_key_released",
         "title": {
-          "en": "Off (Key released)"
+          "en": "Off button released"
         },
         "deprecated": true,
         "args": [
@@ -3713,7 +3713,7 @@
       {
         "id": "4512713_level_up",
         "title": {
-          "en": "Level up (Key pressed 1 time)"
+          "en": "Level up button pressed 1 time"
         },
         "deprecated": true,
         "args": [
@@ -3727,7 +3727,7 @@
       {
         "id": "4512713_level_down",
         "title": {
-          "en": "Level down (Key pressed 1 time)"
+          "en": "Level down button pressed 1 time"
         },
         "deprecated": true,
         "args": [
@@ -3741,7 +3741,7 @@
       {
         "id": "4512713_level_up_key_held_down",
         "title": {
-          "en": "Level up (Key held down)"
+          "en": "Level up button held down"
         },
         "deprecated": true,
         "args": [
@@ -3755,7 +3755,7 @@
       {
         "id": "4512713_level_up_key_released",
         "title": {
-          "en": "Level up (Key released)"
+          "en": "Level up button released"
         },
         "deprecated": true,
         "args": [
@@ -3769,7 +3769,7 @@
       {
         "id": "4512713_level_down_key_held_down",
         "title": {
-          "en": "Level down (Key held down)"
+          "en": "Level down button held down"
         },
         "deprecated": true,
         "args": [
@@ -3783,7 +3783,7 @@
       {
         "id": "4512713_level_down_key_released",
         "title": {
-          "en": "Level down (Key released)"
+          "en": "Level down button released"
         },
         "deprecated": true,
         "args": [
@@ -3893,10 +3893,10 @@
       {
         "id": "4512714_on_key_held_down",
         "title": {
-          "en": "On (Key held down)"
+          "en": "On button held down"
         },
         "titleFormatted": {
-          "en": "[[group]] on (Key held down)"
+          "en": "[[group]] on button held down"
         },
         "deprecated": true,
         "args": [
@@ -3941,10 +3941,10 @@
       {
         "id": "4512714_on_key_released",
         "title": {
-          "en": "On (Key released)"
+          "en": "On button released"
         },
         "titleFormatted": {
-          "en": "[[group]] on (Key released)"
+          "en": "[[group]] on button released"
         },
         "deprecated": true,
         "args": [
@@ -3989,10 +3989,10 @@
       {
         "id": "4512714_off_key_held_down",
         "title": {
-          "en": "Off (Key held down)"
+          "en": "Off button held down"
         },
         "titleFormatted": {
-          "en": "[[group]] off (Key held down)"
+          "en": "[[group]] off button held down"
         },
         "deprecated": true,
         "args": [
@@ -4037,10 +4037,10 @@
       {
         "id": "4512714_off_key_released",
         "title": {
-          "en": "Off (Key released)"
+          "en": "Off button released"
         },
         "titleFormatted": {
-          "en": "[[group]] off (Key released)"
+          "en": "[[group]] off button released"
         },
         "deprecated": true,
         "args": [
@@ -4319,10 +4319,10 @@
       {
         "id": "4512720_on_key_held_down",
         "title": {
-          "en": "On (Key held down)"
+          "en": "On button held down"
         },
         "titleFormatted": {
-          "en": "[[group]] on (Key held down)"
+          "en": "[[group]] on button held down"
         },
         "deprecated": true,
         "args": [
@@ -4355,10 +4355,10 @@
       {
         "id": "4512720_on_key_released",
         "title": {
-          "en": "On (Key released)"
+          "en": "On button released"
         },
         "titleFormatted": {
-          "en": "[[group]] on (Key released)"
+          "en": "[[group]] on button released"
         },
         "deprecated": true,
         "args": [
@@ -4391,10 +4391,10 @@
       {
         "id": "4512720_off_key_held_down",
         "title": {
-          "en": "Off (Key held down)"
+          "en": "Off button held down"
         },
         "titleFormatted": {
-          "en": "[[group]] off (Key held down)"
+          "en": "[[group]] off button held down"
         },
         "deprecated": true,
         "args": [
@@ -4427,10 +4427,10 @@
       {
         "id": "4512720_off_key_released",
         "title": {
-          "en": "Off (Key released)"
+          "en": "Off button released"
         },
         "titleFormatted": {
-          "en": "[[group]] off (Key released)"
+          "en": "[[group]] off button released"
         },
         "deprecated": true,
         "args": [
@@ -4841,7 +4841,7 @@
       {
         "id": "ZW_Remote_4_all_on_key_held_down",
         "title": {
-          "en": "All on (Key held down)"
+          "en": "All on button held down"
         },
         "args": [
           {
@@ -4854,7 +4854,7 @@
       {
         "id": "ZW_Remote_4_all_on_key_released",
         "title": {
-          "en": "All on (Key released)"
+          "en": "All on button released"
         },
         "args": [
           {
@@ -4867,7 +4867,7 @@
       {
         "id": "ZW_Remote_4_all_off_key_held_down",
         "title": {
-          "en": "All off (Key held down)"
+          "en": "All off button held down"
         },
         "args": [
           {
@@ -4880,7 +4880,7 @@
       {
         "id": "ZW_Remote_4_all_off_key_released",
         "title": {
-          "en": "All off (Key released)"
+          "en": "All off button released"
         },
         "args": [
           {
@@ -4987,10 +4987,10 @@
       {
         "id": "ZW_Remote_4_on_key_held_down",
         "title": {
-          "en": "On (Key held down)"
+          "en": "On button held down"
         },
         "titleFormatted": {
-          "en": "[[group]] on (Key held down)"
+          "en": "[[group]] on button held down"
         },
         "args": [
           {
@@ -5034,10 +5034,10 @@
       {
         "id": "ZW_Remote_4_on_key_released",
         "title": {
-          "en": "On (Key released)"
+          "en": "On button released"
         },
         "titleFormatted": {
-          "en": "[[group]] on (Key released)"
+          "en": "[[group]] on button released"
         },
         "args": [
           {
@@ -5081,10 +5081,10 @@
       {
         "id": "ZW_Remote_4_off_key_held_down",
         "title": {
-          "en": "Off (Key held down)"
+          "en": "Off button held down"
         },
         "titleFormatted": {
-          "en": "[[group]] off (Key held down)"
+          "en": "[[group]] off button held down"
         },
         "args": [
           {
@@ -5128,10 +5128,10 @@
       {
         "id": "ZW_Remote_4_off_key_released",
         "title": {
-          "en": "Off (Key released)"
+          "en": "Off button released"
         },
         "titleFormatted": {
-          "en": "[[group]] off (Key released)"
+          "en": "[[group]] off button released"
         },
         "args": [
           {
@@ -5201,7 +5201,7 @@
       {
         "id": "ZW_Remote_4_scene_1_key_held_down",
         "title": {
-          "en": "S1 (Key held down)"
+          "en": "S1 button held down"
         },
         "args": [
           {
@@ -5214,7 +5214,7 @@
       {
         "id": "ZW_Remote_4_scene_1_key_released",
         "title": {
-          "en": "S1 (Key released)"
+          "en": "S1 button released"
         },
         "args": [
           {
@@ -5227,7 +5227,7 @@
       {
         "id": "ZW_Remote_4_scene_2_key_held_down",
         "title": {
-          "en": "S2 (Key held down)"
+          "en": "S2 button held down"
         },
         "args": [
           {
@@ -5240,7 +5240,7 @@
       {
         "id": "ZW_Remote_4_scene_2_key_released",
         "title": {
-          "en": "S2 (Key released)"
+          "en": "S2 button released"
         },
         "args": [
           {
@@ -5266,7 +5266,7 @@
       {
         "id": "ZW_WallController_2_on_off_key_held_down",
         "title": {
-          "en": "On/Off (Key held down)"
+          "en": "On/Off button held down"
         },
         "args": [
           {
@@ -5279,7 +5279,7 @@
       {
         "id": "ZW_WallController_2_on_off_key_released",
         "title": {
-          "en": "On/Off (Key released)"
+          "en": "On/Off button released"
         },
         "args": [
           {
@@ -5292,7 +5292,7 @@
       {
         "id": "ZW_WallController_2_level",
         "title": {
-          "en": "Level (Key pressed 1 time)"
+          "en": "Level button pressed 1 time"
         },
         "args": [
           {
@@ -5305,7 +5305,7 @@
       {
         "id": "ZW_WallController_2_level_key_held_down",
         "title": {
-          "en": "Level (Key held down)"
+          "en": "Level button held down"
         },
         "args": [
           {
@@ -5318,7 +5318,7 @@
       {
         "id": "ZW_WallController_2_level_key_released",
         "title": {
-          "en": "Level (Key released)"
+          "en": "Level button released"
         },
         "args": [
           {
@@ -5401,10 +5401,10 @@
       {
         "id": "ZW_WallController_4_on_key_held_down",
         "title": {
-          "en": "On (Key held down)"
+          "en": "On button held down"
         },
         "titleFormatted": {
-          "en": "[[group]] on (Key held down)"
+          "en": "[[group]] on button held down"
         },
         "args": [
           {
@@ -5436,10 +5436,10 @@
       {
         "id": "ZW_WallController_4_on_key_released",
         "title": {
-          "en": "On (Key released)"
+          "en": "On button released"
         },
         "titleFormatted": {
-          "en": "[[group]] on (Key released)"
+          "en": "[[group]] on button released"
         },
         "args": [
           {
@@ -5471,10 +5471,10 @@
       {
         "id": "ZW_WallController_4_off_key_held_down",
         "title": {
-          "en": "Off (Key held down)"
+          "en": "Off button held down"
         },
         "titleFormatted": {
-          "en": "[[group]] off (Key held down)"
+          "en": "[[group]] off button held down"
         },
         "args": [
           {
@@ -5506,10 +5506,10 @@
       {
         "id": "ZW_WallController_4_off_key_released",
         "title": {
-          "en": "Off (Key released)"
+          "en": "Off button released"
         },
         "titleFormatted": {
-          "en": "[[group]] off (Key released)"
+          "en": "[[group]] off button released"
         },
         "args": [
           {
@@ -5635,10 +5635,10 @@
       {
         "id": "ZW_WallController_8_on_key_held_down",
         "title": {
-          "en": "On (Key held down)"
+          "en": "On button held down"
         },
         "titleFormatted": {
-          "en": "[[group]] on (Key held down)"
+          "en": "[[group]] on button held down"
         },
         "args": [
           {
@@ -5682,10 +5682,10 @@
       {
         "id": "ZW_WallController_8_on_key_released",
         "title": {
-          "en": "On (Key released)"
+          "en": "On button released"
         },
         "titleFormatted": {
-          "en": "[[group]] on (Key released)"
+          "en": "[[group]] on button released"
         },
         "args": [
           {
@@ -5729,10 +5729,10 @@
       {
         "id": "ZW_WallController_8_off_key_held_down",
         "title": {
-          "en": "Off (Key held down)"
+          "en": "Off button held down"
         },
         "titleFormatted": {
-          "en": "[[group]] off (Key held down)"
+          "en": "[[group]] off button held down"
         },
         "args": [
           {
@@ -5776,10 +5776,10 @@
       {
         "id": "ZW_WallController_8_off_key_released",
         "title": {
-          "en": "Off (Key released)"
+          "en": "Off button released"
         },
         "titleFormatted": {
-          "en": "[[group]] off (Key released)"
+          "en": "[[group]] off button released"
         },
         "args": [
           {
@@ -10472,7 +10472,7 @@
                 {
                   "id": "0",
                   "label": {
-                    "en": "Linear (default)"
+                    "en": "Linear"
                   }
                 },
                 {
@@ -10532,8 +10532,8 @@
                 {
                   "id": "0",
                   "label": {
-                    "en": "Turn off light (default)",
-                    "nl": "Schakel de lamp uit (standaard)"
+                    "en": "Turn off light",
+                    "nl": "Schakel de lamp uit"
                   }
                 },
                 {
@@ -10557,8 +10557,8 @@
               "id": "rotary_send_basic_report",
               "value": true,
               "label": {
-                "en": "Send `BASIC report`",
-                "nl": "Stuur `BASIC report`"
+                "en": "Send BASIC report",
+                "nl": "Stuur BASIC report"
               },
               "hint": {
                 "en": "This parameter (2) determines whether the `BASIC report` is sent to the Lifeline when the load state changed. Default: activated",
@@ -12632,8 +12632,8 @@
                 {
                   "id": "0",
                   "label": {
-                    "en": "Turn off load (default)",
-                    "nl": "Schakel de lamp uit (standaard)"
+                    "en": "Turn off load",
+                    "nl": "Schakel de lamp uit"
                   }
                 },
                 {
@@ -12657,8 +12657,8 @@
               "id": "wallswitch_send_basic_report",
               "value": true,
               "label": {
-                "en": "Send `BASIC report`",
-                "nl": "Stuur `BASIC report`"
+                "en": "Send BASIC report",
+                "nl": "Stuur BASIC report"
               },
               "hint": {
                 "en": "This parameter (3) determines whether the `BASIC report` is send to the Lifeline when the load state changed. Default: activated",
@@ -12688,8 +12688,8 @@
                 {
                   "id": "0",
                   "label": {
-                    "en": "Leading edge (default)",
-                    "nl": "Fase aansnijding (standaard)"
+                    "en": "Leading edge",
+                    "nl": "Fase aansnijding"
                   }
                 },
                 {
@@ -13795,7 +13795,7 @@
                 {
                   "id": "0",
                   "label": {
-                    "en": "Linear (default)"
+                    "en": "Linear"
                   }
                 },
                 {
@@ -13855,8 +13855,8 @@
                 {
                   "id": "0",
                   "label": {
-                    "en": "Turn off light (default)",
-                    "nl": "Schakel de lamp uit (standaard)"
+                    "en": "Turn off light",
+                    "nl": "Schakel de lamp uit"
                   }
                 },
                 {
@@ -13880,8 +13880,8 @@
               "id": "rotary_send_basic_report",
               "value": true,
               "label": {
-                "en": "Send `BASIC report`",
-                "nl": "Stuur `BASIC report`"
+                "en": "Send BASIC report",
+                "nl": "Stuur BASIC report"
               },
               "hint": {
                 "en": "This parameter (2) determines whether the `BASIC report` is sent to the Lifeline when the load state changed. Default: activated",
@@ -14001,8 +14001,8 @@
                 {
                   "id": "0",
                   "label": {
-                    "en": "Turn off load (default)",
-                    "nl": "Schakel de lamp uit (standaard)"
+                    "en": "Turn off load",
+                    "nl": "Schakel de lamp uit"
                   }
                 },
                 {
@@ -14026,8 +14026,8 @@
               "id": "wallswitch_send_basic_report",
               "value": true,
               "label": {
-                "en": "Send `BASIC report`",
-                "nl": "Stuur `BASIC report`"
+                "en": "Send BASIC report",
+                "nl": "Stuur BASIC report"
               },
               "hint": {
                 "en": "This parameter (3) determines whether the `BASIC report` is send to the Lifeline when the load state changed. Default: activated",
@@ -14057,8 +14057,8 @@
                 {
                   "id": "0",
                   "label": {
-                    "en": "Leading edge (default)",
-                    "nl": "Fase aansnijding (standaard)"
+                    "en": "Leading edge",
+                    "nl": "Fase aansnijding"
                   }
                 },
                 {
