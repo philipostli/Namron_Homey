@@ -252,5 +252,201 @@
         }
       }
     ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Device Settings"
+    },
+    "children": [
+      {
+        "id": "operate_display_brightness",
+        "type": "dropdown",
+        "value": "one",
+        "label": {
+          "en": "Operate display brightness"
+        },
+        "values": [
+          {
+            "id": "one",
+            "label": {
+              "en": "Level 1"
+            }
+          },
+          {
+            "id": "two",
+            "label": {
+              "en": "Level 2"
+            }
+          },
+          {
+            "id": "three",
+            "label": {
+              "en": "Level 3"
+            }
+          },
+          {
+            "id": "four",
+            "label": {
+              "en": "Level 4"
+            }
+          },
+          {
+            "id": "five",
+            "label": {
+              "en": "Level 5"
+            }
+          },
+          {
+            "id": "six",
+            "label": {
+              "en": "Level 6"
+            }
+          },
+          {
+            "id": "seven",
+            "label": {
+              "en": "Level 7"
+            }
+          }
+        ]
+      },
+      {
+        "id": "display_auto_off_activation",
+        "type": "dropdown",
+        "value": "disabled",
+        "label": {
+          "en": "Display auto off activation"
+        },
+        "values": [
+          {
+            "id": "disabled",
+            "label": {
+              "en": "Disabled"
+            }
+          },
+          {
+            "id": "enabled",
+            "label": {
+              "en": "Enabled"
+            }
+          }
+        ]
+      },
+      {
+        "id": "power_up_status",
+        "type": "dropdown",
+        "value": "latestMode",
+        "label": {
+          "en": "Power up status"
+        },
+        "values": [
+          {
+            "id": "latestMode",
+            "label": {
+              "en": "Latest mode"
+            }
+          },
+          {
+            "id": "manualMode",
+            "label": {
+              "en": "Manual mode"
+            }
+          }
+        ]
+      },
+      {
+        "id": "window_open_check",
+        "type": "dropdown",
+        "value": "enabled",
+        "label": {
+          "en": "Window open check"
+        },
+        "values": [
+          {
+            "id": "enabled",
+            "label": {
+              "en": "Enabled"
+            }
+          },
+          {
+            "id": "disabled",
+            "label": {
+              "en": "Disabled"
+            }
+          }
+        ]
+      },
+      {
+        "id": "hysteresis",
+        "type": "number",
+        "label": { "en": "Hysteresis" },
+        "value": 5,
+        "min": 5,
+        "max": 20,
+        "units": { "en": "0.1℃" }
+      },
+      {
+        "id": "localTemperatureCalibration",
+        "type": "number",
+        "label": { "en": "Local Temperature Calibration" },
+        "value": 0,
+        "min": -30,
+        "max": 30,
+        "units": { "en": "0.1℃" }
+      },
+      {
+        "id": "keypadLockout",
+        "type": "dropdown",
+        "value": "noLockout",
+        "label": {
+          "en": "Keypad Lockout"
+        },
+        "values": [
+          {
+            "id": "noLockout",
+            "label": {
+              "en": "No lockout"
+            }
+          },
+          {
+            "id": "level1Lockout",
+            "label": {
+              "en": "Level 1 lockout"
+            }
+          },
+          {
+            "id": "level2Lockout",
+            "label": {
+              "en": "Level 2 lockout"
+            }
+          },
+          {
+            "id": "level3Lockout",
+            "label": {
+              "en": "Level 3 lockout"
+            }
+          },
+          {
+            "id": "level4Lockout",
+            "label": {
+              "en": "Level 4 lockout"
+            }
+          },
+          {
+            "id": "level5Lockout",
+            "label": {
+              "en": "Level 5 lockout"
+            }
+          }
+        ]
+      },
+      {
+        "id": "syncTimeOnDevice",
+        "type": "checkbox",
+        "value": false,
+        "label": { "en": "Sync time on device" }
+      }
+    ]
   }
 ]

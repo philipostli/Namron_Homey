@@ -37,7 +37,7 @@
   "platforms": ["local", "cloud"],
   "connectivity": ["zwave"],
   "zwave": {
-    "requireSecure": true,
+    "security": ["none"],
     "manufacturerId": [
       1073,
       1080
@@ -52,7 +52,7 @@
     "learnmode": {
       "image": "/drivers/1402756/assets/learnmode.svg",
       "instruction": {
-        "en": "Inclusion, Exclusion \nTriple press the reset button on the dimmer. \n\n!!! NOTE \nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail. \n\nFactory reset \nPress and hold down the reset button for over 5 seconds."
+        "en": "Triple press the reset button on the dimmer."
       }
     },
     "associationGroups": [

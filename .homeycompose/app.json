@@ -1,6 +1,6 @@
 {
   "id": "net.filllip-namron",
-  "version": "2.2.23",
+  "version": "2.2.24",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
@@ -14568,7 +14568,7 @@
       "getable": true,
       "uiComponent": "sensor",
       "units": {
-        "en": "°C"
+        "en": "℃"
       },
       "icon": "/assets/temperature_icon.svg"
     },
@@ -14616,7 +14616,7 @@
       "getable": true,
       "uiComponent": "sensor",
       "units": {
-        "en": "°C"
+        "en": "℃"
       },
       "icon": "/assets/temperature_icon.svg"
     },
@@ -14629,7 +14629,7 @@
       "getable": true,
       "uiComponent": "sensor",
       "units": {
-        "en": "°C"
+        "en": "℃"
       },
       "icon": "/assets/temperature_icon.svg"
     },
@@ -14642,7 +14642,7 @@
       "getable": true,
       "uiComponent": "sensor",
       "units": {
-        "en": "°C"
+        "en": "℃"
       },
       "icon": "/assets/temperature_icon.svg"
     },

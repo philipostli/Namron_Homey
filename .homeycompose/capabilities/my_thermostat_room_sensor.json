@@ -7,7 +7,7 @@
   "getable": true,
   "uiComponent": "sensor",
   "units": {
-    "en": "°C"
+    "en": "℃"
   },
   "icon": "/assets/temperature_icon.svg"
 }

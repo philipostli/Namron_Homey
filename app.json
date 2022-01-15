@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "net.filllip-namron",
-  "version": "2.2.23",
+  "version": "2.2.24",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
@@ -10333,7 +10333,9 @@
         "zwave"
       ],
       "zwave": {
-        "requireSecure": true,
+        "security": [
+          "none"
+        ],
         "manufacturerId": [
           1073,
           1080
@@ -10348,7 +10350,7 @@
         "learnmode": {
           "image": "/drivers/1402756/assets/learnmode.svg",
           "instruction": {
-            "en": "Inclusion, Exclusion \nTriple press the reset button on the dimmer. \n\n!!! NOTE \nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail. \n\nFactory reset \nPress and hold down the reset button for over 5 seconds."
+            "en": "Triple press the reset button on the dimmer."
           }
         },
         "associationGroups": [
@@ -10396,8 +10398,8 @@
                 "nl": "External schakelaar gebruiken"
               },
               "hint": {
-                "en": "This parameter (5) determines the option to use an external switch to include or exclude the device from the network. Default: Disabled",
-                "nl": "Deze parameter (5) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
+                "en": "This parameter determines the option to use an external switch to include or exclude the device from the network. Default: Disabled",
+                "nl": "Deze parameter schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
               },
               "zwave": {
                 "index": 5,
@@ -10421,7 +10423,7 @@
                 "nl": "Dim transitietijd"
               },
               "hint": {
-                "en": "This parameter (3) determines the default dim duration. Values: 0 - 100. 0: Instantly. 100: Slow. Default: 5"
+                "en": "This parameter determines the default dim duration. Values: 0 - 100. 0: Instantly. 100: Slow. Default: 5"
               },
               "zwave": {
                 "index": 3,
@@ -10462,7 +10464,7 @@
                 "en": "Dim method"
               },
               "hint": {
-                "en": "This parameter (6) determines if the dimmer uses linear or logarithmic dimming."
+                "en": "This parameter determines if the dimmer uses linear or logarithmic dimming."
               },
               "zwave": {
                 "index": 6,
@@ -10499,7 +10501,7 @@
                 "en": "Default brightness"
               },
               "hint": {
-                "en": "This parameter (7) determines the default brightness when turned on. 0: Dimmer will use state after power is restored (parameter 1). Values: 0 - 99. Default: 0"
+                "en": "This parameter determines the default brightness when turned on. 0: Dimmer will use state after power is restored. Values: 0 - 99. Default: 0"
               },
               "zwave": {
                 "index": 7,
@@ -10521,8 +10523,8 @@
                 "nl": "Herstel status na stroomonderbreking"
               },
               "hint": {
-                "en": "This parameter (1) determines whether after a power failure the device should be restored to the state it had before the power failure.",
-                "nl": "Deze parameter (1) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+                "en": "This parameter determines whether after a power failure the device should be restored to the state it had before the power failure.",
+                "nl": "Deze parameter bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
               },
               "zwave": {
                 "index": 1,
@@ -10561,8 +10563,8 @@
                 "nl": "Stuur BASIC report"
               },
               "hint": {
-                "en": "This parameter (2) determines whether the `BASIC report` is sent to the Lifeline when the load state changed. Default: activated",
-                "nl": "Deze parameter (2) bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
+                "en": "This parameter determines whether the `BASIC report` is sent to the Lifeline when the load state changed. Default: activated",
+                "nl": "Deze parameter bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
               },
               "zwave": {
                 "index": 2,
@@ -12594,8 +12596,8 @@
                 "nl": "External schakelaar gebruiken"
               },
               "hint": {
-                "en": "This parameter (7) determines the option to use an external switch to include or exclude the device from the network.",
-                "nl": "Deze parameter (7) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
+                "en": "This parameter determines the option to use an external switch to include or exclude the device from the network.",
+                "nl": "Deze parameter schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
               },
               "zwave": {
                 "index": 7,
@@ -12621,8 +12623,8 @@
                 "nl": "Herstel status na stroomonderbreking"
               },
               "hint": {
-                "en": "This parameter (2) determines whether after a power failure the device should be restored to the state it had before the power failure.",
-                "nl": "Deze parameter (2) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+                "en": "This parameter determines whether after a power failure the device should be restored to the state it had before the power failure.",
+                "nl": "Deze parameter bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
               },
               "zwave": {
                 "index": 2,
@@ -12661,8 +12663,8 @@
                 "nl": "Stuur BASIC report"
               },
               "hint": {
-                "en": "This parameter (3) determines whether the `BASIC report` is send to the Lifeline when the load state changed. Default: activated",
-                "nl": "Deze parameter (3) bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
+                "en": "This parameter determines whether the `BASIC report` is send to the Lifeline when the load state changed. Default: activated",
+                "nl": "Deze parameter bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
               },
               "zwave": {
                 "index": 3,
@@ -12677,8 +12679,8 @@
                 "en": "MOSFET driving type"
               },
               "hint": {
-                "en": "This parameter (6) determines the used MOSFET driving type. Default: Leading edge",
-                "nl": "Deze parameter (6) bepaalt de gebruikte MOSFET driving type. Standaard: Fase aansnijding"
+                "en": "This parameter determines the used MOSFET driving type. Default: Leading edge",
+                "nl": "Deze parameter bepaalt de gebruikte MOSFET driving type. Standaard: Fase aansnijding"
               },
               "zwave": {
                 "index": 6,
@@ -13719,8 +13721,8 @@
                 "nl": "External schakelaar gebruiken"
               },
               "hint": {
-                "en": "This parameter (5) determines the option to use an external switch to include or exclude the device from the network. Default: Disabled",
-                "nl": "Deze parameter (5) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
+                "en": "This parameter determines the option to use an external switch to include or exclude the device from the network. Default: Disabled",
+                "nl": "Deze parameter schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
               },
               "zwave": {
                 "index": 5,
@@ -13744,7 +13746,7 @@
                 "nl": "Dim transitietijd"
               },
               "hint": {
-                "en": "This parameter (3) determines the default dim duration. Values: 0 - 100. 0: Instantly. 100: Slow. Default: 5"
+                "en": "This parameter determines the default dim duration. Values: 0 - 100. 0: Instantly. 100: Slow. Default: 5"
               },
               "zwave": {
                 "index": 3,
@@ -13785,7 +13787,7 @@
                 "en": "Dim method"
               },
               "hint": {
-                "en": "This parameter (6) determines if the dimmer uses linear or logarithmic dimming."
+                "en": "This parameter determines if the dimmer uses linear or logarithmic dimming."
               },
               "zwave": {
                 "index": 6,
@@ -13822,7 +13824,7 @@
                 "en": "Default brightness"
               },
               "hint": {
-                "en": "This parameter (7) determines the default brightness when turned on. 0: Dimmer will use state after power is restored (parameter 1). Values: 0 - 99. Default: 0"
+                "en": "This parameter determines the default brightness when turned on. 0: Dimmer will use state after power is restored. Values: 0 - 99. Default: 0"
               },
               "zwave": {
                 "index": 7,
@@ -13844,8 +13846,8 @@
                 "nl": "Herstel status na stroomonderbreking"
               },
               "hint": {
-                "en": "This parameter (1) determines whether after a power failure the device should be restored to the state it had before the power failure.",
-                "nl": "Deze parameter (1) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+                "en": "This parameter determines whether after a power failure the device should be restored to the state it had before the power failure.",
+                "nl": "Deze parameter bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
               },
               "zwave": {
                 "index": 1,
@@ -13884,8 +13886,8 @@
                 "nl": "Stuur BASIC report"
               },
               "hint": {
-                "en": "This parameter (2) determines whether the `BASIC report` is sent to the Lifeline when the load state changed. Default: activated",
-                "nl": "Deze parameter (2) bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
+                "en": "This parameter determines whether the `BASIC report` is sent to the Lifeline when the load state changed. Default: activated",
+                "nl": "Deze parameter bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
               },
               "zwave": {
                 "index": 2,
@@ -13963,8 +13965,8 @@
                 "nl": "External schakelaar gebruiken"
               },
               "hint": {
-                "en": "This parameter (7) determines the option to use an external switch to include or exclude the device from the network.",
-                "nl": "Deze parameter (7) schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
+                "en": "This parameter determines the option to use an external switch to include or exclude the device from the network.",
+                "nl": "Deze parameter schakelt de optie in om een externe schakelaar te gebruiken om de dimmer toe te voegen of te verwijderen uit het netwerk."
               },
               "zwave": {
                 "index": 7,
@@ -13990,8 +13992,8 @@
                 "nl": "Herstel status na stroomonderbreking"
               },
               "hint": {
-                "en": "This parameter (2) determines whether after a power failure the device should be restored to the state it had before the power failure.",
-                "nl": "Deze parameter (2) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+                "en": "This parameter determines whether after a power failure the device should be restored to the state it had before the power failure.",
+                "nl": "Deze parameter bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
               },
               "zwave": {
                 "index": 2,
@@ -14030,8 +14032,8 @@
                 "nl": "Stuur BASIC report"
               },
               "hint": {
-                "en": "This parameter (3) determines whether the `BASIC report` is send to the Lifeline when the load state changed. Default: activated",
-                "nl": "Deze parameter (3) bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
+                "en": "This parameter determines whether the `BASIC report` is send to the Lifeline when the load state changed. Default: activated",
+                "nl": "Deze parameter bepaalt of het `BASIC report` wordt verstuurd naar de controller wanneer de toestand van de dimmer verandert. Standaard: ingeschakeld"
               },
               "zwave": {
                 "index": 3,
@@ -14046,8 +14048,8 @@
                 "en": "MOSFET driving type"
               },
               "hint": {
-                "en": "This parameter (6) determines the used MOSFET driving type. Default: Leading edge",
-                "nl": "Deze parameter (6) bepaalt de gebruikte MOSFET driving type. Standaard: Fase aansnijding"
+                "en": "This parameter determines the used MOSFET driving type. Default: Leading edge",
+                "nl": "Deze parameter bepaalt de gebruikte MOSFET driving type. Standaard: Fase aansnijding"
               },
               "zwave": {
                 "index": 6,
@@ -14432,12 +14434,14 @@
       },
       "class": "thermostat",
       "capabilities": [
-        "onoff",
         "measure_power",
         "meter_power",
         "measure_temperature",
         "target_temperature",
-        "zg9030a_modes"
+        "zg9030a_modes",
+        "zg9030a_window_open_flag",
+        "zg9030a_internal_over_heat",
+        "zg9030a_datetime"
       ],
       "platforms": [
         "local",
@@ -14469,7 +14473,8 @@
               513,
               1794,
               2820,
-              10
+              10,
+              516
             ],
             "bindings": [
               513,
@@ -14741,6 +14746,212 @@
               }
             }
           ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Device Settings"
+          },
+          "children": [
+            {
+              "id": "operate_display_brightness",
+              "type": "dropdown",
+              "value": "one",
+              "label": {
+                "en": "Operate display brightness"
+              },
+              "values": [
+                {
+                  "id": "one",
+                  "label": {
+                    "en": "Level 1"
+                  }
+                },
+                {
+                  "id": "two",
+                  "label": {
+                    "en": "Level 2"
+                  }
+                },
+                {
+                  "id": "three",
+                  "label": {
+                    "en": "Level 3"
+                  }
+                },
+                {
+                  "id": "four",
+                  "label": {
+                    "en": "Level 4"
+                  }
+                },
+                {
+                  "id": "five",
+                  "label": {
+                    "en": "Level 5"
+                  }
+                },
+                {
+                  "id": "six",
+                  "label": {
+                    "en": "Level 6"
+                  }
+                },
+                {
+                  "id": "seven",
+                  "label": {
+                    "en": "Level 7"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "display_auto_off_activation",
+              "type": "dropdown",
+              "value": "disabled",
+              "label": {
+                "en": "Display auto off activation"
+              },
+              "values": [
+                {
+                  "id": "disabled",
+                  "label": {
+                    "en": "Disabled"
+                  }
+                },
+                {
+                  "id": "enabled",
+                  "label": {
+                    "en": "Enabled"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "power_up_status",
+              "type": "dropdown",
+              "value": "latestMode",
+              "label": {
+                "en": "Power up status"
+              },
+              "values": [
+                {
+                  "id": "latestMode",
+                  "label": {
+                    "en": "Latest mode"
+                  }
+                },
+                {
+                  "id": "manualMode",
+                  "label": {
+                    "en": "Manual mode"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "window_open_check",
+              "type": "dropdown",
+              "value": "enabled",
+              "label": {
+                "en": "Window open check"
+              },
+              "values": [
+                {
+                  "id": "enabled",
+                  "label": {
+                    "en": "Enabled"
+                  }
+                },
+                {
+                  "id": "disabled",
+                  "label": {
+                    "en": "Disabled"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "hysteresis",
+              "type": "number",
+              "label": {
+                "en": "Hysteresis"
+              },
+              "value": 5,
+              "min": 5,
+              "max": 20,
+              "units": {
+                "en": "0.1℃"
+              }
+            },
+            {
+              "id": "localTemperatureCalibration",
+              "type": "number",
+              "label": {
+                "en": "Local Temperature Calibration"
+              },
+              "value": 0,
+              "min": -30,
+              "max": 30,
+              "units": {
+                "en": "0.1℃"
+              }
+            },
+            {
+              "id": "keypadLockout",
+              "type": "dropdown",
+              "value": "noLockout",
+              "label": {
+                "en": "Keypad Lockout"
+              },
+              "values": [
+                {
+                  "id": "noLockout",
+                  "label": {
+                    "en": "No lockout"
+                  }
+                },
+                {
+                  "id": "level1Lockout",
+                  "label": {
+                    "en": "Level 1 lockout"
+                  }
+                },
+                {
+                  "id": "level2Lockout",
+                  "label": {
+                    "en": "Level 2 lockout"
+                  }
+                },
+                {
+                  "id": "level3Lockout",
+                  "label": {
+                    "en": "Level 3 lockout"
+                  }
+                },
+                {
+                  "id": "level4Lockout",
+                  "label": {
+                    "en": "Level 4 lockout"
+                  }
+                },
+                {
+                  "id": "level5Lockout",
+                  "label": {
+                    "en": "Level 5 lockout"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "syncTimeOnDevice",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Sync time on device"
+              }
+            }
+          ]
         }
       ]
     },
@@ -14901,7 +15112,7 @@
       "getable": true,
       "uiComponent": "sensor",
       "units": {
-        "en": "°C"
+        "en": "℃"
       },
       "icon": "/assets/temperature_icon.svg"
     },
@@ -14949,7 +15160,7 @@
       "getable": true,
       "uiComponent": "sensor",
       "units": {
-        "en": "°C"
+        "en": "℃"
       },
       "icon": "/assets/temperature_icon.svg"
     },
@@ -14962,7 +15173,7 @@
       "getable": true,
       "uiComponent": "sensor",
       "units": {
-        "en": "°C"
+        "en": "℃"
       },
       "icon": "/assets/temperature_icon.svg"
     },
@@ -14975,7 +15186,7 @@
       "getable": true,
       "uiComponent": "sensor",
       "units": {
-        "en": "°C"
+        "en": "℃"
       },
       "icon": "/assets/temperature_icon.svg"
     },
@@ -15008,6 +15219,32 @@
         }
       ]
     },
+    "zg9030a_datetime": {
+      "title": {
+        "en": "Date"
+      },
+      "type": "string",
+      "setable": true,
+      "getable": true,
+      "uiComponent": "sensor",
+      "units": {
+        "en": ""
+      },
+      "icon": "/assets/datetime.svg"
+    },
+    "zg9030a_internal_over_heat": {
+      "title": {
+        "en": "Internal over heat"
+      },
+      "type": "string",
+      "setable": true,
+      "getable": true,
+      "uiComponent": "sensor",
+      "units": {
+        "en": ""
+      },
+      "icon": "/assets/internal_over_heat.svg"
+    },
     "zg9030a_modes": {
       "title": {
         "en": "Mode"
@@ -15036,6 +15273,19 @@
           }
         }
       ]
+    },
+    "zg9030a_window_open_flag": {
+      "title": {
+        "en": "Window open flag"
+      },
+      "type": "string",
+      "setable": true,
+      "getable": true,
+      "uiComponent": "sensor",
+      "units": {
+        "en": ""
+      },
+      "icon": "/assets/window_open_check.svg"
     }
   }
 }
