@@ -90,7 +90,6 @@ class ZG9093ADevice extends ZigBeeDevice {
 
   async _setUpSystemCapabilities () {
 
-    /*
     // onoff
     this.registerCapabilityListener('onoff', isOn => {
 
@@ -98,7 +97,6 @@ class ZG9093ADevice extends ZigBeeDevice {
         systemMode: isOn ? 'heat' : 'off',
       }).catch(this.error)
     })
-     */
 
     // meter_power
     if (this.hasCapability('meter_power')) {

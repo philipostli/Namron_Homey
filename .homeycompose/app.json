@@ -1,6 +1,6 @@
 {
   "id": "net.filllip-namron",
-  "version": "2.2.24",
+  "version": "2.2.25",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
@@ -12577,8 +12577,7 @@
       ],
       "zwave": {
         "security": [
-          "none",
-          "S0"
+          "none"
         ],
         "manufacturerId": [
           816,
@@ -12816,8 +12815,7 @@
       ],
       "zwave": {
         "security": [
-          "none",
-          "S0"
+          "none"
         ],
         "manufacturerId": [
           816,
@@ -13021,8 +13019,7 @@
       ],
       "zwave": {
         "security": [
-          "none",
-          "S0"
+          "none"
         ],
         "manufacturerId": [
           816,

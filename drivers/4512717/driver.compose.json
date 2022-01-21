@@ -17,7 +17,7 @@
   "platforms": ["local", "cloud"],
   "connectivity": ["zwave"],
   "zwave": {
-    "security": ["none", "S0"],
+    "security": ["none"],
     "manufacturerId": [
       816,
       1080

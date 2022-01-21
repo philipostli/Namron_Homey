@@ -151,5 +151,8 @@
   },
   "2.2.24": {
     "en": "Bug fixes and improvements"
+  },
+  "2.2.25": {
+    "en": "Added support for 4512739 CCT Light Controller."
   }
 }
