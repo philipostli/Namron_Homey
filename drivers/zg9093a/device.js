@@ -191,6 +191,22 @@ class ZG9093ADevice extends ZigBeeDevice {
       report: 'occupiedHeatingSetpoint',
       reportParser: value => {
 
+        if (this.getCapabilityValue('zg9030a_modes') === 'off') {
+
+          this._thermostatCluster().
+            readAttributes('systemMode').
+            then(value => {
+
+              let mode = value.systemMode
+              let isOn = mode !== 'off'
+              this.setCapabilityValue('onoff', isOn).catch(this.error)
+              this.setCapabilityValue('zg9030a_modes', mode).catch(this.error)
+
+              this.log(`systemMode after occupiedHeatingSetpoint `, value, mode, isOn)
+            }).
+            catch(this.error)
+        }
+
         let temp = parseFloat((getInt16(value) / 100).toFixed(1))
         this.log(`occupiedHeatingSetpoint report `, value)
         return temp
@@ -221,16 +237,12 @@ class ZG9093ADevice extends ZigBeeDevice {
   _setUpWindowOpenFlagCapability () {
 
     this.registerCapability('zg9030a_window_open_flag', CLUSTER.THERMOSTAT, {
-      get: 'windowOpenFlag',
-      report: 'windowOpenFlag',
-      reportParser: value => {
+      get: 'windowOpenFlag', report: 'windowOpenFlag', reportParser: value => {
 
         this.log(`windowOpenFlag report `, value, value === 'opened')
         return value === 'opened' ? 'Opened' : 'Closed'
-      },
-      getOpts: {
-        getOnStart: true,
-        pollInterval: 60 * 60 * 1000, // unit ms, 60 minutes
+      }, getOpts: {
+        getOnStart: true, pollInterval: 60 * 60 * 1000, // unit ms, 60 minutes
         getOnOnline: true,
       },
     })
@@ -250,8 +262,7 @@ class ZG9093ADevice extends ZigBeeDevice {
         return null
       },
       getOpts: {
-        getOnStart: true,
-        pollInterval: 60 * 60 * 1000, // unit ms, 60 minutes
+        getOnStart: true, pollInterval: 60 * 60 * 1000, // unit ms, 60 minutes
         getOnOnline: true,
       },
     })
@@ -260,18 +271,14 @@ class ZG9093ADevice extends ZigBeeDevice {
   _setUpDateTimeCapability () {
 
     this.registerCapability('zg9030a_datetime', CLUSTER.TIME, {
-      get: 'time',
-      report: 'time',
-      reportParser: value => {
+      get: 'time', report: 'time', reportParser: value => {
 
         const date = new Date((value + timeDiffSeconds) * 1000)
         const dateString = DateTime.format(new Date(date), 'YYYY-MM-DD HH')
         this.log(`datetime report `, value, date, dateString)
         return dateString
-      },
-      getOpts: {
-        getOnStart: true,
-        pollInterval: 30 * 60 * 1000, // unit ms, 30 minutes
+      }, getOpts: {
+        getOnStart: true, pollInterval: 30 * 60 * 1000, // unit ms, 30 minutes
         getOnOnline: true,
       },
     })
@@ -288,7 +295,7 @@ class ZG9093ADevice extends ZigBeeDevice {
 
     this.registerCapability('zg9030a_modes', CLUSTER.THERMOSTAT, {
       get: 'systemMode', getOpts: {
-        getOnStart: true, pollInterval: 60 * 60 * 1000, // unit ms, 5 minutes
+        getOnStart: true, getOnOnline: true, pollInterval: 60 * 60 * 1000, // unit ms, 5 minutes
       }, set: 'systemMode', setParser: value => {
 
         this.log(`systemMode set `, value)
@@ -356,8 +363,7 @@ class ZG9093ADevice extends ZigBeeDevice {
   _getTime () {
 
     this._timeCluster().readAttributes('time').then(value => {
-      let date =
-        new Date((value.time + timeDiffSeconds) * 1000)
+      let date = new Date((value.time + timeDiffSeconds) * 1000)
       this.log(`get time `, value, date)
       this._setDateTimeByDate(date)
     }).catch(err => {

@@ -15280,31 +15280,7 @@
                 {
                   "id": "level1Lockout",
                   "label": {
-                    "en": "Level 1 lockout"
-                  }
-                },
-                {
-                  "id": "level2Lockout",
-                  "label": {
-                    "en": "Level 2 lockout"
-                  }
-                },
-                {
-                  "id": "level3Lockout",
-                  "label": {
-                    "en": "Level 3 lockout"
-                  }
-                },
-                {
-                  "id": "level4Lockout",
-                  "label": {
-                    "en": "Level 4 lockout"
-                  }
-                },
-                {
-                  "id": "level5Lockout",
-                  "label": {
-                    "en": "Level 5 lockout"
+                    "en": "Lockout"
                   }
                 }
               ]
