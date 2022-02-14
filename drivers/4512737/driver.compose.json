@@ -1,6 +1,6 @@
 {
   "name": {
-    "en": "ZG Thermostat"
+    "en": "4512737/38 - Zigbee Thermostat Touch"
   },
   "class": "thermostat",
   "capabilities": [
@@ -28,11 +28,11 @@
       "NAMRON As",
       "Namron AS",
       "Namron As",
-      "namron as",
-      "Sunricher"
+      "namron as"
     ],
     "productId": [
-      "ZG9092"
+      "4512737",
+      "4512738"
     ],
     "endpoints": {
       "1": {

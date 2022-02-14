@@ -154,5 +154,8 @@
   },
   "2.2.25": {
     "en": "Added support for 4512739 CCT Light Controller."
+  },
+  "2.2.26": {
+    "en": "Add support for 4512737/38."
   }
 }
