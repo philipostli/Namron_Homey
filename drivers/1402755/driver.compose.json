@@ -6,9 +6,7 @@
   "class": "light",
   "capabilities": [
     "onoff",
-    "dim",
-    "measure_power",
-    "meter_power"
+    "dim"
   ],
   "capabilitiesOptions": {
     "dim": {

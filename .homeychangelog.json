@@ -157,5 +157,8 @@
   },
   "2.2.26": {
     "en": "Add support for 4512737/38."
+  },
+  "2.2.27": {
+    "en": "Fixed an issue that caused the level not to update."
   }
 }

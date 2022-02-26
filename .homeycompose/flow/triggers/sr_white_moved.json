@@ -19,8 +19,7 @@
       "type": "number",
       "title": {
         "en": "White"
-      },
-      "example": 0.00
+      }
     }
   ]
 }

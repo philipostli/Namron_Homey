@@ -19,8 +19,7 @@
       "type": "number",
       "title": {
         "en": "Brightness"
-      },
-      "example": 0.00
+      }
     }
   ]
 }

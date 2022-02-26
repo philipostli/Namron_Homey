@@ -19,8 +19,7 @@
       "type": "number",
       "title": {
         "en": "Hue"
-      },
-      "example": 0.00
+      }
     }
   ]
 }

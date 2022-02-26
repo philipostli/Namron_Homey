@@ -1,6 +1,6 @@
 {
   "id": "net.filllip-namron",
-  "version": "2.2.26",
+  "version": "2.2.27",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
@@ -1571,8 +1571,7 @@
             "type": "number",
             "title": {
               "en": "Rate"
-            },
-            "example": 0.2
+            }
           }
         ]
       },
@@ -1645,8 +1644,7 @@
             "type": "number",
             "title": {
               "en": "Step size"
-            },
-            "example": 0.2
+            }
           },
           {
             "name": "transition_time",
@@ -1685,8 +1683,7 @@
             "type": "number",
             "title": {
               "en": "Rate"
-            },
-            "example": 0.2
+            }
           }
         ]
       },
@@ -1861,8 +1858,7 @@
             "type": "number",
             "title": {
               "en": "Rate"
-            },
-            "example": 0.2
+            }
           }
         ]
       },
@@ -2071,8 +2067,7 @@
             "type": "number",
             "title": {
               "en": "Scene ID"
-            },
-            "example": 1
+            }
           }
         ]
       },
@@ -2137,8 +2132,7 @@
             "type": "number",
             "title": {
               "en": "Scene ID"
-            },
-            "example": 1
+            }
           }
         ]
       },
@@ -2203,8 +2197,7 @@
             "type": "number",
             "title": {
               "en": "Rate"
-            },
-            "example": 0.2
+            }
           }
         ]
       },
@@ -2521,16 +2514,14 @@
             "type": "number",
             "title": {
               "en": "Move mode"
-            },
-            "example": 1
+            }
           },
           {
             "name": "rate",
             "type": "number",
             "title": {
               "en": "Rate"
-            },
-            "example": 0.2
+            }
           }
         ]
       },
@@ -2595,8 +2586,7 @@
             "type": "number",
             "title": {
               "en": "Scene ID"
-            },
-            "example": 1
+            }
           }
         ]
       },
@@ -2661,8 +2651,7 @@
             "type": "number",
             "title": {
               "en": "Scene ID"
-            },
-            "example": 1
+            }
           }
         ]
       },
@@ -2727,8 +2716,7 @@
             "type": "number",
             "title": {
               "en": "Step size"
-            },
-            "example": 0.2
+            }
           },
           {
             "name": "transition_time",
@@ -2801,8 +2789,7 @@
             "type": "number",
             "title": {
               "en": "Rate"
-            },
-            "example": 0.2
+            }
           }
         ]
       },
@@ -2907,16 +2894,14 @@
             "type": "number",
             "title": {
               "en": "Step mode"
-            },
-            "example": 1
+            }
           },
           {
             "name": "step_size",
             "type": "number",
             "title": {
               "en": "Step size"
-            },
-            "example": 0.2
+            }
           },
           {
             "name": "transition_time",
@@ -3055,8 +3040,7 @@
             "type": "number",
             "title": {
               "en": "Rate"
-            },
-            "example": 0.2
+            }
           }
         ]
       },
@@ -4228,8 +4212,7 @@
             "type": "number",
             "title": {
               "en": "Rate"
-            },
-            "example": 0.2
+            }
           }
         ]
       },
@@ -4656,8 +4639,7 @@
             "type": "number",
             "title": {
               "en": "Rate"
-            },
-            "example": 0.2
+            }
           }
         ]
       },
@@ -4796,8 +4778,7 @@
             "type": "number",
             "title": {
               "en": "Rate"
-            },
-            "example": 0.2
+            }
           }
         ]
       },
