@@ -383,11 +383,11 @@
         "label": {
           "en": "Hysteresis"
         },
-        "value": 5,
-        "min": 5,
-        "max": 20,
+        "value": 0.5,
+        "min": 0.5,
+        "max": 5.0,
         "units": {
-          "en": "0.1℃"
+          "en": "℃"
         }
       },
       {

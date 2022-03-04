@@ -487,7 +487,7 @@ class ZG9093ADevice extends ZigBeeDevice {
     }
 
     if (newSettings.hasOwnProperty('hysteresis')) {
-      payload['hysteresis'] = newSettings['hysteresis']
+      payload['hysteresis'] = Math.round(newSettings['hysteresis'] * 10.0)
     }
 
     if (payload === {}) {

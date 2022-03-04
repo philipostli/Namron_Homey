@@ -50,6 +50,22 @@ class ZigBeeThermostat extends ZigBeeDevice {
     this.registerMeterPowerMeasurePower().then(r => {})
   }
 
+  async onSettings ({ oldSettings, newSettings, changedKeys }) {
+
+    let payload = {}
+    if (newSettings.hasOwnProperty('hysteresis')) {
+      let newHysteresis = Math.round(newSettings['hysteresis'] * 10.0)
+      this.log(`new hysteresis`, newHysteresis)
+      payload['hysteresis'] = newHysteresis
+    }
+
+    if (payload === {}) {
+      return
+    }
+
+    await this._thermostatCluster().writeAttributes(payload).catch(this.error)
+  }
+
   _registerTargetTemperatureListener () {
 
     this.registerCapabilityListener('target_temperature',
@@ -413,10 +429,6 @@ class ZigBeeThermostat extends ZigBeeDevice {
    */
   async onAdded () {
     this.log('MyDevice has been added')
-  }
-
-  async onSettings ({ oldSettings, newSettings, changedKeys }) {
-    this.log('MyDevice settings where changed')
   }
 
 }
