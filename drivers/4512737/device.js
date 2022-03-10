@@ -71,7 +71,7 @@ class ZigBeeThermostat extends ZigBeeDevice {
     this.registerCapabilityListener('target_temperature',
       async (value, opts) => {
 
-        this._readIsNotAwayModeAttribute().then(isNotAway => {
+        return this._readIsNotAwayModeAttribute().then(isNotAway => {
 
           let payload = {}
           if (isNotAway) {
@@ -84,7 +84,7 @@ class ZigBeeThermostat extends ZigBeeDevice {
             }
           }
 
-          this._thermostatCluster().writeAttributes(payload).catch(this.error)
+          return this._thermostatCluster().writeAttributes(payload)
         })
       })
   }
@@ -96,19 +96,6 @@ class ZigBeeThermostat extends ZigBeeDevice {
       getOpts: {
         getOnStart: true,
         pollInterval: 60 * 60 * 1000,
-      },
-      set: 'systemMode',
-      setParser (value) {
-
-        this.log('systemMode set')
-        this.log(value)
-
-        this.isNotAwayValue = true
-        this.zclNode.endpoints[1].clusters.thermostat.writeAttributes({
-          systemMode: value,
-        }).catch(this.error)
-
-        return null
       },
       report: 'systemMode',
       reportParser (value) {
@@ -129,6 +116,17 @@ class ZigBeeThermostat extends ZigBeeDevice {
 
         return value
       },
+    })
+
+    this.registerCapabilityListener('my_thermostat_mode', async value => {
+
+      this.log('systemMode set')
+      this.log(value)
+
+      this.isNotAwayValue = true
+      return this.zclNode.endpoints[1].clusters.thermostat.writeAttributes({
+        systemMode: value,
+      })
     })
   }
 
@@ -343,11 +341,11 @@ class ZigBeeThermostat extends ZigBeeDevice {
 
   _listenOnOff () {
 
-    this.registerCapabilityListener('onoff', isOn => {
+    this.registerCapabilityListener('onoff', async isOn => {
 
-      this._thermostatCluster().writeAttributes({
+      return this._thermostatCluster().writeAttributes({
         systemMode: isOn ? 'heat' : 'off',
-      }).catch(this.error)
+      })
     })
   }
 

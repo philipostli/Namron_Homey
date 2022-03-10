@@ -163,5 +163,11 @@
   },
   "2.2.28": {
     "en": "Updated the hysteresis of thermostat."
+  },
+  "2.2.29": {
+    "en": "Updated electric heater."
+  },
+  "2.2.30": {
+    "en": "Updated electric heater."
   }
 }

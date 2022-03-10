@@ -1,5 +1,6 @@
 'use strict'
 
+const Homey = require('homey')
 const moment = require('moment-timezone')
 const DateTime = require('silly-datetime')
 const { ZigBeeDevice } = require('homey-zigbeedriver')
@@ -91,11 +92,11 @@ class ZG9093ADevice extends ZigBeeDevice {
   async _setUpSystemCapabilities () {
 
     // onoff
-    this.registerCapabilityListener('onoff', isOn => {
+    this.registerCapabilityListener('onoff', async isOn => {
 
-      this._thermostatCluster().writeAttributes({
+      return this._thermostatCluster().writeAttributes({
         systemMode: isOn ? 'heat' : 'off',
-      }).catch(this.error)
+      })
     })
 
     // meter_power
@@ -202,7 +203,8 @@ class ZG9093ADevice extends ZigBeeDevice {
               this.setCapabilityValue('onoff', isOn).catch(this.error)
               this.setCapabilityValue('zg9030a_modes', mode).catch(this.error)
 
-              this.log(`systemMode after occupiedHeatingSetpoint `, value, mode, isOn)
+              this.log(`systemMode after occupiedHeatingSetpoint `, value, mode,
+                isOn)
             }).
             catch(this.error)
         }
@@ -221,16 +223,15 @@ class ZG9093ADevice extends ZigBeeDevice {
           minChange: 100,
         },
       },
-      set: 'occupiedHeatingSetpoint',
-      setParser: value => {
+    })
 
-        this.log(`occupiedHeatingSetpoint setParser `, value)
-        let payload = {
-          occupiedHeatingSetpoint: value * 100,
-        }
-        this._thermostatCluster().writeAttributes(payload).catch(this.error)
-        return null
-      },
+    this.registerCapabilityListener('target_temperature', async value => {
+
+      this.log(`occupiedHeatingSetpoint setParser `, value)
+      let payload = {
+        occupiedHeatingSetpoint: value * 100,
+      }
+      return this._thermostatCluster().writeAttributes(payload)
     })
   }
 
@@ -294,17 +295,12 @@ class ZG9093ADevice extends ZigBeeDevice {
   _setUpModesCapability () {
 
     this.registerCapability('zg9030a_modes', CLUSTER.THERMOSTAT, {
-      get: 'systemMode', getOpts: {
+      get: 'systemMode',
+      getOpts: {
         getOnStart: true, getOnOnline: true, pollInterval: 60 * 60 * 1000, // unit ms, 5 minutes
-      }, set: 'systemMode', setParser: value => {
-
-        this.log(`systemMode set `, value)
-        let payload = {
-          systemMode: value,
-        }
-        this._thermostatCluster().writeAttributes(payload).catch(this.error)
-        return null
-      }, report: 'systemMode', reportParser: value => {
+      },
+      report: 'systemMode',
+      reportParser: value => {
 
         // Refresh onoff
         let isOn = value != 'off'
@@ -332,6 +328,15 @@ class ZG9093ADevice extends ZigBeeDevice {
         this.log(`systemMode report `, value)
         return value
       },
+    })
+
+    this.registerCapabilityListener('zg9030a_modes', async value => {
+
+      this.log(`systemMode set `, value)
+      let payload = {
+        systemMode: value,
+      }
+      return this._thermostatCluster().writeAttributes(payload)
     })
   }
 
