@@ -360,7 +360,7 @@ class ZigBeeThermostat extends ZigBeeDevice {
         CLUSTER.METERING)].clusters[CLUSTER.METERING.NAME].readAttributes(
         'multiplier', 'divisor')
       // this.log('multiplier ' + multiplier + ", divisor " + divisor)
-      let meterFactory = 3600000
+      let meterFactory = 0.1
       if (multiplier > 0 && divisor > 0) {
         meterFactory = multiplier / divisor
       }
@@ -369,16 +369,15 @@ class ZigBeeThermostat extends ZigBeeDevice {
         get: 'currentSummationDelivered',
         report: 'currentSummationDelivered',
         reportParser: value => value * meterFactory,
-        getParser: value => value * meterFactory,
         getOpts: {
           getOnStart: true,
           pollInterval: 60 * 60 * 1000,
         },
         reportOpts: {
           configureAttributeReporting: {
-            minInterval: 300, // Minimally once every 5 minutes
-            maxInterval: 60000, // Maximally once every ~16 hours
-            minChange: 0.01 / meterFactory,
+            minInterval: 0,
+            maxInterval: 3600,
+            minChange: 0.2 / meterFactory,
           },
         },
       })
@@ -386,25 +385,26 @@ class ZigBeeThermostat extends ZigBeeDevice {
 
     if (this.hasCapability('measure_power')) {
 
-      // const {
-      //   acPowerMultiplier,
-      //   acPowerDivisor,
-      // } = await this.zclNode.endpoints[this.getClusterEndpoint(
-      //   CLUSTER.ELECTRICAL_MEASUREMENT)].clusters[CLUSTER.ELECTRICAL_MEASUREMENT.NAME].readAttributes(
-      //   'acPowerMultiplier', 'acPowerDivisor')
-      // // this.log('acPowerMultiplier ' + acPowerMultiplier + ", acPowerDivisor " + acPowerDivisor)
-      // let measureFactory = 0.1
-      // if (acPowerMultiplier > 0 && acPowerDivisor > 0) {
-      //   measureFactory = acPowerMultiplier / acPowerDivisor
-      // }
+      /*
+      const {
+        acPowerMultiplier,
+        acPowerDivisor,
+      } = await this.zclNode.endpoints[this.getClusterEndpoint(
+        CLUSTER.ELECTRICAL_MEASUREMENT)].clusters[CLUSTER.ELECTRICAL_MEASUREMENT.NAME].readAttributes(
+        'acPowerMultiplier', 'acPowerDivisor')
+      // this.log('acPowerMultiplier ' + acPowerMultiplier + ", acPowerDivisor " + acPowerDivisor)
+      let measureFactory = 0.1
+      if (acPowerMultiplier > 0 && acPowerDivisor > 0) {
+        measureFactory = acPowerMultiplier / acPowerDivisor
+      }
 
-      // this.log(`acpower `, measureFactory, acPowerMultiplier, acPowerDivisor)
+      this.log(`acpower `, measureFactory, acPowerMultiplier, acPowerDivisor)
+       */
 
       this.registerCapability('measure_power', CLUSTER.ELECTRICAL_MEASUREMENT, {
         get: 'activePower',
         report: 'activePower',
         reportParser: value => {
-
           return value
         },
         getOpts: {
@@ -413,9 +413,9 @@ class ZigBeeThermostat extends ZigBeeDevice {
         },
         reportOpts: {
           configureAttributeReporting: {
-            minInterval: 300, // Minimally once every 5 seconds
-            maxInterval: 60000, // Maximally once every ~16 hours
-            minChange: 1,
+            minInterval: 0, // Minimally once every 5 seconds
+            maxInterval: 3600, // Maximally once every ~16 hours
+            minChange: 0.5,
           },
         },
       })
