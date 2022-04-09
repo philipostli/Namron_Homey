@@ -172,5 +172,8 @@
   },
   "2.2.31": {
     "en": "ZG9093A updates."
+  },
+  "2.2.32": {
+    "en": "Add support for the ZigBee thermostat."
   }
 }

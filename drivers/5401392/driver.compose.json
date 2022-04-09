@@ -1,0 +1,74 @@
+{
+  "name": {
+    "en": "5401392/93/94/95"
+  },
+  "class": "thermostat",
+  "capabilities": [
+    "onoff",
+    "measure_power",
+    "meter_power",
+    "measure_temperature",
+    "target_temperature",
+    "zg9030a_modes",
+    "zg9030a_window_open_flag",
+    "zg9030a_internal_over_heat",
+    "zg9030a_datetime"
+  ],
+  "capabilitiesOptions": {
+    "target_temperature": {
+      "min": 5,
+      "max": 35,
+      "step": 0.5
+    }
+  },
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png"
+  },
+  "zigbee": {
+    "manufacturerName": [
+      "NAMRON AS",
+      "NAMRON  AS",
+      "NAMRON As",
+      "Namron AS",
+      "Namron As",
+      "namron as"
+    ],
+    "productId": [
+      "5401392",
+      "5401393",
+      "5401394",
+      "5401395"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          513,
+          1794,
+          2820,
+          10,
+          516
+        ],
+        "bindings": [
+          513,
+          1794,
+          2820,
+          10
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Press and hold down the OK button until the Wi-Fi indicator flashes slowly.\n\nIf pairing is not started, press and hold down the OK button again."
+      }
+    }
+  }
+}
