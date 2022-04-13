@@ -1,6 +1,6 @@
 {
   "name": {
-    "en": "5401392/96 Panelovn Zigbee 400W"
+    "en": "5401395/99 Panelovn Zigbee 1000W"
   },
   "class": "thermostat",
   "capabilities": [
@@ -42,8 +42,8 @@
       "namron as"
     ],
     "productId": [
-      "5401392",
-      "5401396"
+      "5401395",
+      "5401399"
     ],
     "endpoints": {
       "1": {

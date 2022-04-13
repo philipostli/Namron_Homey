@@ -175,5 +175,8 @@
   },
   "2.2.32": {
     "en": "Add support for the ZigBee thermostat."
+  },
+  "2.2.33": {
+    "en": "Add Panelovns."
   }
 }

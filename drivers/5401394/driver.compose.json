@@ -1,6 +1,6 @@
 {
   "name": {
-    "en": "5401396/97/98/99"
+    "en": "5401394/98 Panelovn Zigbee 800W"
   },
   "class": "thermostat",
   "capabilities": [
@@ -42,10 +42,8 @@
       "namron as"
     ],
     "productId": [
-      "5401396",
-      "5401397",
-      "5401398",
-      "5401399"
+      "5401394",
+      "5401398"
     ],
     "endpoints": {
       "1": {

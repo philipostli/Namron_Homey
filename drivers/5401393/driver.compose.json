@@ -1,6 +1,6 @@
 {
   "name": {
-    "en": "ZG9093A"
+    "en": "5401393/97 Panelovn Zigbee 600W"
   },
   "class": "thermostat",
   "capabilities": [
@@ -39,11 +39,11 @@
       "NAMRON As",
       "Namron AS",
       "Namron As",
-      "namron as",
-      "Sunricher"
+      "namron as"
     ],
     "productId": [
-      "ZG9093A"
+      "5401393",
+      "5401397"
     ],
     "endpoints": {
       "1": {
