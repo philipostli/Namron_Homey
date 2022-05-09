@@ -34,8 +34,8 @@
     "small": "/assets/images/small.png"
   },
   "author": {
-    "name": "jorgen wist",
-    "email": "jorgen.wist@namron.com"
+    "name": "Pål Hefre",
+    "email": "pal.hefre@namron.com"
   },
   "contributors": {
     "developers": [
@@ -54,10 +54,10 @@
     ]
   },
   "bugs": {
-    "url": "https://github.com/easyhomesrc/homey_namronas/issues"
+    "url": "https://github.com/NamronAS/Namron_Homey/issues"
   },
-  "source": "https://github.com/easyhomesrc/homey_namronas.git",
-  "support": "https://github.com/easyhomesrc/homey_namronas.git",
+  "source": "https://github.com/NamronAS/Namron_Homey.git",
+  "support": "https://github.com/NamronAS/Namron_Homey.git",
   "flow": {
     "triggers": [
       {
