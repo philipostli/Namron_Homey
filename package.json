@@ -7,8 +7,8 @@
   },
   "dependencies": {
     "homey-log": "^2.0.1",
-    "homey-zigbeedriver": "^1.6.10",
-    "homey-zwavedriver": "^2.1.8",
+    "homey-zigbeedriver": "^1.6.11",
+    "homey-zwavedriver": "^2.1.10",
     "moment-timezone": "^0.5.34",
     "silly-datetime": "^0.1.2",
     "zigbee-clusters": "^1.4.0"

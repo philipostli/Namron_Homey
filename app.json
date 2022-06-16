@@ -35,8 +35,8 @@
     "small": "/assets/images/small.png"
   },
   "author": {
-    "name": "jorgen wist",
-    "email": "jorgen.wist@namron.com"
+    "name": "Pål Hefre",
+    "email": "pal.hefre@namron.com"
   },
   "contributors": {
     "developers": [
@@ -55,10 +55,10 @@
     ]
   },
   "bugs": {
-    "url": "https://github.com/easyhomesrc/homey_namronas/issues"
+    "url": "https://github.com/NamronAS/Namron_Homey/issues"
   },
-  "source": "https://github.com/easyhomesrc/homey_namronas.git",
-  "support": "https://github.com/easyhomesrc/homey_namronas.git",
+  "source": "https://github.com/NamronAS/Namron_Homey.git",
+  "support": "https://github.com/NamronAS/Namron_Homey.git",
   "flow": {
     "triggers": [
       {
@@ -13500,6 +13500,109 @@
     },
     {
       "name": {
+        "en": "4512735 - Zigbee Smart Outlet"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "small": "/drivers/4512735/assets/images/small.png",
+        "large": "/drivers/4512735/assets/images/large.png"
+      },
+      "zigbee": {
+        "manufacturerName": "NAMRON AS",
+        "productId": [
+          "4512735"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              6
+            ],
+            "bindings": []
+          },
+          "2": {
+            "clusters": [
+              6
+            ],
+            "bindings": []
+          },
+          "3": {
+            "clusters": [
+              6
+            ],
+            "bindings": []
+          },
+          "4": {
+            "clusters": [
+              6
+            ],
+            "bindings": []
+          },
+          "5": {
+            "clusters": [
+              6
+            ],
+            "bindings": []
+          }
+        },
+        "devices": {
+          "secondOutlet": {
+            "class": "socket",
+            "capabilities": [
+              "onoff"
+            ],
+            "name": {
+              "en": "4512735 - Second Outlet"
+            }
+          },
+          "thirdOutlet": {
+            "class": "socket",
+            "capabilities": [
+              "onoff"
+            ],
+            "name": {
+              "en": "4512735 - Third Outlet"
+            }
+          },
+          "fourthOutlet": {
+            "class": "socket",
+            "capabilities": [
+              "onoff"
+            ],
+            "name": {
+              "en": "4512735 - Fourth Outlet"
+            }
+          },
+          "usb": {
+            "class": "socket",
+            "capabilities": [
+              "onoff"
+            ],
+            "name": {
+              "en": "4512735 - USB"
+            }
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/4512735/assets/learnmode.svg",
+          "instruction": {
+            "en": "Short press OnOff button 5 times quickly."
+          }
+        }
+      },
+      "id": "4512735"
+    },
+    {
+      "name": {
         "en": "4512737/38 - Zigbee Thermostat Touch"
       },
       "class": "thermostat",
@@ -13864,6 +13967,144 @@
           ]
         }
       ]
+    },
+    {
+      "name": {
+        "en": "4512747 - Zigbee Curtain"
+      },
+      "class": "windowcoverings",
+      "capabilities": [
+        "windowcoverings_set",
+        "windowcoverings_state",
+        "windowcoverings_tilt_set"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "small": "/drivers/4512747/assets/images/small.png",
+        "large": "/drivers/4512747/assets/images/large.png"
+      },
+      "zigbee": {
+        "manufacturerName": "NAMRON AS",
+        "productId": [
+          "4512747"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              6,
+              8,
+              258
+            ],
+            "bindings": []
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/4512747/assets/learnmode.svg",
+          "instruction": {
+            "en": "Short press K2 button for 5 times quickly or reset power of the device for 5 times quickly.\n\nIf pairing fails reset the device. Short press K2 button for 5 times quickly or reset power of the device for 5 times quickly."
+          }
+        }
+      },
+      "id": "4512747"
+    },
+    {
+      "name": {
+        "en": "4512748 - Z-Wave Curtain"
+      },
+      "class": "windowcoverings",
+      "capabilities": [
+        "windowcoverings_set"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "images": {
+        "small": "/drivers/4512748/assets/images/small.png",
+        "large": "/drivers/4512748/assets/images/large.png"
+      },
+      "zwave": {
+        "security": [
+          "none"
+        ],
+        "manufacturerId": [
+          1080
+        ],
+        "productTypeId": [
+          4
+        ],
+        "productId": [
+          53261
+        ],
+        "learnmode": {
+          "image": "/drivers/4512748/assets/learnmode.svg",
+          "instruction": {
+            "en": "Triple press the K2 button on the device."
+          }
+        }
+      },
+      "id": "4512748"
+    },
+    {
+      "name": {
+        "en": "4512749 - Zigbee Wall Plug"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "measure_power",
+        "meter_power",
+        "measure_temperature"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "small": "/drivers/4512749/assets/images/small.png",
+        "large": "/drivers/4512749/assets/images/large.png",
+        "xlarge": "/drivers/4512749/assets/images/xlarge.png"
+      },
+      "zigbee": {
+        "manufacturerName": "NAMRON AS",
+        "productId": [
+          "4512749"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              6,
+              1026,
+              1794,
+              2820
+            ],
+            "bindings": [
+              1026,
+              1794,
+              2820
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/4512749/assets/learnmode.svg",
+          "instruction": {
+            "en": "Short press Program button 5 times quickly."
+          }
+        }
+      },
+      "id": "4512749"
     },
     {
       "name": {

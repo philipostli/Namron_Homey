@@ -1,0 +1,107 @@
+{
+  "name": {
+    "en": "4512735 - Zigbee Smart Outlet"
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff"
+  ],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png"
+  },
+  "zigbee": {
+    "manufacturerName": "NAMRON AS",
+    "productId": [
+      "4512735"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          6
+        ],
+        "bindings": [
+        ]
+      },
+      "2": {
+        "clusters": [
+          6
+        ],
+        "bindings": [
+        ]
+      },
+      "3": {
+        "clusters": [
+          6
+        ],
+        "bindings": [
+        ]
+      },
+      "4": {
+        "clusters": [
+          6
+        ],
+        "bindings": [
+        ]
+      },
+      "5": {
+        "clusters": [
+          6
+        ],
+        "bindings": [
+        ]
+      }
+    },
+    "devices": {
+      "secondOutlet": {
+        "class": "socket",
+        "capabilities": [
+          "onoff"
+        ],
+        "name": {
+          "en": "4512735 - Second Outlet"
+        }
+      },
+      "thirdOutlet": {
+        "class": "socket",
+        "capabilities": [
+          "onoff"
+        ],
+        "name": {
+          "en": "4512735 - Third Outlet"
+        }
+      },
+      "fourthOutlet": {
+        "class": "socket",
+        "capabilities": [
+          "onoff"
+        ],
+        "name": {
+          "en": "4512735 - Fourth Outlet"
+        }
+      },
+      "usb": {
+        "class": "socket",
+        "capabilities": [
+          "onoff"
+        ],
+        "name": {
+          "en": "4512735 - USB"
+        }
+      }
+    },
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Short press OnOff button 5 times quickly."
+      }
+    }
+  }
+}
