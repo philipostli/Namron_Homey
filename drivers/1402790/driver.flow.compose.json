@@ -1,0 +1,26 @@
+{
+  "triggers": [
+    {
+      "id": "alarm_dry_cooking_true",
+      "title": {
+        "en": "Dry cooking detected",
+        "no": "Tørrkoking detektert"
+      },
+      "titleFormatted": {
+        "en": "Dry cooking detected",
+        "no": "Tørrkoking detektert"
+      }
+    },
+    {
+      "id": "alarm_dry_cooking_false",
+      "title": {
+        "en": "Dry cooking restored",
+        "no": "Tørrkoking avverget"
+      },
+      "titleFormatted": {
+        "en": "Dry cooking restored",
+        "no": "Tørrkoking avverget"
+      }
+    }
+  ]
+}

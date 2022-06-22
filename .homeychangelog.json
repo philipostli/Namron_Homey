@@ -178,5 +178,8 @@
   },
   "2.2.33": {
     "en": "Add Panelovns."
+  },
+  "2.2.34": {
+    "en": "Added support for new devices, added Cloud support to 4512737"
   }
 }
