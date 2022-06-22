@@ -15,9 +15,7 @@
     "my_thermostat_room_sensor",
     "my_thermostat_floor_sensor"
   ],
-  "platforms": [
-    "local"
-  ],
+  "platforms": ["local", "cloud"],
   "connectivity": [
     "zigbee"
   ],
