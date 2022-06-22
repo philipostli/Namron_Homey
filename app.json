@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "net.filllip-namron",
-  "version": "2.2.35",
+  "version": "2.2.36",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
@@ -1485,42 +1485,6 @@
           }
         ],
         "id": "sr_white_moved_g4"
-      },
-      {
-        "id": "alarm_dry_cooking_true",
-        "title": {
-          "en": "Dry cooking detected",
-          "no": "Tørrkoking detektert"
-        },
-        "titleFormatted": {
-          "en": "Dry cooking detected",
-          "no": "Tørrkoking detektert"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=1402790"
-          }
-        ]
-      },
-      {
-        "id": "alarm_dry_cooking_false",
-        "title": {
-          "en": "Dry cooking restored",
-          "no": "Tørrkoking avverget"
-        },
-        "titleFormatted": {
-          "en": "Dry cooking restored",
-          "no": "Tørrkoking avverget"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=1402790"
-          }
-        ]
       },
       {
         "id": "4512701_on",
@@ -5802,6 +5766,38 @@
                 }
               }
             ]
+          }
+        ]
+      },
+      {
+        "id": "alarm_dry_cooking_true",
+        "title": {
+          "en": "Dry cooking detected"
+        },
+        "titleFormatted": {
+          "en": "Dry cooking detected"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=firefence"
+          }
+        ]
+      },
+      {
+        "id": "alarm_dry_cooking_false",
+        "title": {
+          "en": "Dry cooking restored"
+        },
+        "titleFormatted": {
+          "en": "Dry cooking restored"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=firefence"
           }
         ]
       }
@@ -10842,128 +10838,6 @@
               "type": "checkbox"
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "1402790",
-      "name": {
-        "en": "1402790/91/92/93/94/95 - Namron Smart Stove Guard",
-        "no": "1402790/91/92/93/94/95 - Namron Smart Komfyrvakt"
-      },
-      "class": "socket",
-      "capabilities": [
-        "onoff",
-        "alarm_dry_cooking",
-        "meter_power",
-        "measure_power",
-        "measure_temperature",
-        "measure_battery"
-      ],
-      "capabilitiesOptions": {
-        "onoff": {
-          "setOnDim": false
-        },
-        "dim": {
-          "opts": {
-            "duration": true
-          }
-        },
-        "measure_power": {
-          "isApproximated": true
-        }
-      },
-      "energy": {
-        "batteries": [
-          "AAA",
-          "AAA",
-          "AAA"
-        ]
-      },
-      "icon": "/drivers/1402790/assets/icon.svg",
-      "images": {
-        "large": "/drivers/1402790/assets/images/large.png",
-        "small": "/drivers/1402790/assets/images/small.png"
-      },
-      "platforms": [
-        "local",
-        "cloud"
-      ],
-      "connectivity": [
-        "zigbee"
-      ],
-      "zigbee": {
-        "manufacturerName": [
-          "Brun Holding",
-          "NAMRON AS",
-          "NAMRON  AS",
-          "NAMRON As",
-          "Namron AS",
-          "Namron As",
-          "namron as"
-        ],
-        "productId": [
-          "Power Control Unit",
-          "1402790",
-          "1402791",
-          "1402792",
-          "1402793",
-          "1402794",
-          "1402795"
-        ],
-        "endpoints": {
-          "1": {
-            "clusters": [
-              6,
-              1794,
-              2820
-            ],
-            "bindings": []
-          },
-          "2": {
-            "clusters": [
-              1,
-              1026
-            ],
-            "bindings": []
-          }
-        },
-        "learnmode": {
-          "image": "/drivers/1402790/assets/learnmode.svg",
-          "instruction": {
-            "en": "Open the service menu by pressing the down button. Using the arrow keys navigate to \"Activation\" and select with the green button. Make sure \"ZB Pairing\" is set to ON with the green button.",
-            "no": "Gå til service menyen ved å trykke pil ned. Ved bruk av piltastene naviger deg til \"Activation\" og trykk på grønn knapp. Sørg for at \"ZB Pairing\" er satt til ON med den grønne knappen."
-          }
-        }
-      },
-      "settings": [
-        {
-          "id": "dry_cooking_temp_threshold",
-          "type": "number",
-          "label": {
-            "en": "Dry cooking temperature threshold",
-            "no": "Tørrkokingstemperaturterskel"
-          },
-          "value": 50,
-          "min": 45,
-          "max": 150,
-          "units": {
-            "en": "°C"
-          }
-        },
-        {
-          "id": "dry_cooking_time_threshold",
-          "type": "number",
-          "label": {
-            "en": "Dry cooking time threshold",
-            "no": "Tørrkoketidsterskel"
-          },
-          "value": 30,
-          "min": 30,
-          "max": 150,
-          "units": {
-            "en": "minutes"
-          }
         }
       ]
     },
@@ -17270,6 +17144,98 @@
           }
         }
       }
+    },
+    {
+      "class": "socket",
+      "name": {
+        "en": "1402790"
+      },
+      "capabilities": [
+        "onoff",
+        "alarm_dry_cooking",
+        "meter_power",
+        "measure_power",
+        "measure_temperature",
+        "measure_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "AAA",
+          "AAA",
+          "AAA"
+        ]
+      },
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "xlarge": "/drivers/firefence/assets/images/xlarge.png",
+        "large": "/drivers/firefence/assets/images/large.png",
+        "small": "/drivers/firefence/assets/images/small.png"
+      },
+      "icon": "/drivers/firefence/assets/icon.svg",
+      "zigbee": {
+        "manufacturerName": "Brun Holding",
+        "productId": [
+          "Power Control Unit"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              6,
+              1794,
+              2820
+            ],
+            "bindings": []
+          },
+          "2": {
+            "clusters": [
+              1,
+              1026
+            ],
+            "bindings": []
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/firefence/assets/learnmode.svg",
+          "instruction": {
+            "en": "Open the service menu by pressing the down button. Using the arrow keys navigate to \"Activation\" and select with the green button. Make sure \"ZB Pairing\" is set to ON with the green button."
+          }
+        }
+      },
+      "id": "firefence",
+      "settings": [
+        {
+          "id": "dry_cooking_temp_threshold",
+          "type": "number",
+          "label": {
+            "en": "Dry cooking temperature threshold"
+          },
+          "value": 50,
+          "min": 45,
+          "max": 150,
+          "units": {
+            "en": "°C"
+          }
+        },
+        {
+          "id": "dry_cooking_time_threshold",
+          "type": "number",
+          "label": {
+            "en": "Dry cooking time threshold"
+          },
+          "value": 30,
+          "min": 30,
+          "max": 150,
+          "units": {
+            "en": "minutes"
+          }
+        }
+      ]
     }
   ],
   "capabilities": {
