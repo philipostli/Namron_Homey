@@ -1,0 +1,51 @@
+{
+  "name": {
+    "en": "4512749 - Zigbee Wall Plug"
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff",
+    "measure_power",
+    "meter_power",
+    "measure_temperature"
+  ],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "zigbee": {
+    "manufacturerName": "NAMRON AS",
+    "productId": [
+      "4512749"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          6,
+          1026,
+          1794,
+          2820
+        ],
+        "bindings": [
+          1026,
+          1794,
+          2820
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Short press Program button 5 times quickly."
+      }
+    }
+  }
+}
