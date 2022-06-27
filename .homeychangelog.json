@@ -187,5 +187,8 @@
   },
   "2.2.36": {
     "en": "Added support for Namron Stove Guard"
+  },
+  "2.2.37": {
+    "en": "Added support for TypeScript drivers, updated Stove Guard Support"
   }
 }
