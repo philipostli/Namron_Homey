@@ -15,11 +15,11 @@
       "id": "alarm_dry_cooking_false",
       "title": {
         "en": "Dry cooking restored",
-        "no": "Tørrkoking avverget"
+        "no": "Ingen tørrkoking detektert"
       },
       "titleFormatted": {
         "en": "Dry cooking restored",
-        "no": "Tørrkoking avverget"
+        "no": "Ingen tørrkoking detektert"
       }
     }
   ]

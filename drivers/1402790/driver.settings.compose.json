@@ -10,7 +10,8 @@
     "min": 45,
     "max": 150,
     "units": {
-      "en": "°C"
+      "en": "°C",
+      "no": "°C"
     }
   },
   {
@@ -24,7 +25,8 @@
     "min": 30,
     "max": 150,
     "units": {
-      "en": "minutes"
+      "en": "minutes",
+      "no": "minutter"
     }
   }
 ]

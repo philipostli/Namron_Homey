@@ -1,6 +1,6 @@
 {
   "type":  "boolean",
-  "title": { "en": "Dry cooking" },
+  "title": { "en": "Dry cooking", "no": "Tørrkoking" },
   "getable": true,
   "setable": false,
   "uiComponent": "sensor",

@@ -1,10 +1,9 @@
 {
-  "id": "1402790",
-  "name": {
-    "en": "1402790/91/92/93/94/95 - Namron Smart Stove Guard",
-    "no": "1402790/91/92/93/94/95 - Namron Smart Komfyrvakt"
-  },
   "class": "socket",
+  "name": {
+    "en": "Namron Stove Guard",
+    "no": "Namron Komfyrvakt"
+  },
   "capabilities": [
     "onoff",
     "alarm_dry_cooking",
@@ -13,19 +12,6 @@
     "measure_temperature",
     "measure_battery"
   ],
-  "capabilitiesOptions": {
-    "onoff": {
-      "setOnDim": false
-    },
-    "dim": {
-      "opts": {
-        "duration": true
-      }
-    },
-    "measure_power": {
-      "isApproximated": true
-    }
-  },
   "energy": {
     "batteries": [
       "AAA",
@@ -33,31 +19,24 @@
       "AAA"
     ]
   },
-  "icon": "/drivers/1402790/assets/icon.svg",
-  "images": {
-    "large": "/drivers/1402790/assets/images/large.png",
-    "small": "/drivers/1402790/assets/images/small.png"
-  },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zigbee"],
+  "platforms": [
+  "local",
+  "cloud"
+],
+"connectivity": [
+  "zigbee"
+],
+"images": {
+  "xlarge": "{{driverAssetsPath}}/images/xlarge.png",
+  "large": "{{driverAssetsPath}}/images/large.png",
+  "small": "{{driverAssetsPath}}/images/small.png"
+},
+"icon": "{{driverAssetsPath}}/icon.svg",
+
   "zigbee": {
-    "manufacturerName": [
-      "Brun Holding",
-      "NAMRON AS",
-      "NAMRON  AS",
-      "NAMRON As",
-      "Namron AS",
-      "Namron As",
-      "namron as"
-    ],
+    "manufacturerName": "Brun Holding",
     "productId": [
-      "Power Control Unit",
-      "1402790",
-      "1402791",
-      "1402792",
-      "1402793",
-      "1402794",
-      "1402795"
+      "Power Control Unit"
     ],
     "endpoints": {
       "1": {
@@ -80,7 +59,7 @@
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Open the service menu by pressing the down button. Using the arrow keys navigate to \"Activation\" and select with the green button. Make sure \"ZB Pairing\" is set to ON with the green button.",
-        "no": "Gå til service menyen ved å trykke pil ned. Ved bruk av piltastene naviger deg til \"Activation\" og trykk på grønn knapp. Sørg for at \"ZB Pairing\" er satt til ON med den grønne knappen."
+        "no": "Gå til service menyen ved å trykke på pil ned knappen. Bruk pilknappene til å navigere deg frem til \"Activation\" og trykk på den grønne knappen. Pass på at \"ZB Pairing\" er satt til \"ON\" ved å trykke på den grønne knappen."
       }
     }
   }
