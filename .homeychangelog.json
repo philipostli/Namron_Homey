@@ -190,5 +190,8 @@
   },
   "2.2.37": {
     "en": "Added support for TypeScript drivers, updated Stove Guard Support"
+  },
+  "2.2.38": {
+    "en": "Update Stove Guard Driver to use only one Zigbee Endpoint"
   }
 }
