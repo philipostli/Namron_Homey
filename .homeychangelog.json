@@ -178,5 +178,20 @@
   },
   "2.2.33": {
     "en": "Add Panelovns."
+  },
+  "2.2.34": {
+    "en": "Added support for new devices, added Cloud support to 4512737"
+  },
+  "2.2.35": {
+    "en": "Added support for Namron Stove Guard"
+  },
+  "2.2.36": {
+    "en": "Added support for Namron Stove Guard"
+  },
+  "2.2.37": {
+    "en": "Added support for TypeScript drivers, updated Stove Guard Support"
+  },
+  "2.2.38": {
+    "en": "Update Stove Guard Driver to use only one Zigbee Endpoint"
   }
 }

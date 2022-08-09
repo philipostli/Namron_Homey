@@ -1,0 +1,61 @@
+{
+  "class": "socket",
+  "name": {
+    "en": "140279* - Namron Stove Guard",
+    "no": "140279* - Namron Komfyrvakt"
+  },
+  "capabilities": [
+    "onoff",
+    "alarm_dry_cooking",
+    "meter_power",
+    "measure_power",
+    "measure_temperature",
+    "measure_battery"
+  ],
+  "energy": {
+    "batteries": [
+      "AAA",
+      "AAA",
+      "AAA"
+    ]
+  },
+  "platforms": [
+  "local",
+  "cloud"
+],
+"connectivity": [
+  "zigbee"
+],
+"images": {
+  "xlarge": "{{driverAssetsPath}}/images/xlarge.png",
+  "large": "{{driverAssetsPath}}/images/large.png",
+  "small": "{{driverAssetsPath}}/images/small.png"
+},
+"icon": "{{driverAssetsPath}}/icon.svg",
+
+  "zigbee": {
+    "manufacturerName": "NAMRON AS",
+    "productId": [
+      "1402790"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          1,
+          6,
+          1026,
+          1794,
+          2820
+        ],
+        "bindings": []
+      }
+    },
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Open the service menu by pressing the down button. Using the arrow keys navigate to \"Activation\" and select with the green button. Make sure \"ZB Pairing\" is set to ON with the green button.",
+        "no": "Gå til service menyen ved å trykke på pil ned knappen. Bruk pilknappene til å navigere deg frem til \"Activation\" og trykk på den grønne knappen. Pass på at \"ZB Pairing\" er satt til \"ON\" ved å trykke på den grønne knappen."
+      }
+    }
+  }
+}
