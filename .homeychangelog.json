@@ -193,5 +193,11 @@
   },
   "2.2.38": {
     "en": "Update Stove Guard Driver to use only one Zigbee Endpoint"
+  },
+  "2.2.39": {
+    "en": "Added support for new devices. Panel heaters, Stove Guard, Zigbee Thermostat plug and zigbee/z-wave window coverong controls"
+  },
+  "2.2.40": {
+    "en": "Fixed unhandled promise rejections"
   }
 }
