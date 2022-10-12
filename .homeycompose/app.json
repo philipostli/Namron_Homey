@@ -58,7 +58,7 @@
     "url": "https://github.com/NamronAS/Namron_Homey/issues"
   },
   "source": "https://github.com/NamronAS/Namron_Homey.git",
-  "support": "https://github.com/NamronAS/Namron_Homey.git",
+  "support": "https://github.com/NamronAS/Namron_Homey/issues",
   "flow": {
     "triggers": [
       {
