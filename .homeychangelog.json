@@ -199,5 +199,7 @@
   },
   "2.2.40": {
     "en": "Fixed unhandled promise rejections"
-  }
+  },
+  "2.2.50": {
+    "en": "Added new Namron Devices - New dimmers and thermostat"
 }
