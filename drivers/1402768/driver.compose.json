@@ -1,4 +1,4 @@
-{ 
+{
   "id": "1402768",
   "name": {
     "en": "1402768 - TW Dimmer(ZigBee)"
@@ -19,6 +19,8 @@
       "usageOff": 1
     }
   },
+  "platforms": ["local", "cloud"],
+  "connectivity": ["zigbee"],
   "zigbee": {
     "manufacturerName": [
       "NAMRON AS",
@@ -44,7 +46,7 @@
           768],
         "bindings": [6, 8, 0]
       }
-    }, 
+    },
     "learnmode": {
       "instruction": {
         "en": "To Include, quick press Config Button for two times."

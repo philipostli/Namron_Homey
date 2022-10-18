@@ -397,8 +397,8 @@
           "en": "Local Temperature Calibration"
         },
         "value": 0,
-        "min": -25,
-        "max": 25,
+        "min": -49,
+        "max": 49,
         "units": {
           "en": "0.1℃"
         }

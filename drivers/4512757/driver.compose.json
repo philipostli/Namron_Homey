@@ -3,6 +3,8 @@
   "name": {
     "en": "4512757 - Zwave Thermostat"
   },
+  "platforms": ["local", "cloud"],
+  "connectivity": ["zwave"],
   "zwave": {
     "manufacturerId": 1080,
     "productTypeId": 4,
@@ -35,14 +37,14 @@
     "large": "/drivers/4512757/assets/images/large.png",
     "xlarge": "/drivers/4512757/assets/images/xlarge.png"
   },
-  "capabilities": [   
+  "capabilities": [
     "onoff",
     "app_reset",
-    "target_temperature", 
-    "measure_temperature", 
+    "target_temperature",
+    "measure_temperature",
     "regulator_percentage",
     "measure_power",
-    "meter_power", 
+    "meter_power",
     "alarm_generic",
 
     "eco_mode",
@@ -50,15 +52,15 @@
     "frost",
     "regulator",
 
-    "app_thermostat_mode",    
+    "app_thermostat_mode",
 
     "button.calibrate",
     "button.reset_meter"
   ],
   "energy": {
     "approximation": {
-      "usageOn": 5,  
-      "usageOff": 1  
+      "usageOn": 5,
+      "usageOff": 1
     }
   },
   "capabilitiesOptions": {
@@ -74,6 +76,6 @@
     },
     "measure_power": {
       "approximated": true
-    } 
-  }  
+    }
+  }
 }
