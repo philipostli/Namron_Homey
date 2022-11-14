@@ -10935,6 +10935,13 @@
           "usageOff": 1
         }
       },
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
       "zigbee": {
         "manufacturerName": [
           "NAMRON AS",
@@ -14370,10 +14377,92 @@
       "id": "4512749"
     },
     {
+      "id": "4512750",
+      "name": {
+        "en": "4512750 - Namron Zigbee LED Dimmer 2.0"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": true
+        },
+        "capabilitiesOptions": {
+          "measure_power": {
+            "isApproximated": true
+          }
+        }
+      },
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": [
+          "NAMRON AS",
+          "NAMRON  AS",
+          "NAMRON As",
+          "Namron AS",
+          "Namron As",
+          "namron as",
+          "Shyugj",
+          "_TZ3000_pmdekgjg"
+        ],
+        "productId": [
+          "TS1101"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              3,
+              4,
+              5,
+              6,
+              8
+            ],
+            "bindings": [
+              6,
+              8
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/4512750/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press the dim wheel 7 times when dimmer in ON to enter pairing mode. A blue LED will flash. \n\nIf pairing does not start after 20 seconds, reset the device by pressing 10 times on the dimming wheel when dimmer is ON."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/4512750/assets/images/large.png",
+        "small": "/drivers/4512750/assets/images/small.png"
+      },
+      "settings": []
+    },
+    {
       "id": "4512757",
       "name": {
         "en": "4512757 - Zwave Thermostat"
       },
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
       "zwave": {
         "manufacturerId": 1080,
         "productTypeId": 4,
@@ -15322,8 +15411,8 @@
                 "en": "Local Temperature Calibration"
               },
               "value": 0,
-              "min": -25,
-              "max": 25,
+              "min": -49,
+              "max": 49,
               "units": {
                 "en": "0.1℃"
               }
@@ -15834,8 +15923,8 @@
                 "en": "Local Temperature Calibration"
               },
               "value": 0,
-              "min": -25,
-              "max": 25,
+              "min": -49,
+              "max": 49,
               "units": {
                 "en": "0.1℃"
               }
@@ -16346,8 +16435,8 @@
                 "en": "Local Temperature Calibration"
               },
               "value": 0,
-              "min": -50,
-              "max": 50,
+              "min": -49,
+              "max": 49,
               "units": {
                 "en": "0.1℃"
               }
@@ -16858,8 +16947,8 @@
                 "en": "Local Temperature Calibration"
               },
               "value": 0,
-              "min": -25,
-              "max": 25,
+              "min": -49,
+              "max": 49,
               "units": {
                 "en": "0.1℃"
               }
