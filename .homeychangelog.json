@@ -205,5 +205,8 @@
   },
   "2.2.52": {
     "en": "Added new Dimmer Device - 4512750/51 - Namron LED Dimmer 2.0"
+  },
+  "2.2.53": {
+    "en": "Added new Dimmer Device - 4512750/51 - Namron LED Dimmer 2.0, Fixed some device images."
   }
 }
