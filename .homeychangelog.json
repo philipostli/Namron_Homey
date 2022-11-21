@@ -208,5 +208,11 @@
   },
   "2.2.53": {
     "en": "Added new Dimmer Device - 4512750/51 - Namron LED Dimmer 2.0, Fixed some device images."
+  },
+  "2.2.54": {
+    "en": "Updated device class from light to socket on relay devices to give some more options. Added test to fix kWh reporting on 1402756."
+  },
+  "2.2.55": {
+    "en": "Updated device class on relay devices from light to socket to give some more options. Added a test to fix kWh reporting on 1402756."
   }
 }
