@@ -3,7 +3,7 @@
   "name": {
     "en": "4512715 - Z-Wave Switch"
   },
-  "class": "light",
+  "class": "socket",
   "capabilities": [
     "onoff"
   ],
