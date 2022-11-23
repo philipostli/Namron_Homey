@@ -21,6 +21,7 @@
       "step": 0.5
     }
   },
+  "deprecated": true,
   "platforms": [
     "local",
     "cloud"

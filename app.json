@@ -4807,7 +4807,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4"
+            "filter": "driver_id=ZW_Remote_4_old"
           }
         ]
       },
@@ -4820,7 +4820,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4"
+            "filter": "driver_id=ZW_Remote_4_old"
           }
         ]
       },
@@ -4833,7 +4833,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4"
+            "filter": "driver_id=ZW_Remote_4_old"
           }
         ]
       },
@@ -4846,7 +4846,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4"
+            "filter": "driver_id=ZW_Remote_4_old"
           }
         ]
       },
@@ -4859,7 +4859,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4"
+            "filter": "driver_id=ZW_Remote_4_old"
           }
         ]
       },
@@ -4872,7 +4872,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4"
+            "filter": "driver_id=ZW_Remote_4_old"
           }
         ]
       },
@@ -4888,7 +4888,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4"
+            "filter": "driver_id=ZW_Remote_4_old"
           },
           {
             "name": "group",
@@ -4935,7 +4935,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4"
+            "filter": "driver_id=ZW_Remote_4_old"
           },
           {
             "name": "group",
@@ -4982,7 +4982,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4"
+            "filter": "driver_id=ZW_Remote_4_old"
           },
           {
             "name": "group",
@@ -5029,7 +5029,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4"
+            "filter": "driver_id=ZW_Remote_4_old"
           },
           {
             "name": "group",
@@ -5076,7 +5076,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4"
+            "filter": "driver_id=ZW_Remote_4_old"
           },
           {
             "name": "group",
@@ -5123,7 +5123,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4"
+            "filter": "driver_id=ZW_Remote_4_old"
           },
           {
             "name": "group",
@@ -5167,7 +5167,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4"
+            "filter": "driver_id=ZW_Remote_4_old"
           }
         ]
       },
@@ -5180,7 +5180,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4"
+            "filter": "driver_id=ZW_Remote_4_old"
           }
         ]
       },
@@ -5193,7 +5193,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4"
+            "filter": "driver_id=ZW_Remote_4_old"
           }
         ]
       },
@@ -5206,7 +5206,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4"
+            "filter": "driver_id=ZW_Remote_4_old"
           }
         ]
       },
@@ -5219,7 +5219,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4"
+            "filter": "driver_id=ZW_Remote_4_old"
           }
         ]
       },
@@ -5232,7 +5232,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4"
+            "filter": "driver_id=ZW_Remote_4_old"
           }
         ]
       },
@@ -5245,7 +5245,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_2"
+            "filter": "driver_id=ZW_WallController_2_old"
           }
         ]
       },
@@ -5258,7 +5258,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_2"
+            "filter": "driver_id=ZW_WallController_2_old"
           }
         ]
       },
@@ -5271,7 +5271,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_2"
+            "filter": "driver_id=ZW_WallController_2_old"
           }
         ]
       },
@@ -5284,7 +5284,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_2"
+            "filter": "driver_id=ZW_WallController_2_old"
           }
         ]
       },
@@ -5297,7 +5297,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_2"
+            "filter": "driver_id=ZW_WallController_2_old"
           }
         ]
       },
@@ -5310,7 +5310,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_2"
+            "filter": "driver_id=ZW_WallController_2_old"
           }
         ]
       },
@@ -5326,7 +5326,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_4"
+            "filter": "driver_id=ZW_WallController_4_old"
           },
           {
             "name": "group",
@@ -5361,7 +5361,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_4"
+            "filter": "driver_id=ZW_WallController_4_old"
           },
           {
             "name": "group",
@@ -5396,7 +5396,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_4"
+            "filter": "driver_id=ZW_WallController_4_old"
           },
           {
             "name": "group",
@@ -5431,7 +5431,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_4"
+            "filter": "driver_id=ZW_WallController_4_old"
           },
           {
             "name": "group",
@@ -5466,7 +5466,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_4"
+            "filter": "driver_id=ZW_WallController_4_old"
           },
           {
             "name": "group",
@@ -5501,7 +5501,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_4"
+            "filter": "driver_id=ZW_WallController_4_old"
           },
           {
             "name": "group",
@@ -5536,7 +5536,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_8"
+            "filter": "driver_id=ZW_WallController_8_old"
           },
           {
             "name": "group",
@@ -5583,7 +5583,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_8"
+            "filter": "driver_id=ZW_WallController_8_old"
           },
           {
             "name": "group",
@@ -5630,7 +5630,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_8"
+            "filter": "driver_id=ZW_WallController_8_old"
           },
           {
             "name": "group",
@@ -5677,7 +5677,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_8"
+            "filter": "driver_id=ZW_WallController_8_old"
           },
           {
             "name": "group",
@@ -5724,7 +5724,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_8"
+            "filter": "driver_id=ZW_WallController_8_old"
           },
           {
             "name": "group",
@@ -5771,7 +5771,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_8"
+            "filter": "driver_id=ZW_WallController_8_old"
           },
           {
             "name": "group",
@@ -14377,81 +14377,6 @@
       "id": "4512749"
     },
     {
-      "id": "4512750",
-      "name": {
-        "en": "4512750/51 - Zigbee LED Dimmer 2.0"
-      },
-      "class": "light",
-      "capabilities": [
-        "onoff",
-        "dim"
-      ],
-      "capabilitiesOptions": {
-        "dim": {
-          "opts": {
-            "duration": true
-          }
-        },
-        "onoff": {
-          "setOnDim": true
-        },
-        "capabilitiesOptions": {
-          "measure_power": {
-            "isApproximated": true
-          }
-        }
-      },
-      "platforms": [
-        "local",
-        "cloud"
-      ],
-      "connectivity": [
-        "zigbee"
-      ],
-      "zigbee": {
-        "manufacturerName": [
-          "NAMRON AS",
-          "NAMRON  AS",
-          "NAMRON As",
-          "Namron AS",
-          "Namron As",
-          "namron as",
-          "Shyugj",
-          "_TZ3000_pmdekgjg"
-        ],
-        "productId": [
-          "TS1101"
-        ],
-        "endpoints": {
-          "1": {
-            "clusters": [
-              0,
-              3,
-              4,
-              5,
-              6,
-              8
-            ],
-            "bindings": [
-              6,
-              8
-            ]
-          }
-        },
-        "learnmode": {
-          "image": "/drivers/4512750/assets/learnmode.svg",
-          "instruction": {
-            "en": "Press the dim wheel 7 times when dimmer in ON to enter pairing mode. A blue LED will flash. \n\nIf pairing does not start after 20 seconds, reset the device by pressing 10 times on the dimming wheel when dimmer is ON."
-          }
-        }
-      },
-      "images": {
-        "large": "/drivers/4512750/assets/images/large.png",
-        "small": "/drivers/4512750/assets/images/small.png"
-      },
-      "settings": []
-    },
-    {
       "id": "4512757",
       "name": {
         "en": "4512757 - Zwave Thermostat"
@@ -14940,6 +14865,82 @@
       ]
     },
     {
+      "id": "451275x",
+      "name": {
+        "en": "4512750/51 - Zigbee LED Dimmer 2.0"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": true
+        },
+        "capabilitiesOptions": {
+          "measure_power": {
+            "isApproximated": true
+          }
+        }
+      },
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": [
+          "NAMRON AS",
+          "NAMRON  AS",
+          "NAMRON As",
+          "Namron AS",
+          "Namron As",
+          "namron as",
+          "Shyugj",
+          "_TZ3000_pmdekgjg"
+        ],
+        "productId": [
+          "TS1101"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              3,
+              4,
+              5,
+              6,
+              8
+            ],
+            "bindings": [
+              6,
+              8
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/451275x/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press the dim wheel 7 times when dimmer in ON to enter pairing mode. A blue LED will flash. \n\nIf pairing does not start after 20 seconds, reset the device by pressing 10 times on the dimming wheel when dimmer is ON.",
+            "no": "Trykk dimmehjulet 7 ganger når dimmeren er påslått. En blå LED diode vil blinke. \n\nHvis parringen ikke starter innen 20 sekunder, tilbakestill enheten ved å trykke 10 ganger på dimmehjulet når dimmeren er påslått."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/451275x/assets/images/large.png",
+        "small": "/drivers/451275x/assets/images/small.png"
+      },
+      "settings": []
+    },
+    {
       "name": {
         "en": "5401392/96 Panelovn Zigbee 400W"
       },
@@ -14966,6 +14967,7 @@
         "local",
         "cloud"
       ],
+      "deprecated": true,
       "connectivity": [
         "zigbee"
       ],
@@ -15474,6 +15476,7 @@
           "step": 0.5
         }
       },
+      "deprecated": true,
       "platforms": [
         "local",
         "cloud"
@@ -15986,6 +15989,7 @@
           "step": 0.5
         }
       },
+      "deprecated": true,
       "platforms": [
         "local",
         "cloud"
@@ -16498,6 +16502,7 @@
           "step": 0.5
         }
       },
+      "deprecated": true,
       "platforms": [
         "local",
         "cloud"
@@ -16548,6 +16553,525 @@
         }
       },
       "id": "5401395",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Weekly Schedule Settings"
+          },
+          "children": [
+            {
+              "id": "repeat",
+              "type": "dropdown",
+              "label": {
+                "en": "Repeat"
+              },
+              "value": "sunday",
+              "values": [
+                {
+                  "id": "everyday",
+                  "label": {
+                    "en": "Every day"
+                  }
+                },
+                {
+                  "id": "weekday",
+                  "label": {
+                    "en": "Every weekday"
+                  }
+                },
+                {
+                  "id": "weekend",
+                  "label": {
+                    "en": "Every weekend"
+                  }
+                },
+                {
+                  "id": "sunday",
+                  "label": {
+                    "en": "Sunday"
+                  }
+                },
+                {
+                  "id": "monday",
+                  "label": {
+                    "en": "Monday"
+                  }
+                },
+                {
+                  "id": "tuesday",
+                  "label": {
+                    "en": "Tuesday"
+                  }
+                },
+                {
+                  "id": "wednesday",
+                  "label": {
+                    "en": "Wednesday"
+                  }
+                },
+                {
+                  "id": "thursday",
+                  "label": {
+                    "en": "Thursday"
+                  }
+                },
+                {
+                  "id": "friday",
+                  "label": {
+                    "en": "Friday"
+                  }
+                },
+                {
+                  "id": "saturday",
+                  "label": {
+                    "en": "Saturday"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "First Weekly Schedule"
+          },
+          "children": [
+            {
+              "id": "first_hour",
+              "type": "number",
+              "label": {
+                "en": "Hour"
+              },
+              "value": 7,
+              "min": 0,
+              "max": 23,
+              "step": 1
+            },
+            {
+              "id": "first_minute",
+              "type": "number",
+              "label": {
+                "en": "Minute"
+              },
+              "value": 30,
+              "min": 0,
+              "max": 59,
+              "step": 1
+            },
+            {
+              "id": "first_target",
+              "type": "number",
+              "label": {
+                "en": "Target"
+              },
+              "value": 30,
+              "min": 5,
+              "max": 35,
+              "step": 0.5,
+              "units": {
+                "en": "℃"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Second Weekly Schedule"
+          },
+          "children": [
+            {
+              "id": "second_hour",
+              "type": "number",
+              "label": {
+                "en": "Hour"
+              },
+              "value": 12,
+              "min": 0,
+              "max": 23,
+              "step": 1
+            },
+            {
+              "id": "second_minute",
+              "type": "number",
+              "label": {
+                "en": "Minute"
+              },
+              "value": 0,
+              "min": 0,
+              "max": 59,
+              "step": 1
+            },
+            {
+              "id": "second_target",
+              "type": "number",
+              "label": {
+                "en": "Target"
+              },
+              "value": 25,
+              "min": 5,
+              "max": 35,
+              "step": 0.5,
+              "units": {
+                "en": "℃"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Third Weekly Schedule"
+          },
+          "children": [
+            {
+              "id": "third_hour",
+              "type": "number",
+              "label": {
+                "en": "Hour"
+              },
+              "value": 18,
+              "min": 0,
+              "max": 23,
+              "step": 1
+            },
+            {
+              "id": "third_minute",
+              "type": "number",
+              "label": {
+                "en": "Minute"
+              },
+              "value": 0,
+              "min": 0,
+              "max": 59,
+              "step": 1
+            },
+            {
+              "id": "third_target",
+              "type": "number",
+              "label": {
+                "en": "Target"
+              },
+              "value": 28,
+              "min": 5,
+              "max": 35,
+              "step": 0.5,
+              "units": {
+                "en": "℃"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Fourth Weekly Schedule"
+          },
+          "children": [
+            {
+              "id": "fourth_hour",
+              "type": "number",
+              "label": {
+                "en": "Hour"
+              },
+              "value": 22,
+              "min": 0,
+              "max": 23,
+              "step": 1
+            },
+            {
+              "id": "fourth_minute",
+              "type": "number",
+              "label": {
+                "en": "Minute"
+              },
+              "value": 0,
+              "min": 0,
+              "max": 59,
+              "step": 1
+            },
+            {
+              "id": "fourth_target",
+              "type": "number",
+              "label": {
+                "en": "Target"
+              },
+              "value": 20,
+              "min": 5,
+              "max": 35,
+              "step": 0.5,
+              "units": {
+                "en": "℃"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Device Settings"
+          },
+          "children": [
+            {
+              "id": "operate_display_brightness",
+              "type": "dropdown",
+              "value": "one",
+              "label": {
+                "en": "Operate display brightness"
+              },
+              "values": [
+                {
+                  "id": "one",
+                  "label": {
+                    "en": "Level 1"
+                  }
+                },
+                {
+                  "id": "two",
+                  "label": {
+                    "en": "Level 2"
+                  }
+                },
+                {
+                  "id": "three",
+                  "label": {
+                    "en": "Level 3"
+                  }
+                },
+                {
+                  "id": "four",
+                  "label": {
+                    "en": "Level 4"
+                  }
+                },
+                {
+                  "id": "five",
+                  "label": {
+                    "en": "Level 5"
+                  }
+                },
+                {
+                  "id": "six",
+                  "label": {
+                    "en": "Level 6"
+                  }
+                },
+                {
+                  "id": "seven",
+                  "label": {
+                    "en": "Level 7"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "display_auto_off_activation",
+              "type": "dropdown",
+              "value": "disabled",
+              "label": {
+                "en": "Display auto off activation"
+              },
+              "values": [
+                {
+                  "id": "disabled",
+                  "label": {
+                    "en": "Disabled"
+                  }
+                },
+                {
+                  "id": "enabled",
+                  "label": {
+                    "en": "Enabled"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "power_up_status",
+              "type": "dropdown",
+              "value": "latestMode",
+              "label": {
+                "en": "Power up status"
+              },
+              "values": [
+                {
+                  "id": "latestMode",
+                  "label": {
+                    "en": "Latest mode"
+                  }
+                },
+                {
+                  "id": "manualMode",
+                  "label": {
+                    "en": "Manual mode"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "window_open_check",
+              "type": "dropdown",
+              "value": "enabled",
+              "label": {
+                "en": "Window open check"
+              },
+              "values": [
+                {
+                  "id": "enabled",
+                  "label": {
+                    "en": "Enabled"
+                  }
+                },
+                {
+                  "id": "disabled",
+                  "label": {
+                    "en": "Disabled"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "hysteresis",
+              "type": "number",
+              "label": {
+                "en": "Hysteresis"
+              },
+              "value": 0.5,
+              "min": 0.5,
+              "max": 5,
+              "units": {
+                "en": "℃"
+              }
+            },
+            {
+              "id": "localTemperatureCalibration",
+              "type": "number",
+              "label": {
+                "en": "Local Temperature Calibration"
+              },
+              "value": 0,
+              "min": -49,
+              "max": 49,
+              "units": {
+                "en": "0.1℃"
+              }
+            },
+            {
+              "id": "keypadLockout",
+              "type": "dropdown",
+              "value": "noLockout",
+              "label": {
+                "en": "Keypad Lockout"
+              },
+              "values": [
+                {
+                  "id": "noLockout",
+                  "label": {
+                    "en": "No lockout"
+                  }
+                },
+                {
+                  "id": "level1Lockout",
+                  "label": {
+                    "en": "Lockout"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "syncTimeOnDevice",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Sync time on device"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "540139* Zigbee Panelovn"
+      },
+      "class": "thermostat",
+      "capabilities": [
+        "onoff",
+        "measure_power",
+        "meter_power",
+        "measure_temperature",
+        "target_temperature",
+        "zg9030a_modes",
+        "zg9030a_window_open_flag",
+        "zg9030a_internal_over_heat",
+        "zg9030a_datetime"
+      ],
+      "capabilitiesOptions": {
+        "target_temperature": {
+          "min": 5,
+          "max": 35,
+          "step": 0.5
+        }
+      },
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "xlarge": "/drivers/540139x/assets/images/xlarge.png",
+        "small": "/drivers/540139x/assets/images/small.png",
+        "large": "/drivers/540139x/assets/images/large.png"
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "NAMRON AS",
+          "NAMRON  AS",
+          "NAMRON As",
+          "Namron AS",
+          "Namron As",
+          "namron as"
+        ],
+        "productId": [
+          "5401392",
+          "5401393",
+          "5401394",
+          "5401395",
+          "5401396",
+          "5401397",
+          "5401398",
+          "5401399"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              513,
+              1794,
+              2820,
+              10,
+              516
+            ],
+            "bindings": [
+              513,
+              1794,
+              2820,
+              10
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/540139x/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press and hold down the OK button until the Wireless indicator flashes slowly.\n\nIf pairing is not started, press and hold down the OK button again.",
+            "no": "Trykk og hold nede OK knappen inntill indikatoren for trådløs kommunikasjon blinker.\n\n Om parringen ikke starter, trykk og holde nede OK knappen igjen."
+          }
+        }
+      },
+      "id": "540139x",
       "settings": [
         {
           "type": "group",
@@ -17077,7 +17601,7 @@
       "settings": []
     },
     {
-      "id": "ZW_Dimmer_3wire",
+      "id": "ZW_Dimmer_3wire_old",
       "name": {
         "en": "Dimmer - 3 wire (Z-wave)",
         "nl": "Inbouwdimmer 3-draads (Z-wave)"
@@ -17140,7 +17664,7 @@
       }
     },
     {
-      "id": "ZW_Dimmer_Rotary",
+      "id": "ZW_Dimmer_Rotary_old",
       "name": {
         "en": "Dimmer - Rotary (Z-wave)"
       },
@@ -17421,7 +17945,7 @@
       ]
     },
     {
-      "id": "ZW_InWallSwitch",
+      "id": "ZW_InWallSwitch_old",
       "name": {
         "en": "Switch (Z-wave)"
       },
@@ -17599,7 +18123,7 @@
       ]
     },
     {
-      "id": "ZW_Remote_4",
+      "id": "ZW_Remote_4_old",
       "name": {
         "en": "Remote - 4 channel (Z-wave)",
         "nl": "Afstandsbediening - 4 kanaals (Z-wave)"
@@ -17682,7 +18206,7 @@
       }
     },
     {
-      "id": "ZW_WallController_2",
+      "id": "ZW_WallController_2_old",
       "name": {
         "en": "Wall controller - 2 button (Z-wave)"
       },
@@ -17745,7 +18269,7 @@
       }
     },
     {
-      "id": "ZW_WallController_4",
+      "id": "ZW_WallController_4_old",
       "name": {
         "en": "Wall controller - 4 button (1 and 2 channel) (Z-wave)"
       },
@@ -17815,7 +18339,7 @@
       }
     },
     {
-      "id": "ZW_WallController_8",
+      "id": "ZW_WallController_8_old",
       "name": {
         "en": "Wall controller - 8 button (white and black) (Z-wave)"
       },
@@ -17896,7 +18420,7 @@
       }
     },
     {
-      "id": "ZW_WallPlug",
+      "id": "ZW_WallPlug_old",
       "name": {
         "en": "Wall plug - Actuator (Z-wave)"
       },

@@ -1,6 +1,6 @@
 {
   "name": {
-    "en": "5401394/98 Panelovn Zigbee 800W"
+    "en": "540139* Zigbee Panelovn"
   },
   "class": "thermostat",
   "capabilities": [
@@ -21,7 +21,6 @@
       "step": 0.5
     }
   },
-  "deprecated": true,
   "platforms": [
     "local",
     "cloud"
@@ -44,8 +43,14 @@
       "namron as"
     ],
     "productId": [
+      "5401392",
+      "5401393",
       "5401394",
-      "5401398"
+      "5401395",
+      "5401396",
+      "5401397",
+      "5401398",
+      "5401399"
     ],
     "endpoints": {
       "1": {
@@ -67,7 +72,8 @@
     "learnmode": {
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
-        "en": "Press and hold down the OK button until the Wi-Fi indicator flashes slowly.\n\nIf pairing is not started, press and hold down the OK button again."
+        "en": "Press and hold down the OK button until the Wireless indicator flashes slowly.\n\nIf pairing is not started, press and hold down the OK button again.",
+        "no": "Trykk og hold nede OK knappen inntill indikatoren for trådløs kommunikasjon blinker.\n\n Om parringen ikke starter, trykk og holde nede OK knappen igjen."
       }
     }
   }

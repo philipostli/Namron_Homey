@@ -56,15 +56,16 @@
       }
     },
     "learnmode": {
-      "image": "/drivers/4512750/assets/learnmode.svg",
+      "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
-        "en": "Press the dim wheel 7 times when dimmer in ON to enter pairing mode. A blue LED will flash. \n\nIf pairing does not start after 20 seconds, reset the device by pressing 10 times on the dimming wheel when dimmer is ON."
+        "en": "Press the dim wheel 7 times when dimmer in ON to enter pairing mode. A blue LED will flash. \n\nIf pairing does not start after 20 seconds, reset the device by pressing 10 times on the dimming wheel when dimmer is ON.",
+        "no": "Trykk dimmehjulet 7 ganger når dimmeren er påslått. En blå LED diode vil blinke. \n\nHvis parringen ikke starter innen 20 sekunder, tilbakestill enheten ved å trykke 10 ganger på dimmehjulet når dimmeren er påslått."
       }
     }
   },
   "images": {
-    "large": "/drivers/4512750/assets/images/large.png",
-    "small": "/drivers/4512750/assets/images/small.png"
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
   },
   "settings": [
   ]
