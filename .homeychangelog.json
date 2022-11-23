@@ -214,5 +214,8 @@
   },
   "2.2.55": {
     "en": "Updated device class on relay devices from light to socket to give some more options. Added a test to fix kWh reporting on 1402756."
+  },
+  "2.2.56": {
+    "en": "Included all Zigbee Panelheaters models into 1 device for easier adding. Put old panelheater devices as deprecated. Updated device class to socket on relay devices so they get some more out of the box Homey automations. Added fix on1402756 on kWh reporting."
   }
 }

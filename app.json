@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "net.filllip-namron",
-  "version": "2.2.55",
+  "version": "2.2.56",
   "compatibility": ">=7.4.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
@@ -4807,7 +4807,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4_old"
+            "filter": "driver_id=ZW_Remote_4"
           }
         ]
       },
@@ -4820,7 +4820,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4_old"
+            "filter": "driver_id=ZW_Remote_4"
           }
         ]
       },
@@ -4833,7 +4833,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4_old"
+            "filter": "driver_id=ZW_Remote_4"
           }
         ]
       },
@@ -4846,7 +4846,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4_old"
+            "filter": "driver_id=ZW_Remote_4"
           }
         ]
       },
@@ -4859,7 +4859,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4_old"
+            "filter": "driver_id=ZW_Remote_4"
           }
         ]
       },
@@ -4872,7 +4872,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4_old"
+            "filter": "driver_id=ZW_Remote_4"
           }
         ]
       },
@@ -4888,7 +4888,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4_old"
+            "filter": "driver_id=ZW_Remote_4"
           },
           {
             "name": "group",
@@ -4935,7 +4935,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4_old"
+            "filter": "driver_id=ZW_Remote_4"
           },
           {
             "name": "group",
@@ -4982,7 +4982,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4_old"
+            "filter": "driver_id=ZW_Remote_4"
           },
           {
             "name": "group",
@@ -5029,7 +5029,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4_old"
+            "filter": "driver_id=ZW_Remote_4"
           },
           {
             "name": "group",
@@ -5076,7 +5076,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4_old"
+            "filter": "driver_id=ZW_Remote_4"
           },
           {
             "name": "group",
@@ -5123,7 +5123,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4_old"
+            "filter": "driver_id=ZW_Remote_4"
           },
           {
             "name": "group",
@@ -5167,7 +5167,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4_old"
+            "filter": "driver_id=ZW_Remote_4"
           }
         ]
       },
@@ -5180,7 +5180,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4_old"
+            "filter": "driver_id=ZW_Remote_4"
           }
         ]
       },
@@ -5193,7 +5193,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4_old"
+            "filter": "driver_id=ZW_Remote_4"
           }
         ]
       },
@@ -5206,7 +5206,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4_old"
+            "filter": "driver_id=ZW_Remote_4"
           }
         ]
       },
@@ -5219,7 +5219,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4_old"
+            "filter": "driver_id=ZW_Remote_4"
           }
         ]
       },
@@ -5232,7 +5232,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_Remote_4_old"
+            "filter": "driver_id=ZW_Remote_4"
           }
         ]
       },
@@ -5245,7 +5245,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_2_old"
+            "filter": "driver_id=ZW_WallController_2"
           }
         ]
       },
@@ -5258,7 +5258,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_2_old"
+            "filter": "driver_id=ZW_WallController_2"
           }
         ]
       },
@@ -5271,7 +5271,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_2_old"
+            "filter": "driver_id=ZW_WallController_2"
           }
         ]
       },
@@ -5284,7 +5284,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_2_old"
+            "filter": "driver_id=ZW_WallController_2"
           }
         ]
       },
@@ -5297,7 +5297,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_2_old"
+            "filter": "driver_id=ZW_WallController_2"
           }
         ]
       },
@@ -5310,7 +5310,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_2_old"
+            "filter": "driver_id=ZW_WallController_2"
           }
         ]
       },
@@ -5326,7 +5326,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_4_old"
+            "filter": "driver_id=ZW_WallController_4"
           },
           {
             "name": "group",
@@ -5361,7 +5361,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_4_old"
+            "filter": "driver_id=ZW_WallController_4"
           },
           {
             "name": "group",
@@ -5396,7 +5396,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_4_old"
+            "filter": "driver_id=ZW_WallController_4"
           },
           {
             "name": "group",
@@ -5431,7 +5431,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_4_old"
+            "filter": "driver_id=ZW_WallController_4"
           },
           {
             "name": "group",
@@ -5466,7 +5466,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_4_old"
+            "filter": "driver_id=ZW_WallController_4"
           },
           {
             "name": "group",
@@ -5501,7 +5501,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_4_old"
+            "filter": "driver_id=ZW_WallController_4"
           },
           {
             "name": "group",
@@ -5536,7 +5536,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_8_old"
+            "filter": "driver_id=ZW_WallController_8"
           },
           {
             "name": "group",
@@ -5583,7 +5583,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_8_old"
+            "filter": "driver_id=ZW_WallController_8"
           },
           {
             "name": "group",
@@ -5630,7 +5630,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_8_old"
+            "filter": "driver_id=ZW_WallController_8"
           },
           {
             "name": "group",
@@ -5677,7 +5677,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_8_old"
+            "filter": "driver_id=ZW_WallController_8"
           },
           {
             "name": "group",
@@ -5724,7 +5724,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_8_old"
+            "filter": "driver_id=ZW_WallController_8"
           },
           {
             "name": "group",
@@ -5771,7 +5771,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ZW_WallController_8_old"
+            "filter": "driver_id=ZW_WallController_8"
           },
           {
             "name": "group",
@@ -17601,7 +17601,7 @@
       "settings": []
     },
     {
-      "id": "ZW_Dimmer_3wire_old",
+      "id": "ZW_Dimmer_3wire",
       "name": {
         "en": "Dimmer - 3 wire (Z-wave)",
         "nl": "Inbouwdimmer 3-draads (Z-wave)"
@@ -17664,7 +17664,7 @@
       }
     },
     {
-      "id": "ZW_Dimmer_Rotary_old",
+      "id": "ZW_Dimmer_Rotary",
       "name": {
         "en": "Dimmer - Rotary (Z-wave)"
       },
@@ -17945,7 +17945,7 @@
       ]
     },
     {
-      "id": "ZW_InWallSwitch_old",
+      "id": "ZW_InWallSwitch",
       "name": {
         "en": "Switch (Z-wave)"
       },
@@ -18123,7 +18123,7 @@
       ]
     },
     {
-      "id": "ZW_Remote_4_old",
+      "id": "ZW_Remote_4",
       "name": {
         "en": "Remote - 4 channel (Z-wave)",
         "nl": "Afstandsbediening - 4 kanaals (Z-wave)"
@@ -18206,7 +18206,7 @@
       }
     },
     {
-      "id": "ZW_WallController_2_old",
+      "id": "ZW_WallController_2",
       "name": {
         "en": "Wall controller - 2 button (Z-wave)"
       },
@@ -18269,7 +18269,7 @@
       }
     },
     {
-      "id": "ZW_WallController_4_old",
+      "id": "ZW_WallController_4",
       "name": {
         "en": "Wall controller - 4 button (1 and 2 channel) (Z-wave)"
       },
@@ -18339,7 +18339,7 @@
       }
     },
     {
-      "id": "ZW_WallController_8_old",
+      "id": "ZW_WallController_8",
       "name": {
         "en": "Wall controller - 8 button (white and black) (Z-wave)"
       },
@@ -18420,7 +18420,7 @@
       }
     },
     {
-      "id": "ZW_WallPlug_old",
+      "id": "ZW_WallPlug",
       "name": {
         "en": "Wall plug - Actuator (Z-wave)"
       },
