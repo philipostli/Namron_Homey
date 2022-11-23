@@ -25,10 +25,10 @@
       "usageOff": 0
     }
   },
-  "icon": "/drivers/ZW_Dimmer_Rotary/assets/icon.svg",
+  "icon": "{{driverAssetsPath}}/icon.svg",
   "images": {
-    "large": "/drivers/ZW_Dimmer_Rotary/assets/images/large.png",
-    "small": "/drivers/ZW_Dimmer_Rotary/assets/images/small.png"
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
   },
   "platforms": ["local", "cloud"],
   "connectivity": ["zwave"],
@@ -46,7 +46,7 @@
       2
     ],
     "learnmode": {
-      "image": "/drivers/ZW_Dimmer_Rotary/assets/learnmode.svg",
+      "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Inclusion, Exclusion \nTriple press the reset button on the dimmer. \n\n!!! NOTE \nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail. \n\nFactory reset \nPress and hold down the reset button for over 5 seconds."
       }

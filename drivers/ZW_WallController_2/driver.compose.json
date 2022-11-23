@@ -13,10 +13,10 @@
       "CR2450"
     ]
   },
-  "icon": "/drivers/ZW_WallController_2/assets/icon.svg",
+  "icon": "{{driverAssetsPath}}/icon.svg",
   "images": {
-    "large": "/drivers/ZW_WallController_2/assets/images/large.png",
-    "small": "/drivers/ZW_WallController_2/assets/images/small.png"
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
   },
   "platforms": ["local", "cloud"],
   "connectivity": ["zwave"],
@@ -33,7 +33,7 @@
       41743
     ],
     "learnmode": {
-      "image": "/drivers/ZW_WallController_2/assets/learnmode.svg",
+      "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Press and hold down both buttons over 3 seconds.\n\nIf pairing fails reset the device by press and hold down both buttons for over 10 seconds."
       }

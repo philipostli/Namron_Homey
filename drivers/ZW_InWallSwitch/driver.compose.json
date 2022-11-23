@@ -14,10 +14,10 @@
       "usageOff": 0
     }
   },
-  "icon": "/drivers/ZW_InWallSwitch/assets/icon.svg",
+  "icon": "{{driverAssetsPath}}/icon.svg",
   "images": {
-    "large": "/drivers/ZW_InWallSwitch/assets/images/large.png",
-    "small": "/drivers/ZW_InWallSwitch/assets/images/small.png"
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
   },
   "platforms": ["local", "cloud"],
   "connectivity": ["zwave"],
@@ -34,7 +34,7 @@
       53254
     ],
     "learnmode": {
-      "image": "/drivers/ZW_InWallSwitch/assets/learnmode.svg",
+      "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Press the Reset button 3 times quickly.\n\nIf pairing fails reset the device by pressing the Reset button for over 10 seconds."
       }
