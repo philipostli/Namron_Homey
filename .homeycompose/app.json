@@ -1,6 +1,6 @@
 {
   "id": "net.filllip-namron",
-  "version": "2.2.40",
+  "version": "2.2.56",
   "compatibility": ">=7.4.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
@@ -58,7 +58,7 @@
     "url": "https://github.com/NamronAS/Namron_Homey/issues"
   },
   "source": "https://github.com/NamronAS/Namron_Homey.git",
-  "support": "https://github.com/NamronAS/Namron_Homey.git",
+  "support": "https://github.com/NamronAS/Namron_Homey/issues",
   "flow": {
     "triggers": [
       {

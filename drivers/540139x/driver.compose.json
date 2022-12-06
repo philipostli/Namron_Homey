@@ -1,0 +1,80 @@
+{
+  "name": {
+    "en": "540139* Zigbee Panelovn"
+  },
+  "class": "thermostat",
+  "capabilities": [
+    "onoff",
+    "measure_power",
+    "meter_power",
+    "measure_temperature",
+    "target_temperature",
+    "zg9030a_modes",
+    "zg9030a_window_open_flag",
+    "zg9030a_internal_over_heat",
+    "zg9030a_datetime"
+  ],
+  "capabilitiesOptions": {
+    "target_temperature": {
+      "min": 5,
+      "max": 35,
+      "step": 0.5
+    }
+  },
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
+  "images": {
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png",
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png"
+  },
+  "zigbee": {
+    "manufacturerName": [
+      "NAMRON AS",
+      "NAMRON  AS",
+      "NAMRON As",
+      "Namron AS",
+      "Namron As",
+      "namron as"
+    ],
+    "productId": [
+      "5401392",
+      "5401393",
+      "5401394",
+      "5401395",
+      "5401396",
+      "5401397",
+      "5401398",
+      "5401399"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          513,
+          1794,
+          2820,
+          10,
+          516
+        ],
+        "bindings": [
+          513,
+          1794,
+          2820,
+          10
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Press and hold down the OK button until the Wireless indicator flashes slowly.\n\nIf pairing is not started, press and hold down the OK button again.",
+        "no": "Trykk og hold nede OK knappen inntill indikatoren for trådløs kommunikasjon blinker.\n\n Om parringen ikke starter, trykk og holde nede OK knappen igjen."
+      }
+    }
+  }
+}

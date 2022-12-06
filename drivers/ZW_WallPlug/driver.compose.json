@@ -10,10 +10,10 @@
     "measure_power",
     "meter_power"
   ],
-  "icon": "/drivers/ZW_WallPlug/assets/icon.svg",
+  "icon": "{{driverAssetsPath}}/icon.svg",
   "images": {
-    "large": "/drivers/ZW_WallPlug/assets/images/large.png",
-    "small": "/drivers/ZW_WallPlug/assets/images/small.png"
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
   },
   "platforms": ["local", "cloud"],
   "connectivity": ["zwave"],
@@ -30,7 +30,7 @@
       53252
     ],
     "learnmode": {
-      "image": "/drivers/ZW_WallPlug/assets/learnmode.svg",
+      "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "(Re)Power on the smart plug, it will be set into pair mode automatically. You can also press the action button on the smart plug 3 times.\n\nIf pairing fails reset the device by press and hold down action button for over 10 seconds."
       }

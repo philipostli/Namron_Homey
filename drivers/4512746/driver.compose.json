@@ -3,7 +3,7 @@
   "name": {
     "en": "4512746 - Z-Wave Switch 16A"
   },
-  "class": "light",
+  "class": "socket",
   "capabilities": [
     "onoff",
     "measure_power",

@@ -1,0 +1,81 @@
+{
+  "id" : "4512757",
+  "name": {
+    "en": "4512757 - Zwave Thermostat"
+  },
+  "platforms": ["local", "cloud"],
+  "connectivity": ["zwave"],
+  "zwave": {
+    "manufacturerId": 1080,
+    "productTypeId": 4,
+    "productId": 264,
+    "learnmode": {
+      "instruction": {
+        "en": "For inclusion, double click button M for two times when in \"Advance settings -> in-network mode\"."
+      }
+    },
+    "associationGroups": [
+      1,
+      2
+    ],
+    "associationGroupsOptions": {
+      "1": {
+        "hint": {
+          "en": "1. Target/current temperature report.\n2. Target temperature set.\n3. Used power measure.\n4.Turn on/off device."
+        }
+      },
+      "2": {
+        "hint": {
+          "en": "Basic Set"
+        }
+      }
+    }
+  },
+  "class": "thermostat",
+  "images": {
+    "small": "/drivers/4512757/assets/images/small.png",
+    "large": "/drivers/4512757/assets/images/large.png",
+    "xlarge": "/drivers/4512757/assets/images/xlarge.png"
+  },
+  "capabilities": [
+    "onoff",
+    "app_reset",
+    "target_temperature",
+    "measure_temperature",
+    "regulator_percentage",
+    "measure_power",
+    "meter_power",
+    "alarm_generic",
+
+    "eco_mode",
+    "child_lock",
+    "frost",
+    "regulator",
+
+    "app_thermostat_mode",
+
+    "button.calibrate",
+    "button.reset_meter"
+  ],
+  "energy": {
+    "approximation": {
+      "usageOn": 5,
+      "usageOff": 1
+    }
+  },
+  "capabilitiesOptions": {
+    "button.calibrate": {
+      "maintenanceAction": false,
+      "title": { "en": "Start calibration" },
+      "desc": { "en": "Start the sensor calibration process." }
+    },
+    "button.reset_meter": {
+      "maintenanceAction": false,
+      "title": { "en": "Reset power meter" },
+      "desc": { "en": "Reset the accumulated power usage (kWh), this can not be restored." }
+    },
+    "measure_power": {
+      "approximated": true
+    }
+  }
+}
