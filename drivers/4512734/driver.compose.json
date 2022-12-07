@@ -38,7 +38,8 @@
     "learnmode": {
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
-        "en": "Open the back cover, and then press the action button on the sensor 3 times quickly."
+        "en": "Open the back cover, and then press the action button on the sensor 3 times quickly.",
+        "no": "Ta av bakplaten på sensoren. Trykk tre ganger på knappen for å starte inkludering"
       }
     },
     "associationGroups": [
