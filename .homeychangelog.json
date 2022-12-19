@@ -220,5 +220,8 @@
   },
   "2.2.57": {
     "en": "Added driver for 4512734 - Namron Z-Wave MultiSensor."
+  },
+  "2.2.58": {
+    "en": "Added correct Manufactor ID on 3308431 - Luna lamp, Some name corrections on devices."
   }
 }
