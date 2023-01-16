@@ -14570,7 +14570,7 @@
     },
     {
       "name": {
-        "en": "4512749 - Zigbee Plug Thermostat",
+        "en": "4512749 - Zigbee Plug",
         "no": "4512749 - Zigbee Termostatplugg"
       },
       "class": "socket",
@@ -14620,6 +14620,86 @@
         }
       },
       "id": "4512749"
+    },
+    {
+      "name": {
+        "en": "4512749-N - Zigbee Plug Thermostat"
+      },
+      "class": "thermostat",
+      "capabilities": [
+        "onoff",
+        "measure_power",
+        "meter_power",
+        "measure_temperature",
+        "plug_thermostat_mode",
+        "target_temperature",
+        "plug_mode"
+      ],
+      "capabilitiesOptions": {
+        "target_temperature": {
+          "min": 5,
+          "max": 35,
+          "step": 0.5
+        }
+      },
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": [
+          "NAMRON AS",
+          "NAMRON  AS",
+          "NAMRON As",
+          "Namron AS",
+          "Namron As",
+          "namron as"
+        ],
+        "productId": [
+          "4512749-N"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              6,
+              1026,
+              1794,
+              2820
+            ],
+            "bindings": [
+              0,
+              6,
+              1026,
+              1794,
+              2820
+            ]
+          },
+          "2": {
+            "clusters": [
+              513
+            ],
+            "bindings": [
+              513
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/4512749-N/assets/learnmode.svg",
+          "instruction": {
+            "en": "Short press Program button 5 times quickly."
+          }
+        }
+      },
+      "images": {
+        "small": "/drivers/4512749-N/assets/images/small.png",
+        "large": "/drivers/4512749-N/assets/images/large.png"
+      },
+      "id": "4512749-N",
+      "settings": []
     },
     {
       "id": "4512757",
@@ -19124,6 +19204,58 @@
           "id": "room_floor_sensor",
           "title": {
             "en": "Room + Floor Sensor"
+          }
+        }
+      ]
+    },
+    "plug_mode": {
+      "title": {
+        "en": "Plug Mode"
+      },
+      "type": "enum",
+      "setable": true,
+      "getable": true,
+      "uiComponent": "picker",
+      "values": [
+        {
+          "id": "onOff",
+          "title": {
+            "en": "Plug"
+          }
+        },
+        {
+          "id": "hvac",
+          "title": {
+            "en": "Thermostat"
+          }
+        }
+      ]
+    },
+    "plug_thermostat_mode": {
+      "title": {
+        "en": "Thermostat Mode"
+      },
+      "type": "enum",
+      "setable": true,
+      "getable": true,
+      "uiComponent": "picker",
+      "values": [
+        {
+          "id": "off",
+          "title": {
+            "en": "Off"
+          }
+        },
+        {
+          "id": "heat",
+          "title": {
+            "en": "Heat"
+          }
+        },
+        {
+          "id": "sleep",
+          "title": {
+            "en": "Sleep"
           }
         }
       ]
