@@ -223,5 +223,8 @@
   },
   "2.2.58": {
     "en": "Added correct Manufactor ID on 3308431 - Luna lamp, Some name corrections on devices."
+  },
+  "2.2.59": {
+    "en": "Bug fixes"
   }
 }

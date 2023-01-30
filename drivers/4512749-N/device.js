@@ -22,6 +22,7 @@ class MyDevice extends ZigBeeDevice {
     this.registerCapability('meter_power', CLUSTER.METERING)
     this.registerCapability('measure_power', CLUSTER.ELECTRICAL_MEASUREMENT)
 
+
     this.registerCapability('measure_temperature',
       CLUSTER.TEMPERATURE_MEASUREMENT, {
         get: 'measuredValue',
