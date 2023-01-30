@@ -1,7 +1,7 @@
 {
   "name": {
-    "en": "4512749 - Zigbee Plug",
-    "no": "4512749 - Zigbee Termostatplugg"
+    "en": "4512749 - Zigbee Plug With Temperature Sensor",
+    "no": "4512749 - Zigbee Plugg Med Temperatur Sensor "
   },
   "class": "socket",
   "capabilities": [
@@ -45,7 +45,8 @@
     "learnmode": {
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
-        "en": "Short press Program button 5 times quickly."
+        "en": "Short press Program button 5 times quickly.",
+        "no": "Trykk kjapt på programeringsknappen 5 ganger for å starte parring"
       }
     }
   }

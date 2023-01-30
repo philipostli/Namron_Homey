@@ -1,6 +1,7 @@
 {
   "name": {
-    "en": "4512749-N - Zigbee Plug Thermostat"
+    "en": "4512749-N - Zigbee Plug Thermostat",
+    "no": "4512749-N - Zigbee Termostatplugg"
   },
   "class": "thermostat",
   "capabilities": [
@@ -64,7 +65,8 @@
     "learnmode": {
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
-        "en": "Short press Program button 5 times quickly."
+        "en": "Short press Program button 5 times quickly.",
+        "no": "Trykk kjapt 5 ganger på programeringsknappen for å starte parring"
       }
     }
   },
