@@ -206,7 +206,7 @@
               {
                 "id": "up",
                 "label": {
-                  "en": "held down and decreasing"
+                  "en": "held down and increasing"
                 }
               },
               {
@@ -14572,8 +14572,8 @@
     },
     {
       "name": {
-        "en": "4512749 - Zigbee Plug",
-        "no": "4512749 - Zigbee Termostatplugg"
+        "en": "4512749 - Zigbee Plug With Temperature Sensor",
+        "no": "4512749 - Zigbee Plugg Med Temperatur Sensor "
       },
       "class": "socket",
       "capabilities": [
@@ -14617,7 +14617,8 @@
         "learnmode": {
           "image": "/drivers/4512749/assets/learnmode.svg",
           "instruction": {
-            "en": "Short press Program button 5 times quickly."
+            "en": "Short press Program button 5 times quickly.",
+            "no": "Trykk kjapt på programeringsknappen 5 ganger for å starte parring"
           }
         }
       },
@@ -14625,7 +14626,8 @@
     },
     {
       "name": {
-        "en": "4512749-N - Zigbee Plug Thermostat"
+        "en": "4512749-N - Zigbee Plug Thermostat",
+        "no": "4512749-N - Zigbee Termostatplugg"
       },
       "class": "thermostat",
       "capabilities": [
@@ -14692,7 +14694,8 @@
         "learnmode": {
           "image": "/drivers/4512749-N/assets/learnmode.svg",
           "instruction": {
-            "en": "Short press Program button 5 times quickly."
+            "en": "Short press Program button 5 times quickly.",
+            "no": "Trykk kjapt 5 ganger på programeringsknappen for å starte parring"
           }
         }
       },
