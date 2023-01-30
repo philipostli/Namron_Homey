@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "net.filllip-namron",
-  "version": "2.2.56",
+  "version": "2.2.58",
   "compatibility": ">=7.4.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
@@ -11288,7 +11288,8 @@
           "Namron AS",
           "Namron As",
           "namron as",
-          "Namron  AS"
+          "Namron  AS",
+          "LDS"
         ],
         "productId": [
           "3308431"
@@ -11476,7 +11477,7 @@
     {
       "id": "3802962",
       "name": {
-        "en": "3802962- E27 Color"
+        "en": "3802962 - E27 Color"
       },
       "class": "light",
       "capabilities": [
@@ -11865,7 +11866,7 @@
     {
       "id": "3802967",
       "name": {
-        "en": "3802967 - G10 Color"
+        "en": "3802967 - GU10 Color"
       },
       "class": "light",
       "capabilities": [
@@ -13990,7 +13991,8 @@
         "learnmode": {
           "image": "/drivers/4512734/assets/learnmode.svg",
           "instruction": {
-            "en": "Open the back cover, and then press the action button on the sensor 3 times quickly."
+            "en": "Open the back cover, and then press the action button on the sensor 3 times quickly.",
+            "no": "Ta av bakplaten på sensoren. Trykk tre ganger på knappen for å starte inkludering"
           }
         },
         "associationGroups": [

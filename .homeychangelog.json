@@ -216,6 +216,12 @@
     "en": "Updated device class on relay devices from light to socket to give some more options. Added a test to fix kWh reporting on 1402756."
   },
   "2.2.56": {
-    "en": "Included all Zigbee Panelheaters models into 1 device for easier adding. Put old panelheater devices as deprecated. Updated device class to socket on relay devices so they get some more out of the box Homey automations. Added fix on1402756 on kWh reporting."
+    "en": "Included all Zigbee Panelheaters models into 1 device for easier adding. Put old panelheater devices as deprecated. Updated device class to socket on relay devices so they get some more out of the box Homey automations. Added fix on 1402756 on kWh reporting."
+  },
+  "2.2.57": {
+    "en": "Added driver for 4512734 - Namron Z-Wave MultiSensor."
+  },
+  "2.2.58": {
+    "en": "Added correct Manufactor ID on 3308431 - Luna lamp, Some name corrections on devices."
   }
 }
