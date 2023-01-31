@@ -16,8 +16,8 @@ module.exports = {
       (payload) => {
         console.log('-==-=-=-=-=-=-=-=-=-=- METER_REPORT:', payload);
         const Properties1 = payload['Properties1'] || {};
-        const size = Properties1['Size'];//4
-        const precision = Properties1['Precision'];//2
+        const size = Properties1['Size'] || 4;
+        const precision = Properties1['Precision'] || 2;
 
         // let meterValue = Buffer.from([0x00, 0x0f, 0x12, 0x05]);
         // console.log('meter value =====>',meterValue);
