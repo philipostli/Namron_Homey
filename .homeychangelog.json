@@ -226,5 +226,8 @@
   },
   "2.2.59": {
     "en": "Bug fixes"
+  },
+  "2.2.60": {
+    "en": "4512757 - Namron Z-Wave Termostat - fix for power measure bug"
   }
 }
