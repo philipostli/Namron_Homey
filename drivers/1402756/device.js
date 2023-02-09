@@ -13,10 +13,10 @@ class DimLight extends ZwaveLightDevice {
     this.addCapability('meter_power');
 
 
-    this.registerCapability('onoff', 'SWITCH_MULTILEVEL').catch(this.error) //08.02.2023 - test
-    this.registerCapability('dim', 'SWITCH_MULTILEVEL').catch(this.error) //08.02.2023 - test
-    this.registerCapability('measure_power', 'METER').catch(this.error) //08.02.2023 - test
-    this.registerCapability('meter_power', 'METER').catch(this.error) //08.02.2023 - test
+    this.registerCapability('onoff', 'SWITCH_MULTILEVEL')
+    this.registerCapability('dim', 'SWITCH_MULTILEVEL')
+    this.registerCapability('measure_power', 'METER')
+    this.registerCapability('meter_power', 'METER')
 
     this.registerReportListener('BASIC', 'BASIC_REPORT', report => {
       if (report && report.hasOwnProperty('Current Value')) {
@@ -46,7 +46,7 @@ class DimLight extends ZwaveLightDevice {
             this.cur_meter_power = payload['Meter Value (Parsed)'] || 0;
         }
       }
-    ).catch(this.error); //08.02.2023 - test  
+    )
 
 
     setInterval(() => {
