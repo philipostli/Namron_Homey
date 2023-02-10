@@ -358,7 +358,7 @@ class ZigBeeThermostat extends ZigBeeDevice {
         divisor,
       } = await this.zclNode.endpoints[this.getClusterEndpoint(
         CLUSTER.METERING)].clusters[CLUSTER.METERING.NAME].readAttributes(
-        'multiplier', 'divisor').catch(this.error) //08.02.2023- test
+        'multiplier', 'divisor').catch(this.error)
       // this.log('multiplier ' + multiplier + ", divisor " + divisor)
       let meterFactory = 0.1
       // If the multiplier and divisor are numbers, update the meterFactory.
