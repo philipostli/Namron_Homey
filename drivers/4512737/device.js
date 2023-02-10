@@ -358,11 +358,16 @@ class ZigBeeThermostat extends ZigBeeDevice {
         divisor,
       } = await this.zclNode.endpoints[this.getClusterEndpoint(
         CLUSTER.METERING)].clusters[CLUSTER.METERING.NAME].readAttributes(
-        'multiplier', 'divisor')
+        'multiplier', 'divisor').catch(this.error) //08.02.2023- test
       // this.log('multiplier ' + multiplier + ", divisor " + divisor)
       let meterFactory = 0.1
-      if (multiplier > 0 && divisor > 0) {
-        meterFactory = multiplier / divisor
+      // If the multiplier and divisor are numbers, update the meterFactory.
+      // If the device doesn't have a multiplier value and a divisor value,
+      // we ignore it.
+      if (typeof multiplier === 'number' && typeof divisor === 'number') {
+        if (multiplier > 0 && divisor > 0) {
+          meterFactory = multiplier / divisor
+        }
       }
 
       this.registerCapability('meter_power', CLUSTER.METERING, {
