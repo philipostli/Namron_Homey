@@ -235,5 +235,8 @@
   },
   "2.2.62": {
     "en": "Bug fixes"
+  },
+  "2.2.63": {
+    "en": "Fixes an issue where you get a Invalid enum capability on thermostat units."
   }
 }
