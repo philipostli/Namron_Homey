@@ -7,6 +7,12 @@
   "uiQuickAction": true,
   "values": [
     {
+      "id": "off",
+      "title" : {
+        "en": "OFF"
+      }
+    },
+    {
       "id": "heat",
       "title": {
         "en": "Heat" 
