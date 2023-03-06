@@ -238,5 +238,8 @@
   },
   "2.2.63": {
     "en": "Fixes an issue where you get a Invalid enum capability on thermostat units."
+  },
+  "2.2.64": {
+    "en": "Temp remove Power metering and measuring from 1402756 to resolve cloud issue."
   }
 }
