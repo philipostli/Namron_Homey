@@ -241,5 +241,8 @@
   },
   "2.2.64": {
     "en": "Temp remove Power metering and measuring from 1402756 to resolve cloud issue."
+  },
+  "2.2.65": {
+    "en": "Bug fixes regarding metering 4512757"
   }
 }
