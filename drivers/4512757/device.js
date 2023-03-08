@@ -47,9 +47,9 @@ class JSTAR_Thermostat extends ZwaveDevice {
 
     //appkit.app_reset.init(this, node);
     
-    //this.restartApp();
-
-    appkit.meters.init(this, node).registerCapability(this).startReport(this);
+    //this.restartApp(); 
+     
+    appkit.meters.init(this)
     
     appkit.ThermostatMode.init(this, node).registerCapability(this, node).startReport(this);
     
