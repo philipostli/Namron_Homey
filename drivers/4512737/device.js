@@ -47,7 +47,8 @@ class ZigBeeThermostat extends ZigBeeDevice {
 
     this._refreshTargetTemperatureByIsNotAway()
 
-    this.registerMeterPowerMeasurePower().then(r => {})
+    // Add a catch error at the end.
+    this.registerMeterPowerMeasurePower().then(r => {}).catch(this.error)
   }
 
   async onSettings ({ oldSettings, newSettings, changedKeys }) {
@@ -353,22 +354,29 @@ class ZigBeeThermostat extends ZigBeeDevice {
 
     if (this.hasCapability('meter_power')) {
 
+      /*
       const {
         multiplier,
         divisor,
       } = await this.zclNode.endpoints[this.getClusterEndpoint(
         CLUSTER.METERING)].clusters[CLUSTER.METERING.NAME].readAttributes(
         'multiplier', 'divisor').catch(this.error)
-      // this.log('multiplier ' + multiplier + ", divisor " + divisor)
-      let meterFactory = 0.1
+       */
+
+      const meterFactory = 0.1
+
       // If the multiplier and divisor are numbers, update the meterFactory.
       // If the device doesn't have a multiplier value and a divisor value,
       // we ignore it.
+
+      /* Remove this block because the meter factory is a const value.
+
       if (typeof multiplier === 'number' && typeof divisor === 'number') {
         if (multiplier > 0 && divisor > 0) {
           meterFactory = multiplier / divisor
         }
       }
+       */
 
       this.registerCapability('meter_power', CLUSTER.METERING, {
         get: 'currentSummationDelivered',
