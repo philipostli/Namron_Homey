@@ -244,5 +244,8 @@
   },
   "2.2.65": {
     "en": "Bug fixes regarding metering 4512757"
+  },
+  "2.2.66": {
+    "en": "Bug fixes on 4512737 Multiplier issue, Bug fixes on 4512757 to prevent Homey crash"
   }
 }
