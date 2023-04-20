@@ -10153,6 +10153,79 @@
       }
     },
     {
+      "id": "1402769",
+      "name": {
+        "en": "1402769 - Zigbee Dimmer"
+      },
+      "class": "light",
+      "capabilities": [],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": true
+        },
+        "capabilitiesOptions": {
+          "measure_power": {
+            "isApproximated": true
+          }
+        }
+      },
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": [
+          "NAMRON AS",
+          "NAMRON  AS",
+          "NAMRON As",
+          "Namron AS",
+          "Namron As",
+          "namron as",
+          "HZC",
+          "Shyugj"
+        ],
+        "productId": [
+          "1402769",
+          "D693-ZG"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              3,
+              4,
+              5,
+              6,
+              8
+            ],
+            "bindings": [
+              6,
+              8
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/1402769/assets/learnmode.svg",
+          "instruction": {
+            "en": "Double press the reset button.\n\nIf pairing does not start after 20 seconds, reset the device by press and hold reset button for over 5 seconds."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/1402769/assets/images/large.png",
+        "small": "/drivers/1402769/assets/images/small.png"
+      },
+      "settings": []
+    },
+    {
       "class": "socket",
       "name": {
         "en": "140279* - Namron Stove Guard",
@@ -14332,6 +14405,482 @@
         "small": "/drivers/4512760/assets/images/small.png"
       },
       "settings": []
+    },
+    {
+      "id": "4512762",
+      "name": {
+        "en": "4512762 - ZigBee Door Sensor"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_battery",
+        "alarm_battery",
+        "alarm_contact",
+        "alarm_tamper"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2450"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "NAMRON AS",
+          "NAMRON  AS",
+          "NAMRON As",
+          "Namron AS",
+          "Namron As",
+          "namron as"
+        ],
+        "productId": [
+          "4512762"
+        ],
+        "deviceId": [
+          1026
+        ],
+        "profileId": 260,
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              9,
+              15,
+              16,
+              1026,
+              1029,
+              1030,
+              1280,
+              2821
+            ]
+          }
+        },
+        "learnmode": {
+          "instruction": {
+            "en": "To Include, short press Config Button three times."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/4512762/assets/images/large.png",
+        "small": "/drivers/4512762/assets/images/small.png"
+      },
+      "settings": [
+        {
+          "id": "alarm_door_reset_window",
+          "type": "number",
+          "label": {
+            "en": "Disable door alarm after"
+          },
+          "hint": {
+            "en": "This setting will disable the door alarm after the given time (in seconds) has expired. Every time door is observed by the device it will reset this timeout.\nRange: 60 - 86400, default: 300 [s]"
+          },
+          "value": 300,
+          "attr": {
+            "min": 60,
+            "max": 86400
+          }
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Expert settings",
+            "nl": "Expert instellingen"
+          },
+          "collapsed": true,
+          "children": [
+            {
+              "id": "hacked_alarm_door_reset_window",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Hacked sensor"
+              },
+              "hint": {
+                "en": "By soldering two contact points on the PCB it's possible to reduce the door blind time to 5 seconds instead of the minimum 60 seconds. Enabling this setting will allow you to override the minimum of 60 seconds for cancelling the alarm and will set it to 5 seconds."
+              }
+            }
+          ]
+        }
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ]
+    },
+    {
+      "id": "4512763",
+      "name": {
+        "en": "4512763 - ZigBee Motion Sensor"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_battery",
+        "alarm_battery",
+        "alarm_motion",
+        "alarm_tamper"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2450"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "NAMRON AS",
+          "NAMRON  AS",
+          "NAMRON As",
+          "Namron AS",
+          "Namron As",
+          "namron as"
+        ],
+        "productId": [
+          "4512763"
+        ],
+        "deviceId": [
+          1026
+        ],
+        "profileId": 260,
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              15,
+              16,
+              1024,
+              1026,
+              1280,
+              1029,
+              1030,
+              2821
+            ]
+          }
+        },
+        "learnmode": {
+          "instruction": {
+            "en": "To Include, short press Config Button three times."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/4512763/assets/images/large.png",
+        "small": "/drivers/4512763/assets/images/small.png"
+      },
+      "settings": [
+        {
+          "id": "alarm_motion_reset_window",
+          "type": "number",
+          "label": {
+            "en": "Disable motion alarm after",
+            "nl": "Schakel bewegingsalarm uit na"
+          },
+          "hint": {
+            "en": "This setting will disable the motion alarm after the given time (in seconds) has expired. Every time motion is observed by the device it will reset this timeout.\nRange: 60 - 86400, default: 300 [s]",
+            "nl": "Deze instelling zal het bewegingsalarm uitschakelen na de tijd (in seconden) is verstreken. Elke keer dat opnieuw beweging wordt gedetecteerd wordt deze timer herstart.\nBereik: 60 - 86400, Standaard: 300 [s]"
+          },
+          "value": 300,
+          "attr": {
+            "min": 60,
+            "max": 86400
+          }
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Expert settings",
+            "nl": "Expert instellingen"
+          },
+          "collapsed": true,
+          "children": [
+            {
+              "id": "hacked_alarm_motion_reset_window",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Hacked sensor"
+              },
+              "hint": {
+                "en": "By soldering two contact points on the PCB it's possible to reduce the motion blind time to 5 seconds instead of the minimum 60 seconds. Enabling this setting will allow you to override the minimum of 60 seconds for cancelling the alarm and will set it to 5 seconds.",
+                "nl": "Door twee contactpunten op de printplaat te solderen is het mogelijk om de blindtijd van de sensor terug te brengen naar 5 seconden. Inschakelen van deze instelling maakt het mogelijk om de instelling voor het annuleren van de bewegingsmelder te overschrijven tot 5 seconden."
+              }
+            }
+          ]
+        }
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ]
+    },
+    {
+      "id": "4512764",
+      "name": {
+        "en": "4512764 - ZigBee Water Leak Sensor"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_battery",
+        "alarm_water",
+        "measure_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2450"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "NAMRON AS",
+          "NAMRON  AS",
+          "NAMRON As",
+          "Namron AS",
+          "Namron As",
+          "namron as"
+        ],
+        "productId": [
+          "4512764"
+        ],
+        "deviceId": [
+          1026
+        ],
+        "profileId": 260,
+        "endpoints": {
+          "1": {
+            "clusters": [
+              1,
+              1280,
+              2821
+            ]
+          }
+        },
+        "learnmode": {
+          "instruction": {
+            "en": "To Include, short press Config Button three times."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/4512764/assets/images/large.png",
+        "small": "/drivers/4512764/assets/images/small.png"
+      },
+      "settings": [
+        {
+          "id": "battery_threshold",
+          "type": "number",
+          "label": {
+            "en": "Battery alarm threshold (%)",
+            "nl": "Batterij alarm waarde (%)"
+          },
+          "hint": {
+            "en": "Battery level (%) below which the battery alarm will be activated.\nRange: 1 - 90, \ndefault: 20 [%]",
+            "nl": "Battery niveau (%) waarbij het batterij alarm geactiveerd wordt.\nBereik: 1 - 90, \nstandaard: 20 [%]"
+          },
+          "value": 20,
+          "attr": {
+            "min": 1,
+            "max": 90
+          }
+        }
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ]
+    },
+    {
+      "id": "4512765",
+      "name": {
+        "en": "4512765 - ZigBee Temp&Hum Sensor"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_battery",
+        "measure_temperature",
+        "measure_humidity",
+        "alarm_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2450"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "NAMRON AS",
+          "NAMRON  AS",
+          "NAMRON As",
+          "Namron AS",
+          "Namron As",
+          "namron as"
+        ],
+        "productId": [
+          "4512765"
+        ],
+        "deviceId": [
+          770
+        ],
+        "profileId": 260,
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              8,
+              15,
+              16,
+              1026,
+              1029,
+              1030,
+              2821
+            ]
+          }
+        },
+        "learnmode": {
+          "instruction": {
+            "en": "To Include, short press Config Button three times."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/4512765/assets/images/large.png",
+        "small": "/drivers/4512765/assets/images/small.png"
+      },
+      "settings": [
+        {
+          "id": "temperature_offset",
+          "type": "number",
+          "label": {
+            "en": "Temperature offset (°C)",
+            "nl": "Temperatuur compensatie (°C)"
+          },
+          "hint": {
+            "en": "Set a correction to compensate a temperature offset.\nRange: -10 - 10, step size 0.1, \ndefault: 0 [°C]",
+            "nl": "Stel een correctiewaarde in om een temperature verschil te compenseren.\nBereik: -10 - 10, stap grootte 0.1, \nstandaard: 0 [°C]"
+          },
+          "value": 0,
+          "attr": {
+            "min": -10,
+            "max": 10,
+            "step": 0.1
+          },
+          "units": {
+            "en": "°C",
+            "nl": "°C"
+          }
+        },
+        {
+          "id": "temperature_decimals",
+          "type": "radio",
+          "label": {
+            "en": "Temperature decimals"
+          },
+          "value": "1",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "1 decimal(e.g. 22.1 °C)"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "2 decimals(e.g. 22.07 °C)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "humidity_offset",
+          "type": "number",
+          "label": {
+            "en": "Humidity offset (%)",
+            "nl": "Luchtvochtigheids compensatie (%)"
+          },
+          "hint": {
+            "en": "Set a correction to compensate a humidity offset.\nRange: -10 - 10, step size 1, \ndefault: 0 [%]",
+            "nl": "Stel een correctiewaarde in om een Luchtvochtigheids verschil te compenseren.\nBereik: -10 - 10, stap grootte 1, \nstandaard: 0 [%]"
+          },
+          "value": 0,
+          "attr": {
+            "min": -10,
+            "max": 10,
+            "step": 1
+          },
+          "units": {
+            "en": "%",
+            "nl": "%"
+          }
+        },
+        {
+          "id": "humidity_decimals",
+          "type": "radio",
+          "label": {
+            "en": "Humidity reporting"
+          },
+          "value": "1",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "1 decimal(e.g. 65.3 %)"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "2 decimals(e.g. 65.34 %)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "battery_threshold",
+          "type": "number",
+          "label": {
+            "en": "Battery alarm threshold (%)",
+            "nl": "Batterij alarm waarde (%)"
+          },
+          "hint": {
+            "en": "Battery level (%) below which the battery alarm will be activated.\nRange: 1 - 90, \ndefault: 20 [%]",
+            "nl": "Battery niveau (%) waarbij het batterij alarm geactiveerd wordt.\nBereik: 1 - 90, \nstandaard: 20 [%]"
+          },
+          "value": 20,
+          "attr": {
+            "min": 1,
+            "max": 90
+          }
+        }
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ]
     },
     {
       "name": {
