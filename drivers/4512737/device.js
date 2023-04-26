@@ -85,7 +85,9 @@ class ZigBeeThermostat extends ZigBeeDevice {
             }
           }
 
-          return this._thermostatCluster().writeAttributes(payload).catch(this.error)
+          return this._thermostatCluster().
+            writeAttributes(payload).
+            catch(this.error)
         })
       })
   }
@@ -133,19 +135,17 @@ class ZigBeeThermostat extends ZigBeeDevice {
 
   _registerAwayMode () {
 
+    // Because the device has updated the away mode attribute, the old version is `occupancy`,
+    // but the latest version is `internalOverHeat`, so I updated this.
+
     this.registerCapability('my_thermostat_away_mode', CLUSTER.THERMOSTAT, {
-      get: 'occupancy',
-      getOpts: {
-        getOnStart: true,
-        pollInterval: 60 * 60 * 1000,
-      },
-      report: 'occupancy',
+      get: 'internalOverHeat',
+      report: 'internalOverHeat',
       reportParser (value) {
 
-        const isNotAway = value['occupied']
+        const isNotAway = value['internalOverHeat'] !== 'level1'
 
-        this.log('occupancy report ')
-        this.log(isNotAway)
+        this.log(`internalOverHeat report ${isNotAway}`)
 
         this.isNotAwayValue = isNotAway
         this._refreshTargetTemperature(isNotAway)
@@ -220,9 +220,15 @@ class ZigBeeThermostat extends ZigBeeDevice {
       reportParser (value) {
 
         let temp = parseFloat((getInt16(value) / 100).toFixed(1))
-        this.floorTemperatureValue = temp
+        // If you got a very low temperature, that means the floor sensor isn't working.
+        if (typeof temp === 'number' && temp >= -100) {
+          this.floorTemperatureValue = temp
+          this._updateMeasureTemperatureIfNeeded()
+          return temp
+        }
+        this.floorTemperatureValue = null
         this._updateMeasureTemperatureIfNeeded()
-        return temp
+        return null
       },
     })
 
@@ -246,7 +252,7 @@ class ZigBeeThermostat extends ZigBeeDevice {
 
     } else if (this.controlTypeValue === 'floor') {
 
-      if (typeof this.floorTemperatureValue === 'number') {
+      if (typeof this.floorTemperatureValue === 'number' && this.floorTemperatureValue >= -100) {
 
         this.log('set to floor temp')
         this.setCapabilityValue('measure_temperature',
@@ -260,7 +266,7 @@ class ZigBeeThermostat extends ZigBeeDevice {
       if (typeof this.roomTemperatureValue === 'number') {
         roomTemp = this.roomTemperatureValue
       }
-      if (typeof this.floorTemperatureValue === 'number') {
+      if (typeof this.floorTemperatureValue === 'number' && this.floorTemperatureValue >= -100) {
         floorTemp = this.floorTemperatureValue
       }
 
@@ -306,16 +312,17 @@ class ZigBeeThermostat extends ZigBeeDevice {
 
     return new Promise((resolve, reject) => {
 
-      this._thermostatCluster().readAttributes('occupancy').then(value => {
+      this._thermostatCluster().
+        readAttributes('internalOverHeat').
+        then(value => {
 
-        const isNotAwayMode = value['occupancy']['occupied']
-        this.log(`read occupancy in update target `, value, isNotAwayMode)
-        resolve(isNotAwayMode)
-
-      }).catch(err => {
-
-        reject(err)
-      })
+          const isNotAwayMode = value['internalOverHeat'] !== 'level1'
+          this.log(`read internalOverheat ${isNotAwayMode}`)
+          resolve(isNotAwayMode)
+        }).
+        catch(err => {
+          reject(err)
+        })
     })
   }
 
@@ -388,7 +395,7 @@ class ZigBeeThermostat extends ZigBeeDevice {
         },
         reportOpts: {
           configureAttributeReporting: {
-            minInterval: 0,
+            minInterval: 5,
             maxInterval: 3600,
             minChange: 0.2 / meterFactory,
           },
@@ -426,9 +433,10 @@ class ZigBeeThermostat extends ZigBeeDevice {
         },
         reportOpts: {
           configureAttributeReporting: {
-            minInterval: 0, // Minimally once every 5 seconds
+            // If the interval is 0, maybe the device reports too often.
+            minInterval: 5, // Minimally once every 5 seconds
             maxInterval: 3600, // Maximally once every ~16 hours
-            minChange: 0.5,
+            minChange: 1,
           },
         },
       })
