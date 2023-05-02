@@ -253,5 +253,8 @@
   },
   "2.2.68": {
     "en": "Added new sensor devices"
+  },
+  "2.2.69": {
+    "en": "Added new zigbee sensor devices"
   }
 }
