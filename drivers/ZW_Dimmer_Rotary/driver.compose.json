@@ -1,0 +1,83 @@
+{
+  "id": "ZW_Dimmer_Rotary",
+  "name": {
+    "en": "Dimmer - Rotary (Z-wave)"
+  },
+  "deprecated": true,
+  "class": "light",
+  "capabilities": [
+    "onoff",
+    "dim"
+  ],
+  "capabilitiesOptions": {
+    "onoff": {
+      "setOnDim": false
+    },
+    "dim": {
+      "opts": {
+        "duration": true
+      }
+    }
+  },
+  "energy": {
+    "approximation": {
+      "usageOn": 200,
+      "usageOff": 0
+    }
+  },
+  "icon": "{{driverAssetsPath}}/icon.svg",
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "platforms": ["local", "cloud"],
+  "connectivity": ["zwave"],
+  "zwave": {
+    "requireSecure": true,
+    "manufacturerId": [
+      1073,
+      1080
+    ],
+    "productTypeId": [
+      2,
+      514
+    ],
+    "productId": [
+      2
+    ],
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Inclusion, Exclusion \nTriple press the reset button on the dimmer. \n\n!!! NOTE \nWait 5 - 10 seconds after each pairing operation, otherwise pairing will easily fail. \n\nFactory reset \nPress and hold down the reset button for over 5 seconds."
+      }
+    },
+    "associationGroups": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "associationGroupsOptions": {
+      "1": {
+        "hint": {
+          "en": "The ASSIC of Lifeline: 4C 69 66 65 6C 69 6E 65. \n1. When press and hold down reset button over 5s to reset the dimmer send Device Reset Locally Notification CC to associated devices of this group to report factory reset information. \n2. When load state changes send Switch Multilevel Report CC to associated devices of this group."
+        }
+      },
+      "2": {
+        "hint": {
+          "en": "Basic Set: 42 61 73 69 63 20 53 65 74. \n1. Short press Knob turn on the dimmer sends Basic Set (0xFF) to associated devices. \n2. Short press Knob turn off the dimmer sends Basic Set (0x00) to associated devices."
+        }
+      },
+      "3": {
+        "hint": {
+          "en": "Switch Multilevel: 53 77 69 74 63 68 20 4D 75 6C 74 69 6C 65 76 65 6C. \n1. Turn knob to the left sends Switch Multilevel Set (to keep associated devices in sync with this device) to associated devices. \n2. Turn knob to the right sends Switch Multilevel Set (to keep associated devices in sync with this device) to associated devices."
+        }
+      },
+      "4": {
+        "hint": {
+          "en": "External Button: 45 78 74 65 72 6E 61 6C 20 42 75 74 74 6F 6E. \n1. External button hold send Switch Multilevel Start Level Change (Switchover dimmer Up/Down). \n2. External button release send Switch Multilevel Stop Level Change."
+        }
+      }
+    }
+  }
+}
