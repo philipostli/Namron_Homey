@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "net.filllip-namron",
-  "version": "2.2.70",
+  "version": "2.2.71",
   "compatibility": ">=7.4.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
@@ -12976,7 +12976,9 @@
         "zwave"
       ],
       "zwave": {
-        "requireSecure": true,
+        "security": [
+          "none"
+        ],
         "manufacturerId": [
           816,
           1080
@@ -13026,7 +13028,9 @@
         "zwave"
       ],
       "zwave": {
-        "requireSecure": true,
+        "security": [
+          "none"
+        ],
         "manufacturerId": [
           816,
           1080
@@ -13106,7 +13110,9 @@
         "zwave"
       ],
       "zwave": {
-        "requireSecure": true,
+        "security": [
+          "none"
+        ],
         "manufacturerId": [
           816,
           1080
@@ -13168,7 +13174,9 @@
         "zwave"
       ],
       "zwave": {
-        "requireSecure": true,
+        "security": [
+          "none"
+        ],
         "manufacturerId": [
           816,
           1080
@@ -13230,7 +13238,9 @@
         "zwave"
       ],
       "zwave": {
-        "requireSecure": true,
+        "security": [
+          "none"
+        ],
         "manufacturerId": [
           816,
           1080
@@ -13311,7 +13321,9 @@
         "zwave"
       ],
       "zwave": {
-        "requireSecure": true,
+        "security": [
+          "none"
+        ],
         "manufacturerId": [
           816,
           1080
@@ -13674,7 +13686,9 @@
         "zwave"
       ],
       "zwave": {
-        "requireSecure": true,
+        "security": [
+          "none"
+        ],
         "manufacturerId": [
           816,
           1080
@@ -13753,7 +13767,9 @@
         "zwave"
       ],
       "zwave": {
-        "requireSecure": true,
+        "security": [
+          "none"
+        ],
         "manufacturerId": [
           816,
           1080
@@ -14387,7 +14403,9 @@
         "zwave"
       ],
       "zwave": {
-        "requireSecure": true,
+        "security": [
+          "none"
+        ],
         "manufacturerId": [
           816,
           1080
@@ -14439,7 +14457,9 @@
         "zwave"
       ],
       "zwave": {
-        "requireSecure": true,
+        "security": [
+          "none"
+        ],
         "manufacturerId": [
           1080
         ],
@@ -14511,7 +14531,9 @@
         "zwave"
       ],
       "zwave": {
-        "requireSecure": true,
+        "security": [
+          "none"
+        ],
         "manufacturerId": [
           816,
           1080
@@ -14792,6 +14814,9 @@
         "zwave"
       ],
       "zwave": {
+        "security": [
+          "none"
+        ],
         "manufacturerId": 1080,
         "productTypeId": 4,
         "productId": 264,
@@ -15951,6 +15976,114 @@
       ],
       "connectivity": [
         "zigbee"
+      ]
+    },
+    {
+      "id": "4512768",
+      "name": {
+        "en": "4512768 - Zigbee 2 way Switch"
+      },
+      "class": "light",
+      "capabilities": [],
+      "capabilitiesOptions": {
+        "button.calibrate": {
+          "maintenanceAction": false,
+          "title": {
+            "en": "Calibration mode"
+          },
+          "desc": {
+            "en": "Calibration mode status: Required not equal to 9"
+          }
+        }
+      },
+      "images": {
+        "small": "/drivers/4512768/assets/images/small.png",
+        "large": "/drivers/4512768/assets/images/large.png"
+      },
+      "energy": {
+        "approximation": {
+          "usageOn": 0,
+          "usageOff": 0
+        }
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "Namron as",
+          "Namron AS"
+        ],
+        "productId": [
+          "4512768"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              6,
+              32,
+              1794,
+              2820
+            ],
+            "bindings": [
+              0,
+              32768,
+              6,
+              1794,
+              2820
+            ]
+          },
+          "2": {
+            "clusters": [
+              0,
+              1,
+              6,
+              32,
+              1794,
+              2820
+            ],
+            "bindings": [
+              0,
+              32768,
+              6,
+              1794,
+              2820
+            ]
+          }
+        },
+        "learnmode": {
+          "instruction": {
+            "en": "to include, Press button1 or button 2 once and long press second time for over 3s to join the network."
+          }
+        }
+      },
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [],
+      "settings": [
+        {
+          "id": "app_version",
+          "type": "label",
+          "label": {
+            "en": "App version"
+          },
+          "value": "v1.0.2304.1",
+          "hint": {
+            "en": "App version."
+          }
+        },
+        {
+          "id": "swmode",
+          "type": "label",
+          "label": {
+            "en": "Device mode"
+          },
+          "value": " - ",
+          "hint": {
+            "en": "Device current mode"
+          }
+        }
       ]
     },
     {
@@ -18751,7 +18884,9 @@
         "zwave"
       ],
       "zwave": {
-        "requireSecure": true,
+        "security": [
+          "none"
+        ],
         "manufacturerId": [
           816,
           1080
@@ -18813,7 +18948,9 @@
         "zwave"
       ],
       "zwave": {
-        "requireSecure": true,
+        "security": [
+          "none"
+        ],
         "manufacturerId": [
           1073,
           1080
@@ -19083,7 +19220,9 @@
         "zwave"
       ],
       "zwave": {
-        "requireSecure": true,
+        "security": [
+          "none"
+        ],
         "manufacturerId": [
           816,
           1080
@@ -19262,7 +19401,9 @@
         "zwave"
       ],
       "zwave": {
-        "requireSecure": true,
+        "security": [
+          "none"
+        ],
         "manufacturerId": [
           816,
           1080
@@ -19343,7 +19484,9 @@
         "zwave"
       ],
       "zwave": {
-        "requireSecure": true,
+        "security": [
+          "none"
+        ],
         "manufacturerId": [
           816,
           1080
@@ -19406,7 +19549,9 @@
         "zwave"
       ],
       "zwave": {
-        "requireSecure": true,
+        "security": [
+          "none"
+        ],
         "manufacturerId": [
           816,
           1080
@@ -19476,7 +19621,9 @@
         "zwave"
       ],
       "zwave": {
-        "requireSecure": true,
+        "security": [
+          "none"
+        ],
         "manufacturerId": [
           816,
           1080
@@ -19554,7 +19701,9 @@
         "zwave"
       ],
       "zwave": {
-        "requireSecure": true,
+        "security": [
+          "none"
+        ],
         "manufacturerId": [
           816,
           1080
@@ -19728,6 +19877,160 @@
           }
         }
       ]
+    },
+    "measure_power_1": {
+      "type": "number",
+      "title": {
+        "en": "Power 1"
+      },
+      "units": {
+        "en": "W"
+      },
+      "insights": true,
+      "desc": {
+        "en": "Power in watt (W)"
+      },
+      "options": {
+        "isApproximated": {
+          "type": "boolean",
+          "default": false,
+          "desc": {
+            "en": "This flag is used to determine that the device itself has no power measurement functionality, but that the driver calculates the energy use."
+          }
+        }
+      },
+      "icon": "/assets/capabilities/measure_power.svg",
+      "decimals": 2,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor"
+    },
+    "measure_power_2": {
+      "type": "number",
+      "title": {
+        "en": "Power 2"
+      },
+      "units": {
+        "en": "W"
+      },
+      "insights": true,
+      "desc": {
+        "en": "Power in watt (W)"
+      },
+      "options": {
+        "isApproximated": {
+          "type": "boolean",
+          "default": false,
+          "desc": {
+            "en": "This flag is used to determine that the device itself has no power measurement functionality, but that the driver calculates the energy use."
+          }
+        }
+      },
+      "icon": "/assets/capabilities/measure_power.svg",
+      "decimals": 2,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor"
+    },
+    "meter_power_1": {
+      "type": "number",
+      "title": {
+        "en": "Energy 1",
+        "nl": "Energie",
+        "de": "Energie",
+        "fr": "Énergie",
+        "it": "Energia",
+        "sv": "Energi",
+        "no": "Energi",
+        "es": "Energía",
+        "da": "Energi",
+        "ru": "Электроэнергия",
+        "pl": "Energia"
+      },
+      "decimals": 2,
+      "units": {
+        "en": "kWh",
+        "ru": "кВтч"
+      },
+      "desc": {
+        "en": "Energy usage in kilowatt-hour (kWh)",
+        "nl": "Energie verbruik in kilowattuur (kWh)",
+        "de": "Energieverbrauch in Kilowattstunde (kWh)",
+        "fr": "Consommation d'énergie en kilowatt-heure (kWh)",
+        "it": "Consumo energetico in kilowattora (kWh)",
+        "sv": "Energianvändning i kilowattimmar (kWh)",
+        "no": "Energiforbruk i kilowattimer (kWh)",
+        "es": "Uso de energía en kilovatio hora (kWh)",
+        "da": "Energiforbrug i kilowattime (kWh)",
+        "ru": "Энергопотребление в киловатт-часах (кВтч)",
+        "pl": "Zużycie energii w kilowatogodzinach (kWh)"
+      },
+      "icon": "/assets/capabilities/meter_power.svg",
+      "options": {
+        "isApproximated": {
+          "type": "boolean",
+          "default": false,
+          "desc": {
+            "en": "This flag is used to determine that the device itself has no power measurement functionality, but that the driver calculates the energy use.",
+            "ru": "Этот флаг используется для определения того, что само устройство не имеет функции измерения электроэнергии, но драйвер рассчитывает потребление энергии.",
+            "pl": "Flaga oznacza, że samo urządzenie nie ma funkcji pomiaru mocy, ale sterownik oblicza zużycie energii."
+          }
+        }
+      },
+      "insights": true,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor"
+    },
+    "meter_power_2": {
+      "type": "number",
+      "title": {
+        "en": "Energy 2",
+        "nl": "Energie",
+        "de": "Energie",
+        "fr": "Énergie",
+        "it": "Energia",
+        "sv": "Energi",
+        "no": "Energi",
+        "es": "Energía",
+        "da": "Energi",
+        "ru": "Электроэнергия",
+        "pl": "Energia"
+      },
+      "decimals": 2,
+      "units": {
+        "en": "kWh",
+        "ru": "кВтч"
+      },
+      "desc": {
+        "en": "Energy usage in kilowatt-hour (kWh)",
+        "nl": "Energie verbruik in kilowattuur (kWh)",
+        "de": "Energieverbrauch in Kilowattstunde (kWh)",
+        "fr": "Consommation d'énergie en kilowatt-heure (kWh)",
+        "it": "Consumo energetico in kilowattora (kWh)",
+        "sv": "Energianvändning i kilowattimmar (kWh)",
+        "no": "Energiforbruk i kilowattimer (kWh)",
+        "es": "Uso de energía en kilovatio hora (kWh)",
+        "da": "Energiforbrug i kilowattime (kWh)",
+        "ru": "Энергопотребление в киловатт-часах (кВтч)",
+        "pl": "Zużycie energii w kilowatogodzinach (kWh)"
+      },
+      "icon": "/assets/capabilities/meter_power.svg",
+      "options": {
+        "isApproximated": {
+          "type": "boolean",
+          "default": false,
+          "desc": {
+            "en": "This flag is used to determine that the device itself has no power measurement functionality, but that the driver calculates the energy use.",
+            "ru": "Этот флаг используется для определения того, что само устройство не имеет функции измерения электроэнергии, но драйвер рассчитывает потребление энергии.",
+            "pl": "Flaga oznacza, że samo urządzenie nie ma funkcji pomiaru mocy, ale sterownik oblicza zużycie energii."
+          }
+        }
+      },
+      "insights": true,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor"
     },
     "my_4512744_thermostat_mode": {
       "title": {
@@ -20022,6 +20325,162 @@
       "getable": true,
       "setable": true,
       "uiComponent": "slider"
+    },
+    "rms_current": {
+      "type": "string",
+      "title": {
+        "en": "Current"
+      },
+      "desc": {
+        "en": "Rms current"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/wavy_line.svg"
+    },
+    "rms_current_1": {
+      "type": "string",
+      "title": {
+        "en": "Current 1"
+      },
+      "desc": {
+        "en": "Rms current"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/wavy_line.svg"
+    },
+    "rms_current_2": {
+      "type": "string",
+      "title": {
+        "en": "Current 2"
+      },
+      "desc": {
+        "en": "Rms current"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/wavy_line.svg"
+    },
+    "rms_voltage": {
+      "type": "string",
+      "title": {
+        "en": "Voltage"
+      },
+      "desc": {
+        "en": "Rms current voltage"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/voltage.svg"
+    },
+    "rms_voltage_1": {
+      "type": "string",
+      "title": {
+        "en": "Voltage 1"
+      },
+      "desc": {
+        "en": "Rms current voltage"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/voltage.svg"
+    },
+    "rms_voltage_2": {
+      "type": "string",
+      "title": {
+        "en": "Voltage 2"
+      },
+      "desc": {
+        "en": "Rms current voltage"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/voltage.svg"
+    },
+    "switch": {
+      "type": "boolean",
+      "title": {
+        "en": "Switch"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "button",
+      "uiQuickAction": false,
+      "values": [
+        {
+          "id": "off",
+          "title": {
+            "en": "OFF",
+            "zh": "关闭"
+          }
+        },
+        {
+          "id": "on",
+          "title": {
+            "en": "ON",
+            "zh": "开启"
+          }
+        }
+      ]
+    },
+    "switch_1": {
+      "type": "boolean",
+      "title": {
+        "en": "Switch 1"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "button",
+      "uiQuickAction": false,
+      "values": [
+        {
+          "id": "off",
+          "title": {
+            "en": "OFF",
+            "zh": "关闭"
+          }
+        },
+        {
+          "id": "on",
+          "title": {
+            "en": "ON",
+            "zh": "开启"
+          }
+        }
+      ]
+    },
+    "switch_2": {
+      "type": "boolean",
+      "title": {
+        "en": "Switch 2"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "button",
+      "uiQuickAction": false,
+      "values": [
+        {
+          "id": "off",
+          "title": {
+            "en": "OFF",
+            "zh": "关闭"
+          }
+        },
+        {
+          "id": "on",
+          "title": {
+            "en": "ON",
+            "zh": "开启"
+          }
+        }
+      ]
     },
     "zg9030a_datetime": {
       "title": {

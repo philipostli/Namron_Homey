@@ -259,5 +259,8 @@
   },
   "2.2.70": {
     "en": "Support for old drivers after update of Homey Cloud flow limit."
+  },
+  "2.2.71": {
+    "en": "Added support for new 4512768 and adjusted security level on Z-Wave devices."
   }
 }
