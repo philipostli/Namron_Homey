@@ -6,6 +6,7 @@
   "platforms": ["local", "cloud"],
   "connectivity": ["zwave"],
   "zwave": {
+    "security": ["none"],
     "manufacturerId": 1080,
     "productTypeId": 4,
     "productId": 264,
