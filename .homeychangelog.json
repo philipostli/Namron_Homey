@@ -256,5 +256,8 @@
   },
   "2.2.69": {
     "en": "Added new zigbee sensor devices"
+  },
+  "2.2.70": {
+    "en": "Support for old drivers after update of Homey Cloud flow limit."
   }
 }
