@@ -1,5 +1,4 @@
 {
-  "id": "4512725",
   "name": {
     "en": "4512725 - Z-Wave Plug Thermostat",
     "no": "4512725 - Z-Wave Termostatplugg"
@@ -18,10 +17,17 @@
     "large": "/drivers/4512725/assets/images/large.png",
     "small": "/drivers/4512725/assets/images/small.png"
   },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zwave"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zwave"
+  ],
   "zwave": {
-    "security": ["none"],
+    "security": [
+      "none"
+    ],
     "manufacturerId": [
       1080
     ],

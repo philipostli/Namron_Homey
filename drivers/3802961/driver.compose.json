@@ -1,5 +1,4 @@
 {
-  "id": "3802961",
   "name": {
     "en": "3802961- E27 CCT"
   },
@@ -24,8 +23,13 @@
       "setOnDim": false
     }
   },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zigbee"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
   "zigbee": {
     "manufacturerName": [
       "NAMRON AS",
@@ -34,8 +38,7 @@
       "Namron AS",
       "Namron As",
       "namron as",
-      "Namron  AS",
-      "LDS"
+      "Namron  AS"
     ],
     "productId": [
       "3802961"
@@ -70,7 +73,5 @@
     "large": "/drivers/3802961/assets/images/large.png",
     "small": "/drivers/3802961/assets/images/small.png"
   },
-  "settings": [
-
-  ]
+  "settings": []
 }

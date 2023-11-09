@@ -1,5 +1,4 @@
 {
-  "id": "4512716",
   "name": {
     "en": "4512716 - Z-Wave Door/Window Sensor"
   },
@@ -19,8 +18,13 @@
     "large": "/drivers/4512716/assets/images/large.png",
     "small": "/drivers/4512716/assets/images/small.png"
   },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zwave"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zwave"
+  ],
   "zwave": {
     "requireSecure": true,
     "manufacturerId": [

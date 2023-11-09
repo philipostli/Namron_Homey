@@ -1,5 +1,4 @@
 {
-  "id": "ZW_Remote_4",
   "name": {
     "en": "Remote - 4 channel (Z-wave)",
     "nl": "Afstandsbediening - 4 kanaals (Z-wave)"
@@ -15,15 +14,22 @@
       "CR2450"
     ]
   },
-  "icon": "{{driverAssetsPath}}/icon.svg",
+  "icon": "/drivers/ZW_Remote_4/assets/icon.svg",
   "images": {
-    "large": "{{driverAssetsPath}}/images/large.png",
-    "small": "{{driverAssetsPath}}/images/small.png"
+    "large": "/drivers/ZW_Remote_4/assets/images/large.png",
+    "small": "/drivers/ZW_Remote_4/assets/images/small.png"
   },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zwave"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zwave"
+  ],
   "zwave": {
-    "security": ["none"],
+    "security": [
+      "none"
+    ],
     "manufacturerId": [
       816,
       1080
@@ -35,7 +41,7 @@
       45826
     ],
     "learnmode": {
-      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "image": "/drivers/ZW_Remote_4/assets/learnmode.svg",
       "instruction": {
         "en": "Press and hold down both I and O buttons over 3 seconds.\n\nIf pairing fails reset the device by press and hold down both buttons I and O for over 10 seconds."
       }

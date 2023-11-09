@@ -1,7 +1,6 @@
 {
-  "id": "4512705",
   "name": {
-    "en": "4512705 - Zigbee 4 Channel Remote"
+    "en": "4512705 - Zigbee 4 Channel Remorte"
   },
   "class": "remote",
   "capabilities": [
@@ -12,8 +11,13 @@
       "CR2032"
     ]
   },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zigbee"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
   "zigbee": {
     "manufacturerName": [
       "NAMRON AS",
@@ -37,8 +41,7 @@
           3,
           2821
         ],
-        "bindings": [
-        ]
+        "bindings": []
       },
       "2": {
         "clusters": [
@@ -47,8 +50,7 @@
           3,
           2821
         ],
-        "bindings": [
-        ]
+        "bindings": []
       },
       "3": {
         "clusters": [
@@ -57,8 +59,7 @@
           3,
           2821
         ],
-        "bindings": [
-        ]
+        "bindings": []
       },
       "4": {
         "clusters": [
@@ -67,8 +68,7 @@
           3,
           2821
         ],
-        "bindings": [
-        ]
+        "bindings": []
       }
     },
     "learnmode": {

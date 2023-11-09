@@ -1,5 +1,4 @@
 {
-  "id": "89665",
   "name": {
     "en": "89665 - Zigbee Led Strip"
   },
@@ -36,8 +35,13 @@
       "setOnDim": false
     }
   },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zigbee"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
   "zigbee": {
     "manufacturerName": [
       "NAMRON AS",
@@ -80,6 +84,5 @@
     "large": "/drivers/89665/assets/images/large.png",
     "small": "/drivers/89665/assets/images/small.png"
   },
-  "settings": [
-  ]
+  "settings": []
 }

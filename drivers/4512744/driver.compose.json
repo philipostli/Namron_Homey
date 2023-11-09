@@ -1,5 +1,4 @@
 {
-  "id": "4512744",
   "name": {
     "en": "4512744/45 - Z-Wave Thermostat Touch"
   },
@@ -20,10 +19,17 @@
     "large": "/drivers/4512744/assets/images/large.png",
     "small": "/drivers/4512744/assets/images/small.png"
   },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zwave"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zwave"
+  ],
   "zwave": {
-    "security": ["none"],
+    "security": [
+      "none"
+    ],
     "manufacturerId": [
       1080
     ],
@@ -41,7 +47,8 @@
       }
     },
     "associationGroups": [
-      1, 2
+      1,
+      2
     ],
     "associationGroupsOptions": {
       "1": {

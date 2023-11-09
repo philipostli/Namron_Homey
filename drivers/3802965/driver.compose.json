@@ -1,5 +1,4 @@
 {
-  "id": "3802965",
   "name": {
     "en": "3802965 - GU10 White"
   },
@@ -18,8 +17,13 @@
       "setOnDim": false
     }
   },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zigbee"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
   "zigbee": {
     "manufacturerName": [
       "NAMRON AS",
@@ -28,8 +32,7 @@
       "Namron AS",
       "Namron As",
       "namron as",
-      "Namron  AS",
-      "LDS"
+      "Namron  AS"
     ],
     "productId": [
       "3802965"
@@ -63,6 +66,5 @@
     "large": "/drivers/3802965/assets/images/large.png",
     "small": "/drivers/3802965/assets/images/small.png"
   },
-  "settings": [
-  ]
+  "settings": []
 }

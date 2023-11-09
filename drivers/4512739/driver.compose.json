@@ -1,5 +1,4 @@
 {
-  "id": "4512739",
   "name": {
     "en": "4512739 - Zigbee CCT Controller"
   },
@@ -24,8 +23,13 @@
       "setOnDim": false
     }
   },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zigbee"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
   "zigbee": {
     "manufacturerName": [
       "NAMRON AS",
@@ -59,17 +63,15 @@
       }
     },
     "learnmode": {
-      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "image": "/drivers/4512739/assets/learnmode.svg",
       "instruction": {
         "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode."
       }
     }
   },
   "images": {
-    "large": "{{driverAssetsPath}}/images/large.png",
-    "small": "{{driverAssetsPath}}/images/small.png"
+    "large": "/drivers/4512739/assets/images/large.png",
+    "small": "/drivers/4512739/assets/images/small.png"
   },
-  "settings": [
-
-  ]
+  "settings": []
 }

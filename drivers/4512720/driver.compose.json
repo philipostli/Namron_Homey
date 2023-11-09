@@ -1,5 +1,4 @@
 {
-  "id": "4512720",
   "name": {
     "en": "4512720/31 - Z-Wave 2 Channel"
   },
@@ -17,10 +16,17 @@
     "large": "/drivers/4512720/assets/images/large.png",
     "small": "/drivers/4512720/assets/images/small.png"
   },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zwave"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zwave"
+  ],
   "zwave": {
-    "security": ["none"],
+    "security": [
+      "none"
+    ],
     "manufacturerId": [
       816,
       1080

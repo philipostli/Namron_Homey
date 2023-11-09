@@ -1,13 +1,12 @@
 {
-  "id": "451276x",
   "name": {
     "en": "451276x - Zigbee Light"
   },
   "class": "light",
   "capabilities": [],
   "images": {
-    "small": "{{driverAssetsPath}}/images/small.png",
-    "large": "{{driverAssetsPath}}/images/large.png"
+    "small": "/drivers/451276x/assets/images/small.png",
+    "large": "/drivers/451276x/assets/images/large.png"
   },
   "energy": {
     "approximation": {
@@ -54,5 +53,18 @@
   ],
   "connectivity": [
     "zigbee"
+  ],
+  "settings": [
+    {
+      "id": "app_version",
+      "type": "label",
+      "label": {
+        "en": "App version"
+      },
+      "value": "v1.0.2211.1210",
+      "hint": {
+        "en": "App version."
+      }
+    }
   ]
 }

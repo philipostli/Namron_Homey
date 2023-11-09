@@ -1,5 +1,4 @@
 {
-  "id": "4512708",
   "name": {
     "en": "4512708 - Zigbee LED Controller"
   },
@@ -18,8 +17,13 @@
       "setOnDim": false
     }
   },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zigbee"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
   "zigbee": {
     "manufacturerName": [
       "NAMRON AS",
@@ -62,6 +66,5 @@
     "large": "/drivers/4512708/assets/images/large.png",
     "small": "/drivers/4512708/assets/images/small.png"
   },
-  "settings": [
-  ]
+  "settings": []
 }

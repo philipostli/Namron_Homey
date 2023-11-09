@@ -1,5 +1,4 @@
 {
-  "id": "4512702",
   "name": {
     "en": "4512702 - Zigbee 2 Channel"
   },
@@ -12,8 +11,13 @@
       "CR2450"
     ]
   },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zigbee"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
   "zigbee": {
     "manufacturerName": [
       "NAMRON AS",
@@ -37,8 +41,7 @@
           3,
           2821
         ],
-        "bindings": [
-        ]
+        "bindings": []
       }
     },
     "learnmode": {

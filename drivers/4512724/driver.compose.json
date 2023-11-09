@@ -1,5 +1,4 @@
 {
-  "id": "4512724",
   "name": {
     "en": "4512724 - Z-Wave Dimmer 2"
   },
@@ -28,10 +27,17 @@
     "large": "/drivers/4512724/assets/images/large.png",
     "small": "/drivers/4512724/assets/images/small.png"
   },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zwave"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zwave"
+  ],
   "zwave": {
-    "security": ["none"],
+    "security": [
+      "none"
+    ],
     "manufacturerId": [
       816,
       1080

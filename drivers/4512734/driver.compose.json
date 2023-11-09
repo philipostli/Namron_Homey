@@ -1,5 +1,4 @@
 {
-  "id": "4512734",
   "name": {
     "en": "4512734 - Z-Wave MultiSensor"
   },
@@ -17,15 +16,22 @@
       "AAA"
     ]
   },
-  "icon": "{{driverAssetsPath}}/icon.svg",
+  "icon": "/drivers/4512734/assets/icon.svg",
   "images": {
-    "large": "{{driverAssetsPath}}/images/large.png",
-    "small": "{{driverAssetsPath}}/images/small.png"
+    "large": "/drivers/4512734/assets/images/large.png",
+    "small": "/drivers/4512734/assets/images/small.png"
   },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zwave"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zwave"
+  ],
   "zwave": {
-    "security": ["none"],
+    "security": [
+      "none"
+    ],
     "manufacturerId": [
       1080
     ],
@@ -36,7 +42,7 @@
       53514
     ],
     "learnmode": {
-      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "image": "/drivers/4512734/assets/learnmode.svg",
       "instruction": {
         "en": "Open the back cover, and then press the action button on the sensor 3 times quickly.",
         "no": "Ta av bakplaten på sensoren. Trykk tre ganger på knappen for å starte inkludering"

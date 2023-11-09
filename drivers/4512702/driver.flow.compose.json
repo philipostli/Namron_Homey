@@ -1,6 +1,26 @@
 {
   "triggers": [
     {
+      "title": {
+        "en": "Off button is pressed"
+      },
+      "titleFormatted": {
+        "en": "Off button is pressed"
+      },
+      "args": [],
+      "id": "sr_off_button_pressed"
+    },
+    {
+      "title": {
+        "en": "On button is pressed"
+      },
+      "titleFormatted": {
+        "en": "On button is pressed"
+      },
+      "args": [],
+      "id": "sr_on_button_pressed"
+    },
+    {
       "id": "4512702_on",
       "title": {
         "en": "On"

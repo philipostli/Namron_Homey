@@ -1,5 +1,4 @@
 {
-  "id": "3308431",
   "name": {
     "en": "3308431 - Luna Lamp"
   },
@@ -18,8 +17,13 @@
       "setOnDim": false
     }
   },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zigbee"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
   "zigbee": {
     "manufacturerName": [
       "NAMRON AS",
@@ -63,6 +67,5 @@
     "large": "/drivers/3308431/assets/images/large.png",
     "small": "/drivers/3308431/assets/images/small.png"
   },
-  "settings": [
-  ]
+  "settings": []
 }

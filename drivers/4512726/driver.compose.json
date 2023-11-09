@@ -1,5 +1,4 @@
 {
-  "id": "4512726",
   "name": {
     "en": "4512726 - Zigbee 4-1 Rotery Dimmer"
   },
@@ -12,8 +11,13 @@
       "CR2450"
     ]
   },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zigbee"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
   "zigbee": {
     "manufacturerName": [
       "NAMRON AS",
@@ -35,8 +39,7 @@
           3,
           2821
         ],
-        "bindings": [
-        ]
+        "bindings": []
       }
     },
     "learnmode": {

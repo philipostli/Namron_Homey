@@ -20,7 +20,10 @@
       "step": 0.5
     }
   },
-  "platforms": ["local", "cloud"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
   "connectivity": [
     "zigbee"
   ],
@@ -63,7 +66,7 @@
       }
     },
     "learnmode": {
-      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "image": "/drivers/4512749-N/assets/learnmode.svg",
       "instruction": {
         "en": "Short press Program button 5 times quickly.",
         "no": "Trykk kjapt 5 ganger på programeringsknappen for å starte parring"
@@ -71,7 +74,8 @@
     }
   },
   "images": {
-    "small": "{{driverAssetsPath}}/images/small.png",
-    "large": "{{driverAssetsPath}}/images/large.png"
-  }
+    "small": "/drivers/4512749-N/assets/images/small.png",
+    "large": "/drivers/4512749-N/assets/images/large.png"
+  },
+  "settings": []
 }

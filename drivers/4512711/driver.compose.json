@@ -1,5 +1,4 @@
 {
-  "id": "4512711",
   "name": {
     "en": "4512711 - Z-Wave 4 Channel Remote"
   },
@@ -18,10 +17,17 @@
     "large": "/drivers/4512711/assets/images/large.png",
     "small": "/drivers/4512711/assets/images/small.png"
   },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zwave"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zwave"
+  ],
   "zwave": {
-    "security": ["none"],
+    "security": [
+      "none"
+    ],
     "manufacturerId": [
       816,
       1080

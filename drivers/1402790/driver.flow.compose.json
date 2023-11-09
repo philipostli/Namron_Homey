@@ -9,7 +9,8 @@
       "titleFormatted": {
         "en": "Dry cooking detected",
         "no": "Tørrkoking detektert"
-      }
+      },
+      "args": []
     },
     {
       "id": "alarm_dry_cooking_false",
@@ -20,7 +21,8 @@
       "titleFormatted": {
         "en": "Dry cooking restored",
         "no": "Ingen tørrkoking detektert"
-      }
+      },
+      "args": []
     }
   ]
 }

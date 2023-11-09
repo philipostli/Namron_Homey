@@ -1,5 +1,4 @@
 {
-  "id": "4512760",
   "name": {
     "en": "4512760 - Zigbee Dimmer 2 400W"
   },
@@ -20,8 +19,13 @@
       "setOnDim": false
     }
   },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zigbee"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
   "zigbee": {
     "manufacturerName": [
       "NAMRON AS",
@@ -62,6 +66,5 @@
     "large": "/drivers/4512760/assets/images/large.png",
     "small": "/drivers/4512760/assets/images/small.png"
   },
-  "settings": [
-  ]
+  "settings": []
 }

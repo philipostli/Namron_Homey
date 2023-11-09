@@ -15,7 +15,10 @@
     "my_thermostat_room_sensor",
     "my_thermostat_floor_sensor"
   ],
-  "platforms": ["local", "cloud"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
   "connectivity": [
     "zigbee"
   ],
@@ -47,14 +50,37 @@
       }
     },
     "learnmode": {
-      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "image": "/drivers/4512737/assets/learnmode.svg",
       "instruction": {
         "en": "Turn the device to OFF mode first, then press and hold UP and DOWN buttons at the same time for over 5 seconds to enter Settings Menu. Short press UP and DOWN button to select ADD item, then short press button F.\n\nIf pairing fails reset the device by select Reset item, then short press button F."
       }
     }
   },
   "images": {
-    "small": "{{driverAssetsPath}}/images/small.png",
-    "large": "{{driverAssetsPath}}/images/large.png"
-  }
+    "small": "/drivers/4512737/assets/images/small.png",
+    "large": "/drivers/4512737/assets/images/large.png"
+  },
+  "settings": [
+    {
+      "type": "group",
+      "label": {
+        "en": "Device Settings"
+      },
+      "children": [
+        {
+          "id": "hysteresis",
+          "type": "number",
+          "label": {
+            "en": "Hysteresis"
+          },
+          "value": 0.5,
+          "min": 0.5,
+          "max": 5,
+          "units": {
+            "en": "℃"
+          }
+        }
+      ]
+    }
+  ]
 }

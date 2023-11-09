@@ -1,5 +1,4 @@
 {
-  "id": "4512771",
   "name": {
     "en": "4512770/71 - ZigBee MultiSensor"
   },
@@ -86,8 +85,7 @@
     "large": "/drivers/4512771/assets/images/large.png",
     "small": "/drivers/4512771/assets/images/small.png"
   },
-  "settings": [
-  ],
+  "settings": [],
   "platforms": [
     "local",
     "cloud"

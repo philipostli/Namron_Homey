@@ -1,0 +1,17 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Regulator %"
+  },
+  "chartType": "stepLine",
+  "min": 0,
+  "max": 100,
+  "step": 10,
+  "value": 20,
+  "units": {
+    "en": "%"
+  },
+  "getable": true,
+  "setable": true,
+  "uiComponent": "slider"
+}

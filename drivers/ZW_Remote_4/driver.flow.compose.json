@@ -4,37 +4,43 @@
       "id": "ZW_Remote_4_all_on",
       "title": {
         "en": "All on"
-      }
+      },
+      "args": []
     },
     {
       "id": "ZW_Remote_4_all_off",
       "title": {
         "en": "All off"
-      }
+      },
+      "args": []
     },
     {
       "id": "ZW_Remote_4_all_on_key_held_down",
       "title": {
         "en": "All on button held down"
-      }
+      },
+      "args": []
     },
     {
       "id": "ZW_Remote_4_all_on_key_released",
       "title": {
         "en": "All on button released"
-      }
+      },
+      "args": []
     },
     {
       "id": "ZW_Remote_4_all_off_key_held_down",
       "title": {
         "en": "All off button held down"
-      }
+      },
+      "args": []
     },
     {
       "id": "ZW_Remote_4_all_off_key_released",
       "title": {
         "en": "All off button released"
-      }
+      },
+      "args": []
     },
     {
       "id": "ZW_Remote_4_on",
@@ -292,37 +298,43 @@
       "id": "ZW_Remote_4_scene_1",
       "title": {
         "en": "S1"
-      }
+      },
+      "args": []
     },
     {
       "id": "ZW_Remote_4_scene_2",
       "title": {
         "en": "S2"
-      }
+      },
+      "args": []
     },
     {
       "id": "ZW_Remote_4_scene_1_key_held_down",
       "title": {
         "en": "S1 button held down"
-      }
+      },
+      "args": []
     },
     {
       "id": "ZW_Remote_4_scene_1_key_released",
       "title": {
         "en": "S1 button released"
-      }
+      },
+      "args": []
     },
     {
       "id": "ZW_Remote_4_scene_2_key_held_down",
       "title": {
         "en": "S2 button held down"
-      }
+      },
+      "args": []
     },
     {
       "id": "ZW_Remote_4_scene_2_key_released",
       "title": {
         "en": "S2 button released"
-      }
+      },
+      "args": []
     }
   ]
 }

@@ -1,5 +1,4 @@
 {
-  "id": "4512707_COLOR",
   "name": {
     "en": "4512707 - Zigbee LED Controller Color"
   },
@@ -36,8 +35,13 @@
       "setOnDim": false
     }
   },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zigbee"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
   "zigbee": {
     "manufacturerName": [
       "NAMRON AS",
@@ -86,6 +90,5 @@
     "large": "/drivers/4512707_COLOR/assets/images/large.png",
     "small": "/drivers/4512707_COLOR/assets/images/small.png"
   },
-  "settings": [
-  ]
+  "settings": []
 }

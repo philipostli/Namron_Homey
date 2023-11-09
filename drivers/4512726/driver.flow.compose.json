@@ -1,6 +1,66 @@
 {
   "triggers": [
     {
+      "title": {
+        "en": "Brightness changed"
+      },
+      "titleFormatted": {
+        "en": "Brightness changed"
+      },
+      "hint": "The brightness range from 0.00 to 1.00",
+      "args": [],
+      "tokens": [
+        {
+          "name": "brightness",
+          "type": "number",
+          "title": {
+            "en": "Brightness"
+          }
+        }
+      ],
+      "id": "sr_brightness_moved"
+    },
+    {
+      "title": {
+        "en": "Hue changed"
+      },
+      "titleFormatted": {
+        "en": "Hue changed"
+      },
+      "hint": "The hue range from 0.00 to 1.00",
+      "args": [],
+      "tokens": [
+        {
+          "name": "hue",
+          "type": "number",
+          "title": {
+            "en": "Hue"
+          }
+        }
+      ],
+      "id": "sr_hue_moved"
+    },
+    {
+      "title": {
+        "en": "White balance changed"
+      },
+      "titleFormatted": {
+        "en": "White balance changed"
+      },
+      "hint": "The white range from 0.00 to 1.00, 0.00 for coolest white, 1.00 for warmest white.",
+      "args": [],
+      "tokens": [
+        {
+          "name": "white",
+          "type": "number",
+          "title": {
+            "en": "White"
+          }
+        }
+      ],
+      "id": "sr_white_moved"
+    },
+    {
       "id": "4512726_on",
       "title": {
         "en": "On"

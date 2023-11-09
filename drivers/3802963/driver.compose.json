@@ -1,5 +1,4 @@
 {
-  "id": "3802963",
   "name": {
     "en": "3802963 - E14 White"
   },
@@ -18,8 +17,13 @@
       "setOnDim": false
     }
   },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zigbee"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
   "zigbee": {
     "manufacturerName": [
       "NAMRON AS",
@@ -63,6 +67,5 @@
     "large": "/drivers/3802963/assets/images/large.png",
     "small": "/drivers/3802963/assets/images/small.png"
   },
-  "settings": [
-  ]
+  "settings": []
 }

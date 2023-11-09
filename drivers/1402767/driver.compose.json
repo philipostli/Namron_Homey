@@ -1,5 +1,4 @@
-{ 
-  "id": "1402767",
+{
   "name": {
     "en": "1402767 - Zigbee 2 pol Dimmer"
   },
@@ -18,8 +17,13 @@
       "usageOff": 0
     }
   },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zigbee"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
   "zigbee": {
     "manufacturerName": [
       "NAMRON AS",
@@ -36,7 +40,8 @@
     ],
     "endpoints": {
       "1": {
-        "clusters": [0,
+        "clusters": [
+          0,
           0,
           1,
           2,
@@ -45,10 +50,14 @@
           5,
           6,
           8,
-          768],
-        "bindings": [6, 8]
+          768
+        ],
+        "bindings": [
+          6,
+          8
+        ]
       }
-    }, 
+    },
     "learnmode": {
       "instruction": {
         "en": "To Include, quick press Config Button for two times."

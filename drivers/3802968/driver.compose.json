@@ -1,5 +1,4 @@
 {
-  "id": "3802968",
   "name": {
     "en": "3802968 - E27 Filament"
   },
@@ -24,8 +23,13 @@
       "setOnDim": false
     }
   },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zigbee"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
   "zigbee": {
     "manufacturerName": [
       "NAMRON AS",
@@ -34,8 +38,7 @@
       "Namron AS",
       "Namron As",
       "namron as",
-      "Namron  AS",
-      "LDS"
+      "Namron  AS"
     ],
     "productId": [
       "3802968"
@@ -70,7 +73,5 @@
     "large": "/drivers/3802968/assets/images/large.png",
     "small": "/drivers/3802968/assets/images/small.png"
   },
-  "settings": [
-
-  ]
+  "settings": []
 }

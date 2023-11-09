@@ -1,5 +1,4 @@
 {
-  "id": "3802962",
   "name": {
     "en": "3802962 - E27 Color"
   },
@@ -36,8 +35,13 @@
       "setOnDim": false
     }
   },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zigbee"],
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
   "zigbee": {
     "manufacturerName": [
       "NAMRON AS",
@@ -46,8 +50,7 @@
       "Namron AS",
       "Namron As",
       "namron as",
-      "Namron  AS",
-      "LDS"
+      "Namron  AS"
     ],
     "productId": [
       "3802962"
@@ -82,6 +85,5 @@
     "large": "/drivers/3802962/assets/images/large.png",
     "small": "/drivers/3802962/assets/images/small.png"
   },
-  "settings": [
-  ]
+  "settings": []
 }

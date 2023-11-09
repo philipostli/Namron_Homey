@@ -1,5 +1,4 @@
 {
-  "id": "4512704",
   "name": {
     "en": "4512704 - Zigbee Switch"
   },
@@ -7,10 +6,14 @@
   "capabilities": [
     "onoff"
   ],
-  "capabilitiesOptions": {
-  },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["zigbee"],
+  "capabilitiesOptions": {},
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
   "zigbee": {
     "manufacturerName": [
       "NAMRON AS",
@@ -53,6 +56,5 @@
     "large": "/drivers/4512704/assets/images/large.png",
     "small": "/drivers/4512704/assets/images/small.png"
   },
-  "settings": [
-  ]
+  "settings": []
 }

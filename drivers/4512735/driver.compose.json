@@ -14,8 +14,8 @@
     "zigbee"
   ],
   "images": {
-    "small": "{{driverAssetsPath}}/images/small.png",
-    "large": "{{driverAssetsPath}}/images/large.png"
+    "small": "/drivers/4512735/assets/images/small.png",
+    "large": "/drivers/4512735/assets/images/large.png"
   },
   "zigbee": {
     "manufacturerName": "NAMRON AS",
@@ -27,36 +27,31 @@
         "clusters": [
           6
         ],
-        "bindings": [
-        ]
+        "bindings": []
       },
       "2": {
         "clusters": [
           6
         ],
-        "bindings": [
-        ]
+        "bindings": []
       },
       "3": {
         "clusters": [
           6
         ],
-        "bindings": [
-        ]
+        "bindings": []
       },
       "4": {
         "clusters": [
           6
         ],
-        "bindings": [
-        ]
+        "bindings": []
       },
       "5": {
         "clusters": [
           6
         ],
-        "bindings": [
-        ]
+        "bindings": []
       }
     },
     "devices": {
@@ -98,7 +93,7 @@
       }
     },
     "learnmode": {
-      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "image": "/drivers/4512735/assets/learnmode.svg",
       "instruction": {
         "en": "Short press OnOff button 5 times quickly."
       }

@@ -64,129 +64,6 @@
     "triggers": [
       {
         "title": {
-          "en": "All off button is pressed"
-        },
-        "titleFormatted": {
-          "en": "All off button is [[mode]]"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512711"
-          },
-          {
-            "type": "dropdown",
-            "name": "mode",
-            "title": "Mode",
-            "values": [
-              {
-                "id": "pressed",
-                "label": {
-                  "en": "pressed"
-                }
-              },
-              {
-                "id": "held_down",
-                "label": {
-                  "en": "held down"
-                }
-              },
-              {
-                "id": "released",
-                "label": {
-                  "en": "released"
-                }
-              }
-            ]
-          }
-        ],
-        "id": "sr_all_off_button_mode"
-      },
-      {
-        "title": {
-          "en": "All on button is pressed"
-        },
-        "titleFormatted": {
-          "en": "All on button is [[mode]]"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512711"
-          },
-          {
-            "type": "dropdown",
-            "name": "mode",
-            "title": "Mode",
-            "values": [
-              {
-                "id": "pressed",
-                "label": {
-                  "en": "pressed"
-                }
-              },
-              {
-                "id": "held_down",
-                "label": {
-                  "en": "held down"
-                }
-              },
-              {
-                "id": "released",
-                "label": {
-                  "en": "released"
-                }
-              }
-            ]
-          }
-        ],
-        "id": "sr_all_on_button_mode"
-      },
-      {
-        "title": {
-          "en": "Brightness button is pressed"
-        },
-        "titleFormatted": {
-          "en": "Brightness button is [[mode]]"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512712"
-          },
-          {
-            "type": "dropdown",
-            "name": "mode",
-            "title": "Mode",
-            "values": [
-              {
-                "id": "pressed",
-                "label": {
-                  "en": "pressed"
-                }
-              },
-              {
-                "id": "held_down",
-                "label": {
-                  "en": "held down"
-                }
-              },
-              {
-                "id": "released",
-                "label": {
-                  "en": "released"
-                }
-              }
-            ]
-          }
-        ],
-        "id": "sr_brightness_button_mode"
-      },
-      {
-        "title": {
           "en": "Brightness button is pressed"
         },
         "titleFormatted": {
@@ -225,123 +102,6 @@
           }
         ],
         "id": "sr_brightness_button_mode_zg"
-      },
-      {
-        "title": {
-          "en": "Brightness button is pressed"
-        },
-        "titleFormatted": {
-          "en": "[[group]] brightness [[type]] button is [[mode]]"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512706"
-          },
-          {
-            "name": "group",
-            "title": "Group",
-            "type": "dropdown",
-            "values": [
-              {
-                "id": "1",
-                "label": {
-                  "en": "Group 1"
-                }
-              },
-              {
-                "id": "2",
-                "label": {
-                  "en": "Group 2"
-                }
-              },
-              {
-                "id": "3",
-                "label": {
-                  "en": "Group 3"
-                }
-              },
-              {
-                "id": "4",
-                "label": {
-                  "en": "Group 4"
-                }
-              }
-            ]
-          },
-          {
-            "type": "dropdown",
-            "name": "type",
-            "title": "Button type",
-            "values": [
-              {
-                "id": "up",
-                "label": {
-                  "en": "up"
-                }
-              },
-              {
-                "id": "down",
-                "label": {
-                  "en": "down"
-                }
-              }
-            ]
-          },
-          {
-            "type": "dropdown",
-            "name": "mode",
-            "title": "Mode",
-            "values": [
-              {
-                "id": "pressed",
-                "label": {
-                  "en": "pressed"
-                }
-              },
-              {
-                "id": "held_down",
-                "label": {
-                  "en": "held down"
-                }
-              },
-              {
-                "id": "released",
-                "label": {
-                  "en": "released"
-                }
-              }
-            ]
-          }
-        ],
-        "id": "sr_brightness_button_type_mode_g4"
-      },
-      {
-        "title": {
-          "en": "Brightness changed"
-        },
-        "titleFormatted": {
-          "en": "Brightness changed"
-        },
-        "hint": "The brightness range from 0.00 to 1.00",
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512726"
-          }
-        ],
-        "tokens": [
-          {
-            "name": "brightness",
-            "type": "number",
-            "title": {
-              "en": "Brightness"
-            }
-          }
-        ],
-        "id": "sr_brightness_moved"
       },
       {
         "title": {
@@ -402,130 +162,6 @@
           }
         ],
         "id": "sr_brightness_type_button_mode"
-      },
-      {
-        "title": {
-          "en": "Hue changed"
-        },
-        "titleFormatted": {
-          "en": "Hue changed"
-        },
-        "hint": "The hue range from 0.00 to 1.00",
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512726"
-          }
-        ],
-        "tokens": [
-          {
-            "name": "hue",
-            "type": "number",
-            "title": {
-              "en": "Hue"
-            }
-          }
-        ],
-        "id": "sr_hue_moved"
-      },
-      {
-        "title": {
-          "en": "Hue changed"
-        },
-        "titleFormatted": {
-          "en": "[[group]] hue changed"
-        },
-        "hint": "The hue range from 0.00 to 1.00",
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512706"
-          },
-          {
-            "name": "group",
-            "title": "Group",
-            "type": "dropdown",
-            "values": [
-              {
-                "id": "1",
-                "label": {
-                  "en": "Group 1"
-                }
-              },
-              {
-                "id": "2",
-                "label": {
-                  "en": "Group 2"
-                }
-              },
-              {
-                "id": "3",
-                "label": {
-                  "en": "Group 3"
-                }
-              },
-              {
-                "id": "4",
-                "label": {
-                  "en": "Group 4"
-                }
-              }
-            ]
-          }
-        ],
-        "tokens": [
-          {
-            "name": "hue",
-            "type": "number",
-            "title": {
-              "en": "Hue"
-            }
-          }
-        ],
-        "id": "sr_hue_moved_g4"
-      },
-      {
-        "title": {
-          "en": "Off button is pressed"
-        },
-        "titleFormatted": {
-          "en": "Off button is [[mode]]"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512713"
-          },
-          {
-            "type": "dropdown",
-            "name": "mode",
-            "title": "Mode",
-            "values": [
-              {
-                "id": "pressed",
-                "label": {
-                  "en": "pressed"
-                }
-              },
-              {
-                "id": "held_down",
-                "label": {
-                  "en": "held down"
-                }
-              },
-              {
-                "id": "released",
-                "label": {
-                  "en": "released"
-                }
-              }
-            ]
-          }
-        ],
-        "id": "sr_off_button_mode"
       },
       {
         "title": {
@@ -661,63 +297,6 @@
       },
       {
         "title": {
-          "en": "Off button is pressed"
-        },
-        "titleFormatted": {
-          "en": "Off button is pressed"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512702"
-          }
-        ],
-        "id": "sr_off_button_pressed"
-      },
-      {
-        "title": {
-          "en": "On button is pressed"
-        },
-        "titleFormatted": {
-          "en": "On button is [[mode]]"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512713"
-          },
-          {
-            "type": "dropdown",
-            "name": "mode",
-            "title": "Mode",
-            "values": [
-              {
-                "id": "pressed",
-                "label": {
-                  "en": "pressed"
-                }
-              },
-              {
-                "id": "held_down",
-                "label": {
-                  "en": "held down"
-                }
-              },
-              {
-                "id": "released",
-                "label": {
-                  "en": "released"
-                }
-              }
-            ]
-          }
-        ],
-        "id": "sr_on_button_mode"
-      },
-      {
-        "title": {
           "en": "On button is pressed"
         },
         "titleFormatted": {
@@ -850,370 +429,6 @@
       },
       {
         "title": {
-          "en": "On button is pressed"
-        },
-        "titleFormatted": {
-          "en": "On button is pressed"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512702"
-          }
-        ],
-        "id": "sr_on_button_pressed"
-      },
-      {
-        "title": {
-          "en": "Saturation button is pressed"
-        },
-        "titleFormatted": {
-          "en": "[[group]] saturation button is [[mode]]"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512706"
-          },
-          {
-            "name": "group",
-            "title": "Group",
-            "type": "dropdown",
-            "values": [
-              {
-                "id": "1",
-                "label": {
-                  "en": "Group 1"
-                }
-              },
-              {
-                "id": "2",
-                "label": {
-                  "en": "Group 2"
-                }
-              },
-              {
-                "id": "3",
-                "label": {
-                  "en": "Group 3"
-                }
-              },
-              {
-                "id": "4",
-                "label": {
-                  "en": "Group 4"
-                }
-              }
-            ]
-          },
-          {
-            "type": "dropdown",
-            "name": "mode",
-            "title": "Mode",
-            "values": [
-              {
-                "id": "pressed",
-                "label": {
-                  "en": "pressed"
-                }
-              },
-              {
-                "id": "up",
-                "label": {
-                  "en": "held down and decreasing"
-                }
-              },
-              {
-                "id": "down",
-                "label": {
-                  "en": "held down and decreasing"
-                }
-              },
-              {
-                "id": "stop",
-                "label": {
-                  "en": "released"
-                }
-              }
-            ]
-          }
-        ],
-        "id": "sr_saturation_button_mode_g4"
-      },
-      {
-        "title": {
-          "en": "Scene button is pressed"
-        },
-        "titleFormatted": {
-          "en": "[[group]] scene button [[scene]] is [[mode]]"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512706"
-          },
-          {
-            "name": "group",
-            "title": "Group",
-            "type": "dropdown",
-            "values": [
-              {
-                "id": "1",
-                "label": {
-                  "en": "Group 1"
-                }
-              },
-              {
-                "id": "2",
-                "label": {
-                  "en": "Group 2"
-                }
-              },
-              {
-                "id": "3",
-                "label": {
-                  "en": "Group 3"
-                }
-              },
-              {
-                "id": "4",
-                "label": {
-                  "en": "Group 4"
-                }
-              }
-            ]
-          },
-          {
-            "name": "scene",
-            "type": "dropdown",
-            "title": "Scene button",
-            "values": [
-              {
-                "id": "1",
-                "label": {
-                  "en": "S1"
-                }
-              },
-              {
-                "id": "2",
-                "label": {
-                  "en": "S2"
-                }
-              },
-              {
-                "id": "3",
-                "label": {
-                  "en": "S3"
-                }
-              },
-              {
-                "id": "4",
-                "label": {
-                  "en": "S4"
-                }
-              },
-              {
-                "id": "5",
-                "label": {
-                  "en": "S5"
-                }
-              },
-              {
-                "id": "6",
-                "label": {
-                  "en": "S6"
-                }
-              },
-              {
-                "id": "7",
-                "label": {
-                  "en": "S7"
-                }
-              }
-            ]
-          },
-          {
-            "type": "dropdown",
-            "name": "mode",
-            "title": "Mode",
-            "values": [
-              {
-                "id": "pressed",
-                "label": {
-                  "en": "pressed"
-                }
-              },
-              {
-                "id": "held_down",
-                "label": {
-                  "en": "held down"
-                }
-              }
-            ]
-          }
-        ],
-        "id": "sr_scene_button_mode_g4_s7"
-      },
-      {
-        "title": {
-          "en": "Scene button is pressed"
-        },
-        "titleFormatted": {
-          "en": "Scene button [[scene]] is [[mode]]"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512711"
-          },
-          {
-            "type": "dropdown",
-            "name": "scene",
-            "title": "Scene button type",
-            "values": [
-              {
-                "id": "s1",
-                "label": {
-                  "en": "S1"
-                }
-              },
-              {
-                "id": "s2",
-                "label": {
-                  "en": "S2"
-                }
-              }
-            ]
-          },
-          {
-            "type": "dropdown",
-            "name": "mode",
-            "title": "Mode",
-            "values": [
-              {
-                "id": "pressed",
-                "label": {
-                  "en": "pressed"
-                }
-              },
-              {
-                "id": "held_down",
-                "label": {
-                  "en": "held down"
-                }
-              },
-              {
-                "id": "released",
-                "label": {
-                  "en": "released"
-                }
-              }
-            ]
-          }
-        ],
-        "id": "sr_scene_button_mode_s2"
-      },
-      {
-        "title": {
-          "en": "Scene button is pressed"
-        },
-        "titleFormatted": {
-          "en": "Scene button [[scene]] is [[mode]]"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512705"
-          },
-          {
-            "type": "dropdown",
-            "name": "scene",
-            "title": "Scene button type",
-            "values": [
-              {
-                "id": "1",
-                "label": {
-                  "en": "S1"
-                }
-              },
-              {
-                "id": "2",
-                "label": {
-                  "en": "S2"
-                }
-              }
-            ]
-          },
-          {
-            "type": "dropdown",
-            "name": "mode",
-            "title": "Mode",
-            "values": [
-              {
-                "id": "pressed",
-                "label": {
-                  "en": "pressed"
-                }
-              },
-              {
-                "id": "held_down",
-                "label": {
-                  "en": "held down"
-                }
-              }
-            ]
-          }
-        ],
-        "id": "sr_scene_button_mode_s2_zg"
-      },
-      {
-        "title": {
-          "en": "Switch button is pressed"
-        },
-        "titleFormatted": {
-          "en": "Switch button is [[mode]]"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512712"
-          },
-          {
-            "type": "dropdown",
-            "name": "mode",
-            "title": "Mode",
-            "values": [
-              {
-                "id": "pressed",
-                "label": {
-                  "en": "pressed"
-                }
-              },
-              {
-                "id": "held_down",
-                "label": {
-                  "en": "held down"
-                }
-              },
-              {
-                "id": "released",
-                "label": {
-                  "en": "released"
-                }
-              }
-            ]
-          }
-        ],
-        "id": "sr_switch_button_mode"
-      },
-      {
-        "title": {
           "en": "Switch button is pressed"
         },
         "titleFormatted": {
@@ -1246,246 +461,6 @@
           }
         ],
         "id": "sr_switch_button_on_off"
-      },
-      {
-        "title": {
-          "en": "Switch button is pressed"
-        },
-        "titleFormatted": {
-          "en": "[[group]] switch button is [[mode]]"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512706"
-          },
-          {
-            "name": "group",
-            "title": "Group",
-            "type": "dropdown",
-            "values": [
-              {
-                "id": "1",
-                "label": {
-                  "en": "Group 1"
-                }
-              },
-              {
-                "id": "2",
-                "label": {
-                  "en": "Group 2"
-                }
-              },
-              {
-                "id": "3",
-                "label": {
-                  "en": "Group 3"
-                }
-              },
-              {
-                "id": "4",
-                "label": {
-                  "en": "Group 4"
-                }
-              }
-            ]
-          },
-          {
-            "type": "dropdown",
-            "name": "mode",
-            "title": "Mode",
-            "values": [
-              {
-                "id": "on",
-                "label": {
-                  "en": "turned on"
-                }
-              },
-              {
-                "id": "off",
-                "label": {
-                  "en": "turned off"
-                }
-              }
-            ]
-          }
-        ],
-        "id": "sr_switch_button_on_off_g4"
-      },
-      {
-        "title": {
-          "en": "White button is pressed"
-        },
-        "titleFormatted": {
-          "en": "[[group]] [[type]] button is [[mode]]"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512706"
-          },
-          {
-            "name": "group",
-            "title": "Group",
-            "type": "dropdown",
-            "values": [
-              {
-                "id": "1",
-                "label": {
-                  "en": "Group 1"
-                }
-              },
-              {
-                "id": "2",
-                "label": {
-                  "en": "Group 2"
-                }
-              },
-              {
-                "id": "3",
-                "label": {
-                  "en": "Group 3"
-                }
-              },
-              {
-                "id": "4",
-                "label": {
-                  "en": "Group 4"
-                }
-              }
-            ]
-          },
-          {
-            "type": "dropdown",
-            "name": "type",
-            "title": "Button type",
-            "values": [
-              {
-                "id": "warmer",
-                "label": {
-                  "en": "warmer"
-                }
-              },
-              {
-                "id": "cooler",
-                "label": {
-                  "en": "cooler"
-                }
-              }
-            ]
-          },
-          {
-            "type": "dropdown",
-            "name": "mode",
-            "title": "Mode",
-            "values": [
-              {
-                "id": "pressed",
-                "label": {
-                  "en": "pressed"
-                }
-              },
-              {
-                "id": "held_down",
-                "label": {
-                  "en": "held down"
-                }
-              },
-              {
-                "id": "released",
-                "label": {
-                  "en": "released"
-                }
-              }
-            ]
-          }
-        ],
-        "id": "sr_white_button_type_mode_g4"
-      },
-      {
-        "title": {
-          "en": "White balance changed"
-        },
-        "titleFormatted": {
-          "en": "White balance changed"
-        },
-        "hint": "The white range from 0.00 to 1.00, 0.00 for coolest white, 1.00 for warmest white.",
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512726"
-          }
-        ],
-        "tokens": [
-          {
-            "name": "white",
-            "type": "number",
-            "title": {
-              "en": "White"
-            }
-          }
-        ],
-        "id": "sr_white_moved"
-      },
-      {
-        "title": {
-          "en": "White balance changed"
-        },
-        "titleFormatted": {
-          "en": "[[group]] white balance changed"
-        },
-        "hint": "The white range from 0.00 to 1.00, 0.00 for coolest white, 1.00 for warmest white.",
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512706"
-          },
-          {
-            "name": "group",
-            "title": "Group",
-            "type": "dropdown",
-            "values": [
-              {
-                "id": "1",
-                "label": {
-                  "en": "Group 1"
-                }
-              },
-              {
-                "id": "2",
-                "label": {
-                  "en": "Group 2"
-                }
-              },
-              {
-                "id": "3",
-                "label": {
-                  "en": "Group 3"
-                }
-              },
-              {
-                "id": "4",
-                "label": {
-                  "en": "Group 4"
-                }
-              }
-            ]
-          }
-        ],
-        "tokens": [
-          {
-            "name": "white",
-            "type": "number",
-            "title": {
-              "en": "White"
-            }
-          }
-        ],
-        "id": "sr_white_moved_g4"
       },
       {
         "id": "alarm_dry_cooking_true",
@@ -1594,6 +569,38 @@
             "filter": "driver_id=4512701"
           }
         ]
+      },
+      {
+        "title": {
+          "en": "Off button is pressed"
+        },
+        "titleFormatted": {
+          "en": "Off button is pressed"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512702"
+          }
+        ],
+        "id": "sr_off_button_pressed"
+      },
+      {
+        "title": {
+          "en": "On button is pressed"
+        },
+        "titleFormatted": {
+          "en": "On button is pressed"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512702"
+          }
+        ],
+        "id": "sr_on_button_pressed"
       },
       {
         "id": "4512702_on",
@@ -1911,6 +918,60 @@
             ]
           }
         ]
+      },
+      {
+        "title": {
+          "en": "Scene button is pressed"
+        },
+        "titleFormatted": {
+          "en": "Scene button [[scene]] is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512705"
+          },
+          {
+            "type": "dropdown",
+            "name": "scene",
+            "title": "Scene button type",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "S1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "S2"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_scene_button_mode_s2_zg"
       },
       {
         "id": "4512705_on",
@@ -2247,6 +1308,561 @@
             ]
           }
         ]
+      },
+      {
+        "title": {
+          "en": "Brightness button is pressed"
+        },
+        "titleFormatted": {
+          "en": "[[group]] brightness [[type]] button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512706"
+          },
+          {
+            "name": "group",
+            "title": "Group",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Group 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Group 2"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "Group 3"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "Group 4"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "type",
+            "title": "Button type",
+            "values": [
+              {
+                "id": "up",
+                "label": {
+                  "en": "up"
+                }
+              },
+              {
+                "id": "down",
+                "label": {
+                  "en": "down"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              },
+              {
+                "id": "released",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_brightness_button_type_mode_g4"
+      },
+      {
+        "title": {
+          "en": "Hue changed"
+        },
+        "titleFormatted": {
+          "en": "[[group]] hue changed"
+        },
+        "hint": "The hue range from 0.00 to 1.00",
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512706"
+          },
+          {
+            "name": "group",
+            "title": "Group",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Group 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Group 2"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "Group 3"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "Group 4"
+                }
+              }
+            ]
+          }
+        ],
+        "tokens": [
+          {
+            "name": "hue",
+            "type": "number",
+            "title": {
+              "en": "Hue"
+            }
+          }
+        ],
+        "id": "sr_hue_moved_g4"
+      },
+      {
+        "title": {
+          "en": "Saturation button is pressed"
+        },
+        "titleFormatted": {
+          "en": "[[group]] saturation button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512706"
+          },
+          {
+            "name": "group",
+            "title": "Group",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Group 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Group 2"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "Group 3"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "Group 4"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "up",
+                "label": {
+                  "en": "held down and decreasing"
+                }
+              },
+              {
+                "id": "down",
+                "label": {
+                  "en": "held down and decreasing"
+                }
+              },
+              {
+                "id": "stop",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_saturation_button_mode_g4"
+      },
+      {
+        "title": {
+          "en": "Scene button is pressed"
+        },
+        "titleFormatted": {
+          "en": "[[group]] scene button [[scene]] is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512706"
+          },
+          {
+            "name": "group",
+            "title": "Group",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Group 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Group 2"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "Group 3"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "Group 4"
+                }
+              }
+            ]
+          },
+          {
+            "name": "scene",
+            "type": "dropdown",
+            "title": "Scene button",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "S1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "S2"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "S3"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "S4"
+                }
+              },
+              {
+                "id": "5",
+                "label": {
+                  "en": "S5"
+                }
+              },
+              {
+                "id": "6",
+                "label": {
+                  "en": "S6"
+                }
+              },
+              {
+                "id": "7",
+                "label": {
+                  "en": "S7"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_scene_button_mode_g4_s7"
+      },
+      {
+        "title": {
+          "en": "Switch button is pressed"
+        },
+        "titleFormatted": {
+          "en": "[[group]] switch button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512706"
+          },
+          {
+            "name": "group",
+            "title": "Group",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Group 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Group 2"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "Group 3"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "Group 4"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "on",
+                "label": {
+                  "en": "turned on"
+                }
+              },
+              {
+                "id": "off",
+                "label": {
+                  "en": "turned off"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_switch_button_on_off_g4"
+      },
+      {
+        "title": {
+          "en": "White button is pressed"
+        },
+        "titleFormatted": {
+          "en": "[[group]] [[type]] button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512706"
+          },
+          {
+            "name": "group",
+            "title": "Group",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Group 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Group 2"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "Group 3"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "Group 4"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "type",
+            "title": "Button type",
+            "values": [
+              {
+                "id": "warmer",
+                "label": {
+                  "en": "warmer"
+                }
+              },
+              {
+                "id": "cooler",
+                "label": {
+                  "en": "cooler"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              },
+              {
+                "id": "released",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_white_button_type_mode_g4"
+      },
+      {
+        "title": {
+          "en": "White balance changed"
+        },
+        "titleFormatted": {
+          "en": "[[group]] white balance changed"
+        },
+        "hint": "The white range from 0.00 to 1.00, 0.00 for coolest white, 1.00 for warmest white.",
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512706"
+          },
+          {
+            "name": "group",
+            "title": "Group",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Group 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Group 2"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "Group 3"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "Group 4"
+                }
+              }
+            ]
+          }
+        ],
+        "tokens": [
+          {
+            "name": "white",
+            "type": "number",
+            "title": {
+              "en": "White"
+            }
+          }
+        ],
+        "id": "sr_white_moved_g4"
       },
       {
         "id": "4512706_on",
@@ -3084,6 +2700,148 @@
         ]
       },
       {
+        "title": {
+          "en": "All off button is pressed"
+        },
+        "titleFormatted": {
+          "en": "All off button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512711"
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              },
+              {
+                "id": "released",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_all_off_button_mode"
+      },
+      {
+        "title": {
+          "en": "All on button is pressed"
+        },
+        "titleFormatted": {
+          "en": "All on button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512711"
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              },
+              {
+                "id": "released",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_all_on_button_mode"
+      },
+      {
+        "title": {
+          "en": "Scene button is pressed"
+        },
+        "titleFormatted": {
+          "en": "Scene button [[scene]] is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512711"
+          },
+          {
+            "type": "dropdown",
+            "name": "scene",
+            "title": "Scene button type",
+            "values": [
+              {
+                "id": "s1",
+                "label": {
+                  "en": "S1"
+                }
+              },
+              {
+                "id": "s2",
+                "label": {
+                  "en": "S2"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              },
+              {
+                "id": "released",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_scene_button_mode_s2"
+      },
+      {
         "id": "4512711_all_on",
         "title": {
           "en": "All on"
@@ -3540,6 +3298,88 @@
         ]
       },
       {
+        "title": {
+          "en": "Brightness button is pressed"
+        },
+        "titleFormatted": {
+          "en": "Brightness button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512712"
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              },
+              {
+                "id": "released",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_brightness_button_mode"
+      },
+      {
+        "title": {
+          "en": "Switch button is pressed"
+        },
+        "titleFormatted": {
+          "en": "Switch button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512712"
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              },
+              {
+                "id": "released",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_switch_button_mode"
+      },
+      {
         "id": "4512712_on_off",
         "title": {
           "en": "On/Off"
@@ -3622,6 +3462,88 @@
             "filter": "driver_id=4512712"
           }
         ]
+      },
+      {
+        "title": {
+          "en": "Off button is pressed"
+        },
+        "titleFormatted": {
+          "en": "Off button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512713"
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              },
+              {
+                "id": "released",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_off_button_mode"
+      },
+      {
+        "title": {
+          "en": "On button is pressed"
+        },
+        "titleFormatted": {
+          "en": "On button is [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512713"
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "title": "Mode",
+            "values": [
+              {
+                "id": "pressed",
+                "label": {
+                  "en": "pressed"
+                }
+              },
+              {
+                "id": "held_down",
+                "label": {
+                  "en": "held down"
+                }
+              },
+              {
+                "id": "released",
+                "label": {
+                  "en": "released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sr_on_button_mode"
       },
       {
         "id": "4512713_on",
@@ -4454,6 +4376,84 @@
             ]
           }
         ]
+      },
+      {
+        "title": {
+          "en": "Brightness changed"
+        },
+        "titleFormatted": {
+          "en": "Brightness changed"
+        },
+        "hint": "The brightness range from 0.00 to 1.00",
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512726"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "brightness",
+            "type": "number",
+            "title": {
+              "en": "Brightness"
+            }
+          }
+        ],
+        "id": "sr_brightness_moved"
+      },
+      {
+        "title": {
+          "en": "Hue changed"
+        },
+        "titleFormatted": {
+          "en": "Hue changed"
+        },
+        "hint": "The hue range from 0.00 to 1.00",
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512726"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "hue",
+            "type": "number",
+            "title": {
+              "en": "Hue"
+            }
+          }
+        ],
+        "id": "sr_hue_moved"
+      },
+      {
+        "title": {
+          "en": "White balance changed"
+        },
+        "titleFormatted": {
+          "en": "White balance changed"
+        },
+        "hint": "The white range from 0.00 to 1.00, 0.00 for coolest white, 1.00 for warmest white.",
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512726"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "white",
+            "type": "number",
+            "title": {
+              "en": "White"
+            }
+          }
+        ],
+        "id": "sr_white_moved"
       },
       {
         "id": "4512726_on",
@@ -5808,74 +5808,6 @@
       }
     ],
     "actions": [
-      {
-        "title": {
-          "en": "Start dim change"
-        },
-        "titleFormatted": {
-          "en": "[[mode]] dim in [[duration]]"
-        },
-        "duration": false,
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512724"
-          },
-          {
-            "name": "mode",
-            "type": "dropdown",
-            "title": {
-              "en": "Mode"
-            },
-            "values": [
-              {
-                "id": "up",
-                "label": {
-                  "en": "Increase"
-                }
-              },
-              {
-                "id": "down",
-                "label": {
-                  "en": "Decrease"
-                }
-              }
-            ]
-          },
-          {
-            "name": "duration",
-            "type": "range",
-            "title": {
-              "en": "Change duration"
-            },
-            "min": 1,
-            "max": 127,
-            "step": 1,
-            "label": " seconds",
-            "labelMultiplier": 1,
-            "labelDecimals": 0
-          }
-        ],
-        "id": "sr_zw_start_dim_change_v4"
-      },
-      {
-        "title": {
-          "en": "Stop dim change"
-        },
-        "titleFormatted": {
-          "en": "Stop dim change"
-        },
-        "duration": false,
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512724"
-          }
-        ],
-        "id": "sr_zw_stop_dim_change"
-      },
       {
         "id": "1402755_level_step_with_onoff",
         "title": {
@@ -9827,6 +9759,74 @@
         ]
       },
       {
+        "title": {
+          "en": "Start dim change"
+        },
+        "titleFormatted": {
+          "en": "[[mode]] dim in [[duration]]"
+        },
+        "duration": false,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512724"
+          },
+          {
+            "name": "mode",
+            "type": "dropdown",
+            "title": {
+              "en": "Mode"
+            },
+            "values": [
+              {
+                "id": "up",
+                "label": {
+                  "en": "Increase"
+                }
+              },
+              {
+                "id": "down",
+                "label": {
+                  "en": "Decrease"
+                }
+              }
+            ]
+          },
+          {
+            "name": "duration",
+            "type": "range",
+            "title": {
+              "en": "Change duration"
+            },
+            "min": 1,
+            "max": 127,
+            "step": 1,
+            "label": " seconds",
+            "labelMultiplier": 1,
+            "labelDecimals": 0
+          }
+        ],
+        "id": "sr_zw_start_dim_change_v4"
+      },
+      {
+        "title": {
+          "en": "Stop dim change"
+        },
+        "titleFormatted": {
+          "en": "Stop dim change"
+        },
+        "duration": false,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512724"
+          }
+        ],
+        "id": "sr_zw_stop_dim_change"
+      },
+      {
         "id": "4512739_level_step_with_onoff",
         "title": {
           "en": "Step level"
@@ -10661,7 +10661,6 @@
   },
   "drivers": [
     {
-      "id": "1402755",
       "name": {
         "en": "1402755 - Zigbee Rotery Dimmer"
       },
@@ -10734,10 +10733,10 @@
         "large": "/drivers/1402755/assets/images/large.png",
         "small": "/drivers/1402755/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "1402755"
     },
     {
-      "id": "1402756",
       "name": {
         "en": "1402756 - Z-Wave Rotery Dimmer"
       },
@@ -11021,10 +11020,10 @@
             }
           ]
         }
-      ]
+      ],
+      "id": "1402756"
     },
     {
-      "id": "1402767",
       "name": {
         "en": "1402767 - Zigbee 2 pol Dimmer"
       },
@@ -11089,10 +11088,10 @@
             "en": "To Include, quick press Config Button for two times."
           }
         }
-      }
+      },
+      "id": "1402767"
     },
     {
-      "id": "1402768",
       "name": {
         "en": "1402768 - TW Dimmer(ZigBee)"
       },
@@ -11158,10 +11157,10 @@
             "en": "To Include, quick press Config Button for two times."
           }
         }
-      }
+      },
+      "id": "1402768"
     },
     {
-      "id": "1402769",
       "name": {
         "en": "1402769 - Zigbee Dimmer"
       },
@@ -11231,7 +11230,8 @@
         "large": "/drivers/1402769/assets/images/large.png",
         "small": "/drivers/1402769/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "1402769"
     },
     {
       "class": "socket",
@@ -11292,7 +11292,6 @@
           }
         }
       },
-      "id": "1402790",
       "settings": [
         {
           "id": "dry_cooking_temp_threshold",
@@ -11324,10 +11323,10 @@
             "no": "minutter"
           }
         }
-      ]
+      ],
+      "id": "1402790"
     },
     {
-      "id": "3308431",
       "name": {
         "en": "3308431 - Luna Lamp"
       },
@@ -11396,10 +11395,10 @@
         "large": "/drivers/3308431/assets/images/large.png",
         "small": "/drivers/3308431/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "3308431"
     },
     {
-      "id": "3802960",
       "name": {
         "en": "3802960 - E27 White"
       },
@@ -11467,10 +11466,10 @@
         "large": "/drivers/3802960/assets/images/large.png",
         "small": "/drivers/3802960/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "3802960"
     },
     {
-      "id": "3802961",
       "name": {
         "en": "3802961- E27 CCT"
       },
@@ -11545,10 +11544,10 @@
         "large": "/drivers/3802961/assets/images/large.png",
         "small": "/drivers/3802961/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "3802961"
     },
     {
-      "id": "3802962",
       "name": {
         "en": "3802962 - E27 Color"
       },
@@ -11635,10 +11634,10 @@
         "large": "/drivers/3802962/assets/images/large.png",
         "small": "/drivers/3802962/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "3802962"
     },
     {
-      "id": "3802963",
       "name": {
         "en": "3802963 - E14 White"
       },
@@ -11707,10 +11706,10 @@
         "large": "/drivers/3802963/assets/images/large.png",
         "small": "/drivers/3802963/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "3802963"
     },
     {
-      "id": "3802964",
       "name": {
         "en": "3802964 - E14 CCT"
       },
@@ -11785,10 +11784,10 @@
         "large": "/drivers/3802964/assets/images/large.png",
         "small": "/drivers/3802964/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "3802964"
     },
     {
-      "id": "3802965",
       "name": {
         "en": "3802965 - GU10 White"
       },
@@ -11856,10 +11855,10 @@
         "large": "/drivers/3802965/assets/images/large.png",
         "small": "/drivers/3802965/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "3802965"
     },
     {
-      "id": "3802966",
       "name": {
         "en": "3802966 - GU10 CCT"
       },
@@ -11934,10 +11933,10 @@
         "large": "/drivers/3802966/assets/images/large.png",
         "small": "/drivers/3802966/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "3802966"
     },
     {
-      "id": "3802967",
       "name": {
         "en": "3802967 - GU10 Color"
       },
@@ -12024,10 +12023,10 @@
         "large": "/drivers/3802967/assets/images/large.png",
         "small": "/drivers/3802967/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "3802967"
     },
     {
-      "id": "3802968",
       "name": {
         "en": "3802968 - E27 Filament"
       },
@@ -12102,10 +12101,10 @@
         "large": "/drivers/3802968/assets/images/large.png",
         "small": "/drivers/3802968/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "3802968"
     },
     {
-      "id": "4512700",
       "name": {
         "en": "4512700/33 - Zigbee Dimmer"
       },
@@ -12175,10 +12174,10 @@
         "large": "/drivers/4512700/assets/images/large.png",
         "small": "/drivers/4512700/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "4512700"
     },
     {
-      "id": "4512701",
       "name": {
         "en": "4512701 - Zigbee 1 Channel"
       },
@@ -12235,10 +12234,10 @@
         "large": "/drivers/4512701/assets/images/large.png",
         "small": "/drivers/4512701/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "4512701"
     },
     {
-      "id": "4512702",
       "name": {
         "en": "4512702 - Zigbee 2 Channel"
       },
@@ -12295,10 +12294,10 @@
         "large": "/drivers/4512702/assets/images/large.png",
         "small": "/drivers/4512702/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "4512702"
     },
     {
-      "id": "4512703",
       "name": {
         "en": "4512703/21 - Zigbee 4 Channel"
       },
@@ -12382,10 +12381,10 @@
         "large": "/drivers/4512703/assets/images/large.png",
         "small": "/drivers/4512703/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "4512703"
     },
     {
-      "id": "4512704",
       "name": {
         "en": "4512704 - Zigbee Switch"
       },
@@ -12443,10 +12442,10 @@
         "large": "/drivers/4512704/assets/images/large.png",
         "small": "/drivers/4512704/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "4512704"
     },
     {
-      "id": "4512705",
       "name": {
         "en": "4512705 - Zigbee 4 Channel Remorte"
       },
@@ -12530,10 +12529,10 @@
         "large": "/drivers/4512705/assets/images/large.png",
         "small": "/drivers/4512705/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "4512705"
     },
     {
-      "id": "4512706",
       "name": {
         "en": "4512706 - Zigbee RGB Remote"
       },
@@ -12617,10 +12616,10 @@
         "large": "/drivers/4512706/assets/images/large.png",
         "small": "/drivers/4512706/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "4512706"
     },
     {
-      "id": "4512707_CCT",
       "name": {
         "en": "4512707 - Zigbee LED CCT Controller"
       },
@@ -12697,10 +12696,10 @@
         "large": "/drivers/4512707_CCT/assets/images/large.png",
         "small": "/drivers/4512707_CCT/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "4512707_CCT"
     },
     {
-      "id": "4512707_COLOR",
       "name": {
         "en": "4512707 - Zigbee LED Controller Color"
       },
@@ -12792,10 +12791,10 @@
         "large": "/drivers/4512707_COLOR/assets/images/large.png",
         "small": "/drivers/4512707_COLOR/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "4512707_COLOR"
     },
     {
-      "id": "4512707_DIM",
       "name": {
         "en": "4512707 - Zigbee LED Controller Dim"
       },
@@ -12864,10 +12863,10 @@
         "large": "/drivers/4512707_DIM/assets/images/large.png",
         "small": "/drivers/4512707_DIM/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "4512707_DIM"
     },
     {
-      "id": "4512708",
       "name": {
         "en": "4512708 - Zigbee LED Controller"
       },
@@ -12935,10 +12934,10 @@
         "large": "/drivers/4512708/assets/images/large.png",
         "small": "/drivers/4512708/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "4512708"
     },
     {
-      "id": "4512710",
       "name": {
         "en": "4512710 - Z-Wave Dimmer"
       },
@@ -12998,10 +12997,10 @@
         "associationGroups": [
           1
         ]
-      }
+      },
+      "id": "4512710"
     },
     {
-      "id": "4512711",
       "name": {
         "en": "4512711 - Z-Wave 4 Channel Remote"
       },
@@ -13081,10 +13080,10 @@
             }
           }
         }
-      }
+      },
+      "id": "4512711"
     },
     {
-      "id": "4512712",
       "name": {
         "en": "4512712/30 - Z-Wave 1 Channel"
       },
@@ -13145,10 +13144,10 @@
             }
           }
         }
-      }
+      },
+      "id": "4512712"
     },
     {
-      "id": "4512713",
       "name": {
         "en": "4512713 - Z-Wave 1 Channel"
       },
@@ -13209,10 +13208,10 @@
             }
           }
         }
-      }
+      },
+      "id": "4512713"
     },
     {
-      "id": "4512714",
       "name": {
         "en": "4512714/22 - Z-Wave 4 Channel"
       },
@@ -13291,10 +13290,10 @@
             }
           }
         }
-      }
+      },
+      "id": "4512714"
     },
     {
-      "id": "4512715",
       "name": {
         "en": "4512715 - Z-Wave Switch"
       },
@@ -13470,10 +13469,10 @@
             }
           ]
         }
-      ]
+      ],
+      "id": "4512715"
     },
     {
-      "id": "4512716",
       "name": {
         "en": "4512716 - Z-Wave Door/Window Sensor"
       },
@@ -13534,10 +13533,10 @@
             }
           }
         }
-      }
+      },
+      "id": "4512716"
     },
     {
-      "id": "4512717",
       "name": {
         "en": "4512717 - Z-Wave Wall Plug"
       },
@@ -13589,10 +13588,10 @@
             }
           }
         }
-      }
+      },
+      "id": "4512717"
     },
     {
-      "id": "4512719",
       "name": {
         "en": "4512719 - Zigbee 2 Channel"
       },
@@ -13657,10 +13656,10 @@
         "large": "/drivers/4512719/assets/images/large.png",
         "small": "/drivers/4512719/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "4512719"
     },
     {
-      "id": "4512720",
       "name": {
         "en": "4512720/31 - Z-Wave 2 Channel"
       },
@@ -13727,10 +13726,10 @@
             }
           }
         }
-      }
+      },
+      "id": "4512720"
     },
     {
-      "id": "4512724",
       "name": {
         "en": "4512724 - Z-Wave Dimmer 2"
       },
@@ -13789,10 +13788,10 @@
         "associationGroups": [
           1
         ]
-      }
+      },
+      "id": "4512724"
     },
     {
-      "id": "4512725",
       "name": {
         "en": "4512725 - Z-Wave Plug Thermostat",
         "no": "4512725 - Z-Wave Termostatplugg"
@@ -13848,10 +13847,10 @@
             }
           }
         }
-      }
+      },
+      "id": "4512725"
     },
     {
-      "id": "4512726",
       "name": {
         "en": "4512726 - Zigbee 4-1 Rotery Dimmer"
       },
@@ -13906,10 +13905,10 @@
         "large": "/drivers/4512726/assets/images/large.png",
         "small": "/drivers/4512726/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "4512726"
     },
     {
-      "id": "4512728",
       "name": {
         "en": "4512728 - Zigbee 1 Channel"
       },
@@ -13964,10 +13963,10 @@
         "large": "/drivers/4512728/assets/images/large.png",
         "small": "/drivers/4512728/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "4512728"
     },
     {
-      "id": "4512729",
       "name": {
         "en": "4512729 - Zigbee 2 Channel"
       },
@@ -14031,10 +14030,10 @@
         "large": "/drivers/4512729/assets/images/large.png",
         "small": "/drivers/4512729/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "4512729"
     },
     {
-      "id": "4512734",
       "name": {
         "en": "4512734 - Z-Wave MultiSensor"
       },
@@ -14100,7 +14099,8 @@
             }
           }
         }
-      }
+      },
+      "id": "4512734"
     },
     {
       "name": {
@@ -14267,7 +14267,6 @@
         "small": "/drivers/4512737/assets/images/small.png",
         "large": "/drivers/4512737/assets/images/large.png"
       },
-      "id": "4512737",
       "settings": [
         {
           "type": "group",
@@ -14290,10 +14289,10 @@
             }
           ]
         }
-      ]
+      ],
+      "id": "4512737"
     },
     {
-      "id": "4512739",
       "name": {
         "en": "4512739 - Zigbee CCT Controller"
       },
@@ -14368,10 +14367,10 @@
         "large": "/drivers/4512739/assets/images/large.png",
         "small": "/drivers/4512739/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "4512739"
     },
     {
-      "id": "4512743",
       "name": {
         "en": "4512743 - Z-Wave LED Controller"
       },
@@ -14425,10 +14424,10 @@
         "associationGroups": [
           1
         ]
-      }
+      },
+      "id": "4512743"
     },
     {
-      "id": "4512744",
       "name": {
         "en": "4512744/45 - Z-Wave Thermostat Touch"
       },
@@ -14492,10 +14491,10 @@
             }
           }
         }
-      }
+      },
+      "id": "4512744"
     },
     {
-      "id": "4512746",
       "name": {
         "en": "4512746 - Z-Wave Switch 16A"
       },
@@ -14577,7 +14576,8 @@
             }
           ]
         }
-      ]
+      ],
+      "id": "4512746"
     },
     {
       "name": {
@@ -14798,11 +14798,10 @@
         "small": "/drivers/4512749-N/assets/images/small.png",
         "large": "/drivers/4512749-N/assets/images/large.png"
       },
-      "id": "4512749-N",
-      "settings": []
+      "settings": [],
+      "id": "4512749-N"
     },
     {
-      "id": "4512757",
       "name": {
         "en": "4512757 - Zwave Thermostat"
       },
@@ -15290,10 +15289,10 @@
             }
           ]
         }
-      ]
+      ],
+      "id": "4512757"
     },
     {
-      "id": "451275_X",
       "name": {
         "en": "451275x - Zigbee Thermostat"
       },
@@ -15798,10 +15797,10 @@
             }
           ]
         }
-      ]
+      ],
+      "id": "451275_X"
     },
     {
-      "id": "451275x",
       "name": {
         "en": "4512750/51 - Zigbee LED Dimmer 2.0"
       },
@@ -15874,10 +15873,10 @@
         "large": "/drivers/451275x/assets/images/large.png",
         "small": "/drivers/451275x/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "451275x"
     },
     {
-      "id": "4512760",
       "name": {
         "en": "4512760 - Zigbee Dimmer 2 400W"
       },
@@ -15945,10 +15944,10 @@
         "large": "/drivers/4512760/assets/images/large.png",
         "small": "/drivers/4512760/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "4512760"
     },
     {
-      "id": "4512761",
       "name": {
         "en": "4512761 - Zigbee Switch"
       },
@@ -16008,10 +16007,10 @@
         "large": "/drivers/4512761/assets/images/large.png",
         "small": "/drivers/4512761/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "4512761"
     },
     {
-      "id": "4512762",
       "name": {
         "en": "4512762 - ZigBee Door Sensor"
       },
@@ -16117,10 +16116,10 @@
       ],
       "connectivity": [
         "zigbee"
-      ]
+      ],
+      "id": "4512762"
     },
     {
-      "id": "4512763",
       "name": {
         "en": "4512763 - ZigBee Motion Sensor"
       },
@@ -16229,10 +16228,10 @@
       ],
       "connectivity": [
         "zigbee"
-      ]
+      ],
+      "id": "4512763"
     },
     {
-      "id": "4512764",
       "name": {
         "en": "4512764 - ZigBee Water Leak Sensor"
       },
@@ -16307,10 +16306,10 @@
       ],
       "connectivity": [
         "zigbee"
-      ]
+      ],
+      "id": "4512764"
     },
     {
-      "id": "4512765",
       "name": {
         "en": "4512765 - ZigBee Temp&Hum Sensor"
       },
@@ -16484,10 +16483,10 @@
       ],
       "connectivity": [
         "zigbee"
-      ]
+      ],
+      "id": "4512765"
     },
     {
-      "id": "4512768",
       "name": {
         "en": "4512768 - Zigbee 2 way Switch"
       },
@@ -16592,10 +16591,10 @@
             "en": "Device current mode"
           }
         }
-      ]
+      ],
+      "id": "4512768"
     },
     {
-      "id": "451276x",
       "name": {
         "en": "451276x - Zigbee Light"
       },
@@ -16663,10 +16662,10 @@
             "en": "App version."
           }
         }
-      ]
+      ],
+      "id": "451276x"
     },
     {
-      "id": "4512771",
       "name": {
         "en": "4512770/71 - ZigBee MultiSensor"
       },
@@ -16760,7 +16759,8 @@
       ],
       "connectivity": [
         "zigbee"
-      ]
+      ],
+      "id": "4512771"
     },
     {
       "name": {
@@ -16835,7 +16835,6 @@
           }
         }
       },
-      "id": "5401392",
       "settings": [
         {
           "type": "group",
@@ -17273,7 +17272,8 @@
             }
           ]
         }
-      ]
+      ],
+      "id": "5401392"
     },
     {
       "name": {
@@ -17348,7 +17348,6 @@
           }
         }
       },
-      "id": "5401393",
       "settings": [
         {
           "type": "group",
@@ -17786,7 +17785,8 @@
             }
           ]
         }
-      ]
+      ],
+      "id": "5401393"
     },
     {
       "name": {
@@ -17861,7 +17861,6 @@
           }
         }
       },
-      "id": "5401394",
       "settings": [
         {
           "type": "group",
@@ -18299,7 +18298,8 @@
             }
           ]
         }
-      ]
+      ],
+      "id": "5401394"
     },
     {
       "name": {
@@ -18374,7 +18374,6 @@
           }
         }
       },
-      "id": "5401395",
       "settings": [
         {
           "type": "group",
@@ -18812,7 +18811,8 @@
             }
           ]
         }
-      ]
+      ],
+      "id": "5401395"
     },
     {
       "name": {
@@ -18893,7 +18893,6 @@
           }
         }
       },
-      "id": "540139x",
       "settings": [
         {
           "type": "group",
@@ -19331,10 +19330,10 @@
             }
           ]
         }
-      ]
+      ],
+      "id": "540139x"
     },
     {
-      "id": "89665",
       "name": {
         "en": "89665 - Zigbee Led Strip"
       },
@@ -19420,10 +19419,10 @@
         "large": "/drivers/89665/assets/images/large.png",
         "small": "/drivers/89665/assets/images/small.png"
       },
-      "settings": []
+      "settings": [],
+      "id": "89665"
     },
     {
-      "id": "ZW_Dimmer_3wire",
       "name": {
         "en": "Dimmer - 3 wire (Z-wave)",
         "nl": "Inbouwdimmer 3-draads (Z-wave)"
@@ -19485,10 +19484,10 @@
         "associationGroups": [
           1
         ]
-      }
+      },
+      "id": "ZW_Dimmer_3wire"
     },
     {
-      "id": "ZW_Dimmer_Rotary",
       "name": {
         "en": "Dimmer - Rotary (Z-wave)"
       },
@@ -19768,10 +19767,10 @@
             }
           ]
         }
-      ]
+      ],
+      "id": "ZW_Dimmer_Rotary"
     },
     {
-      "id": "ZW_InWallSwitch",
       "name": {
         "en": "Switch (Z-wave)"
       },
@@ -19948,10 +19947,10 @@
             }
           ]
         }
-      ]
+      ],
+      "id": "ZW_InWallSwitch"
     },
     {
-      "id": "ZW_Remote_4",
       "name": {
         "en": "Remote - 4 channel (Z-wave)",
         "nl": "Afstandsbediening - 4 kanaals (Z-wave)"
@@ -20033,10 +20032,10 @@
             }
           }
         }
-      }
+      },
+      "id": "ZW_Remote_4"
     },
     {
-      "id": "ZW_WallController_2",
       "name": {
         "en": "Wall controller - 2 button (Z-wave)"
       },
@@ -20098,10 +20097,10 @@
             }
           }
         }
-      }
+      },
+      "id": "ZW_WallController_2"
     },
     {
-      "id": "ZW_WallController_4",
       "name": {
         "en": "Wall controller - 4 button (1 and 2 channel) (Z-wave)"
       },
@@ -20170,10 +20169,10 @@
             }
           }
         }
-      }
+      },
+      "id": "ZW_WallController_4"
     },
     {
-      "id": "ZW_WallController_8",
       "name": {
         "en": "Wall controller - 8 button (white and black) (Z-wave)"
       },
@@ -20253,10 +20252,10 @@
             }
           }
         }
-      }
+      },
+      "id": "ZW_WallController_8"
     },
     {
-      "id": "ZW_WallPlug",
       "name": {
         "en": "Wall plug - Actuator (Z-wave)"
       },
@@ -20309,7 +20308,8 @@
             }
           }
         }
-      }
+      },
+      "id": "ZW_WallPlug"
     }
   ],
   "capabilities": {
@@ -20781,7 +20781,7 @@
       },
       "icon": "/assets/temperature_icon.svg"
     },
-    "my_ZV9092A_floor_sensor": {
+    "my_zv9092a_floor_sensor": {
       "title": {
         "en": "Floor Sensor"
       },
@@ -20794,7 +20794,7 @@
       },
       "icon": "/assets/temperature_icon.svg"
     },
-    "my_ZV9092A_home_sensor": {
+    "my_zv9092a_home_sensor": {
       "title": {
         "en": "Home Sensor"
       },
@@ -20807,7 +20807,7 @@
       },
       "icon": "/assets/temperature_icon.svg"
     },
-    "my_ZV9092A_temperature_control_reference": {
+    "my_zv9092a_temperature_control_reference": {
       "title": {
         "en": "Temperature Control Reference"
       },
