@@ -108,9 +108,14 @@ module.exports = {
             });
             device.setStoreValue('regulator_mode', '0');
             console.log('sensor mode REV:', config,  s);
-            if (device.hasCapability('regulator')){
-              device.setCapabilityValue('regulator', false);
+            try {
+                if (device.hasCapability('regulator')){
+                    device.setCapabilityValue('regulator', false);
+                }    
+            } catch (error) {
+                this.log(error)
             }
+            
           }
  
           console.log('d', 'sensor mode REV:(ischanged) ', ischanged);

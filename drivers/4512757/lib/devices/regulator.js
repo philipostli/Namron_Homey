@@ -18,7 +18,8 @@ module.exports = {
       return this;
   },
 
-  startReport:function(device){
+  startReport:function(device){ 
+    if (!device.hasCapability(this.capability)) return
     device.registerCapabilityListener(this.capability,
         async (payload) => { 
           //button 操作设置

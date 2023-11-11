@@ -19,12 +19,10 @@ module.exports = {
         'SWITCH_BINARY_REPORT',
         (payload) => {
           console.log('开关:SWITCH_BINARY_REPORT', payload);
-          if (payload['Current Value'] === 'on/enable') {
-            //device.setCapabilityValue('onoff', false);
-            //console.log("========switch ON")
-          } else if (payload['Current Value'] === 'off/disable') {
-            //device.setCapabilityValue('onoff', true);
-            //console.log("========switch OFF")
+          if (payload['Current Value'] === 'on/enable') { 
+          } else if (payload['Current Value'] === 'off/disable') { 
+            device.setCapabilityValue('meter_power', 0.0); 
+            device.setCapabilityValue('measure_power', 0.0);
           }
 
           //this.switch_count += 1;

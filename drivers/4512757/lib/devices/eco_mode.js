@@ -28,10 +28,16 @@ module.exports = {
                     return;
                   }
 
-                    setConfiguratrion(device, null, 4, 1, false, 1);
+                  /// 800 chip TEST for size 4
+                    //setConfiguratrion(device, null, 4, 1, false, 1);
+                    setConfiguratrion(device, null, 4, 4, false, 1);
                 }
                 else{ 
-                    setConfiguratrion(device, null, 4, 1, false, 0);  
+
+                  /// 800 chip TEST for size 4
+                    //setConfiguratrion(device, null, 4, 1, false, 0);  
+                    setConfiguratrion(device, null, 4, 4, false, 0); 
+
                 }  
             }
         );

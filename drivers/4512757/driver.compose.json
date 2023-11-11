@@ -57,7 +57,6 @@
     "child_lock",
     "frost",
     "regulator",
-    "app_thermostat_mode",
     "button.calibrate",
     "button.reset_meter"
   ],

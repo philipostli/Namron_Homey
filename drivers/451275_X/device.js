@@ -1,28 +1,28 @@
 'use strict';
 
-const { ZigBeeDevice } = require("homey-zigbeedriver");
-const { CLUSTER, Cluster } = require('zigbee-clusters')
+const {ZigBeeDevice} = require("homey-zigbeedriver");
+const {CLUSTER, Cluster} = require('zigbee-clusters')
 
 
 const appkit = require('./lib/');
 
 const destructConstProps = function ({
-    ID, NAME, ATTRIBUTES, COMMANDS,
-}) {
+                                         ID, NAME, ATTRIBUTES, COMMANDS,
+                                     }) {
     return Object.freeze({
         ID, NAME, ATTRIBUTES, COMMANDS,
     });
 }
 
-const HzcThermostatCluster = require('../../lib/SrThermostatCluster')
+const HzcThermostatCluster = require('../../lib/HzcThermostatCluster')
 const HzcThermostatUserInterfaceConfigurationCluster =
-    require('../../lib/SrThermostatUserInterfaceConfigurationCluster')
+    require('../../lib/HzcThermostatUserInterfaceConfigurationCluster')
 Cluster.addCluster(HzcThermostatCluster)
-Cluster.addCluster(HzcThermostatUserInterfaceConfigurationCluster) 
+Cluster.addCluster(HzcThermostatUserInterfaceConfigurationCluster)
 
 CLUSTER['THERMOSTAT_USER_INTERFACE_CONFIGURATION'] =
-    destructConstProps(HzcThermostatUserInterfaceConfigurationCluster) 
- 
+    destructConstProps(HzcThermostatUserInterfaceConfigurationCluster)
+
 
 const getInt16 = function (number) {
     const int16 = new Int16Array(1)
@@ -38,14 +38,13 @@ const {
 class t7e_zg_thermostat extends ZigBeeDevice {
 
 
-
     onEndDeviceAnnounce() {
     }
 
-    async onNodeInit({ zclNode, node }) {
-        super.onNodeInit({ zclNode: zclNode, node: node })
+    async onNodeInit({zclNode, node}) {
+        super.onNodeInit({zclNode: zclNode, node: node})
         //this.enableDebug();
-        //this.printNode();  
+        //this.printNode();
         this.disableDebug()
 
         this.isOnline = 0
@@ -66,8 +65,8 @@ class t7e_zg_thermostat extends ZigBeeDevice {
         //this.log("+++ App start: check sensorMode, systemMode, thermostatRunningMode ")
 
         await this.thermostatCluster().
-            readAttributes('sensorMode', 'systemMode', 'thermostatRunningMode', 
-                'absMinHeatSetpointLimit', 'absMaxHeatSetpointLimit', 
+            readAttributes('sensorMode', 'systemMode', 'thermostatRunningMode',
+                'absMinHeatSetpointLimit', 'absMaxHeatSetpointLimit',
                 'absMinCoolSetpointLimit', 'absMaxCoolSetpointLimit').
             then(value => {
                 this.log(`++++++ APP start thermostat = `, value)
@@ -83,7 +82,7 @@ class t7e_zg_thermostat extends ZigBeeDevice {
                     let sensorMode = value['sensorMode'] || 'a'
                     this.setStoreValue('sensor_mode', sensorMode)
                     this.setSettings({ sensor_mode: sensorMode })
- 
+
                     this._initUiModule();
                 }
 
@@ -126,7 +125,7 @@ class t7e_zg_thermostat extends ZigBeeDevice {
     async _initUiModule() {
 
         //this.onDeleted()
-        //super.onDeleted() 
+        //super.onDeleted()
 
         if (this.getStoreValue('regulator_mode_changed') === true) {
             await this.showMessage(TIP_CHANGED)
@@ -136,29 +135,50 @@ class t7e_zg_thermostat extends ZigBeeDevice {
             let reg_mode = this.getStoreValue('sensor_mode') || 'a';
             ////this.log('restartApp->w:', reg_mode);
 
-            if (!this.hasCapability('onoff')) { await this.addCapability("onoff"); }
-            if (!this.hasCapability('measure_power')) { await this.addCapability("measure_power"); }
-            if (!this.hasCapability('meter_power')) { await this.addCapability("meter_power"); }
+            if (!this.hasCapability('onoff')) {
+                await this.addCapability("onoff");
+            }
+            if (!this.hasCapability('measure_power')) {
+                await this.addCapability("measure_power");
+            }
+            if (!this.hasCapability('meter_power')) {
+                await this.addCapability("meter_power");
+            }
             //if (!this.hasCapability('t7e_zg_sensor_mode')){ await  this.addCapability('t7e_zg_sensor_mode') }
-            if (!this.hasCapability('t7e_zg_window_state')) { await this.addCapability('t7e_zg_window_state'); }
+            if (!this.hasCapability('t7e_zg_window_state')) {
+                await this.addCapability('t7e_zg_window_state');
+            }
             //if (!this.hasCapability('t7e_zg_fault')) { await this.addCapability('t7e_zg_fault') }
-            //if (!this.hasCapability('t7e_zg_datetime')) { await this.addCapability('t7e_zg_datetime') } 
-            if (this.hasCapability('t7e_zg_datetime')) { await this.removeCapability('t7e_zg_datetime') }
+            //if (!this.hasCapability('t7e_zg_datetime')) { await this.addCapability('t7e_zg_datetime') }
+            if (this.hasCapability('t7e_zg_datetime')) {
+                await this.removeCapability('t7e_zg_datetime')
+            }
 
-            if (!this.hasCapability('child_lock')) { await this.addCapability("child_lock"); }
+            if (!this.hasCapability('child_lock')) {
+                await this.addCapability("child_lock");
+            }
 
             //regulator heat mode
             if (reg_mode === 'p' || reg_mode === 'fp') {
 
                 //remove
-                if (this.hasCapability('target_temperature')) { await this.removeCapability('target_temperature') }
-                if (this.hasCapability('measure_temperature')) { await this.removeCapability('measure_temperature') }
-                if (this.hasCapability('t7e_zg_thermostat_mode')) { await this.removeCapability('t7e_zg_thermostat_mode') }
-                if (this.hasCapability('eco_mode')) { await this.removeCapability('eco_mode') }
-                if (this.hasCapability('frost')) { await this.removeCapability('frost') }
+                if (this.hasCapability('target_temperature')) {
+                    await this.removeCapability('target_temperature')
+                }
+                if (this.hasCapability('measure_temperature')) {
+                    await this.removeCapability('measure_temperature')
+                }
+                if (this.hasCapability('eco_mode')) {
+                    await this.removeCapability('eco_mode')
+                }
+                if (this.hasCapability('frost')) {
+                    await this.removeCapability('frost')
+                }
 
                 //add
-                if (!this.hasCapability('t7e_zg_regulator_percentage')) { await this.addCapability('t7e_zg_regulator_percentage'); }
+                if (!this.hasCapability('t7e_zg_regulator_percentage')) {
+                    await this.addCapability('t7e_zg_regulator_percentage');
+                }
 
                 this.setSettings({
                     sensor_mode: 'p',
@@ -176,14 +196,23 @@ class t7e_zg_thermostat extends ZigBeeDevice {
             else {
 
                 //remove
-                if (this.hasCapability('t7e_zg_regulator_percentage')) { await this.removeCapability('t7e_zg_regulator_percentage') }
+                if (this.hasCapability('t7e_zg_regulator_percentage')) {
+                    await this.removeCapability('t7e_zg_regulator_percentage')
+                }
 
                 //add
-                if (!this.hasCapability('t7e_zg_thermostat_mode')) { await this.addCapability('t7e_zg_thermostat_mode'); }
-                if (!this.hasCapability('target_temperature')) { await this.addCapability("target_temperature"); }
-                if (!this.hasCapability('measure_temperature')) { await this.addCapability("measure_temperature"); }
-                if (!this.hasCapability('eco_mode')) { await this.addCapability("eco_mode"); }
-                if (!this.hasCapability('frost')) { await this.addCapability("frost"); }
+                if (!this.hasCapability('target_temperature')) {
+                    await this.addCapability("target_temperature");
+                }
+                if (!this.hasCapability('measure_temperature')) {
+                    await this.addCapability("measure_temperature");
+                }
+                if (!this.hasCapability('eco_mode')) {
+                    await this.addCapability("eco_mode");
+                }
+                if (!this.hasCapability('frost')) {
+                    await this.addCapability("frost");
+                }
 
                 let settings = this.getSettings();
                 let mode1 = settings.sensor_mode;
@@ -213,7 +242,6 @@ class t7e_zg_thermostat extends ZigBeeDevice {
         this._setUpSystemCapabilities().catch(this.error)
         this._setUpMeasureTemperatureCapability()
         this._setUpTargetTemperatureCapability()
-        this._setUpModesCapability()
 
         appkit.regulator_percentage.init(this)
         appkit.window_status.init(this)
@@ -224,8 +252,6 @@ class t7e_zg_thermostat extends ZigBeeDevice {
         appkit.fault.init(this)
 
 
-        
-
         await this._onHandlerReport()
 
         this.setStoreValue('regulator_mode_changed', false);
@@ -234,7 +260,7 @@ class t7e_zg_thermostat extends ZigBeeDevice {
         await this.setAvailable()
         await this.unsetWarning()
 
-        //this._getAttributes();   
+        //this._getAttributes();
         this._loopTipInfo()
 
 
@@ -244,11 +270,11 @@ class t7e_zg_thermostat extends ZigBeeDevice {
 
     async showMessage(msg) {
         await this.unsetWarning();
-        await this.setWarning(msg).catch(this.error); 
+        await this.setWarning(msg).catch(this.error);
     }
 
     //==========================================================================================
-    //        Report handler  
+    //        Report handler
     async _onHandlerReport() {
 
         this.onoffCluster().on('attr.onOff', async value => {
@@ -261,22 +287,20 @@ class t7e_zg_thermostat extends ZigBeeDevice {
             //this.log(`-----------event: occupiedHeatingSetpoint report `, value)
             let temp = parseFloat((getInt16(value) / 100).toFixed(1))
             if (this.hasCapability('target_temperature')) {
-                if (temp >= this.target_temp_setpoint_min && temp <= this.target_temp_setpoint_max){
+                if (temp >= this.target_temp_setpoint_min && temp <= this.target_temp_setpoint_max) {
                     this.setCapabilityValue('target_temperature', temp)
-                } 
+                }
             }
         })
         this.thermostatCluster().on('attr.occupiedCoolingSetpoint', async value => {
             //this.log(`-----------event: occupiedCoolingSetpoint report `, value)
             let temp = parseFloat((getInt16(value) / 100).toFixed(1))
             if (this.hasCapability('target_temperature')) {
-                if (temp >= this.target_temp_setpoint_min && temp <= this.target_temp_setpoint_max){
+                if (temp >= this.target_temp_setpoint_min && temp <= this.target_temp_setpoint_max) {
                     this.setCapabilityValue('target_temperature', temp)
                 }
             }
-
         })
-
 
         //target temp limit report
         this.thermostatCluster().on('attr.absMinHeatSetpointLimit', async value => {
@@ -293,27 +317,18 @@ class t7e_zg_thermostat extends ZigBeeDevice {
             this.updateSetpointTempLimit()
         })
 
-
-
-
         this.thermostatCluster().on('attr.systemMode', async value => {
-            //this.log(`-----------event: systemMode report `, value)
             this._setModeUI(value)
         })
 
 
         this.thermostatCluster().on('attr.syncTimeReq', async value => {
-            //this.log('+++report syncTimeReq: ', value)
             if (value === true || value === 1) {
-                //appkit.datetime.setDatetime(this) 
                 this.setDatetime()
             }
-
         })
 
         this.thermostatCluster().on('attr.fault', async value => {
-
-            ////this.log('%% report fault: ', value)
 
             let thefault = '0'
             const res = value.getBits();
@@ -324,32 +339,30 @@ class t7e_zg_thermostat extends ZigBeeDevice {
                     thefault = '0'
                 }
             }
-
-            //this.setCapabilityValue('t7e_zg_fault', thefault) 
         })
 
 
         this.thermostatCluster().on('attr.regulator', async value => {
             ////this.log('==========report regulator: ', value)
-            this.setSettings({ regulator: '' + value })
+            this.setSettings({regulator: '' + value})
         })
 
         this.thermostatCluster().on('attr.windowCheck', async value => {
             ////this.log('===========report windowCheck: ', value)
-            this.setSettings({ window_check: value })
+            this.setSettings({window_check: value})
         })
 
         this.thermostatCluster().on('attr.sensorMode', async value => {
             ////this.log('===========report sensorMode: ', value)
 
-            this.setSettings({ sensor_mode: value })
+            this.setSettings({sensor_mode: value})
 
             this._checkModeStatus(value)
         })
 
         this.thermostatCluster().on('attr.backlight', async value => {
             ////this.log('==========report backlight: ', value)
-            this.setSettings({ lcd_backlight_wait: '' + value })
+            this.setSettings({lcd_backlight_wait: '' + value})
         })
     }
 
@@ -362,29 +375,40 @@ class t7e_zg_thermostat extends ZigBeeDevice {
             //this.log(`##### set time success: `, st)
         }).catch(err => {
             //this.log(`##### set time error `, st, err)
-            this.showMessage(""+err)
+            this.showMessage("" + err)
         })
 
     }
 
 
-
     //==========================================================================================
-    //  Instances 
+    //  Instances
 
-    thermostatCluster() { return this.zclNode.endpoints[1].clusters.thermostat }
+    thermostatCluster() {
+        return this.zclNode.endpoints[1].clusters.thermostat
+    }
+
     //onoffCluster() { return this.zclNode.endpoints[1].clusters.thermostatOnoff }
-    onoffCluster() { return this.zclNode.endpoints[1].clusters.onOff }
+    onoffCluster() {
+        return this.zclNode.endpoints[1].clusters.onOff
+    }
 
     //child lock
     thermostatUserInterfaceConfiguration() {
         return this.zclNode.endpoints[1].clusters.thermostatUserInterfaceConfiguration
     }
 
-    basicCluster() { return this.zclNode.endpoints[1].clusters.basic }
+    basicCluster() {
+        return this.zclNode.endpoints[1].clusters.basic
+    }
 
-    meterCluster() { return this.zclNode.endpoints[1].clusters.metering }
-    electricalMeasurementCluster() { return this.zclNode.endpoints[1].clusters.electricalMeasurement }
+    meterCluster() {
+        return this.zclNode.endpoints[1].clusters.metering
+    }
+
+    electricalMeasurementCluster() {
+        return this.zclNode.endpoints[1].clusters.electricalMeasurement
+    }
 
 
     //================================================================================================================
@@ -400,7 +424,7 @@ class t7e_zg_thermostat extends ZigBeeDevice {
         this.registerCapabilityListener('onoff', async isOn => {
             //this.log('========== onoff toggle: ', isOn)
 
-            //init 
+            //init
             let initing = this.getStoreValue('app_initing') || false
 
             let modeChanged = this.getStoreValue('regulator_mode_changed')
@@ -418,8 +442,7 @@ class t7e_zg_thermostat extends ZigBeeDevice {
                 await this.onoffCluster().setOn().catch((err) => {
                     this.setCapabilityValue('onoff', !isOn)
                 })
-            }
-            else {
+            } else {
                 await this.onoffCluster().setOff().catch((err) => {
                     this.setCapabilityValue('onoff', !isOn)
                 })
@@ -444,7 +467,7 @@ class t7e_zg_thermostat extends ZigBeeDevice {
                     multiplier, divisor
                 } = await this.zclNode.endpoints[this.getClusterEndpoint(
                     CLUSTER.METERING)].clusters[CLUSTER.METERING.NAME].readAttributes(
-                        'multiplier', 'divisor').catch(this.error)
+                    'multiplier', 'divisor').catch(this.error)
 
                 //this.log('multiplier-divisor ', multiplier, divisor)
 
@@ -525,18 +548,15 @@ class t7e_zg_thermostat extends ZigBeeDevice {
         if (!this.hasCapability('target_temperature')) return
 
 
-
         this.registerCapabilityListener('target_temperature', async value => {
 
             ////this.log(`---------- occupiedHeatingSetpoint setParser `, value)
-            let payload = {
-            }
+            let payload = {}
 
             let curMode = this.getStoreValue('last_system_mode') || 'heat'
             if (curMode === 'heat') {
                 payload['occupiedHeatingSetpoint'] = value * 100
-            }
-            else if (curMode === 'cool') {
+            } else if (curMode === 'cool') {
                 payload['occupiedCoolingSetpoint'] = value * 100
             }
 
@@ -548,35 +568,12 @@ class t7e_zg_thermostat extends ZigBeeDevice {
 
     }
 
-
-    _setUpModesCapability() {
-
-        if (!this.hasCapability('t7e_zg_thermostat_mode')) return
-
-        this.registerCapabilityListener('t7e_zg_thermostat_mode', async value => {
-
-            ////this.log(`-----run Mode set `, value)
-            let payload = {
-                systemMode: value,
-            }
-
-            this.thermostatCluster().writeAttributes(payload).then(systemMode => {
-                //this.log('--------set mode = ', payload, systemMode)
-                this.setStoreValue('last_system_mode', value);
-
-            }).catch(this.error)
-        })
-
-    }
-
-
-
-    //================================================================================================================
     //  others
 
-    async onSettings({ oldSettings, newSettings, changedKeys }) {
+    async onSettings({oldSettings, newSettings, changedKeys}) {
         this._setDeviceSettings(newSettings, changedKeys);
     }
+
     async _setDeviceSettings(newSettings, changedKeys) {
 
         ////this.log('+++++ settings ： ', newSettings, changedKeys);
@@ -617,76 +614,50 @@ class t7e_zg_thermostat extends ZigBeeDevice {
             }
         }).catch(this.error)
 
-        //t7e_zg_thermostat_mode
-        if (this.hasCapability('t7e_zg_thermostat_mode')) {
-            await this.thermostatCluster().readAttributes('systemMode').then(value => {
-                //this.log(`+++++++++ run Mode: `, value)
-                if (value.hasOwnProperty('systemMode')) {
-                    let mode = value.systemMode
-                    this._setModeUI(mode)
-                    //this.setCapabilityValue('onoff', mode !== 'off') 
-                }
-
-                if (value.hasOwnProperty('thermostatRunningMode')) {
-                    let mode = value.thermostatRunningMode
-                    this._setModeUI(mode)
-                    //this.setCapabilityValue('onoff', mode !== 'off') 
-                }
-            })
-        }
-
-
         // target_temperature
         if (this.hasCapability('target_temperature')) {
-            await this.thermostatCluster().
-                readAttributes('occupiedHeatingSetpoint', 'occupiedCoolingSetpoint').
-                then(value => {
+            await this.thermostatCluster().readAttributes('occupiedHeatingSetpoint', 'occupiedCoolingSetpoint').then(value => {
 
-                    //this.log(`+++++++ occupiedHeatingSetpoint after mode `, value)
-                    let curMode = this.getStoreValue('last_system_mode') || 'heat'
-                    if (curMode === 'heat') {
-                        const temp = parseFloat(
-                            (value['occupiedHeatingSetpoint'] / 100).toFixed(1))
-                        if (this.hasCapability('target_temperature')) {
-                            if (temp >= this.target_temp_setpoint_min && temp <= this.target_temp_setpoint_max){
-                                this.setCapabilityValue('target_temperature', temp)
-                            }
-                        }
-
-                    }
-                    else if (curMode === 'cool') {
-                        const temp = parseFloat(
-                            (value['occupiedCoolingSetpoint'] / 100).toFixed(1))
-                        if (this.hasCapability('target_temperature')) {
-                            if (temp >= this.target_temp_setpoint_min && temp <= this.target_temp_setpoint_max){
-                                this.setCapabilityValue('target_temperature', temp)
-                            }
+                //this.log(`+++++++ occupiedHeatingSetpoint after mode `, value)
+                let curMode = this.getStoreValue('last_system_mode') || 'heat'
+                if (curMode === 'heat') {
+                    const temp = parseFloat(
+                        (value['occupiedHeatingSetpoint'] / 100).toFixed(1))
+                    if (this.hasCapability('target_temperature')) {
+                        if (temp >= this.target_temp_setpoint_min && temp <= this.target_temp_setpoint_max) {
+                            this.setCapabilityValue('target_temperature', temp)
                         }
                     }
 
-                }).
-                catch(this.error)
+                } else if (curMode === 'cool') {
+                    const temp = parseFloat(
+                        (value['occupiedCoolingSetpoint'] / 100).toFixed(1))
+                    if (this.hasCapability('target_temperature')) {
+                        if (temp >= this.target_temp_setpoint_min && temp <= this.target_temp_setpoint_max) {
+                            this.setCapabilityValue('target_temperature', temp)
+                        }
+                    }
+                }
+
+            }).catch(this.error)
         }
 
         //measure_temperature
         if (this.hasCapability('measure_temperature')) {
             try {
-                await this.thermostatCluster().
-                    readAttributes('localTemperature').
-                    then(value => {
+                await this.thermostatCluster().readAttributes('localTemperature').then(value => {
 
-                        //this.log(`++++++++++ localTemperature`, value)
-                        const temp = parseFloat(
-                            (value['localTemperature'] / 100).toFixed(1))
+                    //this.log(`++++++++++ localTemperature`, value)
+                    const temp = parseFloat(
+                        (value['localTemperature'] / 100).toFixed(1))
 
-                        if (temp > -20) {
-                            if (this.hasCapability('measure_temperature')) {
-                                this.setCapabilityValue('measure_temperature', temp)
-                            }
+                    if (temp > -20) {
+                        if (this.hasCapability('measure_temperature')) {
+                            this.setCapabilityValue('measure_temperature', temp)
                         }
+                    }
 
-                    }).
-                    catch(this.error)
+                }).catch(this.error)
             } catch (error) {
                 ////this.log('++++++++++measure_temperature: ', error)
             }
@@ -696,32 +667,26 @@ class t7e_zg_thermostat extends ZigBeeDevice {
 
         //frost flag
         if (this.hasCapability('frost')) {
-            await this.thermostatCluster().
-                readAttributes(['frost']).
-                then(value => {
-                    //this.log(`++++++ thermostat frost = `, value)
+            await this.thermostatCluster().readAttributes(['frost']).then(value => {
+                //this.log(`++++++ thermostat frost = `, value)
 
-                    if (value.hasOwnProperty('frost')) {
-                        this.setCapabilityValue('frost', value['frost'])
-                    }
+                if (value.hasOwnProperty('frost')) {
+                    this.setCapabilityValue('frost', value['frost'])
+                }
 
-                }).
-                catch(this.error)
+            }).catch(this.error)
         }
 
         //t7e_zg_regulator_percentage
         if (this.hasCapability('t7e_zg_regulator_percentage')) {
-            await this.thermostatCluster().
-                readAttributes('pIHeatingDemand').
-                then(value => {
-                    //this.log(`++++++ thermostat pIHeatingDemand = `, value)
+            await this.thermostatCluster().readAttributes('pIHeatingDemand').then(value => {
+                //this.log(`++++++ thermostat pIHeatingDemand = `, value)
 
-                    if (value.hasOwnProperty('pIHeatingDemand')) {
-                        this.setCapabilityValue('t7e_zg_regulator_percentage', value['pIHeatingDemand'])
-                    }
+                if (value.hasOwnProperty('pIHeatingDemand')) {
+                    this.setCapabilityValue('t7e_zg_regulator_percentage', value['pIHeatingDemand'])
+                }
 
-                }).
-                catch(this.error)
+            }).catch(this.error)
         }
 
         //fault
@@ -744,52 +709,48 @@ class t7e_zg_thermostat extends ZigBeeDevice {
             })
         }
 
-        //others 
-        await this.thermostatCluster().
-            readAttributes('windowState', 'backlight', 'thermostatProgramOperModel', 'regulator', 'backlightSwitch', 'sensorMode').
-            then(value => {
-                //this.log(`$$$$$$$$$$$$$$$$$$$$$$$ thermostat attrs = `, value)
+        //others
+        await this.thermostatCluster().readAttributes('windowState', 'backlight', 'thermostatProgramOperModel', 'regulator', 'backlightSwitch', 'sensorMode').then(value => {
+            //this.log(`$$$$$$$$$$$$$$$$$$$$$$$ thermostat attrs = `, value)
 
-                if (value.hasOwnProperty('windowState')) {
-                    this.setCapabilityValue('t7e_zg_window_state', value['windowState'] ? "opened" : "closed")
-                }
+            if (value.hasOwnProperty('windowState')) {
+                this.setCapabilityValue('t7e_zg_window_state', value['windowState'] ? "opened" : "closed")
+            }
 
-                if (value.hasOwnProperty('backlight')) {
-                    this.setSettings({ backlight: value['backlight'].toString() })
-                }
+            if (value.hasOwnProperty('backlight')) {
+                this.setSettings({backlight: value['backlight'].toString()})
+            }
 
 
-                if (value.hasOwnProperty('thermostatProgramOperModel')) {
-                    try {
-                        const res = value['thermostatProgramOperModel'].getBits();
-                        this.log('--- App read attr: ', new Date(), res)
-                        if (this.hasCapability('eco_mode')) {
-                            this.setCapabilityValue('eco_mode', res.includes('eco') ? true : false).catch(this.error)
-                            //this.log('-----set eco : ', res.includes('eco') ? true : false)
-                        }
+            if (value.hasOwnProperty('thermostatProgramOperModel')) {
+                try {
+                    const res = value['thermostatProgramOperModel'].getBits();
+                    this.log('--- App read attr: ', new Date(), res)
+                    if (this.hasCapability('eco_mode')) {
+                        this.setCapabilityValue('eco_mode', res.includes('eco') ? true : false).catch(this.error)
+                        //this.log('-----set eco : ', res.includes('eco') ? true : false)
                     }
-                    catch (ex) {
-                    }
+                } catch (ex) {
                 }
+            }
 
-                if (value.hasOwnProperty('regulator')) {
-                    const regValue = value['regulator'].toString()
-                    this.setSettings({ regulator: regValue })
-                }
+            if (value.hasOwnProperty('regulator')) {
+                const regValue = value['regulator'].toString()
+                this.setSettings({regulator: regValue})
+            }
 
-                if (value.hasOwnProperty('backlightSwitch')) {
-                    this.setSettings({ window_check: value['backlightSwitch'] === true })
-                }
+            if (value.hasOwnProperty('backlightSwitch')) {
+                this.setSettings({window_check: value['backlightSwitch'] === true})
+            }
 
-                if (value.hasOwnProperty('sensorMode')) {
-                    this.setSettings({ sensor_mode: value['sensorMode'] })
+            if (value.hasOwnProperty('sensorMode')) {
+                this.setSettings({sensor_mode: value['sensorMode']})
 
-                    this._checkModeStatus(value['sensorMode'])
+                this._checkModeStatus(value['sensorMode'])
 
-                }
+            }
 
-            }).
-            catch(this.error)
+        }).catch(this.error)
 
 
         await this.onoffCluster().readAttributes('onOff').then(async value => {
@@ -800,15 +761,13 @@ class t7e_zg_thermostat extends ZigBeeDevice {
         })
 
 
-        //kwh 
+        //kwh
         try {
             const {
                 multiplier, divisor, currentSummationDelivered
             } = await this.zclNode.endpoints[this.getClusterEndpoint(
                 CLUSTER.METERING)].clusters[CLUSTER.METERING.NAME].readAttributes(
-                    'multiplier', 'divisor', 'currentSummationDelivered')
-
-            //this.log('meter_power - ', multiplier, divisor, currentSummationDelivered)
+                'multiplier', 'divisor', 'currentSummationDelivered')
 
             if (multiplier && divisor) {
                 this.meter_multiplier = multiplier / divisor;
@@ -817,7 +776,6 @@ class t7e_zg_thermostat extends ZigBeeDevice {
             this.setCapabilityValue('meter_power', this.meter_multiplier * currentSummationDelivered)
 
         } catch (error) {
-            //this.log('-------METERING multiplier-divisor error: ', error)
         }
 
         //power
@@ -826,9 +784,7 @@ class t7e_zg_thermostat extends ZigBeeDevice {
                 acPowerMultiplier, acPowerDivisor, activePower
             } = await this.zclNode.endpoints[this.getClusterEndpoint(
                 CLUSTER.ELECTRICAL_MEASUREMENT)].clusters[CLUSTER.ELECTRICAL_MEASUREMENT.NAME].readAttributes(
-                    'acPowerMultiplier', 'acPowerDivisor', 'activePower')
-
-            //this.log('measure_power - ', acPowerMultiplier, acPowerDivisor, activePower)
+                'acPowerMultiplier', 'acPowerDivisor', 'activePower')
 
             if (acPowerMultiplier && acPowerDivisor) {
                 this.power_multiplier = acPowerMultiplier / acPowerDivisor;
@@ -837,54 +793,14 @@ class t7e_zg_thermostat extends ZigBeeDevice {
             this.setCapabilityValue('measure_power', this.power_multiplier * activePower)
 
         } catch (error) {
-            //this.log('-------measure_power multiplier-divisor error: ', error)
         }
-
-
-
     }
 
     _setModeUI(mode) {
-        //if (mode === 'auto') mode = 'off'
-        //if (mode === 'idle') mode = 'off'
         if (mode === 'heat' || mode === 'cool') {
-            if (this.hasCapability('t7e_zg_thermostat_mode')) {
-                this.setCapabilityValue('t7e_zg_thermostat_mode', mode).catch(this.error)
-            }
+            this.setSettings({systemMode: mode})
             this.setStoreValue('last_system_mode', mode);
-            //this.log('******* store last_system_mode = ', mode)
         }
-
-
-    }
-
-    _getLastStatus() {
-
-        this.onoffCluster().readAttributes('onOff').then(async value => {
-            //this.log('$$$$$$$$$ onoff read: ', value)
-            if (value.hasOwnProperty('onOff')) {
-                //this.setCapabilityValue('onoff', value.onOff)
-            }
-        })
-
-
-        this.thermostatCluster().readAttributes('systemMode', 'thermostatRunningMode').then(value => {
-            //this.log(`+++++++++ device: `, value)
-
-            if (value.hasOwnProperty('systemMode')) {
-                let mode = value.systemMode
-                this._setModeUI(mode)
-            }
-
-            if (value.hasOwnProperty('thermostatRunningMode')) {
-                let mode = value.thermostatRunningMode
-                this._setModeUI(mode)
-            }
-
-        }).catch(err => {
-            ////this.log('----------err:', err)
-        })
-
     }
 
     async _getPowerKwh() {
@@ -911,8 +827,7 @@ class t7e_zg_thermostat extends ZigBeeDevice {
             this.setSettings({
                 thermostat_regulator_mode: '0',
             });
-        }
-        else if ((m !== 'p' && m !== 'fp') && (value === 'p' || value === 'fp')) {
+        } else if ((m !== 'p' && m !== 'fp') && (value === 'p' || value === 'fp')) {
             changed = true
             this.setSettings({
                 thermostat_regulator_mode: '1',
@@ -927,13 +842,12 @@ class t7e_zg_thermostat extends ZigBeeDevice {
     async _loopTipInfo() {
 
 
-
         try {
 
             //5分钟
-            if (this.isOnline >= 5){
+            if (this.isOnline >= 5) {
                 this.log('--device offline : ', this.isOnline)
-                if (this.hasCapability("onoff")){
+                if (this.hasCapability("onoff")) {
                     this.setCapabilityValue('onoff', false)
                 }
             }
@@ -943,19 +857,19 @@ class t7e_zg_thermostat extends ZigBeeDevice {
             if (modeChanged === true) {
                 ////this.log('--------mode changed: ', modeChanged, TIP_CHANGED)
                 this.unsetWarning();
-                this.showMessage(TIP_CHANGED) 
+                this.showMessage(TIP_CHANGED)
 
-            } else {  
-                await this._getAttributes() 
+            } else {
+                await this._getAttributes()
             }
 
             //this._getLastStatus()
 
             //this._getPowerKwh()
-  
+
 
         } catch (error) {
-            this.isOnline += 1 
+            this.isOnline += 1
 
             let errMsg = "-" + error
 
@@ -982,19 +896,19 @@ class t7e_zg_thermostat extends ZigBeeDevice {
     }
 
 
-    error(msg, err){
+    error(msg, err) {
         this.log('xxx', msg, err)
         let errMsg = "-" + err
 
         //this.log('---------------loop error: ', error)
         if (errMsg.includes('node_object_not_found')) {
-            this.setUnavailable('Perhaps device is left network') 
+            this.setUnavailable('Perhaps device is left network')
         }
         if (errMsg.includes('Device is not responding')) {
-            this.setUnavailable('Device is not responding, make sure the device has power.') 
+            this.setUnavailable('Device is not responding, make sure the device has power.')
         }
         if (errMsg.includes('Missing Zigbee Node')) {
-            this.setUnavailable('Perhaps device is left network') 
+            this.setUnavailable('Perhaps device is left network')
         }
     }
 
@@ -1014,14 +928,14 @@ class t7e_zg_thermostat extends ZigBeeDevice {
         if ((min !== undefined ? min : capOptions.min) >= (max !== undefined ? max : capOptions.max)) {
             return
         }
-        
+
         try {
             if (min || max || step) {
                 capOptions.min = min
                 capOptions.max = max
                 capOptions.step = step
                 capOptions.decimals = step >= 0.5 ? 1 : 2
-                await this.setCapabilityOptions('target_temperature', capOptions).then( result => {
+                await this.setCapabilityOptions('target_temperature', capOptions).then(result => {
                     this.log('---set target_temperature min-max: OK ', capOptions)
 
                     //温度范围内控制更新
@@ -1029,18 +943,17 @@ class t7e_zg_thermostat extends ZigBeeDevice {
                         this.setCapabilityValue('target_temperature', max)
                     }
 
-                }).catch( error => {
+                }).catch(error => {
                     this.log('---set target_temperature min-max: ', error)
                 })
             }
         } catch (err) {
-              this.log('updateSetpointTempLimit ERROR', err);
+            this.log('updateSetpointTempLimit ERROR', err);
         }
-    }      
+    }
 
 
 }
-
 
 
 module.exports = t7e_zg_thermostat;
