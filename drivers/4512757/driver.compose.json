@@ -15,7 +15,10 @@
     ],
     "manufacturerId": 1080,
     "productTypeId": 4,
-    "productId": 264,
+    "productId": [
+      264,
+      4512757
+    ],
     "learnmode": {
       "instruction": {
         "en": "For inclusion, double click button M for two times when in \"Advance settings -> in-network mode\"."
