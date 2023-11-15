@@ -2,19 +2,19 @@
 
 const protection = require('./devices/protection.js')
 
-module.exports = {   
-    
+module.exports = {
+
     meters : require('./devices/meters.js'),
     MasureTemperature: require('./devices/measure_temperature.js'),
-    createSetpoint: require('./devices/setpoint.js'), 
-    createSwitch: require('./devices/switch.js'), 
-    ThermostatMode: require('./devices/thermostat_mode.js'), 
+    createSetpoint: require('./devices/setpoint.js'),
+    createSwitch: require('./devices/switch.js'),
+    ThermostatMode: require('./devices/thermostat_mode.js'),
     TargetTemperature: require('./devices/target_temperature.js'),
-    
+
     Configuration: require('./devices/configuration.js'),
-    Notification : require('./devices/notification'), 
+    Notification : require('./devices/notification'),
     Protection : require('./devices/protection'),
-    
+
     adaption:require('./devices/adaption.js'),
     automatically_get_network_time: require('./devices/automatically_get_network_time.js'),
     child_lock : require('./devices/child_lock.js'),
@@ -35,7 +35,7 @@ module.exports = {
     lcd_backlight_work : require('./devices/lcd_backlight_work.js'),
     dif_celsius : require('./devices/dif_celsius.js'),
     dif_fahrenheit : require('./devices/dif_fahrenheit.js'),
-    
+
     frost_celsius: require('./devices/frost_celsius.js'),
     frost_fahrenheit: require('./devices/frost_fahrenheit.js'),
 
@@ -57,8 +57,9 @@ module.exports = {
     work_power : require('./devices/work_power'),
 
     app_reset : require('./devices/app_reset'),
+    system_mode : require('./devices/system_mode'),
 
-    thermostat_regulator_mode : require('./devices/thermostat_regulator_mode'), 
+    thermostat_regulator_mode : require('./devices/thermostat_regulator_mode'),
 }
 
 
