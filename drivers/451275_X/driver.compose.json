@@ -57,7 +57,8 @@
   "class": "thermostat",
   "images": {
     "small": "/drivers/451275_X/assets/images/small.png",
-    "large": "/drivers/451275_X/assets/images/large.png"
+    "large": "/drivers/451275_X/assets/images/large.png",
+    "xlarge": "/drivers/451275_X/assets/images/xlarge.png"
   },
   "capabilities": [
     "onoff",
@@ -67,7 +68,6 @@
     "child_lock",
     "target_temperature",
     "measure_temperature",
-    "t7e_zg_thermostat_mode",
     "eco_mode",
     "frost",
     "t7e_zg_regulator_percentage"

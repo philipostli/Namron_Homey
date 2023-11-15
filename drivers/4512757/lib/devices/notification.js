@@ -3,19 +3,9 @@ const {
     updateTempCapOptions 
 }                               = require('./utils');
   
-module.exports = {
-  device:null,
-  node:null,
-  init:function(device, node){
-    this.device = device;
-    this.node = node;  
-    return this;
-  },
-  registerCapability:function(){ 
-    return this;
-  },
-  startReport:function(){
-    this.device.registerReportListener('NOTIFICATION', 'NOTIFICATION_REPORT', 
+module.exports = {   
+  startReport:function(device){
+    device.registerReportListener('NOTIFICATION', 'NOTIFICATION_REPORT', 
       (payload) => {
         //console.log('#################################################NOTIFICATION_REPORT', payload); 
         const status = payload['Notification Status']; 
@@ -40,17 +30,17 @@ module.exports = {
        
       if (event == 22){
         console.log('REV: window_door_alarm', 22, true);
-        if (this.device.hasCapability('window_door_alarm')){
-          this.device.setCapabilityValue('window_door_alarm', true);
+        if (device.hasCapability('window_door_alarm')){
+          device.setCapabilityValue('window_door_alarm', true);
         } 
-        this.device.setCapabilityValue('alarm_generic', true);
+        device.setCapabilityValue('alarm_generic', true);
         
       } else if (event == 23){
         console.log('REV: window_door_alarm', 23, false, 'Window/Door is closed');
-        if (this.device.hasCapability('window_door_alarm')){
-          this.device.setCapabilityValue('window_door_alarm', false);
+        if (device.hasCapability('window_door_alarm')){
+          device.setCapabilityValue('window_door_alarm', false);
         }
-        this.device.setCapabilityValue('alarm_generic', false); 
+        device.setCapabilityValue('alarm_generic', false); 
       }
           
 

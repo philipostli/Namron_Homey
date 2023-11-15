@@ -15352,7 +15352,8 @@
       "class": "thermostat",
       "images": {
         "small": "/drivers/451275_X/assets/images/small.png",
-        "large": "/drivers/451275_X/assets/images/large.png"
+        "large": "/drivers/451275_X/assets/images/large.png",
+        "xlarge": "/drivers/451275_X/assets/images/xlarge.png"
       },
       "capabilities": [
         "onoff",
@@ -20781,7 +20782,7 @@
       },
       "icon": "/assets/temperature_icon.svg"
     },
-    "my_zv9092a_floor_sensor": {
+    "my_ZV9092A_floor_sensor": {
       "title": {
         "en": "Floor Sensor"
       },
@@ -20794,7 +20795,7 @@
       },
       "icon": "/assets/temperature_icon.svg"
     },
-    "my_zv9092a_home_sensor": {
+    "my_ZV9092A_home_sensor": {
       "title": {
         "en": "Home Sensor"
       },
@@ -20807,7 +20808,7 @@
       },
       "icon": "/assets/temperature_icon.svg"
     },
-    "my_zv9092a_temperature_control_reference": {
+    "my_ZV9092A_temperature_control_reference": {
       "title": {
         "en": "Temperature Control Reference"
       },
@@ -20831,7 +20832,7 @@
         {
           "id": "room_floor_sensor",
           "title": {
-            "en": "Room + Floor Sensor"
+            "en": "Room and Floor Sensor"
           }
         }
       ]
