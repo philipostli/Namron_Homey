@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "net.filllip-namron",
-  "version": "2.2.72",
+  "version": "2.2.73",
   "compatibility": ">=7.4.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
@@ -14819,7 +14819,10 @@
         ],
         "manufacturerId": 1080,
         "productTypeId": 4,
-        "productId": 264,
+        "productId": [
+          264,
+          4512757
+        ],
         "learnmode": {
           "instruction": {
             "en": "For inclusion, double click button M for two times when in \"Advance settings -> in-network mode\"."
@@ -14861,7 +14864,6 @@
         "child_lock",
         "frost",
         "regulator",
-        "app_thermostat_mode",
         "button.calibrate",
         "button.reset_meter"
       ],
@@ -15188,6 +15190,34 @@
           ]
         },
         {
+          "id": "system_mode",
+          "type": "dropdown",
+          "value": "off",
+          "label": {
+            "en": "thermostat mode "
+          },
+          "values": [
+            {
+              "id": "off",
+              "label": {
+                "en": "off"
+              }
+            },
+            {
+              "id": "heat",
+              "label": {
+                "en": "heat"
+              }
+            },
+            {
+              "id": "cool",
+              "label": {
+                "en": "cool"
+              }
+            }
+          ]
+        },
+        {
           "id": "frost_celsius",
           "type": "number",
           "value": 5,
@@ -15363,7 +15393,6 @@
         "child_lock",
         "target_temperature",
         "measure_temperature",
-        "t7e_zg_thermostat_mode",
         "eco_mode",
         "frost",
         "t7e_zg_regulator_percentage"
@@ -15686,6 +15715,28 @@
               "id": "p",
               "label": {
                 "en": "P "
+              }
+            }
+          ]
+        },
+        {
+          "id": "systemMode",
+          "type": "dropdown",
+          "value": "heat",
+          "label": {
+            "en": "thermostat mode"
+          },
+          "values": [
+            {
+              "id": "heat",
+              "label": {
+                "en": "heat"
+              }
+            },
+            {
+              "id": "cool",
+              "label": {
+                "en": "cool"
               }
             }
           ]
