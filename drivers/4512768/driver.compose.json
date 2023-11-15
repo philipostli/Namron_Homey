@@ -2,7 +2,7 @@
   "name": {
     "en": "4512768 - Zigbee 2 way Switch"
   },
-  "class": "light",
+  "class": "socket",
   "capabilities": [],
   "capabilitiesOptions": {
     "button.calibrate": {
