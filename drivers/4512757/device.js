@@ -1,6 +1,6 @@
 'use strict';
 
-const { sync } = require('git-branch');
+// const { sync } = require('git-branch');
 const Homey = require('homey');
 
 const appkit = require('./lib/');
