@@ -235,7 +235,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=4512703|4512705|4512711|4512714"
+            "filter": "driver_id=4512703|4512705|4512711|4512714|4512772"
           },
           {
             "name": "group",
@@ -367,7 +367,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=4512703|4512705|4512711|4512714"
+            "filter": "driver_id=4512703|4512705|4512711|4512714|4512772"
           },
           {
             "name": "group",
@@ -15895,9 +15895,7 @@
           "_TZ3000_pmdekgjg"
         ],
         "productId": [
-          "TS1101",
-          "4512750",
-          "4512751"
+          "TS1101"
         ],
         "endpoints": {
           "1": {
@@ -16544,7 +16542,7 @@
       "name": {
         "en": "4512768 - Zigbee 2 way Switch"
       },
-      "class": "socket",
+      "class": "light",
       "capabilities": [],
       "capabilitiesOptions": {
         "button.calibrate": {
@@ -16652,7 +16650,7 @@
       "name": {
         "en": "451276x - Zigbee Light"
       },
-      "class": "socket",
+      "class": "light",
       "capabilities": [],
       "images": {
         "small": "/drivers/451276x/assets/images/small.png",
@@ -16815,6 +16813,92 @@
         "zigbee"
       ],
       "id": "4512771"
+    },
+    {
+      "name": {
+        "en": "4512772/73 - Zigbee 4 Channel"
+      },
+      "class": "remote",
+      "capabilities": [
+        "measure_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2450"
+        ]
+      },
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": [
+          "NAMRON AS",
+          "NAMRON  AS",
+          "NAMRON As",
+          "Namron AS",
+          "Namron As",
+          "namron as",
+          "Namron  AS"
+        ],
+        "productId": [
+          "4512773",
+          "4512772"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              3,
+              2821
+            ],
+            "bindings": []
+          },
+          "2": {
+            "clusters": [
+              0,
+              1,
+              3,
+              2821
+            ],
+            "bindings": []
+          },
+          "3": {
+            "clusters": [
+              0,
+              1,
+              3,
+              2821
+            ],
+            "bindings": []
+          },
+          "4": {
+            "clusters": [
+              0,
+              1,
+              3,
+              2821
+            ],
+            "bindings": []
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/4512772/assets/learnmode.svg",
+          "instruction": {
+            "en": "Quickly press the prog button on the back of the device 5 times."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/4512772/assets/images/large.png",
+        "small": "/drivers/4512772/assets/images/small.png"
+      },
+      "settings": [],
+      "id": "4512772"
     },
     {
       "name": {
