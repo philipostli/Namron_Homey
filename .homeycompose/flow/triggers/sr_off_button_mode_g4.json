@@ -9,7 +9,7 @@
     {
       "type": "device",
       "name": "device",
-      "filter": "driver_id=4512703|4512705|4512711|4512714"
+      "filter": "driver_id=4512703|4512705|4512711|4512714|4512772"
     },
     {
       "name": "group",

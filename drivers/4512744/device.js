@@ -10,6 +10,14 @@ const CapabilityToThermostatSetpointType = {
   'away_mode': 'Away Heating',
 }
 
+// ignore the off_mode, it doesn't need to set target temperature, always return null.
+const SetpointTypeToCapabilityMode = {
+  'Heating 1': 'manual_mode',
+  'Energy Save Heating': 'auto_mode',
+  'Dry Air': 'dry_mode',
+  'Away Heating': 'away_mode',
+}
+
 const CapabilityToThermostatMode = {
   'manual_mode': 'Heat',
   'auto_mode': 'Energy Save Heat',
@@ -41,7 +49,11 @@ class MyThermostat extends ZwaveDevice {
     this.registerCapability('measure_power', 'METER')
     this.registerCapability('meter_power', 'METER')
 
-    this.registerCapability('target_temperature', 'THERMOSTAT_SETPOINT')
+    this.registerCapability('target_temperature', 'THERMOSTAT_SETPOINT', {
+      reportParser: report => {
+        return this._handleThermostatSetpointReport(report)
+      }
+    })
     // this.registerCapability('measure_temperature', 'SENSOR_MULTILEVEL')
 
     this.registerThermostatModeCapability()
@@ -357,6 +369,31 @@ class MyThermostat extends ZwaveDevice {
     })
   }
 
+  _handleThermostatSetpointReport(report) {
+    this.log('THERMOSTAT_SETPOINT report ')
+    this.log(report)
+    const setPointType = report['Level']['Setpoint Type']
+
+    if (SetpointTypeToCapabilityMode.hasOwnProperty(setPointType)) {
+
+      const tempMode = SetpointTypeToCapabilityMode[setPointType]
+      const currentMode = this.getCapabilityValue('my_4512744_thermostat_mode')
+      if (tempMode === currentMode) {
+        const size = report['Level2']['Size']
+        const precision = report['Level2']['Precision']
+        const values = report['Value']
+        const temperature = values.readIntBE(0, size)
+        const result = temperature * Math.pow(10, -1 * precision)
+        this.log(`result ${result}`)
+        return result
+      } else {
+        this.log(`tempMode != currentMode`)
+      }
+    }
+    // return default if it's not the same mode.
+    this.log(`return current target temperature, it is not the same mode ${setPointType}`)
+    return this.getCapabilityValue('target_temperature')
+  }
 }
 
 module.exports = MyThermostat
