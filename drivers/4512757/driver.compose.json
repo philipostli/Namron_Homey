@@ -44,8 +44,7 @@
   "class": "thermostat",
   "images": {
     "small": "/drivers/4512757/assets/images/small.png",
-    "large": "/drivers/4512757/assets/images/large.png",
-    "xlarge": "/drivers/4512757/assets/images/xlarge.png"
+    "large": "/drivers/4512757/assets/images/large.png"
   },
   "capabilities": [
     "onoff",

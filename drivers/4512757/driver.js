@@ -9,10 +9,7 @@ class WenkongDriver extends Driver {
    * onInit is called when the driver is initialized.
    */
   async onInit() {
-    this.log('WenkongDriver has been initialized');
 
-    
-   
   } 
   
     /*
