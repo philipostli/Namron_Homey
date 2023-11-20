@@ -274,5 +274,8 @@
   },
   "2.2.75": {
     "en": "Added support for new devices - 4512768, 4512766, 4512767. Set all Z-Wave devices to usecure. Moved thermostat mode to advanced settings on the 4512757 and 451275X thermostats. Fixed wrong device id on the 4512750/1 dimmer."
+  },
+  "2.2.76": {
+    "en": "Bug fixes on the 4512757 Thermostat driver, added support for new 4 channel zigbee switch "
   }
 }
