@@ -277,5 +277,8 @@
   },
   "2.2.76": {
     "en": "Bug fixes on the 4512757 Thermostat driver, added support for new 4 channel zigbee switch "
+  },
+  "2.2.77": {
+    "en": "Added light temperature on the 3308431 - Luna Lamp"
   }
 }
