@@ -283,5 +283,8 @@
   },
   "2.2.78": {
     "en": "Bug fixes regarding manufactorer ids"
+  },
+  "2.2.79": {
+    "en": "Bug fixes on the 4512757 driver"
   }
 }
