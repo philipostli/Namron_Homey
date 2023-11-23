@@ -1,6 +1,5 @@
 'use strict';
 
-// const { sync } = require('git-branch');
 const Homey = require('homey');
 
 const appkit = require('./lib/');
@@ -8,12 +7,9 @@ const {
     updateTempCapOptions
 } = require('./lib/devices/utils');
 
-const { ZwaveDevice } = require('homey-zwavedriver');
+const {ZwaveDevice} = require('homey-zwavedriver');
 
-
-
-class T7E_ZV_Thermostat extends ZwaveDevice {
-
+class JSTAR_Thermostat extends ZwaveDevice {
 
 
     thermostat_mode_name = "app_thermostat_mode";
@@ -25,8 +21,7 @@ class T7E_ZV_Thermostat extends ZwaveDevice {
     appkits = {};
 
 
-
-    async onNodeInit({ node }) {
+    async onNodeInit({node}) {
         //this.enableDebug();
         //this.printNode();
 
@@ -38,91 +33,68 @@ class T7E_ZV_Thermostat extends ZwaveDevice {
 
 
         if (this.hasCapability('app_reset')) {
-            await this.removeCapability('app_reset')
+            this.removeCapability('app_reset');
+        }
+        if (this.hasCapability('regulator')) {
+            this.removeCapability('regulator');
         }
 
-
+        await this.restartApp();
 
         appkit.createSwitch.init(this, node);
-
-        //appkit.app_reset.init(this, node);
-
-        //this.restartApp();
-
-        appkit.meters.init(this)
-
+        appkit.meters.init(this, node).registerCapability(this).startReport(this);
         appkit.ThermostatMode.init(this, node).registerCapability(this, node).startReport(this);
-
-        appkit.TargetTemperature.init(this, node);
-
-        appkit.MasureTemperature.init(this);
-
+        appkit.TargetTemperature.init(this, node).registerCapability(this).startReport(this, node);
+        appkit.MasureTemperature.init(this, node).registerCapability(this).startReport(this);
         appkit.createSetpoint(this, node);
-
         appkit.adaption.init(this, node);
         appkit.automatically_get_network_time.init(this, node);
         appkit.child_lock.init(this, node);
         appkit.eco_mode.init(this, node);
-        appkit.system_mode.init(this, node);
         appkit.run_mode.init(this, node);
         appkit.window_check.init(this, node);
         appkit.lcd_display_switch.init(this, node);
         appkit.frost.init(this, node);
-
         appkit.work_days_set.init(this, node);
         appkit.sensor_mode.init(this, node);
         appkit.regulator.init(this, node);
         appkit.thermostat_regulator_mode.init(this, node);
-
-
-
         appkit.regulator_percentage.init(this, node);
-
         appkit.temp_correction.init(this, node);
         appkit.lcd_backlight_wait.init(this, node);
         appkit.lcd_backlight_work.init(this, node);
         appkit.dif_celsius.init(this, node);
-
         appkit.dif_fahrenheit.init(this, node);
-
         appkit.frost_celsius.init(this, node);
-
         appkit.heat_celsius_temp_set.init(this, node);
         appkit.heat_fahrenheit_temp_set.init(this, node);
         appkit.cool_celsius_temp_set.init(this, node);
         appkit.cool_fahrenheit_temp_set.init(this, node);
-
         appkit.dry.init(this, node);
-
         appkit.celsius_flt.init(this, node);
         appkit.fahrenheit_flt.init(this, node);
-
         appkit.week_program_time.init(this, node);
         appkit.week_program_celsius_temp.init(this, node);
         appkit.week_program_fahrenheit_temp.init(this, node);
-
-
         appkit.window_door_alarm.init(this, node);
         appkit.work_power.init(this, node);
+        appkit.system_mode.init(this, node);
+        appkit.Configuration.init(this, node).startReport();
+        appkit.Notification.init(this, node).startReport();
+        appkit.Protection.init(this, node).startReport();
 
+        this.registerCapabilityListener('button.reset_meter', async () => {
+            // Maintenance action button was pressed
+            this.meterReset();
 
-        appkit.Configuration.startReport(this);
-        appkit.Notification.startReport(this);
-        appkit.Protection.startReport(this);
+        });
 
-        if (this.hasCapability('button.reset_meter')) {
-            await this.removeCapability('button.reset_meter')
-        }
-        if (this.hasCapability('button.calibrate')) {
-            await this.removeCapability('button.calibrate')
-        }
+        this.registerCapabilityListener('button.calibrate', async () => {
+            // Maintenance action button was pressed, return a promise
 
-        if (this.hasCapability('regulator')) {
-            await this.removeCapability('regulator');
-        }
+        });
 
-
-        this.restartApp(node);
+        // this.restartApp(node);
 
         /*
         if (this.hasCapability(this.thermostat_mode_name)){
@@ -147,25 +119,6 @@ class T7E_ZV_Thermostat extends ZwaveDevice {
 
         this.setStoreValue('regulator_mode_changed', false);
         console.log('d', 'device.init end');
-
-        this.registerCapabilityListener("onoff", async (value) => {
-            console.log('--4512757-onoff-Listener', value);
-            const bufferValue = Buffer.alloc(2);
-            bufferValue.writeUInt16BE(value ? 0x01 : 0x00);
-
-            let payload = {
-                'Target Value': value ? "on/enable" : "off/disable",
-                Duration: 'Default',
-            };
-            console.log('----switch-set-', payload);
-            await node.CommandClass.COMMAND_CLASS_SWITCH_BINARY.SWITCH_BINARY_SET(payload).then(async () => {
-                console.log('-----set ok: ', value)
-                if (value == false) {
-                    console.log('----------set measure_power : 0.0')
-                    this.setCapabilityValue('measure_power', 0.0);
-                }
-            });
-        });
     };
 
     async restartApp(node) {
@@ -200,8 +153,7 @@ class T7E_ZV_Thermostat extends ZwaveDevice {
                 let rp = this.getStoreValue('regulator_percentage') || 20;
                 await this.setCapabilityValue('regulator_percentage', rp);
 
-            }
-            else {
+            } else {
                 if (this.hasCapability('regulator_percentage')) {
                     await this.removeCapability('regulator_percentage');
                 }
@@ -211,10 +163,6 @@ class T7E_ZV_Thermostat extends ZwaveDevice {
                 if (!this.hasCapability('target_temperature')) {
                     await this.addCapability('target_temperature');
                     await this.addCapability('measure_temperature');
-
-                    updateTempCapOptions(device, 0, 40, 0.5, 'target_temperature');
-                    updateTempCapOptions(device, -10, 60, 0.5, 'measure_temperature');
-
                 }
                 if (!this.hasCapability('eco_mode')) {
                     await this.addCapability('eco_mode');
@@ -276,7 +224,9 @@ class T7E_ZV_Thermostat extends ZwaveDevice {
 
     async saveSettings(newSettings, changedKeys) {
         changedKeys.forEach(element => {
-            console.log(""); console.log(""); console.log("");
+            console.log("");
+            console.log("");
+            console.log("");
             console.log("-----------------------config:", element);
 
             let o = appkit[element];
@@ -289,11 +239,11 @@ class T7E_ZV_Thermostat extends ZwaveDevice {
     };
 
 
-    async onSettings({ oldSettings, newSettings, changedKeys }) {
+    async onSettings({oldSettings, newSettings, changedKeys}) {
         // run when the user has changed the device's settings in Homey.
         // changedKeysArr contains an array of keys that have been changed
         // if the settings must not be saved for whatever reason:
-
+        // throw new Error('Your error message');
 
         console.log(newSettings, changedKeys);
 
@@ -403,14 +353,13 @@ class T7E_ZV_Thermostat extends ZwaveDevice {
     }
 
 
-
     //修改温度单位
     async toggleTempUnit(node, unit) {
         let manuData = Buffer.alloc(2);
         manuData.writeUInt16BE(unit);
         await node.CommandClass.COMMAND_CLASS_CONFIGURATION.CONFIGURATION_SET({
             'Parameter Number': 23,
-            Level: { Size: 1, Default: false },
+            Level: {Size: 1, Default: false},
             'Configuration Value': manuData
         });
         console.log('888888888888:修改温度单位');
@@ -423,4 +372,4 @@ class T7E_ZV_Thermostat extends ZwaveDevice {
     }
 }
 
-module.exports = T7E_ZV_Thermostat;
+module.exports = JSTAR_Thermostat;

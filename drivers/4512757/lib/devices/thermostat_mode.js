@@ -14,6 +14,8 @@ module.exports = {
     },
 
     registerCapability: function (device, node) {
+
+
         device.registerCapabilityListener(device.thermostat_mode_name,
             async (value) => {
                 console.log('d', 'thermostat_mode  changed ======', value);
@@ -56,7 +58,7 @@ module.exports = {
         device.registerReportListener('THERMOSTAT_MODE', 'THERMOSTAT_MODE_REPORT',
             (payload) => {
 
-                // if (!device.hasCapability(device.thermostat_mode_name)) return;
+                if (!device.hasCapability(device.thermostat_mode_name)) return;
 
                 console.log('d', '==2===================================THERMOSTAT_MODE_REPORT payload= > ', payload);
 

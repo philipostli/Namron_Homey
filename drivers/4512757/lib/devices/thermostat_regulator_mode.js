@@ -85,7 +85,7 @@ module.exports = {
     device.setStoreValue('regulator_mode', payload);
     device.setStoreValue('regulator_mode_changed', true);
  
-    device.showMessage('The regulator mode has changed. Please go back and click `hzc_thermostat` to turn it on again.');
+    device.showMessage('Please go back and WAIT for reinitializing complete，then click `thermostat` icon to launch application again.');
     //device.restartApp();
     //if (!this.hasCapability('regulator_percentage')){
     
