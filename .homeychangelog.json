@@ -280,5 +280,8 @@
   },
   "2.2.77": {
     "en": "Added light temperature on the 3308431 - Luna Lamp"
+  },
+  "2.2.78": {
+    "en": "Bug fixes regarding manufactorer ids"
   }
 }
