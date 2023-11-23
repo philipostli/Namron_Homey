@@ -2,9 +2,7 @@ module.exports = {
     device: null,
     node: null,
     init: function (device, node) {
-        device.appkits['pu40'] = this;
         this.startReport(device);
-
         this.device = device;
         this.node = node;
         return this;
@@ -22,7 +20,10 @@ module.exports = {
         return this;
     },
     setConfig: function (device, payload) {
-        console.log('run_mode SET: ', payload);
+        console.log('run_mode SET: ', payload, device.hasCapability(device.thermostat_mode_name));
+        if (!device.hasCapability(device.thermostat_mode_name)) {
+            return this;
+        }
         // if (payload === "off") {
         //     setConfiguratrion(device, null, 40, 1, false, 0);
         // } else if (payload === "heat") {

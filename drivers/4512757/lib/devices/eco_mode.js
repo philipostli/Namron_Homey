@@ -7,54 +7,48 @@ module.exports = {
     device:null,
     node:null,
     init:function(device, node){
-      //this.device = device;
-      //this.node = node;  
-      device.appkits['pu4'] = this;
-      this.registerCapability(device);
-      return this;
+        //this.device = device;
+        //this.node = node;
+        device.appkits['pu4'] = this;
+        this.registerCapability(device);
+        return this;
     },
-    registerCapability:function(device){ 
+    registerCapability:function(device){
         device.registerCapabilityListener('eco_mode',
             async (payload) => {
-                console.log('eco_mode changed ======', payload); 
+                console.log('eco_mode changed ======', payload);
 
-                if (payload === true){  
+                if (payload === true){
 
-                  let tm = device.getCapabilityValue(device.thermostat_mode_name) || '';
-                  console.log('eco_mode .... check thermostat_mode=', tm);
-                  if (tm !== 'heat'){
-                    device.setCapabilityValue('eco_mode', false);
-                    device.showMessage('ECO must run in `heat` mode.');
-                    return;
-                  }
+                    let tm = device.getCapabilityValue(device.thermostat_mode_name) || '';
+                    console.log('eco_mode .... check thermostat_mode=', tm);
+                    if (tm !== 'heat'){
+                        device.setCapabilityValue('eco_mode', false);
+                        device.showMessage('ECO must run in `heat` mode.');
+                        return;
+                    }
 
-                  /// 800 chip TEST for size 4
-                    //setConfiguratrion(device, null, 4, 1, false, 1);
-                    setConfiguratrion(device, null, 4, 4, false, 1);
+                    setConfiguratrion(device, null, 4, 1, false, 1);
                 }
-                else{ 
-
-                  /// 800 chip TEST for size 4
-                    //setConfiguratrion(device, null, 4, 1, false, 0);  
-                    setConfiguratrion(device, null, 4, 4, false, 0); 
-
-                }  
+                else{
+                    setConfiguratrion(device, null, 4, 1, false, 0);
+                }
             }
         );
-      return this;
+        return this;
     },
     startReport:function(){
-      return this;
+        return this;
     },
-    update:function(device, payload, config){ 
-      if (!device.hasCapability('eco_mode')) return;
-            if (config == 1){
-              device.setCapabilityValue('eco_mode', true);
-            }
-            else {
-              device.setCapabilityValue('eco_mode', false);
-            } 
-            return this;
-        
+    update:function(device, payload, config){
+        if (!device.hasCapability('eco_mode')) return;
+        if (config == 1){
+            device.setCapabilityValue('eco_mode', true);
+        }
+        else {
+            device.setCapabilityValue('eco_mode', false);
+        }
+        return this;
+
     }
 } 
