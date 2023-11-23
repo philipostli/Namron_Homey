@@ -1,4 +1,4 @@
-const { device } = require("./work_power");
+const {device} = require("./work_power");
 
 const getCapabilityValue = (device, capability) => {
     return (capability in (device.capabilitiesObj || {})) ? device.capabilitiesObj[capability].value : null;
@@ -16,7 +16,7 @@ const DEFAULT_GROUP_NAME = 'default';
 const getCapabilityNameSegments = (name) => {
     const [capabilityBaseName, groupName = DEFAULT_GROUP_NAME] = name.split('.');
 
-    return { capabilityBaseName, groupName };
+    return {capabilityBaseName, groupName};
 };
 
 /**
@@ -31,7 +31,7 @@ const getCapabilityNameSegments = (name) => {
  */
 const getCapabilityGroups = (capabilities, supportedCapabilityFilter = () => true) => {
     return capabilities.reduce((groups, capability) => {
-        const { groupName, capabilityBaseName } = getCapabilityNameSegments(capability)
+        const {groupName, capabilityBaseName} = getCapabilityNameSegments(capability)
         if (!supportedCapabilityFilter(capabilityBaseName)) {
             return groups;
         }
@@ -90,12 +90,10 @@ const checkThermostatModeByTargetTemp = async (device, node, value) => {
     if (value > device.current_measure_temperature) {
         device.setCapabilityValue(device.thermostat_mode_name, 'heat');
         modeStr = 'Heat';
-    }
-    else if (value < device.current_measure_temperature) {
+    } else if (value < device.current_measure_temperature) {
         device.setCapabilityValue(device.thermostat_mode_name, 'cool');
         modeStr = 'Cool';
-    }
-    else {
+    } else {
         device.setCapabilityValue(device.thermostat_mode_name, 'auto');
     }
 
@@ -141,12 +139,12 @@ const setTargetTemperature = async (device, node, value) => {
     };
     try {
         await node.CommandClass.COMMAND_CLASS_THERMOSTAT_SETPOINT.THERMOSTAT_SETPOINT_SET(payload)
-            .then(value => {
-                device.homey.settings.set('target_temperature', value);
-            })
-            .catch(error => {
-                device.log('setpoint: ', error)
-            })
+        .then(value => {
+            device.homey.settings.set('target_temperature', value);
+        })
+        .catch(error => {
+            device.log('setpoint: ', error)
+        })
 
     } catch (error) {
         device.log('---------setTargetTemperature: ', error)
@@ -162,7 +160,7 @@ const setConfiguratrion = async (device, node, pn, size, def, value) => {
     try {
 
         //TEST 800
-        await device.configurationSet({ index: pn, size: 4 }, value)
+        await device.configurationSet({index: pn, size: 4}, value)
         //await device.configurationSet({ index: pn, size: size }, value)
 
     } catch (error) {
@@ -189,8 +187,8 @@ const toggleSwitch = async (device, node, onoff) => {
 const setProtection = async (device, node, pn, size, def, value) => {
 
     let payload = {
-        Level: { 'Local Protection State': value, 'Reserved1': 0 },
-        Level2: { 'RF Protection State': 0, 'Reserved2': 0 }
+        Level: {'Local Protection State': value, 'Reserved1': 0},
+        Level2: {'RF Protection State': 0, 'Reserved2': 0}
     }
     console.log('setProtection', payload);
     try {
