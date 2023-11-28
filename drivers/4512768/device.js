@@ -27,7 +27,25 @@ class S728zg_2gang_switch_Device extends SrSwitch2GangZigBeeDevice {
 
         this.app_deleted = false
         this.curMode = 9
-        this.calibrateMode()
+        await this.calibrateMode()
+
+        this.zclNode.endpoints[1].clusters[CLUSTER.ON_OFF.NAME].on('attr.onOff', async value => {
+            this.log(`-- rev swith 1 onoff = `, value)
+            this.driver.triggerMyFlow(this, 1, value ? 'on' : 'off');
+        })
+
+        this.zclNode.endpoints[2].clusters[CLUSTER.ON_OFF.NAME].on('attr.onOff', async value => {
+            this.log(`-- rev swith 2 onoff = `, value)
+            this.driver.triggerMyFlow(this, 2, value ? 'on' : 'off');
+        })
+    }
+
+    async trunOnoffRunListener(args) {
+        if (args.onoff === 1) {
+            this.zclNode.endpoints[args.endpoint].clusters[CLUSTER.ON_OFF.NAME].setOn().catch(this.error)
+        } else if (args.onoff === 0) {
+            this.zclNode.endpoints[args.endpoint].clusters[CLUSTER.ON_OFF.NAME].setOff().catch(this.error)
+        }
     }
 
     onDeleted() {
@@ -56,6 +74,7 @@ class S728zg_2gang_switch_Device extends SrSwitch2GangZigBeeDevice {
                 }
             })
             .catch(err => {
+                this.log('xxxxxxxxxxxxxxxxx err', err)
                 if (err === "Could not reach device. Is it powered on?") {
                     return
                 }
@@ -67,6 +86,7 @@ class S728zg_2gang_switch_Device extends SrSwitch2GangZigBeeDevice {
                 this.showMessage(this.tipinfo)
 
                 this.homey.setTimeout(() => {
+                    this.log('+++++++++++++++++++read calibrateMode', err)
                     this.calibrateMode()
                 }, 5000)
             })
@@ -87,6 +107,7 @@ class S728zg_2gang_switch_Device extends SrSwitch2GangZigBeeDevice {
         }
 
         if (this.curMode === 9 || this.curMode === undefined) {
+            console.log('xxxxxxxxxxxxx22222222')
 
             if (this.tipinfo === 'Error: node_object_not_found') {
                 this.setWarning(this.tipinfo).catch(this.error);
@@ -97,7 +118,7 @@ class S728zg_2gang_switch_Device extends SrSwitch2GangZigBeeDevice {
                 this.calibrateMode()
             }, 6000)
 
-            //erro icon 
+            //erro icon
             this.showMessage(this.tipinfo).catch(this.error)
             return;
         }
