@@ -286,5 +286,8 @@
   },
   "2.2.79": {
     "en": "Bug fixes on the 4512757 driver"
+  },
+  "2.2.80": {
+    "en": "Added flow cards for 4512768"
   }
 }

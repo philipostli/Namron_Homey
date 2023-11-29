@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "net.filllip-namron",
-  "version": "2.2.79",
+  "version": "2.2.80",
   "compatibility": ">=7.4.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
@@ -4796,6 +4796,70 @@
                 }
               }
             ]
+          }
+        ]
+      },
+      {
+        "id": "trigger_switch_2gang_turned_on_1",
+        "title": {
+          "en": "It Switch 1 turned ON "
+        },
+        "titleFormatted": {
+          "en": "It Switch 1 turned ON "
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512768"
+          }
+        ]
+      },
+      {
+        "id": "trigger_switch_2gang_turned_on_2",
+        "title": {
+          "en": "It Switch 2 turned ON "
+        },
+        "titleFormatted": {
+          "en": "It Switch 2 turned ON "
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512768"
+          }
+        ]
+      },
+      {
+        "id": "trigger_switch_2gang_turned_off_1",
+        "title": {
+          "en": "It Switch 1 turned OFF "
+        },
+        "titleFormatted": {
+          "en": "It Switch 1 turned OFF "
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512768"
+          }
+        ]
+      },
+      {
+        "id": "trigger_switch_2gang_turned_off_2",
+        "title": {
+          "en": "It Switch 2 turned OFF "
+        },
+        "titleFormatted": {
+          "en": "It Switch 2 turned OFF "
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512768"
           }
         ]
       },
@@ -10291,6 +10355,110 @@
         ]
       },
       {
+        "id": "action_switch_turned_on_for_switch_1",
+        "title": {
+          "en": "Turned on for switch 1"
+        },
+        "hint": {
+          "en": "Turned on for switch 1."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512768"
+          }
+        ]
+      },
+      {
+        "id": "action_switch_turned_off_for_switch_1",
+        "title": {
+          "en": "Turned off for switch 1"
+        },
+        "hint": {
+          "en": "Turned off for switch 1."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512768"
+          }
+        ]
+      },
+      {
+        "id": "action_switch_turned_on_for_switch_2",
+        "title": {
+          "en": "Turned on for switch 2"
+        },
+        "hint": {
+          "en": "Turned on for switch 2."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512768"
+          }
+        ]
+      },
+      {
+        "id": "action_switch_turned_off_for_switch_2",
+        "title": {
+          "en": "Turned off for switch 2"
+        },
+        "hint": {
+          "en": "Turned off for switch 2."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512768"
+          }
+        ]
+      },
+      {
+        "id": "action_switch_with_onoff",
+        "title": {
+          "en": "Smart Switch onoff"
+        },
+        "titleFormatted": {
+          "en": "Turned [[onoff]] for device [[endpoint]]"
+        },
+        "hint": {
+          "en": "Smart switch onoff."
+        },
+        "duration": false,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512768"
+          },
+          {
+            "name": "onoff",
+            "type": "number",
+            "min": 0,
+            "max": 1,
+            "step": 1,
+            "title": {
+              "en": "0 to set off, 1 to set on"
+            }
+          },
+          {
+            "name": "endpoint",
+            "type": "number",
+            "min": 1,
+            "max": 2,
+            "step": 1,
+            "title": {
+              "en": "Device number: 1 or 2"
+            }
+          }
+        ]
+      },
+      {
         "id": "89665_level_step_with_onoff",
         "title": {
           "en": "Step level"
@@ -10655,6 +10823,69 @@
             "title": {
               "en": "Scene ID"
             }
+          }
+        ]
+      }
+    ],
+    "conditions": [
+      {
+        "id": "condition_switch_2gang_turned_onoff",
+        "title": {
+          "en": "When Switch ... turned ... "
+        },
+        "titleFormatted": {
+          "en": "When [[channel]] turned [[when]]"
+        },
+        "hint": {
+          "en": "When if it channel 1/2 turned ON/OFF "
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512768"
+          },
+          {
+            "name": "channel",
+            "title": {
+              "en": "Chanel"
+            },
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Switch 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Switch 2"
+                }
+              }
+            ]
+          },
+          {
+            "name": "when",
+            "title": {
+              "en": "When "
+            },
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "on",
+                "label": {
+                  "en": "ON"
+                }
+              },
+              {
+                "id": "off",
+                "label": {
+                  "en": "OFF"
+                }
+              }
+            ]
           }
         ]
       }
