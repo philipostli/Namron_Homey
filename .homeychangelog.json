@@ -289,5 +289,8 @@
   },
   "2.2.80": {
     "en": "Added flow cards for 4512768"
+  },
+  "2.2.81": {
+    "en": "Fix for 4512758/9 thermostat"
   }
 }
