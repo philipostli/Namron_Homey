@@ -292,5 +292,8 @@
   },
   "2.2.81": {
     "en": "Fix for 4512758/9 thermostat"
+  },
+  "2.2.82": {
+    "en": "Fix on luna lamp and on 4512758/9 thermostt"
   }
 }
