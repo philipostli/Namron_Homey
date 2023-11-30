@@ -1,6 +1,7 @@
 'use strict'
 
 const SrZigbeeLight = require('../../lib/SrZigbeeLight')
+const SrColorControlCluster = require('../../lib/SrColorControlCluster')
 const SrSceneCluster = require('../../lib/SrSceneCluster')
 
 const { CLUSTER, Cluster } = require('zigbee-clusters')
@@ -66,6 +67,38 @@ class DimLight extends SrZigbeeLight {
     } else if (this.getCapabilityValue('onoff') === false && currentLevel > 0) {
       await this.setCapabilityValue('onoff', true).catch(this.error)
     }
+  }
+
+  async stepColorTemperatureRunListener (args, state) {
+    const payload = {
+      stepMode: args.step_mode,
+      stepSize: Math.round(args.step_size * (450 - 155)),
+      transitionTime: args.transition_time * 10,
+      colorTemperatureMinimumMireds: 155,
+      colorTemperatureMaximumMireds: 450,
+    }
+    this.log('stepColorTemperatureRunListener => ', payload)
+    return this.colorControlCluster.stepColorTemperature(payload).then(() => {
+      this.onEndDeviceAnnounce().catch(this.error)
+    }).catch(this.error)
+  }
+
+  async moveColorTemperatureRunListener (args, state) {
+    const payload = {
+      moveMode: args.move_mode,
+      rate: Math.round(args.rate * (450 - 155)),
+      colorTemperatureMinimumMireds: 155,
+      colorTemperatureMaximumMireds: 450,
+    }
+    this.log('moveColorTemperatureRunListener => ', payload)
+    return this.colorControlCluster.moveColorTemperature(payload).catch(this.error)
+  }
+
+  async stopMoveStepRunListener (args, state) {
+    this.log('stopMoveStepRunListener => ')
+    return this.colorControlCluster.stopMoveStep().then(() => {
+      this.onEndDeviceAnnounce().catch(this.error)
+    }).catch(this.error)
   }
 
   async storeSceneRunListener (args, state) {
