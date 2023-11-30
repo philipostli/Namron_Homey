@@ -14,9 +14,9 @@ const destructConstProps = function ({
     });
 }
 
-const HzcThermostatCluster = require('../../lib/HzcThermostatCluster')
+const HzcThermostatCluster = require('../../lib/SrThermostatCluster')
 const HzcThermostatUserInterfaceConfigurationCluster =
-    require('../../lib/HzcThermostatUserInterfaceConfigurationCluster')
+    require('../../lib/SrThermostatUserInterfaceConfigurationCluster')
 Cluster.addCluster(HzcThermostatCluster)
 Cluster.addCluster(HzcThermostatUserInterfaceConfigurationCluster)
 

@@ -93,6 +93,12 @@ declare module 'zigbee-clusters' {
   class ZCLDataTypes {
     static uint8: ZCLDataType;
     static uint16: ZCLDataType;
+    static uint32: ZCLDataType;
+    static int16: ZCLDataType;
+    static int8: ZCLDataType;
+    static enum8: ZCLDataType;
+    static map8: ZCLDataType;
+    static bool: ZCLDataType;
     static data16: ZCLDataType;
     static buffer: ZCLDataType;
   }
