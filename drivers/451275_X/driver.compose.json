@@ -4,9 +4,11 @@
   },
   "zigbee": {
     "manufacturerName": [
+      "HZC",
       "Namron AS"
     ],
     "productId": [
+      "T5_ZG",
       "4512758",
       "4512759"
     ],
