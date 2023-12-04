@@ -1,22 +1,42 @@
 import sourceMapSupport from 'source-map-support';
 sourceMapSupport.install();
 
+//import Homey from 'homey';
+import TuyaThermostatDevice from './lib/TuyaThermostatDevice';
+
+interface FlowActionArgs {
+  device: TuyaThermostatDevice;
+}
+
+interface ModeFlowActionArgs extends FlowActionArgs {
+  mode: string;
+}
+
+interface SensorTypeFlowActionArgs extends FlowActionArgs {
+  type: string;
+}
+
 const Homey = require('homey')
 
 class MyApp extends Homey.App {
 
-  onInit () {
+  onInit (): Promise<void> {
     this.log('MyApp is running...')
 
     this.setUpZigbeeFlowTriggerCards()
     this.setUpZwaveFlowTriggerCards()
 
     this.setUpZwaveFlowActionCards()
+    this.setUpZigbeeFlowActionCards()
+
+    this.setUpZigbeeFlowConditionCards()
 
     // const manifest = Homey.manifest
     // this.log(manifest.flow.triggers[6])
+    return Promise.resolve();
   }
 
+    // Register Flow Actions
   setUpZigbeeFlowTriggerCards () {
 
     this.switchButtonOnOffG4TriggerCard = this.homey.flow.getDeviceTriggerCard(
@@ -220,6 +240,7 @@ class MyApp extends Homey.App {
     // 'sr_off_button_mode_g2' exists in the Zigbee flow
   }
 
+    //Register Flow Action cards
   setUpZwaveFlowActionCards() {
 
     this.zwStartDimChangeV4ActionCard = this.homey.flow.getActionCard('sr_zw_start_dim_change_v4')
@@ -231,6 +252,46 @@ class MyApp extends Homey.App {
     this.zwStopDimChangeActionCard.registerRunListener(async (args, state) => {
       return args.device.stopDimChange(args, state)
     })
+  }
+
+  setUpZigbeeFlowActionCards() {
+    this.homey.flow.getActionCard('set_tuya_thermostat_mode')
+    .registerRunListener((args: ModeFlowActionArgs) => {
+      this.logActionTrigger('set_tuya_thermostat_mode');
+      args.device.setMode(Number(args.mode)).catch(this.error);
+    });
+    this.homey.flow.getActionCard('set_tuya_thermostat_sensor_type_changed')
+    .registerRunListener((args: SensorTypeFlowActionArgs) => {
+      this.logActionTrigger('set_tuya_thermostat_sensor_type_changed');
+      args.device.setSensorType(Number(args.type)).catch(this.error);
+    });
+    this.homey.flow.getActionCard('set_tuya_child_lock_true')
+    .registerRunListener((args: FlowActionArgs) => {
+      this.logActionTrigger('set_tuya_child_lock_true');
+      args.device.setChildLock(true).catch(this.error);
+    });
+    this.homey.flow.getActionCard('set_tuya_child_lock_false')
+    .registerRunListener((args: FlowActionArgs) => {
+      this.logActionTrigger('set_tuya_child_lock_false');
+      args.device.setChildLock(false).catch(this.error);
+    });
+    this.homey.flow.getActionCard('toggle_tuya_child_lock')
+    .registerRunListener((args: FlowActionArgs) => {
+      this.logActionTrigger('toggle_tuya_child_lock');
+      args.device.setChildLock(!args.device.getCapabilityValue('tuya_child_lock')).catch(this.error);
+    });
+  }
+
+  setUpZigbeeFlowConditionCards(){
+    //Register flow condition cards
+    this.homey.flow.getConditionCard('tuya_thermostat_load_status_condition')
+    .registerRunListener((args: FlowActionArgs) => {
+      return args.device.getCapabilityValue('tuya_thermostat_load_status');
+    });
+    this.homey.flow.getConditionCard('set_tuya_child_lock_condition')
+    .registerRunListener((args: FlowActionArgs) => {
+      return args.device.getCapabilityValue('tuya_child_lock');
+    });
   }
 
 }

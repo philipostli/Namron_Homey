@@ -464,6 +464,110 @@
         "id": "sr_switch_button_on_off"
       },
       {
+        "title": {
+          "en": "Thermostat child lock deactivated",
+          "no": "Termostat barnesikring deaktivert"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=thermostat|thermostat_pm"
+          }
+        ],
+        "id": "tuya_child_lock_false"
+      },
+      {
+        "title": {
+          "en": "Thermostat child lock activated",
+          "no": "Termostat barnesikring aktivert"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=thermostat|thermostat_pm"
+          }
+        ],
+        "id": "tuya_child_lock_true"
+      },
+      {
+        "title": {
+          "en": "Load turned off",
+          "no": "Last slått av"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=thermostat|thermostat_pm"
+          }
+        ],
+        "id": "tuya_thermostat_load_status_false"
+      },
+      {
+        "title": {
+          "en": "Load turned on",
+          "no": "Last slått på"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=thermostat|thermostat_pm"
+          }
+        ],
+        "id": "tuya_thermostat_load_status_true"
+      },
+      {
+        "title": {
+          "en": "Thermostat mode changed",
+          "no": "Termostatmodus endret"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=thermostat|thermostat_pm"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "tuya_thermostat_mode",
+            "type": "number",
+            "title": {
+              "en": "Thermostat mode",
+              "no": "Termostat modus"
+            }
+          }
+        ],
+        "id": "tuya_thermostat_mode_changed"
+      },
+      {
+        "title": {
+          "en": "Sensor type changed",
+          "no": "Sensor type endret"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=thermostat|thermostat_pm"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "tuya_thermostat_sensor_type",
+            "type": "number",
+            "title": {
+              "en": "Sensor type",
+              "no": "Sensor type"
+            }
+          }
+        ],
+        "id": "tuya_thermostat_sensor_type_changed"
+      },
+      {
         "id": "alarm_dry_cooking_true",
         "title": {
           "en": "Dry cooking detected",
@@ -5872,7 +5976,238 @@
         ]
       }
     ],
+    "conditions": [
+      {
+        "title": {
+          "en": "Child lock is turned !{{on|off}}",
+          "no": "Barnesikring slått !{{på|av}}"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=thermostat|thermostat_pm"
+          }
+        ],
+        "id": "set_tuya_child_lock_condition"
+      },
+      {
+        "title": {
+          "en": "Load turned !{{on|off}}",
+          "no": "Last slått !{{på|av}}"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=thermostat|thermostat_pm"
+          }
+        ],
+        "id": "tuya_thermostat_load_status_condition"
+      },
+      {
+        "id": "condition_switch_2gang_turned_onoff",
+        "title": {
+          "en": "When Switch ... turned ... "
+        },
+        "titleFormatted": {
+          "en": "When [[channel]] turned [[when]]"
+        },
+        "hint": {
+          "en": "When if it channel 1/2 turned ON/OFF "
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512768"
+          },
+          {
+            "name": "channel",
+            "title": {
+              "en": "Chanel"
+            },
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Switch 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Switch 2"
+                }
+              }
+            ]
+          },
+          {
+            "name": "when",
+            "title": {
+              "en": "When "
+            },
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "on",
+                "label": {
+                  "en": "ON"
+                }
+              },
+              {
+                "id": "off",
+                "label": {
+                  "en": "OFF"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
     "actions": [
+      {
+        "title": {
+          "en": "Disable child lock",
+          "no": "Deaktiver barnesikring"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=thermostat|thermostat_pm"
+          }
+        ],
+        "id": "set_tuya_child_lock_false"
+      },
+      {
+        "title": {
+          "en": "Enable child lock",
+          "no": "Aktiver barnesikring"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=thermostat|thermostat_pm"
+          }
+        ],
+        "id": "set_tuya_child_lock_true"
+      },
+      {
+        "title": {
+          "en": "Change thermostat mode",
+          "no": "Endre termostatmodus"
+        },
+        "titleFormatted": {
+          "en": "Set mode to [[mode]]",
+          "no": "Sett modus til [[mode]]"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=thermostat|thermostat_pm"
+          },
+          {
+            "name": "mode",
+            "type": "dropdown",
+            "title": {
+              "en": "Thermostat mode",
+              "no": "Termostat modus"
+            },
+            "values": [
+              {
+                "id": "0",
+                "label": {
+                  "en": "Manual",
+                  "no": "Manuell"
+                }
+              },
+              {
+                "id": "1",
+                "label": {
+                  "en": "Home",
+                  "no": "Hjemme"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Away",
+                  "no": "Bortreist"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "set_tuya_thermostat_mode"
+      },
+      {
+        "title": {
+          "en": "Change sensor type",
+          "no": "Endre sensor type"
+        },
+        "titleFormatted": {
+          "en": "Set type to [[type]]",
+          "no": "Sett type til [[type]]"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=thermostat|thermostat_pm"
+          },
+          {
+            "name": "type",
+            "type": "dropdown",
+            "title": {
+              "en": "Sensor type",
+              "no": "Sensor type"
+            },
+            "values": [
+              {
+                "id": "0",
+                "title": {
+                  "en": "Air sensor",
+                  "no": "Luftføler / Intern"
+                }
+              },
+              {
+                "id": "1",
+                "title": {
+                  "en": "Floor sensor",
+                  "no": "Gulvføler / Ekstern"
+                }
+              },
+              {
+                "id": "2",
+                "title": {
+                  "en": "Max guard",
+                  "no": "Maksvokter"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "set_tuya_thermostat_sensor_type_changed"
+      },
+      {
+        "title": {
+          "en": "Toggle child lock",
+          "no": "Slå på barnesikring"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=thermostat|thermostat_pm"
+          }
+        ],
+        "id": "toggle_tuya_child_lock"
+      },
       {
         "id": "1402755_level_step_with_onoff",
         "title": {
@@ -10826,69 +11161,6 @@
           }
         ]
       }
-    ],
-    "conditions": [
-      {
-        "id": "condition_switch_2gang_turned_onoff",
-        "title": {
-          "en": "When Switch ... turned ... "
-        },
-        "titleFormatted": {
-          "en": "When [[channel]] turned [[when]]"
-        },
-        "hint": {
-          "en": "When if it channel 1/2 turned ON/OFF "
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=4512768"
-          },
-          {
-            "name": "channel",
-            "title": {
-              "en": "Chanel"
-            },
-            "type": "dropdown",
-            "values": [
-              {
-                "id": "1",
-                "label": {
-                  "en": "Switch 1"
-                }
-              },
-              {
-                "id": "2",
-                "label": {
-                  "en": "Switch 2"
-                }
-              }
-            ]
-          },
-          {
-            "name": "when",
-            "title": {
-              "en": "When "
-            },
-            "type": "dropdown",
-            "values": [
-              {
-                "id": "on",
-                "label": {
-                  "en": "ON"
-                }
-              },
-              {
-                "id": "off",
-                "label": {
-                  "en": "OFF"
-                }
-              }
-            ]
-          }
-        ]
-      }
     ]
   },
   "drivers": [
@@ -15039,6 +15311,144 @@
       },
       "settings": [],
       "id": "4512749-N"
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "xlarge": "/drivers/4512752_53/assets/images/xlarge.png",
+        "large": "/drivers/4512752_53/assets/images/large.png",
+        "small": "/drivers/4512752_53/assets/images/small.png"
+      },
+      "icon": "/drivers/4512752_53/assets/icon.svg",
+      "class": "thermostat",
+      "name": {
+        "en": "4512752/53 - Zigbee Touch Thermostat"
+      },
+      "capabilities": [
+        "onoff",
+        "target_temperature",
+        "measure_temperature",
+        "tuya_regulator_duty",
+        "measure_temperature.air",
+        "measure_temperature.floor",
+        "tuya_thermostat_load_status",
+        "measure_voltage",
+        "measure_current",
+        "measure_power",
+        "meter_power",
+        "tuya_thermostat_mode",
+        "tuya_thermostat_sensor_type",
+        "tuya_child_lock"
+      ],
+      "capabilitiesOptions": {
+        "target_temperature": {
+          "min": 5,
+          "max": 35,
+          "decimals": 0
+        },
+        "measure_temperature": {
+          "decimals": 0
+        },
+        "measure_temperature.air": {
+          "title": {
+            "en": "Air temperature",
+            "no": "Lufttemperatur "
+          },
+          "decimals": 0
+        },
+        "measure_temperature.floor": {
+          "title": {
+            "en": "Floor temperature",
+            "no": "Gulvtemperatur"
+          },
+          "decimals": 0
+        },
+        "capabilitiesOptions": {
+          "measure_power": {
+            "approximated": true
+          }
+        }
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "_TZE200_meax51yr",
+          "_TZE204_p3lqqy2r"
+        ],
+        "productId": [
+          "TS0601"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              10,
+              513,
+              61184
+            ],
+            "bindings": [
+              61184
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/4512752_53/assets/learnmode.svg",
+          "instruction": {
+            "en": "To put the thermostat in pairing mode: Long press decrease button until the ZigBee icon flashes",
+            "no": "For å sette termostaten i paringsmodus: Langt trykk på reduseringsknappen til ZigBee ikonet blinker"
+          }
+        }
+      },
+      "id": "4512752_53",
+      "settings": [
+        {
+          "id": "regulatorMode",
+          "type": "checkbox",
+          "label": {
+            "en": "Regulator mode"
+          },
+          "value": false
+        },
+        {
+          "id": "regulatorCycleTime",
+          "type": "dropdown",
+          "label": {
+            "en": "Regulator period"
+          },
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "30 minutes"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "60 minutes"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "90 minutes"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "120 minutes"
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "name": {
@@ -21716,6 +22126,112 @@
       "units": {
         "en": "%"
       }
+    },
+    "tuya_child_lock": {
+      "type": "boolean",
+      "title": {
+        "en": "Child lock",
+        "no": "Knappelås"
+      },
+      "desc": {
+        "en": "Active child lock / button lock\n",
+        "no": "Aktiv barnesikring/knappelås"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "toggle",
+      "icon": "/assets/child_lock.svg"
+    },
+    "tuya_regulator_duty": {
+      "type": "number",
+      "title": {
+        "en": "Duty cycle",
+        "no": "Driftssyklus"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "slider",
+      "min": 5,
+      "max": 100,
+      "step": 5,
+      "decimals": 0
+    },
+    "tuya_thermostat_load_status": {
+      "type": "boolean",
+      "title": {
+        "en": "Load active",
+        "no": "Last aktiv"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/load_status.svg"
+    },
+    "tuya_thermostat_mode": {
+      "type": "enum",
+      "title": {
+        "en": "Thermostat mode",
+        "no": "Termostat modus"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "picker",
+      "values": [
+        {
+          "id": "0",
+          "title": {
+            "en": "Manual",
+            "no": "Manuell"
+          }
+        },
+        {
+          "id": "1",
+          "title": {
+            "en": "Home",
+            "no": "Hjemme"
+          }
+        },
+        {
+          "id": "2",
+          "title": {
+            "en": "Away",
+            "no": "Bortreist"
+          }
+        }
+      ]
+    },
+    "tuya_thermostat_sensor_type": {
+      "type": "enum",
+      "title": {
+        "en": "Sensor type",
+        "no": "Sensor type"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "picker",
+      "values": [
+        {
+          "id": "0",
+          "title": {
+            "en": "Air sensor",
+            "no": "Luftføler / Intern"
+          }
+        },
+        {
+          "id": "1",
+          "title": {
+            "en": "Floor sensor",
+            "no": "Gulvføler / Ekstern"
+          }
+        },
+        {
+          "id": "2",
+          "title": {
+            "en": "Max guard",
+            "no": "Maksvokter"
+          }
+        }
+      ]
     },
     "zg9030a_datetime": {
       "title": {
