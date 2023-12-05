@@ -61,9 +61,9 @@ export default class TuyaThermostatDevice extends ZigBeeDevice implements Thermo
   private onSettingsPending = false;
 
   async onNodeInit(payload: ZigbeeDeviceInitPayload): Promise<void> {
-    if (Homey.env.DEBUG === '1') {
-      this.enableDebug();
-    }
+    //if (Homey.env.DEBUG === '1') {
+    //  this.enableDebug();
+    //}
 
     // Set up the tuya cluster communicator
     const tuyaCluster: Cluster = payload.zclNode

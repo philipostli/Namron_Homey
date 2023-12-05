@@ -15,7 +15,7 @@ const capabilityConfiguration: ClusterCapabilityConfiguration = {
   },
 };
 
-interface DeviceSettings {
+type DeviceSettings = {
   dry_cooking_temp_threshold: number;
   dry_cooking_time_threshold: number;
 }
@@ -23,7 +23,7 @@ interface DeviceSettings {
 type SettingsArguments = {
   oldSettings: DeviceSettings;
   newSettings: DeviceSettings;
-  changedKeys: (keyof DeviceSettings)[]
+  changedKeys: Array<keyof DeviceSettings>;
 };
 
 interface DryCookingStatus {
@@ -43,10 +43,10 @@ class FireFenceDevice extends ZigBeeDevice {
   protected fastUpdateInterval: any | null = null;
 
   async onNodeInit(): Promise<void> {
-    if (Homey.env.DEBUG === '1') {
-      this.enableDebug();
-      this.debug('Debug mode enabled');
-    }
+    //if (Homey.env.DEBUG === '1') {
+    //  this.enableDebug();
+    //  this.debug('Debug mode enabled');
+    //}
 
     this.deviceSettings = this.getSettings();
     await this.setupRelayControl().catch(this.error);
@@ -114,7 +114,7 @@ class FireFenceDevice extends ZigBeeDevice {
 
     this.homey.setInterval(
       () => cluster
-        .readAttributes('onOff')
+        .readAttributes(['onOff'])
         .then(({onOff}) => {
           this
             .setCapabilityValue('onoff', onOff)
@@ -134,7 +134,7 @@ class FireFenceDevice extends ZigBeeDevice {
     const {multiplier, divisor} =
       await this.zclNode.endpoints[clusterEndpoint]
         .clusters[CLUSTER.METERING.NAME]
-        .readAttributes('multiplier', 'divisor');
+        .readAttributes(['multiplier', 'divisor']);
     this.meteringFactor = multiplier / divisor;
 
     this.registerCapability('meter_power', CLUSTER.METERING, capabilityConfiguration);
@@ -162,7 +162,7 @@ class FireFenceDevice extends ZigBeeDevice {
 
     this.zclNode.endpoints[clusterEndpoint]
       .clusters[CLUSTER.TEMPERATURE_MEASUREMENT.NAME]
-      .readAttributes('measuredValue')
+      .readAttributes(['measuredValue'])
       .then(({measuredValue}) => {
         this.debug('Temperature reading', measuredValue);
         this.handleCurrentTemperature(FireFenceDevice.parseTemperature(measuredValue)).catch(this.error);
@@ -178,7 +178,7 @@ class FireFenceDevice extends ZigBeeDevice {
 
     this.zclNode.endpoints[clusterEndpoint]
       .clusters[CLUSTER.ELECTRICAL_MEASUREMENT.NAME]
-      .readAttributes('activePower')
+      .readAttributes(['activePower'])
       .then(({activePower}) => {
         this.debug('Active power reading', activePower);
         this.setCapabilityValue('measure_power', FireFenceDevice.parsePower(activePower)).catch(this.error);

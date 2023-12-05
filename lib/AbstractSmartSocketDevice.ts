@@ -20,9 +20,9 @@ export default class AbstractSmartSocketDevice extends ZigBeeDevice {
   protected acCurrentFactor = 1 / 1000;
 
   async onNodeInit(): Promise<void> {
-    if (Homey.env.DEBUG === '1') {
-      this.enableDebug();
-    }
+    //if (Homey.env.DEBUG === '1') {
+    //  this.enableDebug();
+    //}
 
     this.registerCapability('onoff', CLUSTER.ON_OFF);
     this.registerCapability('meter_power', CLUSTER.METERING, AbstractSmartSocketDevice.capabilityConfiguration);

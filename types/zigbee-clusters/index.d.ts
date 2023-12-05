@@ -59,7 +59,7 @@ declare module 'zigbee-clusters' {
 
     static addCluster(cluster: typeof Cluster): void;
 
-    readAttributes(...attributeNames: string[]): Promise<{ [attributeName: string]: any }>;
+    readAttributes(attributeNames: string[], opts?: { timeout: number }): Promise<{ [attributeName: string]: any }>;
 
     writeAttributes(attributes: Record<string, unknown>): Promise<{ [attributeName: string]: any }>;
 
