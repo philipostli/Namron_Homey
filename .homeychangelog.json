@@ -298,5 +298,8 @@
   },
   "2.2.83": {
     "en": "Fixes on Luna lamp and on 4512758/9 thermostat"
+  },
+  "2.2.84": {
+    "en": "Added support for new Namron Touch Thermostat 4512752/3"
   }
 }
