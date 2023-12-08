@@ -63,7 +63,7 @@ class S728zg_2gang_switch_Device extends SrSwitch2GangZigBeeDevice {
             return
         }
         try {
-            await this.zclNode.endpoints[1].clusters[CLUSTER.BASIC.NAME].readAttributes('swMode')
+            await this.zclNode.endpoints[1].clusters[CLUSTER.BASIC.NAME].readAttributes(['swMode'])
             .then(value => {
                 this.log('++read BASIC: ', value)
                 if (value.hasOwnProperty('swMode')) {

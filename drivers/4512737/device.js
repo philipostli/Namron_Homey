@@ -35,7 +35,7 @@ class ZigBeeThermostat extends ZigBeeDevice {
     this._registerAwayMode()
 
     this.controlTypeValue = await this.zclNode.endpoints[1].clusters.thermostat.readAttributes(
-      'controlType').catch(this.error)
+      ['controlType']).catch(this.error)
     this._registerControlType()
 
     this._registerRoomSensor()
@@ -293,7 +293,7 @@ class ZigBeeThermostat extends ZigBeeDevice {
       : 'unoccupiedHeatingSetpoint'
 
     this._thermostatCluster().
-      readAttributes(attribute).
+      readAttributes([attribute]).
       then(value => {
 
         const temp = parseFloat(
@@ -313,7 +313,7 @@ class ZigBeeThermostat extends ZigBeeDevice {
     return new Promise((resolve, reject) => {
 
       this._thermostatCluster().
-        readAttributes('internalOverHeat').
+        readAttributes(['internalOverHeat']).
         then(value => {
 
           const isNotAwayMode = value['internalOverHeat'] !== 'level1'

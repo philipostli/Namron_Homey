@@ -53,7 +53,7 @@ class DimLight extends SrZigbeeLight {
     const {
       currentLevel,
     } = await levelControlCluster.readAttributes(
-      'currentLevel',
+      ['currentLevel'],
     ).catch(this.error)
 
     this.log('onLevelControlEnd', {

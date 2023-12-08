@@ -12,7 +12,7 @@ class MyLight extends ZigBeeDevice {
       divisor,
     } = await this.zclNode.endpoints[this.getClusterEndpoint(
       CLUSTER.METERING)].clusters[CLUSTER.METERING.NAME].readAttributes(
-      'multiplier', 'divisor')
+      ['multiplier'], 'divisor')
     this.log('divisor ' + divisor)
     let safeDivisor = divisor
     if (typeof divisor !== 'number' || divisor <= 0) {
