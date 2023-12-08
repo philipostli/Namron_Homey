@@ -106,7 +106,7 @@ class ZG9093ADevice extends ZigBeeDevice {
         divisor,
       } = await this.zclNode.endpoints[this.getClusterEndpoint(
         CLUSTER.METERING)].clusters[CLUSTER.METERING.NAME].readAttributes(
-        'multiplier', 'divisor')
+        ['multiplier'], 'divisor')
       this.log('divisor ' + divisor)
 
       this.registerCapability('meter_power', CLUSTER.METERING, {
@@ -195,7 +195,7 @@ class ZG9093ADevice extends ZigBeeDevice {
         if (this.getCapabilityValue('zg9030a_modes') === 'off') {
 
           this._thermostatCluster().
-            readAttributes('systemMode').
+            readAttributes(['systemMode']).
             then(value => {
 
               let mode = value.systemMode
@@ -314,7 +314,7 @@ class ZG9093ADevice extends ZigBeeDevice {
 
           // Refresh heating setpoint
           this._thermostatCluster().
-            readAttributes('occupiedHeatingSetpoint').
+            readAttributes(['occupiedHeatingSetpoint']).
             then(value => {
 
               this.log(`occupiedHeatingSetpoint after mode `, value)
@@ -367,7 +367,7 @@ class ZG9093ADevice extends ZigBeeDevice {
 
   _getTime () {
 
-    this._timeCluster().readAttributes('time').then(value => {
+    this._timeCluster().readAttributes(['time']).then(value => {
       let date = new Date((value.time + timeDiffSeconds) * 1000)
       this.log(`get time `, value, date)
       this._setDateTimeByDate(date)

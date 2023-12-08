@@ -43,7 +43,7 @@ class MyDevice extends ZigBeeDevice {
 
     // Plug Mode
 
-    this._basicCluster().readAttributes('workingMode').then(result => {
+    this._basicCluster().readAttributes(['workingMode']).then(result => {
 
       this.log(`read working mode `, result, result['workingMode'])
       this.setCapabilityValue('plug_mode', result['workingMode']).catch(this.error)
@@ -65,7 +65,7 @@ class MyDevice extends ZigBeeDevice {
 
     // OnOff for System Mode
 
-    this._onOffCluster().readAttributes('onOff').then(result => {
+    this._onOffCluster().readAttributes(['onOff']).then(result => {
 
       this.log(`read onOff `, result, result['onOff'])
       let mode = 'off'
@@ -103,7 +103,7 @@ class MyDevice extends ZigBeeDevice {
 
     // System Mode
 
-    this._thermostatCluster().readAttributes('systemMode').then(result => {
+    this._thermostatCluster().readAttributes(['systemMode']).then(result => {
 
       this.log(`read systemmode result `, result, result['systemMode'])
       this.setCapabilityValue('plug_thermostat_mode',

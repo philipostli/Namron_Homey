@@ -84,7 +84,7 @@ class ColorLight extends SrZigBeeLight {
     const {
       currentLevel,
     } = await levelControlCluster.readAttributes(
-      'currentLevel',
+      ['currentLevel'],
     ).catch(this.error)
 
     this.log('onLevelControlEnd', {
