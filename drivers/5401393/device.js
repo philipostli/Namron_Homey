@@ -106,7 +106,7 @@ class ZG9093ADevice extends ZigBeeDevice {
         divisor,
       } = await this.zclNode.endpoints[this.getClusterEndpoint(
         CLUSTER.METERING)].clusters[CLUSTER.METERING.NAME].readAttributes(
-        ['multiplier'], 'divisor')
+        ['multiplier', 'divisor'])
       this.log('divisor ' + divisor)
 
       this.registerCapability('meter_power', CLUSTER.METERING, {

@@ -65,9 +65,9 @@ class t7e_zg_thermostat extends ZigBeeDevice {
         //this.log("+++ App start: check sensorMode, systemMode, thermostatRunningMode ")
 
         await this.thermostatCluster().
-            readAttributes('sensorMode', 'systemMode', 'thermostatRunningMode',
+            readAttributes(['sensorMode', 'systemMode', 'thermostatRunningMode',
                 'absMinHeatSetpointLimit', 'absMaxHeatSetpointLimit',
-                'absMinCoolSetpointLimit', 'absMaxCoolSetpointLimit').
+                'absMinCoolSetpointLimit', 'absMaxCoolSetpointLimit']).
             then(value => {
                 this.log(`++++++ APP start thermostat = `, value)
 
@@ -467,7 +467,7 @@ class t7e_zg_thermostat extends ZigBeeDevice {
                     multiplier, divisor
                 } = await this.zclNode.endpoints[this.getClusterEndpoint(
                     CLUSTER.METERING)].clusters[CLUSTER.METERING.NAME].readAttributes(
-                    'multiplier', 'divisor').catch(this.error)
+                    ['multiplier', 'divisor']).catch(this.error)
 
                 //this.log('multiplier-divisor ', multiplier, divisor)
 
@@ -605,7 +605,7 @@ class t7e_zg_thermostat extends ZigBeeDevice {
         //})
 
         //child lock
-        await this.thermostatUserInterfaceConfiguration().readAttributes('keypadLockout').then(value => {
+        await this.thermostatUserInterfaceConfiguration().readAttributes(['keypadLockout']).then(value => {
             //this.log(`+++++++ child lock = `, value)
             if (value.hasOwnProperty('keypadLockout')) {
                 let isOpen = value['keypadLockout'] === 'level1Lockout'
@@ -616,7 +616,7 @@ class t7e_zg_thermostat extends ZigBeeDevice {
 
         // target_temperature
         if (this.hasCapability('target_temperature')) {
-            await this.thermostatCluster().readAttributes('occupiedHeatingSetpoint', 'occupiedCoolingSetpoint').then(value => {
+            await this.thermostatCluster().readAttributes(['occupiedHeatingSetpoint', 'occupiedCoolingSetpoint']).then(value => {
 
                 //this.log(`+++++++ occupiedHeatingSetpoint after mode `, value)
                 let curMode = this.getStoreValue('last_system_mode') || 'heat'
@@ -645,7 +645,7 @@ class t7e_zg_thermostat extends ZigBeeDevice {
         //measure_temperature
         if (this.hasCapability('measure_temperature')) {
             try {
-                await this.thermostatCluster().readAttributes('localTemperature').then(value => {
+                await this.thermostatCluster().readAttributes(['localTemperature']).then(value => {
 
                     //this.log(`++++++++++ localTemperature`, value)
                     const temp = parseFloat(
@@ -679,7 +679,7 @@ class t7e_zg_thermostat extends ZigBeeDevice {
 
         //t7e_zg_regulator_percentage
         if (this.hasCapability('t7e_zg_regulator_percentage')) {
-            await this.thermostatCluster().readAttributes('pIHeatingDemand').then(value => {
+            await this.thermostatCluster().readAttributes(['pIHeatingDemand']).then(value => {
                 //this.log(`++++++ thermostat pIHeatingDemand = `, value)
 
                 if (value.hasOwnProperty('pIHeatingDemand')) {
@@ -691,7 +691,7 @@ class t7e_zg_thermostat extends ZigBeeDevice {
 
         //fault
         if (this.hasCapability('t7e_zg_fault')) {
-            await this.thermostatCluster().readAttributes("fault").then(value => {
+            await this.thermostatCluster().readAttributes(["fault"]).then(value => {
                 //this.log('++++++++++ fault report ', value)
                 if (value.hasOwnProperty('fault')) {
                     let thefault = '0'
@@ -710,7 +710,7 @@ class t7e_zg_thermostat extends ZigBeeDevice {
         }
 
         //others
-        await this.thermostatCluster().readAttributes('windowState', 'backlight', 'thermostatProgramOperModel', 'regulator', 'backlightSwitch', 'sensorMode').then(value => {
+        await this.thermostatCluster().readAttributes(['windowState', 'backlight', 'thermostatProgramOperModel', 'regulator', 'backlightSwitch', 'sensorMode']).then(value => {
             //this.log(`$$$$$$$$$$$$$$$$$$$$$$$ thermostat attrs = `, value)
 
             if (value.hasOwnProperty('windowState')) {
@@ -753,7 +753,7 @@ class t7e_zg_thermostat extends ZigBeeDevice {
         }).catch(this.error)
 
 
-        await this.onoffCluster().readAttributes('onOff').then(async value => {
+        await this.onoffCluster().readAttributes(['onOff']).then(async value => {
             ////this.log('$$$$$$$$$ onoff read: ', value)
             if (value.hasOwnProperty('onOff')) {
                 this.setCapabilityValue('onoff', value.onOff)
@@ -767,7 +767,7 @@ class t7e_zg_thermostat extends ZigBeeDevice {
                 multiplier, divisor, currentSummationDelivered
             } = await this.zclNode.endpoints[this.getClusterEndpoint(
                 CLUSTER.METERING)].clusters[CLUSTER.METERING.NAME].readAttributes(
-                'multiplier', 'divisor', 'currentSummationDelivered')
+                ['multiplier', 'divisor', 'currentSummationDelivered'])
 
             if (multiplier && divisor) {
                 this.meter_multiplier = multiplier / divisor;
@@ -784,7 +784,7 @@ class t7e_zg_thermostat extends ZigBeeDevice {
                 acPowerMultiplier, acPowerDivisor, activePower
             } = await this.zclNode.endpoints[this.getClusterEndpoint(
                 CLUSTER.ELECTRICAL_MEASUREMENT)].clusters[CLUSTER.ELECTRICAL_MEASUREMENT.NAME].readAttributes(
-                'acPowerMultiplier', 'acPowerDivisor', 'activePower')
+                ['acPowerMultiplier', 'acPowerDivisor', 'activePower'])
 
             if (acPowerMultiplier && acPowerDivisor) {
                 this.power_multiplier = acPowerMultiplier / acPowerDivisor;
@@ -804,13 +804,13 @@ class t7e_zg_thermostat extends ZigBeeDevice {
     }
 
     async _getPowerKwh() {
-        await this.meterCluster().readAttributes('currentSummationDelivered').then(value => {
+        await this.meterCluster().readAttributes(['currentSummationDelivered']).then(value => {
 
             //this.log(`+++++++ 主动读 read meter kwh return: `, value)
 
         }).catch(this.error)
 
-        await this.electricalMeasurementCluster().readAttributes('activePower').then(value => {
+        await this.electricalMeasurementCluster().readAttributes(['activePower']).then(value => {
 
             //this.log(`+++++++ 主动读 read activePower w return: `, value)
 
