@@ -92,7 +92,7 @@ class TempHumSensor_4512765 extends ZigBeeDevice {
 
     async read_params() {
         try {
-            await this.zclNode.endpoints[1].clusters[CLUSTER.TEMPERATURE_MEASUREMENT.NAME].readAttributes('measuredValue').then(value => {
+            await this.zclNode.endpoints[1].clusters[CLUSTER.TEMPERATURE_MEASUREMENT.NAME].readAttributes(['measuredValue']).then(value => {
                 this.log(`+++++++ measuredValue = `, value)
                 if (value.hasOwnProperty('measuredValue')) {
                     this.onTemperatureReport(value['measuredValue'])
@@ -105,7 +105,7 @@ class TempHumSensor_4512765 extends ZigBeeDevice {
         }
 
         try {
-            await this.zclNode.endpoints[1].clusters[CLUSTER.RELATIVE_HUMIDITY_MEASUREMENT.NAME].readAttributes('measuredValue').then(value => {
+            await this.zclNode.endpoints[1].clusters[CLUSTER.RELATIVE_HUMIDITY_MEASUREMENT.NAME].readAttributes(['measuredValue']).then(value => {
                 this.log(`+++++++ measuredValue = `, value)
                 if (value.hasOwnProperty('measuredValue')) {
                     this.onHumidityReport(value['measuredValue'])
@@ -118,7 +118,7 @@ class TempHumSensor_4512765 extends ZigBeeDevice {
 
 
         try {
-            await this.zclNode.endpoints[1].clusters[CLUSTER.POWER_CONFIGURATION.NAME].readAttributes('batteryPercentageRemaining').then(value => {
+            await this.zclNode.endpoints[1].clusters[CLUSTER.POWER_CONFIGURATION.NAME].readAttributes(['batteryPercentageRemaining']).then(value => {
                 this.log(`+++++++ POWER_CONFIGURATION = `, value)
                 if (value.hasOwnProperty('batteryPercentageRemaining')) {
 
