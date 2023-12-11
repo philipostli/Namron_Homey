@@ -49,7 +49,7 @@ class D1402769_LightDevice extends HzcZigBeeLightDevice {
                 .then(async () => {
                     this.log('---4', new Date())
                     // Get current level attribute to update dim level
-                    const { currentLevel } = await this.levelControlCluster.readAttributes(CURRENT_LEVEL);
+                    const { currentLevel } = await this.levelControlCluster.readAttributes([CURRENT_LEVEL]);
                     this.debug('changeOnOff() →', onoff, { currentLevel });
                     // Always set dim to 0.01 or higher since bulb is turned on
                     await this.setCapabilityValue('dim', Math.max(0.01, currentLevel / MAX_DIM));
@@ -133,7 +133,7 @@ class D1402769_LightDevice extends HzcZigBeeLightDevice {
 
             let currentLevel1 = 0.01
             try {
-                const { currentLevel } = await this.levelControlCluster2().readAttributes(CURRENT_LEVEL)
+                const { currentLevel } = await this.levelControlCluster2().readAttributes([CURRENT_LEVEL])
                 currentLevel1 = currentLevel
             } catch (err) {
                 this.setCapabilityValue("onoff", !isOn)
@@ -166,7 +166,7 @@ class D1402769_LightDevice extends HzcZigBeeLightDevice {
 
             let currentLevel1 = 0
             try {
-                const { currentLevel } = await this.levelControlCluster2().readAttributes(CURRENT_LEVEL)
+                const { currentLevel } = await this.levelControlCluster2().readAttributes([CURRENT_LEVEL])
                 currentLevel1 = currentLevel
             } catch (err) {
                 this.log('error: ', err)
@@ -227,7 +227,7 @@ class D1402769_LightDevice extends HzcZigBeeLightDevice {
 
             let currentLevel1 = 0.01
             try {
-                const { currentLevel } = await this.levelControlCluster2().readAttributes(CURRENT_LEVEL)
+                const { currentLevel } = await this.levelControlCluster2().readAttributes([CURRENT_LEVEL])
                 currentLevel1 = currentLevel
             } catch (err) {
                 this.setCapabilityValue("onoff", !isOn)
@@ -236,7 +236,7 @@ class D1402769_LightDevice extends HzcZigBeeLightDevice {
                 await this.setWarning("" + err).catch(this.error);
             }
 
-            await this.onoffCluster2().readAttributes('onoff').then(value => {
+            await this.onoffCluster2().readAttributes(['onoff']).then(value => {
                 this.log('-----read onoff : ', value)
                 if (value.hasOwnProperty('onoff')) {
                     this.setCapabilityValue('onoff', value.onOff)
@@ -247,7 +247,7 @@ class D1402769_LightDevice extends HzcZigBeeLightDevice {
             })
 
 
-            await this.basicCluster2().readAttributes('appVersion', 'dateCode', 'hwVersion', 'appProfileVersion', 'locationDesc', 'swBuildId').then(value => {
+            await this.basicCluster2().readAttributes(['appVersion', 'dateCode', 'hwVersion', 'appProfileVersion', 'locationDesc', 'swBuildId']).then(value => {
                 this.log('+++++++++++ basic : ', value)
             })
         } catch (error) {
