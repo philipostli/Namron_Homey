@@ -301,5 +301,8 @@
   },
   "2.2.84": {
     "en": "Added support for new Namron Touch Thermostat 4512752/3"
+  },
+  "2.2.85": {
+    "en": "Bug fixes"
   }
 }
