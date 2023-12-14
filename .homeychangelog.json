@@ -307,5 +307,8 @@
   },
   "2.2.86": {
     "en": "Bug fixes on the 4512758/9 thermostat after zigbee driver update"
+  },
+  "2.2.87": {
+    "en": "Bug fixes"
   }
 }
