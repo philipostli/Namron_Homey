@@ -60,7 +60,7 @@ class ZigBeeThermostat extends ZigBeeDevice {
       payload['hysteresis'] = newHysteresis
     }
 
-    if (payload === {}) {
+    if (Object.keys(payload).length < 1) {
       return
     }
 
