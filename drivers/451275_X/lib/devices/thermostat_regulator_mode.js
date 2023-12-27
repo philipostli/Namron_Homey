@@ -57,7 +57,9 @@ module.exports = {
       //regulator set min
       payload2['regulator'] = parseInt(num); 
 
-      device.thermostatCluster().writeAttributes(payload2).catch(this.error)
+      device.thermostatCluster().writeAttributes(payload2).then(() => {
+        device.driver.triggerRegulator(device)
+      }).catch(this.error)
 
     }
     

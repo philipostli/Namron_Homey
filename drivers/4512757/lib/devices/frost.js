@@ -27,10 +27,12 @@ module.exports = {
                   }
                   //updateTempCapOptions(device, 5, 10, 1, device.target_temperature_name); 
                   setConfiguratrion(device, null, this.pu, 1, false, 1);
+                    device.driver.triggerMyFlow(device, true);
                 }
                 else{ 
                   //updateTempCapOptions(device, 5, 40, 0.5, device.target_temperature_name); 
-                  setConfiguratrion(device, null, this.pu, 1, false, 0);  
+                  setConfiguratrion(device, null, this.pu, 1, false, 0);
+                    device.driver.triggerMyFlow(device, false);
                 }  
 
                 device.setStoreValue('frost_is_open', payload);
@@ -46,9 +48,11 @@ module.exports = {
       console.log('**************** frost: ', config);
       if (config == 1){
         device.setCapabilityValue('frost', true);
+          device.driver.triggerMyFlow(device, true);
       }
       else {
         device.setCapabilityValue('frost', false);
+          device.driver.triggerMyFlow(device, false);
       } 
       device.setStoreValue('frost_is_open', config); 
     }

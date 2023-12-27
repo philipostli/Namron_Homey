@@ -187,8 +187,12 @@ class t7e_zg_thermostat extends ZigBeeDevice {
 
                 //this.setCapabilityValue('t7e_zg_sensor_mode', 'p')
 
-                let rp = this.getStoreValue('t7e_zg_regulator_percentage') || 20;
+                let rp = this.getStoreValue('t7e_zg_regulator_percentage') || 0.2;
                 this.setCapabilityValue('t7e_zg_regulator_percentage', rp);
+
+                if (this.isFirstInit()) {
+                    this.driver.triggerRegulator(this)
+                }
 
             }
 
@@ -282,6 +286,10 @@ class t7e_zg_thermostat extends ZigBeeDevice {
             this.setCapabilityValue('onoff', value)
         })
 
+        this.thermostatCluster().on('attr.frost', async value => {
+            this.log(`-- rev frost 1 onoff = `, value)
+            this.driver.triggerMyFlow(this, value || false);
+        })
 
         this.thermostatCluster().on('attr.occupiedHeatingSetpoint', async value => {
             //this.log(`-----------event: occupiedHeatingSetpoint report `, value)
@@ -683,7 +691,7 @@ class t7e_zg_thermostat extends ZigBeeDevice {
                 //this.log(`++++++ thermostat pIHeatingDemand = `, value)
 
                 if (value.hasOwnProperty('pIHeatingDemand')) {
-                    this.setCapabilityValue('t7e_zg_regulator_percentage', value['pIHeatingDemand'])
+                    this.setCapabilityValue('t7e_zg_regulator_percentage', value['pIHeatingDemand'] / 100)
                 }
 
             }).catch(this.error)
@@ -923,7 +931,7 @@ class t7e_zg_thermostat extends ZigBeeDevice {
         let max = this.target_temp_setpoint_max
         let step = 0.5
 
-        let capOptions = this.getCapabilityOptions('target_temperature');
+        let capOptions = {};
         this.log('--温度选项: old: ', capOptions);
         if ((min !== undefined ? min : capOptions.min) >= (max !== undefined ? max : capOptions.max)) {
             return
@@ -952,6 +960,14 @@ class t7e_zg_thermostat extends ZigBeeDevice {
         }
     }
 
+    async turnFrostRunListener(args, state) {
+        this.log('HHHHHHHHHH++++++++++++++++++++++', args.frost,)
+        await this.thermostatCluster()
+        .writeAttributes({frost: args.frost})
+        .then(() => {
+            this.setCapabilityValue('frost', args.frost);
+        })
+    }
 
 }
 
