@@ -15174,7 +15174,47 @@
           }
         }
       },
-      "id": "4512748"
+      "id": "4512748",
+      "settings": [
+        {
+          "id": "working_mode",
+          "type": "number",
+          "label": {
+            "en": "Working mode"
+          },
+          "value": 2,
+          "attr": {
+            "min": 0,
+            "max": 2
+          },
+          "hint": {
+            "en": "0: light mode.\n1: Shutter mode without positioning.\n2: Shutter mode with positioning."
+          },
+          "zwave": {
+            "index": 3,
+            "size": 1
+          }
+        },
+        {
+          "id": "slats_rotation_time",
+          "type": "number",
+          "label": {
+            "en": "Slats rotation time"
+          },
+          "value": 0,
+          "attr": {
+            "min": 0,
+            "max": 127
+          },
+          "hint": {
+            "en": "0: disable the function.\n5-127 (0.5S-12.7S): value of the slats rotation time, unit is 0.1S.\nThis parameter is only valid when working mode is shutter mode with positioning."
+          },
+          "zwave": {
+            "index": 13,
+            "size": 1
+          }
+        }
+      ]
     },
     {
       "name": {
@@ -17465,7 +17505,99 @@
         "large": "/drivers/4512771/assets/images/large.png",
         "small": "/drivers/4512771/assets/images/small.png"
       },
-      "settings": [],
+      "settings": [
+        {
+          "id": "sensitivity",
+          "type": "dropdown",
+          "value": "default",
+          "label": {
+            "en": "Sensitivity"
+          },
+          "hint": {
+            "en": "After clicking Save, short press the button on the back of the device once to activate the device. Otherwise, the settings may fail.\n\nDefault is between Highest and High IV."
+          },
+          "values": [
+            {
+              "id": "default",
+              "label": {
+                "en": "Default"
+              }
+            },
+            {
+              "id": "disablePIR",
+              "label": {
+                "en": "Disable PIR"
+              }
+            },
+            {
+              "id": "highest",
+              "label": {
+                "en": "Highest"
+              }
+            },
+            {
+              "id": "highIV",
+              "label": {
+                "en": "High IV"
+              }
+            },
+            {
+              "id": "highIII",
+              "label": {
+                "en": "High III"
+              }
+            },
+            {
+              "id": "highII",
+              "label": {
+                "en": "High II"
+              }
+            },
+            {
+              "id": "highI",
+              "label": {
+                "en": "High I"
+              }
+            },
+            {
+              "id": "middle",
+              "label": {
+                "en": "Middle"
+              }
+            },
+            {
+              "id": "lowI",
+              "label": {
+                "en": "Low I"
+              }
+            },
+            {
+              "id": "lowII",
+              "label": {
+                "en": "Low II"
+              }
+            },
+            {
+              "id": "lowIII",
+              "label": {
+                "en": "Low III"
+              }
+            },
+            {
+              "id": "lowIV",
+              "label": {
+                "en": "Low IV"
+              }
+            },
+            {
+              "id": "lowest",
+              "label": {
+                "en": "Lowest"
+              }
+            }
+          ]
+        }
+      ],
       "platforms": [
         "local",
         "cloud"
