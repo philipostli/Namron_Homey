@@ -78,8 +78,7 @@
     "approximation": {
       "usageOn": 5,
       "usageOff": 1
-    },
-    "cumulative": true
+    }
   },
   "capabilitiesOptions": {
     "target_temperature": {

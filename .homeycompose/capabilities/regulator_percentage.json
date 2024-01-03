@@ -5,9 +5,9 @@
   },
   "chartType": "stepLine",
   "min": 0,
-  "max": 100,
-  "step": 10,
-  "value": 20,
+  "max": 1,
+  "step": 0.1,
+  "value": 0.2,
   "units": {
     "en": "%"
   },

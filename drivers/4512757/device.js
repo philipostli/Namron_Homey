@@ -4,7 +4,7 @@ const Homey = require('homey');
 
 const appkit = require('./lib/');
 const {
-    updateTempCapOptions
+    updateTempCapOptions, setConfiguratrion
 } = require('./lib/devices/utils');
 
 const {ZwaveDevice} = require('homey-zwavedriver');
@@ -150,8 +150,9 @@ class JSTAR_Thermostat extends ZwaveDevice {
                 });
 
                 //appkit.regulator_percentage.init(this, null);
-                let rp = this.getStoreValue('regulator_percentage') || 20;
+                let rp = this.getStoreValue('regulator_percentage') || 0.2;
                 await this.setCapabilityValue('regulator_percentage', rp);
+                this.driver.triggerRegulator(this)
 
             } else {
                 if (this.hasCapability('regulator_percentage')) {
@@ -369,6 +370,28 @@ class JSTAR_Thermostat extends ZwaveDevice {
         console.log('show message: ', msg);
         await this.setWarning(msg);
         await this.unsetWarning();
+    }
+
+    async turnFrostRunListener(args, state) {
+        this.log('zv_HHHHHHHHHH++++++++++++++++++++++', args.frost,)
+
+        if (args.frost === true) {
+            let tm = this.getCapabilityValue(this.thermostat_mode_name) || {};
+            console.log('Frost .... check thermostat_mode=', tm);
+            if (tm !== 'heat') {
+                await this.setCapabilityValue('frost', false);
+                await this.showMessage('Frost must run in `heat` mode.');
+                return;
+            }
+            await setConfiguratrion(this, null, 10, 1, false, 1);
+            await this.setCapabilityValue('frost', true);
+            this.driver.triggerMyFlow(this, true)
+        } else {
+            await setConfiguratrion(this, null, 10, 1, false, 0);
+            await this.setCapabilityValue('frost', false);
+            this.driver.triggerMyFlow(this, false)
+        }
+
     }
 }
 

@@ -73,7 +73,9 @@ module.exports = {
       //sensor_mode
       setConfiguratrion(device, null, 43, 1, false, 6);   
       //regulator set min
-      setConfiguratrion(device, null, this.pu, 1, false, num); 
+      setConfiguratrion(device, null, this.pu, 1, false, num);
+
+      device.driver.triggerRegulator(device)
 
       //device.setClass('socket');
 
