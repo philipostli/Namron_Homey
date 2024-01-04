@@ -313,5 +313,12 @@
   },
   "2.2.88": {
     "en": "Bug fixes"
+  },
+  "2.2.89": {
+    "en": "Bug fixes, added support for new 4 channel zigbee switch, Added flow cards for 4512768, Added support for new Namron Touch Thermostat 4512752/3, Zigbee driver update "
+  },
+  "2.2.90": {
+    "en": "Fixes bug where 4512758/9 is set as Main  meter, Adds flow cards for regulator mode 4512758/9, Adds working mode and Slats rotationg time settings for 4512748"
   }
 }
+

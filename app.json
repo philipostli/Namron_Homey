@@ -4904,6 +4904,90 @@
         ]
       },
       {
+        "id": "zv_trigger_frost_turned_on",
+        "title": {
+          "en": "It frost turned ON "
+        },
+        "titleFormatted": {
+          "en": "It frost turned ON "
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512757"
+          }
+        ]
+      },
+      {
+        "id": "zv_trigger_frost_turned_off",
+        "title": {
+          "en": "It frost turned OFF"
+        },
+        "titleFormatted": {
+          "en": "It frost turned OFF"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512757"
+          }
+        ]
+      },
+      {
+        "id": "zv_trigger_regulator_percentage",
+        "title": {
+          "en": "It regulator_percentage turned ON"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512757"
+          }
+        ]
+      },
+      {
+        "id": "trigger_frost_turned_on",
+        "title": {
+          "en": "It frost turned ON "
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=451275_X"
+          }
+        ]
+      },
+      {
+        "id": "trigger_frost_turned_off",
+        "title": {
+          "en": "It frost turned OFF"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=451275_X"
+          }
+        ]
+      },
+      {
+        "id": "trigger_regulator_percentage",
+        "title": {
+          "en": "It regulator_percentage turned ON"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=451275_X"
+          }
+        ]
+      },
+      {
         "id": "trigger_switch_2gang_turned_on_1",
         "title": {
           "en": "It Switch 1 turned ON "
@@ -10513,6 +10597,106 @@
         ]
       },
       {
+        "id": "zv_turned_on_frost",
+        "title": {
+          "en": "Turned on frost"
+        },
+        "hint": {
+          "en": "Turned on frost."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512757"
+          }
+        ]
+      },
+      {
+        "id": "zv_turned_off_frost",
+        "title": {
+          "en": "Turned off frost"
+        },
+        "hint": {
+          "en": "Turned off frost."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512757"
+          }
+        ]
+      },
+      {
+        "id": "zv_set_regulator_percentage",
+        "title": {
+          "en": "Set regulator percentage"
+        },
+        "titleFormatted": {
+          "en": "Set regulator [[number]]%"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=4512757"
+          },
+          {
+            "name": "number",
+            "type": "number",
+            "min": 1,
+            "max": 100
+          }
+        ]
+      },
+      {
+        "id": "turned_on_frost",
+        "title": {
+          "en": "Turned on frost"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=451275_X"
+          }
+        ]
+      },
+      {
+        "id": "turned_off_frost",
+        "title": {
+          "en": "Turned off frost"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=451275_X"
+          }
+        ]
+      },
+      {
+        "id": "set_regulator_percentage",
+        "title": {
+          "en": "Set regulator percentage"
+        },
+        "titleFormatted": {
+          "en": "Set regulator [[number]]%"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=451275_X"
+          },
+          {
+            "name": "number",
+            "type": "number"
+          }
+        ]
+      },
+      {
         "id": "4512760_DIM_level_step_with_onoff",
         "title": {
           "en": "Step level"
@@ -16100,8 +16284,7 @@
         "approximation": {
           "usageOn": 5,
           "usageOff": 1
-        },
-        "cumulative": true
+        }
       },
       "capabilitiesOptions": {
         "target_temperature": {
@@ -21852,9 +22035,9 @@
       },
       "chartType": "stepLine",
       "min": 0,
-      "max": 100,
-      "step": 10,
-      "value": 20,
+      "max": 1,
+      "step": 0.1,
+      "value": 0.2,
       "units": {
         "en": "%"
       },
@@ -22107,9 +22290,9 @@
       },
       "chartType": "stepLine",
       "min": 0,
-      "max": 100,
-      "step": 10,
-      "value": 20,
+      "max": 1,
+      "step": 0.1,
+      "value": 0.2,
       "units": {
         "en": "%"
       },
