@@ -52,6 +52,7 @@ class MyApp extends Homey.App {
     sceneButtonModeS2TriggerCard: FlowCardTriggerDevice | undefined;
     zwStartDimChangeV4ActionCard: FlowCardAction | undefined;
     zwStopDimChangeActionCard: FlowCardAction | undefined;
+    sr4512744ThermostatModeActionCard: FlowCardAction | undefined;
 
     onInit(): Promise<void> {
         this.log('MyApp is running...')
@@ -103,7 +104,6 @@ class MyApp extends Homey.App {
                 this.logActionTrigger('toggle_tuya_child_lock');
                 args.device.setChildLock(!args.device.getCapabilityValue('tuya_child_lock')).catch(this.error);
             });
-
 
         // const manifest = Homey.manifest
         // this.log(manifest.flow.triggers[6])
@@ -331,6 +331,13 @@ class MyApp extends Homey.App {
         this.zwStopDimChangeActionCard = this.homey.flow.getActionCard('sr_zw_stop_dim_change')
         this.zwStopDimChangeActionCard.registerRunListener(async (args, state) => {
             return args.device.stopDimChange(args, state)
+        })
+
+        this.sr4512744ThermostatModeActionCard = this.homey.flow.getActionCard('sr_4512744_thermostat_mode')
+        this.sr4512744ThermostatModeActionCard.registerRunListener(async (args, state) => {
+            // args { device, mode }
+            // state { manual }, ignore this.
+            return args.device.setThermostatMode(args.mode)
         })
     }
 

@@ -146,6 +146,42 @@ class MyThermostat extends ZwaveDevice {
     })
   }
 
+  setThermostatMode(value) {
+    this.log('_setMode THERMOSTAT_MODE_SET ', value)
+    if (!CapabilityToThermostatMode.hasOwnProperty(value)) {
+      return null
+    }
+    const mode = CapabilityToThermostatMode[value]
+    if (typeof mode !== 'string') {
+      return null
+    }
+
+    if (CapabilityToThermostatSetpointType.hasOwnProperty(value)) {
+
+      this.thermostatSetpointType = CapabilityToThermostatSetpointType[value]
+
+      clearTimeout(this.refreshTargetTemperatureTimeout)
+      this.refreshTargetTemperatureTimeout = this.homey.setTimeout(() => {
+
+        this.log('Refresh Capability Value')
+        this.refreshCapabilityValue('target_temperature',
+          'THERMOSTAT_SETPOINT').catch(this.error)
+      }, 1000)
+    }
+
+    const payload = {
+      'Level': {
+        'No of Manufacturer Data fields': 0,
+        'Mode': mode,
+      },
+      'Manufacturer Data': Buffer.from([]),
+    }
+
+    this.node.CommandClass.COMMAND_CLASS_THERMOSTAT_MODE.THERMOSTAT_MODE_SET(payload).then(() => {
+      console.log(`_setMode ${value} OK`)
+    }).catch(this.error)
+  }
+
   registerTemperatureControlReferenceSelectionCapability () {
 
     this.registerCapability('my_ZV9092A_temperature_control_reference',
