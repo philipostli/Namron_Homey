@@ -53,6 +53,7 @@ class MyApp extends Homey.App {
     zwStartDimChangeV4ActionCard: FlowCardAction | undefined;
     zwStopDimChangeActionCard: FlowCardAction | undefined;
     sr4512744ThermostatModeActionCard: FlowCardAction | undefined;
+    sr4512737ThermostatModeActionCard: FlowCardAction | undefined;
 
     onInit(): Promise<void> {
         this.log('MyApp is running...')
@@ -64,6 +65,7 @@ class MyApp extends Homey.App {
         }
 
         this.setUpZigbeeFlowTriggerCards()
+        this.setUpZigbeeFlowActionCards()
         this.setUpZwaveFlowTriggerCards()
         this.setUpZwaveFlowActionCards()
 
@@ -258,6 +260,15 @@ class MyApp extends Homey.App {
             async (args, state) => {
                 return true
             })
+    }
+
+    setUpZigbeeFlowActionCards() {
+        this.sr4512737ThermostatModeActionCard = this.homey.flow.getActionCard('sr_4512737_thermostat_mode')
+        this.sr4512737ThermostatModeActionCard.registerRunListener(async (args, state) => {
+            // args { device, mode }
+            // state { manual }, ignore this.
+            return args.device.setThermostatMode(args.mode)
+        })
     }
 
     setUpZwaveFlowTriggerCards() {
