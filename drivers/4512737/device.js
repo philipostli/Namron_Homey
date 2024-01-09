@@ -133,6 +133,13 @@ class ZigBeeThermostat extends ZigBeeDevice {
     })
   }
 
+  setThermostatMode(mode) {
+    this.isNotAwayValue = true
+    this.zclNode.endpoints[1].clusters.thermostat.writeAttributes({
+      systemMode: mode,
+    }).catch(this.error)
+  }
+
   _registerAwayMode () {
 
     // Because the device has updated the away mode attribute, the old version is `occupancy`,
