@@ -325,6 +325,9 @@
   },
   "2.2.92": {
     "en": "Fixes bug where 4512758/9 is set as Main  meter, Adds flow cards for regulator mode 4512758/9, Adds working mode and Slats rotationg time settings for 4512748, Adds a set Mode Flow card for 4512737/8 and 4512744/45, Fixes Floor sensor temp if no floor sensor is connected on 4512752/53"
+  },
+  "2.2.93": {
+    "en": "Adds support for 4512774/75"
   }
 
 }
