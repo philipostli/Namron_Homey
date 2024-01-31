@@ -230,7 +230,7 @@ export default class TuyaThermostatDevice extends ZigBeeDevice implements Thermo
       }
       case ThermostatDataPoint.TempCurrent: {
         let internalTemp: number|null = this.tuya.readData32(args.data);
-        if (internalTemp === 0x8000 || internalTemp === 0xFFFF) {
+        if (internalTemp === 1000 || internalTemp === 0x8000 || internalTemp === 0xFFFF) {
           internalTemp = null
         }
 
@@ -265,7 +265,7 @@ export default class TuyaThermostatDevice extends ZigBeeDevice implements Thermo
       }
       case ThermostatDataPoint.TempFloor: {
         let floorTemp: number|null = this.tuya.readData32(args.data);
-        if (floorTemp === 0x8000 || floorTemp === 0xFFFF) {
+        if (floorTemp === 1000 || floorTemp === 0x8000 || floorTemp === 0xFFFF) {
           floorTemp = null
         }
 
