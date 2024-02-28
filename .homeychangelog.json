@@ -328,7 +328,8 @@
   },
   "2.2.93": {
     "en": "Adds support for 4512774/75"
+  },
+  "2.2.94": {
+    "en": "Bug fixes on the 3308431 - Luna Lamp - Please reinclude to fix all bindings"
   }
-
 }
-
