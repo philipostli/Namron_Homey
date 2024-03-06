@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "net.filllip-namron",
-  "version": "2.2.94",
+  "version": "2.2.95",
   "compatibility": ">=7.4.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
@@ -18001,6 +18001,40 @@
       ],
       "settings": [
         {
+          "id": "start_up_on_off",
+          "type": "dropdown",
+          "value": "off",
+          "label": {
+            "en": "start up on off"
+          },
+          "values": [
+            {
+              "id": "off",
+              "label": {
+                "en": "off"
+              }
+            },
+            {
+              "id": "on",
+              "label": {
+                "en": "on"
+              }
+            },
+            {
+              "id": "toggle",
+              "label": {
+                "en": "toggle"
+              }
+            },
+            {
+              "id": "previous value",
+              "label": {
+                "en": "previous value"
+              }
+            }
+          ]
+        },
+        {
           "id": "app_version",
           "type": "label",
           "label": {
@@ -22691,6 +22725,24 @@
           }
         }
       ]
+    },
+    "t11_zg_regulator_percentage": {
+      "type": "number",
+      "title": {
+        "en": "Regulator %"
+      },
+      "chartType": "stepLine",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "value": 0.2,
+      "units": {
+        "en": "%"
+      },
+      "getable": true,
+      "setable": true,
+      "uiQuickAction": false,
+      "uiComponent": "slider"
     },
     "t7e_zg_datetime": {
       "title": {

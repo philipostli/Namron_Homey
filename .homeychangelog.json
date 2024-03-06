@@ -331,5 +331,8 @@
   },
   "2.2.94": {
     "en": "Bug fixes on the 3308431 - Luna Lamp - Please reinclude to fix all bindings"
+  },
+  "2.2.95": {
+    "en": "Update in drivers of 4512766/67 & 4512758/59"
   }
 }
