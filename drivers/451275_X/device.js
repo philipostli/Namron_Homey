@@ -64,60 +64,56 @@ class t7e_zg_thermostat extends ZigBeeDevice {
 
         //this.log("+++ App start: check sensorMode, systemMode, thermostatRunningMode ")
 
-        await this.thermostatCluster().
-            readAttributes(['sensorMode', 'systemMode', 'thermostatRunningMode',
-                'absMinHeatSetpointLimit', 'absMaxHeatSetpointLimit',
-                'absMinCoolSetpointLimit', 'absMaxCoolSetpointLimit']).
-            then(value => {
-                this.log(`++++++ APP start thermostat = `, value)
+        await this.thermostatCluster().readAttributes(['sensorMode', 'systemMode', 'thermostatRunningMode',
+            'absMinHeatSetpointLimit', 'absMaxHeatSetpointLimit',
+            'absMinCoolSetpointLimit', 'absMaxCoolSetpointLimit']).then(value => {
+            this.log(`++++++ APP start thermostat = `, value)
 
-                if (value.hasOwnProperty('systemMode')) {
-                    this._setModeUI(value['systemMode'])
-                }
-                if (value.hasOwnProperty('thermostatRunningMode')) {
-                    this._setModeUI(value['thermostatRunningMode'])
-                }
+            if (value.hasOwnProperty('systemMode')) {
+                this._setModeUI(value['systemMode'])
+            }
+            if (value.hasOwnProperty('thermostatRunningMode')) {
+                this._setModeUI(value['thermostatRunningMode'])
+            }
 
-                if (value.hasOwnProperty('sensorMode')) {
-                    let sensorMode = value['sensorMode'] || 'a'
-                    this.setStoreValue('sensor_mode', sensorMode)
-                    this.setSettings({ sensor_mode: sensorMode })
+            if (value.hasOwnProperty('sensorMode')) {
+                let sensorMode = value['sensorMode'] || 'a'
+                this.setStoreValue('sensor_mode', sensorMode)
+                this.setSettings({sensor_mode: sensorMode})
 
-                    this._initUiModule();
-                }
+                this._initUiModule();
+            }
 
-                if (value.hasOwnProperty('absMinHeatSetpointLimit')) {
-                    let temp = parseFloat((getInt16(value['absMinHeatSetpointLimit']) / 100).toFixed(1))
-                    this.target_temp_setpoint_min = temp
-                }
-                if (value.hasOwnProperty('absMaxHeatSetpointLimit')) {
-                    let temp = parseFloat((getInt16(value['absMaxHeatSetpointLimit']) / 100).toFixed(1))
-                    this.target_temp_setpoint_max = temp
-                }
+            if (value.hasOwnProperty('absMinHeatSetpointLimit')) {
+                let temp = parseFloat((getInt16(value['absMinHeatSetpointLimit']) / 100).toFixed(1))
+                this.target_temp_setpoint_min = temp
+            }
+            if (value.hasOwnProperty('absMaxHeatSetpointLimit')) {
+                let temp = parseFloat((getInt16(value['absMaxHeatSetpointLimit']) / 100).toFixed(1))
+                this.target_temp_setpoint_max = temp
+            }
 
-            }).
-            catch(err => {
-                //this.error('Error: read sensor mode failed', err);
-                //this.log('-------start.err: ', err)
+        }).catch(err => {
+            //this.error('Error: read sensor mode failed', err);
+            //this.log('-------start.err: ', err)
 
-                let errMsg = "" + err
-                if (errMsg === "Error: device_not_found" || errMsg === "reason: Error: device_not_found") {
-                    //this.log('----------device removed')
-                    //device removed
-                    return
-                }
+            let errMsg = "" + err
+            if (errMsg === "Error: device_not_found" || errMsg === "reason: Error: device_not_found") {
+                //this.log('----------device removed')
+                //device removed
+                return
+            }
 
 
+            this.showMessage("" + err);
 
-                this.showMessage("" + err);
+            //this.setUnavailable('App read sensor mode failed, Please try again.')
+            this.setStoreValue('zb_first_init', true)
 
-                //this.setUnavailable('App read sensor mode failed, Please try again.')
-                this.setStoreValue('zb_first_init', true)
-
-                this.homey.setTimeout(async () => {
-                    this._start()
-                }, 5000)
-            })
+            this.homey.setTimeout(async () => {
+                this._start()
+            }, 5000)
+        })
 
     }
 
@@ -361,10 +357,7 @@ class t7e_zg_thermostat extends ZigBeeDevice {
         })
 
         this.thermostatCluster().on('attr.sensorMode', async value => {
-            ////this.log('===========report sensorMode: ', value)
-
             this.setSettings({sensor_mode: value})
-
             this._checkModeStatus(value)
         })
 
@@ -753,9 +746,7 @@ class t7e_zg_thermostat extends ZigBeeDevice {
 
             if (value.hasOwnProperty('sensorMode')) {
                 this.setSettings({sensor_mode: value['sensorMode']})
-
                 this._checkModeStatus(value['sensorMode'])
-
             }
 
         }).catch(this.error)
@@ -830,6 +821,7 @@ class t7e_zg_thermostat extends ZigBeeDevice {
         //this.log('********* device cur mode: ', value)
         let changed = false
         let m = this.getStoreValue('sensor_mode') || 'a'
+        this.log('_checkModeStatus+++++++++++++++++++++++++++++++', m, value)
         if ((m === 'p' || m === 'fp') && value !== 'p' && value !== 'fp') {
             changed = true
             this.setSettings({
