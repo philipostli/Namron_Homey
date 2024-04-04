@@ -19,7 +19,7 @@
             "id": "everyday",
             "label": {
               "en": "Every day",
-              "no": "Hver dag"
+              "no": "Daglig"
             }
           },
           {
@@ -351,7 +351,7 @@
         "value": "disabled",
         "label": {
           "en": "Display auto off activation",
-          "no": "Skru lyset i displayet av/på"
+          "no": "Slå av panelskjerm automatisk"
         },
         "values": [
           {

@@ -20494,7 +20494,7 @@
           "image": "/drivers/540139x/assets/learnmode.svg",
           "instruction": {
             "en": "Press and hold down the OK button until the Wireless indicator flashes slowly.\n\nIf pairing is not started, press and hold down the OK button again.",
-            "no": "Trykk og hold nede OK knappen inntill indikatoren for trådløs kommunikasjon blinker.\n\n Om parringen ikke starter, trykk og holde nede OK knappen igjen."
+            "no": "Trykk og hold nede OK knappen inntil indikatoren for trådløs kommunikasjon blinker.\n\n Om paringen ikke starter, trykk og holde nede OK knappen igjen."
           }
         }
       },
@@ -20519,7 +20519,7 @@
                   "id": "everyday",
                   "label": {
                     "en": "Every day",
-                    "no": "Hver dag"
+                    "no": "Daglig"
                   }
                 },
                 {
@@ -20851,7 +20851,7 @@
               "value": "disabled",
               "label": {
                 "en": "Display auto off activation",
-                "no": "Skru lyset i displayet av/på"
+                "no": "Slå av panelskjerm automatisk"
               },
               "values": [
                 {
@@ -23090,7 +23090,8 @@
     },
     "zg9030a_datetime": {
       "title": {
-        "en": "Date"
+        "en": "Date",
+        "no": "Dato"
       },
       "type": "string",
       "setable": true,
