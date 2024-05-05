@@ -11,11 +11,13 @@ module.exports = {
     },
     registerCapability:function(device){
         device.registerCapability('measure_temperature', 'SENSOR_MULTILEVEL');
+        if (!device.hasCapability('measure_temperature')) return this
         updateTempCapOptions(device, -10, 60, 0.5, 'measure_temperature');
         return this;
     },
 
     startReport:function(device){
+        if (!device.hasCapability('measure_temperature')) return this
         device.registerReportListener(
             'SENSOR_MULTILEVEL',
             'SENSOR_MULTILEVEL_REPORT',

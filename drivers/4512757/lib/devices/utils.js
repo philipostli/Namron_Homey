@@ -58,7 +58,7 @@ const setupDevice = (accessory, device) => {
 const updateTempCapOptions = async (device, min, max, step, capabilityName) => {
     if (!device.hasCapability(capabilityName)) return;
     try {
-        let capOptions = device.getCapabilityOptions(capabilityName);
+        let capOptions = {};
         console.log('温度选项', capOptions);
         if ((min !== undefined ? min : capOptions.min) >= (max !== undefined ? max : capOptions.max)) {
             return Homey.__('error.invalid_target_temps');
@@ -115,7 +115,8 @@ const setTargetTemperature = async (device, node, value) => {
         return;
     }
 
-    let tm = device.getCapabilityValue(device.thermostat_mode_name) || '';
+    // let tm = device.getCapabilityValue(device.thermostat_mode_name) || '';
+    let tm = device.getSetting('system_mode') || '';
     console.log('e', 'setTargetTemperature', tm);
     if (tm === 'heat') {
 

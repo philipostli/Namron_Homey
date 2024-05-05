@@ -11,6 +11,7 @@ module.exports = {
   capability: 'thermostat_regulator_mode',
   init:function(device, node){
     device.appkits['pu'+this.pu] = this;
+    this.node = node
     this.startReport(device);
     return this;
   },
@@ -37,7 +38,7 @@ module.exports = {
       const settings = device.getSettings();
       let mode = settings.sensor_mode; 
       if (mode === 'p'){
-        mode = 'f';
+        mode = 'a';
         //device.setSettings({ 
         //  sensor_mode: mode,
         //}); 
@@ -88,6 +89,11 @@ module.exports = {
     device.setStoreValue('regulator_mode_changed', true);
  
     device.showMessage('Please go back and WAIT for reinitializing complete，then click `thermostat` icon to launch application again.');
+
+    device.homey.setTimeout(() => {
+      device.onNodeInit({node: this.node})
+    }, 2000)
+
     //device.restartApp();
     //if (!this.hasCapability('regulator_percentage')){
     

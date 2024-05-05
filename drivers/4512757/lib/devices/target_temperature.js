@@ -1,9 +1,7 @@
 const {
-    returnCapabilityValue,
     updateTempCapOptions,
-    checkThermostatModeByTargetTemp,
     setTargetTemperature,
-}                               = require('./utils');
+} = require('./utils');
 
 function state2value(state) {
     if (state === 'off') {
@@ -18,22 +16,23 @@ function state2value(state) {
 }
 
 module.exports = {
-    device:null,
-    node:null,
-    init:function(device, node){
+    device: null,
+    node: null,
+    init: function (device, node) {
         //this.device = device;
         //this.node = node;
         return this;
     },
 
-    registerCapability:function(device){
+    registerCapability: function (device) {
         device.registerCapability(device.target_temperature_name, 'THERMOSTAT_SETPOINT');
+        if (!device.hasCapability(device.target_temperature_name)) return this
         updateTempCapOptions(device, 0, 40, 0.5, device.target_temperature_name);
         return this;
     },
 
-    startReport:function(device, node){
-
+    startReport: function (device, node) {
+        if (!device.hasCapability(device.target_temperature_name)) return this
         device.registerCapabilityListener(device.target_temperature_name, async (value) => {
 
             console.log('============================================target_temperature -----changed:',

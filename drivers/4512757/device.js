@@ -39,13 +39,12 @@ class JSTAR_Thermostat extends ZwaveDevice {
             this.removeCapability('regulator');
         }
 
-        await this.restartApp();
+        // await this.restartApp();
+        appkit.sensor_mode.init(this, node);
 
         appkit.createSwitch.init(this, node);
         appkit.meters.init(this, node).registerCapability(this).startReport(this);
         appkit.ThermostatMode.init(this, node).registerCapability(this, node).startReport(this);
-        appkit.TargetTemperature.init(this, node).registerCapability(this).startReport(this, node);
-        appkit.MasureTemperature.init(this, node).registerCapability(this).startReport(this);
         appkit.createSetpoint(this, node);
         appkit.adaption.init(this, node);
         appkit.automatically_get_network_time.init(this, node);
@@ -56,7 +55,6 @@ class JSTAR_Thermostat extends ZwaveDevice {
         appkit.lcd_display_switch.init(this, node);
         appkit.frost.init(this, node);
         appkit.work_days_set.init(this, node);
-        appkit.sensor_mode.init(this, node);
         appkit.regulator.init(this, node);
         appkit.thermostat_regulator_mode.init(this, node);
         appkit.regulator_percentage.init(this, node);
@@ -94,7 +92,24 @@ class JSTAR_Thermostat extends ZwaveDevice {
 
         });
 
-        // this.restartApp(node);
+        if (this.hasCapability('button.reset_meter')) {
+            await this.removeCapability('button.reset_meter')
+        }
+        if (this.hasCapability('button.calibrate')) {
+            await this.removeCapability('button.calibrate')
+        }
+
+        if (this.hasCapability('regulator')) {
+            await this.removeCapability('regulator');
+        }
+
+        this.setStoreValue('regulator_mode_changed', false);
+
+
+        await this.restartApp(node);
+
+        appkit.TargetTemperature.init(this, node).registerCapability(this).startReport(this, node);
+        appkit.MasureTemperature.init(this, node).registerCapability(this).startReport(this);
 
         /*
         if (this.hasCapability(this.thermostat_mode_name)){
@@ -117,7 +132,6 @@ class JSTAR_Thermostat extends ZwaveDevice {
         */
 
 
-        this.setStoreValue('regulator_mode_changed', false);
         console.log('d', 'device.init end');
     };
 
@@ -183,16 +197,6 @@ class JSTAR_Thermostat extends ZwaveDevice {
                 await this.setSettings({
                     thermostat_regulator_mode: '0',
                 });
-
-                //await updateTempCapOptions(this, 0, 40, 0.5, this.target_temperature_name);
-                //await updateTempCapOptions(this, -10, 60, 0.5, 'measure_temperature');
-                let target_temp = this.homey.settings.get('target_temperature') || 20;
-                if (target_temp == 20) {
-                    //await this.triggerCapabilityListener('target_temperature', target_temp);
-                }
-                let mode = this.homey.settings.get(this.thermostat_mode_name) || 'heat';
-                //await this.triggerCapabilityListener(this.thermostat_mode_name, mode);
-
             }
 
             await this.unsetWarning();

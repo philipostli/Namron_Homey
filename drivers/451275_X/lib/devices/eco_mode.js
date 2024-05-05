@@ -1,8 +1,4 @@
 'use strict'
-const { CLUSTER, Cluster, ZCLDataTypes } = require('zigbee-clusters')
-const {
-    getOptBaseTime
-} = require('./utils');
 
 module.exports = {
     init(device) {
@@ -15,7 +11,7 @@ module.exports = {
             device.log(`-- App Rev eco_mode report = `, value)
             const res = value.getBits();
             if (device.hasCapability('eco_mode')) {
-                device.setCapabilityValue('eco_mode', res.includes('eco')) 
+                device.setCapabilityValue('eco_mode', res.includes('eco')).catch(this.error)
             }
         })
 
@@ -29,23 +25,18 @@ module.exports = {
                 }
             }
 
-
-            let payloads = { ecoMode: value }
+            let payloads = {ecoMode: value}
             device.log(`-- App Send eco_mode = `, value)
-            try{
+            try {
                 await device.thermostatCluster().setEco(payloads).catch(err => {
                     device.log('--- App Send eco_mode = ', value, 'ERR: ', err)
-                    if (device.hasCapability('eco_mode')){
+                    if (device.hasCapability('eco_mode')) {
                         device.setCapabilityValue('eco_mode', !value).catch(this.error)
                     }
                 })
-            }catch(error){
+            } catch (error) {
                 device.log('--- App Send eco_mode = ', value, 'ERR: ', error)
             }
-            
-
         })
-
-    },
-
-} 
+    }
+}
