@@ -88,13 +88,13 @@ const updateTempCapOptions = async (device, min, max, step, capabilityName) => {
 const checkThermostatModeByTargetTemp = async (device, node, value) => {
     let modeStr = 'Auto';
     if (value > device.current_measure_temperature) {
-        device.setCapabilityValue(device.thermostat_mode_name, 'heat');
+        device.setCapabilityValue(device.thermostat_mode_name, 'heat').catch(this.error);
         modeStr = 'Heat';
     } else if (value < device.current_measure_temperature) {
-        device.setCapabilityValue(device.thermostat_mode_name, 'cool');
+        device.setCapabilityValue(device.thermostat_mode_name, 'cool').catch(this.error);
         modeStr = 'Cool';
     } else {
-        device.setCapabilityValue(device.thermostat_mode_name, 'auto');
+        device.setCapabilityValue(device.thermostat_mode_name, 'auto').catch(this.error);
     }
 
     console.log('d', '...THERMOSTAT_MODE_SET');

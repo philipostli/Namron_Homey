@@ -1,10 +1,4 @@
-const {
-    returnCapabilityValue,
-    setConfiguratrion,
-    toggleSwitch
-}                               = require('./utils');
-
-module.exports = {  
+module.exports = {
     capability: 'app_reset',
     init:function(device, node){  
       this.registerCapability(device, node);
@@ -32,7 +26,7 @@ module.exports = {
                 }
               }  
 
-              device.unsetWarning();
+              device.unsetWarning().catch(this.error);
 
                 /*
                 if (device.hasCapability('app_reset')){

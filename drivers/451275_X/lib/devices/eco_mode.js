@@ -21,6 +21,7 @@ module.exports = {
                 let cur_thermostat = device.getCapabilityValue('t7e_zg_thermostat_mode');
                 if (cur_thermostat !== 'heat') {
                     await device.setWarning("Failed to set ECO mode").catch(this.error);
+                    device.unsetWarning().catch(this.error);
                     return
                 }
             }

@@ -1,9 +1,3 @@
-const {
-    returnCapabilityValue,
-    updateTempCapOptions,
-    PuCapability
-}                               = require('./utils');
-
 module.exports = {
     device:null,
     node:null,
@@ -31,10 +25,10 @@ module.exports = {
                 }
 
                 if (state == 0){
-                    this.device.setCapabilityValue('child_lock', false);
+                    this.device.setCapabilityValue('child_lock', false).catch(this.error);
                 }
                 else if (state == 1){
-                    this.device.setCapabilityValue('child_lock', true);
+                    this.device.setCapabilityValue('child_lock', true).catch(this.error);
                 }
             });
         console.log('~~~~~~~~~~~~~~~PROTECTION_REPORT', 'end report ....');

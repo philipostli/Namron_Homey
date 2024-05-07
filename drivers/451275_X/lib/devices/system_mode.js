@@ -6,6 +6,6 @@ module.exports = {
         payload2['systemMode'] = payload
         device.thermostatCluster().writeAttributes(payload2).then(() => {
             device.log('_____________set systemMode success', typeof payload, payload)
-        }).catch(device.error)
+        }).catch(this.error)
     },
 }

@@ -1,7 +1,4 @@
 'use strict';
-
-const Homey = require('homey');
-
 const appkit = require('./lib/');
 const {
     updateTempCapOptions, setConfiguratrion
@@ -29,14 +26,14 @@ class JSTAR_Thermostat extends ZwaveDevice {
             this.current_measure_temperature = 26;
         }
 
-        this.unsetWarning();
+        this.unsetWarning().catch(this.error);
 
 
         if (this.hasCapability('app_reset')) {
-            this.removeCapability('app_reset');
+            this.removeCapability('app_reset').catch(this.error);
         }
         if (this.hasCapability('regulator')) {
-            this.removeCapability('regulator');
+            this.removeCapability('regulator').catch(this.error);
         }
 
         // await this.restartApp();
@@ -83,7 +80,7 @@ class JSTAR_Thermostat extends ZwaveDevice {
 
         this.registerCapabilityListener('button.reset_meter', async () => {
             // Maintenance action button was pressed
-            this.meterReset();
+            this.meterReset().catch(this.error);
 
         });
 
@@ -93,44 +90,22 @@ class JSTAR_Thermostat extends ZwaveDevice {
         });
 
         if (this.hasCapability('button.reset_meter')) {
-            await this.removeCapability('button.reset_meter')
+            this.removeCapability('button.reset_meter').catch(this.error)
         }
         if (this.hasCapability('button.calibrate')) {
-            await this.removeCapability('button.calibrate')
+            this.removeCapability('button.calibrate').catch(this.error)
         }
 
         if (this.hasCapability('regulator')) {
-            await this.removeCapability('regulator');
+            this.removeCapability('regulator').catch(this.error);
         }
 
-        this.setStoreValue('regulator_mode_changed', false);
-
+        this.setStoreValue('regulator_mode_changed', false).catch(this.error);
 
         await this.restartApp(node);
 
         appkit.TargetTemperature.init(this, node).registerCapability(this).startReport(this, node);
         appkit.MasureTemperature.init(this, node).registerCapability(this).startReport(this);
-
-        /*
-        if (this.hasCapability(this.thermostat_mode_name)){
-          let mode = this.homey.settings.get(this.thermostat_mode_name) || 'heat';
-          await this.triggerCapabilityListener(this.thermostat_mode_name, mode);
-
-          const settings = this.getSettings();
-          let mode1 = settings.sensor_mode;
-          if (mode1 === 'p'){
-            mode1 = 'f';
-            await this.setSettings({
-              sensor_mode: mode1,
-            });
-          }
-
-          await this.setSettings({
-            thermostat_regulator_mode: '0',
-          });
-        }
-        */
-
 
         console.log('d', 'device.init end');
     };
@@ -163,9 +138,8 @@ class JSTAR_Thermostat extends ZwaveDevice {
                     thermostat_regulator_mode: '1',
                 });
 
-                //appkit.regulator_percentage.init(this, null);
                 let rp = this.getStoreValue('regulator_percentage') || 0.2;
-                await this.setCapabilityValue('regulator_percentage', rp);
+                this.setCapabilityValue('regulator_percentage', rp).catch(this.error);
                 this.driver.triggerRegulator(this)
 
             } else {
@@ -383,19 +357,18 @@ class JSTAR_Thermostat extends ZwaveDevice {
             let tm = this.getCapabilityValue(this.thermostat_mode_name) || {};
             console.log('Frost .... check thermostat_mode=', tm);
             if (tm !== 'heat') {
-                await this.setCapabilityValue('frost', false);
+                this.setCapabilityValue('frost', false).catch(this.error);
                 await this.showMessage('Frost must run in `heat` mode.');
                 return;
             }
             await setConfiguratrion(this, null, 10, 1, false, 1);
-            await this.setCapabilityValue('frost', true);
+            this.setCapabilityValue('frost', true).catch(this.error);
             this.driver.triggerMyFlow(this, true)
         } else {
             await setConfiguratrion(this, null, 10, 1, false, 0);
-            await this.setCapabilityValue('frost', false);
+            this.setCapabilityValue('frost', false).catch(this.error);
             this.driver.triggerMyFlow(this, false)
         }
-
     }
 }
 

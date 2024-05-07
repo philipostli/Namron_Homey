@@ -1,8 +1,3 @@
-const {
-    returnCapabilityValue,
-    setupDevice
-}                               = require('./utils');
-
 module.exports = {
     capability: 'switch',
     init:function(device, node){

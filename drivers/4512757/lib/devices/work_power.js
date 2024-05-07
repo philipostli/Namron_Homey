@@ -24,7 +24,7 @@ module.exports = {
             const size = level['Size'] || 4
             const value = payload['Configuration Value'];
             const valueInt = value.readIntBE(0, size);
-            device.setCapabilityValue('measure_power', valueInt / 10);
+            device.setCapabilityValue('measure_power', valueInt / 10).catch(this.error);
         }
 
         return this;

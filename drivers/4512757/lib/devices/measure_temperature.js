@@ -1,22 +1,19 @@
-const {
-    getCapabilityValue,
-    updateTempCapOptions
-}                               = require('./utils');
+const {updateTempCapOptions} = require('./utils');
 
 module.exports = {
-    device:null,
-    node:null,
-    init:function(device, node){
+    device: null,
+    node: null,
+    init: function (device, node) {
         return this;
     },
-    registerCapability:function(device){
+    registerCapability: function (device) {
         device.registerCapability('measure_temperature', 'SENSOR_MULTILEVEL');
         if (!device.hasCapability('measure_temperature')) return this
         updateTempCapOptions(device, -10, 60, 0.5, 'measure_temperature');
         return this;
     },
 
-    startReport:function(device){
+    startReport: function (device) {
         if (!device.hasCapability('measure_temperature')) return this
         device.registerReportListener(
             'SENSOR_MULTILEVEL',

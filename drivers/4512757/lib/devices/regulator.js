@@ -1,6 +1,4 @@
-const {
-    setConfiguratrion
-} = require('./utils');
+const {setConfiguratrion} = require('./utils');
 
 module.exports = {
     device: null,

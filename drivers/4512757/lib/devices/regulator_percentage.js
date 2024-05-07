@@ -1,6 +1,4 @@
-const {
-    setConfiguratrion
-} = require('./utils');
+const {setConfiguratrion} = require('./utils');
 
 module.exports = {
     device: null,
@@ -28,25 +26,25 @@ module.exports = {
                     console.error('Error in capabilityListener:', error);
                 }
             });
-    
-            device.configurationGet({ index: this.pu })
-                .then((payload) => {
-                    try {
-                        device.log('+++++++++++++++++++configurationGet', payload);
-                        const mode = payload['Configuration Value (Raw)'];
-                        if (Buffer.isBuffer(mode)) {
-                            const vNew = mode.readIntBE(payload.Level.Size - 1, 1);
-                            device.log('+++++++++++++++++++vNew', vNew);
-                            device.setStoreValue('regulator_percentage', vNew / 100);
-                        }
-                    } catch (error) {
-                        console.error('Error in configurationGet:', error);
+
+            device.configurationGet({index: this.pu})
+            .then((payload) => {
+                try {
+                    device.log('+++++++++++++++++++configurationGet', payload);
+                    const mode = payload['Configuration Value (Raw)'];
+                    if (Buffer.isBuffer(mode)) {
+                        const vNew = mode.readIntBE(payload.Level.Size - 1, 1);
+                        device.log('+++++++++++++++++++vNew', vNew);
+                        device.setStoreValue('regulator_percentage', vNew / 100);
                     }
-                })
-                .catch((error) => {
-                    console.error('Error in configurationGet promise:', error);
-                });
-    
+                } catch (error) {
+                    console.error('Error in configurationGet:', error);
+                }
+            })
+            .catch((error) => {
+                console.error('Error in configurationGet promise:', error);
+            });
+
             return this;
         } catch (error) {
             console.error('Error in startReport:', error);
@@ -55,30 +53,30 @@ module.exports = {
     },
     setConfig: function (device, payload) {
         this.log('++++++++++++++++++setConfig', payload)
-      
+
         setConfiguratrion(device, null, this.pu, 4, false, payload * 100)
-          .then(result => {
+        .then(result => {
             // Handle the result if needed
             console.log('Operation successful:', result);
-          })
-          .catch(error => {
+        })
+        .catch(error => {
             // Handle the rejection
             console.error('Error:', error);
-          });
-      },
+        });
+    },
 
-      update: async function (device, payload, config) {
+    update: async function (device, payload, config) {
         try {
-          if (!device.hasCapability('regulator_percentage')) return;
-      
-          let runModeCapValue = device.getCapabilityValue('regulator_percentage');
-          let v = (Math.round(config / 10) * 10).toFixed(0);
-          console.log('regulator_percentage REV:', runModeCapValue, config, v);
-          let vNew = parseInt(v, 10);
-          device.setStoreValue('regulator_percentage', vNew / 100);
-          device.setCapabilityValue('regulator_percentage', vNew / 100);
+            if (!device.hasCapability('regulator_percentage')) return;
+
+            let runModeCapValue = device.getCapabilityValue('regulator_percentage');
+            let v = (Math.round(config / 10) * 10).toFixed(0);
+            console.log('regulator_percentage REV:', runModeCapValue, config, v);
+            let vNew = parseInt(v, 10);
+            device.setStoreValue('regulator_percentage', vNew / 100);
+            device.setCapabilityValue('regulator_percentage', vNew / 100).catch(this.error);
         } catch (error) {
-          console.error('Error in update function:', error);
+            console.error('Error in update function:', error);
         }
-      }
+    }
 }  
