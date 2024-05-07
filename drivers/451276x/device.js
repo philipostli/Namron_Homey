@@ -6,7 +6,7 @@ const HzcOnOffCluster = require('../../lib/SrOnoffCluster')
 const appkit = require("./lib");
 Cluster.addCluster(HzcOnOffCluster)
 
-class s726_zg_smartplug_zb_Device extends HzcSwitch2GangZigBeeDevice {
+class s726_zg_smart_plug_zb_Device extends HzcSwitch2GangZigBeeDevice {
     async onNodeInit({zclNode}) {
 
         super.onNodeInit({zclNode})
@@ -73,7 +73,8 @@ class s726_zg_smartplug_zb_Device extends HzcSwitch2GangZigBeeDevice {
 
     onDeleted() {
         this.log("s726_zg_smartplug_zb_Device, channel ", " removed")
+        super.onDeleted()
     }
 }
 
-module.exports = s726_zg_smartplug_zb_Device;
+module.exports = s726_zg_smart_plug_zb_Device;

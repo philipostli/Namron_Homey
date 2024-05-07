@@ -11,12 +11,12 @@ class t7e_zg_Driver extends HzcZigBeeDriver {
         try {
             this._trunOnFrostCard = this.getActionCard('turned_on_frost')
             this._trunOnFrostCard.registerRunListener((args, state) => {
-                return args.device.turnFrostRunListener({frost: true}).catch(this.error)
+                return args.device.turnFrostRunListener({frost: true})
             })
 
             this._trunOffFrostCard = this.getActionCard('turned_off_frost')
             this._trunOffFrostCard.registerRunListener((args, state) => {
-                return args.device.turnFrostRunListener({frost: false}).catch(this.error)
+                return args.device.turnFrostRunListener({frost: false})
             })
 
             this._setRegulatorPercentage = this.getActionCard('set_regulator_percentage')
@@ -35,11 +35,9 @@ class t7e_zg_Driver extends HzcZigBeeDriver {
         } catch (e) {
 
         }
-
     }
 
     triggerMyFlow(device, value) {
-        this.log('frost +++++++++++++++', value)
         if (value) {
             this._trunOnFrostTrigger.trigger(device).then().catch(this.error);
         } else {

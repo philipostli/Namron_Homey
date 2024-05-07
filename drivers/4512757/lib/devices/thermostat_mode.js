@@ -1,9 +1,3 @@
-const {
-    returnCapabilityValue,
-    updateTempCapOptions,
-    setTargetTemperature
-} = require('./utils');
-
 module.exports = {
     device: null,
     node: null,
@@ -69,18 +63,18 @@ module.exports = {
                     console.log('d', '-------------监测到模式改变', modeInt);
 
                     if (modeInt === 0) {
-                        device.setCapabilityValue(device.thermostat_mode_name, 'off');
+                        device.setCapabilityValue(device.thermostat_mode_name, 'off').catch(this.error);
                         device.setSettings({system_mode: 'off'});
                     } else if (modeInt === 1) {
-                        device.setCapabilityValue(device.thermostat_mode_name, 'heat');
+                        device.setCapabilityValue(device.thermostat_mode_name, 'heat').catch(this.error);
                         device.setSettings({system_mode: 'heat'});
                     } else if (modeInt === 2) {
-                        device.setCapabilityValue(device.thermostat_mode_name, 'cool');
+                        device.setCapabilityValue(device.thermostat_mode_name, 'cool').catch(this.error);
                         device.setSettings({system_mode: 'cool'});
                     } else if (modeInt === 3) {
                         //device.setCapabilityValue(device.thermostat_mode_name,'auto');
                     } else if (modeInt === 4) {
-                        device.setCapabilityValue(device.thermostat_mode_name, 'eco');
+                        device.setCapabilityValue(device.thermostat_mode_name, 'eco').catch(this.error);
                     }
 
                     console.log('d', '....更新当前模式的状态到UI.end');

@@ -34,10 +34,10 @@ module.exports = {
       console.log(this.capability, config);
       
       if (config == 1){
-        device.setCapabilityValue(this.capability, true);
+        device.setCapabilityValue(this.capability, true).catch(this.error);
       }
       else {
-        device.setCapabilityValue(this.capability, false);
+        device.setCapabilityValue(this.capability, false).catch(this.error);
       } 
       return this; 
     }
