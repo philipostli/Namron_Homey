@@ -229,7 +229,7 @@ class t7e_zg_thermostat extends ZigBeeDevice {
 
         await this.setAvailable()
         await this.unsetWarning()
-
+        await this._getAttributes()
         this.setDatetime()
     }
 
