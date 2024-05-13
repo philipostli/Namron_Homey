@@ -33,9 +33,13 @@
   },
   "icon": "/drivers/1402790/assets/icon.svg",
   "zigbee": {
-    "manufacturerName": "NAMRON AS",
+    "manufacturerName": [
+      "NAMRON AS",
+      "Brun Holding"
+    ],
     "productId": [
-      "1402790"
+      "1402790",
+      "Power Control Unit"
     ],
     "endpoints": {
       "1": {
