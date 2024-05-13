@@ -133,17 +133,33 @@ class ZG9093ADevice extends ZigBeeDevice {
     // measure_power
     if (this.hasCapability('measure_power')) {
 
+      const {
+        acPowerMultiplier,
+        acPowerDivisor,
+      } = await this.zclNode.endpoints[this.getClusterEndpoint(
+        CLUSTER.ELECTRICAL_MEASUREMENT)].clusters[CLUSTER.ELECTRICAL_MEASUREMENT.NAME].readAttributes(
+        ['acPowerMultiplier', 'acPowerDivisor']).catch(this.error)
+      // this.log('acPowerMultiplier ' + acPowerMultiplier + ", acPowerDivisor " + acPowerDivisor)
+      let measureFactory = 0.1
+      if (typeof acPowerMultiplier === 'number' && typeof acPowerDivisor ===
+        'number' && acPowerMultiplier > 0 && acPowerDivisor > 0) {
+        measureFactory = acPowerMultiplier / acPowerDivisor
+      }
+      this.log(`measureFactory ${measureFactory}`)
       this.registerCapability('measure_power', CLUSTER.ELECTRICAL_MEASUREMENT, {
-        get: 'activePower', report: 'activePower', reportParser: value => {
-
-          return value / 10
-        }, getOpts: {
-          getOnStart: true, pollInterval: 60 * 60 * 1000, // unit ms, 5 minutes
-        }, reportOpts: {
+        get: 'activePower',
+        report: 'activePower',
+        reportParser: value => value * measureFactory,
+        getParser: value => value * measureFactory,
+        getOpts: {
+          getOnStart: true,
+          pollInterval: 60 * 60 * 1000,
+        },
+        reportOpts: {
           configureAttributeReporting: {
-            minInterval: 10, // Minimally once every 5 seconds
+            minInterval: 5, // Minimally once every 5 seconds
             maxInterval: 60000, // Maximally once every ~16 hours
-            minChange: 10,
+            minChange: 2 / measureFactory,
           },
         },
       })

@@ -412,38 +412,33 @@ class ZigBeeThermostat extends ZigBeeDevice {
 
     if (this.hasCapability('measure_power')) {
 
-      /*
       const {
         acPowerMultiplier,
         acPowerDivisor,
       } = await this.zclNode.endpoints[this.getClusterEndpoint(
         CLUSTER.ELECTRICAL_MEASUREMENT)].clusters[CLUSTER.ELECTRICAL_MEASUREMENT.NAME].readAttributes(
-        'acPowerMultiplier', 'acPowerDivisor')
+        ['acPowerMultiplier', 'acPowerDivisor']).catch(this.error)
       // this.log('acPowerMultiplier ' + acPowerMultiplier + ", acPowerDivisor " + acPowerDivisor)
       let measureFactory = 0.1
-      if (acPowerMultiplier > 0 && acPowerDivisor > 0) {
+      if (typeof acPowerMultiplier === 'number' && typeof acPowerDivisor ===
+        'number' && acPowerMultiplier > 0 && acPowerDivisor > 0) {
         measureFactory = acPowerMultiplier / acPowerDivisor
       }
-
-      this.log(`acpower `, measureFactory, acPowerMultiplier, acPowerDivisor)
-       */
-
+      this.log(`measureFactory ${measureFactory}`)
       this.registerCapability('measure_power', CLUSTER.ELECTRICAL_MEASUREMENT, {
         get: 'activePower',
         report: 'activePower',
-        reportParser: value => {
-          return value
-        },
+        reportParser: value => value * measureFactory,
+        getParser: value => value * measureFactory,
         getOpts: {
           getOnStart: true,
           pollInterval: 60 * 60 * 1000,
         },
         reportOpts: {
           configureAttributeReporting: {
-            // If the interval is 0, maybe the device reports too often.
             minInterval: 5, // Minimally once every 5 seconds
-            maxInterval: 3600, // Maximally once every ~16 hours
-            minChange: 1,
+            maxInterval: 60000, // Maximally once every ~16 hours
+            minChange: 2 / measureFactory,
           },
         },
       })
