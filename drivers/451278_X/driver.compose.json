@@ -1,0 +1,89 @@
+{
+  "id": "4512781",
+  "name": {
+    "en": "4512781/4512782"
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff",
+    "dim"
+  ],
+  "capabilitiesOptions": {
+    "dim": {
+      "opts": {
+        "duration": true
+      }
+    },
+    "onoff": {
+      "setOnDim": false
+    },
+    "capabilitiesOptions": {
+      "measure_power": {
+        "isApproximated": true
+      }
+    },
+    "measure_power": {
+      "approximated": true
+    }
+  },
+  "images": {
+    "small": "/drivers/dimmer_power/assets/images/small.png",
+    "large": "/drivers/dimmer_power/assets/images/large.png",
+    "xlarge": "/drivers/dimmer_power/assets/images/xlarge.png"
+  },
+  "zigbee": {
+    "manufacturerName": [
+      "HZC",
+      "Shyugj",
+      "Namron AS"
+    ],
+    "productId": [
+      "Meter-Dimmer-Switch-ZB3.0",
+      "D688-ZG",
+      "D692-ZG",
+      "4512781",
+      "4512782"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          1794,
+          2820,
+          11,
+          40960,
+          40961,
+          40962
+        ],
+        "bindings": [
+          0,
+          6,
+          8,
+          1794,
+          2820,
+          11,
+          40960,
+          40961,
+          40962
+        ]
+      }
+    },
+    "learnmode": {
+      "instruction": {
+        "en": "please refer to manual for how to activate pairing."
+      }
+    }
+  },
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": []
+}
