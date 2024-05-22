@@ -67,9 +67,9 @@
     },
     "class": "thermostat",
     "images": {
-        "small": "/drivers/t11_zg/assets/images/small.png",
-        "large": "/drivers/t11_zg/assets/images/large.png",
-        "xlarge": "/drivers/t11_zg/assets/images/xlarge.png"
+        "small": "/drivers/451278x/assets/images/small.png",
+        "large": "/drivers/451278x/assets/images/large.png",
+        "xlarge": "/drivers/451278x/assets/images/xlarge.png"
     },
     "capabilities": [
         "onoff",

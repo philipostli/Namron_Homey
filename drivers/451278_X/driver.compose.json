@@ -27,9 +27,9 @@
     }
   },
   "images": {
-    "small": "/drivers/dimmer_power/assets/images/small.png",
-    "large": "/drivers/dimmer_power/assets/images/large.png",
-    "xlarge": "/drivers/dimmer_power/assets/images/xlarge.png"
+    "small": "/drivers/451278_X/assets/images/small.png",
+    "large": "/drivers/451278_X/assets/images/large.png",
+    "xlarge": "/drivers/451278_X/assets/images/xlarge.png"
   },
   "zigbee": {
     "manufacturerName": [
