@@ -1,7 +1,7 @@
 {
   "id": "4512781",
   "name": {
-    "en": "4512781/4512782"
+    "en": "4512781/82 - Zigbee Dimmer"
   },
   "class": "light",
   "capabilities": [
@@ -77,7 +77,7 @@
     },
     "learnmode": {
       "instruction": {
-        "en": "please refer to manual for how to activate pairing."
+        "en": "To active pairing please long press the knob for 5s enter the setting menu find Inclusion and press the knob to start pairing."
       }
     }
   },

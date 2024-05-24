@@ -1,433 +1,433 @@
 [
-    {
-        "id": "thermostat_regulator_mode",
-        "label": {
-            "en": "Thermostat/Regulator mode"
-        },
-        "hint": {
-            "en": "Made to take effect. We need to go back the main interface and click this APP `thermostat` icon to launch application again."
-        },
-        "type": "dropdown",
-        "value": "0",
-        "values": [
-            {
-                "id": "0",
-                "label": {
-                    "en": "Thermostat Mode"
-                }
-            },
-            {
-                "id": "6",
-                "label": {
-                    "en": "Regulator Heating"
-                }
-            }
-        ]
+  {
+    "id": "thermostat_regulator_mode",
+    "label": {
+      "en": "Thermostat/Regulator mode"
     },
-    {
-        "id": "temperature_display_mode",
-        "type": "dropdown",
-        "value": "0",
-        "label": {
-            "en": "Temperature Display Mode"
-        },
-        "values": [
-            {
-                "id": "0",
-                "label": {
-                    "en": "degree centigrade"
-                }
-            },
-            {
-                "id": "1",
-                "label": {
-                    "en": "Fahrenheit degree"
-                }
-            }
-        ]
+    "hint": {
+      "en": "Made to take effect. We need to go back the main interface and click this APP `thermostat` icon to launch application again."
     },
-    {
-        "id": "sensor_mode",
-        "type": "dropdown",
-        "value": "a",
+    "type": "dropdown",
+    "value": "0",
+    "values": [
+      {
+        "id": "0",
         "label": {
-            "en": "Sensor mode "
-        },
-        "values": [
-            {
-                "id": "a",
-                "label": {
-                    "en": "A "
-                }
-            },
-            {
-                "id": "f",
-                "label": {
-                    "en": "F "
-                }
-            },
-            {
-                "id": "af",
-                "label": {
-                    "en": "AF "
-                }
-            },
-            {
-                "id": "a2",
-                "label": {
-                    "en": "A2 "
-                }
-            },
-            {
-                "id": "a2f",
-                "label": {
-                    "en": "A2F "
-                }
-            },
-            {
-                "id": "p",
-                "label": {
-                    "en": "P "
-                }
-            }
-        ]
-    },
-    {
-        "id": "systemMode",
-        "type": "dropdown",
-        "value": "heat",
+          "en": "Thermostat Mode"
+        }
+      },
+      {
+        "id": "6",
         "label": {
-            "en": "thermostat mode"
-        },
-        "values": [
-            {
-                "id": "heat",
-                "label": {
-                    "en": "heat"
-                }
-            },
-            {
-                "id": "cool",
-                "label": {
-                    "en": "cool"
-                }
-            }
-        ]
+          "en": "Regulator Heating"
+        }
+      }
+    ]
+  },
+  {
+    "id": "temperature_display_mode",
+    "type": "dropdown",
+    "value": "0",
+    "label": {
+      "en": "Temperature Display Mode"
     },
-    {
-        "id": "lcd_backlight_wait",
+    "values": [
+      {
+        "id": "0",
         "label": {
-            "en": "LCD backlight standby"
-        },
-        "type": "number",
-        "units": {
-            "en": "%"
-        },
-        "min": 1,
-        "max": 100,
-        "value": 10
+          "en": "degree centigrade"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Fahrenheit degree"
+        }
+      }
+    ]
+  },
+  {
+    "id": "sensor_mode",
+    "type": "dropdown",
+    "value": "a",
+    "label": {
+      "en": "Sensor mode "
     },
-    {
-        "id": "auto_time",
+    "values": [
+      {
+        "id": "a",
+        "label": {
+          "en": "Air sensor mode"
+        }
+      },
+      {
+        "id": "f",
+        "label": {
+          "en": "Floor sensor mode"
+        }
+      },
+      {
+        "id": "af",
+        "label": {
+          "en": "Air + Floor sensor mode"
+        }
+      },
+      {
+        "id": "a2",
+        "label": {
+          "en": "External sensor mode"
+        }
+      },
+      {
+        "id": "a2f",
+        "label": {
+          "en": "External + Floor sensor mode"
+        }
+      },
+      {
+        "id": "p",
+        "label": {
+          "en": "power regulator"
+        }
+      }
+    ]
+  },
+  {
+    "id": "systemMode",
+    "type": "dropdown",
+    "value": "heat",
+    "label": {
+      "en": "thermostat mode"
+    },
+    "values": [
+      {
+        "id": "heat",
+        "label": {
+          "en": "heat"
+        }
+      },
+      {
+        "id": "cool",
+        "label": {
+          "en": "cool"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lcd_backlight_wait",
+    "label": {
+      "en": "LCD backlight"
+    },
+    "type": "number",
+    "units": {
+      "en": "%"
+    },
+    "min": 1,
+    "max": 100,
+    "value": 10
+  },
+  {
+    "id": "auto_time",
+    "type": "dropdown",
+    "value": "false",
+    "label": {
+      "en": "Auto Time"
+    },
+    "values": [
+      {
+        "id": "false",
+        "label": {
+          "en": "OFF"
+        }
+      },
+      {
+        "id": "true",
+        "label": {
+          "en": "ON"
+        }
+      }
+    ]
+  },
+  {
+    "id": "countdown_set",
+    "type": "dropdown",
+    "value": "0",
+    "label": {
+      "en": "Countdown Set"
+    },
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Cancel"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "5min"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "10min"
+        }
+      },
+      {
+        "id": "3",
+        "label": {
+          "en": "15min"
+        }
+      },
+      {
+        "id": "4",
+        "label": {
+          "en": "20min"
+        }
+      },
+      {
+        "id": "5",
+        "label": {
+          "en": "25min"
+        }
+      },
+      {
+        "id": "6",
+        "label": {
+          "en": "30min"
+        }
+      },
+      {
+        "id": "7",
+        "label": {
+          "en": "35min"
+        }
+      },
+      {
+        "id": "8",
+        "label": {
+          "en": "40min"
+        }
+      },
+      {
+        "id": "9",
+        "label": {
+          "en": "45min"
+        }
+      },
+      {
+        "id": "10",
+        "label": {
+          "en": "50min"
+        }
+      },
+      {
+        "id": "11",
+        "label": {
+          "en": "55min"
+        }
+      },
+      {
+        "id": "12",
+        "label": {
+          "en": "60min"
+        }
+      },
+      {
+        "id": "13",
+        "label": {
+          "en": "65min"
+        }
+      },
+      {
+        "id": "14",
+        "label": {
+          "en": "70min"
+        }
+      },
+      {
+        "id": "15",
+        "label": {
+          "en": "75min"
+        }
+      },
+      {
+        "id": "16",
+        "label": {
+          "en": "80min"
+        }
+      },
+      {
+        "id": "17",
+        "label": {
+          "en": "85min"
+        }
+      },
+      {
+        "id": "18",
+        "label": {
+          "en": "90min"
+        }
+      },
+      {
+        "id": "19",
+        "label": {
+          "en": "95min"
+        }
+      },
+      {
+        "id": "20",
+        "label": {
+          "en": "100min"
+        }
+      },
+      {
+        "id": "21",
+        "label": {
+          "en": "105min"
+        }
+      },
+      {
+        "id": "22",
+        "label": {
+          "en": "110min"
+        }
+      },
+      {
+        "id": "23",
+        "label": {
+          "en": "115min"
+        }
+      },
+      {
+        "id": "24",
+        "label": {
+          "en": "120min"
+        }
+      }
+    ]
+  },
+  {
+    "id": "countdown_left",
+    "type": "label",
+    "label": {
+      "en": "Countdown Left"
+    },
+    "value": "0"
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Vacation"
+    },
+    "children": [
+      {
+        "id": "vacation_mode",
         "type": "dropdown",
         "value": "false",
         "label": {
-            "en": "Auto Time"
+          "en": "Vacation Mode"
         },
         "values": [
-            {
-                "id": "false",
-                "label": {
-                    "en": "OFF"
-                }
-            },
-            {
-                "id": "true",
-                "label": {
-                    "en": "ON"
-                }
+          {
+            "id": "false",
+            "label": {
+              "en": "OFF"
             }
+          },
+          {
+            "id": "true",
+            "label": {
+              "en": "ON"
+            }
+          }
         ]
-    },
-    {
-        "id": "countdown_set",
-        "type": "dropdown",
-        "value": "0",
+      },
+      {
+        "id": "vacation_start_date",
+        "type": "text",
+        "value": "1970-01-01",
         "label": {
-            "en": "Countdown Set"
+          "en": "Vacation Start Date"
         },
-        "values": [
-            {
-                "id": "0",
-                "label": {
-                    "en": "Cancel"
-                }
-            },
-            {
-                "id": "1",
-                "label": {
-                    "en": "5min"
-                }
-            },
-            {
-                "id": "2",
-                "label": {
-                    "en": "10min"
-                }
-            },
-            {
-                "id": "3",
-                "label": {
-                    "en": "15min"
-                }
-            },
-            {
-                "id": "4",
-                "label": {
-                    "en": "20min"
-                }
-            },
-            {
-                "id": "5",
-                "label": {
-                    "en": "25min"
-                }
-            },
-            {
-                "id": "6",
-                "label": {
-                    "en": "30min"
-                }
-            },
-            {
-                "id": "7",
-                "label": {
-                    "en": "35min"
-                }
-            },
-            {
-                "id": "8",
-                "label": {
-                    "en": "40min"
-                }
-            },
-            {
-                "id": "9",
-                "label": {
-                    "en": "45min"
-                }
-            },
-            {
-                "id": "10",
-                "label": {
-                    "en": "50min"
-                }
-            },
-            {
-                "id": "11",
-                "label": {
-                    "en": "55min"
-                }
-            },
-            {
-                "id": "12",
-                "label": {
-                    "en": "60min"
-                }
-            },
-            {
-                "id": "13",
-                "label": {
-                    "en": "65min"
-                }
-            },
-            {
-                "id": "14",
-                "label": {
-                    "en": "70min"
-                }
-            },
-            {
-                "id": "15",
-                "label": {
-                    "en": "75min"
-                }
-            },
-            {
-                "id": "16",
-                "label": {
-                    "en": "80min"
-                }
-            },
-            {
-                "id": "17",
-                "label": {
-                    "en": "85min"
-                }
-            },
-            {
-                "id": "18",
-                "label": {
-                    "en": "90min"
-                }
-            },
-            {
-                "id": "19",
-                "label": {
-                    "en": "95min"
-                }
-            },
-            {
-                "id": "20",
-                "label": {
-                    "en": "100min"
-                }
-            },
-            {
-                "id": "21",
-                "label": {
-                    "en": "105min"
-                }
-            },
-            {
-                "id": "22",
-                "label": {
-                    "en": "110min"
-                }
-            },
-            {
-                "id": "23",
-                "label": {
-                    "en": "115min"
-                }
-            },
-            {
-                "id": "24",
-                "label": {
-                    "en": "120min"
-                }
-            }
-        ]
+        "hint": {
+          "en": "format: Year-Month-Day. example: 1970-01-01"
+        }
+      },
+      {
+        "id": "vacation_end_date",
+        "type": "text",
+        "value": "1970-01-01",
+        "label": {
+          "en": "Vacation End Date"
+        },
+        "hint": {
+          "en": "format: Year-Month-Day. example: 1970-01-01"
+        }
+      },
+      {
+        "id": "holiday_temp_set",
+        "label": {
+          "en": "Holiday temperature setting"
+        },
+        "type": "number",
+        "units": {
+          "en": "°C"
+        },
+        "min": 5,
+        "max": 40,
+        "value": 20
+      },
+      {
+        "id": "holiday_temp_set_f",
+        "label": {
+          "en": "Holiday Fahrenheit setting"
+        },
+        "type": "number",
+        "value": 50,
+        "units": {
+          "en": "°F"
+        },
+        "min": 41,
+        "max": 104
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Window"
     },
-    {
-        "id": "countdown_left",
+    "children": [
+      {
+        "id": "window_check",
+        "label": {
+          "en": "Window check"
+        },
+        "type": "checkbox",
+        "value": false
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "App version"
+    },
+    "children": [
+      {
+        "id": "app_version",
         "type": "label",
         "label": {
-            "en": "Countdown Left"
+          "en": "App version"
         },
-        "value": "0"
-    },
-    {
-        "type": "group",
-        "label": {
-            "en": "Vacation"
-        },
-        "children": [
-            {
-                "id": "vacation_mode",
-                "type": "dropdown",
-                "value": "false",
-                "label": {
-                    "en": "Vacation Mode"
-                },
-                "values": [
-                    {
-                        "id": "false",
-                        "label": {
-                            "en": "OFF"
-                        }
-                    },
-                    {
-                        "id": "true",
-                        "label": {
-                            "en": "ON"
-                        }
-                    }
-                ]
-            },
-            {
-                "id": "vacation_start_date",
-                "type": "text",
-                "value": "1970-01-01",
-                "label": {
-                    "en": "Vacation Start Date"
-                },
-                "hint": {
-                    "en": "format: Year-Month-Day. example: 1970-01-01"
-                }
-            },
-            {
-                "id": "vacation_end_date",
-                "type": "text",
-                "value": "1970-01-01",
-                "label": {
-                    "en": "Vacation End Date"
-                },
-                "hint": {
-                    "en": "format: Year-Month-Day. example: 1970-01-01"
-                }
-            },
-            {
-                "id": "holiday_temp_set",
-                "label": {
-                    "en": "Holiday temperature setting"
-                },
-                "type": "number",
-                "units": {
-                    "en": "°C"
-                },
-                "min": 5,
-                "max": 40,
-                "value": 20
-            },
-            {
-                "id": "holiday_temp_set_f",
-                "label": {
-                    "en": "Holiday Fahrenheit setting"
-                },
-                "type": "number",
-                "value": 50,
-                "units": {
-                    "en": "°F"
-                },
-                "min": 41,
-                "max": 104
-            }
-        ]
-    },
-    {
-        "type": "group",
-        "label": {
-            "en": "Window"
-        },
-        "children": [
-            {
-                "id": "window_check",
-                "label": {
-                    "en": "Window check"
-                },
-                "type": "checkbox",
-                "value": false
-            }
-        ]
-    },
-    {
-        "type": "group",
-        "label": {
-            "en": "App version"
-        },
-        "children": [
-            {
-                "id": "app_version",
-                "type": "label",
-                "label": {
-                    "en": "App version"
-                },
-                "value": "v1.0.2303.2",
-                "hint": {
-                    "en": "The App version of the device."
-                }
-            }
-        ]
-    }
+        "value": "v1.0.2303.2",
+        "hint": {
+          "en": "The App version of the device."
+        }
+      }
+    ]
+  }
 ]

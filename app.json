@@ -18501,7 +18501,7 @@
     {
       "id": "451278_X",
       "name": {
-        "en": "4512781/4512782"
+        "en": "4512781/82 Zigbee Dimmer"
       },
       "class": "light",
       "capabilities": [
@@ -18527,9 +18527,9 @@
         }
       },
       "images": {
-        "small": "/drivers/dimmer_power/assets/images/small.png",
-        "large": "/drivers/dimmer_power/assets/images/large.png",
-        "xlarge": "/drivers/dimmer_power/assets/images/xlarge.png"
+        "small": "/drivers/451278_X/assets/images/small.png",
+        "large": "/drivers/451278_X/assets/images/large.png",
+        "xlarge": "/drivers/451278_X/assets/images/xlarge.png"
       },
       "zigbee": {
         "manufacturerName": [
@@ -18577,7 +18577,7 @@
         },
         "learnmode": {
           "instruction": {
-            "en": "please refer to manual for how to activate pairing."
+            "en": "To active pairing please long press the knob for 5s enter the setting menu find Inclusion and press the knob to start pairing."
           }
         }
       },
@@ -18618,7 +18618,7 @@
         {
           "id": "screenConstantTime",
           "label": {
-            "en": "Screen Constant Time"
+            "en": "Screen on time"
           },
           "type": "dropdown",
           "value": "0",
@@ -18652,7 +18652,7 @@
         {
           "id": "backlight",
           "label": {
-            "en": "Backlight"
+            "en": "LCD Backlight"
           },
           "type": "number",
           "value": 50,
@@ -18668,7 +18668,7 @@
     {
       "id": "451278x",
       "name": {
-        "en": "4512783/4512784"
+        "en": "4512783/84 - Zigbee Thermostat"
       },
       "zigbee": {
         "manufacturerName": [
@@ -18728,15 +18728,15 @@
         },
         "learnmode": {
           "instruction": {
-            "en": "The thermostat enters the distribution network state through lnclued in Zigbee Setup"
+            "en": "To active pairing please long press the knob for 5s enter the setting menu find Zigbee setup and press the knob to start pairing."
           }
         }
       },
       "class": "thermostat",
       "images": {
-        "small": "/drivers/t11_zg/assets/images/small.png",
-        "large": "/drivers/t11_zg/assets/images/large.png",
-        "xlarge": "/drivers/t11_zg/assets/images/xlarge.png"
+        "small": "/drivers/451278x/assets/images/small.png",
+        "large": "/drivers/451278x/assets/images/large.png",
+        "xlarge": "/drivers/451278x/assets/images/xlarge.png"
       },
       "capabilities": [
         "onoff",
@@ -18850,37 +18850,37 @@
             {
               "id": "a",
               "label": {
-                "en": "A "
+                "en": "Air sensor mode"
               }
             },
             {
               "id": "f",
               "label": {
-                "en": "F "
+                "en": "Floor sensor mode"
               }
             },
             {
               "id": "af",
               "label": {
-                "en": "AF "
+                "en": "Air + Floor sensor mode"
               }
             },
             {
               "id": "a2",
               "label": {
-                "en": "A2 "
+                "en": "External sensor mode"
               }
             },
             {
               "id": "a2f",
               "label": {
-                "en": "A2F "
+                "en": "External + Floor sensor mode"
               }
             },
             {
               "id": "p",
               "label": {
-                "en": "P "
+                "en": "power regulator"
               }
             }
           ]
@@ -18910,7 +18910,7 @@
         {
           "id": "lcd_backlight_wait",
           "label": {
-            "en": "LCD backlight standby"
+            "en": "LCD backlight"
           },
           "type": "number",
           "units": {

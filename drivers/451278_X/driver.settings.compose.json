@@ -30,7 +30,7 @@
   {
     "id": "screenConstantTime",
     "label": {
-      "en": "Screen Constant Time"
+      "en": "Screen on time"
     },
     "type": "dropdown",
     "value": "0",
@@ -64,7 +64,7 @@
   {
     "id": "backlight",
     "label": {
-      "en": "Backlight"
+      "en": "LCD Backlight"
     },
     "type": "number",
     "value": 50,
