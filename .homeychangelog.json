@@ -340,5 +340,8 @@
   },
   "2.2.97": {
     "en": "Bug fixes"
+  },
+  "2.2.98": {
+    "en": "Added support for new dimmer devices 4512781 & 4512782. Added support for now thermostat devices 4512783 & 4512784."
   }
 }
