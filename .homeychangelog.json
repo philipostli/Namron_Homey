@@ -346,5 +346,8 @@
   },
   "2.2.99": {
     "en": "Added support for new dimmer devices 4512781 & 4512782. Added support for new thermostat devices 4512783 & 4512784."
+  },
+  "2.2.100": {
+    "en": "Bug fixes on 4512706 - flows now works again"
   }
 }
