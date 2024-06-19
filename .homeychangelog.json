@@ -352,5 +352,8 @@
   },
   "2.2.101": {
     "en": "Bug fixes"
+  },
+  "2.2.102": {
+    "en": "Bug fixes on flow cards 4512772/73"
   }
 }
