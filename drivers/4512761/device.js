@@ -8,18 +8,21 @@ class MyLight extends ZigBeeDevice {
   async onNodeInit ({ zclNode, node }) {
     super.onNodeInit({ zclNode, node })
 
+    this.registerCapability('onoff', CLUSTER.ON_OFF)
+
     const {
       divisor,
     } = await this.zclNode.endpoints[this.getClusterEndpoint(
       CLUSTER.METERING)].clusters[CLUSTER.METERING.NAME].readAttributes(
-      ['multiplier', 'divisor'])
+      ['multiplier', 'divisor']).catch((error) => {
+      this.log(error)
+      return { divisor: 3600000 }
+    })
     this.log('divisor ' + divisor)
     let safeDivisor = divisor
     if (typeof divisor !== 'number' || divisor <= 0) {
       safeDivisor = 3600000
     }
-
-    this.registerCapability('onoff', CLUSTER.ON_OFF)
     this.registerCapability('meter_power', CLUSTER.METERING, {
       get: 'currentSummationDelivered',
       report: 'currentSummationDelivered',
@@ -31,7 +34,10 @@ class MyLight extends ZigBeeDevice {
       acPowerDivisor,
     } = await this.zclNode.endpoints[this.getClusterEndpoint(
       CLUSTER.ELECTRICAL_MEASUREMENT)].clusters[CLUSTER.ELECTRICAL_MEASUREMENT.NAME].readAttributes(
-      ['acPowerMultiplier', 'acPowerDivisor']).catch(this.error)
+      ['acPowerMultiplier', 'acPowerDivisor']).catch((error) => {
+      this.log(error)
+      return { acPowerMultiplier: null, acPowerDivisor: null }
+    })
     // this.log('acPowerMultiplier ' + acPowerMultiplier + ", acPowerDivisor " + acPowerDivisor)
     let measureFactory = 0.1
     if (typeof acPowerMultiplier === 'number' && typeof acPowerDivisor ===
