@@ -30,7 +30,9 @@ class RemoteControl extends ZigBeeRemoteControl {
       this.zclNode.endpoints[endpoint].bind(CLUSTER.LEVEL_CONTROL.NAME,
         new LevelControlBoundCluster({
           onStopWithOnOff: this._onLevelStopWithOnOff.bind(this),
+          onStop: this._onLevelStopWithOnOff.bind(this),
           onMoveWithOnOff: this._onLevelMoveWithOnOff.bind(this),
+          onMove: this._onLevelMoveWithOnOff.bind(this),
           endpoint: endpoint,
         }))
 
@@ -41,6 +43,12 @@ class RemoteControl extends ZigBeeRemoteControl {
   }
 
   _onOffCommandHandler (type, endpoint) {
+    const triggerId = '_onOffCommandHandler'
+    if (this.isRepeat(triggerId)) {
+      this.log(`is repeat ${triggerId}`)
+      return
+    }
+    this.setupRepeatTimer(triggerId)
 
     this.log(
       `_onOffCommandHandler => ${type}, ${endpoint}`)
@@ -51,16 +59,24 @@ class RemoteControl extends ZigBeeRemoteControl {
     if (type === '4512772_off') {
 
       this.homey.app.offButtonModeG4TriggerCard.
-        trigger(this, tokens, { 'group': endpoint, 'mode': 'pressed' }).catch(this.error)
+        trigger(this, tokens, { 'group': endpoint, 'mode': 'pressed' }).
+        catch(this.error)
 
     } else if (type === '4512772_on') {
 
       this.homey.app.onButtonModeG4TriggerCard.
-        trigger(this, tokens, { 'group': endpoint, 'mode': 'pressed' }).catch(this.error)
+        trigger(this, tokens, { 'group': endpoint, 'mode': 'pressed' }).
+        catch(this.error)
     }
   }
 
   _onLevelMoveWithOnOff ({ moveMode, rate }, endpoint) {
+    const triggerId = '_onLevelMoveWithOnOff'
+    if (this.isRepeat(triggerId)) {
+      this.log(`is repeat ${triggerId}`)
+      return
+    }
+    this.setupRepeatTimer(triggerId)
 
     this.log(
       `_onLevelMoveWithOnOff ${moveMode} ${rate}, ${endpoint}`)
@@ -75,17 +91,25 @@ class RemoteControl extends ZigBeeRemoteControl {
 
       this.isOn = true
       this.homey.app.onButtonModeG4TriggerCard.
-        trigger(this, tokens, { 'group': endpoint, 'mode': 'held_down' }).catch(this.error)
+        trigger(this, tokens, { 'group': endpoint, 'mode': 'held_down' }).
+        catch(this.error)
 
     } else if (moveMode === 'down') {
 
       this.isOn = false
       this.homey.app.offButtonModeG4TriggerCard.
-        trigger(this, tokens, { 'group': endpoint, 'mode': 'held_down' }).catch(this.error)
+        trigger(this, tokens, { 'group': endpoint, 'mode': 'held_down' }).
+        catch(this.error)
     }
   }
 
   _onLevelStopWithOnOff (endpoint) {
+    const triggerId = '_onLevelStopWithOnOff'
+    if (this.isRepeat(triggerId)) {
+      this.log(`is repeat ${triggerId}`)
+      return
+    }
+    this.setupRepeatTimer(triggerId)
 
     this.log(
       `_onLevelStopWithOnOff, ${endpoint}`)
@@ -96,12 +120,14 @@ class RemoteControl extends ZigBeeRemoteControl {
     if (this.isOn) {
 
       this.homey.app.onButtonModeG4TriggerCard.
-        trigger(this, tokens, { 'group': endpoint, 'mode': 'released' }).catch(this.error)
+        trigger(this, tokens, { 'group': endpoint, 'mode': 'released' }).
+        catch(this.error)
 
     } else {
 
       this.homey.app.offButtonModeG4TriggerCard.
-        trigger(this, tokens, { 'group': endpoint, 'mode': 'released' }).catch(this.error)
+        trigger(this, tokens, { 'group': endpoint, 'mode': 'released' }).
+        catch(this.error)
     }
   }
 

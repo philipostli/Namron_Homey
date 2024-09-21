@@ -13,7 +13,7 @@ module.exports = {
    
     //device.log('----------init t7e_zg_sensor_mode ...')
 
-    device.setCapabilityValue('t7e_zg_sensor_mode', device.getStoreValue('sensor_mode') || 'a')
+    device.setCapabilityValue('t7e_zg_sensor_mode', device.getStoreValue('sensor_mode') || 'a').catch(device.error)
     
     device.registerCapability('t7e_zg_sensor_mode', CLUSTER.THERMOSTAT, {
       get: 'sensorMode', report: 'sensorMode', reportParser: value => {
@@ -73,7 +73,7 @@ module.exports = {
     let mode1 = device.getCapabilityValue('t7e_zg_sensor_mode'); 
 
     if (device.hasCapability('t7e_zg_sensor_mode')) {
-      device.setCapabilityValue('t7e_zg_sensor_mode', payload)
+      device.setCapabilityValue('t7e_zg_sensor_mode', payload).catch(this.error)
     } 
     
     if (mode1 !== payload && (mode1 === 'p' || payload === 'p')){ 

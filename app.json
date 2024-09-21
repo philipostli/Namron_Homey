@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "net.filllip-namron",
-  "version": "2.2.93",
+  "version": "2.2.102",
   "compatibility": ">=7.4.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
@@ -5346,6 +5346,45 @@
                 }
               }
             ]
+          }
+        ]
+      },
+      {
+        "id": "t11_trigger_frost_turned_on",
+        "title": {
+          "en": "It 4512783/4512784 frost turned ON "
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=451278x"
+          }
+        ]
+      },
+      {
+        "id": "t11_trigger_frost_turned_off",
+        "title": {
+          "en": "It 4512783/4512784 frost turned OFF"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=451278x"
+          }
+        ]
+      },
+      {
+        "id": "t11_trigger_regulator_percentage",
+        "title": {
+          "en": "It 4512783/4512784 regulator_percentage turned ON"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=451278x"
           }
         ]
       },
@@ -11390,6 +11429,58 @@
         ]
       },
       {
+        "id": "t11_turned_on_frost",
+        "title": {
+          "en": "Turned on 4512783/4512784 frost"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=451278x"
+          }
+        ]
+      },
+      {
+        "id": "t11_turned_off_frost",
+        "title": {
+          "en": "Turned off 4512783/4512784 frost"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=451278x"
+          }
+        ]
+      },
+      {
+        "id": "t11_set_regulator_percentage",
+        "title": {
+          "en": "Set 4512783/4512784 regulator percentage"
+        },
+        "titleFormatted": {
+          "en": "Set 4512783/4512784 regulator [[number]]%"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=451278x"
+          },
+          {
+            "name": "number",
+            "type": "number",
+            "min": 1,
+            "max": 100,
+            "step": 1,
+            "title": {
+              "en": "percentage"
+            }
+          }
+        ]
+      },
+      {
         "id": "89665_level_step_with_onoff",
         "title": {
           "en": "Step level"
@@ -12368,9 +12459,13 @@
       },
       "icon": "/drivers/1402790/assets/icon.svg",
       "zigbee": {
-        "manufacturerName": "NAMRON AS",
+        "manufacturerName": [
+          "NAMRON AS",
+          "Brun Holding"
+        ],
         "productId": [
-          "1402790"
+          "1402790",
+          "Power Control Unit"
         ],
         "endpoints": {
           "1": {
@@ -12481,6 +12576,7 @@
               5,
               6,
               8,
+              768,
               2821,
               4096
             ],
@@ -13680,36 +13776,64 @@
               0,
               1,
               3,
-              2821
+              2821,
+              6,
+              8,
+              768
             ],
-            "bindings": []
+            "bindings": [
+              6,
+              8,
+              768
+            ]
           },
           "2": {
             "clusters": [
               0,
               1,
               3,
-              2821
+              2821,
+              6,
+              8,
+              768
             ],
-            "bindings": []
+            "bindings": [
+              6,
+              8,
+              768
+            ]
           },
           "3": {
             "clusters": [
               0,
               1,
               3,
-              2821
+              2821,
+              6,
+              8,
+              768
             ],
-            "bindings": []
+            "bindings": [
+              6,
+              8,
+              768
+            ]
           },
           "4": {
             "clusters": [
               0,
               1,
               3,
-              2821
+              2821,
+              6,
+              8,
+              768
             ],
-            "bindings": []
+            "bindings": [
+              6,
+              8,
+              768
+            ]
           }
         },
         "learnmode": {
@@ -16627,6 +16751,8 @@
         ],
         "productId": [
           "T7E-ZG",
+          "T5-ZG",
+          "T5_ZG",
           "4512758",
           "4512759"
         ],
@@ -17185,6 +17311,7 @@
           "Namron AS",
           "Namron As",
           "namron as",
+          "NamronAS",
           "Shyugj",
           "_TZ3000_pmdekgjg"
         ],
@@ -18000,6 +18127,40 @@
       ],
       "settings": [
         {
+          "id": "start_up_on_off",
+          "type": "dropdown",
+          "value": "off",
+          "label": {
+            "en": "start up on off"
+          },
+          "values": [
+            {
+              "id": "off",
+              "label": {
+                "en": "off"
+              }
+            },
+            {
+              "id": "on",
+              "label": {
+                "en": "on"
+              }
+            },
+            {
+              "id": "toggle",
+              "label": {
+                "en": "toggle"
+              }
+            },
+            {
+              "id": "previous value",
+              "label": {
+                "en": "previous value"
+              }
+            }
+          ]
+        },
+        {
           "id": "app_version",
           "type": "label",
           "label": {
@@ -18242,36 +18403,56 @@
               0,
               1,
               3,
-              2821
+              2821,
+              6,
+              8
             ],
-            "bindings": []
+            "bindings": [
+              6,
+              8
+            ]
           },
           "2": {
             "clusters": [
               0,
               1,
               3,
-              2821
+              2821,
+              6,
+              8
             ],
-            "bindings": []
+            "bindings": [
+              6,
+              8
+            ]
           },
           "3": {
             "clusters": [
               0,
               1,
               3,
-              2821
+              2821,
+              6,
+              8
             ],
-            "bindings": []
+            "bindings": [
+              6,
+              8
+            ]
           },
           "4": {
             "clusters": [
               0,
               1,
               3,
-              2821
+              2821,
+              6,
+              8
             ],
-            "bindings": []
+            "bindings": [
+              6,
+              8
+            ]
           }
         },
         "learnmode": {
@@ -18365,6 +18546,733 @@
           }
         }
       }
+    },
+    {
+      "id": "451278_X",
+      "name": {
+        "en": "4512781/82 - Zigbee Dimmer"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        },
+        "capabilitiesOptions": {
+          "measure_power": {
+            "isApproximated": true
+          }
+        },
+        "measure_power": {
+          "approximated": true
+        }
+      },
+      "images": {
+        "small": "/drivers/451278_X/assets/images/small.png",
+        "large": "/drivers/451278_X/assets/images/large.png",
+        "xlarge": "/drivers/451278_X/assets/images/xlarge.png"
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "HZC",
+          "Shyugj",
+          "Namron AS"
+        ],
+        "productId": [
+          "Meter-Dimmer-Switch-ZB3.0",
+          "D688-ZG",
+          "D692-ZG",
+          "4512781",
+          "4512782"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              1794,
+              2820,
+              11,
+              40960,
+              40961,
+              40962
+            ],
+            "bindings": [
+              0,
+              6,
+              8,
+              1794,
+              2820,
+              11,
+              40960,
+              40961,
+              40962
+            ]
+          }
+        },
+        "learnmode": {
+          "instruction": {
+            "en": "To active pairing please long press the knob for 5s enter the setting menu find Inclusion and press the knob to start pairing."
+          }
+        }
+      },
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [],
+      "settings": [
+        {
+          "id": "initialBrightness",
+          "label": {
+            "en": "Initial Brightness"
+          },
+          "type": "number",
+          "value": 0,
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "units": {
+            "en": "%"
+          }
+        },
+        {
+          "id": "minimumBrightness",
+          "label": {
+            "en": "Minimum Brightness"
+          },
+          "type": "number",
+          "value": 1,
+          "min": 1,
+          "max": 50,
+          "step": 1,
+          "units": {
+            "en": "%"
+          }
+        },
+        {
+          "id": "screenConstantTime",
+          "label": {
+            "en": "Screen on time"
+          },
+          "type": "dropdown",
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "constant"
+              }
+            },
+            {
+              "id": "10",
+              "label": {
+                "en": "10s"
+              }
+            },
+            {
+              "id": "30",
+              "label": {
+                "en": "30s"
+              }
+            },
+            {
+              "id": "60",
+              "label": {
+                "en": "60s"
+              }
+            }
+          ]
+        },
+        {
+          "id": "backlight",
+          "label": {
+            "en": "LCD Backlight"
+          },
+          "type": "number",
+          "value": 50,
+          "min": 1,
+          "max": 100,
+          "step": 1,
+          "units": {
+            "en": "%"
+          }
+        }
+      ]
+    },
+    {
+      "id": "451278x",
+      "name": {
+        "en": "4512783/84 - Zigbee Thermostat"
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "Shyugj",
+          "HZC",
+          "Namron",
+          "Namron AS"
+        ],
+        "productId": [
+          "T11_ZG",
+          "4512783",
+          "4512784"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              10,
+              28,
+              30,
+              25,
+              513,
+              516,
+              2820,
+              1794,
+              32772,
+              32774,
+              32797
+            ],
+            "bindings": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              10,
+              28,
+              30,
+              1794,
+              2820,
+              32772,
+              32774,
+              32775,
+              513,
+              516,
+              32797
+            ]
+          }
+        },
+        "learnmode": {
+          "instruction": {
+            "en": "To active pairing please long press the knob for 5s enter the setting menu find Zigbee setup and press the knob to start pairing."
+          }
+        }
+      },
+      "class": "thermostat",
+      "images": {
+        "small": "/drivers/451278x/assets/images/small.png",
+        "large": "/drivers/451278x/assets/images/large.png",
+        "xlarge": "/drivers/451278x/assets/images/xlarge.png"
+      },
+      "capabilities": [
+        "onoff",
+        "measure_power",
+        "meter_power",
+        "t7e_zg_window_state",
+        "child_lock",
+        "target_temperature",
+        "measure_temperature",
+        "eco_mode",
+        "frost",
+        "t11_zg_regulator_percentage"
+      ],
+      "energy": {
+        "approximation": {
+          "usageOn": 5,
+          "usageOff": 1
+        }
+      },
+      "capabilitiesOptions": {
+        "target_temperature": {
+          "min": 5,
+          "max": 40,
+          "step": 0.5
+        },
+        "button.calibrate": {
+          "maintenanceAction": false,
+          "title": {
+            "en": "Start calibration"
+          },
+          "desc": {
+            "en": "Start the sensor calibration process."
+          }
+        },
+        "button.reset_meter": {
+          "maintenanceAction": false,
+          "title": {
+            "en": "Reset power meter"
+          },
+          "desc": {
+            "en": "Reset the accumulated power usage (kWh), this can not be restored."
+          }
+        },
+        "measure_power": {
+          "approximated": true
+        }
+      },
+      "connectivity": [
+        "zigbee"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "settings": [
+        {
+          "id": "thermostat_regulator_mode",
+          "label": {
+            "en": "Thermostat/Regulator mode"
+          },
+          "hint": {
+            "en": "Made to take effect. We need to go back the main interface and click this APP `thermostat` icon to launch application again."
+          },
+          "type": "dropdown",
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Thermostat Mode"
+              }
+            },
+            {
+              "id": "6",
+              "label": {
+                "en": "Regulator Heating"
+              }
+            }
+          ]
+        },
+        {
+          "id": "temperature_display_mode",
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "Temperature Display Mode"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "degree centigrade"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Fahrenheit degree"
+              }
+            }
+          ]
+        },
+        {
+          "id": "sensor_mode",
+          "type": "dropdown",
+          "value": "a",
+          "label": {
+            "en": "Sensor mode "
+          },
+          "values": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Air sensor mode"
+              }
+            },
+            {
+              "id": "f",
+              "label": {
+                "en": "Floor sensor mode"
+              }
+            },
+            {
+              "id": "af",
+              "label": {
+                "en": "Air + Floor sensor mode"
+              }
+            },
+            {
+              "id": "a2",
+              "label": {
+                "en": "External sensor mode"
+              }
+            },
+            {
+              "id": "a2f",
+              "label": {
+                "en": "External + Floor sensor mode"
+              }
+            },
+            {
+              "id": "p",
+              "label": {
+                "en": "power regulator"
+              }
+            }
+          ]
+        },
+        {
+          "id": "systemMode",
+          "type": "dropdown",
+          "value": "heat",
+          "label": {
+            "en": "thermostat mode"
+          },
+          "values": [
+            {
+              "id": "heat",
+              "label": {
+                "en": "heat"
+              }
+            },
+            {
+              "id": "cool",
+              "label": {
+                "en": "cool"
+              }
+            }
+          ]
+        },
+        {
+          "id": "lcd_backlight_wait",
+          "label": {
+            "en": "LCD backlight"
+          },
+          "type": "number",
+          "units": {
+            "en": "%"
+          },
+          "min": 1,
+          "max": 100,
+          "value": 10
+        },
+        {
+          "id": "auto_time",
+          "type": "dropdown",
+          "value": "false",
+          "label": {
+            "en": "Auto Time"
+          },
+          "values": [
+            {
+              "id": "false",
+              "label": {
+                "en": "OFF"
+              }
+            },
+            {
+              "id": "true",
+              "label": {
+                "en": "ON"
+              }
+            }
+          ]
+        },
+        {
+          "id": "countdown_set",
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "Countdown Set"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Cancel"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "5min"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "10min"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "15min"
+              }
+            },
+            {
+              "id": "4",
+              "label": {
+                "en": "20min"
+              }
+            },
+            {
+              "id": "5",
+              "label": {
+                "en": "25min"
+              }
+            },
+            {
+              "id": "6",
+              "label": {
+                "en": "30min"
+              }
+            },
+            {
+              "id": "7",
+              "label": {
+                "en": "35min"
+              }
+            },
+            {
+              "id": "8",
+              "label": {
+                "en": "40min"
+              }
+            },
+            {
+              "id": "9",
+              "label": {
+                "en": "45min"
+              }
+            },
+            {
+              "id": "10",
+              "label": {
+                "en": "50min"
+              }
+            },
+            {
+              "id": "11",
+              "label": {
+                "en": "55min"
+              }
+            },
+            {
+              "id": "12",
+              "label": {
+                "en": "60min"
+              }
+            },
+            {
+              "id": "13",
+              "label": {
+                "en": "65min"
+              }
+            },
+            {
+              "id": "14",
+              "label": {
+                "en": "70min"
+              }
+            },
+            {
+              "id": "15",
+              "label": {
+                "en": "75min"
+              }
+            },
+            {
+              "id": "16",
+              "label": {
+                "en": "80min"
+              }
+            },
+            {
+              "id": "17",
+              "label": {
+                "en": "85min"
+              }
+            },
+            {
+              "id": "18",
+              "label": {
+                "en": "90min"
+              }
+            },
+            {
+              "id": "19",
+              "label": {
+                "en": "95min"
+              }
+            },
+            {
+              "id": "20",
+              "label": {
+                "en": "100min"
+              }
+            },
+            {
+              "id": "21",
+              "label": {
+                "en": "105min"
+              }
+            },
+            {
+              "id": "22",
+              "label": {
+                "en": "110min"
+              }
+            },
+            {
+              "id": "23",
+              "label": {
+                "en": "115min"
+              }
+            },
+            {
+              "id": "24",
+              "label": {
+                "en": "120min"
+              }
+            }
+          ]
+        },
+        {
+          "id": "countdown_left",
+          "type": "label",
+          "label": {
+            "en": "Countdown Left"
+          },
+          "value": "0"
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Vacation"
+          },
+          "children": [
+            {
+              "id": "vacation_mode",
+              "type": "dropdown",
+              "value": "false",
+              "label": {
+                "en": "Vacation Mode"
+              },
+              "values": [
+                {
+                  "id": "false",
+                  "label": {
+                    "en": "OFF"
+                  }
+                },
+                {
+                  "id": "true",
+                  "label": {
+                    "en": "ON"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "vacation_start_date",
+              "type": "text",
+              "value": "1970-01-01",
+              "label": {
+                "en": "Vacation Start Date"
+              },
+              "hint": {
+                "en": "format: Year-Month-Day. example: 1970-01-01"
+              }
+            },
+            {
+              "id": "vacation_end_date",
+              "type": "text",
+              "value": "1970-01-01",
+              "label": {
+                "en": "Vacation End Date"
+              },
+              "hint": {
+                "en": "format: Year-Month-Day. example: 1970-01-01"
+              }
+            },
+            {
+              "id": "holiday_temp_set",
+              "label": {
+                "en": "Holiday temperature setting"
+              },
+              "type": "number",
+              "units": {
+                "en": "°C"
+              },
+              "min": 5,
+              "max": 40,
+              "value": 20
+            },
+            {
+              "id": "holiday_temp_set_f",
+              "label": {
+                "en": "Holiday Fahrenheit setting"
+              },
+              "type": "number",
+              "value": 50,
+              "units": {
+                "en": "°F"
+              },
+              "min": 41,
+              "max": 104
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Window"
+          },
+          "children": [
+            {
+              "id": "window_check",
+              "label": {
+                "en": "Window check"
+              },
+              "type": "checkbox",
+              "value": false
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "App version"
+          },
+          "children": [
+            {
+              "id": "app_version",
+              "type": "label",
+              "label": {
+                "en": "App version"
+              },
+              "value": "v1.0.2303.2",
+              "hint": {
+                "en": "The App version of the device."
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "name": {
@@ -22740,6 +23648,93 @@
           }
         }
       ]
+    },
+    "t11_zg_fault": {
+      "type": "enum",
+      "title": {
+        "en": "Fault"
+      },
+      "desc": {
+        "en": "Fault"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/info.svg",
+      "values": [
+        {
+          "id": "0",
+          "title": {
+            "en": " - "
+          }
+        },
+        {
+          "id": "er0",
+          "title": {
+            "en": "power faults"
+          }
+        },
+        {
+          "id": "er1",
+          "title": {
+            "en": "other faults"
+          }
+        },
+        {
+          "id": "er2",
+          "title": {
+            "en": "module fault"
+          }
+        },
+        {
+          "id": "er3",
+          "title": {
+            "en": "internal sensor fault"
+          }
+        },
+        {
+          "id": "er4",
+          "title": {
+            "en": "floor sensor fault"
+          }
+        },
+        {
+          "id": "er5",
+          "title": {
+            "en": "external sensor fault"
+          }
+        },
+        {
+          "id": "er6",
+          "title": {
+            "en": "over heating"
+          }
+        },
+        {
+          "id": "er7",
+          "title": {
+            "en": "over load"
+          }
+        }
+      ]
+    },
+    "t11_zg_regulator_percentage": {
+      "type": "number",
+      "title": {
+        "en": "Regulator %"
+      },
+      "chartType": "stepLine",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "value": 0.2,
+      "units": {
+        "en": "%"
+      },
+      "getable": true,
+      "setable": true,
+      "uiQuickAction": false,
+      "uiComponent": "slider"
     },
     "t7e_zg_datetime": {
       "title": {

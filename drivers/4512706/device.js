@@ -23,6 +23,11 @@ class RemoteControl extends ZigBeeRemoteControl {
   async onNodeInit ({ zclNode, node }) {
     await super.onNodeInit({ zclNode, node })
 
+    // <triggerId, timer>
+    this.triggerRepeatTimers = {}
+    // <triggerId, true or false>
+    this.triggerRepeats = {}
+
     // Flows
 
     Object.keys(this.zclNode.endpoints).forEach((endpoint) => {
@@ -37,8 +42,11 @@ class RemoteControl extends ZigBeeRemoteControl {
       this.zclNode.endpoints[endpoint].bind(CLUSTER.LEVEL_CONTROL.NAME,
         new LevelControlBoundCluster({
           onStepWithOnOff: this._onLevelStepWithOnOff.bind(this),
+          onStep: this._onLevelStepWithOnOff.bind(this),
           onStopWithOnOff: this._onLevelStopWithOnOff.bind(this),
           onMoveWithOnOff: this._onLevelMoveWithOnOff.bind(this),
+          onStop: this._onLevelStopWithOnOff.bind(this),
+          onMove: this._onLevelMoveWithOnOff.bind(this),
           endpoint: endpoint,
         }))
 
@@ -46,6 +54,7 @@ class RemoteControl extends ZigBeeRemoteControl {
         new ColorControlBoundCluster({
           onMoveToColorTemperature: this._onMoveToColorTemperature.bind(this),
           onMoveToHue: this._onMoveToHue.bind(this),
+          onMoveToHueAndSaturation: this._onMoveToHue.bind(this),
           onMoveToSaturation: this._onMoveToSaturation.bind(this),
           onMoveSaturation: this._onMoveSaturation.bind(this),
           onStopMoveStep: this._onStopMoveStep.bind(this),
@@ -65,6 +74,12 @@ class RemoteControl extends ZigBeeRemoteControl {
   }
 
   _onOffCommandHandler (type, endpoint) {
+    const triggerId = '_onOffCommandHandler'
+    if (this._isRepeat(triggerId)) {
+      this.log(`is repeat ${triggerId}`)
+      return
+    }
+    this._setupRepeatTimer(triggerId)
 
     this.log(
       `_onOffCommandHandler => ${type}, ${endpoint}`)
@@ -90,6 +105,12 @@ class RemoteControl extends ZigBeeRemoteControl {
   }
 
   _onMoveToHue ({ hue }, endpoint) {
+    const triggerId = '_onMoveToHue'
+    if (this._isRepeat(triggerId)) {
+      this.log(`is repeat ${triggerId}`)
+      return
+    }
+    this._setupRepeatTimer(triggerId)
 
     const homeyHue = SrUtils.getHomeyHue(hue)
     this.log(`_onMoveToHue hue ${hue}, homey hue ${homeyHue}, ${endpoint}`)
@@ -104,6 +125,12 @@ class RemoteControl extends ZigBeeRemoteControl {
   }
 
   _onMoveToSaturation ({ saturation }, endpoint) {
+    const triggerId = '_onMoveToSaturation'
+    if (this._isRepeat(triggerId)) {
+      this.log(`is repeat ${triggerId}`)
+      return
+    }
+    this._setupRepeatTimer(triggerId)
 
     const homeySaturation = SrUtils.getHomeySaturation(saturation)
     this.log(
@@ -120,6 +147,12 @@ class RemoteControl extends ZigBeeRemoteControl {
   }
 
   _onMoveSaturation ({ moveMode, rate }, endpoint) {
+    const triggerId = '_onMoveSaturation'
+    if (this._isRepeat(triggerId)) {
+      this.log(`is repeat ${triggerId}`)
+      return
+    }
+    this._setupRepeatTimer(triggerId)
 
     this.log(`_onMoveSaturation ${moveMode} ${rate}, ${endpoint}`)
 
@@ -152,6 +185,12 @@ class RemoteControl extends ZigBeeRemoteControl {
   }
 
   _onRecallScene ({ groupId, sceneId }, endpoint) {
+    const triggerId = '_onRecallScene'
+    if (this._isRepeat(triggerId)) {
+      this.log(`is repeat ${triggerId}`)
+      return
+    }
+    this._setupRepeatTimer(triggerId)
 
     this.log(`_onRecallScene ${groupId} ${sceneId}, ${endpoint}`)
 
@@ -170,6 +209,12 @@ class RemoteControl extends ZigBeeRemoteControl {
   }
 
   _onStoreScene ({ groupId, sceneId }, endpoint) {
+    const triggerId = '_onStoreScene'
+    if (this._isRepeat(triggerId)) {
+      this.log(`is repeat ${triggerId}`)
+      return
+    }
+    this._setupRepeatTimer(triggerId)
 
     this.log(`_onStoreScene ${groupId} ${sceneId}, ${endpoint}`)
 
@@ -191,6 +236,12 @@ class RemoteControl extends ZigBeeRemoteControl {
   }
 
   _onLevelStepWithOnOff ({ mode, stepSize, transitionTime }, endpoint) {
+    const triggerId = '_onLevelStepWithOnOff'
+    if (this._isRepeat(triggerId)) {
+      this.log(`is repeat ${triggerId}`)
+      return
+    }
+    this._setupRepeatTimer(triggerId)
 
     const tokens = {
       'mode': SrUtils.getStepLevelModeToken(mode),
@@ -220,6 +271,12 @@ class RemoteControl extends ZigBeeRemoteControl {
   }
 
   _onLevelMoveWithOnOff ({ moveMode, rate }, endpoint) {
+    const triggerId = '_onLevelMoveWithOnOff'
+    if (this._isRepeat(triggerId)) {
+      this.log(`is repeat ${triggerId}`)
+      return
+    }
+    this._setupRepeatTimer(triggerId)
 
     this.log(
       `_onLevelMoveWithOnOff ${moveMode} ${rate}, ${endpoint}`)
@@ -250,6 +307,12 @@ class RemoteControl extends ZigBeeRemoteControl {
   }
 
   _onLevelStopWithOnOff (endpoint) {
+    const triggerId = '_onLevelStopWithOnOff'
+    if (this._isRepeat(triggerId)) {
+      this.log(`is repeat ${triggerId}`)
+      return
+    }
+    this._setupRepeatTimer(triggerId)
 
     this.log(
       `_onLevelStopWithOnOff, ${endpoint}`)
@@ -278,6 +341,12 @@ class RemoteControl extends ZigBeeRemoteControl {
       colorTemperatureMaximumMireds,
     },
     endpoint) {
+    const triggerId = '_onStepColorTemperature'
+    if (this._isRepeat(triggerId)) {
+      this.log(`is repeat ${triggerId}`)
+      return
+    }
+    this._setupRepeatTimer(triggerId)
 
     this.log(
       `_onStepColorTemperature ${stepMode} ${stepSize} ${transitionTime} ${colorTemperatureMinimumMireds} ${colorTemperatureMaximumMireds}, ${endpoint}`)
@@ -295,17 +364,25 @@ class RemoteControl extends ZigBeeRemoteControl {
 
       this.homey.app.whiteButtonTypeModeG4TriggerCard.
         trigger(this, tokens,
-          { 'group': endpoint, 'type': 'warmer', 'mode': 'pressed' }).catch(this.error)
+          { 'group': endpoint, 'type': 'warmer', 'mode': 'pressed' }).
+        catch(this.error)
 
     } else if (stepMode === 'down') {
 
       this.homey.app.whiteButtonTypeModeG4TriggerCard.
         trigger(this, tokens,
-          { 'group': endpoint, 'type': 'cooler', 'mode': 'pressed' }).catch(this.error)
+          { 'group': endpoint, 'type': 'cooler', 'mode': 'pressed' }).
+        catch(this.error)
     }
   }
 
   _onMoveToColorTemperature ({ colorTemperature, transitionTime }, endpoint) {
+    const triggerId = '_onMoveToColorTemperature'
+    if (this._isRepeat(triggerId)) {
+      this.log(`is repeat ${triggerId}`)
+      return
+    }
+    this._setupRepeatTimer(triggerId)
 
     this.log(
       `_onMoveToColorTemperature ${colorTemperature} ${transitionTime}, ${endpoint}`)
@@ -321,7 +398,8 @@ class RemoteControl extends ZigBeeRemoteControl {
     this.driver.getDeviceTriggerCard('4512706_move_to_color_temperature').
       trigger(this, tokens, state).catch(this.error)
 
-    this.homey.app.whiteMovedG4TriggerCard.trigger(this, tokens, state).catch(this.error)
+    this.homey.app.whiteMovedG4TriggerCard.trigger(this, tokens, state).
+      catch(this.error)
   }
 
   _onMoveColorTemperature (
@@ -332,6 +410,12 @@ class RemoteControl extends ZigBeeRemoteControl {
       colorTemperatureMaximumMireds,
     },
     endpoint) {
+    const triggerId = '_onMoveColorTemperature'
+    if (this._isRepeat(triggerId)) {
+      this.log(`is repeat ${triggerId}`)
+      return
+    }
+    this._setupRepeatTimer(triggerId)
 
     this.log(
       `_onMoveColorTemperature ${moveMode} ${rate} ${colorTemperatureMinimumMireds} ${colorTemperatureMaximumMireds}, ${endpoint}`)
@@ -349,24 +433,36 @@ class RemoteControl extends ZigBeeRemoteControl {
       this.whiteMoveMode = 'warmer'
       this.homey.app.whiteButtonTypeModeG4TriggerCard.
         trigger(this, tokens,
-          { 'group': endpoint, 'type': 'warmer', 'mode': 'held_down' }).catch(this.error)
+          { 'group': endpoint, 'type': 'warmer', 'mode': 'held_down' }).
+        catch(this.error)
 
     } else if (moveMode === 'down') {
 
       this.whiteMoveMode = 'cooler'
       this.homey.app.whiteButtonTypeModeG4TriggerCard.
         trigger(this, tokens,
-          { 'group': endpoint, 'type': 'cooler', 'mode': 'held_down' }).catch(this.error)
+          { 'group': endpoint, 'type': 'cooler', 'mode': 'held_down' }).
+        catch(this.error)
 
     } else if (moveMode === 'stop') {
 
       this.homey.app.whiteButtonTypeModeG4TriggerCard.
         trigger(this, tokens,
-          { 'group': endpoint, 'type': this.whiteMoveMode, 'mode': 'released' }).catch(this.error)
+          {
+            'group': endpoint,
+            'type': this.whiteMoveMode,
+            'mode': 'released',
+          }).catch(this.error)
     }
   }
 
   _onStopMoveStep (endpoint) {
+    const triggerId = '_onStopMoveStep'
+    if (this._isRepeat(triggerId)) {
+      this.log(`is repeat ${triggerId}`)
+      return
+    }
+    this._setupRepeatTimer(triggerId)
 
     this.log(
       `_onStopMoveStep, ${endpoint}`)
@@ -378,7 +474,28 @@ class RemoteControl extends ZigBeeRemoteControl {
 
     this.homey.app.whiteButtonTypeModeG4TriggerCard.
       trigger(this, tokens,
-        { 'group': endpoint, 'type': this.whiteMoveMode, 'mode': 'released' }).catch(this.error)
+        { 'group': endpoint, 'type': this.whiteMoveMode, 'mode': 'released' }).
+      catch(this.error)
+  }
+
+  _setupRepeatTimer (triggerId) {
+    if (this.triggerRepeatTimers[triggerId]) {
+      clearTimeout(this.triggerRepeatTimers[triggerId])
+      this.log(`clear timeout ${triggerId}`)
+    }
+    this.triggerRepeats[triggerId] = true
+    this.log(`set timeout true ${triggerId}`)
+    this.triggerRepeatTimers[triggerId] = setTimeout(() => {
+      this.triggerRepeats[triggerId] = false
+      this.log(`set timeout false ${triggerId}`)
+    }, 20)
+  }
+
+  _isRepeat (triggerId) {
+    if (this.triggerRepeats[triggerId]) {
+      return this.triggerRepeats[triggerId]
+    }
+    return false
   }
 
 }

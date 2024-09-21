@@ -328,7 +328,32 @@
   },
   "2.2.93": {
     "en": "Adds support for 4512774/75"
+  },
+  "2.2.94": {
+    "en": "Bug fixes on the 3308431 - Luna Lamp - Please reinclude to fix all bindings"
+  },
+  "2.2.95": {
+    "en": "Update in drivers of 4512766/67 & 4512758/59"
+  },
+  "2.2.96": {
+    "en": "Bug fixes"
+  },
+  "2.2.97": {
+    "en": "Bug fixes"
+  },
+  "2.2.98": {
+    "en": "Added support for new dimmer devices 4512781 & 4512782. Added support for now thermostat devices 4512783 & 4512784."
+  },
+  "2.2.99": {
+    "en": "Added support for new dimmer devices 4512781 & 4512782. Added support for new thermostat devices 4512783 & 4512784."
+  },
+  "2.2.100": {
+    "en": "Bug fixes on 4512706 - flows now works again"
+  },
+  "2.2.101": {
+    "en": "Bug fixes"
+  },
+  "2.2.102": {
+    "en": "Bug fixes on flow cards 4512772/73"
   }
-
 }
-
