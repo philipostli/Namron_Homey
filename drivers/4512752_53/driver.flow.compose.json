@@ -1,0 +1,56 @@
+{
+  "actions": [
+    {
+      "id": "change_regulator_cycle_time",
+      "title": {
+        "en": "Regulator cycle time",
+        "no": "Sett periodetid for regulatoren"
+      },
+      "titleFormatted": {
+        "en": "Set regulator cycle time to [[cycle_time]]",
+        "no": "Sett periodetid for regulatoren til [[cycle_time]]"
+      },
+      "hint": {
+        "en": "Sets the settings for regulator cycle time.",
+        "no": "Setter periodetid for regulatoren, når den er i reguleringsmodus."
+      },
+      "args": [
+        {
+          "type": "dropdown",
+          "name": "cycle_time",
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "30 minutes",
+                "no": "30 minutter"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "60 minutes",
+                "no": "60 minutter"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "90 minutes",
+                "no": "90 minutter"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "120 minutes",
+                "no": "120 minutter"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
