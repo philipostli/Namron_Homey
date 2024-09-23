@@ -12,12 +12,12 @@ class WenkongDriver extends Homey.Driver {
         try {
             this.zv_trunOnFrostCard = this.homey.flow.getActionCard('zv_turned_on_frost')
             this.zv_trunOnFrostCard.registerRunListener((args) => {
-                return args.device.turnFrostRunListener({frost: true}).catch(this.error)
+                return args.device.turnFrostRunListener({frost: true})
             })
 
             this.zv_trunOffFrostCard = this.homey.flow.getActionCard('zv_turned_off_frost')
             this.zv_trunOffFrostCard.registerRunListener((args) => {
-                return args.device.turnFrostRunListener({frost: false}).catch(this.error)
+                return args.device.turnFrostRunListener({frost: false})
             })
 
             this._setRegulatorPercentage = this.homey.flow.getActionCard('zv_set_regulator_percentage')

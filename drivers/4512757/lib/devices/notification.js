@@ -1,20 +1,15 @@
-const {
-    returnCapabilityValue,
-    updateTempCapOptions
-}                               = require('./utils');
-
 module.exports = {
-    device:null,
-    node:null,
-    init:function(device, node){
+    device: null,
+    node: null,
+    init: function (device, node) {
         this.device = device;
         this.node = node;
         return this;
     },
-    registerCapability:function(){
+    registerCapability: function () {
         return this;
     },
-    startReport:function(){
+    startReport: function () {
         this.device.registerReportListener('NOTIFICATION', 'NOTIFICATION_REPORT',
             (payload) => {
                 //console.log('#################################################NOTIFICATION_REPORT', payload);
@@ -38,19 +33,19 @@ module.exports = {
           'Event (Parsed)': 'Window/Door is closed'
         }       */
 
-                if (event == 22){
+                if (event == 22) {
                     console.log('REV: window_door_alarm', 22, true);
-                    if (this.device.hasCapability('window_door_alarm')){
-                        this.device.setCapabilityValue('window_door_alarm', true);
+                    if (this.device.hasCapability('window_door_alarm')) {
+                        this.device.setCapabilityValue('window_door_alarm', true).catch(this.error);
                     }
-                    this.device.setCapabilityValue('alarm_generic', true);
+                    this.device.setCapabilityValue('alarm_generic', true).catch(this.error);
 
-                } else if (event == 23){
+                } else if (event == 23) {
                     console.log('REV: window_door_alarm', 23, false, 'Window/Door is closed');
-                    if (this.device.hasCapability('window_door_alarm')){
-                        this.device.setCapabilityValue('window_door_alarm', false);
+                    if (this.device.hasCapability('window_door_alarm')) {
+                        this.device.setCapabilityValue('window_door_alarm', false).catch(this.error);
                     }
-                    this.device.setCapabilityValue('alarm_generic', false);
+                    this.device.setCapabilityValue('alarm_generic', false).catch(this.error);
                 }
 
 

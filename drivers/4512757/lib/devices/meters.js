@@ -33,10 +33,10 @@ module.exports = {
                 //console.log('METER_REPORT', payload);
                 if (Properties1['Scale'] === 0) {
                     console.log('show meter value1:', payload['Meter Value (Parsed)']);
-                    device.setCapabilityValue('meter_power', payload['Meter Value (Parsed)']);
+                    device.setCapabilityValue('meter_power', payload['Meter Value (Parsed)']).catch(this.error);
                 } else {
                     console.log('show meter value2:', payload['Meter Value (Parsed)']);
-                    device.setCapabilityValue('meter_power', payload['Meter Value (Parsed)']);
+                    device.setCapabilityValue('meter_power', payload['Meter Value (Parsed)']).catch(this.error);
                 }
             }
         );
